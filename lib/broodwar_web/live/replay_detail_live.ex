@@ -74,22 +74,7 @@ defmodule BroodwarWeb.ReplayDetailLive do
   def render(assigns) do
     ~H"""
     <div id="replay-app" phx-window-keydown="keyseek" class="h-screen flex flex-col overflow-hidden bg-base-200">
-      <%!-- Reuse the app header --%>
-      <header class="bg-base-300/80 backdrop-blur-md border-b border-base-content/5 shrink-0 z-50">
-        <nav class="max-w-full mx-auto px-4">
-          <div class="flex items-center justify-between h-12">
-            <a href="/" class="flex items-center gap-2 group">
-              <div class="w-6 h-6 rounded bg-primary/15 border border-primary/30 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
-                <span class="text-primary font-bold text-[10px]">BW</span>
-              </div>
-              <span class="font-semibold text-base-content tracking-tight text-xs">
-                broodwar<span class="text-primary">.live</span>
-              </span>
-            </a>
-            <Layouts.flash_group flash={@flash} />
-          </div>
-        </nav>
-      </header>
+      <Layouts.navbar flash={@flash} />
 
       <% header = @parsed["header"] || %{} %>
       <% players = header["players"] || [] %>

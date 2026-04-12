@@ -148,6 +148,49 @@ defmodule BroodwarWeb.Layouts do
   end
 
   @doc """
+  Renders just the navbar header, for use in full-viewport app layouts
+  that don't want the standard page wrapper and footer.
+  """
+  attr :flash, :map, default: %{}
+
+  def navbar(assigns) do
+    ~H"""
+    <header class="bg-base-300/60 backdrop-blur-xl border-b border-primary/5 shrink-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+          <a href="/" class="group hover:opacity-80 transition-opacity">
+            <.brandmark size="sm" />
+          </a>
+
+          <div class="hidden lg:flex items-center gap-0.5">
+            <.nav_link href="/players" label={gettext("Players")} />
+            <.nav_link href="/matches" label={gettext("Matches")} />
+            <.nav_link href="/builds" label={gettext("Builds")} />
+            <.nav_link href="/wiki" label={gettext("Database")} />
+            <.nav_dropdown label={gettext("More")}>
+              <.nav_dropdown_item href="/tournaments" label={gettext("Tournaments")} />
+              <.nav_dropdown_item href="/balance" label={gettext("Balance")} />
+              <.nav_dropdown_item href="/replays" label={gettext("Replays")} />
+              <.nav_dropdown_item href="/api" label="API" />
+            </.nav_dropdown>
+          </div>
+
+          <div class="flex items-center gap-2.5">
+            <a href="/streams" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error/10 text-error text-xs font-semibold hover:bg-error/15 transition-colors">
+              <span class="w-1.5 h-1.5 rounded-full bg-error animate-live-pulse"></span>
+              {gettext("LIVE")}
+            </a>
+            <.locale_toggle />
+            <.theme_toggle />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <.flash_group flash={@flash} />
+    """
+  end
+
+  @doc """
   Renders the broodwar.live typographic brandmark.
   """
   attr :size, :string, default: "sm", values: ~w(xs sm md lg xl)
