@@ -2,11 +2,11 @@
   <%!-- Breadcrumb --%>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
     <nav class="text-sm text-base-content/40">
-      <a href="/wiki" class="hover:text-base-content transition-colors">Wiki</a>
+      <a href="/wiki" class="hover:text-base-content transition-colors">{gettext("Wiki")}</a>
       <span class="mx-1.5">/</span>
-      <a href={"/wiki/races/#{@race.slug}"} class="hover:text-base-content transition-colors">{@race.name}</a>
+      <a href={"/wiki/races/#{@race.slug}"} class="hover:text-base-content transition-colors">{t(@race, :name)}</a>
       <span class="mx-1.5">/</span>
-      <span class="text-base-content/70">{@unit.name}</span>
+      <span class="text-base-content/70">{t(@unit, :name)}</span>
     </nav>
   </section>
 
@@ -15,15 +15,15 @@
     <div class="flex items-start gap-4">
       <img
         src={"/images/wiki/units/#{@unit.slug}.jpg"}
-        alt={@unit.name}
+        alt={t(@unit, :name)}
         class="w-20 h-20 rounded-xl object-cover border border-base-content/10 bg-base-300 shrink-0"
       />
       <div>
-        <h1 class="text-3xl font-bold tracking-tight">{@unit.name}</h1>
+        <h1 class="text-3xl font-bold tracking-tight">{t(@unit, :name)}</h1>
         <div class="mt-1 flex items-center gap-2 text-sm text-base-content/50">
-          <span class={race_color(@race.slug)}>{@race.name}</span>
+          <span class={race_color(@race.slug)}>{t(@race, :name)}</span>
           <span>&middot;</span>
-          <span>{unit_type_label(@unit.type)} unit</span>
+          <span>{unit_type_label(@unit.type)} {gettext("unit")}</span>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
       <%!-- Description --%>
       <div class="lg:col-span-2">
         <div class="bg-base-100 rounded-box border border-base-content/5 p-6">
-          <p class="text-sm text-base-content/70 leading-relaxed">{@unit.description}</p>
+          <p class="text-sm text-base-content/70 leading-relaxed">{t(@unit, :description)}</p>
         </div>
       </div>
 
@@ -46,7 +46,7 @@
           race_border(@race.slug),
           race_bg_subtle(@race.slug)
         ]}>
-          <h3 class="text-sm font-semibold mb-4">Stats</h3>
+          <h3 class="text-sm font-semibold mb-4">{gettext("Stats")}</h3>
           <dl class="space-y-2.5">
             <.stat_row stat="minerals" value={@unit.minerals} />
             <.stat_row stat="gas" value={@unit.gas} />
@@ -61,7 +61,7 @@
 
         <%!-- Abilities --%>
         <div :if={@abilities != []} class="bg-base-100 rounded-box border border-base-content/5 p-5">
-          <h3 class="text-sm font-semibold mb-3">Abilities</h3>
+          <h3 class="text-sm font-semibold mb-3">{gettext("Abilities")}</h3>
           <div class="space-y-2">
             <a
               :for={ability <- @abilities}
@@ -70,24 +70,24 @@
             >
               <img
                 src={"/images/wiki/abilities/#{ability.slug}.gif"}
-                alt={ability.name}
+                alt={t(ability, :name)}
                 class="w-8 h-8 rounded bg-base-300 border border-base-content/5"
                 onerror="this.style.display='none'"
               />
-              <span class="text-sm text-primary group-hover:text-primary/80 transition-colors">{ability.name}</span>
+              <span class="text-sm text-primary group-hover:text-primary/80 transition-colors">{t(ability, :name)}</span>
             </a>
           </div>
         </div>
 
         <%!-- Built From --%>
         <div :if={@built_from} class="bg-base-100 rounded-box border border-base-content/5 p-5">
-          <h3 class="text-sm font-semibold mb-3">Built From</h3>
+          <h3 class="text-sm font-semibold mb-3">{gettext("Built From")}</h3>
           <a
             href={if(Map.has_key?(@built_from, :produces), do: "/wiki/buildings/#{@built_from.slug}", else: "/wiki/units/#{@built_from.slug}")}
             class="flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
           >
             <.icon name="hero-arrow-right-micro" class="size-3.5" />
-            {@built_from.name}
+            {t(@built_from, :name)}
           </a>
         </div>
       </div>

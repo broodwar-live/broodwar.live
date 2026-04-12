@@ -39,3 +39,9 @@ npm-debug.log
 *.db
 *.db-*
 
+# Compiled Rust NIFs (built during mix compile)
+/priv/native/
+
+# Rust build artifacts
+/native/*/target/
+

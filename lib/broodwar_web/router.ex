@@ -8,6 +8,7 @@ defmodule BroodwarWeb.Router do
     plug :put_root_layout, html: {BroodwarWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug BroodwarWeb.Plugs.Locale
   end
 
   pipeline :api do

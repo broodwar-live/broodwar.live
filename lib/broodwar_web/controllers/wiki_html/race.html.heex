@@ -2,9 +2,9 @@
   <%!-- Breadcrumb --%>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
     <nav class="text-sm text-base-content/40">
-      <a href="/wiki" class="hover:text-base-content transition-colors">Wiki</a>
+      <a href="/wiki" class="hover:text-base-content transition-colors">{gettext("Wiki")}</a>
       <span class="mx-1.5">/</span>
-      <span class="text-base-content/70">{@race.name}</span>
+      <span class="text-base-content/70">{t(@race, :name)}</span>
     </nav>
   </section>
 
@@ -18,8 +18,8 @@
         {@race.letter}
       </div>
       <div>
-        <h1 class="text-3xl font-bold tracking-tight">{@race.name}</h1>
-        <p class="mt-1 text-base-content/60">{@race.tagline}</p>
+        <h1 class="text-3xl font-bold tracking-tight">{t(@race, :name)}</h1>
+        <p class="mt-1 text-base-content/60">{t(@race, :tagline)}</p>
       </div>
     </div>
   </section>
@@ -30,10 +30,10 @@
       <%!-- Description --%>
       <div class="lg:col-span-2">
         <div class="bg-base-100 rounded-box border border-base-content/5 p-6">
-          <h2 class="text-lg font-semibold mb-3">Overview</h2>
-          <p class="text-sm text-base-content/70 leading-relaxed">{@race.description}</p>
-          <h3 class="text-sm font-semibold mt-5 mb-2">Playstyle</h3>
-          <p class="text-sm text-base-content/70 leading-relaxed">{@race.playstyle}</p>
+          <h2 class="text-lg font-semibold mb-3">{gettext("Overview")}</h2>
+          <p class="text-sm text-base-content/70 leading-relaxed">{t(@race, :description)}</p>
+          <h3 class="text-sm font-semibold mt-5 mb-2">{gettext("Playstyle")}</h3>
+          <p class="text-sm text-base-content/70 leading-relaxed">{t(@race, :playstyle)}</p>
         </div>
       </div>
 
@@ -46,10 +46,10 @@
         ]}>
           <h3 class="text-sm font-semibold mb-3 flex items-center gap-1.5">
             <.icon name="hero-arrow-trending-up-micro" class="size-3.5 text-success" />
-            Strengths
+            {gettext("Strengths")}
           </h3>
           <ul class="space-y-2">
-            <li :for={strength <- @race.strengths} class="flex items-start gap-2 text-xs text-base-content/70">
+            <li :for={strength <- t(@race, :strengths)} class="flex items-start gap-2 text-xs text-base-content/70">
               <span class="text-success mt-0.5 shrink-0">+</span>
               <span>{strength}</span>
             </li>
@@ -59,10 +59,10 @@
         <div class="bg-base-100 rounded-box border border-base-content/5 p-5">
           <h3 class="text-sm font-semibold mb-3 flex items-center gap-1.5">
             <.icon name="hero-arrow-trending-down-micro" class="size-3.5 text-error" />
-            Weaknesses
+            {gettext("Weaknesses")}
           </h3>
           <ul class="space-y-2">
-            <li :for={weakness <- @race.weaknesses} class="flex items-start gap-2 text-xs text-base-content/70">
+            <li :for={weakness <- t(@race, :weaknesses)} class="flex items-start gap-2 text-xs text-base-content/70">
               <span class="text-error mt-0.5 shrink-0">&minus;</span>
               <span>{weakness}</span>
             </li>
@@ -74,7 +74,7 @@
 
   <%!-- Units --%>
   <section id="units" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h2 class="text-lg font-semibold mb-4">Units</h2>
+    <h2 class="text-lg font-semibold mb-4">{gettext("Units")}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
       <a
         :for={unit <- @units}
@@ -88,11 +88,11 @@
           <div class="flex items-center gap-2.5">
             <img
               src={"/images/wiki/units/#{unit.slug}.jpg"}
-              alt={unit.name}
+              alt={t(unit, :name)}
               class="w-10 h-10 rounded-lg object-cover bg-base-300 border border-base-content/5"
             />
             <div>
-              <span class="font-medium text-sm group-hover:text-primary transition-colors block">{unit.name}</span>
+              <span class="font-medium text-sm group-hover:text-primary transition-colors block">{t(unit, :name)}</span>
               <div class="flex items-center gap-2 text-xs text-base-content/40 mt-0.5">
                 <span>{unit.minerals}m</span>
                 <span :if={unit.gas > 0}>{unit.gas}g</span>
@@ -108,7 +108,7 @@
 
   <%!-- Abilities --%>
   <section :if={@abilities != []} id="abilities" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h2 class="text-lg font-semibold mb-4">Abilities & Spells</h2>
+    <h2 class="text-lg font-semibold mb-4">{gettext("Abilities & Spells")}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
       <a
         :for={ability <- @abilities}
@@ -121,12 +121,12 @@
         <div class="flex items-center gap-2.5">
           <img
             src={"/images/wiki/abilities/#{ability.slug}.gif"}
-            alt={ability.name}
+            alt={t(ability, :name)}
             class="w-10 h-10 rounded-lg bg-base-300 border border-base-content/5"
             onerror="this.src='/images/wiki/abilities/#{ability.slug}.png'"
           />
           <div>
-            <span class="font-medium text-sm group-hover:text-primary transition-colors block">{ability.name}</span>
+            <span class="font-medium text-sm group-hover:text-primary transition-colors block">{t(ability, :name)}</span>
             <span class="text-xs text-base-content/40">{ability.caster |> String.replace("-", " ") |> String.capitalize()}</span>
           </div>
         </div>
@@ -136,7 +136,7 @@
 
   <%!-- Buildings --%>
   <section id="buildings" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-16">
-    <h2 class="text-lg font-semibold mb-4">Buildings</h2>
+    <h2 class="text-lg font-semibold mb-4">{gettext("Buildings")}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
       <a
         :for={building <- @buildings}
@@ -149,15 +149,15 @@
         <div class="flex items-center gap-2.5 mb-2">
           <img
             src={"/images/wiki/buildings/#{building.slug}.jpg"}
-            alt={building.name}
+            alt={t(building, :name)}
             class="w-10 h-10 rounded-lg object-cover bg-base-300 border border-base-content/5"
           />
           <div>
-            <span class="font-medium text-sm group-hover:text-primary transition-colors block">{building.name}</span>
+            <span class="font-medium text-sm group-hover:text-primary transition-colors block">{t(building, :name)}</span>
             <div class="flex items-center gap-2 text-xs text-base-content/40 mt-0.5">
               <span>{building.minerals}m</span>
               <span :if={building.gas > 0}>{building.gas}g</span>
-              <span :if={building.produces != []}>{length(building.produces)} units</span>
+              <span :if={building.produces != []}>{length(building.produces)} {gettext("units")}</span>
             </div>
           </div>
         </div>

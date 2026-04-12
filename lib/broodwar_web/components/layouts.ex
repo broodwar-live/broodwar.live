@@ -44,6 +44,7 @@ defmodule BroodwarWeb.Layouts do
 
             <%!-- Right side --%>
             <div class="flex items-center gap-3">
+              <.locale_toggle locale={assigns[:locale] || "en"} />
               <.theme_toggle />
             </div>
           </div>
@@ -126,6 +127,37 @@ defmodule BroodwarWeb.Layouts do
         {gettext("Attempting to reconnect")}
         <.icon name="hero-arrow-path" class="ml-1 size-3 motion-safe:animate-spin" />
       </.flash>
+    </div>
+    """
+  end
+
+  attr :locale, :string, required: true
+
+  def locale_toggle(assigns) do
+    assigns = assign(assigns, :other_locale, if(assigns.locale == "ko", do: "en", else: "ko"))
+
+    ~H"""
+    <div class="flex items-center border border-base-content/10 bg-base-200 rounded-full p-0.5">
+      <a
+        href={"?locale=en"}
+        class={[
+          "relative px-2 py-1 text-xs font-medium rounded-full transition-colors",
+          @locale == "en" && "bg-base-content/10 text-base-content",
+          @locale != "en" && "text-base-content/40 hover:text-base-content/70"
+        ]}
+      >
+        EN
+      </a>
+      <a
+        href={"?locale=ko"}
+        class={[
+          "relative px-2 py-1 text-xs font-medium rounded-full transition-colors",
+          @locale == "ko" && "bg-base-content/10 text-base-content",
+          @locale != "ko" && "text-base-content/40 hover:text-base-content/70"
+        ]}
+      >
+        한국어
+      </a>
     </div>
     """
   end

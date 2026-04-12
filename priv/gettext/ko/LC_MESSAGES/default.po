@@ -1,0 +1,264 @@
+## Korean translations for broodwar.live UI
+msgid ""
+msgstr ""
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+## Navigation
+msgid "Home"
+msgstr "홈"
+
+msgid "Players"
+msgstr "선수"
+
+msgid "Matches"
+msgstr "경기"
+
+msgid "Replays"
+msgstr "리플레이"
+
+msgid "Builds"
+msgstr "빌드"
+
+msgid "Balance"
+msgstr "밸런스"
+
+msgid "Wiki"
+msgstr "위키"
+
+## Landing page
+msgid "ASL Season 21 — Live Now"
+msgstr "ASL 시즌 21 — 생방송 중"
+
+msgid "Community Hub"
+msgstr "커뮤니티 허브"
+
+msgid "Match stats, replay analysis, build orders, and live stream tracking for the competitive Brood War scene. From ASL to Fish ladder."
+msgstr "ASL부터 피쉬 래더까지, 브루드 워 프로 씬의 경기 통계, 리플레이 분석, 빌드 오더, 라이브 스트리밍 추적을 제공합니다."
+
+msgid "Analyze a Replay"
+msgstr "리플레이 분석"
+
+msgid "Browse Players"
+msgstr "선수 목록"
+
+msgid "Live Streams"
+msgstr "라이브 스트리밍"
+
+msgid "View all"
+msgstr "모두 보기"
+
+msgid "Recent Matches"
+msgstr "최근 경기"
+
+msgid "Matchup Balance (30d)"
+msgstr "종족 밸런스 (30일)"
+
+msgid "Top Rated"
+msgstr "레이팅 순위"
+
+msgid "Upcoming"
+msgstr "예정 경기"
+
+msgid "Popular Builds"
+msgstr "인기 빌드"
+
+msgid "Browse all"
+msgstr "모두 보기"
+
+msgid "viewers"
+msgstr "시청자"
+
+msgid "LIVE"
+msgstr "LIVE"
+
+msgid "games"
+msgstr "경기"
+
+msgid "winrate"
+msgstr "승률"
+
+msgid "vs"
+msgstr "vs"
+
+## Footer
+msgid "Open source community project"
+msgstr "오픈소스 커뮤니티 프로젝트"
+
+msgid "Not affiliated with Blizzard Entertainment or Microsoft. StarCraft and Brood War are trademarks of Blizzard Entertainment, Inc."
+msgstr "Blizzard Entertainment 또는 Microsoft와 관련이 없습니다. StarCraft와 Brood War는 Blizzard Entertainment, Inc.의 상표입니다."
+
+## Wiki general
+msgid "Reference guide to StarCraft: Brood War races, units, and buildings."
+msgstr "스타크래프트: 브루드 워 종족, 유닛, 건물 레퍼런스 가이드."
+
+msgid "Races"
+msgstr "종족"
+
+msgid "Browse by Category"
+msgstr "카테고리별 보기"
+
+msgid "Units"
+msgstr "유닛"
+
+msgid "All combat and support units across all three races — stats, abilities, and roles."
+msgstr "세 종족의 모든 전투/지원 유닛 — 스탯, 능력, 역할."
+
+msgid "units"
+msgstr "유닛"
+
+msgid "Buildings"
+msgstr "건물"
+
+msgid "Production facilities, tech structures, and defenses for each race."
+msgstr "각 종족의 생산 시설, 테크 건물, 방어 시설."
+
+msgid "buildings"
+msgstr "건물"
+
+msgid "Abilities & Spells"
+msgstr "기술 & 마법"
+
+msgid "Active abilities, spells, and special actions — from Psionic Storm to Dark Swarm."
+msgstr "사이오닉 스톰부터 다크 스웜까지, 액티브 기술과 특수 능력."
+
+msgid "Browse all abilities"
+msgstr "모든 기술 보기"
+
+msgid "Maps"
+msgstr "맵"
+
+msgid "Competitive maps from Lost Temple to the modern ASL pool."
+msgstr "로스트 템플부터 현대 ASL 맵풀까지, 경쟁전 맵."
+
+msgid "Browse all maps"
+msgstr "모든 맵 보기"
+
+## Race page
+msgid "Overview"
+msgstr "개요"
+
+msgid "Playstyle"
+msgstr "플레이 스타일"
+
+msgid "Strengths"
+msgstr "강점"
+
+msgid "Weaknesses"
+msgstr "약점"
+
+## Unit/Building stats
+msgid "Stats"
+msgstr "스탯"
+
+msgid "Minerals"
+msgstr "미네랄"
+
+msgid "Gas"
+msgstr "가스"
+
+msgid "Supply"
+msgstr "서플라이"
+
+msgid "HP"
+msgstr "체력"
+
+msgid "Shields"
+msgstr "쉴드"
+
+msgid "Armor"
+msgstr "방어력"
+
+msgid "Damage"
+msgstr "공격력"
+
+msgid "Energy"
+msgstr "에너지"
+
+msgid "Abilities"
+msgstr "기술"
+
+msgid "Built From"
+msgstr "생산 건물"
+
+msgid "Produces"
+msgstr "생산 유닛"
+
+msgid "Ground"
+msgstr "지상"
+
+msgid "Air"
+msgstr "공중"
+
+msgid "Unit"
+msgstr "유닛"
+
+msgid "Building"
+msgstr "건물"
+
+msgid "Ability"
+msgstr "기술"
+
+## Ability page
+msgid "Active abilities, spells, and special actions available to units across all three races."
+msgstr "세 종족 유닛이 사용할 수 있는 액티브 기술, 마법, 특수 능력."
+
+msgid "Details"
+msgstr "상세 정보"
+
+msgid "HP Cost"
+msgstr "체력 소모"
+
+msgid "Cast by"
+msgstr "시전 유닛"
+
+## Map page
+msgid "Competitive StarCraft: Brood War maps — from all-time classics to the modern ASL pool."
+msgstr "스타크래프트: 브루드 워 경쟁전 맵 — 클래식 명맵부터 현대 ASL 맵풀까지."
+
+msgid "Map Details"
+msgstr "맵 상세 정보"
+
+msgid "Dimensions"
+msgstr "크기"
+
+msgid "Tileset"
+msgstr "타일셋"
+
+msgid "Spawns"
+msgstr "시작점"
+
+msgid "Era"
+msgstr "시대"
+
+## Connection errors
+msgid "We can't find the internet"
+msgstr "인터넷 연결을 찾을 수 없습니다"
+
+msgid "Attempting to reconnect"
+msgstr "재연결 시도 중"
+
+msgid "Something went wrong!"
+msgstr "오류가 발생했습니다!"
+
+msgid "close"
+msgstr "닫기"
+
+msgid "Actions"
+msgstr "작업"
+
+## Unit types as labels
+msgid "Ground unit"
+msgstr "지상 유닛"
+
+msgid "Air unit"
+msgstr "공중 유닛"
+
+msgid "1v1"
+msgstr "1대1"
+
+msgid "3-way"
+msgstr "3인용"
+
+msgid "4-player"
+msgstr "4인용"

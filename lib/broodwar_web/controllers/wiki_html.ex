@@ -3,6 +3,21 @@ defmodule BroodwarWeb.WikiHTML do
 
   embed_templates "wiki_html/*"
 
+  @doc """
+  Returns the locale-appropriate field from a data entry.
+  Falls back to the English field if Korean isn't available.
+  """
+  def t(entry, field) do
+    locale = Gettext.get_locale(BroodwarWeb.Gettext)
+    ko_field = :"#{field}_ko"
+
+    if locale == "ko" && Map.has_key?(entry, ko_field) do
+      Map.get(entry, ko_field) || Map.get(entry, field)
+    else
+      Map.get(entry, field)
+    end
+  end
+
   def race_color("terran"), do: "text-race-terran"
   def race_color("protoss"), do: "text-race-protoss"
   def race_color("zerg"), do: "text-race-zerg"
@@ -23,9 +38,9 @@ defmodule BroodwarWeb.WikiHTML do
   def race_bg_subtle("zerg"), do: "bg-race-zerg/5"
   def race_bg_subtle(_), do: "bg-base-content/5"
 
-  def unit_type_label(:ground), do: "Ground"
-  def unit_type_label(:air), do: "Air"
-  def unit_type_label(_), do: "Unit"
+  def unit_type_label(:ground), do: gettext("Ground")
+  def unit_type_label(:air), do: gettext("Air")
+  def unit_type_label(_), do: gettext("Unit")
 
   attr :stat, :string, required: true
   attr :value, :any, required: true
@@ -52,14 +67,14 @@ defmodule BroodwarWeb.WikiHTML do
   defp stat_icon("energy"), do: "/images/wiki/stats/energy.gif"
   defp stat_icon(_), do: ""
 
-  defp stat_label("minerals"), do: "Minerals"
-  defp stat_label("gas"), do: "Gas"
-  defp stat_label("supply"), do: "Supply"
-  defp stat_label("hp"), do: "HP"
-  defp stat_label("shields"), do: "Shields"
-  defp stat_label("armor"), do: "Armor"
-  defp stat_label("damage"), do: "Damage"
-  defp stat_label("energy"), do: "Energy"
+  defp stat_label("minerals"), do: gettext("Minerals")
+  defp stat_label("gas"), do: gettext("Gas")
+  defp stat_label("supply"), do: gettext("Supply")
+  defp stat_label("hp"), do: gettext("HP")
+  defp stat_label("shields"), do: gettext("Shields")
+  defp stat_label("armor"), do: gettext("Armor")
+  defp stat_label("damage"), do: gettext("Damage")
+  defp stat_label("energy"), do: gettext("Energy")
   defp stat_label(other), do: other
 
   def tileset_color("Jungle World"), do: "text-success"
@@ -70,9 +85,9 @@ defmodule BroodwarWeb.WikiHTML do
   def tileset_color("Ice"), do: "text-info"
   def tileset_color(_), do: "text-base-content/60"
 
-  def players_label(2), do: "1v1"
-  def players_label(3), do: "3-way"
-  def players_label(4), do: "4-player"
+  def players_label(2), do: gettext("1v1")
+  def players_label(3), do: gettext("3-way")
+  def players_label(4), do: gettext("4-player")
   def players_label(n), do: "#{n}-player"
 
   attr :race, :map, required: true
@@ -93,9 +108,9 @@ defmodule BroodwarWeb.WikiHTML do
         ]}>
           {@race.letter}
         </div>
-        <h3 class="text-lg font-semibold group-hover:text-primary transition-colors">{@race.name}</h3>
+        <h3 class="text-lg font-semibold group-hover:text-primary transition-colors">{t(@race, :name)}</h3>
       </div>
-      <p class="text-sm text-base-content/50 leading-relaxed">{@race.tagline}</p>
+      <p class="text-sm text-base-content/50 leading-relaxed">{t(@race, :tagline)}</p>
     </a>
     """
   end
