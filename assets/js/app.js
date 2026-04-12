@@ -52,9 +52,10 @@ const WaveformClick = {
 const BoScroll = {
   mounted() {
     this.handleEvent("scroll_bo", ({block_id}) => {
+      const container = this.el
       const target = document.getElementById(block_id)
-      if (target) {
-        target.scrollIntoView({behavior: "smooth", block: "start"})
+      if (container && target) {
+        container.scrollTop = target.offsetTop - container.offsetTop
       }
     })
   }
