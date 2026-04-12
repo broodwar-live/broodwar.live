@@ -61,11 +61,15 @@ const BoScroll = {
   }
 }
 
+const WaveformBar = {
+  mounted() {}
+}
+
 const csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 const liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
   params: {_csrf_token: csrfToken},
-  hooks: {...colocatedHooks, WaveformClick, BoScroll},
+  hooks: {...colocatedHooks, WaveformClick, BoScroll, WaveformBar},
 })
 
 // Show progress bar on live navigation and form submits

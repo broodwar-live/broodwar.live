@@ -51,6 +51,19 @@ defmodule BroodwarWeb.ReplayDetailLive do
   end
 
   @impl true
+  def handle_event("keyseek", %{"key" => "ArrowRight"}, socket) do
+    idx = min(socket.assigns.timeline_idx + 1, socket.assigns.max_idx)
+    {:noreply, socket |> assign(:timeline_idx, idx) |> push_bo_scroll(idx)}
+  end
+
+  def handle_event("keyseek", %{"key" => "ArrowLeft"}, socket) do
+    idx = max(socket.assigns.timeline_idx - 1, 0)
+    {:noreply, socket |> assign(:timeline_idx, idx) |> push_bo_scroll(idx)}
+  end
+
+  def handle_event("keyseek", _params, socket), do: {:noreply, socket}
+
+  @impl true
   def handle_event("seek_time", %{"pct" => pct_str}, socket) do
     pct = String.to_float(pct_str) |> max(0.0) |> min(1.0)
     target_idx = round(pct * socket.assigns.max_idx) |> max(0) |> min(socket.assigns.max_idx)
@@ -93,104 +106,13 @@ defmodule BroodwarWeb.ReplayDetailLive do
           </div>
         </div>
 
-        <%!-- APM Waveform Timeline --%>
-        <%= if @max_idx > 0 and @waveform != [] do %>
-          <% current_pct = if @max_idx > 0, do: @timeline_idx / @max_idx * 100, else: 0 %>
-          <% bar_count = length(@waveform) %>
-
-          <div class="bg-base-100 rounded-box border border-base-content/5 p-5 mb-4">
-            <%!-- Player legend --%>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs text-base-content/40 font-mono">
-                {format_game_time(snap && snap["real_seconds"])}
-              </span>
-              <div class="flex items-center gap-4 text-xs">
-                <%= for pid <- MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2) do %>
-                  <% player = Enum.find(players, fn p -> p["player_id"] == pid end) %>
-                  <% color = @player_colors[pid] || "#CCC" %>
-                  <%= if player do %>
-                    <span class="flex items-center gap-1.5">
-                      <span class="w-2 h-2 rounded-sm" style={"background: #{color}"}></span>
-                      <span class="font-bold" style={"color: #{color}"}>{player["race_code"]}</span>
-                      <span class="text-base-content/50">{player["name"]}</span>
-                    </span>
-                  <% end %>
-                <% end %>
-              </div>
-              <span class="text-xs text-base-content/40 font-mono">
-                {format_duration(header["duration_secs"])}
-              </span>
-            </div>
-
-            <%!-- SVG Waveform --%>
-            <div
-              id="apm-waveform"
-              phx-click="seek_waveform"
-              phx-hook="WaveformClick"
-              class="relative cursor-pointer select-none"
-              style="height: 120px;"
-            >
-              <svg
-                viewBox={"0 0 #{bar_count} 100"}
-                preserveAspectRatio="none"
-                class="w-full h-full"
-                style="display: block;"
-              >
-                <% sorted_active = MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2) %>
-                <% p1_color = @player_colors[Enum.at(sorted_active, 0)] || "#0C48CC" %>
-                <% p2_color = @player_colors[Enum.at(sorted_active, 1)] || "#F40404" %>
-
-                <%!-- Player 1 bars (upward from center) --%>
-                <%= for {bar, i} <- Enum.with_index(@waveform) do %>
-                  <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
-                  <rect
-                    x={i}
-                    y={50 - bar.p1_height}
-                    width="0.8"
-                    height={bar.p1_height}
-                    rx="0.2"
-                    fill={p1_color}
-                    opacity={if(played, do: "1", else: "0.25")}
-                  />
-                <% end %>
-
-                <%!-- Player 2 bars (downward from center) --%>
-                <%= for {bar, i} <- Enum.with_index(@waveform) do %>
-                  <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
-                  <rect
-                    x={i}
-                    y="50"
-                    width="0.8"
-                    height={bar.p2_height}
-                    rx="0.2"
-                    fill={p2_color}
-                    opacity={if(played, do: "1", else: "0.25")}
-                  />
-                <% end %>
-
-                <%!-- Center line --%>
-                <line x1="0" y1="50" x2={bar_count} y2="50" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.3" />
-
-                <%!-- Playhead --%>
-                <line
-                  x1={current_pct / 100 * bar_count}
-                  y1="0"
-                  x2={current_pct / 100 * bar_count}
-                  y2="100"
-                  stroke="currentColor"
-                  stroke-opacity="0.5"
-                  stroke-width="0.5"
-                />
-              </svg>
-            </div>
-
-            <div class="flex items-center justify-between mt-2">
-              <span class="text-[10px] text-base-content/30">APM</span>
-              <span class="text-[10px] text-base-content/30">
-                Build action {@timeline_idx} of {@max_idx}
-              </span>
-            </div>
-          </div>
+        <% current_pct = if @max_idx > 0, do: @timeline_idx / @max_idx * 100, else: 0 %>
+        <% bar_count = length(@waveform) %>
+        <% sorted_active = MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2) %>
+        <% p1_color = @player_colors[Enum.at(sorted_active, 0)] || "#0C48CC" %>
+        <% p2_color = @player_colors[Enum.at(sorted_active, 1)] || "#F40404" %>
+        <% p1 = Enum.find(players, fn p -> p["player_id"] == Enum.at(sorted_active, 0) end) %>
+        <% p2 = Enum.find(players, fn p -> p["player_id"] == Enum.at(sorted_active, 1) end) %>
 
           <%!-- Build Order Timeline --%>
           <% build_order = @parsed["build_order"] || [] %>
@@ -329,9 +251,99 @@ defmodule BroodwarWeb.ReplayDetailLive do
               <% end %>
             </div>
           <% end %>
-        <% end %>
 
       </div>
+
+      <%!-- Sticky bottom waveform bar --%>
+      <%= if @max_idx > 0 and @waveform != [] do %>
+        <div
+          id="waveform-bar"
+          phx-hook="WaveformBar"
+          phx-window-keydown="keyseek"
+          class="fixed bottom-0 left-0 right-0 z-50 bg-base-300/95 backdrop-blur-md border-t border-base-content/10"
+        >
+          <div class="max-w-6xl mx-auto px-4">
+            <%!-- Waveform with player names --%>
+            <div class="relative">
+              <%!-- Player names overlaid --%>
+              <%= if p1 do %>
+                <div class="absolute top-1 left-2 z-10 flex items-center gap-1 text-[10px] font-bold opacity-70" style={"color: #{p1_color}"}>
+                  {p1["race_code"]} {p1["name"]}
+                </div>
+              <% end %>
+              <%= if p2 do %>
+                <div class="absolute bottom-1 left-2 z-10 flex items-center gap-1 text-[10px] font-bold opacity-70" style={"color: #{p2_color}"}>
+                  {p2["race_code"]} {p2["name"]}
+                </div>
+              <% end %>
+
+              <%!-- SVG Waveform --%>
+              <div
+                id="apm-waveform"
+                phx-hook="WaveformClick"
+                class="cursor-pointer select-none"
+                style="height: 56px;"
+              >
+                <svg
+                  viewBox={"0 0 #{bar_count} 100"}
+                  preserveAspectRatio="none"
+                  class="w-full h-full"
+                  style="display: block;"
+                >
+                  <%!-- Player 1 bars (upward) --%>
+                  <%= for {bar, i} <- Enum.with_index(@waveform) do %>
+                    <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
+                    <rect
+                      x={i}
+                      y={50 - bar.p1_height}
+                      width="0.8"
+                      height={bar.p1_height}
+                      rx="0.15"
+                      fill={p1_color}
+                      opacity={if(played, do: "0.9", else: "0.2")}
+                    />
+                  <% end %>
+
+                  <%!-- Player 2 bars (downward) --%>
+                  <%= for {bar, i} <- Enum.with_index(@waveform) do %>
+                    <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
+                    <rect
+                      x={i}
+                      y="50"
+                      width="0.8"
+                      height={bar.p2_height}
+                      rx="0.15"
+                      fill={p2_color}
+                      opacity={if(played, do: "0.9", else: "0.2")}
+                    />
+                  <% end %>
+
+                  <%!-- Center line --%>
+                  <rect x="0" y="49.85" width={bar_count} height="0.3" fill="currentColor" opacity="0.06" />
+
+                  <%!-- Playhead --%>
+                  <rect x={current_pct / 100 * bar_count} y="0" width="0.4" height="100" fill="white" opacity="0.7" />
+                </svg>
+              </div>
+            </div>
+
+            <%!-- Time display --%>
+            <div class="flex items-center justify-between py-1">
+              <span class="text-[10px] font-mono text-base-content/40">
+                {format_game_time(snap && snap["real_seconds"])}
+              </span>
+              <span class="text-[10px] text-base-content/25">
+                arrow keys to step
+              </span>
+              <span class="text-[10px] font-mono text-base-content/40">
+                {format_duration(header["duration_secs"])}
+              </span>
+            </div>
+          </div>
+        </div>
+        <%!-- Spacer so content doesn't hide behind the sticky bar --%>
+        <div class="h-20"></div>
+      <% end %>
     </Layouts.app>
     """
   end

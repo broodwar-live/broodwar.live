@@ -28,16 +28,24 @@ defmodule BroodwarWeb.Layouts do
 
             <%!-- Navigation Links --%>
             <div class="hidden lg:flex items-center gap-0.5">
-              <.nav_link href="/" label={gettext("Home")} />
               <.nav_link href="/players" label={gettext("Players")} />
               <.nav_link href="/matches" label={gettext("Matches")} />
-              <.nav_link href="/replays" label={gettext("Replays")} />
               <.nav_link href="/builds" label={gettext("Builds")} />
-              <.nav_link href="/wiki" label={gettext("Wiki")} />
+              <.nav_link href="/wiki" label={gettext("Database")} />
+              <.nav_dropdown label={gettext("More")}>
+                <.nav_dropdown_item href="/tournaments" label={gettext("Tournaments")} />
+                <.nav_dropdown_item href="/balance" label={gettext("Balance")} />
+                <.nav_dropdown_item href="/replays" label={gettext("Replays")} />
+                <.nav_dropdown_item href="/api" label="API" />
+              </.nav_dropdown>
             </div>
 
             <%!-- Right side --%>
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2.5">
+              <a href="/streams" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error/10 text-error text-xs font-semibold hover:bg-error/15 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-error animate-live-pulse"></span>
+                {gettext("LIVE")}
+              </a>
               <.locale_toggle />
               <.theme_toggle />
             </div>
@@ -173,6 +181,39 @@ defmodule BroodwarWeb.Layouts do
     <a
       href={@href}
       class="px-3 py-1.5 text-[13px] font-medium text-base-content/50 hover:text-base-content rounded-lg hover:bg-primary/5 transition-all duration-150"
+    >
+      {@label}
+    </a>
+    """
+  end
+
+  attr :label, :string, required: true
+  slot :inner_block, required: true
+
+  defp nav_dropdown(assigns) do
+    ~H"""
+    <div class="relative group">
+      <button class="flex items-center gap-1 px-3 py-1.5 text-[13px] font-medium text-base-content/50 hover:text-base-content rounded-lg hover:bg-primary/5 transition-all duration-150 cursor-pointer">
+        {@label}
+        <.icon name="hero-chevron-down-micro" class="size-3 opacity-60" />
+      </button>
+      <div class="absolute top-full right-0 pt-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 z-50">
+        <div class="glass-card-elevated rounded-lg py-1.5 min-w-[160px] shadow-xl">
+          {render_slot(@inner_block)}
+        </div>
+      </div>
+    </div>
+    """
+  end
+
+  attr :href, :string, required: true
+  attr :label, :string, required: true
+
+  defp nav_dropdown_item(assigns) do
+    ~H"""
+    <a
+      href={@href}
+      class="block px-4 py-2 text-[13px] text-base-content/50 hover:text-base-content hover:bg-primary/5 transition-colors"
     >
       {@label}
     </a>

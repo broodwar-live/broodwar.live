@@ -26,6 +26,12 @@ msgstr "밸런스"
 msgid "Wiki"
 msgstr "위키"
 
+msgid "Database"
+msgstr "데이터베이스"
+
+msgid "More"
+msgstr "더보기"
+
 ## Landing page
 msgid "The Home of Competitive Brood War"
 msgstr "경쟁 브루드 워의 중심지"
