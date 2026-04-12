@@ -20,6 +20,8 @@ defmodule BroodwarWeb.Router do
 
     get "/", PageController, :home
 
+    live "/replays", ReplayLive
+
     get "/wiki", WikiController, :index
     get "/wiki/races/:slug", WikiController, :race
     get "/wiki/units/:slug", WikiController, :unit

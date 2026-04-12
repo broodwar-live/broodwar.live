@@ -33,18 +33,18 @@ defmodule BroodwarWeb.Layouts do
 
             <%!-- Navigation Links --%>
             <div class="hidden md:flex items-center gap-1">
-              <.nav_link href="/" label="Home" icon="hero-home-micro" />
-              <.nav_link href="/players" label="Players" icon="hero-user-group-micro" />
-              <.nav_link href="/matches" label="Matches" icon="hero-trophy-micro" />
-              <.nav_link href="/replays" label="Replays" icon="hero-play-circle-micro" />
-              <.nav_link href="/builds" label="Builds" icon="hero-queue-list-micro" />
-              <.nav_link href="/balance" label="Balance" icon="hero-chart-bar-micro" />
-              <.nav_link href="/wiki" label="Wiki" icon="hero-book-open-micro" />
+              <.nav_link href="/" label={gettext("Home")} icon="hero-home-micro" />
+              <.nav_link href="/players" label={gettext("Players")} icon="hero-user-group-micro" />
+              <.nav_link href="/matches" label={gettext("Matches")} icon="hero-trophy-micro" />
+              <.nav_link href="/replays" label={gettext("Replays")} icon="hero-play-circle-micro" />
+              <.nav_link href="/builds" label={gettext("Builds")} icon="hero-queue-list-micro" />
+              <.nav_link href="/balance" label={gettext("Balance")} icon="hero-chart-bar-micro" />
+              <.nav_link href="/wiki" label={gettext("Wiki")} icon="hero-book-open-micro" />
             </div>
 
             <%!-- Right side --%>
             <div class="flex items-center gap-3">
-              <.locale_toggle locale={assigns[:locale] || "en"} />
+              <.locale_toggle />
               <.theme_toggle />
             </div>
           </div>
@@ -61,11 +61,10 @@ defmodule BroodwarWeb.Layouts do
             <div class="flex items-center gap-2 text-sm text-base-content/40">
               <span class="font-medium">broodwar<span class="text-primary/60">.live</span></span>
               <span>&middot;</span>
-              <span>Open source community project</span>
+              <span>{gettext("Open source community project")}</span>
             </div>
             <p class="text-xs text-base-content/30 text-center sm:text-right max-w-md">
-              Not affiliated with Blizzard Entertainment or Microsoft.
-              StarCraft and Brood War are trademarks of Blizzard Entertainment, Inc.
+              {gettext("Not affiliated with Blizzard Entertainment or Microsoft. StarCraft and Brood War are trademarks of Blizzard Entertainment, Inc.")}
             </p>
           </div>
         </div>
@@ -131,10 +130,9 @@ defmodule BroodwarWeb.Layouts do
     """
   end
 
-  attr :locale, :string, required: true
-
   def locale_toggle(assigns) do
-    assigns = assign(assigns, :other_locale, if(assigns.locale == "ko", do: "en", else: "ko"))
+    locale = Gettext.get_locale(BroodwarWeb.Gettext)
+    assigns = assign(assigns, :locale, locale)
 
     ~H"""
     <div class="flex items-center border border-base-content/10 bg-base-200 rounded-full p-0.5">
