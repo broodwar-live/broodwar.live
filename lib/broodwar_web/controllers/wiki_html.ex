@@ -38,8 +38,8 @@ defmodule BroodwarWeb.WikiHTML do
   def race_bg_subtle("zerg"), do: "bg-race-zerg/5"
   def race_bg_subtle(_), do: "bg-base-content/5"
 
-  def unit_type_label(:ground), do: gettext("Ground")
-  def unit_type_label(:air), do: gettext("Air")
+  def unit_type_label(:ground), do: gettext("Ground unit")
+  def unit_type_label(:air), do: gettext("Air unit")
   def unit_type_label(_), do: gettext("Unit")
 
   attr :stat, :string, required: true
@@ -89,6 +89,47 @@ defmodule BroodwarWeb.WikiHTML do
   def players_label(3), do: gettext("3-way")
   def players_label(4), do: gettext("4-player")
   def players_label(n), do: "#{n}-player"
+
+  @doc """
+  Returns the translated name for a caster unit slug.
+  Looks up the unit in Wiki.Data and returns the locale-appropriate name.
+  """
+  def caster_name(slug) do
+    case Broodwar.Wiki.Data.unit(slug) do
+      nil -> slug |> String.replace("-", " ") |> String.capitalize()
+      unit -> t(unit, :name)
+    end
+  end
+
+  @doc """
+  Returns the translated tileset name.
+  """
+  def tileset_label("Jungle World"), do: gettext("Jungle World")
+  def tileset_label("Space Platform"), do: gettext("Space Platform")
+  def tileset_label("Desert"), do: gettext("Desert")
+  def tileset_label("Badlands"), do: gettext("Badlands")
+  def tileset_label("Twilight"), do: gettext("Twilight")
+  def tileset_label("Ice"), do: gettext("Ice")
+  def tileset_label(other), do: other
+
+  @doc """
+  Returns the translated era label.
+  """
+  def era_label(era), do: t_era(era)
+
+  defp t_era("1998-2003"), do: gettext("1998-2003")
+  defp t_era("2003-2008"), do: gettext("2003-2008")
+  defp t_era("2005-2010"), do: gettext("2005-2010")
+  defp t_era("2007-2010"), do: gettext("2007-2010")
+  defp t_era("2008-present"), do: gettext("2008-present")
+  defp t_era("2009-2012"), do: gettext("2009-2012")
+  defp t_era("2010-present"), do: gettext("2010-present")
+  defp t_era("2011-present"), do: gettext("2011-present")
+  defp t_era("2017-present"), do: gettext("2017-present")
+  defp t_era("2018-present"), do: gettext("2018-present")
+  defp t_era("2020-present"), do: gettext("2020-present")
+  defp t_era("2021-present"), do: gettext("2021-present")
+  defp t_era(other), do: other
 
   attr :race, :map, required: true
 

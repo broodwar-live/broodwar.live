@@ -184,12 +184,6 @@ msgstr "생산 건물"
 msgid "Produces"
 msgstr "생산 유닛"
 
-msgid "Ground"
-msgstr "지상"
-
-msgid "Air"
-msgstr "공중"
-
 msgid "Unit"
 msgstr "유닛"
 
@@ -247,12 +241,68 @@ msgstr "닫기"
 msgid "Actions"
 msgstr "작업"
 
-## Unit types as labels
+## Unit type labels
 msgid "Ground unit"
 msgstr "지상 유닛"
 
 msgid "Air unit"
 msgstr "공중 유닛"
+
+## Tileset names
+msgid "Jungle World"
+msgstr "정글 월드"
+
+msgid "Space Platform"
+msgstr "우주 플랫폼"
+
+msgid "Desert"
+msgstr "사막"
+
+msgid "Badlands"
+msgstr "황무지"
+
+msgid "Twilight"
+msgstr "황혼"
+
+msgid "Ice"
+msgstr "빙하"
+
+## Era labels
+msgid "1998-2003"
+msgstr "1998-2003"
+
+msgid "2003-2008"
+msgstr "2003-2008"
+
+msgid "2005-2010"
+msgstr "2005-2010"
+
+msgid "2007-2010"
+msgstr "2007-2010"
+
+msgid "2008-present"
+msgstr "2008-현재"
+
+msgid "2009-2012"
+msgstr "2009-2012"
+
+msgid "2010-present"
+msgstr "2010-현재"
+
+msgid "2011-present"
+msgstr "2011-현재"
+
+msgid "2017-present"
+msgstr "2017-현재"
+
+msgid "2018-present"
+msgstr "2018-현재"
+
+msgid "2020-present"
+msgstr "2020-현재"
+
+msgid "2021-present"
+msgstr "2021-현재"
 
 msgid "1v1"
 msgstr "1대1"

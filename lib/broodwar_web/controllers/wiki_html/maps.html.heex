@@ -33,11 +33,11 @@
             <span class="badge badge-ghost text-[10px]">{players_label(map.players)}</span>
           </div>
           <div class="flex items-center gap-2 text-xs text-base-content/40">
-            <span class={tileset_color(map.tileset)}>{map.tileset}</span>
+            <span class={tileset_color(map.tileset)}>{tileset_label(map.tileset)}</span>
             <span>&middot;</span>
             <span>{map.dimensions}</span>
             <span>&middot;</span>
-            <span>{map.era}</span>
+            <span>{era_label(map.era)}</span>
           </div>
         </div>
       </a>

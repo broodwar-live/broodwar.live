@@ -127,7 +127,7 @@
           />
           <div>
             <span class="font-medium text-sm group-hover:text-primary transition-colors block">{t(ability, :name)}</span>
-            <span class="text-xs text-base-content/40">{ability.caster |> String.replace("-", " ") |> String.capitalize()}</span>
+            <span class="text-xs text-base-content/40">{caster_name(ability.caster)}</span>
           </div>
         </div>
       </a>

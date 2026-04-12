@@ -8,29 +8,28 @@
       <div class="text-center max-w-3xl mx-auto">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-success/10 border border-success/20 text-success text-xs font-medium mb-6">
           <span class="w-1.5 h-1.5 rounded-full bg-success animate-live-pulse"></span>
-          ASL Season 21 — Live Now
+          {gettext("ASL Season 21 — Live Now")}
         </div>
 
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
           <span class="text-gradient-blue">StarCraft:</span>
           <span class="text-base-content"> Brood War</span>
           <br />
-          <span class="text-gradient-gold">Community Hub</span>
+          <span class="text-gradient-gold">{gettext("Community Hub")}</span>
         </h1>
 
         <p class="mt-6 text-lg text-base-content/60 leading-relaxed max-w-2xl mx-auto">
-          Match stats, replay analysis, build orders, and live stream tracking
-          for the competitive Brood War scene. From ASL to Fish ladder.
+          {gettext("Match stats, replay analysis, build orders, and live stream tracking for the competitive Brood War scene. From ASL to Fish ladder.")}
         </p>
 
         <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a href="/replays" class="btn btn-primary">
             <.icon name="hero-play-circle-micro" class="size-4" />
-            Analyze a Replay
+            {gettext("Analyze a Replay")}
           </a>
           <a href="/players" class="btn btn-ghost border border-base-content/10">
             <.icon name="hero-user-group-micro" class="size-4" />
-            Browse Players
+            {gettext("Browse Players")}
           </a>
         </div>
       </div>
@@ -42,10 +41,10 @@
     <div class="flex items-center justify-between mb-5">
       <h2 class="flex items-center gap-2 text-lg font-semibold">
         <span class="w-2 h-2 rounded-full bg-error animate-live-pulse"></span>
-        Live Streams
+        {gettext("Live Streams")}
       </h2>
       <a href="/streams" class="text-sm text-primary hover:text-primary/80 transition-colors">
-        View all &rarr;
+        {gettext("View all")} &rarr;
       </a>
     </div>
 
@@ -60,9 +59,9 @@
   <%!-- Recent Matches Section --%>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <div class="flex items-center justify-between mb-5">
-      <h2 class="text-lg font-semibold">Recent Matches</h2>
+      <h2 class="text-lg font-semibold">{gettext("Recent Matches")}</h2>
       <a href="/matches" class="text-sm text-primary hover:text-primary/80 transition-colors">
-        View all &rarr;
+        {gettext("View all")} &rarr;
       </a>
     </div>
 
@@ -132,7 +131,7 @@
       <div class="bg-base-100 rounded-box border border-base-content/5 p-5 card-accent-top">
         <h3 class="text-sm font-medium text-base-content/50 mb-4">
           <.icon name="hero-chart-bar-micro" class="size-3.5 inline mr-1" />
-          Matchup Balance (30d)
+          {gettext("Matchup Balance (30d)")}
         </h3>
         <div class="space-y-3">
           <.balance_bar matchup="TvZ" left={52} right={48} />
@@ -145,7 +144,7 @@
       <div class="bg-base-100 rounded-box border border-base-content/5 p-5 card-accent-top">
         <h3 class="text-sm font-medium text-base-content/50 mb-4">
           <.icon name="hero-trophy-micro" class="size-3.5 inline mr-1" />
-          Top Rated
+          {gettext("Top Rated")}
         </h3>
         <div class="space-y-2.5">
           <.player_rank rank={1} name="Flash" race="T" rating={2847} />
@@ -160,7 +159,7 @@
       <div class="bg-base-100 rounded-box border border-base-content/5 p-5 card-accent-top">
         <h3 class="text-sm font-medium text-base-content/50 mb-4">
           <.icon name="hero-calendar-micro" class="size-3.5 inline mr-1" />
-          Upcoming
+          {gettext("Upcoming")}
         </h3>
         <div class="space-y-3">
           <.upcoming_match
@@ -198,9 +197,9 @@
   <%!-- Popular Builds Section --%>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 pb-16">
     <div class="flex items-center justify-between mb-5">
-      <h2 class="text-lg font-semibold">Popular Builds</h2>
+      <h2 class="text-lg font-semibold">{gettext("Popular Builds")}</h2>
       <a href="/builds" class="text-sm text-primary hover:text-primary/80 transition-colors">
-        Browse all &rarr;
+        {gettext("Browse all")} &rarr;
       </a>
     </div>
 

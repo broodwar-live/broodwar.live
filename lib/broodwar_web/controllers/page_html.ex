@@ -37,10 +37,10 @@ defmodule BroodwarWeb.PageHTML do
         </div>
         <div class="absolute top-2 left-2 flex items-center gap-1.5 px-2 py-0.5 rounded bg-error/90 text-error-content text-xs font-medium">
           <span class="w-1.5 h-1.5 rounded-full bg-error-content animate-live-pulse"></span>
-          LIVE
+          {gettext("LIVE")}
         </div>
         <div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-base-300/80 text-xs text-base-content/70">
-          {@viewers} viewers
+          {@viewers} {gettext("viewers")}
         </div>
       </div>
       <div class="p-3">
@@ -197,7 +197,7 @@ defmodule BroodwarWeb.PageHTML do
       <div class="flex items-center gap-2 text-sm">
         <span class={["text-xs font-bold", race_color(@race_a)]}>{@race_a}</span>
         <span class="font-medium">{@player_a}</span>
-        <span class="text-base-content/20 text-xs">vs</span>
+        <span class="text-base-content/20 text-xs">{gettext("vs")}</span>
         <span class="font-medium">{@player_b}</span>
         <span class={["text-xs font-bold", race_color(@race_b)]}>{@race_b}</span>
       </div>
@@ -232,14 +232,14 @@ defmodule BroodwarWeb.PageHTML do
       </div>
       <p class="text-xs text-base-content/50 leading-relaxed mb-3">{@description}</p>
       <div class="flex items-center gap-4 text-xs text-base-content/40">
-        <span>{@games} games</span>
+        <span>{@games} {gettext("games")}</span>
         <span class={[
           "font-medium",
           @winrate >= 55 && "text-success",
           @winrate < 55 && @winrate >= 50 && "text-base-content/60",
           @winrate < 50 && "text-error"
         ]}>
-          {@winrate}% winrate
+          {@winrate}% {gettext("winrate")}
         </span>
       </div>
     </div>

@@ -14,11 +14,11 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8">
     <h1 class="text-3xl font-bold tracking-tight">{t(@map, :name)}</h1>
     <div class="mt-1 flex items-center gap-2 text-sm text-base-content/50">
-      <span class={tileset_color(@map.tileset)}>{@map.tileset}</span>
+      <span class={tileset_color(@map.tileset)}>{tileset_label(@map.tileset)}</span>
       <span>&middot;</span>
       <span>{players_label(@map.players)}</span>
       <span>&middot;</span>
-      <span>{@map.era}</span>
+      <span>{era_label(@map.era)}</span>
     </div>
   </section>
 
@@ -53,7 +53,7 @@
             </div>
             <div class="flex justify-between text-sm">
               <dt class="text-base-content/50">{gettext("Tileset")}</dt>
-              <dd class={tileset_color(@map.tileset)}>{@map.tileset}</dd>
+              <dd class={tileset_color(@map.tileset)}>{tileset_label(@map.tileset)}</dd>
             </div>
             <div class="h-px bg-base-content/10 my-1"></div>
             <div class="flex justify-between text-sm">
@@ -62,7 +62,7 @@
             </div>
             <div class="flex justify-between text-sm">
               <dt class="text-base-content/50">{gettext("Era")}</dt>
-              <dd>{@map.era}</dd>
+              <dd>{era_label(@map.era)}</dd>
             </div>
           </dl>
         </div>
