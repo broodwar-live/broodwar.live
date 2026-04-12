@@ -73,144 +73,132 @@ defmodule BroodwarWeb.ReplayDetailLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash}>
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <% header = @parsed["header"] || %{} %>
-        <% players = header["players"] || [] %>
-        <% player_apm = @parsed["player_apm"] || [] %>
-        <% snap = Enum.at(@timeline, @timeline_idx) %>
+    <div id="replay-app" phx-window-keydown="keyseek" class="h-screen flex flex-col overflow-hidden bg-base-200">
+      <%!-- Reuse the app header --%>
+      <header class="bg-base-300/80 backdrop-blur-md border-b border-base-content/5 shrink-0 z-50">
+        <nav class="max-w-full mx-auto px-4">
+          <div class="flex items-center justify-between h-12">
+            <a href="/" class="flex items-center gap-2 group">
+              <div class="w-6 h-6 rounded bg-primary/15 border border-primary/30 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
+                <span class="text-primary font-bold text-[10px]">BW</span>
+              </div>
+              <span class="font-semibold text-base-content tracking-tight text-xs">
+                broodwar<span class="text-primary">.live</span>
+              </span>
+            </a>
+            <Layouts.flash_group flash={@flash} />
+          </div>
+        </nav>
+      </header>
 
-        <%!-- Header --%>
-        <div class="bg-base-100 rounded-box border border-base-content/5 card-accent-top p-5 mb-4">
-          <div class="flex items-start justify-between">
-            <div>
-              <h1 class="text-xl font-bold">{header["map_name"] || "Unknown Map"}</h1>
-              <p class="text-sm text-base-content/40">
-                {format_duration(header["duration_secs"])}
-                · {format_atom(header["game_type"])}
-                · {format_atom(header["game_speed"])}
-                · {@parsed["command_count"] || 0} commands
-              </p>
-            </div>
-            <div class="flex gap-2">
-              <%= for {player, apm} <- players_with_apm(players, player_apm), MapSet.member?(@active_player_ids, player["player_id"]) do %>
-                <div class="rounded-lg px-3 py-2 text-center" style={"background: #{player["color_hex"]}15; border-left: 3px solid #{player["color_hex"]}"}>
-                  <span class="text-xs font-bold" style={"color: #{player["color_hex"]}"}>{player["race_code"]}</span>
-                  <span class="text-sm font-medium ml-1">{player["name"]}</span>
-                  <%= if apm do %>
-                    <div class="text-xs text-base-content/40 font-mono">{apm["apm"]} APM</div>
-                  <% end %>
+      <% header = @parsed["header"] || %{} %>
+      <% players = header["players"] || [] %>
+      <% player_apm = @parsed["player_apm"] || [] %>
+      <% snap = Enum.at(@timeline, @timeline_idx) %>
+      <% current_pct = if @max_idx > 0, do: @timeline_idx / @max_idx * 100, else: 0 %>
+      <% bar_count = length(@waveform) %>
+      <% sorted_active = MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2) %>
+      <% p1_color = @player_colors[Enum.at(sorted_active, 0)] || "#0C48CC" %>
+      <% p2_color = @player_colors[Enum.at(sorted_active, 1)] || "#F40404" %>
+      <% p1 = Enum.find(players, fn p -> p["player_id"] == Enum.at(sorted_active, 0) end) %>
+      <% p2 = Enum.find(players, fn p -> p["player_id"] == Enum.at(sorted_active, 1) end) %>
+      <% build_order = @parsed["build_order"] || [] %>
+
+      <%!-- Compact match info bar --%>
+      <div class="shrink-0 border-b border-base-content/5 bg-base-100 px-4 py-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <a href="/replays" class="text-base-content/30 hover:text-base-content/60 transition-colors">
+              <.icon name="hero-arrow-left-micro" class="size-4" />
+            </a>
+            <span class="font-semibold text-sm">{header["map_name"] || "Unknown Map"}</span>
+            <span class="text-xs text-base-content/30">
+              {format_duration(header["duration_secs"])} · {format_atom(header["game_speed"])} · {@parsed["command_count"] || 0} cmds
+            </span>
+          </div>
+          <div class="flex items-center gap-2">
+            <%= for {player, apm} <- players_with_apm(players, player_apm), MapSet.member?(@active_player_ids, player["player_id"]) do %>
+              <div class="flex items-center gap-1.5 px-2 py-0.5 rounded" style={"background: #{player["color_hex"]}12; border-left: 2px solid #{player["color_hex"]}"}>
+                <span class="text-[10px] font-bold" style={"color: #{player["color_hex"]}"}>{player["race_code"]}</span>
+                <span class="text-xs font-medium">{player["name"]}</span>
+                <%= if apm do %>
+                  <span class="text-[10px] text-base-content/30 font-mono">{apm["apm"]}</span>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <%!-- Main content area — fills remaining space --%>
+      <div class="flex-1 flex overflow-hidden">
+        <%!-- Left: Build Order (scrollable) --%>
+        <div class="w-80 shrink-0 border-r border-base-content/5 bg-base-100 flex flex-col overflow-hidden">
+          <div class="shrink-0 px-3 py-2 border-b border-base-content/5 flex items-center justify-between">
+            <span class="text-xs font-semibold text-base-content/60">Build Order</span>
+            <span class="text-[10px] text-base-content/30">{length(build_order)}</span>
+          </div>
+          <div id="bo-scroll" phx-hook="BoScroll" class="flex-1 overflow-y-auto px-2 py-1" style="scrollbar-width: thin;">
+            <%= for {block_time, entries} <- group_by_time(build_order, 30) do %>
+              <div id={"bo-t-#{trunc(block_time)}"} class="mb-0.5">
+                <div class="text-[10px] font-mono text-base-content/20 px-1 pt-1">{format_game_time(block_time)}</div>
+                <div class="grid grid-cols-2 gap-x-1">
+                  <div class="flex flex-col">
+                    <%= for entry <- Enum.filter(entries, fn e -> e["player_id"] == Enum.at(sorted_active, 0) end) do %>
+                      <.bo_entry entry={entry} color={@player_colors[entry["player_id"]] || "#CCC"} current={entry_is_current?(entry, @timeline_idx, build_order)} />
+                    <% end %>
+                  </div>
+                  <div class="flex flex-col">
+                    <%= for entry <- Enum.filter(entries, fn e -> e["player_id"] == Enum.at(sorted_active, 1) end) do %>
+                      <.bo_entry entry={entry} color={@player_colors[entry["player_id"]] || "#CCC"} current={entry_is_current?(entry, @timeline_idx, build_order)} />
+                    <% end %>
+                  </div>
                 </div>
-              <% end %>
-            </div>
+              </div>
+            <% end %>
           </div>
         </div>
 
-        <% current_pct = if @max_idx > 0, do: @timeline_idx / @max_idx * 100, else: 0 %>
-        <% bar_count = length(@waveform) %>
-        <% sorted_active = MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2) %>
-        <% p1_color = @player_colors[Enum.at(sorted_active, 0)] || "#0C48CC" %>
-        <% p2_color = @player_colors[Enum.at(sorted_active, 1)] || "#F40404" %>
-        <% p1 = Enum.find(players, fn p -> p["player_id"] == Enum.at(sorted_active, 0) end) %>
-        <% p2 = Enum.find(players, fn p -> p["player_id"] == Enum.at(sorted_active, 1) end) %>
-
-          <%!-- Build Order Timeline --%>
-          <% build_order = @parsed["build_order"] || [] %>
-          <% sorted_active = MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2) %>
-          <%= if build_order != [] do %>
-            <div class="bg-base-100 rounded-box border border-base-content/5 p-5 mb-4">
-              <div class="flex items-center justify-between mb-4">
-                <h2 class="font-semibold">Build Order</h2>
-                <span class="text-xs text-base-content/40">{length(build_order)} actions</span>
-              </div>
-
-              <div id="bo-scroll" phx-hook="BoScroll" class="overflow-y-auto max-h-[500px] pr-2" style="scrollbar-width: thin;">
-                <%!-- Group build order into 30-second time blocks --%>
-                <%= for {block_time, entries} <- group_by_time(build_order, 30) do %>
-                  <div id={"bo-t-#{trunc(block_time)}"} class="flex gap-0 mb-0.5">
-                    <%!-- Time label --%>
-                    <div class="w-12 shrink-0 pt-1">
-                      <span class="text-[10px] font-mono text-base-content/30">{format_game_time(block_time)}</span>
-                    </div>
-
-                    <%!-- Two-column entries --%>
-                    <div class="flex-1 grid grid-cols-2 gap-x-3 gap-y-0">
-                      <%!-- Player 1 column --%>
-                      <div class="flex flex-col gap-0.5 border-r border-base-content/5 pr-3">
-                        <%= for entry <- Enum.filter(entries, fn e -> e["player_id"] == Enum.at(sorted_active, 0) end) do %>
-                          <.bo_entry
-                            entry={entry}
-                            color={@player_colors[entry["player_id"]] || "#CCC"}
-                            current={entry_is_current?(entry, @timeline_idx, build_order)}
-                          />
-                        <% end %>
-                      </div>
-                      <%!-- Player 2 column --%>
-                      <div class="flex flex-col gap-0.5 pl-1">
-                        <%= for entry <- Enum.filter(entries, fn e -> e["player_id"] == Enum.at(sorted_active, 1) end) do %>
-                          <.bo_entry
-                            entry={entry}
-                            color={@player_colors[entry["player_id"]] || "#CCC"}
-                            current={entry_is_current?(entry, @timeline_idx, build_order)}
-                          />
-                        <% end %>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
-              </div>
-            </div>
-          <% end %>
-
-          <%!-- State at current position --%>
+        <%!-- Right: State panels (scrollable) --%>
+        <div class="flex-1 overflow-y-auto p-4" style="scrollbar-width: thin;">
           <%= if snap do %>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-3">
               <%= for ps <- snap["players"] || [], MapSet.member?(@active_player_ids, ps["player_id"]) do %>
                 <% player = Enum.find(players, fn p -> p["player_id"] == ps["player_id"] end) %>
                 <% pcolor = @player_colors[ps["player_id"]] || "#CCC" %>
-                <div class="bg-base-100 rounded-box border border-base-content/5 p-5" style={"border-top: 3px solid #{pcolor}"}>
-                  <%!-- Player header --%>
-                  <div class="flex items-center gap-2 mb-4">
-                    <span class="text-sm font-bold" style={"color: #{pcolor}"}>
-                      {player && player["race_code"]}
-                    </span>
-                    <span class="font-medium text-sm">{player && player["name"]}</span>
+                <div class="bg-base-100 rounded-lg border border-base-content/5 p-4" style={"border-top: 2px solid #{pcolor}"}>
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-xs font-bold" style={"color: #{pcolor}"}>{player && player["race_code"]}</span>
+                      <span class="font-medium text-sm">{player && player["name"]}</span>
+                    </div>
+                    <span class="text-[10px] font-mono text-base-content/30">{format_game_time(snap["real_seconds"])}</span>
                   </div>
 
-                  <%!-- Resources invested --%>
-                  <div class="grid grid-cols-2 gap-3 mb-4">
-                    <div class="bg-base-200/50 rounded-lg p-2.5">
-                      <div class="text-[10px] text-blue-400/60 uppercase tracking-wide mb-0.5">Minerals</div>
-                      <div class="text-lg font-mono font-bold text-blue-400">{ps["minerals_invested"]}</div>
+                  <%!-- Resources + Supply compact row --%>
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="flex items-center gap-1">
+                      <span class="text-[10px] text-blue-400/60">MIN</span>
+                      <span class="text-sm font-mono font-bold text-blue-400">{ps["minerals_invested"]}</span>
                     </div>
-                    <div class="bg-base-200/50 rounded-lg p-2.5">
-                      <div class="text-[10px] text-green-400/60 uppercase tracking-wide mb-0.5">Gas</div>
-                      <div class="text-lg font-mono font-bold text-green-400">{ps["gas_invested"]}</div>
+                    <div class="flex items-center gap-1">
+                      <span class="text-[10px] text-green-400/60">GAS</span>
+                      <span class="text-sm font-mono font-bold text-green-400">{ps["gas_invested"]}</span>
                     </div>
-                  </div>
-
-                  <%!-- Supply --%>
-                  <div class="mb-4">
-                    <div class="flex items-center justify-between text-xs mb-1">
-                      <span class="text-base-content/40">Supply</span>
-                      <span class="font-mono">{ps["supply_used"]}/{ps["supply_max"]}</span>
-                    </div>
-                    <div class="h-1.5 bg-base-300 rounded-full overflow-hidden">
-                      <div
-                        class="h-full rounded-full transition-all"
-                        style={"width: #{supply_pct(ps)}%; background: #{if supply_pct(ps) > 90, do: "#F40404", else: pcolor}"}
-                      ></div>
+                    <div class="flex items-center gap-1 ml-auto">
+                      <span class="text-[10px] text-base-content/40">SUP</span>
+                      <span class="text-sm font-mono">{ps["supply_used"]}/{ps["supply_max"]}</span>
                     </div>
                   </div>
 
                   <%!-- Units --%>
                   <%= if ps["units"] != [] do %>
-                    <div class="mb-3">
-                      <div class="text-[10px] text-base-content/40 uppercase tracking-wide mb-1.5">Units</div>
-                      <div class="flex flex-wrap gap-1.5">
+                    <div class="mb-2">
+                      <div class="text-[9px] text-base-content/30 uppercase tracking-wide mb-1">Units</div>
+                      <div class="flex flex-wrap gap-1">
                         <%= for u <- ps["units"] do %>
-                          <span class="badge badge-sm badge-ghost font-mono">
-                            {u["name"]} <span class="text-primary ml-1">×{u["count"]}</span>
+                          <span class="text-[10px] bg-base-200/80 rounded px-1.5 py-0.5 font-mono">
+                            {u["name"]} <span style={"color: #{pcolor}"}>x{u["count"]}</span>
                           </span>
                         <% end %>
                       </div>
@@ -219,12 +207,12 @@ defmodule BroodwarWeb.ReplayDetailLive do
 
                   <%!-- Buildings --%>
                   <%= if ps["buildings"] != [] do %>
-                    <div class="mb-3">
-                      <div class="text-[10px] text-base-content/40 uppercase tracking-wide mb-1.5">Buildings</div>
-                      <div class="flex flex-wrap gap-1.5">
+                    <div class="mb-2">
+                      <div class="text-[9px] text-base-content/30 uppercase tracking-wide mb-1">Buildings</div>
+                      <div class="flex flex-wrap gap-1">
                         <%= for b <- ps["buildings"] do %>
-                          <span class="badge badge-sm badge-ghost font-mono">
-                            {b["name"]} <span class="text-secondary ml-1">×{b["count"]}</span>
+                          <span class="text-[10px] bg-base-200/80 rounded px-1.5 py-0.5 font-mono">
+                            {b["name"]} <span style={"color: #{pcolor}"}>x{b["count"]}</span>
                           </span>
                         <% end %>
                       </div>
@@ -234,15 +222,13 @@ defmodule BroodwarWeb.ReplayDetailLive do
                   <%!-- Tech & Upgrades --%>
                   <%= if ps["techs"] != [] or ps["upgrades"] != [] do %>
                     <div>
-                      <div class="text-[10px] text-base-content/40 uppercase tracking-wide mb-1.5">Tech</div>
-                      <div class="flex flex-wrap gap-1.5">
+                      <div class="text-[9px] text-base-content/30 uppercase tracking-wide mb-1">Tech</div>
+                      <div class="flex flex-wrap gap-1">
                         <%= for t <- ps["techs"] do %>
-                          <span class="badge badge-sm badge-accent badge-outline">{t["name"]}</span>
+                          <span class="text-[10px] rounded px-1.5 py-0.5 font-mono border border-accent/30 text-accent">{t["name"]}</span>
                         <% end %>
                         <%= for u <- ps["upgrades"] do %>
-                          <span class="badge badge-sm badge-warning badge-outline">
-                            {u["name"]} Lv{u["level"]}
-                          </span>
+                          <span class="text-[10px] rounded px-1.5 py-0.5 font-mono border border-warning/30 text-warning">{u["name"]} {u["level"]}</span>
                         <% end %>
                       </div>
                     </div>
@@ -251,100 +237,47 @@ defmodule BroodwarWeb.ReplayDetailLive do
               <% end %>
             </div>
           <% end %>
-
+        </div>
       </div>
 
-      <%!-- Sticky bottom waveform bar --%>
+      <%!-- Bottom waveform bar --%>
       <%= if @max_idx > 0 and @waveform != [] do %>
-        <div
-          id="waveform-bar"
-          phx-hook="WaveformBar"
-          phx-window-keydown="keyseek"
-          class="fixed bottom-0 left-0 right-0 z-50 bg-base-300/95 backdrop-blur-md border-t border-base-content/10"
-        >
-          <div class="max-w-6xl mx-auto px-4">
-            <%!-- Waveform with player names --%>
-            <div class="relative">
-              <%!-- Player names overlaid --%>
-              <%= if p1 do %>
-                <div class="absolute top-1 left-2 z-10 flex items-center gap-1 text-[10px] font-bold opacity-70" style={"color: #{p1_color}"}>
-                  {p1["race_code"]} {p1["name"]}
-                </div>
-              <% end %>
-              <%= if p2 do %>
-                <div class="absolute bottom-1 left-2 z-10 flex items-center gap-1 text-[10px] font-bold opacity-70" style={"color: #{p2_color}"}>
-                  {p2["race_code"]} {p2["name"]}
-                </div>
-              <% end %>
-
-              <%!-- SVG Waveform --%>
-              <div
-                id="apm-waveform"
-                phx-hook="WaveformClick"
-                class="cursor-pointer select-none"
-                style="height: 56px;"
-              >
-                <svg
-                  viewBox={"0 0 #{bar_count} 100"}
-                  preserveAspectRatio="none"
-                  class="w-full h-full"
-                  style="display: block;"
-                >
-                  <%!-- Player 1 bars (upward) --%>
-                  <%= for {bar, i} <- Enum.with_index(@waveform) do %>
-                    <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
-                    <rect
-                      x={i}
-                      y={50 - bar.p1_height}
-                      width="0.8"
-                      height={bar.p1_height}
-                      rx="0.15"
-                      fill={p1_color}
-                      opacity={if(played, do: "0.9", else: "0.2")}
-                    />
-                  <% end %>
-
-                  <%!-- Player 2 bars (downward) --%>
-                  <%= for {bar, i} <- Enum.with_index(@waveform) do %>
-                    <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
-                    <rect
-                      x={i}
-                      y="50"
-                      width="0.8"
-                      height={bar.p2_height}
-                      rx="0.15"
-                      fill={p2_color}
-                      opacity={if(played, do: "0.9", else: "0.2")}
-                    />
-                  <% end %>
-
-                  <%!-- Center line --%>
-                  <rect x="0" y="49.85" width={bar_count} height="0.3" fill="currentColor" opacity="0.06" />
-
-                  <%!-- Playhead --%>
-                  <rect x={current_pct / 100 * bar_count} y="0" width="0.4" height="100" fill="white" opacity="0.7" />
-                </svg>
+        <div id="waveform-bar" phx-hook="WaveformBar" class="shrink-0 bg-base-300 border-t border-base-content/10">
+          <div class="relative">
+            <%!-- Player names overlaid --%>
+            <%= if p1 do %>
+              <div class="absolute top-0.5 left-2 z-10 text-[9px] font-bold opacity-60" style={"color: #{p1_color}"}>
+                {p1["race_code"]} {p1["name"]}
               </div>
-            </div>
+            <% end %>
+            <%= if p2 do %>
+              <div class="absolute bottom-0.5 left-2 z-10 text-[9px] font-bold opacity-60" style={"color: #{p2_color}"}>
+                {p2["race_code"]} {p2["name"]}
+              </div>
+            <% end %>
 
-            <%!-- Time display --%>
-            <div class="flex items-center justify-between py-1">
-              <span class="text-[10px] font-mono text-base-content/40">
-                {format_game_time(snap && snap["real_seconds"])}
-              </span>
-              <span class="text-[10px] text-base-content/25">
-                arrow keys to step
-              </span>
-              <span class="text-[10px] font-mono text-base-content/40">
-                {format_duration(header["duration_secs"])}
-              </span>
+            <div id="apm-waveform" phx-hook="WaveformClick" class="cursor-pointer select-none" style="height: 48px;">
+              <svg viewBox={"0 0 #{bar_count} 100"} preserveAspectRatio="none" class="w-full h-full" style="display: block;">
+                <%= for {bar, i} <- Enum.with_index(@waveform) do %>
+                  <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
+                  <rect x={i} y={50 - bar.p1_height} width="0.8" height={bar.p1_height} rx="0.15" fill={p1_color} opacity={if(played, do: "0.9", else: "0.15")} />
+                <% end %>
+                <%= for {bar, i} <- Enum.with_index(@waveform) do %>
+                  <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
+                  <rect x={i} y="50" width="0.8" height={bar.p2_height} rx="0.15" fill={p2_color} opacity={if(played, do: "0.9", else: "0.15")} />
+                <% end %>
+                <rect x="0" y="49.85" width={bar_count} height="0.3" fill="currentColor" opacity="0.05" />
+                <rect x={current_pct / 100 * bar_count} y="0" width="0.4" height="100" fill="white" opacity="0.6" />
+              </svg>
             </div>
           </div>
+          <div class="flex items-center justify-between px-3 pb-1">
+            <span class="text-[10px] font-mono text-base-content/40">{format_game_time(snap && snap["real_seconds"])}</span>
+            <span class="text-[10px] font-mono text-base-content/40">{format_duration(header["duration_secs"])}</span>
+          </div>
         </div>
-        <%!-- Spacer so content doesn't hide behind the sticky bar --%>
-        <div class="h-20"></div>
       <% end %>
-    </Layouts.app>
+    </div>
     """
   end
 
@@ -364,12 +297,6 @@ defmodule BroodwarWeb.ReplayDetailLive do
       apm = Enum.find(apms, fn a -> a["player_id"] == player["player_id"] end)
       {player, apm}
     end)
-  end
-
-  defp supply_pct(ps) do
-    used = ps["supply_used"] || 0
-    maxs = ps["supply_max"] || 1
-    if maxs > 0, do: min(round(used / maxs * 100), 100), else: 0
   end
 
   defp format_duration(secs) when is_number(secs) do
