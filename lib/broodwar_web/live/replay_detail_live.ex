@@ -17,6 +17,12 @@ defmodule BroodwarWeb.ReplayDetailLive do
       |> Enum.uniq()
       |> MapSet.new()
 
+    # Build APM waveform data: group samples by time, pick the two active players
+    apm_samples = pd["apm_timeline"] || []
+    duration_secs = header["duration_secs"] || 1
+    active_list = MapSet.to_list(active_player_ids) |> Enum.sort() |> Enum.take(2)
+    waveform = build_waveform(apm_samples, active_list, duration_secs)
+
     {:ok,
      socket
      |> assign(:page_title, header["map_name"] || "Replay")
@@ -25,13 +31,23 @@ defmodule BroodwarWeb.ReplayDetailLive do
      |> assign(:timeline, timeline)
      |> assign(:timeline_idx, max_idx)
      |> assign(:max_idx, max_idx)
-     |> assign(:active_player_ids, active_player_ids)}
+     |> assign(:active_player_ids, active_player_ids)
+     |> assign(:waveform, waveform)
+     |> assign(:duration_secs, duration_secs)}
   end
 
   @impl true
   def handle_event("seek", %{"position" => pos}, socket) do
     idx = pos |> String.to_integer() |> max(0) |> min(socket.assigns.max_idx)
     {:noreply, assign(socket, :timeline_idx, idx)}
+  end
+
+  @impl true
+  def handle_event("seek_time", %{"pct" => pct_str}, socket) do
+    pct = String.to_float(pct_str) |> max(0.0) |> min(1.0)
+    # Find the timeline index closest to this percentage of the game
+    target_idx = round(pct * socket.assigns.max_idx) |> max(0) |> min(socket.assigns.max_idx)
+    {:noreply, assign(socket, :timeline_idx, target_idx)}
   end
 
   @impl true
@@ -70,31 +86,97 @@ defmodule BroodwarWeb.ReplayDetailLive do
           </div>
         </div>
 
-        <%!-- Timeline Scrubber --%>
-        <%= if @max_idx > 0 do %>
-          <form phx-change="seek" id="timeline-form" class="bg-base-100 rounded-box border border-base-content/5 p-5 mb-4">
-            <div class="flex items-center gap-4 mb-3">
-              <span class="text-xs text-base-content/40 w-12 font-mono">
+        <%!-- APM Waveform Timeline --%>
+        <%= if @max_idx > 0 and @waveform != [] do %>
+          <% current_pct = if @max_idx > 0, do: @timeline_idx / @max_idx * 100, else: 0 %>
+          <% bar_count = length(@waveform) %>
+
+          <div class="bg-base-100 rounded-box border border-base-content/5 p-5 mb-4">
+            <%!-- Player legend --%>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-base-content/40 font-mono">
                 {format_game_time(snap && snap["real_seconds"])}
               </span>
-              <div class="flex-1">
-                <input
-                  type="range"
-                  min="0"
-                  max={@max_idx}
-                  value={@timeline_idx}
-                  name="position"
-                  class="range range-primary range-sm w-full"
-                />
+              <div class="flex items-center gap-4 text-xs">
+                <%= for {pid, _idx} <- Enum.with_index(MapSet.to_list(@active_player_ids) |> Enum.sort() |> Enum.take(2)) do %>
+                  <% player = Enum.find(players, fn p -> p["player_id"] == pid end) %>
+                  <%= if player do %>
+                    <span class="flex items-center gap-1.5">
+                      <span class={["w-2 h-2 rounded-sm", if(pid == List.first(MapSet.to_list(@active_player_ids) |> Enum.sort()), do: "bg-primary", else: "bg-secondary")]}></span>
+                      <span class={["font-bold", race_color(player["race_code"])]}>{player["race_code"]}</span>
+                      <span class="text-base-content/50">{player["name"]}</span>
+                    </span>
+                  <% end %>
+                <% end %>
               </div>
-              <span class="text-xs text-base-content/40 w-12 font-mono text-right">
+              <span class="text-xs text-base-content/40 font-mono">
                 {format_duration(header["duration_secs"])}
               </span>
             </div>
-            <div class="text-xs text-base-content/30 text-center">
-              Build action {@timeline_idx} of {@max_idx}
+
+            <%!-- SVG Waveform --%>
+            <div
+              id="apm-waveform"
+              phx-click="seek_waveform"
+              phx-hook="WaveformClick"
+              class="relative cursor-pointer select-none"
+              style="height: 120px;"
+            >
+              <svg
+                viewBox={"0 0 #{bar_count} 100"}
+                preserveAspectRatio="none"
+                class="w-full h-full"
+                style="display: block;"
+              >
+                <%!-- Player 1 bars (upward from center) --%>
+                <%= for {bar, i} <- Enum.with_index(@waveform) do %>
+                  <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
+                  <rect
+                    x={i}
+                    y={50 - bar.p1_height}
+                    width="0.8"
+                    height={bar.p1_height}
+                    rx="0.2"
+                    class={if(played, do: "fill-primary", else: "fill-primary/25")}
+                  />
+                <% end %>
+
+                <%!-- Player 2 bars (downward from center) --%>
+                <%= for {bar, i} <- Enum.with_index(@waveform) do %>
+                  <% played = (i / max(bar_count - 1, 1) * 100) <= current_pct %>
+                  <rect
+                    x={i}
+                    y="50"
+                    width="0.8"
+                    height={bar.p2_height}
+                    rx="0.2"
+                    class={if(played, do: "fill-secondary", else: "fill-secondary/25")}
+                  />
+                <% end %>
+
+                <%!-- Center line --%>
+                <line x1="0" y1="50" x2={bar_count} y2="50" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.3" />
+
+                <%!-- Playhead --%>
+                <line
+                  x1={current_pct / 100 * bar_count}
+                  y1="0"
+                  x2={current_pct / 100 * bar_count}
+                  y2="100"
+                  stroke="currentColor"
+                  stroke-opacity="0.5"
+                  stroke-width="0.5"
+                />
+              </svg>
             </div>
-          </form>
+
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-[10px] text-base-content/30">APM</span>
+              <span class="text-[10px] text-base-content/30">
+                Build action {@timeline_idx} of {@max_idx}
+              </span>
+            </div>
+          </div>
 
           <%!-- State at current position --%>
           <%= if snap do %>
@@ -290,4 +372,55 @@ defmodule BroodwarWeb.ReplayDetailLive do
 
   defp format_atom(val) when is_binary(val), do: val
   defp format_atom(_), do: "—"
+
+  # Build the waveform bars from APM samples.
+  # Returns a list of %{p1_height: 0-48, p2_height: 0-48} for SVG rendering.
+  defp build_waveform(apm_samples, active_players, duration_secs) when duration_secs > 0 do
+    [p1_id, p2_id] =
+      case active_players do
+        [a, b] -> [a, b]
+        [a] -> [a, nil]
+        _ -> [nil, nil]
+      end
+
+    # Group samples by time bucket (each sample is already at a fixed interval)
+    # Get unique time points
+    times =
+      apm_samples
+      |> Enum.map(& &1["real_seconds"])
+      |> Enum.uniq()
+      |> Enum.sort()
+
+    # Find max APM for normalization
+    max_apm =
+      apm_samples
+      |> Enum.filter(fn s -> s["player_id"] in active_players end)
+      |> Enum.map(& &1["apm"])
+      |> Enum.max(fn -> 1 end)
+      |> max(1)
+
+    Enum.map(times, fn t ->
+      samples_at_t = Enum.filter(apm_samples, fn s -> s["real_seconds"] == t end)
+
+      p1_apm =
+        case Enum.find(samples_at_t, fn s -> s["player_id"] == p1_id end) do
+          %{"apm" => v} -> v
+          _ -> 0
+        end
+
+      p2_apm =
+        case Enum.find(samples_at_t, fn s -> s["player_id"] == p2_id end) do
+          %{"apm" => v} -> v
+          _ -> 0
+        end
+
+      # Normalize to 0-48 (leaving 2px gap at center)
+      %{
+        p1_height: max(round(p1_apm / max_apm * 48), 1),
+        p2_height: max(round(p2_apm / max_apm * 48), 1)
+      }
+    end)
+  end
+
+  defp build_waveform(_, _, _), do: []
 end

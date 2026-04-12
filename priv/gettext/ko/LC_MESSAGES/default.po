@@ -27,6 +27,9 @@ msgid "Wiki"
 msgstr "위키"
 
 ## Landing page
+msgid "The Home of Competitive Brood War"
+msgstr "경쟁 브루드 워의 중심지"
+
 msgid "ASL Season 21 — Live Now"
 msgstr "ASL 시즌 21 — 생방송 중"
 

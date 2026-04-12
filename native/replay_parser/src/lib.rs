@@ -76,6 +76,25 @@ fn encode_replay<'a>(env: Env<'a>, replay: &replay_core::Replay) -> Term<'a> {
         .map(|snap| encode_timeline_snapshot(env, snap))
         .collect();
 
+    // APM over time: sampled every 5 seconds with a 30-second window
+    let apm_samples = replay.apm_over_time(30.0, 5.0);
+    let apm_timeline: Vec<Term> = apm_samples
+        .iter()
+        .map(|s| {
+            rustler::Term::map_from_pairs(
+                env,
+                &[
+                    ("frame", s.frame.encode(env)),
+                    ("real_seconds", s.real_seconds.encode(env)),
+                    ("player_id", s.player_id.encode(env)),
+                    ("apm", (s.apm.round() as u32).encode(env)),
+                    ("eapm", (s.eapm.round() as u32).encode(env)),
+                ],
+            )
+            .unwrap()
+        })
+        .collect();
+
     rustler::Term::map_from_pairs(
         env,
         &[
@@ -84,6 +103,7 @@ fn encode_replay<'a>(env: Env<'a>, replay: &replay_core::Replay) -> Term<'a> {
             ("player_apm", player_apm.encode(env)),
             ("command_count", replay.commands.len().encode(env)),
             ("timeline", timeline.encode(env)),
+            ("apm_timeline", apm_timeline.encode(env)),
         ],
     )
     .unwrap()

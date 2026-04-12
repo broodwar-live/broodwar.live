@@ -25,11 +25,35 @@ import {LiveSocket} from "phoenix_live_view"
 import {hooks as colocatedHooks} from "phoenix-colocated/broodwar"
 import topbar from "../vendor/topbar"
 
+const WaveformClick = {
+  mounted() {
+    const el = this.el
+    const pushSeek = (e) => {
+      const rect = el.getBoundingClientRect()
+      const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width))
+      this.pushEvent("seek_time", {pct: pct.toFixed(6)})
+    }
+
+    el.addEventListener("click", pushSeek)
+
+    // Drag support
+    let dragging = false
+    el.addEventListener("mousedown", (e) => {
+      dragging = true
+      pushSeek(e)
+    })
+    window.addEventListener("mousemove", (e) => {
+      if (dragging) pushSeek(e)
+    })
+    window.addEventListener("mouseup", () => { dragging = false })
+  }
+}
+
 const csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 const liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
   params: {_csrf_token: csrfToken},
-  hooks: {...colocatedHooks},
+  hooks: {...colocatedHooks, WaveformClick},
 })
 
 // Show progress bar on live navigation and form submits
