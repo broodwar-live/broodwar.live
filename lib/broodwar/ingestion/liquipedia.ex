@@ -418,6 +418,68 @@ defmodule Broodwar.Ingestion.Liquipedia do
     |> Enum.uniq()
   end
 
+  @doc """
+  Fetches the image filename from a player's Liquipedia page infobox.
+  """
+  def fetch_player_image_filename(page_title) do
+    with {:ok, wikitext} <- get_page(page_title) do
+      case Regex.run(~r/\|image\s*=\s*(.+)$/m, wikitext) do
+        [_, filename] -> {:ok, String.trim(filename)}
+        _ -> {:error, :no_image}
+      end
+    end
+  end
+
+  @doc """
+  Gets the actual URL for a Liquipedia image file.
+  """
+  def get_image_url(filename) do
+    params = %{
+      action: "query",
+      titles: "File:#{filename}",
+      prop: "imageinfo",
+      iiprop: "url",
+      format: "json"
+    }
+
+    case api_request(params) do
+      {:ok, %{"query" => %{"pages" => pages}}} ->
+        page = pages |> Map.values() |> List.first()
+
+        case get_in(page, ["imageinfo", Access.at(0), "url"]) do
+          nil -> {:error, :no_url}
+          url -> {:ok, url}
+        end
+
+      {:error, reason} ->
+        {:error, reason}
+    end
+  end
+
+  @doc """
+  Downloads an image from a URL and saves it to the given path.
+  """
+  def download_image(url, dest_path) do
+    case Req.get(url,
+           headers: [
+             {"user-agent", @user_agent}
+           ],
+           max_redirects: 5,
+           decode_body: false
+         ) do
+      {:ok, %Req.Response{status: 200, body: body}} ->
+        File.mkdir_p!(Path.dirname(dest_path))
+        File.write!(dest_path, body)
+        {:ok, dest_path}
+
+      {:ok, %Req.Response{status: status}} ->
+        {:error, {:http_error, status}}
+
+      {:error, reason} ->
+        {:error, reason}
+    end
+  end
+
   # -- HTTP --
 
   defp api_request(params) do

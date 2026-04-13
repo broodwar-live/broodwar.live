@@ -7,6 +7,8 @@ defmodule Broodwar.Players do
     Player
     |> order_by(desc: :rating)
     |> maybe_filter_race(opts[:race])
+    |> maybe_filter_status(opts[:status])
+    |> maybe_search(opts[:search])
     |> Repo.all()
   end
 
@@ -24,4 +26,20 @@ defmodule Broodwar.Players do
 
   defp maybe_filter_race(query, nil), do: query
   defp maybe_filter_race(query, race), do: where(query, [p], p.race == ^race)
+
+  defp maybe_filter_status(query, nil), do: query
+  defp maybe_filter_status(query, status), do: where(query, [p], p.status == ^status)
+
+  defp maybe_search(query, nil), do: query
+  defp maybe_search(query, ""), do: query
+
+  defp maybe_search(query, search) do
+    term = "%#{search}%"
+
+    where(
+      query,
+      [p],
+      like(p.name, ^term) or like(p.real_name, ^term) or like(p.real_name_ko, ^term)
+    )
+  end
 end
