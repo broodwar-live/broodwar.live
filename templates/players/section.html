@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }}{% endblock %}
+
+{% block content %}
+{% set t = config.extra.i18n[lang] %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <h1 class="text-2xl font-display mb-6">{{ section.title }}</h1>
+
+  {% set players = section.pages | sort(attribute="extra.rating") | reverse %}
+
+  {% if players | length > 0 %}
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {% for player in players %}
+    {% set e = player.extra %}
+    <a href="{{ player.path }}" class="glass-card rounded-box p-4 glow-blue flex items-center gap-4 no-underline">
+      <span class="{% if e.race == 'terran' %}bg-race-terran{% elif e.race == 'protoss' %}bg-race-protoss{% elif e.race == 'zerg' %}bg-race-zerg{% else %}bg-base-content{% endif %} w-8 h-8 rounded-lg flex items-center justify-center text-xs font-black text-base-100">
+        {% if e.race == "terran" %}T{% elif e.race == "protoss" %}P{% elif e.race == "zerg" %}Z{% endif %}
+      </span>
+      <div class="flex-1 min-w-0">
+        <div class="font-semibold text-sm truncate">{{ player.title }}</div>
+        <div class="text-[11px] text-base-content/30">{{ e.country_name }}{% if e.tier %} · {{ e.tier }}{% endif %}</div>
+      </div>
+      <span class="text-xs font-stats text-base-content/40">{{ e.rating }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="text-sm text-base-content/30">{% if lang == "ko" %}선수가 없습니다.{% else %}No players found.{% endif %}</p>
+  {% endif %}
+</div>
+{% endblock %}
