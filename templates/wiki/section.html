@@ -4,6 +4,14 @@
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  {% if section.ancestors | length > 1 %}
+  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
+    <a href="/wiki" class="hover:text-base-content/60">{{ t.wiki }}</a>
+    <span class="mx-1.5">/</span>
+    <span class="text-base-content/50">{{ section.title }}</span>
+  </nav>
+  {% endif %}
+
   <header class="mb-8">
     <h1 class="text-2xl font-display">{{ section.title }}</h1>
     {% if section.description %}
