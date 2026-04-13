@@ -86,6 +86,7 @@
     } catch (e) {
       mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load players.</p>`
     }
+    mount.setAttribute("aria-busy", "false")
   }
 
   load()

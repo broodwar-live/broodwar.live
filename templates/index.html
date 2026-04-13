@@ -27,7 +27,7 @@
     <h2 class="text-lg font-semibold">{{ t.live_streams }}</h2>
     <a href="/streams" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
   </div>
-  <div id="live-streams" data-api="{{ config.extra.api_base_url }}">
+  <div id="live-streams" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true">
     <p class="text-sm text-base-content/30">Loading streams...</p>
   </div>
 </section>
@@ -40,7 +40,7 @@
     <h2 class="text-lg font-semibold">{{ t.matches }}</h2>
     <a href="/matches" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
   </div>
-  <div id="recent-matches" data-api="{{ config.extra.api_base_url }}">
+  <div id="recent-matches" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true">
     <p class="text-sm text-base-content/30">Loading matches...</p>
   </div>
 </section>

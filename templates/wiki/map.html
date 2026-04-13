@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 
+{% block jsonld_extra %}
+,{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
+    {"@type": "ListItem", "position": 2, "name": "Maps", "item": "{{ config.base_url }}/wiki/maps"},
+    {"@type": "ListItem", "position": 3, "name": "{{ page.title }}"}
+  ]
+},
+{
+  "@type": "Place",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') }}",
+  "url": "{{ current_url }}"
+}
+{% endblock %}
+
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 {% set e = page.extra %}

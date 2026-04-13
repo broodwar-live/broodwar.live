@@ -1,0 +1,37 @@
+# broodwar.live
+
+> The community platform for StarCraft: Brood War competitive play.
+
+broodwar.live is a free, open-source reference site for the StarCraft: Brood War competitive community. It provides player stats, match histories, replay analysis, build order databases, live stream tracking, tournament records, and a comprehensive game wiki.
+
+## Sections
+
+- [Players](https://broodwar.live/players): Pro player profiles, career stats, Elo ratings, head-to-head records
+- [Matches](https://broodwar.live/matches): Competitive match results with scores, maps, and tournaments
+- [Tournaments](https://broodwar.live/tournaments): ASL, BSL, and other tournament series with season histories
+- [Replays](https://broodwar.live/replays): Upload .rep files for instant build order breakdowns and APM analysis
+- [Builds](https://broodwar.live/builds): Structured build order database backed by pro replay evidence
+- [Streams](https://broodwar.live/streams): Live Korean and international Brood War streams
+- [Balance](https://broodwar.live/balance): Matchup winrate analytics by map, era, and skill bracket
+- [Wiki](https://broodwar.live/wiki): Game reference — races, units, buildings, abilities, maps
+
+## Wiki Coverage
+
+- [Races](https://broodwar.live/wiki/races): Terran, Protoss, Zerg — playstyle, strengths, weaknesses
+- [Units](https://broodwar.live/wiki/units): All units with stats (minerals, gas, supply, HP, armor, damage)
+- [Buildings](https://broodwar.live/wiki/buildings): All structures with stats and production info
+- [Abilities](https://broodwar.live/wiki/abilities): Special abilities with energy costs and caster info
+- [Maps](https://broodwar.live/wiki/maps): Competitive maps with dimensions, tileset, spawn positions
+
+## Languages
+
+Content is available in English and Korean (한국어).
+
+## API
+
+A JSON API is available at https://api.broodwar.live for programmatic access to player, match, replay, stream, and balance data.
+
+## Optional
+
+- [llms-full.txt](https://broodwar.live/llms-full.txt): Extended reference with content structure details
+- [Source Code](https://github.com/broodwar-live): Open-source on GitHub

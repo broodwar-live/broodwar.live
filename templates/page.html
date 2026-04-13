@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 
+{% block jsonld_extra %}
+,{
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') }}",
+  "url": "{{ current_url }}",
+  "inLanguage": "{{ lang }}",
+  "publisher": {"@id": "{{ config.base_url }}/#organization"}
+}
+{% endblock %}
+
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

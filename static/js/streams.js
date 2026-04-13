@@ -47,6 +47,7 @@
 
       if (streams.length === 0) {
         mount.innerHTML = `<p class="text-sm text-base-content/30">No streams online.</p>`
+        mount.setAttribute("aria-busy", "false")
         return
       }
 
@@ -57,6 +58,7 @@
     } catch (e) {
       mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load streams.</p>`
     }
+    mount.setAttribute("aria-busy", "false")
   }
 
   load()

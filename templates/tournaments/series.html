@@ -1,6 +1,23 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 
+{% block jsonld_extra %}
+,{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ config.base_url }}/tournaments"},
+    {"@type": "ListItem", "position": 2, "name": "{{ page.extra.short_name }}"}
+  ]
+},
+{
+  "@type": "SportsOrganization",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') }}",
+  "url": "{{ current_url }}",
+  "sport": "StarCraft: Brood War"
+}
+{% endblock %}
+
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 {% set e = page.extra %}

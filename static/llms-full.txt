@@ -1,0 +1,133 @@
+# broodwar.live — Full Reference
+
+> The community platform for StarCraft: Brood War competitive play.
+
+broodwar.live is a free, open-source, non-commercial community project. It is not affiliated with Blizzard Entertainment or Microsoft. "StarCraft" and "Brood War" are registered trademarks of Blizzard Entertainment, Inc.
+
+## About the Game
+
+StarCraft: Brood War (1998) is a real-time strategy game by Blizzard Entertainment. Despite being over 25 years old, it maintains an active competitive scene, particularly in South Korea where professional leagues (ASL, BSL) continue to draw large audiences. The game features three asymmetric races: Terran, Protoss, and Zerg.
+
+## Site Architecture
+
+- **Static site** built with Zola (Rust SSG), hosted on Cloudflare Pages
+- **JSON API** at api.broodwar.live (Phoenix/Elixir) for dynamic data
+- **Community-curated content** via GitHub pull requests
+- Content in Markdown with TOML frontmatter
+- Available in English and Korean
+
+## Content Structure
+
+### Players (/players)
+Pro player profiles with:
+- Name, nationality, team affiliation
+- Race (Terran, Protoss, Zerg)
+- Elo rating and career stats
+- Tournament history and head-to-head records
+
+### Matches (/matches)
+Competitive match records with:
+- Player names and races
+- Score (e.g., 3-1)
+- Map played
+- Tournament context
+- Date
+
+### Tournaments (/tournaments)
+Tournament series including:
+- ASL (AfreecaTV StarCraft League) — premier Korean league
+- BSL (Brood War StarLeague) — international league
+- Season history with champions, runner-ups, prize pools
+- Status (active/retired, live/completed)
+
+### Replays (/replays)
+Replay file (.rep) analysis providing:
+- Build order extraction
+- APM (Actions Per Minute) and EAPM (Effective APM)
+- Army composition timelines
+- Supply curves
+- Player information and map details
+
+### Builds (/builds)
+Build order database with:
+- Race and matchup classification (TvZ, PvT, ZvP, mirrors)
+- Step-by-step build sequences with supply counts
+- Win rate statistics
+- Pro replay evidence
+
+### Streams (/streams)
+Live stream tracking:
+- AfreecaTV and Twitch streams
+- Player identification and race
+- Viewer counts
+- Auto-refresh every 60 seconds
+
+### Balance (/balance)
+Matchup analytics:
+- Win rates for all six matchups (TvZ, TvP, ZvP, TvT, PvP, ZvZ)
+- Total games sampled
+- Filterable by map, era, skill bracket
+
+### Wiki (/wiki)
+
+#### Races (/wiki/races)
+- Terran: Versatile human faction with infantry, mechs, and air units
+- Protoss: Advanced alien race with shields, psionic abilities, and warp technology
+- Zerg: Insectoid swarm race focused on overwhelming numbers and biological adaptation
+
+Each race page covers: playstyle overview, strengths, weaknesses.
+
+#### Units (/wiki/units)
+Every unit in the game with:
+- Race and unit type (ground/air, biological/mechanical)
+- Cost (minerals, gas, supply)
+- Stats (HP, armor, damage, shields for Protoss)
+- Production building
+- Special abilities
+
+#### Buildings (/wiki/buildings)
+Every structure with:
+- Race
+- Cost (minerals, gas)
+- HP and shields
+- Units/upgrades produced
+
+#### Abilities (/wiki/abilities)
+Special abilities with:
+- Race and caster unit
+- Energy cost
+- Effect description
+
+#### Maps (/wiki/maps)
+Competitive maps with:
+- Dimensions (tiles)
+- Tileset
+- Number of spawn positions
+- Era of competitive use
+
+## Data Formats
+
+- Races: "terran", "protoss", "zerg"
+- Matchups: "TvZ", "TvP", "ZvP", "TvT", "PvP", "ZvZ" (first letter is the race)
+- Dates: ISO 8601
+- Game durations: seconds
+- Frame-to-time conversion: frames / 15.17 = seconds (at fastest game speed)
+
+## API Endpoints
+
+Base URL: https://api.broodwar.live/api
+
+- GET /players — Player listings with filtering
+- GET /matches — Match results with pagination
+- GET /replays — POST replay files for analysis
+- GET /streams — Currently live streams
+- GET /builds — Build order database
+- GET /balance — Matchup win rate statistics
+
+All endpoints return JSON with snake_case field names. Pagination via ?page= and ?per_page= query parameters.
+
+## Source Code
+
+- Site: https://github.com/broodwar-live/broodwar.live
+- API: https://github.com/broodwar-live/api.broodwar.live
+- Replay parser: https://github.com/broodwar-live/bw-engine

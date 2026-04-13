@@ -8,18 +8,37 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="broodwar.live" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  {% set page_title = page.title | default(value=section.title | default(value=config.title)) %}
   {% set desc = page.description | default(value=section.description | default(value=config.description)) %}
+  <title>{% block title %}{{ page_title }}{% endblock %} — broodwar.live</title>
   <meta name="description" content="{{ desc }}" />
   <link rel="canonical" href="{{ current_url }}" />
+  {# Hreflang alternates for multilingual SEO #}
+  {% if lang == "en" %}
+  <link rel="alternate" hreflang="en" href="{{ current_url }}" />
+  <link rel="alternate" hreflang="ko" href="{{ config.base_url }}/ko{{ current_path }}" />
+  {% else %}
+  <link rel="alternate" hreflang="ko" href="{{ current_url }}" />
+  <link rel="alternate" hreflang="en" href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}" />
+  {% endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}" />
+  {# Open Graph #}
+  <meta property="og:title" content="{{ page_title }}{% if page_title != config.title %} — broodwar.live{% endif %}" />
   <meta property="og:description" content="{{ desc }}" />
   <meta property="og:image" content="{{ get_url(path='images/og-default.png') }}" />
   <meta property="og:url" content="{{ current_url }}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="broodwar.live" />
+  <meta property="og:locale" content="{% if lang == 'ko' %}ko_KR{% else %}en_US{% endif %}" />
+  {# Twitter Card #}
   <meta name="twitter:card" content="summary_large_image" />
-  <title>{% block title %}{{ config.title }}{% endblock %} — broodwar.live</title>
+  <meta name="twitter:title" content="{{ page_title }}{% if page_title != config.title %} — broodwar.live{% endif %}" />
+  <meta name="twitter:description" content="{{ desc }}" />
+  <meta name="twitter:image" content="{{ get_url(path='images/og-default.png') }}" />
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
@@ -30,6 +49,34 @@
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/app.css" />
+  {# JSON-LD: Organization + WebSite #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ config.base_url }}/#organization",
+        "name": "broodwar.live",
+        "url": "{{ config.base_url }}",
+        "logo": "{{ get_url(path='images/og-default.png') }}",
+        "description": "{{ config.description }}",
+        "sameAs": [
+          "https://github.com/broodwar-live",
+          "https://discord.gg/broodwar"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.base_url }}/#website",
+        "name": "broodwar.live",
+        "url": "{{ config.base_url }}",
+        "publisher": { "@id": "{{ config.base_url }}/#organization" },
+        "inLanguage": ["en", "ko"]
+      }{% block jsonld_extra %}{% endblock %}
+    ]
+  }
+  </script>
   <script>
     (() => {
       const setTheme = (theme) => {

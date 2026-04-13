@@ -128,4 +128,5 @@
   }
 
   init()
+  mount.setAttribute("aria-busy", "false")
 })()
