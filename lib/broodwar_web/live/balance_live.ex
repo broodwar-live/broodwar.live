@@ -8,6 +8,7 @@ defmodule BroodwarWeb.BalanceLive do
     {:ok,
      socket
      |> assign(:page_title, "Balance")
+     |> assign(:page_description, gettext("Matchup balance statistics across all recorded StarCraft: Brood War competitive matches."))
      |> assign(:stats, stats)}
   end
 

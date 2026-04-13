@@ -8,6 +8,7 @@ defmodule BroodwarWeb.MatchesLive do
     {:ok,
      socket
      |> assign(:page_title, "Matches")
+     |> assign(:page_description, gettext("Recent competitive StarCraft: Brood War match results, scores, and head-to-head records."))
      |> assign(:matches, matches)}
   end
 

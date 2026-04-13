@@ -241,13 +241,15 @@ defmodule BroodwarWeb.CoreComponents do
           name={@name}
           class={[@class || "w-full select", @errors != [] && (@error_class || "select-error")]}
           multiple={@multiple}
+          aria-invalid={@errors != [] || nil}
+          aria-describedby={(@errors != [] && "#{@id}-error") || nil}
           {@rest}
         >
           <option :if={@prompt} value="">{@prompt}</option>
           {Phoenix.HTML.Form.options_for_select(@options, @value)}
         </select>
       </label>
-      <.error :for={msg <- @errors}>{msg}</.error>
+      <.error :for={msg <- @errors} id={"#{@id}-error"}>{msg}</.error>
     </div>
     """
   end
@@ -264,10 +266,12 @@ defmodule BroodwarWeb.CoreComponents do
             @class || "w-full textarea",
             @errors != [] && (@error_class || "textarea-error")
           ]}
+          aria-invalid={@errors != [] || nil}
+          aria-describedby={(@errors != [] && "#{@id}-error") || nil}
           {@rest}
         >{Phoenix.HTML.Form.normalize_value("textarea", @value)}</textarea>
       </label>
-      <.error :for={msg <- @errors}>{msg}</.error>
+      <.error :for={msg <- @errors} id={"#{@id}-error"}>{msg}</.error>
     </div>
     """
   end
@@ -287,18 +291,23 @@ defmodule BroodwarWeb.CoreComponents do
             @class || "w-full input",
             @errors != [] && (@error_class || "input-error")
           ]}
+          aria-invalid={@errors != [] || nil}
+          aria-describedby={(@errors != [] && "#{@id}-error") || nil}
           {@rest}
         />
       </label>
-      <.error :for={msg <- @errors}>{msg}</.error>
+      <.error :for={msg <- @errors} id={"#{@id}-error"}>{msg}</.error>
     </div>
     """
   end
 
   # Helper used by inputs to generate form errors
+  attr :id, :string, default: nil
+  slot :inner_block, required: true
+
   defp error(assigns) do
     ~H"""
-    <p class="mt-1.5 flex gap-2 items-center text-sm text-error">
+    <p id={@id} class="mt-1.5 flex gap-2 items-center text-sm text-error">
       <.icon name="hero-exclamation-circle" class="size-5" />
       {render_slot(@inner_block)}
     </p>
@@ -441,7 +450,7 @@ defmodule BroodwarWeb.CoreComponents do
 
   def icon(%{name: "hero-" <> _} = assigns) do
     ~H"""
-    <span class={[@name, @class]} />
+    <span class={[@name, @class]} aria-hidden="true" />
     """
   end
 

@@ -7,7 +7,10 @@ defmodule BroodwarWeb.TournamentController do
     series_list = Tournaments.list_series()
     champion_counts = Tournaments.champion_counts()
 
-    render(conn, :index,
+    conn
+    |> assign(:page_title, "Tournaments")
+    |> assign(:page_description, "Complete history of competitive StarCraft: Brood War leagues — ASL, BSL, and more.")
+    |> render(:index,
       series_list: series_list,
       champion_counts: champion_counts
     )
@@ -19,8 +22,14 @@ defmodule BroodwarWeb.TournamentController do
     if seasons == [] do
       conn |> put_status(:not_found) |> put_view(BroodwarWeb.ErrorHTML) |> render(:"404")
     else
-      render(conn, :show,
-        short_name: String.upcase(slug),
+      short_name = String.upcase(slug)
+
+      conn
+      |> assign(:page_title, short_name)
+      |> assign(:page_description, "#{short_name} — season history, brackets, and results.")
+      |> assign(:breadcrumbs, [{"Tournaments", "/tournaments"}, {short_name, "/tournaments/#{slug}"}])
+      |> render(:show,
+        short_name: short_name,
         seasons: seasons
       )
     end
@@ -34,7 +43,14 @@ defmodule BroodwarWeb.TournamentController do
             conn |> put_status(:not_found) |> put_view(BroodwarWeb.ErrorHTML) |> render(:"404")
 
           tournament ->
-            render(conn, :season, tournament: tournament)
+            short_name = String.upcase(slug)
+            title = "#{short_name} Season #{season_num}"
+
+            conn
+            |> assign(:page_title, title)
+            |> assign(:page_description, "#{title} — brackets, match results, and champion.")
+            |> assign(:breadcrumbs, [{"Tournaments", "/tournaments"}, {short_name, "/tournaments/#{slug}"}, {"Season #{season_num}", "/tournaments/#{slug}/#{season_str}"}])
+            |> render(:season, tournament: tournament)
         end
 
       _ ->

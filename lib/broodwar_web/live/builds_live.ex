@@ -8,6 +8,7 @@ defmodule BroodwarWeb.BuildsLive do
     {:ok,
      socket
      |> assign(:page_title, "Builds")
+     |> assign(:page_description, gettext("StarCraft: Brood War build order database — browse by matchup, race, win rate, and popularity."))
      |> assign(:builds, builds)
      |> assign(:matchup_filter, nil)}
   end

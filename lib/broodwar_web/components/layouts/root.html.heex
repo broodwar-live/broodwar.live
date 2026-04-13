@@ -4,13 +4,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
-    <meta name="description" content="The community platform for StarCraft: Brood War competitive play — match stats, replay analysis, build orders, and live streams." />
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="broodwar.live" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <BroodwarWeb.SEO.meta_tags
+      page_title={assigns[:page_title]}
+      page_description={assigns[:page_description]}
+      og_image={assigns[:og_image]}
+      og_type={assigns[:og_type]}
+      current_path={assigns[:current_path]}
+      locale={assigns[:locale] || "en"}
+    />
+    <BroodwarWeb.SEO.json_ld
+      current_path={assigns[:current_path]}
+      breadcrumbs={assigns[:breadcrumbs]}
+    />
     <.live_title default="broodwar.live — StarCraft: Brood War Community Hub" suffix=" — broodwar.live">
       {assigns[:page_title]}
     </.live_title>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" as="style" />
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@900&display=swap" rel="stylesheet" />
     <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
@@ -36,6 +57,9 @@
     </script>
   </head>
   <body class="bg-base-200 min-h-screen antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-content focus:rounded-lg focus:text-sm focus:font-medium">
+      Skip to content
+    </a>
     {@inner_content}
   </body>
 </html>

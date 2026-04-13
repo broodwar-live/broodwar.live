@@ -10,6 +10,7 @@ defmodule BroodwarWeb.PlayersLive do
     {:ok,
      socket
      |> assign(:page_title, "Players")
+     |> assign(:page_description, gettext("Browse professional StarCraft: Brood War players — stats, race, team, and ratings."))
      |> assign(:players, players)
      |> assign(:race_filter, nil)
      |> assign(:status_filter, nil)

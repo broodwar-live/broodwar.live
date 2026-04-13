@@ -1,0 +1,37 @@
+{
+  "name": "broodwar.live — StarCraft: Brood War Community Hub",
+  "short_name": "broodwar.live",
+  "description": "The community platform for StarCraft: Brood War competitive play — match stats, replay analysis, build orders, and live streams.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0a1628",
+  "background_color": "#060c18",
+  "icons": [
+    {
+      "src": "/images/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/pwa-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/pwa-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/pwa-maskable-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["games", "entertainment", "sports"],
+  "lang": "en",
+  "dir": "ltr"
+}

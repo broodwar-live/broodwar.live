@@ -8,6 +8,8 @@ defmodule BroodwarWeb.BuildDetailLive do
     {:ok,
      socket
      |> assign(:page_title, build.name)
+     |> assign(:page_description, "#{build.name} — build order details, timing, and pro replay evidence on broodwar.live.")
+     |> assign(:breadcrumbs, [{gettext("Builds"), "/builds"}, {build.name, "/builds/#{id}"}])
      |> assign(:build, build)}
   end
 

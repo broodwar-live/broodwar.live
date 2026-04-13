@@ -13,6 +13,8 @@ defmodule BroodwarWeb.PlayerDetailLive do
     {:ok,
      socket
      |> assign(:page_title, player.name)
+     |> assign(:page_description, "#{player.name} — #{Player.race_name(player.race)} player profile, match history, and career stats on broodwar.live.")
+     |> assign(:breadcrumbs, [{gettext("Players"), "/players"}, {player.name, "/players/#{id}"}])
      |> assign(:player, player)
      |> assign(:tournament_matches, tournament_matches)
      |> assign(:stats, stats)}

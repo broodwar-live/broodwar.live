@@ -33,6 +33,8 @@ defmodule BroodwarWeb.ReplayDetailLive do
     {:ok,
      socket
      |> assign(:page_title, header["map_name"] || "Replay")
+     |> assign(:page_description, "Replay analysis on #{header["map_name"] || "unknown map"} — build orders, APM curves, and army composition timeline.")
+     |> assign(:breadcrumbs, [{gettext("Replays"), "/replays"}, {header["map_name"] || "Replay", "/replays/#{id}"}])
      |> assign(:replay, replay)
      |> assign(:parsed, pd)
      |> assign(:timeline, timeline)

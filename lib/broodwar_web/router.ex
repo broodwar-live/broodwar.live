@@ -9,6 +9,7 @@ defmodule BroodwarWeb.Router do
     plug :protect_from_forgery
     plug :put_secure_browser_headers
     plug BroodwarWeb.Plugs.Locale
+    plug BroodwarWeb.Plugs.SEO
   end
 
   pipeline :api do
@@ -19,16 +20,20 @@ defmodule BroodwarWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/offline", PageController, :offline
+    get "/sitemap.xml", SitemapController, :index
 
-    live "/replays", ReplayLive
-    live "/replays/:id", ReplayDetailLive
-    live "/players", PlayersLive
-    live "/players/:id", PlayerDetailLive
-    live "/matches", MatchesLive
-    live "/matches/:id", MatchDetailLive
-    live "/builds", BuildsLive
-    live "/builds/:id", BuildDetailLive
-    live "/balance", BalanceLive
+    live_session :default, on_mount: [{BroodwarWeb.SEO, :default}] do
+      live "/replays", ReplayLive
+      live "/replays/:id", ReplayDetailLive
+      live "/players", PlayersLive
+      live "/players/:id", PlayerDetailLive
+      live "/matches", MatchesLive
+      live "/matches/:id", MatchDetailLive
+      live "/builds", BuildsLive
+      live "/builds/:id", BuildDetailLive
+      live "/balance", BalanceLive
+    end
 
     get "/tournaments", TournamentController, :index
     get "/tournaments/:slug", TournamentController, :show

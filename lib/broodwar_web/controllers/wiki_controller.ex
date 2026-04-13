@@ -4,7 +4,10 @@ defmodule BroodwarWeb.WikiController do
   alias Broodwar.Wiki.Data
 
   def index(conn, _params) do
-    render(conn, :index, races: Data.races())
+    conn
+    |> assign(:page_title, "Wiki")
+    |> assign(:page_description, "Reference guide to StarCraft: Brood War races, units, buildings, abilities, and maps.")
+    |> render(:index, races: Data.races())
   end
 
   def race(conn, %{"slug" => slug}) do
@@ -16,7 +19,12 @@ defmodule BroodwarWeb.WikiController do
         units = Data.units_for_race(slug)
         buildings = Data.buildings_for_race(slug)
         abilities = Data.abilities_for_race(slug)
-        render(conn, :race, race: race, units: units, buildings: buildings, abilities: abilities)
+
+        conn
+        |> assign(:page_title, race.name)
+        |> assign(:page_description, "#{race.name} — units, buildings, abilities, and strategy guide on broodwar.live.")
+        |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {race.name, "/wiki/races/#{slug}"}])
+        |> render(:race, race: race, units: units, buildings: buildings, abilities: abilities)
     end
   end
 
@@ -29,7 +37,12 @@ defmodule BroodwarWeb.WikiController do
         race = Data.race(unit.race)
         built_from = Data.building(unit.built_from) || Data.unit(unit.built_from)
         abilities = Data.abilities_for_unit(slug)
-        render(conn, :unit, unit: unit, race: race, built_from: built_from, abilities: abilities)
+
+        conn
+        |> assign(:page_title, unit.name)
+        |> assign(:page_description, "#{unit.name} — #{race.name} unit stats, abilities, and production info.")
+        |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {race.name, "/wiki/races/#{unit.race}"}, {unit.name, "/wiki/units/#{slug}"}])
+        |> render(:unit, unit: unit, race: race, built_from: built_from, abilities: abilities)
     end
   end
 
@@ -41,7 +54,12 @@ defmodule BroodwarWeb.WikiController do
       building ->
         race = Data.race(building.race)
         produced_units = Enum.map(building.produces, &Data.unit/1) |> Enum.reject(&is_nil/1)
-        render(conn, :building, building: building, race: race, produced_units: produced_units)
+
+        conn
+        |> assign(:page_title, building.name)
+        |> assign(:page_description, "#{building.name} — #{race.name} building stats and produced units.")
+        |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {race.name, "/wiki/races/#{building.race}"}, {building.name, "/wiki/buildings/#{slug}"}])
+        |> render(:building, building: building, race: race, produced_units: produced_units)
     end
   end
 
@@ -53,7 +71,11 @@ defmodule BroodwarWeb.WikiController do
         {race, Data.abilities_for_race(race.slug)}
       end)
 
-    render(conn, :abilities, abilities_by_race: abilities_by_race)
+    conn
+    |> assign(:page_title, "Abilities")
+    |> assign(:page_description, "Complete list of StarCraft: Brood War unit abilities by race.")
+    |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {"Abilities", "/wiki/abilities"}])
+    |> render(:abilities, abilities_by_race: abilities_by_race)
   end
 
   def ability(conn, %{"slug" => slug}) do
@@ -64,13 +86,23 @@ defmodule BroodwarWeb.WikiController do
       ability ->
         race = Data.race(ability.race)
         caster = Data.unit(ability.caster)
-        render(conn, :ability, ability: ability, race: race, caster: caster)
+
+        conn
+        |> assign(:page_title, ability.name)
+        |> assign(:page_description, "#{ability.name} — #{race.name} ability details and caster info.")
+        |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {"Abilities", "/wiki/abilities"}, {ability.name, "/wiki/abilities/#{slug}"}])
+        |> render(:ability, ability: ability, race: race, caster: caster)
     end
   end
 
   def maps(conn, _params) do
     maps = Data.wiki_maps()
-    render(conn, :maps, maps: maps)
+
+    conn
+    |> assign(:page_title, "Maps")
+    |> assign(:page_description, "Competitive StarCraft: Brood War map pool — layouts, start positions, and tournament history.")
+    |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {"Maps", "/wiki/maps"}])
+    |> render(:maps, maps: maps)
   end
 
   def map(conn, %{"slug" => slug}) do
@@ -79,7 +111,11 @@ defmodule BroodwarWeb.WikiController do
         conn |> put_status(:not_found) |> put_view(BroodwarWeb.ErrorHTML) |> render(:"404")
 
       map ->
-        render(conn, :map, map: map)
+        conn
+        |> assign(:page_title, map.name)
+        |> assign(:page_description, "#{map.name} — map details, dimensions, and tournament usage history.")
+        |> assign(:breadcrumbs, [{"Wiki", "/wiki"}, {"Maps", "/wiki/maps"}, {map.name, "/wiki/maps/#{slug}"}])
+        |> render(:map, map: map)
     end
   end
 end

@@ -10,4 +10,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 rustler = "0.36"
-replay-core = { git = "https://github.com/broodwar-live/replay-parser.git", branch = "main" }
+replay-core = { git = "https://github.com/broodwar-live/bw-engine.git", branch = "main" }

@@ -8,6 +8,8 @@ defmodule BroodwarWeb.MatchDetailLive do
     {:ok,
      socket
      |> assign(:page_title, "#{match.player_a.name} vs #{match.player_b.name}")
+     |> assign(:page_description, "#{match.player_a.name} vs #{match.player_b.name} — match details and game analysis on broodwar.live.")
+     |> assign(:breadcrumbs, [{gettext("Matches"), "/matches"}, {"#{match.player_a.name} vs #{match.player_b.name}", "/matches/#{id}"}])
      |> assign(:match, match)}
   end
 

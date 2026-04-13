@@ -10,6 +10,7 @@ defmodule BroodwarWeb.ReplayLive do
     {:ok,
      socket
      |> assign(:page_title, "Replays")
+     |> assign(:page_description, gettext("Upload and analyze StarCraft: Brood War replay files — build orders, APM curves, and match breakdowns."))
      |> assign(:replay, nil)
      |> assign(:error, nil)
      |> assign(:parsing, false)
