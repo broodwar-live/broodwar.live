@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Legacy URL patterns
+/player/*  /players/:splat  301
+/match/*   /matches/:splat  301
+/build/*   /builds/:splat   301
+/stream/*  /streams/:splat  301
+
+# Language shortcuts
+/ko  /ko/  301
+/en  /     301

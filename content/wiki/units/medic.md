@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "barracks"
 abilities = ["restoration", "optical-flare"]
+upgrades = []
 +++
 Support infantry that heals nearby biological units. Medics are essential in marine-based compositions, dramatically increasing the staying power of bio armies. They can also use Restoration to remove negative effects and Optical Flare to blind detector units.

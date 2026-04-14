@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "starport"
 abilities = []
+upgrades = []
 +++
 Armored transport that can carry up to 8 supply worth of ground units. Dropships enable multi-pronged attacks, cliff drops, and harassment strategies. Essential for tank drops and marine/medic drops in the mid and late game.

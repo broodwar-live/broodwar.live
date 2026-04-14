@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "barracks"
 abilities = ["stim-pack"]
+upgrades = ["stim-pack", "u-238-shells", "infantry-weapons", "infantry-armor"]
 +++
 The backbone of the Terran infantry. Marines are cheap, versatile, and can attack both ground and air units. With Stim Pack researched, they gain a burst of attack and movement speed at the cost of 10 HP. Marines are effective in large numbers, especially when paired with Medics.

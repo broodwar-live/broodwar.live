@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "factory"
 abilities = []
+upgrades = ["vehicle-weapons", "vehicle-plating", "ship-weapons"]
 +++
 Bipedal mech walker with twin autocannons and anti-air missile launchers. Goliaths provide strong anti-air support for mech armies, with 20 explosive damage against air targets (22 range with Charon Boosters). Requires an Armory.

@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "starport"
 abilities = ["defensive-matrix", "emp-shockwave", "irradiate"]
+upgrades = ["irradiate"]
 +++
 Flying detector and support caster. Science Vessels can use Defensive Matrix (absorbs 250 damage on a target unit), EMP Shockwave (drains shields and energy in an area), and Irradiate (deals damage over time to biological units). Essential for detection and countering Protoss shields.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "barracks"
 abilities = []
+upgrades = ["stim-pack", "infantry-weapons", "infantry-armor"]
 +++
 Heavy infantry equipped with flame throwers. Firebats deal concussive splash damage, making them effective against small units like Zerglings. They can use Stim Pack and benefit from bunker placement. Requires an Academy.

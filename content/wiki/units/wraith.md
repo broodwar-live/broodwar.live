@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "starport"
 abilities = []
+upgrades = ["cloaking-field", "ship-weapons", "ship-plating"]
 +++
 Light air superiority fighter with ground attack capability. Wraiths can cloak with the Apollo Reactor upgrade, making them effective for harassment. Their air-to-air attack deals 20 explosive damage, making them decent dogfighters.

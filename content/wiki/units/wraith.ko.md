@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "starport"
 abilities = []
+upgrades = ["cloaking-field", "ship-weapons", "ship-plating"]
 +++
 지상 공격 능력도 갖춘 경량 제공 전투기이다. 레이스는 아폴로 리액터 업그레이드로 클로킹이 가능해 견제에 효과적이다. 공대공 공격이 20 폭발형 피해를 입혀 공중전에서도 활약할 수 있다.

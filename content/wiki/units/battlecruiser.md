@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "starport"
 abilities = ["yamato-cannon"]
+upgrades = ["yamato-gun", "ship-weapons", "ship-plating"]
 +++
 The Terran capital ship. Battlecruisers have massive HP, strong attacks against both ground and air, and can be equipped with the Yamato Cannon — a devastating 260-damage single-target ability. Expensive and slow to build, but extremely powerful in numbers.

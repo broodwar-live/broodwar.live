@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = true
 built_from = "starport"
 abilities = []
+upgrades = ["ship-weapons", "ship-plating"]
 +++
 Heavy anti-air frigate that fires volleys of Halo Rockets. Each attack launches 8 missiles that deal splash damage, making Valkyries devastating against groups of air units like Mutalisks or Scourge. Requires a Control Tower and an Armory.

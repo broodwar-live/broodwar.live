@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "factory"
 abilities = ["spider-mines"]
+upgrades = ["spider-mines", "ion-thrusters", "vehicle-weapons", "vehicle-plating"]
 +++
 Fast hover bike that excels at harassment and map control. Vultures deal concussive damage (less effective against large units) and can plant Spider Mines — burrowed explosives that detonate when enemies approach. Their speed makes them ideal for worker harassment.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "factory"
 abilities = []
+upgrades = ["vehicle-weapons", "vehicle-plating", "ship-weapons"]
 +++
 쌍열 기관포와 대공 미사일 발사기를 장착한 이족 보행 메카닉 워커이다. 골리앗은 메카닉 군대에 강력한 대공 지원을 제공하며, 공중 대상에 20 폭발형 피해를 입힌다 (카론 부스터로 사거리 22). 아머리가 필요하다.

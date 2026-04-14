@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "barracks"
 abilities = ["stim-pack"]
+upgrades = ["stim-pack", "u-238-shells", "infantry-weapons", "infantry-armor"]
 +++
 테란 보병의 핵심 유닛이다. 마린은 저렴하고 다재다능하며, 지상과 공중 유닛 모두 공격할 수 있다. 스팀팩을 연구하면 체력 10을 소모하는 대신 공격 속도와 이동 속도가 크게 향상된다. 마린은 대규모로 운용할 때, 특히 메딕과 함께할 때 매우 효과적이다.

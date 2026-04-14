@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "barracks"
 abilities = ["lockdown", "nuclear-strike", "cloaking-field"]
+upgrades = ["infantry-weapons", "infantry-armor", "cloaking-field"]
 +++
 Elite covert operative with personal cloaking and powerful abilities. Ghosts can call down Nuclear Strikes for massive area damage, use Lockdown to disable mechanical units, and cloak to move invisibly. Requires a Covert Ops attached to a Science Facility.

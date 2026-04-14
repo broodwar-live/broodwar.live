@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "factory"
 abilities = ["siege-mode"]
+upgrades = ["siege-tech", "vehicle-weapons", "vehicle-plating"]
 +++
 Heavy assault vehicle that can switch between mobile tank mode (30 damage) and stationary siege mode (70 explosive splash damage with 12 range). Siege tanks are the cornerstone of Terran positional play, creating kill zones that are extremely difficult to push into.

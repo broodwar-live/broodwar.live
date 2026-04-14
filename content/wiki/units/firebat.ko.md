@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "barracks"
 abilities = []
+upgrades = ["stim-pack", "infantry-weapons", "infantry-armor"]
 +++
 화염방사기를 장착한 중보병이다. 파이어뱃은 진동 범위 피해를 입히므로 저글링 같은 소형 유닛에 효과적이다. 스팀팩을 사용할 수 있으며 벙커에 배치하면 큰 효과를 발휘한다. 아카데미가 필요하다.

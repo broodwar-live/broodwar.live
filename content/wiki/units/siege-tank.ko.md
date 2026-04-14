@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "factory"
 abilities = ["siege-mode"]
+upgrades = ["siege-tech", "vehicle-weapons", "vehicle-plating"]
 +++
 이동 가능한 탱크 모드(30 피해)와 고정 시즈 모드(사거리 12의 70 폭발형 범위 피해)를 전환할 수 있는 중화기 차량이다. 시즈 탱크는 테란 진지전의 핵심으로, 돌파하기 극도로 어려운 킬존을 형성한다.
