@@ -26,9 +26,11 @@
   }
 
   async function load() {
+    if (window.BwApi) BwApi.showLoading(mount)
     try {
-      const res = await fetch(`${api}/api/balance`)
-      const json = await res.json()
+      const json = window.BwApi
+        ? await BwApi.fetchJson(`${api}/api/balance`)
+        : await fetch(`${api}/api/balance`).then(r => r.json())
       const stats = json.data || []
 
       if (stats.length === 0) {
@@ -42,7 +44,8 @@
         </div>
       `
     } catch (e) {
-      mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load balance stats.</p>`
+      if (window.BwApi) BwApi.showError(mount, "Could not load balance stats.", load)
+      else mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load balance stats.</p>`
     }
     mount.setAttribute("aria-busy", "false")
   }

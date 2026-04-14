@@ -82,16 +82,20 @@
   }
 
   async function load() {
+    if (allOpenings.length === 0) BwApi.showLoading(mount)
     try {
       const params = new URLSearchParams()
       if (matchupFilter) params.set("matchup", matchupFilter)
       const url = `${api}/api/openings${params.toString() ? "?" + params : ""}`
-      const res = await fetch(url)
-      const json = await res.json()
+      const json = await BwApi.fetchJson(url)
       allOpenings = json.data || []
-      render()
+      if (allOpenings.length === 0) {
+        BwApi.showEmpty(mount, "No openings found.")
+      } else {
+        render()
+      }
     } catch (e) {
-      mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load openings.</p>`
+      BwApi.showError(mount, "Could not load openings.", load)
     }
     mount.setAttribute("aria-busy", "false")
   }

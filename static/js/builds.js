@@ -62,13 +62,16 @@
   }
 
   async function load() {
+    if (allBuilds.length === 0 && window.BwApi) BwApi.showLoading(mount)
     try {
-      const res = await fetch(`${api}/api/builds?per_page=200`)
-      const json = await res.json()
+      const json = window.BwApi
+        ? await BwApi.fetchJson(`${api}/api/builds?per_page=200`)
+        : await fetch(`${api}/api/builds?per_page=200`).then(r => r.json())
       allBuilds = json.data || []
       render()
     } catch (e) {
-      mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load builds.</p>`
+      if (window.BwApi) BwApi.showError(mount, "Could not load builds.", load)
+      else mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load builds.</p>`
     }
     mount.setAttribute("aria-busy", "false")
   }

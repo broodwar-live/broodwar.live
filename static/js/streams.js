@@ -41,8 +41,7 @@
 
   async function load() {
     try {
-      const res = await fetch(`${api}/api/streams`)
-      const json = await res.json()
+      const json = await (window.BwApi ? BwApi.fetchJson(`${api}/api/streams`) : fetch(`${api}/api/streams`).then(r => r.json()))
       const streams = json.data || []
 
       if (streams.length === 0) {
@@ -56,7 +55,7 @@
 
       mount.innerHTML = `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">${display.map(renderStream).join("")}</div>`
     } catch (e) {
-      mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load streams.</p>`
+      mount.innerHTML = `<p class="text-sm text-base-content/20">Could not load streams. <button class="btn btn-xs btn-ghost" onclick="location.reload()">Retry</button></p>`
     }
     mount.setAttribute("aria-busy", "false")
   }
