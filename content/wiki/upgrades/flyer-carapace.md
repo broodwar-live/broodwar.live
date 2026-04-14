@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "spire"
 research_time = 80
+affects = ["mutalisk", "scourge", "guardian", "devourer", "overlord"]
 +++
 Increases air unit armor.

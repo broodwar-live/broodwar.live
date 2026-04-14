@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = true
 built_from = "mutalisk"
 abilities = []
+upgrades = ["flyer-attacks", "flyer-carapace"]
 +++
 Evolved from Mutalisks at a Greater Spire. Devourers are heavy air-to-air attackers that apply Acid Spores to targets, reducing their armor and making them vulnerable. Each hit stacks the debuff. Rarely seen in competitive play due to cost and limited utility.

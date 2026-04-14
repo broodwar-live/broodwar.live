@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "machine-shop"
 research_time = 35
+affects = ["vulture"]
 +++
 벌처가 스파이더 마인을 설치할 수 있습니다.

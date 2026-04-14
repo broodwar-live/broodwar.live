@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["consume", "plague"]
 +++
 Enables Defiler production from the Hatchery. Researches Consume (sacrifice a Zerg unit to restore Defiler energy), Plague, and Dark Swarm abilities. Requires a Hive.

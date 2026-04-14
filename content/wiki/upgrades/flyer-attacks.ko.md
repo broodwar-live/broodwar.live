@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "spire"
 research_time = 80
+affects = ["mutalisk", "guardian", "devourer"]
 +++
 뮤탈리스크 등 공중 유닛의 공격력을 증가시킵니다.

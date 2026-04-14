@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "templar-archives"
 research_time = 67
+affects = ["dark-archon"]
 +++
 다크 아콘이 범위 내 생체 유닛을 기절시키는 능력입니다.

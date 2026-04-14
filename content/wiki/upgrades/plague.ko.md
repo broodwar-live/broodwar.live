@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "defiler-mound"
 research_time = 67
+affects = ["defiler"]
 +++
 디파일러가 범위 내 모든 유닛의 HP를 거의 죽을 수준으로 감소시키는 능력입니다.

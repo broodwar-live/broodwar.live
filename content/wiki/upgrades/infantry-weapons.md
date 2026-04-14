@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "engineering-bay"
 research_time = 80
+affects = ["marine", "firebat", "ghost"]
 +++
 Increases Marine, Firebat, and Ghost attack damage.

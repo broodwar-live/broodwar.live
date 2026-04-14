@@ -15,5 +15,6 @@ armor = 1
 build_time = 120
 size = "large"
 produces = []
+researches = ["flyer-attacks", "flyer-carapace"]
 +++
 Enables Mutalisk and Scourge production from the Hatchery. Researches Zerg air attack and armor upgrades. Upgrades to Greater Spire (requires Hive) to enable Guardian and Devourer morphing.

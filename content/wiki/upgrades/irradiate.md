@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "science-facility"
 research_time = 50
+affects = ["science-vessel"]
 +++
 Science Vessel ability that deals damage over time to biological units.

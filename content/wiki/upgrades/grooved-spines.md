@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "hydralisk-den"
 research_time = 50
+affects = ["hydralisk"]
 +++
 Increases Hydralisk attack range.

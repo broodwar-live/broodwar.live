@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "spire"
 research_time = 80
+affects = ["mutalisk", "scourge", "guardian", "devourer", "overlord"]
 +++
 공중 유닛의 방어력을 증가시킵니다.

@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "armory"
 research_time = 80
+affects = ["wraith", "valkyrie", "battlecruiser"]
 +++
 레이스, 발키리, 배틀크루저의 공격력을 증가시킵니다.

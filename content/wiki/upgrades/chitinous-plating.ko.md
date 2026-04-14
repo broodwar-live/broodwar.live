@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "ultralisk-cavern"
 research_time = 67
+affects = ["ultralisk"]
 +++
 울트라리스크의 방어력을 2 증가시킵니다.

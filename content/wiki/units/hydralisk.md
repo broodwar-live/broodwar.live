@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "hatchery"
 abilities = []
+upgrades = ["muscular-augments", "grooved-spines", "lurker-aspect", "missile-attacks", "carapace"]
 +++
 Ranged attacker that fires needle spines at ground and air targets. Hydralisks are versatile and efficient, forming the core of many Zerg compositions. They can morph into Lurkers with the Lurker Aspect upgrade. Speed and range upgrades are essential.

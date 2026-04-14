@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "academy"
 research_time = 50
+affects = ["marine", "firebat"]
 +++
 Allows Marines and Firebats to temporarily increase attack and movement speed at the cost of 10 HP. Essential combat upgrade.

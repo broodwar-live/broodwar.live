@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "gateway"
 abilities = []
+upgrades = ["ground-weapons", "ground-armor", "plasma-shields"]
 +++
 Ranged assault walker piloted by a mortally wounded Protoss warrior. Dragoons deal 20 explosive damage and can attack both ground and air. Their Singularity Charge upgrade extends their range to 6. They are the workhorse of Protoss armies but have notoriously poor pathfinding.

@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "hydralisk-den"
 research_time = 50
+affects = ["hydralisk"]
 +++
 Allows Hydralisks to morph into Lurkers.

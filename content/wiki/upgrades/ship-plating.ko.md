@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "armory"
 research_time = 80
+affects = ["wraith", "valkyrie", "battlecruiser", "dropship", "science-vessel"]
 +++
 공중 유닛의 방어력을 증가시킵니다.

@@ -12,5 +12,6 @@ gas = 200
 levels = 3
 researched_at = "forge"
 research_time = 80
+affects = ["zealot", "dragoon", "high-templar", "dark-templar", "archon", "dark-archon", "reaver", "shuttle", "observer", "scout", "corsair", "carrier", "arbiter", "probe"]
 +++
 모든 프로토스 유닛의 실드 포인트를 증가시킵니다.

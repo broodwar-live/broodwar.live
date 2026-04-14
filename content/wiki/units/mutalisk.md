@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "hatchery"
 abilities = []
+upgrades = ["flyer-attacks", "flyer-carapace"]
 +++
 Agile flying attacker whose Glave Wurm bounces to hit up to 3 targets (9, 3, 1 damage). Mutalisks are the premier Zerg harassment unit, fast enough to pick off workers and retreat before the opponent can respond. They can morph into Guardians or Devourers at a Greater Spire.

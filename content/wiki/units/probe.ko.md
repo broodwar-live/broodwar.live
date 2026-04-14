@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "nexus"
 abilities = []
+upgrades = ["plasma-shields"]
 +++
 프로토스의 일꾼 유닛이다. 프로브는 자원을 채취하고 차원 소환을 통해 건물을 워프인한다 — 소환이 시작되면 프로브는 자유롭게 작업에 복귀할 수 있고, 건물은 스스로 건설된다. 이 덕분에 프로토스는 건설 중에도 경제적 이점을 유지한다.

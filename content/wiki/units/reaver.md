@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "robotics-facility"
 abilities = []
+upgrades = ["ground-weapons", "plasma-shields"]
 +++
 Slow-moving siege unit that launches Scarabs — autonomous drones that deal 100 splash damage. Reavers are devastating when dropped from Shuttles into mineral lines or army flanks. Scarabs must be built individually (15 minerals each) and can sometimes miss or be destroyed.

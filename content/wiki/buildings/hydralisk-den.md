@@ -15,5 +15,6 @@ armor = 1
 build_time = 40
 size = "large"
 produces = []
+researches = ["muscular-augments", "grooved-spines", "lurker-aspect"]
 +++
 Enables Hydralisk production from the Hatchery. Researches Muscular Augments (Hydralisk speed) and Grooved Spines (Hydralisk range). Also researches Lurker Aspect, allowing Hydralisks to morph into Lurkers.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "hatchery"
 abilities = []
+upgrades = ["chitinous-plating", "anabolic-synthesis", "melee-attacks", "carapace"]
 +++
 Massive armored beast — the Zerg's heavy ground unit. Ultralisks have 400 HP and can be upgraded with Chitinous Plating for +2 base armor, making them extremely durable. They deal splash damage in melee. Effective as damage sponges that protect fragile Zerg units behind them.

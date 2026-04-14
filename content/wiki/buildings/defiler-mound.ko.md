@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["consume", "plague"]
 +++
 해처리에서 디파일러 생산을 활성화한다. 컨슘(저그 유닛을 희생하여 디파일러 에너지 회복), 플레이그, 다크 스웜 능력을 연구한다. 하이브가 필요하다.

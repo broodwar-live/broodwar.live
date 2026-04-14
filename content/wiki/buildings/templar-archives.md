@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["psionic-storm", "hallucination", "maelstrom", "mind-control"]
 +++
 Enables High Templar and Dark Templar production at the Gateway. Researches Psionic Storm, Hallucination, Mind Control, Maelstrom, and other Templar abilities.

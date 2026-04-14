@@ -15,5 +15,6 @@ armor = 1
 build_time = 80
 size = "large"
 produces = []
+researches = ["chitinous-plating", "anabolic-synthesis"]
 +++
 Enables Ultralisk production from the Hatchery. Researches Chitinous Plating (+2 Ultralisk armor) and Anabolic Synthesis (Ultralisk speed). Requires a Hive.

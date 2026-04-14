@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "robotics-facility"
 abilities = []
+upgrades = ["plasma-shields"]
 +++
 Permanently cloaked flying detector. Observers are essential for scouting and detecting cloaked/burrowed units. They are fragile but invisible, making them perfect for keeping tabs on opponent expansions and army movements.

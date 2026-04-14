@@ -33,7 +33,7 @@
         {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">
         {{ e.race | title }}
       </span>
-      <span class="text-xs text-base-content/40">{{ e.researched_at | replace(from="-", to=" ") | title }}</span>
+      <a href="/wiki/buildings/{{ e.researched_at }}" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ e.researched_at | replace(from="-", to=" ") | title }}</a>
     </div>
 
     <div class="mt-6 text-sm text-base-content/70 leading-relaxed">
@@ -52,6 +52,17 @@
         <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}연구시간{% else %}Research Time{% endif %}</dt><dd class="font-stats">{{ e.research_time }}s</dd></div>
         {% endif %}
       </dl>
+
+      {% if e.affects is defined and e.affects | length > 0 %}
+      <div class="mt-4 pt-4 border-t border-primary/5">
+        <span class="text-xs text-base-content/30">{% if lang == "ko" %}영향 유닛{% else %}Affects{% endif %}</span>
+        <ul class="mt-1 space-y-1">
+          {% for unit in e.affects %}
+          <li><a href="/wiki/units/{{ unit }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ unit | replace(from="-", to=" ") | title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
     </div>
   </div>
 

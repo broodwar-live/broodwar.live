@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["leg-enhancements"]
 +++
 질럿의 다리 강화를 연구하여 상당한 이동 속도 향상을 준다. 템플러 아카이브 건설에 필요하다. 질럿 기반 전략의 핵심 타이밍 건물이다.

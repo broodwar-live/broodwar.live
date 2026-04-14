@@ -15,5 +15,6 @@ armor = 1
 build_time = 80
 size = "large"
 produces = []
+researches = ["vehicle-weapons", "vehicle-plating", "ship-weapons", "ship-plating"]
 +++
 Researches vehicle and ship weapon and armor upgrades. Required for Goliath and Valkyrie production. Enables level 2-3 infantry upgrades at the Engineering Bay.

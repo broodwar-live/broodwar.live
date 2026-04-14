@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["irradiate"]
 +++
 Advanced tech building required for Science Vessels and Battlecruisers. Add-ons: Physics Lab (Battlecruiser tech, Yamato Cannon) or Covert Ops (Ghost tech, Cloaking Field, Lockdown, Nuclear Strike).

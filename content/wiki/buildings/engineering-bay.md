@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["infantry-weapons", "infantry-armor"]
 +++
 Researches infantry weapon and armor upgrades. Also required to build Missile Turrets for anti-air defense and detection. Can lift off.

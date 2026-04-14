@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "hatchery"
 abilities = ["dark-swarm", "plague", "consume"]
+upgrades = ["consume", "plague"]
 +++
 Late-game spellcaster with two of the most powerful abilities in the game. Dark Swarm creates a cloud that blocks all ranged attacks against ground units underneath — devastating against marines and dragoons. Plague deals 295 damage to all units in an area (cannot kill, leaves 1 HP). Consume sacrifices a friendly Zerg unit to restore energy.

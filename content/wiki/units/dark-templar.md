@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "gateway"
 abilities = []
+upgrades = ["ground-weapons", "ground-armor", "plasma-shields"]
 +++
 Permanently cloaked melee assassin with extremely high damage. Dark Templar deal 40 damage per hit and can only be seen by detectors. They are devastating in the early-mid game before opponents have reliable detection. Two Dark Templar can merge into a Dark Archon.

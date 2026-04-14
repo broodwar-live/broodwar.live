@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "machine-shop"
 research_time = 35
+affects = ["vulture"]
 +++
 Allows Vultures to plant Spider Mines.

@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "templar-archives"
 research_time = 50
+affects = ["high-templar"]
 +++
 하이 템플러가 유닛의 환상 복사본을 생성하는 능력입니다.

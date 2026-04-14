@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "hatchery"
 abilities = []
+upgrades = ["flyer-attacks", "flyer-carapace"]
 +++
 글레이브 웜이 튕겨 최대 3개의 대상을 타격하는(9, 3, 1 피해) 민첩한 비행 공격 유닛이다. 뮤탈리스크는 저그 최고의 견제 유닛으로, 일꾼을 처리하고 상대가 대응하기 전에 퇴각할 수 있을 만큼 빠르다. 그레이터 스파이어에서 가디언이나 디바우러로 변태할 수 있다.

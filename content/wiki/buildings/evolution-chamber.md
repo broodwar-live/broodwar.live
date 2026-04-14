@@ -15,5 +15,6 @@ armor = 1
 build_time = 40
 size = "large"
 produces = []
+researches = ["melee-attacks", "missile-attacks", "carapace"]
 +++
 Researches Zerg ground melee attack, ranged attack, and carapace upgrades. Required to build Spore Colonies. Equivalent to the Terran Engineering Bay or Protoss Forge.

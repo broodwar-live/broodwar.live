@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "control-tower"
 research_time = 67
+affects = ["wraith"]
 +++
 Allows Wraiths to cloak.

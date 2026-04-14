@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "robotics-facility"
 abilities = []
+upgrades = ["plasma-shields"]
 +++
 영구 은폐 상태의 비행형 탐지기이다. 옵저버는 정찰과 은폐/버로우 유닛 탐지에 필수적이다. 약하지만 보이지 않아, 상대의 확장과 군대 이동을 감시하는 데 안성맞춤이다.

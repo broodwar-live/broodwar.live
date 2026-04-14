@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "science-facility"
 research_time = 50
+affects = ["science-vessel"]
 +++
 사이언스 베슬이 생체 유닛에게 지속 피해를 주는 능력입니다.

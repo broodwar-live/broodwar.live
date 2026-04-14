@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "citadel-of-adun"
 research_time = 67
+affects = ["zealot"]
 +++
 Increases Zealot movement speed. Essential upgrade.

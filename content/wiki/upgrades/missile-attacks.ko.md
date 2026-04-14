@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "evolution-chamber"
 research_time = 80
+affects = ["hydralisk", "lurker"]
 +++
 히드라리스크의 원거리 공격력을 증가시킵니다.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "gateway"
 abilities = []
+upgrades = ["leg-enhancements", "ground-weapons", "ground-armor", "plasma-shields"]
 +++
 Psionic warrior that attacks twice per swing for 16 total damage. Zealots are the frontline of Protoss armies, absorbing damage with their high HP and shields. With the Leg Enhancements upgrade from the Citadel of Adun, they gain a significant speed boost.

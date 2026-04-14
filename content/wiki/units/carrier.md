@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "stargate"
 abilities = []
+upgrades = ["air-weapons", "air-armor", "plasma-shields"]
 +++
 Protoss capital ship that launches up to 8 Interceptors (25 minerals each). Each Interceptor deals 6 damage, for a potential 48 damage per volley. Carriers are powerful in numbers and can kite effectively, but require significant investment to reach critical mass.

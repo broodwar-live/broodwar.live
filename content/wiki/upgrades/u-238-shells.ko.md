@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "academy"
 research_time = 50
+affects = ["marine"]
 +++
 마린의 공격 사거리를 1 증가시킵니다.

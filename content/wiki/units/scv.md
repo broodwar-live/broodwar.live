@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "command-center"
 abilities = []
+upgrades = []
 +++
 The Space Construction Vehicle is the Terran worker unit. SCVs harvest minerals and vespene gas, construct buildings, and can repair mechanical units and structures. Unlike Probes, SCVs must remain present for the entire duration of construction.

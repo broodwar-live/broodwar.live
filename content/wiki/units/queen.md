@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "hatchery"
 abilities = ["spawn-broodling", "ensnare", "parasite"]
+upgrades = []
 +++
 Support caster with unique abilities. Spawn Broodling instantly kills a non-robotic ground unit and spawns two Broodlings. Ensnare slows all units in an area and reveals cloaked units. Parasite attaches to a unit, sharing its vision with the Zerg player permanently.

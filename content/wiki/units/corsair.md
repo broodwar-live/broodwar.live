@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = true
 built_from = "stargate"
 abilities = ["disruption-web"]
+upgrades = ["disruption-web", "air-weapons", "air-armor", "plasma-shields"]
 +++
 Fast air-to-air interceptor with splash damage. Corsairs excel at destroying groups of Mutalisks and Overlords. They can also cast Disruption Web, which prevents ground units and buildings beneath it from attacking — powerful for neutering static defenses.

@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "academy"
 research_time = 50
+affects = ["marine"]
 +++
 Increases Marine attack range by 1. Critical for bio play.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "hydralisk"
 abilities = []
+upgrades = ["missile-attacks", "carapace"]
 +++
 Morphed from Hydralisks, Lurkers burrow into the ground and attack with subterranean spines that deal 20 splash damage in a line. They can only attack while burrowed, making detection essential for opponents. Lurkers are the Zerg's primary area-denial unit.

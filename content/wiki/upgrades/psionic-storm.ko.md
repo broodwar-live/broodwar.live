@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "templar-archives"
 research_time = 75
+affects = ["high-templar"]
 +++
 하이 템플러가 강력한 범위 피해를 주는 능력. 프로토스의 대표적인 스킬입니다.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "nexus"
 abilities = []
+upgrades = ["plasma-shields"]
 +++
 The Protoss worker unit. Probes harvest resources and warp in buildings by initiating a dimensional recall — once started, the Probe is free to return to work while the building constructs itself. This gives Protoss an economic advantage during construction.

@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "spawning-pool"
 research_time = 50
+affects = ["zergling"]
 +++
 Increases Zergling movement speed. Essential early upgrade.

@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "defiler-mound"
 research_time = 67
+affects = ["defiler"]
 +++
 Defiler ability that reduces HP of all units in an area to near death.

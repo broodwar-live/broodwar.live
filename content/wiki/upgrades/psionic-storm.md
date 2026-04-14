@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "templar-archives"
 research_time = 75
+affects = ["high-templar"]
 +++
 High Templar ability dealing massive area damage. Defining spell of Protoss.

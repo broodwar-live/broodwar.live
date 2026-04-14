@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "hydralisk-den"
 research_time = 50
+affects = ["hydralisk"]
 +++
 히드라리스크의 공격 사거리를 증가시킵니다.

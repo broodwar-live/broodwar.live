@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "defiler-mound"
 research_time = 67
+affects = ["defiler"]
 +++
 Defiler ability that kills a friendly Zerg unit to restore energy.

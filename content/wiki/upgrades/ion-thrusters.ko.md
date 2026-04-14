@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "machine-shop"
 research_time = 50
+affects = ["vulture"]
 +++
 벌처의 이동 속도를 증가시킵니다.

@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "cybernetics-core"
 research_time = 80
+affects = ["scout", "corsair", "carrier", "arbiter", "shuttle", "observer"]
 +++
 Increases air unit armor.

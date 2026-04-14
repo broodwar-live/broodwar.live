@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["air-weapons", "air-armor"]
 +++
 Enables Dragoon production at the Gateway and researches Singularity Charge (Dragoon range). Also researches air weapon and armor upgrades. Required for Stargate, Citadel of Adun, and Robotics Facility.

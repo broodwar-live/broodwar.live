@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "hatchery"
 abilities = []
+upgrades = []
 +++
 The Zerg worker unit. Drones harvest resources and morph into buildings — the Drone is consumed in the process, unlike other races' workers. This means each building costs an additional worker, making Zerg building decisions more impactful.

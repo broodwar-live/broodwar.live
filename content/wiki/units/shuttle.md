@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "robotics-facility"
 abilities = []
+upgrades = ["plasma-shields"]
 +++
 Protoss transport ship. Shuttles carry up to 8 supply of ground units and are essential for Reaver drops, one of Protoss's most powerful harassment strategies. Speed upgrade from the Robotics Support Bay makes them significantly faster.

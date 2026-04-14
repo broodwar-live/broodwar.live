@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "hatchery"
 abilities = []
+upgrades = []
 +++
 Flying unit that provides 8 supply and serves as the Zerg's detector (with the Antennae upgrade). Overlords can also transport units with the Ventral Sacs upgrade. They are slow and vulnerable but essential — losing Overlords means losing supply capacity.

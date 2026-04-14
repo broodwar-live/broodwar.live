@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "gateway"
 abilities = ["psionic-storm", "hallucination"]
+upgrades = ["psionic-storm", "hallucination", "plasma-shields"]
 +++
 Powerful psionic caster. High Templar are fragile but carry one of the most devastating abilities in the game: Psionic Storm, which deals 112 damage over 3 seconds in an area. They can also cast Hallucination to create decoy units. Two High Templar can merge into an Archon.

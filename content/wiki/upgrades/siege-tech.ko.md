@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "machine-shop"
 research_time = 50
+affects = ["siege-tank"]
 +++
 시즈탱크가 시즈 모드로 전환하여 강력한 범위 피해를 줄 수 있습니다.

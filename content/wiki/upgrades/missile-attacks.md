@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "evolution-chamber"
 research_time = 80
+affects = ["hydralisk", "lurker"]
 +++
 Increases Hydralisk ranged attack damage.

@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "stargate"
 abilities = []
+upgrades = ["air-weapons", "air-armor", "plasma-shields"]
 +++
 Heavy air unit with strong anti-air capabilities. Scouts have 28 explosive damage against air targets but weak ground attack. Despite their stats on paper, Scouts are rarely used in competitive play because other options (Corsairs, Carriers) are more cost-efficient.

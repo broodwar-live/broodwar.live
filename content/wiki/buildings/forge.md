@@ -15,5 +15,6 @@ armor = 1
 build_time = 40
 size = "large"
 produces = []
+researches = ["ground-weapons", "ground-armor", "plasma-shields"]
 +++
 Researches ground weapon and armor upgrades for Protoss units. Also required to build Photon Cannons. The Forge is sometimes built before the Gateway in a 'Forge Fast Expand' opening to enable cannon-based defense.

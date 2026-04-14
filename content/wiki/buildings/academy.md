@@ -15,5 +15,6 @@ armor = 1
 build_time = 80
 size = "large"
 produces = []
+researches = ["stim-pack", "u-238-shells"]
 +++
 Enables Firebat and Medic production at the Barracks. Researches Stim Pack, U-238 Shells (marine range), and Medic abilities (Restoration, Optical Flare).

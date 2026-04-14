@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "machine-shop"
 research_time = 50
+affects = ["siege-tank"]
 +++
 Allows Siege Tanks to enter Siege Mode for devastating area damage.

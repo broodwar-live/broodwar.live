@@ -12,5 +12,6 @@ gas = 100
 levels = 3
 researched_at = "armory"
 research_time = 80
+affects = ["vulture", "siege-tank", "goliath"]
 +++
 벌처, 시즈탱크, 골리앗의 공격력을 증가시킵니다.

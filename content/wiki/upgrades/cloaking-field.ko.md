@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "control-tower"
 research_time = 67
+affects = ["wraith"]
 +++
 레이스가 클로킹할 수 있습니다.

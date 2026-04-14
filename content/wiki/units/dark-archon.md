@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = false
 built_from = "merge"
 abilities = ["mind-control", "maelstrom", "feedback"]
+upgrades = ["maelstrom", "mind-control", "plasma-shields"]
 +++
 Formed by merging two Dark Templar. Dark Archons are spellcasters with unique abilities: Mind Control permanently converts an enemy unit, Maelstrom freezes biological units in an area, and Feedback deals damage equal to a target's remaining energy. Rarely seen but powerful.

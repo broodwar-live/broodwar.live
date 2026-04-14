@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = false
 built_from = "gateway"
 abilities = []
+upgrades = ["leg-enhancements", "ground-weapons", "ground-armor", "plasma-shields"]
 +++
 한 번의 공격에 두 번 타격하여 총 16의 피해를 주는 사이오닉 전사이다. 질럿은 높은 체력과 보호막으로 피해를 흡수하는 프로토스 군대의 전방 유닛이다. 시타델 오브 아둔에서 다리 강화 업그레이드를 하면 상당한 이동 속도 향상을 얻는다.

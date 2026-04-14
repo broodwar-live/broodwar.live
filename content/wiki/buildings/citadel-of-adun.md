@@ -15,5 +15,6 @@ armor = 1
 build_time = 60
 size = "large"
 produces = []
+researches = ["leg-enhancements"]
 +++
 Researches Leg Enhancements for Zealots, giving them a significant speed boost. Required to build the Templar Archives. A key timing building for Zealot-based strategies.

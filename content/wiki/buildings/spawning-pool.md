@@ -15,5 +15,6 @@ armor = 1
 build_time = 80
 size = "large"
 produces = []
+researches = ["metabolic-boost", "adrenal-glands"]
 +++
 Enables Zergling production from the Hatchery. Researches Metabolic Boost (Zergling speed) and Adrenal Glands (Zergling attack speed, requires Hive). The timing of the Spawning Pool defines many Zerg openings — pool first, hatch first, or overpool.

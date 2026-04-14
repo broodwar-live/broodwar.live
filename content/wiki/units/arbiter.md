@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "stargate"
 abilities = ["recall", "stasis-field"]
+upgrades = ["air-weapons", "air-armor", "plasma-shields"]
 +++
 Support capital ship with a passive cloaking field that hides all friendly units beneath it. Arbiters can cast Recall (teleports units to the Arbiter's location) and Stasis Field (freezes all units in an area, making them invulnerable and unable to act). Game-changing in late-game engagements.

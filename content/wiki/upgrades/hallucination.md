@@ -12,5 +12,6 @@ gas = 150
 levels = 1
 researched_at = "templar-archives"
 research_time = 50
+affects = ["high-templar"]
 +++
 High Templar ability to create illusory copies of units.

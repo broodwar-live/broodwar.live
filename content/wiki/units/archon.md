@@ -24,5 +24,6 @@ ground_attack = true
 air_attack = true
 built_from = "merge"
 abilities = []
+upgrades = ["plasma-shields"]
 +++
 A being of pure psionic energy formed by merging two High Templar. Archons have massive shields (350) but only 10 HP, and deal 30 splash damage. They are excellent against biological units and mutalisk flocks. Their shields regenerate, making them very durable.

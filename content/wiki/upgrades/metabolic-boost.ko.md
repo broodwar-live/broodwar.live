@@ -12,5 +12,6 @@ gas = 100
 levels = 1
 researched_at = "spawning-pool"
 research_time = 50
+affects = ["zergling"]
 +++
 저글링의 이동 속도를 증가시킵니다.

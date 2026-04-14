@@ -50,10 +50,10 @@
   <div class="glass-card rounded-box p-6 max-w-2xl mb-8">
     <h2 class="text-sm font-semibold mb-4">{% if lang == "ko" %}결과{% else %}Results{% endif %}</h2>
     <dl class="space-y-3 text-sm">
-      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}우승{% else %}Champion{% endif %}</dt><dd class="font-semibold text-primary">{{ e.champion }}</dd></div>
-      {% if e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd>{{ e.runner_up }}</dd></div>{% endif %}
+      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}우승{% else %}Champion{% endif %}</dt><dd class="font-semibold"><a href="/players/{{ e.champion | lower }}" class="text-primary hover:text-primary/80 transition-colors">{{ e.champion }}</a></dd></div>
+      {% if e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd><a href="/players/{{ e.runner_up | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.runner_up }}</a></dd></div>{% endif %}
       {% if e.semifinalists is defined and e.semifinalists | length > 0 %}
-      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}4강{% else %}Semi-finalists{% endif %}</dt><dd>{{ e.semifinalists | join(sep=", ") }}</dd></div>
+      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}4강{% else %}Semi-finalists{% endif %}</dt><dd>{% for sf in e.semifinalists %}<a href="/players/{{ sf | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ sf }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
       {% endif %}
     </dl>
   </div>
@@ -67,9 +67,9 @@
     <div class="glass-card rounded-box px-4 py-3 flex items-center gap-4">
       <span class="text-[11px] text-primary/50 font-medium w-24 shrink-0">{{ m.round }}</span>
       <div class="flex-1 flex items-center justify-center gap-3">
-        <span class="font-semibold text-sm {% if m.score_a > m.score_b %}text-base-content{% else %}text-base-content/40{% endif %}">{{ m.player_a }}</span>
+        <a href="/players/{{ m.player_a | lower }}" class="font-semibold text-sm {% if m.score_a > m.score_b %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_a }}</a>
         <span class="font-stats text-sm"><span class="{% if m.score_a > m.score_b %}text-primary{% else %}text-base-content/30{% endif %}">{{ m.score_a }}</span><span class="text-base-content/15"> : </span><span class="{% if m.score_b > m.score_a %}text-primary{% else %}text-base-content/30{% endif %}">{{ m.score_b }}</span></span>
-        <span class="font-semibold text-sm {% if m.score_b > m.score_a %}text-base-content{% else %}text-base-content/40{% endif %}">{{ m.player_b }}</span>
+        <a href="/players/{{ m.player_b | lower }}" class="font-semibold text-sm {% if m.score_b > m.score_a %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_b }}</a>
       </div>
     </div>
     {% endfor %}
@@ -93,9 +93,9 @@
         {% for m in e.bracket %}
         <tr>
           <td class="text-base-content/40">{{ m.round }}</td>
-          <td class="{% if m.score_a > m.score_b %}font-semibold{% else %}text-base-content/40{% endif %}">{{ m.player_a }}</td>
+          <td class="{% if m.score_a > m.score_b %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="/players/{{ m.player_a | lower }}" class="hover:text-primary transition-colors">{{ m.player_a }}</a></td>
           <td class="font-stats">{{ m.score_a }}-{{ m.score_b }}</td>
-          <td class="{% if m.score_b > m.score_a %}font-semibold{% else %}text-base-content/40{% endif %}">{{ m.player_b }}</td>
+          <td class="{% if m.score_b > m.score_a %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="/players/{{ m.player_b | lower }}" class="hover:text-primary transition-colors">{{ m.player_b }}</a></td>
         </tr>
         {% endfor %}
       </tbody>

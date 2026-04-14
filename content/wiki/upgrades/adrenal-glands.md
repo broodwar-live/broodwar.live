@@ -12,5 +12,6 @@ gas = 200
 levels = 1
 researched_at = "spawning-pool"
 research_time = 50
+affects = ["zergling"]
 +++
 Increases Zergling attack speed.

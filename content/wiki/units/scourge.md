@@ -24,5 +24,6 @@ ground_attack = false
 air_attack = true
 built_from = "hatchery"
 abilities = []
+upgrades = ["flyer-carapace"]
 +++
 Kamikaze flying unit produced two per larva. Scourge fly into enemy air units and detonate for 110 damage. They are cheap and devastating against capital ships and transports, but fragile and easily killed before reaching their target.
