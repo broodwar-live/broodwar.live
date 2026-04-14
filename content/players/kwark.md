@@ -6,7 +6,7 @@ template = "players/player.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-image = ""
+image = "/images/players/kwark.png"
 race = "terran"
 country = "PL"
 country_name = "Poland"
