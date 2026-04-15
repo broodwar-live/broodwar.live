@@ -14,4 +14,4 @@ rating = 2650
 tier = "A-"
 aliases = ["김윤중"]
 +++
-Experienced Protoss known for shuttle-reaver micro. A veteran of the competitive scene.
+Shuttle is a Korean Protoss with a storied career spanning the golden era through the modern ASL scene. Known for his strong PvZ and smart use of shuttles and reavers — a fitting combination given his name — he has been a reliable competitor across multiple generations of professional play. Shuttle's micro with reaver drops is among the best in the business, and his ability to deal economic damage while maintaining his own macro has been a defining feature of his play. He has made numerous ASL appearances and continues to compete at a respectable level, demonstrating the kind of longevity that comes from deep game understanding and love of competition.

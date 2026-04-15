@@ -14,4 +14,4 @@ rating = 2410
 tier = "B"
 aliases = []
 +++
-Top Brazilian Zerg representing South American Brood War. Active in international online events.
+Draco is a Brazilian Zerg representing the Latin American BW community in international competition. Active in BSL qualifying rounds and international online events, he brings passion and developing skills to the global scene. His playstyle features standard Zerg strategies adapted to the international meta, with a focus on improving macro efficiency. Draco's participation helps grow the South American BW scene and demonstrates that Brood War's competitive appeal extends worldwide.

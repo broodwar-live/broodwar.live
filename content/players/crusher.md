@@ -14,4 +14,4 @@ rating = 2390
 tier = "B"
 aliases = []
 +++
-Ukrainian Zerg active in BSL and European tournaments with aggressive mutalisk play.
+Crusher is a Ukrainian Zerg competing in the international BW scene alongside his compatriot Dewalt. Active in BSL tournaments and European online leagues, he brings aggressive Zerg strategies and strong macro fundamentals to every event. His ZvT is his most developed matchup, featuring mutalisk harass and timing attacks that reflect the aggressive Ukrainian style. Crusher's consistent BSL participation and improving results demonstrate the strength of the Ukrainian BW community.

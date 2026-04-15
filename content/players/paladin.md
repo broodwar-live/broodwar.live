@@ -14,4 +14,4 @@ rating = 2370
 tier = "C"
 aliases = []
 +++
-Austrian Protoss in the European scene with a defensive playstyle and strong late-game.
+Paladin is an Austrian Protoss competing in the European BW scene through BSL qualifying rounds and online tournaments. He represents Austria's small but dedicated BW community, bringing passion for the game to every event. His playstyle features developing Protoss fundamentals with a preference for standard strategies. Paladin's regular participation in European events contributes to the diversity of the international scene and demonstrates the global reach of competitive Brood War.

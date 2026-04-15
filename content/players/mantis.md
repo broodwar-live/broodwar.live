@@ -14,4 +14,4 @@ rating = 2380
 tier = "C"
 aliases = []
 +++
-Thai Zerg representing Southeast Asian Brood War with strong online results.
+Mantis is a Thai Zerg representing the Southeast Asian BW community in international online competition. His participation helps highlight the game's enduring popularity in Thailand and the broader Southeast Asian region. Mantis's playstyle features developing Zerg fundamentals with a focus on standard macro strategies. His dedication to competing against stronger international players demonstrates the passion of the Thai BW community.

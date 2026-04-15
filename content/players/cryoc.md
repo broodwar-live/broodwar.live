@@ -14,4 +14,4 @@ rating = 2380
 tier = "C"
 aliases = []
 +++
-French Protoss in European events with creative builds and strong PvZ.
+Cryoc is a French Protoss competing in the European BW scene through BSL qualifying rounds and regional online tournaments. He represents the French BW community alongside Tempest, contributing to France's growing presence in international competition. His playstyle features standard Protoss fundamentals with a developing understanding of matchup dynamics. Cryoc's regular participation in European events demonstrates the passion of the French community for competitive Brood War.

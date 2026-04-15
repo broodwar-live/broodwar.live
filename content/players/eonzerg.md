@@ -14,4 +14,4 @@ rating = 2430
 tier = "B"
 aliases = []
 +++
-Top Russian Zerg active in the European scene and BSL tournaments.
+EonZerg is a Russian Zerg active in the European BW scene through BSL tournaments and online leagues. He represents Russia's growing competitive community with a playstyle that features aggressive mutalisk play and improving macro management. EonZerg's ZvT is his strongest matchup, where his harass-heavy approach can disrupt Terran economic plans. His regular participation in European events contributes to the diversity of the international BW scene.

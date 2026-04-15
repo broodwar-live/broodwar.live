@@ -14,4 +14,4 @@ rating = 2430
 tier = "B"
 aliases = ["김도훈", "Kim Do Hoon"]
 +++
-Terran in the modern scene with aggressive tendencies and strong TvP play.
+Britney is a Korean Terran competing in the modern scene with aggressive tendencies and a particularly strong TvP. His approach to the Protoss matchup features early pressure builds and timing attacks that force opponents into defensive positions before they can establish their preferred game plan. Britney's willingness to take risks in the early game gives him upset potential against higher-ranked players, though it can also lead to quick losses when his aggression is scouted. He is active in ASL qualifiers and online tournaments, where his volatile but exciting playstyle makes him an unpredictable opponent. His games tend to be action-packed and decided quickly, reflecting his commitment to early-game dominance.

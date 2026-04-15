@@ -14,4 +14,4 @@ rating = 2440
 tier = "B"
 aliases = ["조일장"]
 +++
-Protoss player active in the modern Korean tournament scene.
+Zelot is a Korean Protoss active in the modern scene who brings a zealot-heavy aggressive style that lives up to his name. His PvT features early gateway aggression and zealot-focused pressure builds that aim to deal damage before Terran can establish their defensive infrastructure. Zelot competes in ASL qualifiers and Korean online tournaments, where his aggressive approach can produce quick victories against unprepared opponents. His commitment to offensive play makes his games fast-paced and entertaining, though it can leave him vulnerable against well-scouted opponents who are prepared for the aggression.

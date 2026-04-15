@@ -14,4 +14,4 @@ rating = 2510
 tier = "Legend"
 aliases = ["이윤열", "Lee Yun Yeol"]
 +++
-The Genius Terran — three-time OSL champion and one of the most decorated players in BW history. Known for brilliant macro play and strategic innovation.
+Known as the "Genius Terran," NaDa is one of the most decorated players in Brood War history with three OSL championships and an MSL title. Competing from the earliest days of professional StarCraft through the golden era, he was renowned for his brilliant macro play, strategic innovation, and an ability to adapt mid-game that left opponents scrambling. NaDa's TvP was particularly feared, blending aggressive timing pushes with seamless transitions into late-game mech. His rivalry with Boxer defined an era, and his consistency across multiple generations of top players is unmatched among Terrans. After retiring from the pro scene, NaDa's legacy endures as one of the "Four Kings" of StarCraft — a testament to his sustained excellence at the highest level of competition.

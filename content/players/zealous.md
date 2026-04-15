@@ -14,4 +14,4 @@ rating = 2380
 tier = "C"
 aliases = []
 +++
-Dutch Protoss in European tournaments. Known for aggressive zealot-heavy strategies.
+Zealous is a Dutch Protoss active in the European BW scene, competing in BSL qualifying rounds and online tournaments. He represents the Netherlands' BW community with a playstyle built on solid fundamentals and a preference for standard Protoss strategies. Zealous's PvZ is his most developed matchup, with improving army control and storm management. His dedication to competitive play contributes to the Benelux region's presence in international Brood War and helps sustain the European scene.

@@ -14,4 +14,4 @@ rating = 2370
 tier = "C"
 aliases = []
 +++
-Argentine Zerg representing South American Brood War in international competitions.
+Raptor is an Argentine Zerg representing the South American BW community in international competition. Active in online tournaments and BSL qualifying events, he brings passion for Brood War from a region with a growing competitive scene. His playstyle features aggressive Zerg strategies with a focus on zergling-based pressure. Raptor's participation helps connect the South American BW community with the broader international scene.

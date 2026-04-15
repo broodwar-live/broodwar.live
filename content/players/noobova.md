@@ -14,4 +14,4 @@ rating = 2380
 tier = "C"
 aliases = []
 +++
-Czech Zerg active in European tournaments. Known for aggressive play and strong online results.
+nOOBova is a Czech Zerg competing in the European BW scene through BSL qualifying rounds and online tournaments. He represents the Czech BW community with a developing game and regular competitive participation. His playstyle features standard Zerg strategies with improving mechanics. nOOBova's dedication to the game and his regular tournament appearances contribute to the diversity of the European scene.

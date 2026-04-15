@@ -14,4 +14,4 @@ rating = 2460
 tier = "B"
 aliases = ["최지훈"]
 +++
-Experienced Zerg known for strong ZvT and defensive play style.
+Shine is a Korean Zerg competing in the modern scene with a focus on mutalisk-based strategies and aggressive ZvT play. His mutalisk micro is solid, and his ability to harass Terran expansions while maintaining his own economy demonstrates good multitasking. Shine has been active in ASL qualifiers and online tournaments, where his aggressive approach can produce strong results against opponents who are not prepared for the tempo. His commitment to mutalisk-heavy play gives his games a distinctive character.

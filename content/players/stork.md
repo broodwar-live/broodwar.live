@@ -14,4 +14,4 @@ rating = 2550
 tier = "B+"
 aliases = ["송병구", "Song Byung Goo"]
 +++
-Golden era Protoss legend. Two-time OSL runner-up known for elegant carrier play and PvT mastery.
+Stork is a legendary Protoss who was one of the most consistent top-tier players during the golden era, reaching multiple OSL finals and establishing himself as a permanent fixture in the upper echelons of competitive BW. His PvT was among the best in the world, featuring precise storm play and patient army control that could neutralize even the strongest Terran pushes. Stork's game sense was exceptional, with an ability to read opponent strategies and adjust his own play accordingly. In the modern era, he has participated in ASL events, bringing his refined style to a new generation. His sustained excellence across multiple years of golden era competition earned him well-deserved recognition as one of the greatest Protoss players of all time.

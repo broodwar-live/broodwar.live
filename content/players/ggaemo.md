@@ -14,4 +14,4 @@ rating = 2420
 tier = "B"
 aliases = ["이동훈", "Lee Dong Hoon"]
 +++
-Protoss in modern events with creative strategies and strong PvZ.
+ggaemo is a Korean Protoss active in the modern competitive scene with a developing game that shows potential for growth. His playstyle features standard Protoss builds executed with improving mechanics, and his PvT has shown particular improvement in recent seasons. ggaemo competes in ASL qualifiers and Korean online tournaments, gaining valuable experience against stronger opponents with each event. His dedication to improvement and regular competitive participation reflect the ongoing renewal of talent in the Korean Protoss scene.

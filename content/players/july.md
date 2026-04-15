@@ -14,4 +14,4 @@ rating = 2490
 tier = "Legend"
 aliases = ["박성준", "Park Sung Joon"]
 +++
-The God of War — aggressive Zerg who dominated with relentless zergling-mutalisk play. Two-time MSL champion known for his fearless style.
+July was one of the most aggressive and exciting Zerg players in Brood War history, known for his relentless attack-first philosophy that earned him the nickname "The God of War." A two-time OSL champion, his peak years in the early-to-mid 2000s saw him overwhelm opponents with wave after wave of zerglings and mutalisks, rarely giving them a moment to breathe. July's ZvT was particularly devastating, featuring all-in timing attacks and aggressive zergling floods that could end games in minutes. His influence on aggressive Zerg play is profound — he proved that Zerg could win through sheer pressure rather than patient macro. Though retired, July's legacy as one of the most entertaining and feared Zerg players in history remains firmly intact.
