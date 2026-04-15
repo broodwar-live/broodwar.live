@@ -14,4 +14,4 @@ rating = 2420
 tier = "B"
 aliases = ["양재원", "Yang Jae Won"]
 +++
-KingOFKing is a Korean Zerg active in the modern competitive scene with a balanced approach and solid fundamentals. His ZvT features standard mutalisk play and good macro management, while his ZvP shows developing lurker strategies. KingOFKing competes in ASL qualifiers and Korean online tournaments, where his consistent play keeps him competitive. His game understanding is sound, and his steady improvement across seasons demonstrates dedication to the craft.
+KingOFKing is a Korean Zerg active in the modern competitive scene with a balanced approach and solid fundamentals that keep him competitive against diverse opponents. His ZvT features standard mutalisk play and good macro management that produce consistent results, while his ZvP shows developing lurker strategies and improving army control. KingOFKing competes in ASL qualifiers and Korean online tournaments, where his reliable play yields steady performances. His game understanding is sound, and his improvement across multiple seasons demonstrates dedication to the craft.

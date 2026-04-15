@@ -14,4 +14,4 @@ rating = 2380
 tier = "C"
 aliases = []
 +++
-Ignite is a British Zerg competing in the European BW scene through BSL qualifying rounds and online tournaments. He represents the United Kingdom's small but passionate BW community with a playstyle built on developing fundamentals and a willingness to compete. Ignite's ZvT shows the most development, with improving macro play and growing confidence. His participation helps maintain the UK's presence in the international scene and contributes to the geographic diversity of European BW.
+Ignite is a British Zerg competing in the European BW scene through BSL qualifying rounds and online tournaments. He represents the United Kingdom's small but passionate BW community with a playstyle built on developing fundamentals and a willingness to compete against players from stronger regions. Ignite's ZvT shows the most development, with improving macro play and growing confidence in mutalisk-based strategies. His participation helps maintain the UK's presence in the international scene and demonstrates the game's appeal across the British Isles.

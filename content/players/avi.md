@@ -14,4 +14,4 @@ rating = 2390
 tier = "C"
 aliases = []
 +++
-Avi is a Swedish Protoss representing the Nordic BW community in international competition. Active in BSL qualifying rounds and European online tournaments, he brings solid fundamentals and a developing game to the international scene. His PvT shows the most promise, with patient gameplay and improving storm mechanics. Avi's participation helps maintain Sweden's presence in the global BW community and contributes to the geographic diversity of the European player base.
+Avi is a Swedish Protoss representing the Nordic BW community in international competition. Active in BSL qualifying rounds and European online tournaments, he brings solid fundamentals and a developing game to the international scene. His PvT shows the most promise, with patient gameplay and improving storm mechanics that give him a chance against stronger opponents. Avi's participation helps maintain Sweden's presence in the global BW community and contributes to the geographic diversity of the European player base. He continues to improve with each tournament and is a dedicated competitor in the European circuit.
