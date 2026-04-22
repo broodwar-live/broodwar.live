@@ -163,6 +163,18 @@
       </nav>
     </header>
 
+    {# --- Early Access Banner --- #}
+    <div id="early-access-banner" class="bg-warning/10 border-b border-warning/15 text-center px-4 py-2.5 text-xs text-base-content/60 leading-relaxed">
+      {% if lang == "ko" %}
+        <strong class="text-warning/80">공사 중</strong> — broodwar.live는 초기 개발 단계입니다. 콘텐츠와 기능이 불완전합니다.
+        <a href="https://github.com/broodwar-live" target="_blank" rel="noopener" class="text-primary/70 hover:text-primary underline underline-offset-2">기여하기</a>
+      {% else %}
+        <strong class="text-warning/80">Under Construction</strong> — broodwar.live is in early development. Content and features are incomplete.
+        <a href="https://github.com/broodwar-live" target="_blank" rel="noopener" class="text-primary/70 hover:text-primary underline underline-offset-2">Contribute on GitHub</a>
+      {% endif %}
+      <button onclick="this.parentElement.remove()" aria-label="{% if lang == 'ko' %}닫기{% else %}Dismiss{% endif %}" class="ml-2 text-base-content/25 hover:text-base-content/50 transition-colors align-middle">&times;</button>
+    </div>
+
     {# --- Main Content --- #}
     <main id="main-content" class="flex-1">
       {% block content %}{% endblock %}
