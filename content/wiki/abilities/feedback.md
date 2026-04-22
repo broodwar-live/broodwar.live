@@ -9,6 +9,8 @@ name_ko = "피드백"
 caster = "dark-archon"
 energy = 50
 hp_cost = 0
+range = 10
+hotkey = "F"
 +++
 Feedback drains all remaining energy from a target unit and deals damage equal to the amount of energy drained. A full-energy Science Vessel (200 energy) takes 200 damage, which can destroy it outright. Costs 50 energy from a Dark Archon and requires no research — it is available immediately upon merging two Dark Templar into a Dark Archon.
 

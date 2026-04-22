@@ -28,6 +28,8 @@ dps_upgraded = 12.04
 speed_upgraded = 8.24
 sight = 5
 built_from = "hatchery"
+hotkey = "Z"
+requires = ["spawning-pool"]
 abilities = ["burrow"]
 upgrades = ["metabolic-boost", "adrenal-glands", "melee-attacks", "carapace"]
 +++

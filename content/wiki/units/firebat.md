@@ -27,6 +27,8 @@ dps = 4.14
 dps_upgraded = 8.28
 sight = 7
 built_from = "barracks"
+hotkey = "F"
+requires = ["academy"]
 abilities = []
 upgrades = ["stim-pack", "infantry-weapons", "infantry-armor"]
 +++

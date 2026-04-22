@@ -9,6 +9,13 @@ name_ko = "리콜"
 caster = "arbiter"
 energy = 150
 hp_cost = 0
+range = "unlimited"
+aoe = "64px radius"
+hotkey = "R"
+researched_at = "arbiter-tribunal"
+research_minerals = 150
+research_gas = 150
+research_time = 100
 +++
 Recall instantly teleports all friendly units within a target area to the Arbiter's current position. The recalled units appear around the Arbiter and can act immediately upon arrival. Costs 150 energy from an Arbiter and requires research at the Arbiter Tribunal.
 

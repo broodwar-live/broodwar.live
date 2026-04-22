@@ -27,6 +27,8 @@ dps = 10.11
 range_upgraded = 6
 sight = 8
 built_from = "gateway"
+hotkey = "D"
+requires = ["cybernetics-core"]
 abilities = []
 upgrades = ["ground-weapons", "ground-armor", "plasma-shields"]
 +++

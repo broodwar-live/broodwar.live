@@ -9,6 +9,15 @@ name_ko = "플레이그"
 caster = "defiler"
 energy = 150
 hp_cost = 0
+damage = 295
+range = 9
+aoe = "64px radius"
+duration = 25.0
+hotkey = "G"
+researched_at = "defiler-mound"
+research_minerals = 200
+research_gas = 200
+research_time = 100
 +++
 Plague infects all units and buildings in the target area with a deadly disease that deals 295 damage over approximately 25 seconds. Plague cannot kill — it reduces HP to a minimum of 1, leaving the unit alive but critically weakened. The damage bypasses armor and affects both shields and HP. Costs 150 energy from a Defiler and requires research at the Defiler Mound.
 

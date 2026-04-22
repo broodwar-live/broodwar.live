@@ -22,6 +22,7 @@
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 {% set e = page.extra %}
+{% set race = page.taxonomies.race[0] %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   {# Breadcrumb #}
   <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
@@ -33,118 +34,229 @@
   </nav>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    {# Main content #}
+    {# ── Main content ── #}
     <div class="lg:col-span-2">
       <h1 class="text-2xl font-display">{{ page.title }}</h1>
       <div class="flex items-center gap-3 mt-2">
         <span class="text-[10px] font-bold badge-race
-          {% if 'terran' in page.taxonomies.race %}text-race-terran
-          {% elif 'protoss' in page.taxonomies.race %}text-race-protoss
-          {% elif 'zerg' in page.taxonomies.race %}text-race-zerg{% endif %}">
-          {{ page.taxonomies.race[0] | title }}
+          {% if race == 'terran' %}text-race-terran
+          {% elif race == 'protoss' %}text-race-protoss
+          {% elif race == 'zerg' %}text-race-zerg{% endif %}">
+          {{ race | title }}
         </span>
-        <span class="text-xs text-base-content/40">{{ e.type | title }} unit</span>
+        <span class="text-xs text-base-content/40">{{ e.size | default(value='') | title }} {{ e.type | default(value='') | title }} {% if lang == "ko" %}유닛{% else %}unit{% endif %}</span>
       </div>
-
-      {% if page.toc | length > 0 %}
-      <nav class="mt-6 mb-8 glass-card rounded-box p-4" aria-label="Table of contents">
-        <div class="text-[11px] font-semibold text-base-content/40 uppercase tracking-wider mb-2">{% if lang == "ko" %}목차{% else %}Contents{% endif %}</div>
-        <ol class="toc text-xs space-y-1">
-          {% for h in page.toc %}
-          <li><a href="#{{ h.id }}">{{ h.title }}</a></li>
-          {% endfor %}
-        </ol>
-      </nav>
-      {% endif %}
 
       <div class="mt-6 prose prose-invert max-w-none">
         {{ page.content | safe }}
       </div>
-    </div>
 
-    {# Stats sidebar #}
-    <div class="glass-card rounded-box overflow-hidden">
-      {# Infobox header #}
-      <div class="bg-primary/5 border-b border-primary/10 px-5 py-3">
-        <div class="font-display text-lg">{{ page.title }}</div>
-        <div class="flex items-center gap-2 mt-1">
-          <span class="text-[10px] font-bold badge-race
-            {% if 'terran' in page.taxonomies.race %}text-race-terran
-            {% elif 'protoss' in page.taxonomies.race %}text-race-protoss
-            {% elif 'zerg' in page.taxonomies.race %}text-race-zerg{% endif %}">
-            {{ page.taxonomies.race[0] | title }}
-          </span>
-          <span class="text-[10px] text-base-content/30">{{ e.size | default(value='') | title }} {{ e.type | default(value='') | title }} {% if lang == "ko" %}유닛{% else %}Unit{% endif %}</span>
-        </div>
-      </div>
+      {# ── Upgrade & Ability Reference Cards ── #}
+      {% if (e.abilities is defined and e.abilities | length > 0) or (e.upgrades is defined and e.upgrades | length > 0) %}
+      <div class="mt-10 pt-8 border-t border-primary/10 not-prose">
+        <h2 class="text-base font-display mb-4">{% if lang == "ko" %}업그레이드 & 기술{% else %}Upgrades & Abilities{% endif %}</h2>
 
-      {% if e.image %}
-      <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-video object-contain bg-base-300/50" loading="lazy" />
-      {% endif %}
-
-      <div class="p-5">
-        {# Unit Information #}
-        <h4 class="text-[10px] font-semibold text-base-content/30 uppercase tracking-wider mb-3">{% if lang == "ko" %}유닛 정보{% else %}Unit Information{% endif %}</h4>
-        <dl class="space-y-2 text-sm">
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd class="font-stats">{{ e.minerals }}</dd></div>
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</dt><dd class="font-stats">{{ e.gas }}</dd></div>
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}서플라이{% else %}Supply{% endif %}</dt><dd class="font-stats">{{ e.supply }}</dd></div>
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}생산시간{% else %}Build Time{% endif %}</dt><dd class="font-stats">{% if e.build_time is defined and e.build_time > 0 %}{{ e.build_time }}s{% else %}—{% endif %}</dd></div>
-          {% if e.built_from %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}생산 건물{% else %}Built From{% endif %}</dt><dd><a href="/wiki/buildings/{{ e.built_from }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ e.built_from | replace(from="-", to=" ") | title }}</a></dd></div>
+        {# Ability cards #}
+        {% if e.abilities is defined and e.abilities | length > 0 %}
+        <div class="space-y-2 mb-4">
+          {% for slug in e.abilities %}
+          {% set p = get_page(path="wiki/abilities/" ~ slug ~ ".md", lang=lang) | default(value=false) %}
+          {% if p %}
+          <div class="ref-card">
+            <div class="flex items-start justify-between gap-4">
+              <div class="min-w-0">
+                <a href="/wiki/abilities/{{ slug }}" class="text-sm font-semibold text-primary/80 hover:text-primary transition-colors">{{ p.title }}</a>
+                <div class="flex items-center gap-3 mt-1 text-xs text-base-content/35">
+                  {% if p.extra.energy is defined and p.extra.energy > 0 %}<span>{% if lang == "ko" %}에너지{% else %}Energy{% endif %} {{ p.extra.energy }}</span>{% endif %}
+                  {% if p.extra.hp_cost is defined and p.extra.hp_cost > 0 %}<span>{% if lang == "ko" %}체력{% else %}HP{% endif %} -{{ p.extra.hp_cost }}</span>{% endif %}
+                  {% if p.extra.range is defined %}<span>{% if lang == "ko" %}사거리{% else %}Range{% endif %} {{ p.extra.range }}</span>{% endif %}
+                  {% if p.extra.damage is defined %}<span>{% if lang == "ko" %}피해{% else %}Damage{% endif %} {{ p.extra.damage }}</span>{% endif %}
+                </div>
+              </div>
+              <span class="text-[10px] text-base-content/20 uppercase tracking-wider shrink-0">{% if lang == "ko" %}기술{% else %}Ability{% endif %}</span>
+            </div>
+            <p class="text-xs text-base-content/40 mt-2 leading-relaxed">{{ p.content | striptags | truncate(length=180) }}</p>
+          </div>
           {% endif %}
-        </dl>
-
-        {# Combat Stats #}
-        <h4 class="text-[10px] font-semibold text-base-content/30 uppercase tracking-wider mt-5 mb-3 pt-4 border-t border-primary/5">{% if lang == "ko" %}전투 스탯{% else %}Unit Stats{% endif %}</h4>
-        <dl class="space-y-2 text-sm">
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}체력{% else %}HP{% endif %}</dt><dd class="font-stats">{{ e.hp }}</dd></div>
-          {% if e.shields is defined and e.shields > 0 %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}쉴드{% else %}Shields{% endif %}</dt><dd class="font-stats">{{ e.shields }}</dd></div>
-          {% endif %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}방어력{% else %}Armor{% endif %}</dt><dd class="font-stats">{{ e.armor }}</dd></div>
-          {% if e.damage is defined and e.damage > 0 %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}공격력{% else %}Damage{% endif %}</dt><dd class="font-stats">{{ e.damage }} <span class="text-[10px] text-base-content/25">({{ e.damage_type | default(value="normal") }})</span></dd></div>
-          {% endif %}
-          {% if e.dps is defined and e.dps > 0 %}
-          <div class="flex justify-between"><dt class="text-base-content/40">DPS</dt><dd class="font-stats">{{ e.dps }}{% if e.dps_upgraded is defined %} <span class="text-[10px] text-success/50">({{ e.dps_upgraded }})</span>{% endif %}</dd></div>
-          {% endif %}
-          {% if e.range is defined and e.range > 0 %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}사거리{% else %}Range{% endif %}</dt><dd class="font-stats">{{ e.range }}{% if e.range_upgraded is defined %} <span class="text-[10px] text-success/50">({{ e.range_upgraded }})</span>{% endif %}</dd></div>
-          {% endif %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}이동속도{% else %}Speed{% endif %}</dt><dd class="font-stats">{{ e.speed | default(value=0) }}{% if e.speed_upgraded is defined %} <span class="text-[10px] text-success/50">({{ e.speed_upgraded }})</span>{% endif %}</dd></div>
-          {% if e.sight is defined %}
-          <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}시야{% else %}Sight{% endif %}</dt><dd class="font-stats">{{ e.sight }}</dd></div>
-          {% endif %}
-        </dl>
-        {% if e.ground_attack is defined or e.air_attack is defined %}
-        <div class="mt-3 flex gap-2">
-          {% if e.ground_attack %}<span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/40">{% if lang == "ko" %}지상공격{% else %}Ground{% endif %}</span>{% endif %}
-          {% if e.air_attack %}<span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/40">{% if lang == "ko" %}공중공격{% else %}Air{% endif %}</span>{% endif %}
+          {% endfor %}
         </div>
         {% endif %}
 
-      {% if e.abilities is defined and e.abilities | length > 0 %}
-      <div class="mt-4 pt-4 border-t border-primary/5">
-        <span class="text-xs text-base-content/30">{% if lang == "ko" %}기술{% else %}Abilities{% endif %}</span>
-        <ul class="mt-1 space-y-1">
-          {% for ability in e.abilities %}
-          <li><a href="/wiki/abilities/{{ ability }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ ability | replace(from="-", to=" ") | title }}</a></li>
+        {# Upgrade cards #}
+        {% if e.upgrades is defined and e.upgrades | length > 0 %}
+        <div class="space-y-2">
+          {% for slug in e.upgrades %}
+          {% set p = get_page(path="wiki/upgrades/" ~ slug ~ ".md", lang=lang) | default(value=false) %}
+          {% if p %}
+          <div class="ref-card">
+            <div class="flex items-start justify-between gap-4">
+              <div class="min-w-0">
+                <a href="/wiki/upgrades/{{ slug }}" class="text-sm font-semibold text-primary/80 hover:text-primary transition-colors">{{ p.title }}</a>
+                <div class="flex items-center gap-3 mt-1 text-xs text-base-content/35">
+                  <span class="font-stats">{{ p.extra.minerals }}<span class="text-base-content/20">/</span>{{ p.extra.gas }}</span>
+                  {% if p.extra.research_time is defined %}<span>{{ p.extra.research_time }}s</span>{% endif %}
+                  {% if p.extra.researched_at is defined %}<a href="/wiki/buildings/{{ p.extra.researched_at }}" class="text-primary/50 hover:text-primary/70 transition-colors">{{ p.extra.researched_at | replace(from="-", to=" ") | title }}</a>{% endif %}
+                  {% if p.extra.levels is defined and p.extra.levels > 1 %}<span>{{ p.extra.levels }} {% if lang == "ko" %}레벨{% else %}levels{% endif %}</span>{% endif %}
+                </div>
+              </div>
+              <span class="text-[10px] text-base-content/20 uppercase tracking-wider shrink-0">{% if lang == "ko" %}업그레이드{% else %}Upgrade{% endif %}</span>
+            </div>
+            <p class="text-xs text-base-content/40 mt-2 leading-relaxed">{{ p.content | striptags | truncate(length=180) }}</p>
+          </div>
+          {% endif %}
           {% endfor %}
-        </ul>
+        </div>
+        {% endif %}
       </div>
       {% endif %}
 
-      {% if e.upgrades is defined and e.upgrades | length > 0 %}
-      <div class="mt-4 pt-4 border-t border-primary/5">
-        <span class="text-xs text-base-content/30">{% if lang == "ko" %}업그레이드{% else %}Upgrades{% endif %}</span>
-        <ul class="mt-1 space-y-1">
-          {% for upgrade in e.upgrades %}
-          <li><a href="/wiki/upgrades/{{ upgrade }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ upgrade | replace(from="-", to=" ") | title }}</a></li>
+      {# ── Race Navbox ── #}
+      {% set units_section = get_section(path="wiki/units/_index.md") %}
+      <div class="navbox mt-8">
+        <div class="text-[10px] font-semibold uppercase tracking-wider mb-2
+          {% if race == 'terran' %}text-race-terran/50
+          {% elif race == 'protoss' %}text-race-protoss/50
+          {% elif race == 'zerg' %}text-race-zerg/50{% endif %}">
+          {{ race | title }} {% if lang == "ko" %}유닛{% else %}Units{% endif %}
+        </div>
+        <div class="flex flex-wrap gap-x-1 text-xs leading-relaxed">
+          {% for u in units_section.pages | sort(attribute="title") %}
+          {% if u.taxonomies.race is defined and race in u.taxonomies.race %}
+            {% if u.path == page.path %}
+            <span class="navbox-current">{{ u.title }}</span>
+            {% else %}
+            <a href="{{ u.path }}">{{ u.title }}</a>
+            {% endif %}
+            <span class="text-base-content/15 last:hidden">&middot;</span>
+          {% endif %}
           {% endfor %}
-        </ul>
+        </div>
       </div>
-      {% endif %}
+    </div>
+
+    {# ── Infobox Sidebar ── #}
+    <div>
+      <div class="glass-card rounded-box overflow-hidden lg:sticky lg:top-24">
+        {# Race-accent header #}
+        <div class="infobox-accent-{{ race }} px-5 py-3 border-b border-primary/10">
+          <div class="font-display text-lg">{{ page.title }}</div>
+          {% if e.name_ko is defined %}<div class="text-xs text-base-content/30 mt-0.5">{{ e.name_ko }}</div>{% endif %}
+        </div>
+
+        {% if e.image %}
+        <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-video object-contain bg-base-300/50" loading="lazy" />
+        {% endif %}
+
+        <div class="p-5">
+          {# ─ Cost ─ #}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}비용{% else %}Cost{% endif %}</span>
+            <dl class="infobox-dl">
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd>{{ e.minerals }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</dt><dd>{{ e.gas }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}서플라이{% else %}Supply{% endif %}</dt><dd>{{ e.supply }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}생산시간{% else %}Build Time{% endif %}</dt><dd>{% if e.build_time is defined and e.build_time > 0 %}{{ e.build_time }}s{% else %}&mdash;{% endif %}</dd></div>
+            </dl>
+          </div>
+
+          {# ─ Production ─ #}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}생산{% else %}Production{% endif %}</span>
+            <dl class="infobox-dl">
+              {% if e.built_from %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}생산 건물{% else %}Built From{% endif %}</dt><dd><a href="/wiki/buildings/{{ e.built_from }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.built_from | replace(from="-", to=" ") | title }}</a></dd></div>
+              {% endif %}
+              {% if e.hotkey is defined %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}단축키{% else %}Hotkey{% endif %}</dt><dd class="font-mono text-primary/60">{{ e.hotkey }}</dd></div>
+              {% endif %}
+              {% if e.requires is defined %}
+              {% for req in e.requires %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}요구사항{% else %}Requires{% endif %}</dt><dd><a href="/wiki/buildings/{{ req }}" class="text-primary/70 hover:text-primary transition-colors">{{ req | replace(from="-", to=" ") | title }}</a></dd></div>
+              {% endfor %}
+              {% endif %}
+            </dl>
+          </div>
+
+          {# ─ Defense ─ #}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}방어{% else %}Defense{% endif %}</span>
+            <dl class="infobox-dl">
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}체력{% else %}HP{% endif %}</dt><dd>{{ e.hp }}</dd></div>
+              {% if e.shields is defined and e.shields > 0 %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}쉴드{% else %}Shields{% endif %}</dt><dd>{{ e.shields }}</dd></div>
+              {% endif %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}방어력{% else %}Armor{% endif %}</dt><dd>{{ e.armor }}{% if e.armor_upgraded is defined %} <span class="stat-bonus">({{ e.armor_upgraded }})</span>{% endif %}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}크기{% else %}Size{% endif %}</dt><dd class="text-base-content/60 text-xs">{{ e.size | default(value="") | title }}</dd></div>
+            </dl>
+          </div>
+
+          {# ─ Weapon ─ #}
+          {% if e.damage is defined and e.damage > 0 %}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}무기{% else %}Weapon{% endif %}</span>
+            <dl class="infobox-dl">
+              <div class="flex justify-between">
+                <dt class="text-base-content/40">{% if lang == "ko" %}공격력{% else %}Damage{% endif %}</dt>
+                <dd>{{ e.damage }}{% if e.damage_upgraded is defined %} <span class="stat-bonus">({{ e.damage_upgraded }})</span>{% endif %} <span class="dmg-badge">{{ e.damage_type | default(value="normal") }}</span></dd>
+              </div>
+              {% if e.attack_speed is defined and e.attack_speed > 0 %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}공격속도{% else %}Cooldown{% endif %}</dt><dd>{{ e.attack_speed }}<span class="text-[10px] text-base-content/25">f</span>{% if e.cooldown_upgraded is defined %} <span class="stat-bonus">({{ e.cooldown_upgraded }}f)</span>{% endif %}</dd></div>
+              {% endif %}
+              {% if e.dps is defined and e.dps > 0 %}
+              <div class="flex justify-between"><dt class="text-base-content/40">DPS</dt><dd>{{ e.dps }}{% if e.dps_upgraded is defined %} <span class="stat-bonus">({{ e.dps_upgraded }})</span>{% endif %}</dd></div>
+              {% endif %}
+              {% if e.range is defined and e.range > 0 %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}사거리{% else %}Range{% endif %}</dt><dd>{{ e.range }}{% if e.range_upgraded is defined %} <span class="stat-bonus">({{ e.range_upgraded }})</span>{% endif %}</dd></div>
+              {% endif %}
+              {% if e.ground_attack is defined or e.air_attack is defined %}
+              <div class="flex justify-between">
+                <dt class="text-base-content/40">{% if lang == "ko" %}대상{% else %}Targets{% endif %}</dt>
+                <dd class="flex gap-1.5">
+                  {% if e.ground_attack %}<span class="text-[10px] px-1.5 py-0.5 rounded bg-base-content/5 text-base-content/40">{% if lang == "ko" %}지상{% else %}Ground{% endif %}</span>{% endif %}
+                  {% if e.air_attack %}<span class="text-[10px] px-1.5 py-0.5 rounded bg-base-content/5 text-base-content/40">{% if lang == "ko" %}공중{% else %}Air{% endif %}</span>{% endif %}
+                </dd>
+              </div>
+              {% endif %}
+            </dl>
+          </div>
+          {% endif %}
+
+          {# ─ Movement ─ #}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}이동{% else %}Movement{% endif %}</span>
+            <dl class="infobox-dl">
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}이동속도{% else %}Speed{% endif %}</dt><dd>{{ e.speed | default(value=0) }}{% if e.speed_upgraded is defined %} <span class="stat-bonus">({{ e.speed_upgraded }})</span>{% endif %}</dd></div>
+              {% if e.sight is defined %}
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}시야{% else %}Sight{% endif %}</dt><dd>{{ e.sight }}</dd></div>
+              {% endif %}
+            </dl>
+          </div>
+
+          {# ─ Abilities ─ #}
+          {% if e.abilities is defined and e.abilities | length > 0 %}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}기술{% else %}Abilities{% endif %}</span>
+            <ul class="space-y-1">
+              {% for ability in e.abilities %}
+              <li><a href="/wiki/abilities/{{ ability }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ ability | replace(from="-", to=" ") | title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+          {# ─ Upgrades ─ #}
+          {% if e.upgrades is defined and e.upgrades | length > 0 %}
+          <div class="infobox-section">
+            <span class="infobox-label">{% if lang == "ko" %}업그레이드{% else %}Upgrades{% endif %}</span>
+            <ul class="space-y-1">
+              {% for upgrade in e.upgrades %}
+              <li><a href="/wiki/upgrades/{{ upgrade }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ upgrade | replace(from="-", to=" ") | title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 

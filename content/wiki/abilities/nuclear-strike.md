@@ -9,6 +9,10 @@ name_ko = "핵 공격"
 caster = "ghost"
 energy = 0
 hp_cost = 0
+damage = 500
+range = 12
+aoe = "256px radius"
+hotkey = "N"
 +++
 Nuclear Strike allows a Ghost to call down a nuclear missile on a target location, dealing 500 damage or two-thirds of a unit's maximum HP (whichever is greater) across a large blast radius. The Ghost must remain stationary and alive during the roughly 10-second launch sequence. A red targeting dot is visible to all players during this countdown. Requires a Nuclear Silo addon on a Command Center with an armed nuke (200/200 and 8 supply to produce).
 

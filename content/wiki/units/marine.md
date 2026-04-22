@@ -28,6 +28,7 @@ dps_upgraded = 12.12
 range_upgraded = 5
 sight = 7
 built_from = "barracks"
+hotkey = "M"
 abilities = ["stim-pack"]
 upgrades = ["stim-pack", "u-238-shells", "infantry-weapons", "infantry-armor"]
 +++

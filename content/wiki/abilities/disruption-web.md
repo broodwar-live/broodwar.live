@@ -9,6 +9,14 @@ name_ko = "디스럽션 웹"
 caster = "corsair"
 energy = 125
 hp_cost = 0
+range = 9
+aoe = "64px radius"
+duration = 20.0
+hotkey = "W"
+researched_at = "stargate"
+research_minerals = 200
+research_gas = 200
+research_time = 80
 +++
 Disruption Web projects an energy field onto the ground that completely prevents any ground unit or building beneath it from attacking for approximately 20 seconds. Affected units can still move out of the area, but stationary defenses are effectively disabled for the duration. Costs 125 energy from a Corsair and requires research at the Fleet Beacon.
 

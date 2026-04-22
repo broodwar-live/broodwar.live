@@ -9,6 +9,12 @@ name_ko = "스폰 브루들링"
 caster = "queen"
 energy = 150
 hp_cost = 0
+range = 9
+hotkey = "B"
+researched_at = "queens-nest"
+research_minerals = 100
+research_gas = 100
+research_time = 80
 +++
 Spawn Broodling instantly kills a single non-robotic ground unit and creates two Broodlings in its place. The Broodlings are small, temporary melee units that fight for the Zerg player and die after approximately 120 seconds. The ability bypasses all armor, shields, and HP — no unit can survive it regardless of its stats. Costs 150 energy from a Queen and requires research at the Queen's Nest. It cannot target robotic units (Reavers, Dragoons, etc.), buildings, or air units.
 

@@ -27,6 +27,7 @@ dps = 6.12
 dps_upgraded = 28.72
 sight = 10
 built_from = "factory"
+hotkey = "T"
 abilities = ["siege-mode"]
 upgrades = ["siege-tech", "vehicle-weapons", "vehicle-plating"]
 +++

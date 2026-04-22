@@ -9,6 +9,12 @@ name_ko = "스팀팩"
 caster = "marine"
 energy = 0
 hp_cost = 10
+duration = 10.0
+hotkey = "T"
+researched_at = "academy"
+research_minerals = 100
+research_gas = 100
+research_time = 50
 +++
 Stim Pack grants Marines and Firebats a 50% increase to both attack speed and movement speed for approximately 10 seconds, at the cost of 10 HP per use. The effect is immediate and can be activated repeatedly, though each activation drains another 10 HP. Researched at the Academy for 100/100.
 

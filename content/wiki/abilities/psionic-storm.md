@@ -9,6 +9,17 @@ name_ko = "사이오닉 스톰"
 caster = "high-templar"
 energy = 75
 hp_cost = 0
+damage = 112
+damage_ticks = 8
+range = 9
+aoe = "48px radius"
+duration = 2.67
+cooldown = 1.89
+hotkey = "T"
+researched_at = "templar-archives"
+research_minerals = 200
+research_gas = 200
+research_time = 75
 +++
 Psionic Storm unleashes a devastating energy storm in the target area, dealing 112 total damage over approximately 3 seconds to all ground and air units caught within it. The damage ignores armor upgrades entirely. Multiple storms cast on the same area do not stack — units can only take damage from one storm at a time (since Patch 1.08). Costs 75 energy from a High Templar and requires research at the Templar Archives.
 

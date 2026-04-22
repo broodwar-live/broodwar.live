@@ -27,6 +27,7 @@ dps = 10.97
 speed_upgraded = 6.0
 sight = 7
 built_from = "gateway"
+hotkey = "Z"
 abilities = []
 upgrades = ["leg-enhancements", "ground-weapons", "ground-armor", "plasma-shields"]
 +++

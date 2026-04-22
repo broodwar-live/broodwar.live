@@ -477,3 +477,85 @@ html {
 [data-theme=light] .bracket-player.winner { background: oklch(50% 0.18 250 / 0.06); border-color: oklch(50% 0.18 250 / 0.15); }
 [data-theme=light] .bracket-player .bracket-name { color: oklch(20% 0.02 255); }
 [data-theme=light] .bracket-connector-top, [data-theme=light] .bracket-connector-bottom, [data-theme=light] .bracket-connector-line { border-color: oklch(50% 0.18 250 / 0.15); }
+
+/* === Wiki Infobox === */
+
+.infobox-section {
+  padding-top: 0.875rem;
+  padding-bottom: 0.25rem;
+  border-top: 1px solid oklch(60% 0.2 250 / 0.06);
+}
+.infobox-section:first-child { padding-top: 0; border-top: none; }
+[data-theme=light] .infobox-section { border-top-color: oklch(50% 0.18 250 / 0.08); }
+
+.infobox-label {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: oklch(94% 0.006 250 / 0.3);
+  margin-bottom: 0.5rem;
+}
+[data-theme=light] .infobox-label { color: oklch(18% 0.02 255 / 0.35); }
+
+.infobox-dl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+}
+.infobox-dl > div { display: flex; justify-content: space-between; align-items: baseline; }
+.infobox-dl dt { color: oklch(94% 0.006 250 / 0.4); }
+.infobox-dl dd { font-family: "JetBrains Mono", "Fira Code", monospace; font-variant-numeric: tabular-nums; }
+[data-theme=light] .infobox-dl dt { color: oklch(18% 0.02 255 / 0.45); }
+
+/* Race-colored infobox accent */
+.infobox-accent-terran { background: oklch(62% 0.22 25 / 0.08); border-top: 2px solid oklch(62% 0.22 25 / 0.5); }
+.infobox-accent-protoss { background: oklch(80% 0.16 90 / 0.06); border-top: 2px solid oklch(80% 0.16 90 / 0.45); }
+.infobox-accent-zerg { background: oklch(58% 0.2 310 / 0.08); border-top: 2px solid oklch(58% 0.2 310 / 0.5); }
+[data-theme=light] .infobox-accent-terran { background: oklch(62% 0.22 25 / 0.05); border-top-color: oklch(62% 0.22 25 / 0.4); }
+[data-theme=light] .infobox-accent-protoss { background: oklch(80% 0.16 90 / 0.04); border-top-color: oklch(80% 0.16 90 / 0.35); }
+[data-theme=light] .infobox-accent-zerg { background: oklch(58% 0.2 310 / 0.05); border-top-color: oklch(58% 0.2 310 / 0.4); }
+
+/* Upgrade/ability reference cards */
+.ref-card {
+  background: oklch(14% 0.03 255 / 0.4);
+  border: 1px solid oklch(60% 0.2 250 / 0.08);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  transition: border-color 0.15s;
+}
+.ref-card:hover { border-color: oklch(60% 0.2 250 / 0.2); }
+[data-theme=light] .ref-card { background: oklch(98% 0.003 250 / 0.8); border-color: oklch(50% 0.18 250 / 0.1); }
+[data-theme=light] .ref-card:hover { border-color: oklch(50% 0.18 250 / 0.2); }
+
+/* Stat upgrade bonus indicator */
+.stat-bonus { color: oklch(72% 0.19 155 / 0.7); font-size: 0.75em; }
+[data-theme=light] .stat-bonus { color: oklch(45% 0.17 155 / 0.8); }
+
+/* Damage type badge */
+.dmg-badge {
+  font-size: 0.625rem;
+  padding: 0.1em 0.4em;
+  border-radius: 0.25rem;
+  background: oklch(94% 0.006 250 / 0.06);
+  color: oklch(94% 0.006 250 / 0.35);
+  text-transform: capitalize;
+}
+[data-theme=light] .dmg-badge { background: oklch(18% 0.02 255 / 0.05); color: oklch(18% 0.02 255 / 0.4); }
+
+/* Race navbox */
+.navbox {
+  background: oklch(14% 0.03 255 / 0.3);
+  border: 1px solid oklch(60% 0.2 250 / 0.06);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+}
+.navbox a { color: oklch(60% 0.2 250 / 0.55); transition: color 0.15s; }
+.navbox a:hover { color: oklch(60% 0.2 250); }
+.navbox .navbox-current { font-weight: 600; color: oklch(94% 0.006 250 / 0.7); }
+[data-theme=light] .navbox { background: oklch(98% 0.003 250 / 0.6); border-color: oklch(50% 0.18 250 / 0.08); }
+[data-theme=light] .navbox a { color: oklch(50% 0.18 250 / 0.6); }
+[data-theme=light] .navbox a:hover { color: oklch(50% 0.18 250); }
+[data-theme=light] .navbox .navbox-current { color: oklch(18% 0.02 255 / 0.75); }

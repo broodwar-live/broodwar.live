@@ -9,6 +9,13 @@ name_ko = "야마토 캐논"
 caster = "battlecruiser"
 energy = 150
 hp_cost = 0
+damage = 260
+range = 10
+hotkey = "Y"
+researched_at = "science-facility"
+research_minerals = 100
+research_gas = 100
+research_time = 100
 +++
 Yamato Cannon fires a concentrated plasma blast at a single target, dealing 260 damage. The ability has a range of 10 and a brief charging animation before firing. It deals normal damage type, meaning full damage against all armor sizes. Costs 150 energy from a Battlecruiser and requires research at the Physics Lab.
 

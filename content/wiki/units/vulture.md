@@ -27,6 +27,7 @@ dps = 5.06
 speed_upgraded = 8.53
 sight = 8
 built_from = "factory"
+hotkey = "V"
 abilities = ["spider-mines"]
 upgrades = ["spider-mines", "ion-thrusters", "vehicle-weapons", "vehicle-plating"]
 +++

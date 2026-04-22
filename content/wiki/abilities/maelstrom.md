@@ -9,6 +9,14 @@ name_ko = "메일스트롬"
 caster = "dark-archon"
 energy = 100
 hp_cost = 0
+range = 10
+aoe = "48px radius"
+duration = 5.0
+hotkey = "C"
+researched_at = "templar-archives"
+research_minerals = 100
+research_gas = 100
+research_time = 63
 +++
 Maelstrom freezes all biological units in the target area for approximately 5 seconds, completely preventing them from moving, attacking, or using abilities. It does not affect mechanical or robotic units, and buildings are immune. Costs 100 energy from a Dark Archon and requires research at the Templar Archives.
 

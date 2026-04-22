@@ -9,6 +9,8 @@ name_ko = "패러사이트"
 caster = "queen"
 energy = 75
 hp_cost = 0
+range = 12
+hotkey = "R"
 +++
 Parasite attaches an invisible parasitic organism to a target unit, permanently granting the Zerg player full vision of everything the parasited unit sees. The effect lasts until the unit dies and cannot be removed except by a Medic's Restoration ability. The parasited unit's owner receives no notification that their unit has been infected. Costs 75 energy from a Queen with no research requirement.
 

@@ -9,6 +9,9 @@ name_ko = "디펜시브 매트릭스"
 caster = "science-vessel"
 energy = 100
 hp_cost = 0
+range = 10
+duration = 90.0
+hotkey = "D"
 +++
 Defensive Matrix creates a temporary 250 HP energy shield on a single target unit that lasts approximately 90 seconds or until all 250 damage points have been absorbed. The shield absorbs all damage types equally and does not stack with additional casts. Costs 100 energy from a Science Vessel with no research requirement.
 

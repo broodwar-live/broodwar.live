@@ -26,6 +26,8 @@ damage_type = "normal"
 dps = 0
 sight = 7
 built_from = "gateway"
+hotkey = "T"
+requires = ["templar-archives"]
 abilities = ["psionic-storm", "hallucination"]
 upgrades = ["psionic-storm", "hallucination", "plasma-shields"]
 +++

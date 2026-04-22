@@ -9,6 +9,13 @@ name_ko = "할루시네이션"
 caster = "high-templar"
 energy = 100
 hp_cost = 0
+range = 7
+duration = 180.0
+hotkey = "H"
+researched_at = "templar-archives"
+research_minerals = 150
+research_gas = 150
+research_time = 50
 +++
 Hallucination creates two illusory copies of a target friendly unit that appear identical to the original. Hallucinated units deal no damage and take double damage from all sources. They last approximately 180 seconds before expiring. Costs 100 energy from a High Templar and requires research at the Templar Archives.
 

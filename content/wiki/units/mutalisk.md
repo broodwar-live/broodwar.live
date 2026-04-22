@@ -26,6 +26,8 @@ damage_type = "normal"
 dps = 5.06
 sight = 7
 built_from = "hatchery"
+hotkey = "M"
+requires = ["spire"]
 abilities = []
 upgrades = ["flyer-attacks", "flyer-carapace"]
 +++

@@ -9,6 +9,10 @@ name_ko = "다크 스웜"
 caster = "defiler"
 energy = 100
 hp_cost = 0
+range = 9
+aoe = "192px diameter"
+duration = 60.0
+hotkey = "W"
 +++
 Dark Swarm creates a large cloud of particles at the target location that lasts approximately 60 seconds. All ranged attacks that pass through the cloud miss ground units beneath it — projectiles simply pass through without dealing damage. Units inside the swarm can still attack normally, and melee attacks are completely unaffected. Costs 100 energy from a Defiler with no research requirement.
 

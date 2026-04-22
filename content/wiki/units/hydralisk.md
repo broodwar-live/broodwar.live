@@ -28,6 +28,8 @@ speed_upgraded = 5.49
 range_upgraded = 5
 sight = 6
 built_from = "hatchery"
+hotkey = "H"
+requires = ["hydralisk-den"]
 abilities = []
 upgrades = ["muscular-augments", "grooved-spines", "lurker-aspect", "missile-attacks", "carapace"]
 +++

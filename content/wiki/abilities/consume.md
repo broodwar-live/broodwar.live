@@ -9,6 +9,12 @@ name_ko = "컨슘"
 caster = "defiler"
 energy = 0
 hp_cost = 0
+range = 1
+hotkey = "C"
+researched_at = "defiler-mound"
+research_minerals = 100
+research_gas = 100
+research_time = 100
 +++
 Consume instantly kills a single friendly Zerg unit to restore 50 energy to the casting Defiler. The targeted unit is destroyed immediately regardless of its HP or type — any Zerg unit can be consumed, from a Zergling to an Ultralisk. Costs no energy to cast and requires research at the Defiler Mound.
 

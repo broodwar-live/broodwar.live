@@ -9,6 +9,12 @@ name_ko = "마인드 컨트롤"
 caster = "dark-archon"
 energy = 150
 hp_cost = 0
+range = 10
+hotkey = "C"
+researched_at = "templar-archives"
+research_minerals = 200
+research_gas = 200
+research_time = 100
 +++
 Mind Control permanently takes ownership of a single enemy unit, transferring it to the casting player's control. The stolen unit retains all of its upgrades and abilities. Upon casting, the Dark Archon's shields are reduced to 0, and the ability costs all remaining energy (minimum 150 required). Requires research at the Templar Archives.
 

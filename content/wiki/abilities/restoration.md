@@ -9,6 +9,12 @@ name_ko = "레스토레이션"
 caster = "medic"
 energy = 50
 hp_cost = 0
+range = 6
+hotkey = "E"
+researched_at = "academy"
+research_minerals = 100
+research_gas = 100
+research_time = 50
 +++
 Restoration instantly removes all negative status effects from a single target unit, including Plague, Ensnare, Irradiate, Lockdown, Optical Flare, Parasite, and Acid Spores. Costs 50 energy from a Medic and requires research at the Academy.
 

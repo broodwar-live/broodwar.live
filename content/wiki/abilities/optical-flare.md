@@ -9,6 +9,12 @@ name_ko = "옵티컬 플레어"
 caster = "medic"
 energy = 75
 hp_cost = 0
+range = 9
+hotkey = "F"
+researched_at = "academy"
+research_minerals = 100
+research_gas = 100
+research_time = 50
 +++
 Optical Flare permanently reduces a target unit's sight range to 1 matrix cell, effectively blinding it for the rest of the game. The effect cannot be stacked and persists until the unit dies. Costs 75 energy from a Medic and requires research at the Academy.
 

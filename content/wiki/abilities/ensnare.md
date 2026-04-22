@@ -9,6 +9,14 @@ name_ko = "인스네어"
 caster = "queen"
 energy = 75
 hp_cost = 0
+range = 9
+aoe = "64px radius"
+duration = 55.0
+hotkey = "E"
+researched_at = "queens-nest"
+research_minerals = 100
+research_gas = 100
+research_time = 80
 +++
 Ensnare slows all units in the target area, reducing both their movement speed and attack speed significantly for approximately 55 seconds. It also reveals cloaked and burrowed units in the area, removing their invisibility for the duration. Costs 75 energy from a Queen and requires research at the Queen's Nest.
 

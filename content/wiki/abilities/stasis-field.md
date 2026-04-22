@@ -9,6 +9,14 @@ name_ko = "스테이시스 필드"
 caster = "arbiter"
 energy = 100
 hp_cost = 0
+range = 9
+aoe = "48px radius"
+duration = 40.0
+hotkey = "S"
+researched_at = "arbiter-tribunal"
+research_minerals = 150
+research_gas = 150
+research_time = 63
 +++
 Stasis Field freezes all units — both friendly and enemy — in the target area for approximately 40 seconds. Frozen units become completely invulnerable and cannot be attacked, targeted, moved, or use abilities. The effect cannot be dispelled and lasts the full duration. Costs 100 energy from an Arbiter and requires research at the Arbiter Tribunal.
 

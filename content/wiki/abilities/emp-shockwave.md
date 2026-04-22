@@ -9,6 +9,13 @@ name_ko = "EMP 충격파"
 caster = "science-vessel"
 energy = 100
 hp_cost = 0
+range = 8
+aoe = "64px radius"
+hotkey = "E"
+researched_at = "science-facility"
+research_minerals = 200
+research_gas = 200
+research_time = 100
 +++
 EMP Shockwave releases an electromagnetic pulse that instantly drains all energy and all Protoss plasma shields from every unit in the target area. The effect is instantaneous and cannot be dodged once cast. Costs 100 energy from a Science Vessel and requires research at the Science Facility.
 

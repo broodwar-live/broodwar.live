@@ -9,6 +9,15 @@ name_ko = "이래디에이트"
 caster = "science-vessel"
 energy = 75
 hp_cost = 0
+damage = 250
+range = 9
+aoe = "32px splash"
+duration = 30.0
+hotkey = "I"
+researched_at = "science-facility"
+research_minerals = 200
+research_gas = 200
+research_time = 80
 +++
 Irradiate exposes a target unit to lethal radiation, dealing 250 damage over approximately 30 seconds to the targeted unit and all nearby biological units within its splash radius. The damage is applied continuously and affects any biological unit that moves near the irradiated target. Mechanical units take no damage from the splash. Costs 75 energy from a Science Vessel and requires research at the Science Facility.
 
