@@ -11,7 +11,7 @@
 # Requires: git, cargo with the wasm32-unknown-unknown target, wasm-pack.
 set -euo pipefail
 
-PINNED_REF="6a9fb2b"
+PINNED_REF="1a64593"
 SITE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 BW_ENGINE="${1:-$SITE_DIR/../bw-engine}"
 REF="${2:-$PINNED_REF}"
@@ -58,10 +58,15 @@ RUSTFLAGS="--remap-path-prefix=<src>=/bw-engine --remap-path-prefix=\$HOME/.carg
   wasm-pack build --release --target web crates/replay-wasm --no-default-features
 \`\`\`
 
-Exported API: \`parseReplay(bytes: Uint8Array)\` returns the serialized
-\`replay_core::Replay\` (header, commands, command_warnings, build_order,
-player_apm, timeline, metadata, extra_sections, map_data) or throws on an
-unreadable file. The page loads it lazily from \`static/js/replay-analyzer.js\`
-when the first file is chosen; nothing is uploaded.
+Exported API: \`parseReplay(bytes: Uint8Array, options?)\` returns the parsed
+replay (header, commands, command_warnings, build_order, player_apm,
+timeline, metadata, extra_sections) plus replay-core's analyses:
+\`production\` (build order with modelled supply, larvae and dropped orders),
+\`openings\`, \`phases\` and \`apm_curve\`. \`map_data\` is only included with
+\`{mapData: true}\` (or via \`getMapData(bytes)\`). Unreadable files throw an
+\`Error\` with a \`code\` (\`NOT_A_REPLAY\`, \`TRUNCATED\`, \`CORRUPT\`,
+\`UNSUPPORTED\`). The page loads it lazily from
+\`static/js/replay-analyzer.js\` when the first file is chosen; nothing is
+uploaded.
 MD
 echo "Built bw-engine $SHA -> $OUT ($RAW bytes, $GZ gzip)"

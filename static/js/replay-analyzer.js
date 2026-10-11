@@ -88,13 +88,6 @@ const WIKI_ALIASES = {
   "upgrade:Protoss Plasma Shields": "upgrades/plasma-shields",
 }
 
-// Supply cost per production order (whole supply; a Zergling or Scourge
-// order hatches a pair for 1). Morphs list the *added* supply.
-const SUPPLY = {
-  0: 1, 1: 1, 2: 2, 3: 2, 5: 2, 7: 1, 8: 2, 9: 2, 11: 2, 12: 6, 32: 1, 34: 1, 58: 3,
-  37: 1, 38: 1, 39: 4, 41: 1, 43: 2, 45: 2, 46: 2, 47: 1, 103: 1,
-  60: 2, 61: 2, 64: 1, 65: 2, 66: 2, 67: 2, 69: 2, 70: 3, 71: 4, 72: 6, 83: 4, 84: 1,
-}
 const WORKERS = new Set([7, 41, 64])
 const isWorker = (e) => (e.kind === "Train" || e.kind === "UnitMorph") && WORKERS.has(e.id)
 const SUPPLY_BUILDINGS = new Set([109, 156])
@@ -184,13 +177,11 @@ function refHtml(ref) {
     : esc(ref.name)
 }
 
-function mapRef(rawName) {
+// `normalized` is replay-core's map name without league tags and versions
+// ("| iCCup | Python 1.3" -> "Python"); the raw name is displayed.
+function mapRef(rawName, normalized) {
   const name = clean(rawName)
-  const base = name
-    .replace(/\|?\s*iccup\s*\|?/i, "")
-    .replace(/^[^a-z0-9]+/i, "")
-    .replace(/\s*v?\d+(\.\d+)*[a-z]?\s*$/i, "")
-  const key = "maps/" + slugify(base)
+  const key = "maps/" + slugify(normalized || name)
   return WIKI[key] ? {name, href: `${lp}/wiki/${key}/`} : {name, href: null}
 }
 
@@ -227,164 +218,26 @@ function decodeAction(action) {
   }
 }
 
-// Production model used to estimate supply. Replays store orders, not
-// results: a player who clicks "Probe" five times queues five probes that
-// start one after another, and a Zerg can only morph as many larvae as the
-// hatcheries have spawned. Build times are in frames (wiki seconds × 15).
-const PRODUCER = {
-  7: 106, 0: 111, 32: 111, 34: 111, 1: 111, 2: 113, 5: 113, 3: 113,
-  8: 114, 11: 114, 9: 114, 12: 114, 58: 114,
-  64: 154, 65: 160, 66: 160, 67: 160, 61: 160, 69: 155, 83: 155, 84: 155,
-  70: 167, 60: 167, 72: 167, 71: 167,
+// Build order rows from replay-core's production model (`replay.production`):
+// supply count when each order was issued, larvae per Zerg morph, and orders
+// that could not have been carried out (queue full, no larva, duplicates),
+// which are kept but flagged `dropped`.
+function buildOrderFor(entries) {
+  return entries.map((e) => ({
+    frame: e.frame,
+    secs: frameSecs(e.frame),
+    supply: e.supply,
+    count: e.count,
+    dropped: e.dropped,
+    ...decodeAction(e.action),
+  }))
 }
-const BUILD_FRAMES = {
-  7: 300, 0: 360, 32: 360, 34: 450, 1: 750, 2: 450, 5: 750, 3: 600,
-  8: 900, 11: 750, 9: 1200, 12: 2000, 58: 750,
-  64: 300, 65: 600, 66: 750, 67: 750, 61: 750, 69: 900, 83: 1050, 84: 600,
-  70: 1200, 60: 600, 72: 2100, 71: 2400,
-  106: 1800, 111: 1200, 113: 1200, 114: 1050, 154: 1800, 160: 900, 155: 1200, 167: 1050, 131: 1800,
-}
-const LARVA_UNITS = new Set([41, 37, 38, 42, 43, 47, 39, 46])
-const LARVA_FRAMES = 342
-const TECH_REPEAT_FRAMES = 60 * FPS
-const QUEUE_SLOTS = 5
 
-// Build order with an estimated supply count when each order was issued.
-// Orders that could not have been carried out (queue full, no larva) are
-// kept but flagged `dropped`; cancels and deaths are not modelled.
-// `selected[i]` is how many units the player had selected when issuing the
-// i-th order: one Zerg morph order applies to every selected larva.
-function buildOrderFor(entries, race, selected = []) {
-  const rows = entries.map((e, i) => ({frame: e.frame, secs: frameSecs(e.frame), count: 1, selected: selected[i] || 1, ...decodeAction(e.action)}))
-  const lastTech = new Map()
-  const producers = new Map() // building id -> [{ready, free}]
-  const addProducer = (id, ready) => {
-    if (!producers.has(id)) producers.set(id, [])
-    producers.get(id).push({ready, free: ready})
-  }
-  if (race === "Terran") addProducer(106, 0)
-  if (race === "Protoss") addProducer(154, 0)
-  let hatcheries = [0]
-  let larva = 3, larvaAt = 0
-  const starts = [] // [frame, supply delta]
-
-  for (const row of rows) {
-    const f = row.frame
-    if (row.kind === "Build" || row.kind === "BuildingMorph") {
-      if (PRODUCER_BUILDINGS.has(row.id)) addProducer(row.id, f + (BUILD_FRAMES[row.id] || 1200))
-      if (row.id === 131 && row.kind === "Build") hatcheries.push(f + BUILD_FRAMES[131])
-      if (row.kind === "Build" && race === "Zerg") starts.push([f, -1]) // the Drone becomes the building
-      continue
-    }
-    if (row.kind === "Research" || row.kind === "Upgrade") {
-      // Repeated clicks while the research is already running.
-      const key = row.kind + row.id
-      if (lastTech.has(key) && f - lastTech.get(key) < TECH_REPEAT_FRAMES) row.dropped = true
-      else lastTech.set(key, f)
-      continue
-    }
-    if (row.kind !== "Train" && row.kind !== "UnitMorph") continue
-    const cost = SUPPLY[row.id] || 0
-    if (race === "Zerg" && LARVA_UNITS.has(row.id)) {
-      const halls = hatcheries.filter((h) => h <= f).length
-      larva = Math.min(3 * halls, larva + ((f - larvaAt) * halls) / LARVA_FRAMES)
-      larvaAt = f
-      const n = Math.min(row.selected, Math.floor(larva))
-      if (n < 1) { row.dropped = true; continue }
-      larva -= n
-      row.count = n
-      starts.push([f, cost * n])
-      continue
-    }
-    const pool = producers.get(PRODUCER[row.id])
-    if (!pool) { starts.push([f, cost]); continue }
-    const live = pool.filter((p) => p.ready <= f)
-    const waiting = starts.filter(([s, , id]) => s > f && PRODUCER[id] === PRODUCER[row.id]).length
-    if (!live.length || waiting >= QUEUE_SLOTS * live.length) { row.dropped = true; continue }
-    const slot = live.reduce((a, b) => (b.free < a.free ? b : a))
-    const begin = Math.max(f, slot.free)
-    slot.free = begin + (BUILD_FRAMES[row.id] || 600)
-    starts.push([begin, cost, row.id])
-  }
-
-  for (const row of rows) {
-    let supply = 4
-    for (const [s, d] of starts) if (s < row.frame) supply += d
-    row.supply = supply
-  }
-  return rows
-}
-const PRODUCER_BUILDINGS = new Set(Object.values(PRODUCER))
-
-// Opening label, adapted from replay-core/src/classify.rs (not exported by the
-// parser-only WASM). Differences: it reads the first non-worker orders of the
-// first four minutes, uses the estimated supply (replay-core counts Train(41)
-// drones, but drones are larva morphs, so every pool looked like a 4 pool),
-// and "CC First" / "Nexus First" are reachable.
-function classifyOpening(bo, race) {
-  // replay-core looks at the first 20 orders including workers, which on
-  // real replays often ends before the second production building.
-  const first = bo.filter((e) => !e.dropped && !isWorker(e) && e.secs < 240).slice(0, 20)
-  const buildings = first.filter((e) => e.kind === "Build" || (race === "Zerg" && e.kind === "BuildingMorph")).map((e) => e.id)
-  if (!buildings.length) return null
-  const count = (id) => buildings.filter((b) => b === id).length
-  const has = (id) => buildings.includes(id)
-  const idx = (id) => buildings.indexOf(id)
-  const r = (name, confidence) => ({name, confidence})
-
-  if (race === "Terran") {
-    const rax = count(111), fac = has(113), port = has(114), acad = has(112)
-    const firstProd = buildings.find((b) => b !== 109 && b !== 110)
-    if (firstProd === 106) return r("CC First", 0.75)
-    if (rax >= 1 && fac && port && !acad) return r("1-1-1", 0.85)
-    if (rax >= 2 && !fac) return acad ? r("2 Rax Academy", 0.8) : r("2 Rax", 0.8)
-    if (rax >= 1 && acad && !fac) return r("Bio", 0.7)
-    if (fac && rax === 1) {
-      if (port) return r("Mech", 0.75)
-      if (has(120)) return r("Factory Expand", 0.7)
-      return r("1 Rax FE", 0.6)
-    }
-    if (has(125) && idx(125) < 4) return r("Bunker Rush", 0.7)
-    if (firstProd === 111) return r("Barracks First", 0.5)
-    return r(t("opening_unknown"), 0.3)
-  }
-  if (race === "Zerg") {
-    // Opening = pool/hatch timing, then the first tech it heads into.
-    // (replay-core labels by tech first and maps pools above 12 supply to
-    // "Overpool"; this reads closer to how players name Zerg openings.)
-    const pool = idx(142), hatch = idx(131)
-    const poolEntry = bo.find((e) => e.kind === "Build" && e.id === 142)
-    let name
-    if (pool >= 0 && hatch >= 0 && hatch < pool) {
-      name = buildings.slice(0, pool).filter((b) => b === 131).length >= 2 ? "3 Hatch Before Pool" : "12 Hatch"
-    } else if (pool >= 0) {
-      const s = poolEntry ? poolEntry.supply : 4
-      name = s <= 5 ? "4/5 Pool" : s <= 9 ? "9 Pool" : s <= 11 ? "Overpool" : "12 Pool"
-    } else {
-      return r(t("opening_unknown"), 0.3)
-    }
-    const tech = has(141) && !has(135) ? "Muta" : has(135) ? "Hydra" : has(132) ? "Lair" : ""
-    return r(tech ? `${name} → ${tech}` : name, 0.75)
-  }
-  if (race === "Protoss") {
-    const gates = count(160), core = has(164), nexus = count(154)
-    if (nexus >= 1 && buildings.find((b) => b !== 156 && b !== 157) === 154) return r("Nexus First", 0.8)
-    const forge = idx(166), gate = idx(160)
-    if (forge >= 0 && gate >= 0 && forge < gate) return has(162) ? r("Forge FE + Cannon", 0.85) : r("Forge FE", 0.85)
-    if (forge >= 0 && gates === 0) return r("Forge FE", 0.75)
-    if (has(165) && gates >= 1) return r("DT Rush", 0.8)
-    if (gates >= 2) return core ? r("2 Gate Core", 0.8) : r("2 Gate", 0.8)
-    if (gates === 1 && core) {
-      if (has(167)) return r("1 Gate Stargate", 0.8)
-      if (has(155)) return r("1 Gate Robo", 0.8)
-      if (has(163)) return r("1 Gate Citadel", 0.75)
-      if (nexus >= 1) return r("1 Gate FE", 0.8)
-      return r("1 Gate Core", 0.7)
-    }
-    if (gates === 1) return r("Gateway First", 0.5)
-    return r(t("opening_unknown"), 0.3)
-  }
-  return null
+// Opening label from replay-core's classifier (`replay.openings`).
+function openingFor(openings, playerId) {
+  const o = (openings || []).find((x) => x.player_id === playerId)
+  if (!o || o.tag === "unknown") return null
+  return {name: o.tag.startsWith("unknown") ? t("opening_unknown") : o.name, confidence: o.confidence}
 }
 
 // First order of each structure (supply buildings excluded) plus every
@@ -411,49 +264,9 @@ function techPath(bo, race) {
   return out
 }
 
-const BO_KINDS = new Set(["Build", "Train", "UnitMorph", "BuildingMorph", "Research", "Upgrade", "TrainFighter"])
-
-// Follow each player's current selection through select and hotkey commands.
-function trackSelection(d, kind, cmd) {
-  if (kind === "Select") d.sel = [...cmd.Select.unit_tags]
-  else if (kind === "SelectAdd") d.sel = [...new Set([...d.sel, ...cmd.SelectAdd.unit_tags])]
-  else if (kind === "SelectRemove") d.sel = d.sel.filter((tag) => !cmd.SelectRemove.unit_tags.includes(tag))
-  else if (kind === "Hotkey") {
-    const {action, group} = cmd.Hotkey
-    if (action === "Select") d.sel = [...(d.groups.get(group) || d.sel)]
-    else d.groups.set(group, [...d.sel])
-  } else if (BO_KINDS.has(kind)) d.boSelection.push(d.sel.length || 1)
-}
-
-function isMeaningful(kind) {
-  return !["KeepAlive", "Other", "Select", "SelectAdd", "SelectRemove", "Chat", "LeaveGame", "MinimapPing"].includes(kind)
-}
-
-// APM / EAPM over a sliding 60 s window, sampled across the game.
-function apmSeries(frames, totalFrames) {
-  const window = 60 * FPS
-  const step = Math.max(10 * FPS, totalFrames / 150)
-  const out = []
-  for (let f = step; f <= totalFrames + 1; f += step) {
-    const from = Math.max(0, f - window)
-    const minutes = (f - from) / FPS / 60
-    out.push({secs: frameSecs(f), apm: countIn(frames.apm, from, f) / minutes, eapm: countIn(frames.eapm, from, f) / minutes})
-  }
-  return out
-}
-
-function countIn(sorted, from, to) {
-  return lowerBound(sorted, to) - lowerBound(sorted, from)
-}
-
-function lowerBound(arr, x) {
-  let lo = 0, hi = arr.length
-  while (lo < hi) {
-    const mid = (lo + hi) >> 1
-    if (arr[mid] < x) lo = mid + 1
-    else hi = mid
-  }
-  return lo
+// APM / EAPM curve from replay-core (`replay.apm_curve`, 60 s window).
+function apmSeries(curve, playerId) {
+  return curve.filter((s) => s.player_id === playerId).map((s) => ({secs: s.real_seconds, apm: s.apm, eapm: s.eapm}))
 }
 
 function buildModel(r, bytes, file, parseMs) {
@@ -462,24 +275,16 @@ function buildModel(r, bytes, file, parseMs) {
   const winnerId = meta.result && typeof meta.result === "object" ? meta.result.Winner?.player_id : undefined
   const apmById = new Map((r.player_apm || []).map((a) => [a.player_id, a]))
 
-  // Per-player command digests (computers share player_id 255 and issue none).
-  const digest = new Map()
+  // Per-player hotkey groups and chat (computers share player_id 255 and
+  // issue no commands).
+  const hotkeys = new Map()
   const chat = []
   const slotName = new Map(h.players.map((p) => [p.slot_id, clean(p.name)]))
   for (const c of r.commands) {
     const kind = variant(c.command)
-    let d = digest.get(c.player_id)
-    if (!d) digest.set(c.player_id, d = {apm: [], eapm: [], hotkeys: new Set(), sel: [], groups: new Map(), boSelection: []})
-    trackSelection(d, kind, c.command)
-    if (isMeaningful(kind)) {
-      d.apm.push(c.frame)
-      if (kind === "Hotkey") {
-        const hk = c.command.Hotkey
-        d.hotkeys.add(hk.group)
-        if (hk.action !== "Select") d.eapm.push(c.frame)
-      } else {
-        d.eapm.push(c.frame)
-      }
+    if (kind === "Hotkey") {
+      if (!hotkeys.has(c.player_id)) hotkeys.set(c.player_id, new Set())
+      hotkeys.get(c.player_id).add(c.command.Hotkey.group)
     }
     if (kind === "Chat") {
       const msg = clean(c.command.Chat.message)
@@ -493,10 +298,11 @@ function buildModel(r, bytes, file, parseMs) {
     const race = variant(p.race)
     const type = variant(p.player_type)
     const isHuman = type === "Human"
-    const entries = isHuman ? r.build_order.filter((e) => e.player_id === p.player_id) : []
-    const bo = buildOrderFor(entries, race, digest.get(p.player_id)?.boSelection)
+    const entries = isHuman ? r.production.filter((e) => e.player_id === p.player_id) : []
+    const bo = buildOrderFor(entries)
     const apm = isHuman ? apmById.get(p.player_id) : null
-    const d = isHuman ? digest.get(p.player_id) : null
+    const curve = isHuman ? apmSeries(r.apm_curve || [], p.player_id) : []
+    const hasActions = curve.some((s) => s.apm > 0)
     const units = new Map()
     for (const e of bo) if (!e.dropped && (e.kind === "Train" || e.kind === "UnitMorph")) units.set(e.id, (units.get(e.id) || 0) + e.count)
     return {
@@ -510,12 +316,12 @@ function buildModel(r, bytes, file, parseMs) {
       eapm: apm ? apm.eapm : null,
       winner: winnerId !== undefined && humans.has(winnerId) && p.player_id === winnerId,
       bo,
-      opening: isHuman ? classifyOpening(bo, race) : null,
+      opening: isHuman ? openingFor(r.openings, p.player_id) : null,
       tech: techPath(bo, race),
       units: [...units.entries()].sort((a, b) => b[1] - a[1]),
-      hotkeys: d ? [...d.hotkeys].sort((a, b) => a - b) : [],
-      apmSeries: d && d.apm.length ? apmSeries(d, h.frame_count) : null,
-      series: d && d.apm.length ? ++series : 0,
+      hotkeys: isHuman ? [...(hotkeys.get(p.player_id) || [])].sort((a, b) => a - b) : [],
+      apmSeries: hasActions ? curve : null,
+      series: hasActions ? ++series : 0,
     }
   })
 
@@ -525,7 +331,7 @@ function buildModel(r, bytes, file, parseMs) {
     parseMs,
     players,
     chat,
-    map: mapRef(h.map_name),
+    map: mapRef(h.map_name, meta.map_name),
     matchup: meta.matchup?.code || "",
     is1v1: !!meta.is_1v1,
     durationSecs: frameSecs(h.frame_count),
@@ -967,10 +773,10 @@ function renderError(fileName, message, detail) {
   document.getElementById("replay-results").prepend(card)
 }
 
-function friendlyParseError(message) {
-  const m = String(message).toLowerCase()
-  if (m.includes("magic") || m.includes("too short")) return t("err_not_replay")
-  if (m.includes("decompress") || m.includes("zlib") || m.includes("section") || m.includes("unexpected end")) return t("err_corrupt")
+// The parser throws Errors with a stable `code` (see replay-core ReplayError).
+function friendlyParseError(code) {
+  if (code === "NOT_A_REPLAY") return t("err_not_replay")
+  if (code === "TRUNCATED" || code === "CORRUPT") return t("err_corrupt")
   return t("err_unsupported")
 }
 
@@ -1029,7 +835,7 @@ async function analyze(file) {
   } catch (e) {
     setStatus("")
     const msg = e?.message || String(e)
-    return renderError(file.name, friendlyParseError(msg), msg)
+    return renderError(file.name, friendlyParseError(e?.code), msg)
   }
   const ms = performance.now() - t0
 
