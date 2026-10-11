@@ -9,7 +9,7 @@ organizer = "OnGameNet"
 status = "retired"
 format = "Individual"
 region = "South Korea"
-sources = ["https://en.wikipedia.org/wiki/OnGameNet_Starleague", "https://liquipedia.net/starcraft/Korean_Premier_Tournaments"]
+sources = ["https://liquipedia.net/starcraft/OnGameNet_Starleague", "https://liquipedia.net/starcraft/List_of_OnGameNet_Starleagues", "https://liquipedia.net/starcraft/Golden_Mouse", "https://liquipedia.net/starcraft/2009_Bacchus_OSL", "https://en.wikipedia.org/wiki/OnGameNet_Starleague"]
 verified = "2026-10-11"
 [[extra.seasons]]
 season = "Tving Starleague"
@@ -217,7 +217,7 @@ year = 2002
 status = "completed"
 winner = "NaDa"
 runner_up = "ChoJJa"
-score = "3–2"
+score = "3–0"
 prize_pool = ""
 [[extra.seasons]]
 season = "SKY OnGameNet Starleague 2002"
@@ -233,7 +233,7 @@ year = 2002
 status = "completed"
 winner = "Sync"
 runner_up = "H.O.T-Forever"
-score = "3–2"
+score = "3–1"
 prize_pool = ""
 [[extra.seasons]]
 season = "SKY OnGameNet Starleague 2001"
@@ -284,7 +284,7 @@ A player who won three OSL titles received a Golden Mouse trophy. Four players e
 
 - **NaDa** — Panasonic 2002, IOPS 2004, Shinhan Bank Season 2 2006
 - **July** — Gillette 2004, EVER 2005, EVER 2008
-- **Jaedong** — EVER 2007, BATOO 2008, Bacchus 2009
+- **Jaedong** — EVER 2007, BATOO 2008–09, Bacchus 2009
 - **Flash** — Bacchus 2008, EVER 2009, Korean Air Season 2 2010
 
 The table lists editions by sponsor name; finals were best-of-five. Some histories also count earlier 1999 events as the first OSL — those are not included here.

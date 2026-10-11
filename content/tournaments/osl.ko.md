@@ -9,7 +9,7 @@ organizer = "OnGameNet"
 status = "retired"
 format = "Individual"
 region = "South Korea"
-sources = ["https://en.wikipedia.org/wiki/OnGameNet_Starleague", "https://liquipedia.net/starcraft/Korean_Premier_Tournaments"]
+sources = ["https://liquipedia.net/starcraft/OnGameNet_Starleague", "https://liquipedia.net/starcraft/List_of_OnGameNet_Starleagues", "https://liquipedia.net/starcraft/Golden_Mouse", "https://liquipedia.net/starcraft/2009_Bacchus_OSL", "https://en.wikipedia.org/wiki/OnGameNet_Starleague"]
 verified = "2026-10-11"
 [[extra.seasons]]
 season = "Tving Starleague"
@@ -217,7 +217,7 @@ year = 2002
 status = "completed"
 winner = "NaDa"
 runner_up = "ChoJJa"
-score = "3–2"
+score = "3–0"
 prize_pool = ""
 [[extra.seasons]]
 season = "SKY OnGameNet Starleague 2002"
@@ -233,7 +233,7 @@ year = 2002
 status = "completed"
 winner = "Sync"
 runner_up = "H.O.T-Forever"
-score = "3–2"
+score = "3–1"
 prize_pool = ""
 [[extra.seasons]]
 season = "SKY OnGameNet Starleague 2001"
@@ -284,7 +284,7 @@ OSL에서 세 번 우승한 선수에게는 골든 마우스가 수여되었습�
 
 - **이윤열(NaDa)** — 2002 파나소닉, 2004 IOPS, 2006 신한은행 시즌 2
 - **박성준(July)** — 2004 질레트, 2005 EVER, 2008 EVER
-- **이제동(Jaedong)** — 2007 EVER, 2008 BATOO, 2009 박카스
+- **이제동(Jaedong)** — 2007 EVER, 2008–09 BATOO, 2009 박카스
 - **이영호(Flash)** — 2008 박카스, 2009 EVER, 2010 대한항공 시즌 2
 
 표에는 대회를 스폰서 이름으로 표기했으며, 결승은 5전 3선승제로 치러졌습니다. 1999년 대회를 첫 OSL로 집계하는 경우도 있으나 여기서는 제외했습니다.

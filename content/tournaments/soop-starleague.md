@@ -9,9 +9,9 @@ organizer = "SOOP"
 status = "retired"
 format = "Individual"
 region = "South Korea"
-sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.gamemeca.com/news.php?ca=T&p=89"]
-unverified = true
+sources = ["https://liquipedia.net/starcraft/SOOP/StarCraft_League/2024/AUTUMN", "https://liquipedia.net/starcraft/ASL", "https://liquipedia.net/starcraft/SSL", "https://liquipedia.net/starcraft/Korean_Premier_Tournaments", "https://en.wikipedia.org/wiki/ASL_(StarCraft)"]
+verified = "2026-10-11"
 +++
-In autumn 2024, shortly after AfreecaTV renamed itself SOOP, its individual Brood War league was held as the SOOP StarCraft League (SSL). This site treats that edition as [ASL Season 18](@/tournaments/asl-s18.md), which Soulkey won 4–1 over Sharp; the following season returned to the ASL name.
+In autumn 2024, after AfreecaTV had rebranded as SOOP, its individual Brood War league was held as the SOOP StarCraft League (SSL). This site treats that edition as [ASL Season 18](@/tournaments/asl-s18.md), which Soulkey won 4–1 over Sharp in the final on 2 November 2024; the following season returned to the ASL name.
 
-The abbreviation SSL has also been used by unrelated earlier events, such as the SonicTV Starleague, first held in 2010.
+The abbreviation SSL has also been used by unrelated earlier events, such as the SonicTV BJ Starleague, first held in 2010.

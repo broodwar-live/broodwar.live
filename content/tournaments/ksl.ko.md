@@ -9,7 +9,7 @@ organizer = "Blizzard Entertainment"
 status = "retired"
 format = "Individual"
 region = "South Korea"
-sources = ["https://en.wikipedia.org/wiki/Korea_StarCraft_League", "https://labs.invenglobal.com/articles/5340/blizzards-first-fully-owned-and-operated-starcraft-tournament"]
+sources = ["https://liquipedia.net/starcraft/Korea_StarCraft_League", "https://en.wikipedia.org/wiki/Korea_StarCraft_League", "https://labs.invenglobal.com/articles/5340/blizzards-first-fully-owned-and-operated-starcraft-tournament"]
 verified = "2026-10-11"
 [[extra.seasons]]
 season = 4

@@ -9,7 +9,7 @@ organizer = "AfreecaTV / SOOP"
 status = "active"
 format = "Individual"
 region = "South Korea"
-sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://liquipedia.net/starcraft/Premier_Tournaments", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://inews24.com/view/2011561"]
+sources = ["https://liquipedia.net/starcraft/ASL", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/9", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/14", "https://liquipedia.net/starcraft/SOOP/StarCraft_League/2024/AUTUMN", "https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://inews24.com/view/2011561"]
 verified = "2026-10-11"
 [[extra.seasons]]
 season = 22
@@ -54,7 +54,7 @@ status = "completed"
 winner = "Soulkey"
 runner_up = "Sharp"
 score = "4–1"
-final_date = ""
+final_date = "2024-11-02"
 prize_pool = ""
 [[extra.seasons]]
 season = 17
@@ -72,7 +72,7 @@ status = "completed"
 winner = "Soulkey"
 runner_up = "Mini"
 score = "4–1"
-final_date = ""
+final_date = "2023-10-15"
 prize_pool = ""
 [[extra.seasons]]
 season = 15
@@ -81,7 +81,7 @@ status = "completed"
 winner = "JyJ"
 runner_up = "Mind"
 score = "4–1"
-final_date = ""
+final_date = "2023-04-28"
 prize_pool = ""
 [[extra.seasons]]
 season = 14
@@ -90,7 +90,7 @@ status = "completed"
 winner = "Royal"
 runner_up = "Rush"
 score = "4–2"
-final_date = ""
+final_date = "2022-10-08"
 prize_pool = ""
 [[extra.seasons]]
 season = 13
@@ -99,7 +99,7 @@ status = "completed"
 winner = "Light"
 runner_up = "Rain"
 score = "4–0"
-final_date = ""
+final_date = "2022-04-09"
 prize_pool = ""
 [[extra.seasons]]
 season = 12
@@ -108,7 +108,7 @@ status = "completed"
 winner = "Mini"
 runner_up = "Rush"
 score = "4–3"
-final_date = ""
+final_date = "2021-11-07"
 prize_pool = ""
 [[extra.seasons]]
 season = 11
@@ -123,7 +123,7 @@ prize_pool = ""
 season = 10
 year = 2020
 status = "completed"
-winner = "Queen"
+winner = "ZerO"
 runner_up = "Soma"
 score = "4–3"
 final_date = ""
@@ -132,10 +132,10 @@ prize_pool = ""
 season = 9
 year = 2020
 status = "completed"
-winner = "Queen"
+winner = "ZerO"
 runner_up = "Light"
 score = "4–1"
-final_date = ""
+final_date = "2020-04-26"
 prize_pool = ""
 [[extra.seasons]]
 season = 8
@@ -216,6 +216,6 @@ The AfreecaTV StarCraft League (ASL) is the individual Brood War league broadcas
 
 - **Most titles:** Flash (Seasons 2, 3, 4 and 8) and Soulkey (Seasons 16–19) have four titles each.
 - **Longest streak:** Soulkey won four consecutive seasons, from Season 16 to Season 19.
-- **Back-to-back champions:** Flash (Seasons 2–4), Queen (Seasons 9–10), Soulkey (Seasons 16–19) and Soma (Seasons 20–21).
+- **Back-to-back champions:** Flash (Seasons 2–4), ZerO (Kim Myung Woon, Seasons 9–10), Soulkey (Seasons 16–19) and Soma (Seasons 20–21).
 
 Finals were best-of-five until Season 7 and best-of-seven from Season 8 onward. Final dates are listed only where they have been confirmed.

@@ -16,7 +16,7 @@ runner_up = "Flash"
 final_score = "4–3"
 final_date = "2026-05-24"
 semifinalists = []
-sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://liquipedia.net/starcraft/ASL/21", "https://www.invenglobal.com/articles/22075/who-is-the-winner-of-asl-season-21-park-sang-hyun-vs-lee-young-ho-finals-on-the-24th"]
+sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://liquipedia.net/starcraft/ASL/21", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/10", "https://www.invenglobal.com/articles/22075/who-is-the-winner-of-asl-season-21-park-sang-hyun-vs-lee-young-ho-finals-on-the-24th"]
 verified = "2026-10-11"
 [[extra.matches]]
 round = "Finals"
@@ -25,4 +25,4 @@ score_a = 4
 player_b = "Flash"
 score_b = 3
 +++
-박상현(Soma)이 2026년 5월 24일 결승에서 이영호(Flash)를 4:3으로 꺾고 2연속 우승을 차지했습니다. 이영호는 이번 시즌 약 6년 만에 ASL에 복귀했습니다.
+박상현(Soma)이 2026년 5월 24일 결승에서 이영호(Flash)를 4:3으로 꺾고 2연속 우승을 차지했습니다. 이영호는 시즌 10(2020년) 이후 5년여 만에 ASL에 복귀했습니다.

@@ -16,7 +16,7 @@ runner_up = "Snow"
 final_score = "4–2"
 final_date = "2025-10-26"
 semifinalists = []
-sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://en.fnnews.com/news/202510270914320237"]
+sources = ["https://liquipedia.net/starcraft/ASL/20", "https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://en.fnnews.com/news/202510270914320237"]
 verified = "2026-10-11"
 [[extra.matches]]
 round = "Finals"

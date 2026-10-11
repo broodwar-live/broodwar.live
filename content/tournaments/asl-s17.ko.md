@@ -16,7 +16,7 @@ runner_up = "Hero"
 final_score = "4–3"
 final_date = "2024-04-27"
 semifinalists = []
-sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://liquipedia.net/starcraft/Premier_Tournaments", "https://v.daum.net/v/20250514024200753?f=p"]
+sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/17", "https://v.daum.net/v/20250514024200753?f=p"]
 verified = "2026-10-11"
 [[extra.matches]]
 round = "Finals"
