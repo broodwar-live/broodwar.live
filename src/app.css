@@ -761,3 +761,16 @@ html {
   --rs-1: #2a78d6; --rs-2: #eb6834; --rs-3: #1baf7a; --rs-4: #eda100;
   --rs-5: #e87ba4; --rs-6: #008300; --rs-7: #6250d6; --rs-8: #e34948;
 }
+
+/* Player playoff record (templates/players/playoff-record.html): on phones the match list
+   and head-to-head tables show their first 10 rows (in the current sort order) until the
+   visually hidden .rec-more checkbox right before the table's wrapper is ticked via its
+   label. CSS only, so it works without JS. */
+@media (max-width: 639.98px) {
+  .rec-more:not(:checked) + div > table.rec-collapsible > tbody > tr:nth-child(n+11) { display: none; }
+}
+.rec-more:checked + div .rec-more-show,
+.rec-more:not(:checked) + div .rec-more-hide { display: none; }
+.rec-more:focus-visible + div .rec-more-label { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+/* ?vs=<slug> deep link: the matching head-to-head row is highlighted. */
+tr[data-vs-current] { background: color-mix(in oklab, var(--color-primary) 12%, transparent); }

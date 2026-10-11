@@ -1,0 +1,158 @@
+{#- Playoff record section of a player page. Included from players/player.html, which builds
+    `recs` (newest first) and the totals r_sw/r_sl (series) and r_fw/r_fl (finals).
+    Each record: k sort key, d date ("" when the season page has none), y year, p/s season
+    path/title, l league, r round, o opponent key (slug, or "~name" without a profile),
+    os/on/or opponent slug/name/race, mg/og games won/lost, res "W" | "L" | "",
+    f final (st "final" | "", for group_by), wo walkover (no games counted), sc scores present.
+    The data-rec-* attributes are read by scripts/check-playoff-records.py. -#}
+{% set_global n_wo = 0 %}{% set_global n_und = 0 %}{% set_global g_w = 0 %}{% set_global g_l = 0 %}
+{% for r in recs %}
+  {% if r.wo %}{% set_global n_wo = n_wo + 1 %}{% else %}{% set_global g_w = g_w + r.mg %}{% set_global g_l = g_l + r.og %}{% endif %}
+  {% if not r.res %}{% set_global n_und = n_und + 1 %}{% endif %}
+{% endfor %}
+{% set n_recs = recs | length %}
+<section class="mt-10" aria-labelledby="player-record" id="player-record-section"
+  data-rec-series="{{ r_sw }}-{{ r_sl }}" data-rec-games="{{ g_w }}-{{ g_l }}" data-rec-finals="{{ r_fw }}-{{ r_fl }}"
+  data-vs-filter="{{ t.rec_vs_filter }}" data-vs-none="{{ t.rec_vs_none }}" data-vs-clear="{{ t.rec_vs_clear }}">
+  <h2 id="player-record" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.rec_title }}</h2>
+  <p class="text-xs text-base-content/70 mb-4">{{ t.rec_note | replace(from="{n}", to=rec_seasons ~ "") }} <a href="{{ lp }}/tournaments/" class="text-primary hover:underline">{{ t.rec_all_tournaments }}</a></p>
+
+  {#- Headline numbers -#}
+  <dl class="grid grid-cols-3 gap-2 sm:gap-3 mb-6">
+    {% for tile in [[t.rec_series, r_sw, r_sl], [t.rec_games, g_w, g_l], [t.rec_finals, r_fw, r_fl]] %}
+    <div class="glass-card rounded-box px-3 py-2.5 sm:px-4 sm:py-3 min-w-0">
+      <dt class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-base-content/70 truncate">{{ tile[0] }}</dt>
+      <dd class="mt-0.5 font-stats text-lg sm:text-2xl leading-tight whitespace-nowrap">{{ tile[1] }}<span class="text-base-content/60">–</span>{{ tile[2] }}</dd>
+      <dd class="font-stats text-[11px] sm:text-xs text-base-content/70">{% if tile[1] + tile[2] > 0 %}{{ (tile[1] * 100 / (tile[1] + tile[2])) | round | int }}%{% else %}–{% endif %}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+
+  {#- Breakdown: all, by league, by opponent race, finals -#}
+  <div class="overflow-x-auto mb-2">
+    <table class="table table-sm max-sm:table-xs w-full max-w-2xl">
+      <thead>
+        <tr class="text-xs text-base-content/70">
+          <th scope="col"><span class="sr-only">{{ t.rec_split }}</span></th>
+          <th scope="col" class="text-right">{{ t.rec_series }}</th>
+          <th scope="col" class="text-right">{{ t.rec_win_pct }}</th>
+          <th scope="col" class="text-right">{{ t.rec_games }}</th>
+          <th scope="col" class="text-right">{{ t.rec_win_pct }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% set rr_label = t.rec_overall %}{% set rr_recs = recs %}{% include "players/record-row.html" %}
+      </tbody>
+      <tbody>
+        <tr><th scope="rowgroup" colspan="5" class="pt-4 pb-1 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ t.rec_by_league }}</th></tr>
+        {% set by_league = recs | group_by(attribute="l") %}
+        {#- Map iteration order is not stable between builds: walk the sorted keys. -#}
+        {% for lg in by_league | keys | sort %}
+        {% set rr_label = lg %}{% set rr_recs = by_league[lg] %}{% include "players/record-row.html" %}
+        {% endfor %}
+      </tbody>
+      {% set by_race = recs | group_by(attribute="or") %}
+      {% if by_race["terran"] is defined or by_race["protoss"] is defined or by_race["zerg"] is defined %}
+      <tbody>
+        <tr><th scope="rowgroup" colspan="5" class="pt-4 pb-1 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ t.rec_by_race }}</th></tr>
+        {% for rc in ["terran", "protoss", "zerg"] %}{% if by_race[rc] is defined %}
+        {% if rc == "terran" %}{% set rc_name = t.player_race_terran %}{% set rc_cls = "bg-race-terran" %}{% set rc_l = "T" %}{% elif rc == "protoss" %}{% set rc_name = t.player_race_protoss %}{% set rc_cls = "bg-race-protoss" %}{% set rc_l = "P" %}{% else %}{% set rc_name = t.player_race_zerg %}{% set rc_cls = "bg-race-zerg" %}{% set rc_l = "Z" %}{% endif %}
+        {% set rr_label %}<span class="inline-flex items-center gap-1.5"><span class="{{ rc_cls }} w-4 h-4 shrink-0 rounded flex items-center justify-center text-[11px] leading-none font-black text-base-100" aria-hidden="true">{{ rc_l }}</span>{{ t.rec_vs_race | replace(from="{race}", to=rc_name) }}</span>{% endset %}
+        {% set rr_recs = by_race[rc] %}{% include "players/record-row.html" %}
+        {% endif %}{% endfor %}
+      </tbody>
+      {% endif %}
+      {% set by_final = recs | group_by(attribute="st") %}
+      {% if by_final["final"] is defined %}
+      <tbody>
+        <tr><th scope="rowgroup" colspan="5" class="pt-4 pb-1 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ t.rec_stage }}</th></tr>
+        {% set rr_label = t.rec_finals %}{% set rr_recs = by_final["final"] %}{% include "players/record-row.html" %}
+      </tbody>
+      {% endif %}
+    </table>
+  </div>
+  {% if n_wo > 0 %}<p class="text-xs text-base-content/70">{{ t.rec_walkover_note | replace(from="{n}", to=n_wo ~ "") }}</p>{% endif %}
+  {% if n_und > 0 %}<p class="text-xs text-base-content/70">{{ t.rec_undecided_note | replace(from="{n}", to=n_und ~ "") }}</p>{% endif %}
+
+  {#- Head-to-head: one row per opponent, most series first (ties by name). -#}
+  {% set_global h2h_json = "" %}
+  {% for ok, o_recs in recs | group_by(attribute="o") %}
+    {% set_global hw = 0 %}{% set_global hl = 0 %}{% set_global hgw = 0 %}{% set_global hgl = 0 %}
+    {% for r in o_recs %}
+      {% if r.res == "W" %}{% set_global hw = hw + 1 %}{% elif r.res == "L" %}{% set_global hl = hl + 1 %}{% endif %}
+      {% if not r.wo %}{% set_global hgw = hgw + r.mg %}{% set_global hgl = hgl + r.og %}{% endif %}
+    {% endfor %}
+    {% set o0 = o_recs | first %}
+    {% set_global h2h_json = h2h_json ~ "," ~ {"o": ok, "os": o0.os, "on": o0.on, "nl": o0.on | lower, "n": o_recs | length, "w": hw, "l": hl, "gw": hgw, "gl": hgl, "last": o0.k} | json_encode | safe %}
+  {% endfor %}
+  {% set h2h = load_data(literal="[" ~ (h2h_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="nl") | reverse | sort(attribute="n") | reverse %}
+  <h3 id="player-h2h" class="text-base font-semibold mt-8 mb-1 scroll-mt-24">{{ t.rec_h2h }}</h3>
+  <p class="text-xs text-base-content/70 mb-3">{{ t.rec_h2h_note }}</p>
+  {% set n_h2h = h2h | length %}
+  {% if n_h2h > 10 %}<input type="checkbox" id="rec-more-h2h" class="rec-more sr-only" aria-controls="player-h2h-list">{% endif %}
+  <div class="overflow-x-auto">
+    <table id="player-h2h-list" class="table table-sm w-full max-w-2xl rec-collapsible" data-sortable data-rec-h2h>
+      <thead>
+        <tr class="text-xs text-base-content/70">
+          <th scope="col" data-sort="text">{{ t.rec_col_opponent }}</th>
+          <th scope="col" data-sort="num" data-sort-key="h2h-played" aria-sort="descending" class="text-right">{{ t.rec_played }}</th>
+          <th scope="col" data-sort="num" class="text-right">{{ t.rec_series }}</th>
+          <th scope="col" data-sort="num" class="text-right">{{ t.rec_games }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for h in h2h %}
+        <tr data-opp="{{ h.o }}">
+          <td class="text-sm min-w-0" data-sort-value="{{ h.on }}">{% set pc_name = h.on %}{% set pc_slug = h.os %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}</td>
+          <td class="font-stats text-sm text-right">{{ h.n }}</td>
+          <td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{% if h.w + h.l > 0 %}{{ h.w * 1000 / (h.w + h.l) + h.n }}{% else %}0{% endif %}">{% if h.os %}<a href="?vs={{ h.os }}#player-matches" class="text-primary hover:underline" title="{{ t.rec_h2h_link | replace(from='{name}', to=h.on) }}">{{ h.w }}–{{ h.l }}</a>{% else %}{{ h.w }}–{{ h.l }}{% endif %}</td>
+          <td class="font-stats text-sm text-right whitespace-nowrap text-base-content/70" data-sort-value="{% if h.gw + h.gl > 0 %}{{ h.gw * 1000 / (h.gw + h.gl) }}{% else %}0{% endif %}">{{ h.gw }}–{{ h.gl }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if n_h2h > 10 %}
+    <label for="rec-more-h2h" class="rec-more-label sm:hidden mt-3 flex justify-center rounded-box border border-primary/20 px-4 py-2 text-sm text-primary cursor-pointer select-none">
+      <span class="rec-more-show">{{ t.rec_show_all_opponents | replace(from="{n}", to=n_h2h ~ "") }}</span><span class="rec-more-hide">{{ t.rec_show_fewer }}</span>
+    </label>
+    {% endif %}
+  </div>
+
+  {#- Match list, newest first. Phones show the first 10 rows (here and in the head-to-head table) (in the current sort order) until
+      the "show all" checkbox is ticked: CSS only (src/app.css, .rec-more), so it works without JS. -#}
+  <h3 id="player-matches" class="text-base font-semibold mt-8 mb-3 scroll-mt-24">{{ t.rec_matches }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ n_recs }})</span></h3>
+  <p data-vs-banner hidden class="mb-3 rounded-box border border-primary/20 bg-primary/5 px-4 py-2.5 text-sm"></p>
+  {% if n_recs > 10 %}<input type="checkbox" id="rec-more" class="rec-more sr-only" aria-controls="player-match-list">{% endif %}
+  <div>
+    <table id="player-match-list" class="table table-sm w-full max-sm:block rec-collapsible" data-sortable data-rec-matches>
+      <thead class="max-sm:sr-only">
+        <tr class="text-xs text-base-content/70">
+          <th scope="col" data-sort="text" data-sort-key="match-date" aria-sort="descending">{{ t.rec_col_date }}</th>
+          <th scope="col" data-sort="text">{{ t.rec_col_tournament }}</th>
+          <th scope="col">{{ t.rec_col_round }}</th>
+          <th scope="col" data-sort="text">{{ t.rec_col_opponent }}</th>
+          <th scope="col" class="text-right">{{ t.rec_col_score }}</th>
+          <th scope="col" data-sort="text">{{ t.rec_col_result }}</th>
+        </tr>
+      </thead>
+      <tbody class="max-sm:block max-sm:space-y-2">
+        {% for r in recs %}
+        <tr data-opp="{{ r.o }}" class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3">
+          <td class="font-stats text-xs text-base-content/70 whitespace-nowrap max-sm:p-0 max-sm:order-2" data-sort-value="{{ r.k }}">{% if r.d %}<time datetime="{{ r.d }}">{{ r.d }}</time>{% else %}{{ r.y }}{% endif %}</td>
+          <td class="text-sm max-sm:p-0 max-sm:order-4 max-sm:basis-full"><a href="{{ r.p }}" class="text-primary hover:underline">{{ r.s }}</a></td>
+          <td class="text-xs whitespace-nowrap max-sm:p-0 max-sm:order-3 {% if r.f %}font-semibold text-warning{% else %}text-base-content/70{% endif %}">{{ r.r }}</td>
+          <td class="text-sm max-sm:p-0 max-sm:order-5 max-sm:flex-1 max-sm:min-w-0" data-sort-value="{{ r.on }}">{% set pc_name = r.on %}{% set pc_slug = r.os %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}</td>
+          <td class="font-stats text-sm text-right whitespace-nowrap max-sm:p-0 max-sm:order-6">{% if r.sc and not r.wo %}{{ r.mg }}–{{ r.og }}{% elif r.wo %}<abbr title="{{ t.rec_walkover }}" class="no-underline text-xs text-base-content/70">{{ t.rec_walkover_short }}</abbr>{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>
+          <td class="max-sm:p-0 max-sm:order-1" data-sort-value="{{ r.res }}">{% if r.res == "W" %}<span class="inline-block rounded bg-success/10 px-1.5 py-0.5 text-[11px] font-semibold text-success" title="{{ t.rec_win_long }}">{{ t.rec_win }}</span>{% elif r.res == "L" %}<span class="inline-block rounded bg-base-content/5 px-1.5 py-0.5 text-[11px] font-semibold text-base-content/70" title="{{ t.rec_loss_long }}">{{ t.rec_loss }}</span>{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if n_recs > 10 %}
+    <label for="rec-more" class="rec-more-label sm:hidden mt-3 flex justify-center rounded-box border border-primary/20 px-4 py-2 text-sm text-primary cursor-pointer select-none">
+      <span class="rec-more-show">{{ t.rec_show_all | replace(from="{n}", to=n_recs ~ "") }}</span><span class="rec-more-hide">{{ t.rec_show_fewer }}</span>
+    </label>
+    {% endif %}
+  </div>
+  <script src="/js/player-record.js" defer></script>
+</section>
