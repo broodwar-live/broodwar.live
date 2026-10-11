@@ -11,6 +11,8 @@ from the JSON alone and with the rules compare.js uses, and checks:
     player page, EN and KO, and every built player page is in the index; every season
     resolves to a built season page (EN and KO);
   * titles / runner-ups in the index equal the series pages' season lists (content);
+  * no match entry sits at a bracket slot marked `upcoming = true` (an ongoing season's
+    unplayed match, e.g. its final) -- those are not played and must not be counted;
   * per player: playoff series / games / finals W-L and team-league sets W-L equal the
     page's data-rec-* / data-tl-* attributes (EN and KO);
   * per pair: series, games and 1v1 team-league set W-L equal the head-to-head row
@@ -94,6 +96,20 @@ def main():
     for slug, p in index.items():
         if (p[5], p[6]) != (titles[(slug, "w")], titles[(slug, "r")]):
             errors.append(f"{slug}: index titles {p[5]}/{p[6]} != series pages {titles[(slug, 'w')]}/{titles[(slug, 'r')]}")
+
+    # --- Upcoming (unplayed) bracket slots are not in the JSON ------------------------
+    upcoming = set()  # (season slug, round index, 1-based match index)
+    for p in sorted((content / "tournaments").glob("*.md")):
+        if p.name.endswith(".ko.md") or p.name.startswith("_"):
+            continue
+        fm = front_matter(p)
+        for ri, rd in enumerate(fm.get("extra", {}).get("bracket", []) or []):
+            for mi, m in enumerate(rd.get("matches", []), 1):
+                if m.get("upcoming"):
+                    upcoming.add((fm.get("slug"), ri, mi))
+    for m in data["m"]:
+        if (data["s"][m[0]][0], m[1], m[2]) in upcoming:
+            errors.append(f"match {data['s'][m[0]][0]} r{m[1]} m{m[2]} is an upcoming (unplayed) slot but is in the JSON")
 
     # --- Recompute (compare.js rules) --------------------------------------------------
     career = defaultdict(Counter)  # slug -> sw sl gw gl fw fl tw tl
@@ -205,7 +221,8 @@ def main():
 
     print(f"compare.json: {len(raw_bytes)} bytes ({len(gzip.compress(raw_bytes, 9))} gzipped), {len(index)} players, "
           f"{len(data['s'])} seasons, {len(data['m'])} matches, {sum(len(g[8]) for g in data['t'])} sets; "
-          f"{len(pairs)} pairs ({len(met)} that met) checked on {checked} head-to-head tables; {len(errors)} errors")
+          f"{len(pairs)} pairs ({len(met)} that met) checked on {checked} head-to-head tables; "
+          f"{len(upcoming)} upcoming slots excluded; {len(errors)} errors")
     return 1 if errors else 0
 
 

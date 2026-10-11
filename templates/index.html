@@ -9,7 +9,7 @@
     Tera 2 has no array-building filters, so lists are accumulated as ";"-separated
     strings of "|"-separated fields, then split/sorted.
     finals:  final_date|series_slug|short_name|season|winner|winner_slug|runner_up|runner_up_slug|score
-    ongoing: series_slug|short_name|season|year|series_path
+    ongoing: series_slug|short_name|season|year|url (season page, else series page)
     winners: winner_slug (one per completed season)
 ================================================================================= -#}
 {% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
@@ -17,7 +17,10 @@
 {% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% set short = tp.extra.short_name | default(value=tp.title) %}
 {% for s in tp.extra.seasons %}
   {% if s.status == "live" or s.status == "ongoing" %}
-    {% set_global ongoing = ongoing ~ tp.slug ~ "|" ~ short ~ "|" ~ s.season ~ "|" ~ s.year ~ "|" ~ tp.path ~ ";" %}
+    {#- Link the season page when there is one, else the series page. -#}
+    {% set_global o_url = tp.path %}
+    {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == tp.slug and sp.extra.season == s.season %}{% set_global o_url = sp.path %}{% endif %}{% endfor %}
+    {% set_global ongoing = ongoing ~ tp.slug ~ "|" ~ short ~ "|" ~ s.season ~ "|" ~ s.year ~ "|" ~ o_url ~ ";" %}
   {% elif s.status == "completed" and s.winner %}
     {% set_global n_finals = n_finals + 1 %}
     {% if s.winner_slug is defined and s.winner_slug %}{% set_global winners = winners ~ s.winner_slug ~ ";" %}{% endif %}

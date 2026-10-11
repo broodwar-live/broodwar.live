@@ -4,7 +4,8 @@
     path/title, l league, r round, o opponent key (slug, or "~name" without a profile),
     os/on/or opponent slug/name/race, mg/og games won/lost, res "W" | "L" | "",
     f final (st "final" | "", for group_by), wo walkover (no games counted), sc scores present.
-    The data-rec-* attributes are read by scripts/check-playoff-records.py. -#}
+    The data-rec-* attributes (data-rec-matches: number of listed matches) are read by
+    scripts/check-playoff-records.py. -#}
 {% set_global n_wo = 0 %}{% set_global n_und = 0 %}{% set_global g_w = 0 %}{% set_global g_l = 0 %}
 {% for r in recs %}
   {% if r.wo %}{% set_global n_wo = n_wo + 1 %}{% else %}{% set_global g_w = g_w + r.mg %}{% set_global g_l = g_l + r.og %}{% endif %}
@@ -12,7 +13,7 @@
 {% endfor %}
 {% set n_recs = recs | length %}
 <section class="mt-10" aria-labelledby="player-record" id="player-record-section"
-  data-rec-series="{{ r_sw }}-{{ r_sl }}" data-rec-games="{{ g_w }}-{{ g_l }}" data-rec-finals="{{ r_fw }}-{{ r_fl }}"
+  data-rec-series="{{ r_sw }}-{{ r_sl }}" data-rec-games="{{ g_w }}-{{ g_l }}" data-rec-finals="{{ r_fw }}-{{ r_fl }}" data-rec-matches="{{ n_recs }}"
   data-vs-filter="{{ t.rec_vs_filter }}" data-vs-none="{{ t.rec_vs_none }}" data-vs-clear="{{ t.rec_vs_clear }}">
   <h2 id="player-record" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.rec_title }}</h2>
   <p class="text-xs text-base-content/70 mb-4">{{ t.rec_note | replace(from="{n}", to=rec_seasons ~ "") }} <a href="{{ lp }}/tournaments/" class="text-primary hover:underline">{{ t.rec_all_tournaments }}</a></p>
