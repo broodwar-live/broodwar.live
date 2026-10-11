@@ -1,5 +1,6 @@
 +++
 title = "Arbiter"
+description = "The Arbiter is a Protoss support ship, built at the Stargate after an Arbiter Tribunal, that cloaks nearby friendly units and casts Recall and Stasis Field."
 slug = "arbiter"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,42 @@ minerals = 100
 gas = 350
 supply = 4
 hp = 200
+shields = 150
 armor = 1
 damage = 10
-build_time = 100
+damage_type = "explosive"
+build_time = 160
 attack_speed = 45
 range = 5
-speed = 5.47
-shields = 150
+speed = 5.0
 size = "large"
 ground_attack = true
 air_attack = true
-damage_type = "explosive"
-dps = 5.06
+dps = 3.33
 sight = 9
 built_from = "stargate"
 abilities = ["recall", "stasis-field"]
 upgrades = ["air-weapons", "air-armor", "plasma-shields"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-A support capital ship whose passive cloaking field hides all friendly units nearby, the Arbiter is one of the most strategically powerful units in Brood War. Arbiters carry two game-changing abilities: Recall teleports a group of units to the Arbiter's location, and Stasis Field freezes all units in an area, making them invulnerable but unable to act. In the late game, Arbiters transform Protoss army dynamics entirely.
-
-## Versus Zerg
-
-Arbiters occasionally appear in ultra-late PvZ scenarios. Recall can teleport the Protoss army past Zerg defensive positions, and Stasis Field freezes biological Zerg units. However, the investment is rarely justified in PvZ, where Corsair-Templar or Corsair-Reaver compositions are more standard.
+The Arbiter requires an Arbiter Tribunal. It cloaks nearby friendly units (but not other Arbiters or buildings). Recall teleports units from a target area to the Arbiter, and Stasis Field freezes units in an area, making them invulnerable and unable to act.
 
 ## Versus Terran
 
-Arbiters are the most critical late-game unit in PvT. Recall teleports the entire Protoss army past Terran siege lines directly into the Terran base, creating one of the most dramatic plays in the game. Stasis Field freezes portions of the Terran army, allowing Protoss to engage the remainder at favorable odds. The threat of Recall alone forces Terran to split their army defensively.
+Arbiters are a key late-game unit in PvT. Cloaked armies, Recall attacks into Terran bases and Stasis Field on part of a Terran army are common. Terran answers with Science Vessels (EMP and detection), Comsat Station scans and Ghost Lockdown.
 
 ## Versus Protoss
 
-Arbiters are rarely used in PvP. The mirror matchup revolves around gateway units, Reavers, and Dragoon micro rather than capital ship tech. The passive cloaking field has limited value when both players have Observers, and the Recall investment is rarely worthwhile in the mirror.
+Arbiters are rarely used in PvP.
+
+## Versus Zerg
+
+Arbiters are rarely used in PvZ, where Zerg has plenty of Overlords for detection.
 
 ## Key Mechanics
 
-The passive cloaking field hides all friendly non-Arbiter units near the Arbiter, essentially providing free cloak to the entire army. Recall costs 150 energy and teleports all units in an area to the Arbiter's location — but the Arbiter must already be positioned at the destination. Stasis Field costs 100 energy and freezes all units (friend and foe) in its area for roughly 40 seconds. Arbiters deal 10 Explosive damage and can attack both ground and air, though their combat value is minimal.
-
-## Micro Techniques
-
-- **Recall positioning**: Flying the Arbiter to a strategic location (enemy main, behind tank lines) before Recalling the army in
-- **Stasis split**: Freezing part of the enemy army to divide it, then engaging the unfrozen portion with the full Protoss army
-- **Cloak field abuse**: Using the passive cloak to hide army composition and approach until the last moment
-- **Arbiter preservation**: Keeping the Arbiter alive at all costs — it is always the highest-priority target
-
-## Counters
-
-Lockdown from Ghosts freezes the Arbiter, removing the cloaking field and preventing spellcasting. EMP drains energy, preventing Recall and Stasis. Yamato Cannon one-shots Arbiters. Science Vessels reveal cloaked units under the Arbiter's field. Focus fire on the Arbiter itself removes all benefits it provides.
-
-## Combat Data
-
-- Passive cloaking field hides all nearby friendly units (except other Arbiters)
-- **Recall**: 150 energy — teleports units in an area to the Arbiter's location
-- **Stasis Field**: 100 energy — freezes all units (friend and foe) for ~40 seconds
-- 10 Explosive damage attack to ground and air — minimal combat value
-- **AI Note**: Arbiters auto-attack nearby enemies, which can reveal their position prematurely; manual control is essential
-- Lockdown from Ghosts freezes the Arbiter, disabling its cloaking field and preventing spellcasting
-
-## Historical Notes
-
-Arbiter Recalls are among the most iconic plays in Brood War history. The tension of watching an Arbiter approach a Terran base — will the Recall succeed or will Lockdown stop it? — has defined countless championship moments. Jangbi was famous for his aggressive Arbiter play, using Recalls to break entrenched Terran positions in spectacular fashion. The Arbiter represents the pinnacle of Protoss strategic play.
+- 10 explosive damage, 45-frame cooldown, range 5, ground and air
+- Recall (150 energy, researched at the Arbiter Tribunal)
+- Stasis Field (100 energy, researched at the Arbiter Tribunal)
+- 200 HP, 150 shields, 1 base armor, large size, 4 supply

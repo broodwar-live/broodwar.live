@@ -1,5 +1,6 @@
 +++
 title = "Science Vessel"
+description = "The Science Vessel is a Terran Starport support ship and detector that casts Defensive Matrix, EMP Shockwave and Irradiate."
 slug = "science-vessel"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,62 +13,41 @@ minerals = 100
 gas = 225
 supply = 2
 hp = 200
+shields = 0
 armor = 1
 damage = 0
+damage_type = "normal"
 build_time = 80
 attack_speed = 0
-range = 10
+range = 0
 speed = 5.0
-shields = 0
 size = "large"
 ground_attack = false
 air_attack = false
-damage_type = "normal"
-dps = 0
 sight = 10
 built_from = "starport"
 abilities = ["defensive-matrix", "emp-shockwave", "irradiate"]
-upgrades = ["irradiate"]
+upgrades = ["irradiate", "ship-plating"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-One of the most versatile and critical support units in Brood War. The Science Vessel is a flying detector and spellcaster that provides detection, damage, and protection through three powerful abilities. With no attack of its own, the Science Vessel's value lies entirely in its spells — Irradiate, EMP Shockwave, and Defensive Matrix — each of which can be game-deciding in the right context.
+The Science Vessel requires a Starport with a Control Tower and a Science Facility. It has no attack, but it is a mobile detector and carries three spells, which make it one of Terran's most important units in TvZ and TvP.
 
 ## Versus Zerg
 
-Irradiate is game-defining in TvZ. A single Irradiate on a stacked Mutalisk group can destroy multiple units as the radiation spreads to nearby biological targets. Detection is mandatory against burrowed Lurkers, making Science Vessels essential from the mid-game onward. They are among the highest-priority targets for Zerg Scourge.
+Science Vessels are essential in TvZ. They detect Lurkers, and Irradiate kills Mutalisks, Defilers and Lurkers, which are all biological. Keeping Vessels alive against Scourge is a constant concern.
 
 ## Versus Terran
 
-Science Vessels provide Defensive Matrix to protect lead Siege Tanks during tank line wars, often deciding which player breaks through first. EMP is rarely relevant in the mirror matchup. Detection can reveal cloaked Wraiths, but the primary value is keeping key mechanical units alive through Matrix.
+In TvT, Vessels are used mostly as detectors against cloaked Wraiths and Ghosts, and Defensive Matrix can protect a key unit.
 
 ## Versus Protoss
 
-EMP Shockwave drains Protoss shields and High Templar energy, crippling storm potential before engagements. It also removes Arbiter energy, neutralizing the Recall threat that defines late-game PvT. Defensive Matrix on key Siege Tanks or Dropships extends their survivability during critical pushes.
+EMP Shockwave removes shields and energy in an area, so Vessels are the key answer to High Templar, Arbiters and shield-heavy units such as Archons.
 
 ## Key Mechanics
 
-Irradiate deals 250 damage over roughly 30 seconds to a biological unit and damages nearby biological units, making stacked Mutalisks especially vulnerable. EMP Shockwave instantly removes all shields and energy in its area of effect — devastating against Protoss armies and spellcasters. Defensive Matrix absorbs 250 damage on a single unit. The Science Vessel has a 10-range detection radius, the longest of any detector.
-
-## Micro Techniques
-
-- **Irradiate targeting**: Casting Irradiate on stacked Mutalisks or Overlords near other biological units to maximize splash
-- **EMP timing**: Hitting Protoss army clusters with EMP before engagement to strip shields and drain Templar energy
-- **Matrix on drops**: Casting Defensive Matrix on Dropships during drops to survive anti-air fire
-- **Vessel positioning**: Keeping Science Vessels alive behind the army — they are high-priority targets
-
-## Counters
-
-Science Vessels are prime targets for Scourge, which can one-shot them. Feedback from Dark Archons deals damage equal to remaining energy, potentially killing a full-energy Vessel. Corsairs can chase and destroy them. Losing a Science Vessel with full energy is one of the most costly mistakes in competitive play.
-
-## Combat Data
-
-- **Irradiate**: 250 damage over 30s to target + nearby biological units, 75 energy
-- Irradiate splashes to adjacent bio units — one cast on a stacked Mutalisk flock kills multiple
-- **EMP Shockwave**: Drains all shields and energy in area, 100 energy
-- EMP on Archon removes 350 shields instantly, leaving only 10 HP
-- **Defensive Matrix**: 250 HP shield lasting ~90s, 100 energy
-- **AI Note**: Science Vessels are detectors — losing them means losing detection
-- **Notable**: Science Vessel irradiate timing defines TvZ mid-game (arriving before Mutalisk count peaks)
-
-## Historical Notes
-
-The Science Vessel is often considered the most skill-intensive unit to use correctly. The timing of EMP against Protoss storms, or Irradiate against Mutalisk stacks, separates good Terran players from great ones. Flash's precise Science Vessel management is frequently cited as one of the key factors in his dominance across multiple matchups.
+- Detector
+- Defensive Matrix (100 energy) puts a damage-absorbing barrier on a unit
+- EMP Shockwave (100 energy, researched at the Science Facility) removes all shields and energy in the target area
+- Irradiate (75 energy, researched at the Science Facility) deals damage over time to biological units around the target

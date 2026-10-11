@@ -1,5 +1,6 @@
 +++
 title = "Marine"
+description = "The Marine is the Terran's basic Barracks infantry unit, a cheap 50-mineral rifleman that can shoot both ground and air targets."
 slug = "marine"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,64 +13,44 @@ minerals = 50
 gas = 0
 supply = 1
 hp = 40
+shields = 0
 armor = 0
 damage = 6
+damage_type = "normal"
 build_time = 24
 attack_speed = 15
 range = 4
+range_upgraded = 5
 speed = 4.0
-shields = 0
 size = "small"
 ground_attack = true
 air_attack = true
-damage_type = "normal"
-dps = 6.07
-dps_upgraded = 12.12
-range_upgraded = 5
+dps = 6.0
 sight = 7
 built_from = "barracks"
 hotkey = "M"
 abilities = ["stim-pack"]
 upgrades = ["stim-pack", "u-238-shells", "infantry-weapons", "infantry-armor"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-The backbone of Terran infantry and one of the most important units in competitive Brood War. Marines are the cheapest combat unit in the game at just 50 minerals, yet they scale remarkably well in large numbers. Their ability to attack both ground and air makes them uniquely versatile.
+The Marine is the first combat unit available to Terran and one of the most important. It costs only 50 minerals, attacks both ground and air, and scales well with Stim Pack, U-238 Shells, Medic support and infantry upgrades. Because it is small and fragile, its value depends heavily on how well it is controlled against splash damage.
 
 ## Versus Zerg
 
-Marines are the core of bio play in TvZ. Stim timing attacks at the 7-8 minute mark with Medic support are devastating before Zerg can establish Defiler tech. Marine/Medic pushes must break through before Dark Swarm arrives, as it completely negates Marine fire. Without scan, Marines are helpless against burrowed Lurkers.
+Marines are the backbone of the standard bio style in TvZ: Marine/Medic groups backed by Science Vessels. Stimmed Marines deal well with Mutalisks and Zerglings, while Lurkers, Dark Swarm and Plague are the main threats. Splitting Marines against Lurker spines and Mutalisk bounces is a core Terran skill.
 
 ## Versus Terran
 
-Marines play a limited role in TvT. Typically 3-4 Marines are produced for early defense and anti-air duty against Wraith harass. They are rarely massed in the mirror matchup, as Siege Tanks and Vultures dominate TvT ground warfare.
+In TvT the game is decided mostly by Siege Tanks, Vultures, Goliaths and air units. Marines usually appear in small numbers early on, typically in a Bunker for defence.
 
 ## Versus Protoss
 
-Marines serve primarily as anti-air support against Corsairs in TvP. They are useful for bunker defense in the early game but become vulnerable to Psionic Storm and Reaver Scarabs as the game progresses. In mech armies, a small Marine contingent handles air threats while the mechanical core does the heavy lifting.
+In TvP Terran usually transitions to mech (Siege Tanks, Vultures, Goliaths). Marines are mainly an early-game defensive unit, often placed in a Bunker against Zealot or Dragoon pressure. Large bio armies are uncommon in the matchup because Psionic Storm and Reavers punish clumped infantry.
 
 ## Key Mechanics
 
-Marines deal Normal damage, making them equally effective against all armor sizes. With Stim Pack, their attack cooldown drops from 15 frames to 7.5 frames — effectively doubling DPS at the cost of 10 HP. The U-238 Shells upgrade extends range from 4 to 5, crucial for engaging Zealots and Lurkers from safer distances.
-
-## Micro Techniques
-
-- **Stutter-stepping**: Alternating between moving and attacking to kite melee units
-- **Stim splitting**: Stimming and splitting Marines to reduce splash damage from Siege Tanks, Psionic Storm, or Lurkers
-- **Focus fire**: Manually targeting high-value units (Medics, Defilers, High Templar)
-
-## Counters
-
-Marines are vulnerable to splash damage: Psionic Storm, Siege Tanks in siege mode, and Lurkers all devastate clumped Marines. Dark Swarm completely negates Marine fire. Zealots with Leg Enhancements can close the gap before Marines deal enough damage.
-
-## Combat Data
-
-- **Cooldown**: 0.99s (15 frames) · 0.50s with Stim (7.5 frames)
-- Kills Zergling (35 HP) in 6 shots · 4 with +1 attack
-- Kills Zealot (100 HP + 60 shields) in 27 shots · 23 with Stim+1
-- Kills Dragoon (100 HP + 80 shields) in 30 shots
-- 3 Marines kill a Zergling before it can attack twice
-- **AI Note**: Marines will auto-target the nearest enemy; manual focus fire on High Templar or Defilers is critical in competitive play
-- **Notable**: Flash's Marine splits vs Bisu's storms (ASL S2, 2017) set the standard for TvP bio micro
-
-## Historical Notes
-
-The Marine has been at the center of countless iconic moments. Flash's Marine splits against Bisu's storms helped define the TvP meta for years. The rise of bio play in TvZ during the early 2010s, pioneered by players like Fantasy, proved that Marines could hold their own against the Zerg late-game with sufficient mechanical skill.
+- 6 normal damage, 15-frame cooldown, range 4 (5 with U-238 Shells)
+- Stim Pack (researched at the Academy) costs the Marine 10 HP and temporarily increases attack and movement speed
+- Normal damage deals full damage to every unit size, so Marines are equally effective against small, medium and large targets before armor
+- Occupies 1 slot in a Bunker or transport

@@ -1,5 +1,6 @@
 +++
 title = "Dark Templar"
+description = "The Dark Templar is a permanently cloaked Protoss melee unit, added in Brood War, that is built at the Gateway after a Templar Archives."
 slug = "dark-templar"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,41 @@ minerals = 125
 gas = 100
 supply = 2
 hp = 80
+shields = 40
 armor = 1
 damage = 40
+damage_type = "normal"
 build_time = 50
 attack_speed = 30
 range = 1
 speed = 4.92
-shields = 40
 size = "small"
 ground_attack = true
 air_attack = false
-damage_type = "normal"
-dps = 20.23
+dps = 20.0
 sight = 7
 built_from = "gateway"
 abilities = []
 upgrades = ["ground-weapons", "ground-armor", "plasma-shields"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-A permanently cloaked melee assassin dealing an extraordinary 40 Normal damage per hit. Dark Templar are invisible to all units except detectors, making them one of the most dangerous units in the game when the opponent lacks detection. A single undetected Dark Templar can destroy an entire mineral line of workers or slice through an army. Two Dark Templar can merge into a Dark Archon.
-
-## Versus Zerg
-
-Dark Templar are less common in PvZ because Overlords provide innate detection. However, DTs can still catch greedy Zerg players off guard who have pulled Overlords away from their bases for scouting. The threat of DTs forces Zerg to keep Overlord coverage over every expansion, limiting their scouting mobility.
+The Dark Templar was introduced in Brood War. It is built at the Gateway once a Templar Archives is completed and is permanently cloaked, so the enemy needs detection to see or attack it. Its warp blades deal 40 normal damage per hit.
 
 ## Versus Terran
 
-The Dark Templar rush is a powerful timing attack in PvT that wins outright if the Terran lacks a Comsat Station or Engineering Bay for detection. Even if detected, DTs force significant investment in detection infrastructure. Multi-prong DT attacks can overwhelm the limited scan energy from a single Comsat.
+Dark Templar can win the game outright if Terran has no Comsat Station, Missile Turrets or Science Vessels. Later they are used to harass and to kill Terran units that are not under detection.
 
 ## Versus Protoss
 
-Early DTs can end PvP games instantly if the opponent lacks an Observer. The DT rush is one of the most feared all-in strategies in the mirror matchup. Even when scouted, the defender must have Robotics Facility tech ready in time, creating a tense timing window that defines many PvP games.
+Dark Templar attacks are a common threat in PvP, so Protoss players often need Photon Cannons or an Observer in time.
+
+## Versus Zerg
+
+Zerg always has detection in Overlords and Spore Colonies, but Dark Templar can still be effective against bases where Overlords are absent or have been killed. Two Dark Templar can also merge into a Dark Archon.
 
 ## Key Mechanics
 
-Dark Templar deal 40 Normal damage — one of the highest per-hit damages in the game. Their permanent cloak requires no energy, meaning they are always invisible. They have 80 HP and 40 shields with 1 base armor, making them somewhat durable for an assassin. DTs are Small-sized, taking reduced Explosive damage. They require a Templar Archives to produce, which is a significant tech investment.
-
-## Micro Techniques
-
-- **Worker line harassment**: Sending DTs into undefended mineral lines to destroy workers before detection arrives
-- **Multi-prong DT attacks**: Sending DTs to multiple locations simultaneously to overwhelm limited detection coverage
-- **Escape micro**: Pulling DTs out when detection arrives, preserving them for future harassment
-- **Base scouting**: Using DTs to scout enemy bases while being invisible
-
-## Counters
-
-Any detector completely counters Dark Templar: Comsat scan, Observers, Overlords, Photon Cannons, Spore Colonies, and Science Vessels. Once revealed, their melee range makes them vulnerable to focus fire. Spider Mines detect and kill DTs. Scanner Sweep reveals them temporarily, allowing Marines or Vultures to clean up.
-
-## Combat Data
-
-- **Cooldown**: 1.98s (30 frames)
-- 40 Normal damage per hit — one of the highest per-hit damages in the game
-- One-shots all workers (Probes, SCVs, Drones) in a single hit
-- Kills Marines (40 HP) in 2 hits
-- Permanently cloaked — no energy cost, always invisible
-- **AI Note**: Dark Templar will auto-attack the nearest enemy, potentially revealing their presence prematurely; manual control preserves stealth
-
-## Historical Notes
-
-The DT rush has been one of the most exciting all-in strategies throughout BW history. The tension of watching whether a Terran will get their Comsat Station up in time to detect incoming DTs has created countless memorable moments in professional play. Bisu famously used DTs as part of his broader PvZ strategy, sending them into Zerg bases to force Overlord repositioning.
+- 40 normal damage, 30-frame cooldown, melee
+- Permanently cloaked; no energy required
+- 80 HP, 40 shields, 1 base armor, small size

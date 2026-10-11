@@ -1,5 +1,6 @@
 +++
 title = "Firebat"
+description = "The Firebat is a Terran Barracks infantry unit that requires an Academy and deals short-range concussive splash damage, making it strong against small melee units."
 slug = "firebat"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,64 +13,43 @@ minerals = 50
 gas = 25
 supply = 1
 hp = 50
+shields = 0
 armor = 1
 damage = 8
+damage_type = "concussive"
 build_time = 24
 attack_speed = 22
 range = 1
 speed = 4.0
-shields = 0
 size = "small"
 ground_attack = true
 air_attack = false
-damage_type = "concussive"
-dps = 4.14
-dps_upgraded = 8.28
 sight = 7
 built_from = "barracks"
 hotkey = "F"
 requires = ["academy"]
 abilities = []
 upgrades = ["stim-pack", "infantry-weapons", "infantry-armor"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-Heavy infantry equipped with dual flame throwers, dealing Concussive splash damage in a line. Firebats are specialized anti-light units that excel at burning through masses of small units like Zerglings and Zealots. With 50 HP and 1 base armor, they are sturdier than Marines and can use Stim Pack to boost their attack speed.
+The Firebat is a short-ranged flamethrower infantry unit built at the Barracks once an Academy is finished. Its flames deal 8 concussive damage per hit, with several hits per attack and splash, which is very effective against small units such as Zerglings and Zealots but weak against medium and large targets.
 
 ## Versus Zerg
 
-Firebats are strong against Zerglings in bunkers, where their Concussive splash damage clears ling floods efficiently. One or two Firebats inside bunkers at the natural dramatically improve early defense. The 2-Rax Firebat build is a classic aggressive opener that punishes greedy Zerg openings.
+Firebats are mainly used early in TvZ, for example inside a Bunker or alongside Marines, to hold off Zergling attacks. They are usually a small supplement to a Marine/Medic army rather than its core.
 
 ## Versus Terran
 
-Firebats are rarely used in TvT. They are outclassed by Siege Tanks and Vultures in every meaningful engagement, and the gas cost is better spent on Factory tech. They have no practical role in the mirror matchup.
+Firebats see very little use in TvT, where the fighting revolves around Factory and Starport units.
 
 ## Versus Protoss
 
-Firebats have niche use against Zealot rushes when placed inside bunkers at the wall. Their Concussive splash shreds Zealots attempting to break through. However, they are not a standard part of TvP compositions and see almost no play beyond early-game defensive situations.
+Against Protoss, Firebats can help defend against early Zealot attacks, but because most Terran players move to mech in TvP they are rarely built in large numbers.
 
 ## Key Mechanics
 
-Firebats deal Concussive damage, meaning full damage to Small units, 50% to Medium, and 25% to Large. Their attack hits in a line splash pattern, damaging all units in front of them. Each attack deals 8x2 (16 total with both flamers), and this splash makes them devastating against tightly packed small units. They require an Academy to produce.
-
-## Micro Techniques
-
-- **Bunker positioning**: Firebats in bunkers provide excellent area denial against melee rushes
-- **Stim micro**: Stimming Firebats to chase down fleeing Zerglings or to burst through a Zealot push
-- **Tanking**: Using Firebats in front of Marines to absorb hits with their higher HP and armor
-
-## Counters
-
-Firebats are hard-countered by ranged units, especially Dragoons and Hydralisks, which can kite them indefinitely. Their melee range makes them vulnerable to anything that can attack from distance. Lurkers are particularly problematic since Firebats must walk through the spine line to engage.
-
-## Combat Data
-
-- **Cooldown**: 1.45s (22 frames) · 0.73s with Stim
-- Deals 16 Concussive damage per attack (8×2 hits) in a line splash
-- Full damage vs Small (Zerglings, Marines): kills Zergling in 3 attacks
-- 50% vs Medium (Hydralisk, Vulture): 8 effective damage per attack
-- 25% vs Large (Ultralisk, Dragoon): 4 effective damage per attack
-- **AI Note**: Firebats must be manually positioned for optimal splash angle; auto-attack positioning is often suboptimal
-- Splash damage passes through Dark Swarm, making Firebats one of few ranged-adjacent counters to it
-
-## Historical Notes
-
-While rarely the star of a strategy, Firebats have defined early-game TvZ for decades. The 2-Rax Firebat bunker rush on maps like Fighting Spirit became a standard aggressive opener. Their role has remained consistent — a niche defensive and early aggression tool rather than a mainline combat unit.
+- 8 concussive damage per hit (more than one hit per attack) with splash, 22-frame cooldown, very short range
+- Concussive damage: 100% vs small, 50% vs medium, 25% vs large units
+- Can use Stim Pack (costs 10 HP) like the Marine
+- 50 HP and 1 base armor, more durable than a Marine

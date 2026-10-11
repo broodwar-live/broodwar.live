@@ -1,5 +1,6 @@
 +++
 title = "Vulture"
+description = "The Vulture is a fast Terran Factory hover bike that deals concussive damage and can lay Spider Mines."
 slug = "vulture"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,63 +13,44 @@ minerals = 75
 gas = 0
 supply = 2
 hp = 80
+shields = 0
 armor = 0
 damage = 20
+damage_type = "concussive"
 build_time = 30
 attack_speed = 30
 range = 5
 speed = 6.4
-shields = 0
+speed_upgraded = 9.6
 size = "medium"
 ground_attack = true
 air_attack = false
-damage_type = "concussive"
-dps = 5.06
-speed_upgraded = 8.53
+dps = 10.0
 sight = 8
 built_from = "factory"
 hotkey = "V"
 abilities = ["spider-mines"]
 upgrades = ["spider-mines", "ion-thrusters", "vehicle-weapons", "vehicle-plating"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-The fastest ground unit in the game, the Vulture is the cornerstone of Terran mech play and map control. Armed with a fragmentation grenade launcher dealing Concussive damage and equipped with Spider Mines for area denial, the Vulture excels at harassment, scouting, and controlling the battlefield's tempo. With the Ion Thrusters upgrade, no ground unit can outrun it.
+The Vulture is a cheap, mineral-only Factory unit. It is fast, especially after Ion Thrusters, and after the Spider Mines research it carries three mines that it can plant on the ground. Its concussive grenades are strong against small units and weak against medium and large ones.
 
 ## Versus Zerg
 
-Vultures are the core mech unit in TvZ. Spider Mines deny Zerg expansions and control key choke points. Their speed enables devastating Drone harassment, picking off workers at undefended bases. Map control through Vulture patrolling is essential for Terran to dictate the tempo of the mid-game.
+In TvZ, Vultures can harass and kill Zerglings and Drones, and Spider Mines provide map vision and protect against Lurker and Zergling movements. They are a key part of mech-based TvZ styles.
 
 ## Versus Terran
 
-Vultures are not standard in TvT, as Siege Tanks dominate the matchup's ground warfare. Spider Mines see some use for area denial at contested expansion locations, but Vultures are generally outclassed by tanks in direct combat. Occasional Vulture speed harass can pick off exposed SCVs.
+Vultures are central to TvT. Spider Mines control the map and protect Siege Tank positions, while fast Vulture groups fight for map control and harass worker lines.
 
 ## Versus Protoss
 
-Vultures are Flash's signature unit in TvP mech play. Spider Mine fields protect Terran expansions from Zealot run-bys and create no-go zones for Protoss ground armies. Vulture speed harass targets Probes at undefended bases, forcing Protoss to invest in static defense or keep units at home.
+Vultures are a standard part of mech in TvP. Their concussive damage is very effective against Zealots, and Spider Mine fields slow down Dragoon and Zealot attacks. They are weak against Dragoons in a straight fight.
 
 ## Key Mechanics
 
-Vultures deal 20 Concussive damage — full against Small units, 50% against Medium, 25% against Large. This makes them excellent Zergling killers but poor against Ultralisks or Dragoons. Each Vulture carries 3 Spider Mines (once researched), which burrow and detonate for 125 splash damage when an enemy ground unit approaches. Spider Mines are visible to detectors and can be triggered or cleared.
-
-## Micro Techniques
-
-- **Hit-and-run**: Using superior speed to attack workers and retreat before the opponent can respond
-- **Mine placement**: Planting Spider Mines at key choke points, expansion paths, and outside enemy bases
-- **Patrolling**: Setting Vultures on patrol routes to catch enemy army movements and deny drops
-- **Vulture drag**: Kiting slower units backward while continuously attacking
-
-## Counters
-
-Vultures are fragile at 80 HP with 0 armor and are destroyed quickly by focused fire. Corsairs and Mutalisks can chase them down from the air. Dragoons, despite taking reduced Concussive damage, can kill Vultures with their superior range. Dark Swarm negates Vulture attacks entirely.
-
-## Combat Data
-
-- **Cooldown**: 1.98s (30 frames)
-- 20 Concussive: kills Zergling (Small) in 2 shots, but only 10 vs Medium, 5 vs Large
-- Spider Mine: 125 splash damage, 3 mines per Vulture
-- Fastest ground unit at 6.4 speed (8.53 with Ion Thrusters)
-- **AI Note**: Vultures will chase targets into enemy armies — always manually retreat
-- Spider Mines can be triggered and dodged by fast units; placement at chokes is optimal
-
-## Historical Notes
-
-Flash's legendary Vulture micro in TvZ helped define an era of mech dominance. His ability to keep Vultures alive while harassing across multiple bases simultaneously showcased the unit's potential at the highest level. The Spider Mine's area denial has been a defining mechanic of TvT positional warfare since the game's earliest days.
+- 20 concussive damage, 30-frame cooldown, range 5
+- Spider Mines (researched at the Machine Shop) give each Vulture three mines; mines burrow and attack nearby enemy ground units; they cannot hit air units
+- Ion Thrusters (Machine Shop) increase movement speed
+- Medium size, 80 HP, 0 armor

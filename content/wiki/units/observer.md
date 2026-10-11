@@ -1,5 +1,6 @@
 +++
 title = "Observer"
+description = "The Observer is a permanently cloaked Protoss Robotics Facility flyer, requiring an Observatory, that serves as the Protoss mobile detector and scout."
 slug = "observer"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,32 @@ minerals = 25
 gas = 75
 supply = 1
 hp = 40
+shields = 20
 armor = 0
 damage = 0
+damage_type = "normal"
 build_time = 40
 attack_speed = 0
 range = 0
-speed = 5.0
-shields = 20
+speed = 3.33
+speed_upgraded = 5.0
 size = "small"
 ground_attack = false
 air_attack = false
-damage_type = "normal"
-dps = 0
-speed_upgraded = 7.50
 sight = 9
 built_from = "robotics-facility"
 abilities = []
-upgrades = ["plasma-shields"]
+upgrades = ["air-armor", "plasma-shields"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-A permanently cloaked flying detector that serves as Protoss's eyes across the battlefield. With no attack and minimal HP, the Observer exists purely for information — scouting enemy bases, tracking army movements, and detecting cloaked or burrowed units. Despite being one of the cheapest and most fragile units in the game, Observers are arguably the most strategically valuable Protoss unit, because information wins games.
+The Observer requires an Observatory. It has no attack, is permanently cloaked and is a detector. Gravitic Boosters increases its speed and Sensor Array increases its sight range; both are researched at the Observatory.
 
-## Versus Zerg
+## Role in All Matchups
 
-Observers reveal burrowed Lurkers in PvZ, which is absolutely critical — without detection, Lurkers are invincible against ground armies. Losing an Observer right before a Lurker engagement can instantly lose the game. Speed-upgraded Observers also scout Zerg tech choices and expansion timing.
-
-## Versus Terran
-
-Observers detect Vulture Spider Mines and cloaked Wraiths in PvT. They also provide crucial scouting of Terran build orders, revealing whether the opponent is going bio, mech, or a timing attack. Good Observer placement at the Terran natural and third provides continuous intelligence on army movements.
-
-## Versus Protoss
-
-Observers detect Dark Templar in PvP, turning what could be an instant loss into a manageable situation. The DT rush is so common that having an Observer ready is a fundamental defensive requirement. Observers also scout enemy tech choices and army composition, providing the information advantage that decides mirror matchup games.
+Observers are Protoss's mobile detection, needed against Lurkers, Spider Mines, cloaked Wraiths, Ghosts and Dark Templar. They are also used to scout the opponent and to watch army movements. Comsat scans, Science Vessels, Overlords and other detectors can reveal and kill them.
 
 ## Key Mechanics
 
-Observers have permanent cloak that requires no energy — they are always invisible. With only 40 HP and 20 shields, they die to almost any focused attack. They have 0 attack and 0 damage, serving purely as scouts and detectors. The Gravitic Boosters upgrade from the Observatory increases their speed, making them faster for scouting and repositioning. Their detection radius reveals cloaked and burrowed units in a moderate area around them.
-
-## Micro Techniques
-
-- **Spread positioning**: Placing Observers at key locations (enemy natural, third base, main army path) for maximum map vision
-- **Lurker detection**: Keeping an Observer with the army at all times to reveal Lurkers during engagements
-- **Safe pathing**: Moving Observers along map edges to avoid anti-air, preserving them for critical moments
-- **Speed Observer scouting**: Using upgraded Observers to quickly scout all enemy bases and tech choices
-
-## Counters
-
-Any unit that can attack air can kill an Observer if it is detected. Scan from Comsat Station reveals Observers temporarily. Overlords with Antennae upgrade detect them. Science Vessels and other Observers detect them. EMP can strip shields, making them die even faster. Despite being invisible, careful opponents position detection to hunt Observers.
-
-## Combat Data
-
-- Permanently cloaked detector — no energy cost, always invisible
-- 20 shields + 40 HP = 60 total — extremely fragile
-- Speed: 5.0 base → 7.5 with Gravitic Boosters upgrade
-- No attack — purely a scouting and detection unit
-- **AI Note**: Observers will follow the selected group; losing one before a Lurker engagement can lose the game instantly
-
-## Historical Notes
-
-The Observer is often called the "invisible MVP" of Protoss play. Losing an Observer at a critical moment — such as right before a Lurker engagement — can instantly lose a game. Professional players invest significant attention in Observer management, and casting commentators frequently highlight Observer positioning as a key factor in match outcomes.
+- Detector, permanently cloaked
+- 40 HP, 20 shields, 0 armor, small size

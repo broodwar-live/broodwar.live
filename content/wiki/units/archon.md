@@ -1,5 +1,6 @@
 +++
 title = "Archon"
+description = "The Archon is a powerful Protoss unit formed by merging two High Templar, with 350 shields and a splash-damage attack against ground and air."
 slug = "archon"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,42 @@ minerals = 100
 gas = 300
 supply = 4
 hp = 10
+shields = 350
 armor = 0
 damage = 30
+damage_type = "normal"
 build_time = 20
 attack_speed = 20
 range = 2
 speed = 4.92
-shields = 350
 size = "large"
 ground_attack = true
 air_attack = true
-damage_type = "normal"
-dps = 15.17
+dps = 22.5
 sight = 8
-built_from = "merge"
+merges_from = "high-templar"
 abilities = []
-upgrades = ["plasma-shields"]
+upgrades = ["ground-weapons", "ground-armor", "plasma-shields"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-A being of pure psionic energy formed by merging two High Templar, the Archon is a devastating short-range splash damage dealer wrapped in 350 points of regenerating shields. With only 10 HP but massive shield capacity, Archons are uniquely dependent on shield upgrades and vulnerable to EMP. They deal 30 splash damage that tears through clustered light units, making them one of the most feared combat units in the game.
-
-## Versus Zerg
-
-Archons shine brightest in PvZ, where their splash damage devastates Zergling and Mutalisk groups. Merging spent High Templar into Archons after they exhaust their storm energy creates an efficient second phase of combat power. Archon pushes after storms clear initial Hydralisk waves have been a staple of professional play for decades.
+An Archon is created by merging two High Templar. It has only 10 HP but 350 shields, and its psionic attack deals splash damage to both ground and air units at short range.
 
 ## Versus Terran
 
-Archons tank for Dragoons and threaten Marine groups with splash damage in PvT. However, EMP Shockwave from Science Vessels strips all 350 shields in one shot, leaving Archons at a fatal 10 HP. This vulnerability makes Archons a risky investment in the matchup, requiring careful positioning to avoid EMP.
+Archons are useful against Marines and Vultures, but EMP Shockwave removes their shields and leaves them very vulnerable.
 
 ## Versus Protoss
 
-Archons provide strong close-range firepower in PvP and are often merged from depleted Templar after storm energy is exhausted. Their splash damage is effective against Dragoon clumps. In extended ground engagements, Archon shields regenerate passively, giving them impressive sustain between fights.
+Archons appear in some PvP games, usually in the mid and late game.
+
+## Versus Zerg
+
+Archons are especially strong in PvZ because their splash damage is effective against groups of Mutalisks and Zerglings.
 
 ## Key Mechanics
 
-Archons deal 30 Normal splash damage, hitting all nearby units around the target. Their attack is equally effective against all armor sizes. With 350 shields and only 10 HP, EMP Shockwave effectively reduces an Archon to 10 HP in one shot — a devastating counter. Shields regenerate passively at 2 points per second, giving Archons impressive sustain in prolonged engagements. They are Large-sized and can attack both ground and air.
-
-## Micro Techniques
-
-- **Templar merge timing**: Merging Templar into Archons immediately after they use their last storm for continuous combat presence
-- **Archon toilet**: Positioning Archons where clumped enemy units must pass through, maximizing splash damage
-- **Shield battery sustain**: Using Shield Batteries to rapidly recharge Archon shields during defensive engagements
-- **Front-line tanking**: Placing Archons at the front of the army to absorb initial volleys with their massive shields
-
-## Counters
-
-EMP Shockwave is the hardest counter — a single EMP strips all 350 shields, leaving the Archon at 10 HP. Yamato Cannon one-shots Archons. Long-range units like Siege Tanks can focus fire them from outside splash range. Dark Swarm blocks their attack. Despite splash damage, Archons struggle against heavily armored units like Ultralisks.
-
-## Combat Data
-
-- **Cooldown**: 1.32s (20 frames)
-- 30 Normal splash damage to ground and air
-- 350 shields + 10 HP = 360 total, but EMP removes 350 shields leaving only 10 HP
-- Shields regenerate at 2 per second — impressive sustain between fights
-- **AI Note**: Archons auto-attack nearest target; manual targeting on clumped units maximizes splash value
-- Formed by merging two High Templar — best done after storm energy is depleted
-
-## Historical Notes
-
-The Archon merge from depleted High Templar is one of the most elegant design mechanics in Brood War. It creates a natural gameplay flow where Templar storm first, then merge into Archons for sustained combat — ensuring no unit is ever truly "wasted." Archon pushes in PvZ after storms clear initial Hydralisk waves have been a staple of professional play for decades.
+- 30 normal damage with splash, 20-frame cooldown, range 2, hits ground and air
+- 10 HP, 350 shields, 0 armor, large size
+- Cost equals two High Templar (100/300) and 4 supply; merging takes 20 seconds
+- Takes 4 slots in a Shuttle

@@ -1,5 +1,6 @@
 +++
 title = "Guardian"
+description = "The Guardian is a slow Zerg air unit, morphed from a Mutalisk at a Greater Spire, that attacks ground targets from long range."
 slug = "guardian"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,41 @@ minerals = 150
 gas = 200
 supply = 2
 hp = 150
+shields = 0
 armor = 2
 damage = 20
+damage_type = "normal"
 build_time = 40
 attack_speed = 30
 range = 8
 speed = 2.5
-shields = 0
 size = "large"
 ground_attack = true
 air_attack = false
-damage_type = "normal"
-dps = 7.59
+dps = 10.0
 sight = 11
-built_from = "mutalisk"
+morphs_from = "mutalisk"
 abilities = []
 upgrades = ["flyer-attacks", "flyer-carapace"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-A heavy air siege unit evolved from the Mutalisk at a Greater Spire, the Guardian trades speed and air attack for devastating long-range ground bombardment. With 8 range — outranging Missile Turrets, Photon Cannons, and Sunken Colonies — Guardians can dismantle defensive positions from a safe distance. They are slow, completely helpless against air attacks, and require escort, but their siege capability is unmatched in the Zerg arsenal.
+The Guardian morphs from a Mutalisk once a Greater Spire is built. It can only attack ground targets, but its range of 8 outranges static defense such as Missile Turrets, Photon Cannons and Sunken Colonies, and it is very slow.
 
 ## Versus Terran
 
-Guardians break entrenched Terran positions that Zerglings and Ultralisks cannot reach in ZvT. Guardian-supported pushes — with Scourge or Mutalisks for air cover and Defilers for Dark Swarm — represent Zerg's answer to heavily turtled Terran bases. Their 8 range outranges Missile Turrets, allowing methodical destruction of defensive positions.
+Guardians are occasionally used in late-game ZvT against heavily defended Terran positions, especially mech. Goliaths with Charon Boosters, Valkyries, Wraiths and Science Vessel Irradiate are the main counters.
 
 ## Versus Protoss
 
-Guardians can outrange Photon Cannons and Dragoons in ZvP, slowly dismantling Protoss defenses from a safe distance. They are most effective against static defense-heavy Protoss positions. However, Corsairs easily destroy unescorted Guardians, so air cover from Scourge or Mutalisks is essential.
+Guardians can attack Photon Cannons and slow Protoss ground units from outside their range, but they are easily destroyed by Corsairs, Scouts and Carriers if left unescorted.
 
 ## Versus Zerg
 
-Guardians are rarely seen in ZvZ. The matchup revolves around Mutalisk air control, and morphing Mutalisks into slow, ground-only Guardians sacrifices the mobility and versatility that defines the ZvZ meta. Any opposing Mutalisks can freely destroy helpless Guardians.
+Guardians are rarely used in ZvZ.
 
 ## Key Mechanics
 
-Guardians deal 20 Normal damage at range 8 — the longest ground attack range of any unit in the game. They can only attack ground targets and have no air attack whatsoever. Their 2.5 speed is agonizingly slow, making them vulnerable during transitions. They have 150 HP with 2 base armor, reasonably durable for an air unit. Guardians are Large-sized. Since they morph from Mutalisks, producing Guardians means sacrificing fast harassers for slow siege power.
-
-## Micro Techniques
-
-- **Siege positioning**: Placing Guardians at maximum range to attack buildings and defenses without taking return fire
-- **Escort management**: Keeping Scourge, Mutalisks, or Devourers nearby to protect against air threats
-- **Focus fire**: Targeting key structures like Siege Tanks, Bunkers, or tech buildings one at a time
-- **Retreat timing**: Pulling Guardians back when air threats appear, since their slow speed makes escape difficult
-
-## Counters
-
-Any air-to-air unit counters Guardians since they cannot fight back. Wraiths, Corsairs, and Mutalisks destroy unescorted Guardians easily. Goliaths with Charon Boosters outrange Guardians (8 air range vs 8 ground range) and deal heavy damage. Valkyries shred Guardian groups with splash. Science Vessel Irradiate can kill Guardians over time.
-
-## Combat Data
-
-- **Cooldown**: 1.98s (30 frames)
-- 20 Normal damage at range 8 — outranges Missile Turrets (7), Photon Cannons (7), and Sunken Colonies (7)
-- Cannot attack air units at all — completely helpless against air-to-air
-- Speed: 2.5 — extremely slow; morphed from Mutalisk at Greater Spire
-- **AI Note**: Guardians auto-attack nearest ground target; manual targeting on key structures (Siege Tanks, Bunkers) maximizes siege value
-- Requires air escort (Scourge, Mutalisks, or Devourers) to survive against any air response
-
-## Historical Notes
-
-Guardian play represents the Zerg's commitment to a long, grinding late-game strategy. The transition from Mutalisks to Guardians is a pivotal strategic decision — sacrificing map control and harassment for siege capability. In professional play, Guardian pushes backed by full Hive tech have broken some of the most fortified positions in BW history, creating tense, methodical games where every inch of ground is contested.
+- 20 normal damage, 30-frame cooldown, range 8, ground targets only
+- Total cost 150/200 (Mutalisk 100/100 plus 50/100 to morph), 2 supply
+- 150 HP, 2 base armor, large size
