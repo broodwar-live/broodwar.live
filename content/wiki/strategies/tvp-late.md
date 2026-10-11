@@ -23,7 +23,7 @@ The Arbiter itself is not cloaked. Science Vessel **EMP Shockwave** sets energy 
 
 ## Carriers
 
-Carriers (300 HP, 150 shields) launch Interceptors from up to 12 range; the Carrier Capacity upgrade raises the number of Interceptors from 4 to 8. Siege Tanks cannot target them, so Terran answers with Goliaths and Charon Boosters, and EMP is worth using on clumped Carriers because it strips their shields. Liquipedia notes Carriers are mostly seen against Terran on maps that favour them over Arbiters.
+Carriers (300 HP, 150 shields) launch Interceptors at range 8, and the Interceptors keep attacking while the Carrier stays within 12 range (its leash range); the Carrier Capacity upgrade raises the number of Interceptors from 4 to 8. Siege Tanks cannot target them, so Terran answers with Goliaths and Charon Boosters, and EMP is worth using on clumped Carriers because it strips their shields. Liquipedia notes Carriers are mostly seen against Terran on maps that favour them over Arbiters.
 
 ## Battlecruisers
 
