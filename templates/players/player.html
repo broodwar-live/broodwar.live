@@ -6,15 +6,15 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Players", "item": "{{ config.base_url }}/players"},
-    {"@type": "ListItem", "position": 2, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 2, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "Person",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
   "url": "{{ current_url }}",
-  "nationality": "{{ page.extra.country_name }}"
+  "nationality": {{ page.extra.country_name | json_encode | safe }}
 }
 {% endblock %}
 

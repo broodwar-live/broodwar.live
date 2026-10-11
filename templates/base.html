@@ -1,4 +1,6 @@
 {% set t = config.extra.i18n[lang] %}
+{#- Path of the English version of this page: strip only the leading "/ko/" language prefix. -#}
+{% if lang == "ko" %}{% set en_tail = current_path | split(pat="/ko/") | last %}{% set en_path = "/" ~ en_tail %}{% else %}{% set en_path = current_path %}{% endif %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
@@ -27,9 +29,9 @@
   <link rel="alternate" hreflang="ko" href="{{ config.base_url }}/ko{{ current_path }}" />
   {% else %}
   <link rel="alternate" hreflang="ko" href="{{ current_url }}" />
-  <link rel="alternate" hreflang="en" href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}" />
+  <link rel="alternate" hreflang="en" href="{{ config.base_url }}{{ en_path }}" />
   {% endif %}
-  <link rel="alternate" hreflang="x-default" href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ config.base_url }}{{ en_path }}" />
   {# Open Graph #}
   <meta property="og:title" content="{{ page_title }}{% if page_title != config.title %} — broodwar.live{% endif %}" />
   <meta property="og:description" content="{{ desc }}" />
@@ -64,7 +66,7 @@
         "name": "broodwar.live",
         "url": "{{ config.base_url }}",
         "logo": "{{ get_url(path='images/og-default.png') }}",
-        "description": "{{ config.description }}",
+        "description": {{ config.description | json_encode | safe }},
         "sameAs": [
           "https://github.com/broodwar-live",
           "https://discord.gg/broodwar"
@@ -143,7 +145,7 @@
 
             {# Language toggle #}
             <div role="group" aria-label="{{ t.language }}" class="flex items-center border border-primary/10 bg-base-300/60 rounded-lg p-0.5 gap-0.5">
-              <a href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}"
+              <a href="{{ en_path }}"
                 {% if lang == "en" %}aria-current="true"{% endif %}
                 class="relative px-2.5 py-1 text-xs font-medium rounded-md transition-all duration-150 {% if lang == 'en' %}bg-primary/15 text-primary shadow-sm{% else %}text-base-content/35 hover:text-base-content/60{% endif %}">
                 English

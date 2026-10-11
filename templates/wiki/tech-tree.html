@@ -7,7 +7,7 @@
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
     {"@type": "ListItem", "position": 2, "name": "Tech Trees", "item": "{{ config.base_url }}/wiki/tech-trees"},
-    {"@type": "ListItem", "position": 3, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 }
 {% endblock %}

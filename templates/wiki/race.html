@@ -7,13 +7,13 @@
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
     {"@type": "ListItem", "position": 2, "name": "Races", "item": "{{ config.base_url }}/wiki/races"},
-    {"@type": "ListItem", "position": 3, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "Article",
-  "headline": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
+  "headline": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
   "url": "{{ current_url }}",
   "publisher": {"@id": "{{ config.base_url }}/#organization"}
 }

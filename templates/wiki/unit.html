@@ -7,13 +7,13 @@
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
     {"@type": "ListItem", "position": 2, "name": "Units", "item": "{{ config.base_url }}/wiki/units"},
-    {"@type": "ListItem", "position": 3, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "Thing",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
   "url": "{{ current_url }}",
   "additionalType": "https://schema.org/GameItem"
 }
