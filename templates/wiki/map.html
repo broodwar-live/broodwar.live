@@ -22,6 +22,14 @@
 {% set t = config.extra.i18n[lang] %}
 {% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
+{#- Seasons whose map pool lists this map by wiki slug (extra.maps[].slug, as linked from
+    tournaments/season.html), newest first. JSON + load_data(literal) stands in for list append. -#}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+{% set_global used_json = "" %}
+{% for sp in tsec.pages %}{% if sp.extra.maps is defined %}{% for mp in sp.extra.maps %}{% if mp.slug is defined and mp.slug == page.slug %}
+{% set_global used_json = used_json ~ "," ~ {"k": sp.extra.end_date | default(value=sp.extra.final_date | default(value=sp.extra.year ~ "")), "y": sp.extra.year | default(value=""), "p": sp.path, "s": sp.title, "l": sp.extra.series_name | default(value=""), "c": sp.extra.champion | default(value=""), "cs": sp.extra.champion_slug | default(value="")} | json_encode | safe %}
+{% endif %}{% endfor %}{% endif %}{% endfor %}
+{% set used = load_data(literal="[" ~ (used_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
     <a href="{{ lp }}/wiki/" class="hover:text-primary">{{ t.wiki }}</a>
@@ -36,6 +44,23 @@
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
     <div class="lg:col-span-2 min-w-0">
       <div class="prose prose-invert max-w-none [&_table]:block [&_table]:overflow-x-auto">{{ page.content | safe }}</div>
+
+      {% if used | length > 0 %}
+      <section class="mt-10" aria-labelledby="map-used-in">
+        <h2 id="map-used-in" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.rec_map_used_in }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ used | length }})</span></h2>
+        <p class="text-xs text-base-content/70 mb-4">{{ t.rec_map_used_note }}</p>
+        <ul class="divide-y divide-primary/10 rounded-box border border-primary/10">
+          {% for u in used %}
+          <li class="flex flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-2.5 text-sm">
+            <span class="font-stats text-xs text-base-content/70 w-10 shrink-0">{{ u.y }}</span>
+            <a href="{{ u.p }}" class="font-medium text-primary hover:underline">{{ u.s }}</a>
+            {% if u.l %}<span class="text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ u.l }}</span>{% endif %}
+            {% if u.c %}<span class="ml-auto text-xs text-base-content/70 inline-flex items-center gap-1"><span class="text-warning" aria-hidden="true">&#9733;</span><span class="sr-only">{{ t.player_champion }}:</span>{% set pc_name = u.c %}{% set pc_slug = u.cs %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
     </div>
 
     {#- Infobox. A minimap image is shown only when static/images/wiki/maps/<slug>.jpg exists. -#}
@@ -51,7 +76,8 @@
       [t.data_tileset, v_tileset],
       [t.data_spawns, "<span class=\"font-stats\">" ~ e.players ~ "</span>"],
       [lang == "ko" and "시작 위치" or "Start positions", e.spawn_positions | default(value="")],
-      [t.data_era, e.era]
+      [t.data_era, e.era],
+      [t.rec_map_seasons, used | length > 0 and "<a href=\"#map-used-in\" class=\"font-stats text-primary hover:underline\">" ~ (used | length) ~ "</a>" or ""]
     ] %}
     {% set ib_sections = [["", ib_rows]] %}
     {% include "partials/infobox.html" %}

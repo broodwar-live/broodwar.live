@@ -1,0 +1,15 @@
+{#- One row of the playoff-record breakdown table (templates/players/playoff-record.html).
+    Set rr_label (HTML) and rr_recs (a list of records built in players/player.html) before
+    including. Walkovers count in series only; matches without a result count in neither. -#}
+{% set_global rr_sw = 0 %}{% set_global rr_sl = 0 %}{% set_global rr_gw = 0 %}{% set_global rr_gl = 0 %}
+{% for r in rr_recs %}
+  {% if r.res == "W" %}{% set_global rr_sw = rr_sw + 1 %}{% elif r.res == "L" %}{% set_global rr_sl = rr_sl + 1 %}{% endif %}
+  {% if not r.wo %}{% set_global rr_gw = rr_gw + r.mg %}{% set_global rr_gl = rr_gl + r.og %}{% endif %}
+{% endfor %}
+<tr>
+  <th scope="row" class="text-sm font-medium whitespace-nowrap">{{ rr_label | safe }}</th>
+  <td class="font-stats text-sm text-right whitespace-nowrap">{{ rr_sw }}–{{ rr_sl }}</td>
+  <td class="font-stats text-xs text-right text-base-content/70">{% if rr_sw + rr_sl > 0 %}{{ (rr_sw * 100 / (rr_sw + rr_sl)) | round | int }}%{% else %}–{% endif %}</td>
+  <td class="font-stats text-sm text-right whitespace-nowrap">{{ rr_gw }}–{{ rr_gl }}</td>
+  <td class="font-stats text-xs text-right text-base-content/70">{% if rr_gw + rr_gl > 0 %}{{ (rr_gw * 100 / (rr_gw + rr_gl)) | round | int }}%{% else %}–{% endif %}</td>
+</tr>
