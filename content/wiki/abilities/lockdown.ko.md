@@ -11,6 +11,10 @@ name_en = "Lockdown"
 caster = "ghost"
 energy = 100
 hp_cost = 0
+researched_at = "covert-ops"
+research_minerals = 200
+research_gas = 200
+research_time = 60
 +++
 락다운은 단일 기계 유닛을 약 130프레임(가장 빠른 게임 속도 기준 약 8.5초) 동안 완전히 무력화하여 이동, 공격, 능력 사용을 차단한다. 에너지 100을 소모하며 커버트 옵스에서 연구가 필요하다. 기계 및 로봇 유닛에만 적용되며, 생체 유닛이나 건물에는 효과가 없다.
 
