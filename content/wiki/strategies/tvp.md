@@ -6,60 +6,39 @@ template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["TvP"]
 [extra]
-unverified = true
 matchup = "TvP"
+sources = ["https://liquipedia.net/starcraft/Siege_Expand_(vs._Protoss)", "https://liquipedia.net/starcraft/FD_(vs._Protoss)", "https://liquipedia.net/starcraft/1_Rax_FE_(vs._Protoss)", "https://liquipedia.net/starcraft/13_CC_(vs._Protoss)", "https://liquipedia.net/starcraft/Barracks_Barracks_Supply_(vs._Protoss)", "https://liquipedia.net/starcraft/1_Gate_Core_(vs._Terran)", "https://liquipedia.net/starcraft/Reaver_Drop", "https://liquipedia.net/starcraft/Arbiter", "https://liquipedia.net/starcraft/Carrier", "https://liquipedia.net/starcraft/EMP_Shockwave"]
+verified = "2026-10-11"
 +++
-
 ## Overview
 
-TvP is a matchup defined by the tension between Terran's siege-based mech play and Protoss's powerful gateway and tech units. Terran aims to establish a strong concave with siege tanks and vultures, controlling the map with spider mines while slowly advancing. Protoss relies on zealots, dragoons, and high templar to break Terran's lines, using storm drops and reaver harassment to keep Terran off balance. The matchup rewards patience, positioning, and decisive engagements.
+TvP pits Terran's mechanical army — Vultures, Siege Tanks and Goliaths — against Protoss gateway armies, Reaver and Psionic Storm harassment, and late-game Arbiters or Carriers. Terran wants to hold good tank positions and take bases behind them; Protoss wants to break or bypass those positions.
 
-## Key Concepts
-
-### Terran Goals
-- **Siege contain**: Establish tank lines that restrict Protoss movement and expansion
-- **Vulture raids**: Use vulture speed to harass probes and plant mines at expansion paths
-- **Drop play**: Terran drops in the mid-game can devastate Protoss's economy
-- **Positional advantage**: Terran wins by holding superior concave positions and forcing Protoss to attack into siege tanks
-
-### Protoss Goals
-- **Storm drops**: High Templar dropped into Terran's base can obliterate clusters of marines and tanks
-- **Reaver harassment**: Reaver/shuttle play kills SCVs and disrupts Terran's economy
-- **Flank attacks**: Zealots and dragoons attacking from multiple angles negate Terran's concave advantage
-- **Tech superiority**: Arbiter recall and carrier transitions give Protoss powerful late-game options
+Phase guides: [early game](/wiki/strategies/tvp-early/) · [mid game](/wiki/strategies/tvp-mid/) · [late game](/wiki/strategies/tvp-late/)
 
 ## Common Openings
 
 ### Terran
-- **Siege Expand**: Fast factory into siege mode research, expanding behind tank defense. The standard safe opening that transitions smoothly into the mid-game mech composition.
-- **2 Rax Academy**: Two barracks with an academy for medic and firebat support. Aggressive early game that pressures Protoss before tech units arrive.
-- **1 Factory FE**: Fast expand with a single factory for early vultures. Economically greedy but vulnerable to early gateway pressure.
+- **Siege Expand** — Barracks, Factory, Machine Shop and the first Siege Tank before the Command Center. One of the oldest and safest TvP openings.
+- **FD ("Fake Double")** — Marines, an early Siege Tank and Vultures with Spider Mines that fake a two-Factory push while expanding; it also threatens a timing attack against greedy Protoss.
+- **1 Rax FE / 13 CC** — greedier expansions; 1 Rax FE puts the Command Center down around 15–17 supply, and 13 CC (the greediest option) builds it before the Barracks. Liquipedia credits Flash with popularising both.
+- **BBS** — two Barracks before the first Supply Depot for an all-in Marine rush.
 
 ### Protoss
-- **1 Gate Fast Expand (FE)**: Single gateway into nexus at the natural. Standard macro opening that prioritizes economy.
-- **2 Gate Dragoon**: Aggressive two-gateway opener with fast dragoons. Aims to pressure Terran before siege mode completes.
-- **Reaver Drop**: Fast robotics facility into reaver/shuttle. A powerful harassment build that can end the game early if Terran is unprepared.
+- **1 Gate Core** — Pylon, Gateway, Assimilator and Cybernetics Core; one of the most popular PvT openings, flexible enough to defend FD pushes with Dragoons, tech quickly or expand.
+- **Reaver drop** — Robotics tech into Shuttle and Reaver, used either to harass or to defend against aggressive Terran openings.
+- **Fast expansion** — Nexus early, relying on Dragoons to defend.
 
-## Mid-Game Transitions
+## Mid Game
 
-The mid-game in TvP revolves around Terran's mech contain versus Protoss's attempts to break out and expand:
-
-- **Terran mech push**: Vulture/tank with goliath support advances across the map. Spider mines create defensive perimeters at key positions, and siege tanks provide overwhelming firepower in a concave.
-- **Protoss storm play**: Once high templar arrive with Psionic Storm researched, Protoss can devastate clustered Terran bio or mechanical units. Storm drops into the main base are a signature move.
-- **Reaver play**: Reaver/shuttle continues to be a threat throughout the mid-game, forcing Terran to dedicate turrets and units to base defense.
-
-Terran must balance aggression with defense — pushing too far forward leaves the main base vulnerable to drops, while playing too passively allows Protoss to expand freely and reach a dominant late-game composition.
+Terran advances with tanks and mines while Protoss looks for openings with Shuttle drops (Reavers or High Templar with Psionic Storm), flanks and multi-pronged attacks. Turrets and Goliaths protect against Shuttles; spreading tanks limits Storm damage.
 
 ## Late Game
 
-The late game in TvP is complex and often revolves around:
+- **Arbiters** — Recall (150 energy) teleports Protoss units to the Arbiter; Stasis Field (100 energy) freezes units. Science Vessel EMP Shockwave removes their energy.
+- **Carriers** — out of reach of Siege Tanks; Terran answers with Goliaths (with Charon Boosters) and EMP on the clumped Carriers.
+- **Expansions** — both sides spread across the map; Spider Mines and Recall make base defence a constant concern.
 
-- **Arbiter recall**: Protoss uses Arbiters to recall armies directly into Terran's base or behind tank lines, bypassing the positional advantage entirely. This is one of the most powerful late-game tools in Brood War.
-- **Carrier transitions**: Protoss can transition to carriers with arbiter support, creating an air army that siege tanks cannot effectively target. Terran must respond with goliaths and possibly battlecruisers.
-- **Expansion wars**: Both sides fight for map control. Terran's advantage is spider mine coverage and fast vulture raids. Protoss's advantage is recall for instant army repositioning.
-- **Battlecruiser response**: In extreme late-game scenarios, Terran may build battlecruisers to counter carrier fleets, leading to dramatic capital ship battles.
+## Associated Players
 
-## Key Players
-
-- **Flash**: The ultimate TvP player, whose mech control and vulture micro defined the modern standard. His ability to maintain perfect tank positioning while executing multi-pronged vulture raids is unmatched.
-- **Rain**: Considered one of the greatest PvT players. Known for flawless storm drops and reaver play that kept even Flash on the defensive. His strategic reads and build order innovation elevated the matchup.
+- **Flash** — Liquipedia credits him with popularising 1 Rax FE and 13 CC in TvP and with FD variations that made the opening dangerous again.

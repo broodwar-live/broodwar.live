@@ -6,40 +6,40 @@ template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["TvP"]
 [extra]
-unverified = true
 matchup = "TvP"
+sources = ["https://liquipedia.net/starcraft/Siege_Expand_(vs._Protoss)", "https://liquipedia.net/starcraft/FD_(vs._Protoss)", "https://liquipedia.net/starcraft/1_Rax_FE_(vs._Protoss)", "https://liquipedia.net/starcraft/13_CC_(vs._Protoss)", "https://liquipedia.net/starcraft/Barracks_Barracks_Supply_(vs._Protoss)", "https://liquipedia.net/starcraft/1_Gate_Core_(vs._Terran)", "https://liquipedia.net/starcraft/Reaver_Drop"]
+verified = "2026-10-11"
 +++
-
-The early game in TvP is a delicate balance between establishing an economy and surviving Protoss gateway aggression. Terran needs to get a natural expansion running while preparing for the wide range of attacks Protoss can throw out in the first few minutes. Every building placement, every marine, and every SCV scout feeds into whether Terran reaches the mid game with a working economy or dies to a zealot flood.
+The early game of TvP is about expanding safely while preparing for whatever Protoss opened with — Zealot or Dragoon pressure, Dark Templar, a Reaver drop, or a fast Nexus.
 
 ## Opening Builds
 
-### 1 Fac FE (Factory Expand)
-
-The standard safe opening for Terran in TvP. The build order is Barracks into Factory, then expand behind the first siege tank. The factory provides an early vulture for scouting and a siege tank that single-handedly holds the natural ramp against gateway pressure. This build is safe against almost everything Protoss can do in the early game and transitions cleanly into the vulture/tank mech composition that defines TvP mid game. The key timing is getting the Command Center down before Protoss can mount a serious attack.
-
-### 2 Rax Academy
-
-An aggressive bio opening that aims to pressure Protoss before dragoon numbers become overwhelming. Two Barracks with an Academy produce marines and medics for an early push. The goal is to deal probe damage or force Protoss to invest in defensive units instead of teching. This build works best on smaller maps where the rush distance is short, and it punishes greedy Protoss openings like a fast expansion with minimal gateway units. The risk is that if the push fails, Terran is behind on tech and must catch up.
-
 ### Siege Expand
 
-Factory into Machine Shop into Siege Tech, then expand behind tank cover. This is the most standard mech opening in TvP, slightly more defensive than 1 Fac FE. The siege tank is prioritized above all else because a single tank in siege mode at the natural ramp creates a nearly impenetrable defensive position against zealots and dragoons. Protoss must invest in ranged units or tech to break through.
+A typical order: Supply Depot at 9, Barracks and Refinery at 12, Depot at 15, Factory at 16, Machine Shop and Siege Tank as soon as possible, Command Center around 21 supply, then Siege Mode. It is conservative but safe against most Protoss aggression, which is why Liquipedia still recommends it for beginners and for maps where aggression is expected. An Engineering Bay is only needed if drops or Dark Templar are suspected.
 
-### Proxy Barracks
+### FD ("Fake Double")
 
-A cheese build where a Barracks is constructed near the Protoss base for an immediate marine rush. If Protoss opened with a fast expansion or a greedy tech build without gateway units, the marines can overwhelm probes and end the game before it starts. However, if scouted, the investment is wasted and Terran falls significantly behind. This build is rare in professional play but appears occasionally as a surprise tactic.
+FD trains a few Marines, one Siege Tank and at least two Vultures with Spider Mines, cutting gas or SCVs briefly to hit its timings, while the Command Center goes down at the natural. Protoss cannot clear Spider Mines without Observers, so the mines both secure the paths between bases and threaten a Protoss that expanded or teched too greedily.
+
+### 1 Rax FE and 13 CC
+
+1 Rax FE builds the Command Center at about 15–17 supply behind a single Barracks, then adds a Factory and a Bunker at the natural. 13 CC is even greedier, placing the Command Center before the Barracks; Liquipedia suggests it mainly on maps where Protoss tends to fast-expand, and lists aggressive Dragoon openings as a hard counter.
+
+### BBS
+
+Two Barracks and then a Supply Depot, for an all-in Marine rush. It can punish a greedy Protoss but leaves Terran far behind if held.
 
 ## Scouting
 
-SCV scouting is non-negotiable in TvP. The scout leaves early to read the Protoss opening. The critical reads are straightforward. A single gateway followed by a Cybernetics Core indicates a standard tech opening -- safe to play normally. Two gateways mean zealot pressure is incoming, and the wall-off must be airtight with marines ready. A Forge with cannons at the natural means Forge Fast Expand -- Protoss is playing economically and will not attack early, so Terran can expand safely. Look for an early Citadel of Adun, which signals zealot speed and aggressive intent. An early Robotics Facility means reaver play is likely, requiring turrets and marines positioned to defend mineral lines.
+Read whether Protoss is expanding, massing Gateways or teching. Two or more Gateways mean early pressure (get a Bunker and a tank up quickly); a single Gateway with tech can mean Reavers or Dark Templar (an early Engineering Bay is prudent).
 
-## Key Early Decisions
+## Detection
 
-The Engineering Bay timing is one of the most consequential decisions in early TvP. Building it early provides turrets that detect and kill Dark Templar, which can otherwise end the game instantly. However, building it too early wastes resources if Protoss is not going DTs. The standard approach is to get the Engineering Bay after the Factory but before the second expansion, covering the timing window when DT tech typically arrives.
-
-Wall-off construction with a Supply Depot and Barracks blocks zealot run-bys into the main base. The first siege tank provides enormous early defense -- a single tank in siege mode at the ramp forces Protoss to commit a significant army to break through. Comsat Station from the Academy is absolutely essential for scanning Dark Templar. Without detection, a single DT can destroy an entire mineral line unopposed.
+Dark Templar are permanently cloaked. Terran detection comes from Missile Turrets (Engineering Bay) and Comsat Station scans (a Command Center add-on that requires an Academy). Liquipedia's Siege Expand notes suggest a single Turret at the natural is enough against Dark Templar, while very fast Reaver drops call for a few turrets around the choke and both Command Centers.
 
 ## Common Mistakes
 
-Skipping the Engineering Bay against possible DT openings is the most punishing error in early TvP. A DT arriving with no turrets and no Comsat means Terran loses the game on the spot. Expanding before the first tank is another frequent error -- without siege tank cover, gateway units can walk across the map and kill the naked Command Center. Failing to SCV scout leaves Terran blind to whether Protoss is playing standard, rushing, or teching to reavers, making every subsequent decision a coin flip.
+- Expanding greedily without scouting and running into multi-Gateway pressure.
+- Having no detection when Dark Templar arrive.
+- Overbuilding Turrets when no drop or cloak threat is coming.

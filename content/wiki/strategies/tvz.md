@@ -6,61 +6,45 @@ template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["TvZ"]
 [extra]
-unverified = true
 matchup = "TvZ"
+sources = ["https://liquipedia.net/starcraft/1_Rax_FE_(vs._Zerg)", "https://liquipedia.net/starcraft/2_Rax_Academy_(vs._Zerg)", "https://liquipedia.net/starcraft/8_Rax_(vs._Zerg)", "https://liquipedia.net/starcraft/12_Hatch_(vs._Terran)", "https://liquipedia.net/starcraft/3_Hatch_Muta_(vs._Terran)", "https://liquipedia.net/starcraft/2_Hatch_Muta_(vs._Terran)", "https://liquipedia.net/starcraft/3_Hatch_Lurker_(vs._Terran)", "https://liquipedia.net/starcraft/SK_Terran", "https://liquipedia.net/starcraft/Sparks_Terran", "https://liquipedia.net/starcraft/Dark_Swarm", "https://liquipedia.net/starcraft/Irradiate"]
+verified = "2026-10-11"
 +++
-
 ## Overview
 
-TvZ is one of the most studied matchups in Brood War. Terran typically opens with a wall-off at the natural ramp, expanding behind bunker defense, then transitions into either bio (Marine/Medic) or mech (Vulture/Tank) play. Zerg aims to secure three bases quickly and use mutalisks for map control before transitioning to lurkers and defilers in the late game.
+TvZ is one of the most studied matchups in Brood War. In the modern game Terran usually expands early behind a Barracks and Bunker, then commits to an infantry-and-Science-Vessel style or to mech. Zerg normally opens with a fast second Hatchery, harasses with Mutalisks or holds with Lurkers, and aims for Hive tech, Defilers and Ultralisks in the late game.
 
-## Key Concepts
-
-### Terran Goals
-- **Wall-off**: Block the ramp with buildings to prevent zergling run-bys
-- **Map control**: Use vultures and spider mines to deny Zerg expansions
-- **Timing attacks**: Hit before Zerg reaches hive tech and defilers
-- **Contain**: Siege tank push to pin Zerg on limited bases
-
-### Zerg Goals
-- **Three-hatch economy**: Secure a strong economic lead early
-- **Mutalisk harass**: Force turrets and keep Terran defensive
-- **Lurker defense**: Hold timing attacks with lurkers at choke points
-- **Defiler late-game**: Dark Swarm negates bio; Plague cripples mech
+Phase guides: [early game](/wiki/strategies/tvz-early/) · [mid game](/wiki/strategies/tvz-mid/) · [late game](/wiki/strategies/tvz-late/)
 
 ## Common Openings
 
 ### Terran
-- **2 Factory Vulture**: Fast expand into vulture harass. Controls the map early with spider mines and vulture speed, denying Zerg's third base or picking off overlords.
-- **SK Terran (1/1/1)**: Balanced opening with barracks, factory, starport. Flexible transition into either bio or mech depending on what Zerg shows.
-- **Bunker Rush**: Aggressive bunker at Zerg's natural. High risk, high reward. If it fails, Terran is significantly behind economically.
+- **1 Rax FE** — Supply Depot at 9, Barracks at 11, Command Center at 15–18. The staple TvZ opening on most modern maps: economic, defended by Marines and a Bunker, and flexible about the follow-up.
+- **2 Rax Academy** — two Barracks and an early Academy. Liquipedia describes it as the original TvZ fast-expand style, credited to iloveoov in 2003; modern versions fake a Marine/Medic push to make Zerg overbuild Sunken Colonies, then expand.
+- **8 Rax / Bunker Rush** — Barracks before the first Depot, with Marines rallied to a Bunker next to Zerg's natural Hatchery. Boxer famously used it in all three games of his 2004 EVER Starleague semifinal win over YellOw.
 
 ### Zerg
-- **3 Hatch Lurker**: Defensive three-base opening into lurker tech. Prioritizes economy and tech, relying on lurkers to hold any early Terran aggression.
-- **2 Hatch Muta**: Faster mutalisks for early harassment. Sacrifices some economy for earlier map control and the ability to pick off marines and SCVs.
-- **12 Hatch**: Greedy economic opening — risky vs early pressure but pays off enormously if Terran plays passively.
+- **12 Hatch** — Overlord at 9, Hatchery at 12, Spawning Pool at 11–13. Liquipedia calls it the most common ZvT opening; it leads into 2- or 3-Hatch Mutalisk or Lurker builds.
+- **3 Hatch Muta** — popularised by sAviOr; the most popular early-to-mid-game ZvT plan, using Mutalisk harassment while taking a third base and adding Lurkers.
+- **2 Hatch Muta** — earlier Mutalisks on a thinner economy; demands strong Mutalisk micro.
+- **3 Hatch Lurker** — Lurkers and speed Zerglings to blunt early Terran infantry.
 
 ## Mid-Game Transitions
 
-Terran typically commits to either bio or mech after the early game:
+- **Infantry + Science Vessels ("SK Terran")** — Marines and Medics with fast upgrades and a growing number of Science Vessels for Irradiate and Defensive Matrix, played as a mobile, tank-less army.
+- **Mech** — Vultures, Siege Tanks and Goliaths, slower but strong positionally.
 
-- **Bio (M&M)**: Marine/Medic with Stim Pack and +1 weapons. Aggressive timing pushes at 7-8 minutes. Relies on flanking and drop play to overwhelm Zerg before lurker and defiler tech stabilizes the board.
-- **Mech**: Vulture/Tank core. Slower but more powerful. Aims to contain Zerg while taking a third base. Spider mines create no-go zones across the map, and siege tanks punish any Zerg attempt to break the contain.
-
-Zerg responds based on Terran's choice:
-- **vs Bio**: Lurkers at chokes, mutalisk harass on medics, evolution to defilers. Lurker/ling is the core defensive composition, and once defilers arrive with Dark Swarm, bio becomes nearly useless without science vessel support.
-- **vs Mech**: Mutalisk harass on tanks, guardian/devourer transition, expand aggressively. Zerg exploits mech's immobility by taking the entire map and forcing Terran to spread thin.
+Zerg answers with Lurkers at chokes, Mutalisk pressure on isolated units, and a transition to Defilers and Ultralisks.
 
 ## Late Game
 
-The late game TvZ is often decided by:
-- **Dark Swarm vs Science Vessel**: Defiler's Dark Swarm blocks ranged attacks; Terran needs Irradiate to kill defilers and EMP to remove Dark Swarm energy from the field.
-- **Expansion control**: Whoever controls more bases typically wins. Zerg's ability to remax quickly means Terran must maintain a constant economic advantage to keep up.
-- **Ultralisk/Zergling**: Zerg's ultimate ground army under Dark Swarm. Ultralisks absorb enormous damage while zerglings swarm around them, and Dark Swarm makes ranged fire useless.
+- **Dark Swarm vs Irradiate** — Dark Swarm stops most ranged attacks against ground units underneath it; Irradiate (about 250 damage over time to biological units around the target) is Terran's main tool for killing Defilers before they cast.
+- **Ultralisks and Zerglings under Dark Swarm** — the classic late-game Zerg army; melee units, splash such as Firebat flames and Spider Mines still work under the swarm.
+- **Expansions** — with both sides on many bases, map control and base count decide most long games.
 
-## Key Players
+## Associated Players
 
-- **Flash**: Defined modern TvZ mech play. His precision with tank positioning and vulture micro set the standard for the matchup.
-- **Jaedong**: Flash's eternal rival, legendary ZvT. His mutalisk control and late-game defiler play are considered the peak of Zerg performance.
-- **Light**: Modern TvZ specialist with bio play. Demonstrated that Marine/Medic can compete at the highest level with exceptional micro.
-- **Soulkey**: Elite ZvT with perfect defiler control. Known for flawless Dark Swarm placement and relentless economic play.
+- **iloveoov** — credited by Liquipedia with the original 2 Rax Academy fast-expand style (2003).
+- **Boxer** — popularised the 8 Rax bunker rush.
+- **sAviOr** — popularised 3 Hatch Muta.
+- **Sync** — known for the "Sparks" three-Barracks infantry timing that targets Sunken walls at the natural.
