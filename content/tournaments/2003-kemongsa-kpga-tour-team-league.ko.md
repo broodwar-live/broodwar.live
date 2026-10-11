@@ -1,6 +1,6 @@
 +++
 title = "2003 KeMongSa KPGA Tour Team League"
-description = "2003 KeMongSa KPGA Tour Team League: GO이(가) 결승에서 SouL을(를) 4:1로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2003 KeMongSa KPGA Tour Team League: 결승에서 GO가 소울을 4:1로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2003-kemongsa-kpga-tour-team-league"
 template = "tournaments/team-season.html"
 [extra]
@@ -62,6 +62,6 @@ sets = [
 +++
 KeMongSa KPGA 투어 팀리그는 MBC게임의 첫 팀리그였습니다. 예선을 거친 팀들이 조별리그를 치렀고, 1위 팀은 결승에 직행했으며 2·3위 팀이 플레이오프에서 나머지 결승 자리를 다퉜습니다.
 
-플레이오프: SouL이(가) KTF MagicNs을(를) 3:0로 꺾었습니다. 2003년 6월 22일 결승에서 GO이(가) SouL을(를) 4:1로 꺾고 우승했습니다.
+플레이오프에서는 소울이 KTF 매직엔스를 3:0으로 꺾었습니다. 2003년 6월 22일 결승에서는 GO가 소울을 4:1로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

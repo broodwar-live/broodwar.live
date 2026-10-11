@@ -78,6 +78,6 @@ sets = [
 +++
 Round 2 of the 2004 SKY Proleague split ten teams into two groups, Mercury and Saturn, seeded from their Round 1 standing. Each group was settled by a best-of-five group final, and the two group winners met in a best-of-seven round final; the winner qualified for the 2004 Grand Final.
 
-Group finals: Pantech & Curitel Curriors beat KOR 3–1. Group finals: STX SouL beat Hanbit Stars 3–2. In the final on 30 October 2004, Pantech & Curitel Curriors beat STX SouL 4–1 to win the title. Goodfriend was named Finals MVP.
+Group finals: Pantech & Curitel Curriors beat KOR 3–1; STX SouL beat Hanbit Stars 3–2. In the final on 30 October 2004, Pantech & Curitel Curriors beat STX SouL 4–1 to win the title. Goodfriend was named Finals MVP.
 
 The relegation match between the bottom teams of each group is not part of this playoff record. Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

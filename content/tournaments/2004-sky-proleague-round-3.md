@@ -80,6 +80,6 @@ sets = [
 +++
 Round 3 of the 2004 SKY Proleague repeated the Round 2 format: ten teams in the Mercury and Saturn groups, best-of-five group finals and a best-of-seven round final whose winner joined the 2004 Grand Final.
 
-Group finals: KTF MagicNs beat STX SouL 3–1. Group finals: KOR beat GO 3–2. In the final on 5 February 2005, KOR beat KTF MagicNs 4–3 to win the title. ClouD was named Finals MVP.
+Group finals: KTF MagicNs beat STX SouL 3–1; KOR beat GO 3–2. In the final on 5 February 2005, KOR beat KTF MagicNs 4–3 to win the title. ClouD was named Finals MVP.
 
 Liquipedia dates the Saturn group final 22 January 2004, inside a round that began in November 2004; it is shown here as 22 January 2005. Liquipedia labels the round final best of five, but seven sets were played. Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

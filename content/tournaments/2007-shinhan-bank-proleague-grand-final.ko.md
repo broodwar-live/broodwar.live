@@ -1,6 +1,6 @@
 +++
 title = "2007 Shinhan Bank Proleague Grand Final"
-description = "2007 Shinhan Bank Proleague Grand Final: Lecaf OZ이(가) 결승에서 Samsung KHAN을(를) 4:1로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2007 Shinhan Bank Proleague Grand Final: 결승에서 르까프 OZ가 삼성 칸을 4:1로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2007-shinhan-bank-proleague-grand-final"
 template = "tournaments/team-season.html"
 [extra]
@@ -42,8 +42,8 @@ sets = [
   { map = "Python", map_slug = "python", a = "Firebathero", a_slug = "firebathero", a_race = "t", b = "HiyA", b_slug = "hiya", b_race = "t", winner = "b" },
 ]
 +++
-2007 그랜드 파이널은 1라운드 우승팀 삼성전자 칸과 2라운드 우승팀 르까프 OZ가 맞붙은 7전 4선승제 단판 승부였습니다.
+2007 그랜드 파이널은 1라운드 우승팀 삼성 칸과 2라운드 우승팀 르까프 OZ가 맞붙은 7전 4선승제 단판 승부였습니다.
 
-2008년 2월 16일 결승에서 Lecaf OZ이(가) Samsung KHAN을(를) 4:1로 꺾고 우승했습니다.
+2008년 2월 16일 결승에서는 르까프 OZ가 삼성 칸을 4:1로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

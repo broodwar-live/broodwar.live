@@ -217,6 +217,6 @@ sets = [
 +++
 Twelve teams played five rounds in the 2009–10 Shinhan Bank Proleague, the third in the Winners League format, and the top six entered the playoffs. The regular-season winner went straight to the final and the runner-up to the semifinal; every tie before the final was a best-of-three of seven-set matches, and the final a single seven-set match.
 
-First round: SK Telecom T1 beat CJ Entus 2–1 in team matches. First round: WeMade FOX beat MBCGame HERO 2–1 in team matches. Second round: SK Telecom T1 beat WeMade FOX 2–0 in team matches. Semifinal: SK Telecom T1 beat STX SouL 2–0 in team matches. In the final on 7 August 2010, KT Rolster beat SK Telecom T1 4–2 to win the title.
+First round: SK Telecom T1 beat CJ Entus 2–1 in team matches; WeMade FOX beat MBCGame HERO 2–1 in team matches. Second round: SK Telecom T1 beat WeMade FOX 2–0 in team matches. Semifinal: SK Telecom T1 beat STX SouL 2–0 in team matches. In the final on 7 August 2010, KT Rolster beat SK Telecom T1 4–2 to win the title.
 
 Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

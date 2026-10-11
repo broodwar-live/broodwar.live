@@ -1,6 +1,6 @@
 +++
 title = "2007 Shinhan Bank Proleague Round 2"
-description = "2007 Shinhan Bank Proleague Round 2: Lecaf OZ이(가) 결승에서 CJ Entus을(를) 4:2로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2007 Shinhan Bank Proleague Round 2: 결승에서 르까프 OZ가 CJ 엔투스를 4:2로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2007-shinhan-bank-proleague-round-2"
 template = "tournaments/team-season.html"
 [extra]
@@ -87,6 +87,6 @@ sets = [
 +++
 2007 신한은행 프로리그 2라운드도 12개 팀 풀리그 뒤 상위 네 팀이 7전 4선승제 계단식 플레이오프를 치렀고, 우승팀은 2007 그랜드 파이널에서 1라운드 우승팀과 맞붙었습니다.
 
-준플레이오프: CJ Entus이(가) OnGameNet SPARKYZ을(를) 4:3로 꺾었습니다. 플레이오프: CJ Entus이(가) MBCGame HERO을(를) 4:3로 꺾었습니다. 2008년 1월 27일 결승에서 Lecaf OZ이(가) CJ Entus을(를) 4:2로 꺾고 우승했습니다. Anytime 선수가 결승 MVP에 선정되었습니다.
+준플레이오프에서는 CJ 엔투스가 온게임넷 스파키즈를 4:3으로 꺾었습니다. 플레이오프에서는 CJ 엔투스가 MBC게임 히어로를 4:3으로 꺾었습니다. 2008년 1월 27일 결승에서는 르까프 OZ가 CJ 엔투스를 4:2로 꺾고 우승했습니다. Anytime 선수가 결승 MVP로 뽑혔습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

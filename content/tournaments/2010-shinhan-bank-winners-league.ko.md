@@ -1,6 +1,6 @@
 +++
 title = "2010 Shinhan Bank Winners League"
-description = "2010 Shinhan Bank Winners League: KT Rolster이(가) 결승에서 MBCGame HERO을(를) 4:3로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2010 Shinhan Bank Winners League: 결승에서 KT 롤스터가 MBC게임 히어로를 4:3으로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2010-shinhan-bank-winners-league"
 template = "tournaments/team-season.html"
 [extra]
@@ -89,6 +89,6 @@ sets = [
 +++
 2009–10 신한은행 프로리그 3라운드도 올킬 방식의 2010 신한은행 위너스리그로 치러졌고, 상위 네 팀이 따로 계단식 플레이오프를 치렀습니다. 매치는 올킬 방식으로 치러져 각 세트의 승자가 남아 상대 팀의 다음 선수와 맞붙었습니다. 아래 세트 기록은 누가 누구를 차례로 꺾었는지를 순서대로 보여 줍니다.
 
-준플레이오프: Woongjin Stars이(가) STX SouL을(를) 4:1로 꺾었습니다. 플레이오프: MBCGame HERO이(가) Woongjin Stars을(를) 4:3로 꺾었습니다. 2010년 4월 3일 결승에서 KT Rolster이(가) MBCGame HERO을(를) 4:3로 꺾고 우승했습니다.
+준플레이오프에서는 웅진 스타즈가 STX 소울을 4:1로 꺾었습니다. 플레이오프에서는 MBC게임 히어로가 웅진 스타즈를 4:3으로 꺾었습니다. 2010년 4월 3일 결승에서는 KT 롤스터가 MBC게임 히어로를 4:3으로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

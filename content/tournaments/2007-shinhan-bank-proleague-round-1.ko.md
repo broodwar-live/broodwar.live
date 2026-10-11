@@ -1,6 +1,6 @@
 +++
 title = "2007 Shinhan Bank Proleague Round 1"
-description = "2007 Shinhan Bank Proleague Round 1: Samsung KHAN이(가) 결승에서 Lecaf OZ을(를) 4:0로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2007 Shinhan Bank Proleague Round 1: 결승에서 삼성 칸이 르까프 OZ를 4:0으로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2007-shinhan-bank-proleague-round-1"
 template = "tournaments/team-season.html"
 [extra]
@@ -83,6 +83,6 @@ sets = [
 +++
 2007 신한은행 프로리그는 신한은행이 처음 후원한 프로리그였습니다. 1라운드에서는 12개 팀이 풀리그를 치렀고, 상위 네 팀이 7전 4선승제 계단식 플레이오프에 올라 우승팀이 2007 그랜드 파이널에 진출했습니다.
 
-준플레이오프: MBCGame HERO이(가) STX SouL을(를) 4:2로 꺾었습니다. 플레이오프: Lecaf OZ이(가) MBCGame HERO을(를) 4:2로 꺾었습니다. 2007년 8월 4일 결승에서 Samsung KHAN이(가) Lecaf OZ을(를) 4:0로 꺾고 우승했습니다. Stork 선수가 결승 MVP에 선정되었습니다.
+준플레이오프에서는 MBC게임 히어로가 STX 소울을 4:2로 꺾었습니다. 플레이오프에서는 르까프 OZ가 MBC게임 히어로를 4:2로 꺾었습니다. 2007년 8월 4일 결승에서는 삼성 칸이 르까프 OZ를 4:0으로 꺾고 우승했습니다. Stork 선수가 결승 MVP로 뽑혔습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

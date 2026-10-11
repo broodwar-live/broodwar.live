@@ -1,6 +1,6 @@
 +++
 title = "2006 SKY Proleague Grand Final"
-description = "2006 SKY Proleague Grand Final: MBCGame HERO이(가) 결승에서 SK Telecom T1을(를) 4:3로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2006 SKY Proleague Grand Final: 결승에서 MBC게임 히어로가 SK텔레콤 T1을 4:3으로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2006-sky-proleague-grand-final"
 template = "tournaments/team-season.html"
 [extra]
@@ -46,6 +46,6 @@ sets = [
 +++
 2006 그랜드 파이널은 1라운드 우승팀 SK텔레콤 T1과 2라운드 우승팀 MBC게임 히어로가 맞붙은 7전 4선승제 단판 승부였습니다.
 
-2007년 1월 20일 결승에서 MBCGame HERO이(가) SK Telecom T1을(를) 4:3로 꺾고 우승했습니다.
+2007년 1월 20일 결승에서는 MBC게임 히어로가 SK텔레콤 T1을 4:3으로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

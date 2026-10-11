@@ -234,6 +234,6 @@ sets = [
 +++
 The 2008–09 Shinhan Bank Proleague was the first season-long Proleague: twelve teams played five rounds, the third of them in the all-kill Winners League format, and the top six entered the playoffs. Each playoff tie was decided over up to three team matches of seven sets; when the first two matches were split, a single-game super ace match settled the tie.
 
-First round: Samsung KHAN beat STX SouL 2–1 in team matches. First round: CJ Entus beat Hite SPARKYZ 2–1 in team matches. Second round: CJ Entus beat Samsung KHAN 2–1 in team matches. Semifinal: Hwaseung OZ beat CJ Entus 2–1 in team matches. In the final on 8 August 2009, SK Telecom T1 beat Hwaseung OZ 2–0 in team matches to win the title.
+First round: Samsung KHAN beat STX SouL 2–1 in team matches; CJ Entus beat Hite SPARKYZ 2–1 in team matches. Second round: CJ Entus beat Samsung KHAN 2–1 in team matches. Semifinal: Hwaseung OZ beat CJ Entus 2–1 in team matches. In the final on 8 August 2009, SK Telecom T1 beat Hwaseung OZ 2–0 in team matches to win the title.
 
 Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

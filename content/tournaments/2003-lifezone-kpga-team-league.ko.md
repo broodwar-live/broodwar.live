@@ -1,6 +1,6 @@
 +++
 title = "2003 LifeZone KPGA Team League"
-description = "2003 LifeZone KPGA Team League: SUMA GO이(가) 결승에서 Hanbit Stars을(를) 4:1로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2003 LifeZone KPGA Team League: 결승에서 슈마 GO가 한빛 스타즈를 4:1로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2003-lifezone-kpga-team-league"
 template = "tournaments/team-season.html"
 [extra]
@@ -171,6 +171,6 @@ sets = [
 +++
 LifeZone KPGA 팀리그는 MBC게임 팀리그에 올킬 방식을 처음 도입한 대회였습니다. 8개 팀이 7전 4선승제 싱글 엘리미네이션으로 맞붙었습니다. 매치는 올킬 방식으로 치러져 각 세트의 승자가 남아 상대 팀의 다음 선수와 맞붙었습니다. 아래 세트 기록은 누가 누구를 차례로 꺾었는지를 순서대로 보여 줍니다.
 
-8강: GO이(가) AMD Dream Team을(를) 4:3로 꺾었습니다. 8강: KTEC Plus이(가) KTF MagicNs을(를) 4:1로 꺾었습니다. 8강: SouL이(가) KOR을(를) 4:0로 꺾었습니다. 8강: Hanbit Stars이(가) Pirates of Space을(를) 4:3로 꺾었습니다. 4강: SUMA GO이(가) KTEC Plus을(를) 4:3로 꺾었습니다. 4강: Hanbit Stars이(가) SouL을(를) 4:1로 꺾었습니다. 3위 결정전: KTEC Plus이(가) SouL을(를) 4:3로 꺾었습니다. 2003년 10월 11일 결승에서 SUMA GO이(가) Hanbit Stars을(를) 4:1로 꺾고 우승했습니다.
+8강에서는 GO가 AMD 드림팀을 4:3으로, KTEC 플러스가 KTF 매직엔스를 4:1로, 소울이 KOR을 4:0으로, 한빛 스타즈가 POS를 4:3으로 꺾었습니다. 4강에서는 슈마 GO가 KTEC 플러스를 4:3으로, 한빛 스타즈가 소울을 4:1로 꺾었습니다. 3위 결정전에서는 KTEC 플러스가 소울을 4:3으로 꺾었습니다. 2003년 10월 11일 결승에서는 슈마 GO가 한빛 스타즈를 4:1로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

@@ -1,6 +1,6 @@
 +++
 title = "2005 SKY Proleague Grand Final"
-description = "2005 SKY Proleague Grand Final: SK Telecom T1이(가) 결승에서 KTF MagicNs을(를) 4:2로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2005 SKY Proleague Grand Final: 결승에서 SK텔레콤 T1이 KTF 매직엔스를 4:2로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2005-sky-proleague-grand-final"
 template = "tournaments/team-season.html"
 [extra]
@@ -81,8 +81,8 @@ sets = [
   { map = "Iron Curtain", a = "MuMyung", a_slug = "mumyung", a_race = "z", a2 = "Midas", a2_slug = "midas", a2_race = "t", b = "Reach", b_slug = "reach", b_race = "p", b2 = "YellOw", b2_slug = "yellow", b2_race = "z", winner = "a" },
 ]
 +++
-SK텔레콤 T1이 2005 SKY 프로리그 두 라운드를 모두 우승해, 그랜드 파이널에는 두 라운드 합산 성적 상위 세 팀(KTF 매직엔스, GO, 삼성전자 칸)이 함께 출전했습니다. 이들은 7전 4선승제 계단식으로 결승에서 SK텔레콤 T1과 맞붙을 팀을 가렸습니다.
+SK텔레콤 T1이 2005 SKY 프로리그 두 라운드를 모두 우승해, 그랜드 파이널에는 두 라운드 합산 성적 상위 세 팀(KTF 매직엔스, GO, 삼성 칸)이 함께 출전했습니다. 이들은 7전 4선승제 계단식으로 결승에서 SK텔레콤 T1과 맞붙을 팀을 가렸습니다.
 
-준플레이오프: GO이(가) Samsung KHAN을(를) 4:0로 꺾었습니다. 플레이오프: KTF MagicNs이(가) GO을(를) 4:2로 꺾었습니다. 2006년 2월 25일 결승에서 SK Telecom T1이(가) KTF MagicNs을(를) 4:2로 꺾고 우승했습니다.
+준플레이오프에서는 GO가 삼성 칸을 4:0으로 꺾었습니다. 플레이오프에서는 KTF 매직엔스가 GO를 4:2로 꺾었습니다. 2006년 2월 25일 결승에서는 SK텔레콤 T1이 KTF 매직엔스를 4:2로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

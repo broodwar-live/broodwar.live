@@ -1,6 +1,6 @@
 +++
 title = "2003 Neowiz Pmang Cup Proleague"
-description = "2003 Neowiz Pmang Cup Proleague: SUMA GO이(가) 결승에서 Toona SG을(를) 4:1로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2003 Neowiz Pmang Cup Proleague: 결승에서 슈마 GO가 투나 SG를 4:1로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2003-neowiz-pmang-cup"
 template = "tournaments/team-season.html"
 [extra]
@@ -62,6 +62,6 @@ sets = [
 +++
 네오위즈 피망 컵은 온게임넷의 두 번째 프로리그로, KTF EVER 컵과 같은 방식(개인전 2세트와 팀플 1세트를 모두 치르는 3전제 2라운드, 5전 3선승제 플레이오프, 7전 4선승제 결승)으로 열렸습니다.
 
-플레이오프: SUMA GO이(가) Hanbit Stars을(를) 3:0로 꺾었습니다. 2004년 2월 29일 결승에서 SUMA GO이(가) Toona SG을(를) 4:1로 꺾고 우승했습니다.
+플레이오프에서는 슈마 GO가 한빛 스타즈를 3:0으로 꺾었습니다. 2004년 2월 29일 결승에서는 슈마 GO가 투나 SG를 4:1로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

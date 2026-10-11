@@ -1,6 +1,6 @@
 +++
 title = "2011–12 SK Planet Proleague Season 1"
-description = "2011–12 SK Planet Proleague Season 1: SK Telecom T1이(가) 결승에서 KT Rolster을(를) 4:3로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2011–12 SK Planet Proleague Season 1: 결승에서 SK텔레콤 T1이 KT 롤스터를 4:3으로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2011-2012-sk-planet-proleague-season-1"
 template = "tournaments/team-season.html"
 [extra]
@@ -129,6 +129,6 @@ sets = [
 +++
 2011–12 SK플래닛 프로리그 시즌 1은 전 세트를 브루드 워로 치른 마지막 프로리그였습니다. 8개 팀이 참가했고, 플레이오프는 7세트 매치 3전 2선승제, 결승은 7세트 단판이었습니다.
 
-준플레이오프: KT Rolster이(가) CJ Entus을(를) 2:1(매치 기준)로 꺾었습니다. 플레이오프: KT Rolster이(가) Samsung KHAN을(를) 2:0(매치 기준)로 꺾었습니다. 2012년 4월 8일 결승에서 SK Telecom T1이(가) KT Rolster을(를) 4:3로 꺾고 우승했습니다.
+준플레이오프에서는 KT 롤스터가 CJ 엔투스를 매치 스코어 2:1로 꺾었습니다. 플레이오프에서는 KT 롤스터가 삼성 칸을 매치 스코어 2:0으로 꺾었습니다. 2012년 4월 8일 결승에서는 SK텔레콤 T1이 KT 롤스터를 4:3으로 꺾고 우승했습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

@@ -1,6 +1,6 @@
 +++
 title = "2004 SKY Proleague Round 2"
-description = "2004 SKY Proleague Round 2: Pantech & Curitel Curriors이(가) 결승에서 STX SouL을(를) 4:1로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2004 SKY Proleague Round 2: 결승에서 팬택&큐리텔 큐리어스가 STX 소울을 4:1로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2004-sky-proleague-round-2"
 template = "tournaments/team-season.html"
 [extra]
@@ -78,6 +78,6 @@ sets = [
 +++
 2004 SKY 프로리그 2라운드는 1라운드 순위에 따라 10개 팀을 머큐리·새턴 두 조로 나누어 치렀습니다. 각 조는 5전 3선승제 조 결승으로 1위를 가렸고, 두 조 1위가 7전 4선승제 라운드 결승에서 맞붙었으며, 우승팀은 2004 그랜드 파이널에 진출했습니다.
 
-조 결승: Pantech & Curitel Curriors이(가) KOR을(를) 3:1로 꺾었습니다. 조 결승: STX SouL이(가) Hanbit Stars을(를) 3:2로 꺾었습니다. 2004년 10월 30일 결승에서 Pantech & Curitel Curriors이(가) STX SouL을(를) 4:1로 꺾고 우승했습니다. Goodfriend 선수가 결승 MVP에 선정되었습니다.
+조 결승에서는 팬택&큐리텔 큐리어스가 KOR을 3:1로, STX 소울이 한빛 스타즈를 3:2로 꺾었습니다. 2004년 10월 30일 결승에서는 팬택&큐리텔 큐리어스가 STX 소울을 4:1로 꺾고 우승했습니다. Goodfriend 선수가 결승 MVP로 뽑혔습니다.
 
-각 조 최하위 팀의 강등 결정전은 이 플레이오프 기록에 포함하지 않았습니다. 세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+각 조 최하위 팀의 강등 결정전은 이 플레이오프 기록에 포함하지 않았습니다. 세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.

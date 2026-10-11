@@ -171,6 +171,6 @@ sets = [
 +++
 The LifeZone KPGA Team League introduced the all-kill format to MBCGame's team league. Eight teams played a single-elimination bracket of best-of-seven matches. Matches were played in the all-kill format: the winner of each set stayed on to face the next player of the losing team, so the set lists below show who knocked out whom in order.
 
-Quarterfinals: GO beat AMD Dream Team 4–3. Quarterfinals: KTEC Plus beat KTF MagicNs 4–1. Quarterfinals: SouL beat KOR 4–0. Quarterfinals: Hanbit Stars beat Pirates of Space 4–3. Semifinals: SUMA GO beat KTEC Plus 4–3. Semifinals: Hanbit Stars beat SouL 4–1. Third place: KTEC Plus beat SouL 4–3. In the final on 11 October 2003, SUMA GO beat Hanbit Stars 4–1 to win the title.
+Quarterfinals: GO beat AMD Dream Team 4–3; KTEC Plus beat KTF MagicNs 4–1; SouL beat KOR 4–0; Hanbit Stars beat Pirates of Space 4–3. Semifinals: SUMA GO beat KTEC Plus 4–3; Hanbit Stars beat SouL 4–1. Third place: KTEC Plus beat SouL 4–3. In the final on 11 October 2003, SUMA GO beat Hanbit Stars 4–1 to win the title.
 
 Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

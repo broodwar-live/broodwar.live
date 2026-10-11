@@ -1,6 +1,6 @@
 +++
 title = "2004 SKY Proleague Grand Final"
-description = "2004 SKY Proleague Grand Final: Hanbit Stars이(가) 결승에서 Pantech & Curitel Curriors을(를) 4:2로 꺾었습니다. 플레이오프 전체 세트 기록 포함."
+description = "2004 SKY Proleague Grand Final: 결승에서 한빛 스타즈가 팬택&큐리텔 큐리어스를 4:2로 꺾었다. 플레이오프 전체 세트 기록 수록."
 slug = "2004-sky-proleague-grand-final"
 template = "tournaments/team-season.html"
 [extra]
@@ -83,8 +83,8 @@ sets = [
   { a = "Silver", a_slug = "silver", a_race = "z", a2 = "GGoMa", a2_race = "t", b = "Sunny", b_race = "t", b2 = "Clon", b2_race = "z", winner = "b" },
 ]
 +++
-2004 그랜드 파이널에는 세 라운드 우승팀(한빛 스타즈, 팬택앤큐리텔 큐리어스, KOR)과 라운드 우승이 없는 팀 중 성적이 가장 좋은 KTF 매직엔스가 출전했습니다. 7전 4선승제 계단식으로 하위 시드부터 맞붙었고 1번 시드는 결승에서 기다렸습니다.
+2004 그랜드 파이널에는 세 라운드 우승팀(한빛 스타즈, 팬택&큐리텔 큐리어스, KOR)과 라운드 우승이 없는 팀 중 성적이 가장 좋은 KTF 매직엔스가 출전했습니다. 7전 4선승제 계단식으로 하위 시드부터 맞붙었고 1번 시드는 결승에서 기다렸습니다.
 
-준플레이오프: KOR이(가) KTF MagicNs을(를) 4:2로 꺾었습니다. 플레이오프: Hanbit Stars이(가) KOR을(를) 4:2로 꺾었습니다. 2005년 2월 26일 결승에서 Hanbit Stars이(가) Pantech & Curitel Curriors을(를) 4:2로 꺾고 우승했습니다. DaezanG 선수가 결승 MVP에 선정되었습니다.
+준플레이오프에서는 KOR이 KTF 매직엔스를 4:2로 꺾었습니다. 플레이오프에서는 한빛 스타즈가 KOR을 4:2로 꺾었습니다. 2005년 2월 26일 결승에서는 한빛 스타즈가 팬택&큐리텔 큐리어스를 4:2로 꺾고 우승했습니다. DaezanG 선수가 결승 MVP로 뽑혔습니다.
 
-세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+세트 기록은 리퀴피디아의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 아이디를 그대로 적고 링크하지 않았으며, 종족도 세트별 기록을 따랐습니다.
