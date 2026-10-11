@@ -1,15 +1,42 @@
 +++
-title = "Dragon"
-description = "Dragon — 한국의 테란 선수."
+title = "DragOn"
+description = "DragOn(Alex Empey) — 캐나다의 프로토스 선수."
 slug = "dragon"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
 image = "/images/players/dragon.png"
-race = "terran"
-country = "KR"
-country_name = "한국"
-aliases = ["이정수"]
+race = "protoss"
+country = "CA"
+country_name = "캐나다"
+real_name = "Alex Empey"
+birth_date = "1989-04-27"
+status = "active"
+team = "NaS"
+aliases = ["DragOn[PaiN]", "DragOn[NaS]"]
+liquipedia = "https://liquipedia.net/starcraft/DragOn"
+sources = ["https://liquipedia.net/starcraft/DragOn"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "NrG"
+from = ""
+to = ""
+[[extra.teams]]
+name = "vSt"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Los Reyes Del Mambo Evolutions"
+from = ""
+to = ""
+[[extra.teams]]
+name = "PaiN"
+from = ""
+to = ""
+[[extra.teams]]
+name = "North American Squad"
+from = "2018-01-01"
+to = "present"
 +++
-Dragon은 재미있는 스트리밍과 경쟁적 플레이로 상당한 팬층을 구축한 한국 테란입니다. 창의적이고 때로는 비정석적인 전략으로 유명하며, 재미 우선의 접근으로 BW 스트리밍 씬에서 가장 볼 만한 방송 중 하나를 만들어냅니다. 엔터테인먼트 너머에 탄탄한 메카닉 실력을 갖추고 있으며 ASL 예선과 다양한 온라인 대회에서 괜찮은 성적을 거두고 있습니다. 특히 TvT가 창의적으로, 프록시 전략과 파격적인 오프닝으로 상대를 당황시킵니다. 경쟁 너머 커뮤니티 기여도 크며 — 그의 스트리밍은 새로운 관객을 브루드 워에 소개하고 씬의 활력을 유지하는 데 도움을 줍니다.
+DragOn(Alex Empey)은 캐나다의 프로토스 플레이어로, 오랫동안 상대에 따라 종족을 바꿔 플레이하다가 2023년부터 프로토스에 전념하고 있다. North American Squad를 창단해 이끌고 있으며, 2012년부터 캐나다 대표팀의 리더를 맡았다. AoV iCCup StarLeague 16강, TeamLiquid Legacy Starleague 3 4위 등의 성적을 냈고, 코치 퓨필 리그에서는 코치로 시즌 1과 2에서 우승했다.

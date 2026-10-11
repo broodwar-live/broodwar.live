@@ -1,15 +1,21 @@
 +++
 title = "TT1"
-description = "TT1 — Terran player from United States."
+description = "TT1 (Payam Toghyan) — Protoss player from Canada."
 slug = "tt1"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/tt1.png"
-race = "terran"
-country = "US"
-country_name = "United States"
-aliases = []
+race = "protoss"
+country = "CA"
+country_name = "Canada"
+real_name = "Payam Toghyan"
+birth_date = "1988-03-18"
+aliases = ["KabaL", "fnatic.KabaL", "Probe"]
+liquipedia = "https://liquipedia.net/starcraft/TT1"
+sources = ["https://liquipedia.net/starcraft/TT1"]
+verified = "2026-10-11"
 +++
-TT1 is an American Terran and one of the most prominent community figures in the Western Brood War scene. Active in international competitions and BSL events, he combines competitive play with content creation that has helped grow the game's audience in North America. His playstyle features solid mechanics and a preference for standard Terran strategies executed cleanly. TT1's TvZ is his most competitive matchup, with dependable mech play and siege positioning. Beyond his individual results, his contribution to the community through streaming, commentary, and tournament organization makes him one of the most valuable ambassadors for Brood War in the Western scene.
+TT1 (Payam Toghyan) is a Canadian player from Montreal, born in 1988, who played mainly Protoss and also Terran in Brood War. He was caught map hacking in 2008 for games played in 2007.
+
+He later reached the elimination bracket of TSL2, losing 2–3 to White-Ra, before switching to StarCraft II. He finished third–fourth at the Brood War Reunion Tournament in 2014.

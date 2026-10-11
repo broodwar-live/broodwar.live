@@ -1,15 +1,19 @@
 +++
 title = "Cryoc"
-description = "Cryoc — 프랑스의 프로토스 선수."
+description = "Cryoc(Robert Kostack) — 독일의 테란 선수."
 slug = "cryoc"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
-image = "/images/players/cryoc.png"
-race = "protoss"
-country = "FR"
-country_name = "프랑스"
-aliases = []
+race = "terran"
+country = "DE"
+country_name = "독일"
+real_name = "Robert Kostack"
+team = "iFU"
+aliases = ["iFU.Cryoc"]
+liquipedia = "https://liquipedia.net/starcraft/Cryoc"
+sources = ["https://liquipedia.net/starcraft/Cryoc"]
+verified = "2026-10-11"
 +++
-Cryoc는 BSL 예선과 지역 온라인 대회를 통해 유럽 BW 씬에서 경쟁하는 프랑스 프로토스입니다. Tempest와 함께 국제 대회에서 프랑스의 성장하는 존재감에 기여하며 프랑스 BW 커뮤니티를 대표합니다. 매치업 역학에 대한 발전하는 이해와 함께 정석 프로토스 기본기가 특징이며, 최근 시즌에서 PvZ가 가장 많은 향상을 보여줍니다. 유럽 대회에 정기적으로 참여하여 경쟁적 브루드 워에 대한 프랑스 커뮤니티의 열정을 보여주며 씬의 다양성 유지에 기여합니다.
+Cryoc(Robert Kostack)은 독일의 테란 플레이어로, 2011년 말 해외 씬에 등장했다. Altitude Nation Wars에서 독일 대표로, SBWI Nation Wars에서 서유럽 대표로 출전했으며, 2013년에는 해외 최상위권 테란으로 꼽혔다. 2013년 말부터 2014년까지 독일 King of the Hill 시리즈에 출전해 타이틀을 두 차례 연속 방어했다.

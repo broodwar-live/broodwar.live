@@ -1,15 +1,31 @@
 +++
-title = "Hyun"
-description = "Hyun — 한국의 저그 선수."
+title = "HyuN"
+description = "HyuN(고석현) — 한국의 저그 선수."
 slug = "hyun"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/hyun.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["이현우", "Lee Hyun Woo"]
+real_name = "고석현"
+romanized_name = "Ko Seok Hyun"
+birth_date = "1988-01-15"
+status = "retired"
+years_active = "2006–2011"
+aliases = ["Dream.t)HyuN", "michingae1"]
+liquipedia = "https://liquipedia.net/starcraft/HyuN"
+soop = "understay"
+sources = ["https://liquipedia.net/starcraft/HyuN"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2006-03-01"
+to = "2006-04"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-04"
+to = "2011-10-31"
 +++
-Hyun은 탄탄한 매크로 기본기와 인내심 있는 플레이로 현대 씬에서 활동하는 한국 저그입니다. ZvT가 가장 완성도 높은 매치업으로, 방어적 플레이와 후반 전환이 매치업의 포지셔닝 측면에 대한 좋은 이해를 보여줍니다. ASL 예선과 한국 온라인 대회에서 경쟁하며 안정적 접근을 반영하는 꾸준한 성적을 보여줍니다. 긴 게임을 마다하지 않고 상대를 경제적으로 압도하려는 의지는 더 공격적인 저그 선수들 사이에서 독특한 정체성을 부여합니다.
+HyuN(고석현)은 2006년부터 2011년까지 MBCgame HERO에서 브루드워 선수로 활동한 대한민국의 저그 프로게이머이다. 2011년 11월 스타크래프트 II로 전향해 SCV Life에 입단했으며, 이후 진에어 그린윙스에서 활동했다.

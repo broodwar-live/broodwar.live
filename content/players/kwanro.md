@@ -1,15 +1,42 @@
 +++
 title = "Kwanro"
-description = "Kwanro — Protoss player from South Korea."
+description = "Kwanro (Han Sang Bong) — Zerg player from South Korea."
 slug = "kwanro"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
-image = "/images/players/kwanro.png"
-race = "protoss"
+race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["최인규", "Choi In Gyu"]
+real_name = "한상봉"
+romanized_name = "Han Sang Bong"
+birth_date = "1990-02-21"
+status = "retired"
+years_active = "2005–2011"
+aliases = ["Kwanro[saM]", "Gangyu[saM]", "forhitech", "Lookforhitech", "shinnie"]
+liquipedia = "https://liquipedia.net/starcraft/Kwanro"
+soop = "ehrflq2013"
+sources = ["https://liquipedia.net/starcraft/Kwanro"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Greatest One"
+from = "2005-08-11"
+to = "2006-04"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2006-04"
+to = "2009-10-07"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2009-10-07"
+to = "2010-09"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2010-09"
+to = "2011-03-10"
 +++
-Kwanro is a legendary Protoss from the golden era who was known for his cerebral approach to the game and strong positional play. His understanding of Protoss strategy was among the deepest of his generation, and he could dissect opponent game plans with remarkable precision. Kwanro's PvZ was particularly impressive, featuring smart army positioning and efficient use of high templar that allowed him to control engagements on his terms. He reached deep rounds in OSL and MSL tournaments multiple times, and his strategic insights influenced how Protoss players approached certain matchups. Though retired from active competition, Kwanro is remembered as one of the thinking players who elevated the strategic depth of professional Brood War.
+Kwanro (Han Sang Bong) is a retired South Korean Zerg progamer known for an aggressive style. He joined SUMA GO (later CJ Entus) in 2005, then played for Woongjin Stars and SK Telecom T1. His best result was the 2009 Avalon MSL, where he beat Flash, ZerO and Iris before losing the final 1–3 to Calm. He retired on 10 March 2011.

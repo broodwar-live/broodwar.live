@@ -1,15 +1,30 @@
 +++
 title = "Tempest"
-description = "Tempest — Protoss player from France."
+description = "Tempest (Park Jae Yung) — Protoss player from South Korea."
 slug = "tempest"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/tempest.png"
 race = "protoss"
-country = "FR"
-country_name = "France"
-aliases = []
+country = "KR"
+country_name = "South Korea"
+real_name = "박재영"
+romanized_name = "Park Jae Yung"
+birth_date = "1988-07-07"
+status = "retired"
+aliases = ["Tempest)Is(", "Thundery"]
+liquipedia = "https://liquipedia.net/starcraft/Tempest"
+sources = ["https://liquipedia.net/starcraft/Tempest"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2007-03-12"
+to = "2009-08"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08"
+to = ""
 +++
-Tempest is a French Protoss and one of the stronger players representing the Western European BW community. Active in BSL tournaments and European online leagues, he brings a creative approach to Protoss play with particular strength in PvZ. Tempest's willingness to experiment with non-standard builds and his understanding of the European metagame make him a tricky opponent for other international players. He represents France's competitive BW community and has achieved respectable results in BSL qualifying rounds, contributing to the diversity of styles in the international scene.
+Tempest (Park Jae Yung) is a retired South Korean Protoss player, born in 1988, who played for KTF MagicNs from 2007 and remained with the team as it became KT Rolster. He played semi-regularly in the 2008–09 Proleague, and in individual leagues he eliminated Fantasy from both the Clubday and Lost Saga MSLs and knocked Jaedong out of the Averatec-Intel Classic Season 2.

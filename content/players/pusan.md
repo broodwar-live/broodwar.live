@@ -1,15 +1,33 @@
 +++
-title = "PuSan"
-description = "PuSan — Zerg player from South Korea."
+title = "Pusan"
+description = "Pusan (Park Ji Ho) — Protoss player from South Korea."
 slug = "pusan"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/pusan.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이준석", "Lee Jun Seok"]
+real_name = "박지호"
+romanized_name = "Park Ji Ho"
+birth_date = "1985-01-14"
+aliases = ["Pusan[S.G]", "Kespa31[S.G]", "Protoss"]
+liquipedia = "https://liquipedia.net/starcraft/Pusan"
+soop = "jou1025"
+sources = ["https://liquipedia.net/starcraft/Pusan"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KTEC Plus"
+from = "2003"
+to = "2005-03-31"
+[[extra.teams]]
+name = "POS"
+from = "2005-04-01"
+to = "2006-04"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-04"
+to = ""
 +++
-PuSan is a Korean Zerg active in the modern competitive scene with a solid macro game and patient playstyle that emphasizes late-game strength. His ZvT is his most developed matchup, where his defiler usage and patient expansion play allow him to outscale Terran opponents in longer games. PuSan competes in ASL qualifiers and Korean online tournaments, where his consistency yields respectable results. His willingness to play long macro games sets him apart from more aggressive Zerg competitors, and his clean drone production gives him strong economic foundations.
+Pusan (Park Ji Ho) is a South Korean Protoss and former progamer who played for KTEC Plus, Pirates of Space and MBCGame HERO. He finished fourth in the 2005 So1 OSL after semifinal and third-place losses to Boxer and iloveoov, and placed third in the following Shinhan Bank OSL. Along with Anytime and Stork he was called one of the "Neo-Kings" of Protoss. He later became a popular Brood War streamer on Afreeca.

@@ -1,15 +1,31 @@
 +++
-title = "UpMagic"
-description = "UpMagic — Terran player from South Korea."
+title = "UpMaGiC"
+description = "UpMaGiC (Shin Hee Sung) — Terran player from South Korea."
 slug = "upmagic"
 template = "players/player.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-image = "/images/players/upmagic.png"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["방태수", "Bang Tae Soo"]
+real_name = "신희승"
+romanized_name = "Shin Hee Sung"
+birth_date = "1989-03-10"
+status = "retired"
+years_active = "2006–2010"
+aliases = ["Sea.Up", "Hee[White]"]
+liquipedia = "https://liquipedia.net/starcraft/UpMaGiC"
+sources = ["https://liquipedia.net/starcraft/UpMaGiC"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "eNature Top Team"
+from = "2006-03-21"
+to = "2006-10"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = "2006-10"
+to = "2010-06-09"
 +++
-UpMagic was one of the golden era's most creative and unpredictable Terran players, known for devising unusual strategies that defied conventional play. His willingness to experiment with non-standard builds made him a fan favorite — you never knew what UpMagic would bring to a match. He competed in multiple OSL and MSL seasons, occasionally producing stunning upsets against higher-ranked opponents through sheer tactical ingenuity. His TvP featured creative vulture harass and unexpected timing attacks that could dismantle even well-prepared Protoss players. While his inconsistency prevented him from reaching the absolute top, UpMagic's entertaining approach to the game made every one of his matches worth watching. He embodies the spirit of innovation that made the golden era so captivating.
+UpMaGiC (Shin Hee Sung) is a former South Korean Terran progamer who played for eNature Top Team and then eSTRO, where he served as the team's ace. Nicknamed "Southpaw", he was known for unconventional strategies and is credited with popularizing mech play in TvZ. In 2010 he was implicated in the match-fixing scandal and permanently banned by KeSPA.

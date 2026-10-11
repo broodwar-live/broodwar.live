@@ -1,15 +1,38 @@
 +++
 title = "Speed"
-description = "Speed — 한국의 저그 선수."
+description = "Speed(이영웅) — 한국의 테란 선수."
 slug = "speed"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
 image = "/images/players/speed.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["김영록"]
+real_name = "이영웅"
+romanized_name = "Lee Young Woong"
+birth_date = "1994-01-24"
+status = "active"
+team = "StarCastTV Stars"
+aliases = ["10minFlash", "Sexy", "<!--Sexy[fOu]", "--> herO[KaS]", "ArisoL[kaL]", "If.Speed", "Sea.Speed", "KT.MGW)Secret", "Arisol. SouL)T(herO"]
+liquipedia = "https://liquipedia.net/starcraft/Speed"
+soop = "rfvtgb778"
+sources = ["https://liquipedia.net/starcraft/Speed"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "WeMade FOX"
+slug = "wemade-fox"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Hwaseung OZ"
+slug = "hwaseung-oz"
+from = "2010-03-23"
+to = ""
+[[extra.teams]]
+name = "StarCastTV Stars"
+from = "2021-10-04"
+to = "present"
 +++
-Speed는 초반 공격과 빠른 의사결정을 강조하는 빠른 템포의 플레이로 현대 씬에서 경쟁하는 한국 저그입니다. ZvT에서 빠른 저글링과 뮤탈리스크 빌드로 테란이 방어 진지와 시즈 라인을 구축하기 전에 압도하는 것을 목표로 합니다. ASL 예선과 온라인 대회에서 활발히 활동하며, 공격적 템포로 느린 상대를 당황시킬 수 있습니다. 게임이 보통 짧고 액션으로 가득하며, 긴 매크로 경쟁보다 결정적 초반 플레이를 선호합니다.
+Speed(이영웅)는 10minFlash, Sexy라는 아이디로도 활동한 대한민국의 테란 선수로, 위메이드 FOX와 화승 OZ에 소속되었다. 포스트 KeSPA 시대에는 SOSPA 랭킹 토너먼트에서 두 차례 결승에 올라 각각 Mong과 Killer에게 패해 준우승했다. 2021년부터 StarCastTV Stars 소속으로 활동하고 있다.

@@ -1,15 +1,37 @@
 +++
 title = "Hydra"
-description = "Hydra — Zerg player from South Korea."
+description = "Hydra (Shin Dong Won) — Zerg player from South Korea."
 slug = "hydra"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/hydra.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["김범준", "Kim Beom Jun"]
+real_name = "신동원"
+romanized_name = "Shin Dong Won"
+birth_date = "1991-09-04"
+status = "retired"
+years_active = "2008–2014"
+aliases = ["By.Hydra"]
+liquipedia = "https://liquipedia.net/starcraft/Hydra"
+sources = ["https://liquipedia.net/starcraft/Hydra"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2008-03-05"
+to = "2010-10-12"
+[[extra.teams]]
+name = "Hite Entus"
+slug = "hite-entus"
+from = "2010-10-12"
+to = "2011-05-08"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2011-05-08"
+to = "2014-09-11"
 +++
-Hydra is a Korean Zerg competing in the modern scene with solid mechanical skill and a reliable approach across all matchups. His ZvT features strong mutalisk play and efficient drone management that allow him to compete with the best Terran players in the scene. Hydra has been active in ASL qualifiers and online tournaments, where his consistency and strong fundamentals keep him in the competitive conversation. His ZvP also shows good lurker usage and smart army positioning. He is a dependable competitor whose steady presence in the scene contributes to the depth of Zerg talent in Korean BW.
+Hydra (Shin Dong Won) is a South Korean Zerg who played for CJ Entus (Hite Entus during 2010–11) from 2008 to 2014. He became the team's main Zerg after the 2010 match-fixing scandal and won the PDPop MSL in December 2010, beating Great 3–1 in the final. In 2011 he reached the semifinals of both the MSL and OSL. He later competed in StarCraft II for ROOT Gaming and is one of the few players to win premier tournaments in both games.

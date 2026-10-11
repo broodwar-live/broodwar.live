@@ -1,6 +1,6 @@
 +++
 title = "Stork"
-description = "Stork — 한국의 프로토스 선수."
+description = "Stork(송병구) — 한국의 프로토스 선수."
 slug = "stork"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,20 @@ image = "/images/players/stork.jpg"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["송병구", "Song Byung Goo"]
+real_name = "송병구"
+romanized_name = "Song Byung Goo"
+birth_date = "1988-08-04"
+aliases = ["Stork[gm]", "mansa[ok]", "sbg[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/Stork"
+soop = "koreasbg"
+sources = ["https://liquipedia.net/starcraft/Stork"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = "2004"
+to = "2013-09-07"
 +++
-Stork는 황금기에 가장 꾸준한 최상위 선수 중 한 명으로, OSL 결승에 여러 차례 진출하며 BW 경쟁 최상위에 영구적으로 자리잡은 전설적 프로토스입니다. 세계 최고 수준의 PvT를 보유했으며, 정밀한 스톰 플레이와 인내심 있는 병력 컨트롤로 가장 강한 테란 푸시도 무력화했습니다. 상대 전략을 읽고 자신의 플레이를 조정하는 뛰어난 게임 센스를 갖추고 있었습니다. 현대에는 ASL에 참가하며 세련된 스타일을 새로운 세대에게 선보이고 있습니다. 황금기 여러 해에 걸친 지속적 우수성으로 역대 최고의 프로토스 중 한 명이라는 당연한 인정을 받았습니다.
+Stork(송병구)는 한국의 프로토스 선수로, 2004년부터 2013년까지 삼성전자 칸에서 활동했으며 '택뱅리쌍'의 한 명으로 꼽힌다. 운영 중심의 플레이로 알려졌고, 프로토스의 '신 3대 토스' 중 한 명으로 불리며 현대적인 프로토스 대 테란 운영의 틀을 다지는 데 기여했다. 2008 인크루트 OSL에서 우승했으며, EVER 2007, 박카스 2008, 박카스 2010 OSL과 2007 곰TV MSL 시즌 2에서 준우승했다.
+
+이후 스타크래프트 II에서 삼성 갤럭시의 감독 겸 플레잉 코치를 맡았으며, 2012년 한국 e스포츠 명예의 전당에 헌액되었다.

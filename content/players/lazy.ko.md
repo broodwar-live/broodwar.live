@@ -1,15 +1,32 @@
 +++
 title = "Lazy"
-description = "Lazy — 한국의 테란 선수."
+description = "Lazy(김기훈) — 한국의 프로토스 선수."
 slug = "lazy"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/lazy.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["김재국", "Kim Jae Guk"]
+real_name = "김기훈"
+romanized_name = "Kim Ki Hoon"
+birth_date = "1993-05-11"
+status = "retired"
+years_active = "2010–2011"
+aliases = ["NsP_Lazy", "NsP_Notice"]
+liquipedia = "https://liquipedia.net/starcraft/Lazy"
+soop = "hateliar"
+sources = ["https://liquipedia.net/starcraft/Lazy"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = "2010-08-23"
+to = "2010-10"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2010-10"
+to = "2011-11"
 +++
-Lazy는 한국 프로 씬에서 활동하는 올라운드 테란으로, 탄탄한 메카닉과 세 매치업 모두에서 균형 잡힌 접근으로 유명합니다. 하나 또는 두 매치업에 특화하는 많은 현대 테란과 달리, 프로토스, 저그, 테란 상대 모두에게 경쟁력 있는 성적을 유지합니다. 화려한 플레이보다 기본기를 우선시하며, 깔끔한 빌드 오더 실행과 효율적인 매크로로 더 강한 메카닉 선수들과도 대등하게 싸웁니다. ASL 예선과 온라인 대회에 정기적으로 출전하며 안정적인 성적을 보여줍니다. 순수한 효율로 승리를 쌓아가는 기본기 우선 테란의 모범을 보여주는 선수입니다.
+Lazy(김기훈)는 한국의 프로토스 전 프로게이머이다. 2010년 이스트로의 연습생으로 시작했으며, 이스트로 해체 후 진행된 드래프트를 통해 MBCGame HERO에 입단해 2011년까지 활동했다. 이후 아마추어 리그에서 활동하고 있다.

@@ -1,6 +1,6 @@
 +++
 title = "Light"
-description = "Light — 한국의 테란 선수."
+description = "Light(이재호) — 한국의 테란 선수."
 slug = "light"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,29 @@ image = "/images/players/light.png"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["이재호", "Lee Jae Ho"]
+real_name = "이재호"
+romanized_name = "Lee Jae Ho"
+birth_date = "1990-03-28"
+years_active = "2006–2022"
+aliases = ["Light[aLive]", "NoN.ge"]
+liquipedia = "https://liquipedia.net/starcraft/Light"
+soop = "scv6256"
+sources = ["https://liquipedia.net/starcraft/Light"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2006-03-21"
+to = "2006-04"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-04"
+to = "2011-02-28"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2011-02-28"
+to = "2013-09-17"
 +++
-Light는 뛰어난 메카닉을 갖춘 테란으로 ASL 시대 내내 강한 바이오 플레이와 우수한 마린-메딕 컨트롤로 꾸준한 성적을 보여주고 있습니다. TvZ가 그의 시그니처 매치업으로, 정교한 마이크로와 공격적인 타이밍 공격으로 씬 최고의 저그 선수들을 꺾어왔습니다. 현역 테란 중 최고 수준의 APM을 보유하고 있으며, 그 속도로 상대를 압도하는 다방면 공격을 실행합니다. ASL 8강에 여러 차례 진출했으며 어떤 대진에서도 위험한 상대로 평가받습니다. 바이오 중심 전략에 대한 헌신은 그의 게임에 빠른 템포와 액션 가득한 특성을 부여하여 시청자들에게 인기 있는 선수입니다.
+Light(이재호)는 1990년생 대한민국의 테란 선수이다. 2006년 드래프트로 Pirates of Space에 입단해 MBC게임 히어로를 거쳐 2013년까지 웅진 스타즈에서 활동했으며, 뛰어난 멀티태스킹으로 '흑마술사'라는 별명을 얻었다.
+
+2015년 군 복무를 마친 뒤 아프리카TV에서 방송을 시작했다. 2019년 KSL 시즌 4에서 우승했고, 2020년 ASL 시즌 9 준우승, 2022년 ASL 시즌 13 우승을 차지했다.

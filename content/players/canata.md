@@ -1,15 +1,34 @@
 +++
 title = "Canata"
-description = "Canata — Protoss player from South Korea."
+description = "Canata (Ko In Kyu) — Terran player from South Korea."
 slug = "canata"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
-image = "/images/players/canata.png"
-race = "protoss"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이진학", "Lee Jin Hak"]
+real_name = "고인규"
+romanized_name = "Ko In Kyu"
+birth_date = "1987-06-25"
+status = "retired"
+team = "Air Force ACE"
+aliases = ["Canata[yG]"]
+liquipedia = "https://liquipedia.net/starcraft/Canata"
+sources = ["https://liquipedia.net/starcraft/Canata"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = ""
+to = "2011-04-04"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2011-04-04"
+to = ""
 +++
-Canata is a legendary Protoss player from the golden era who earned respect for his strong fundamentals and consistent tournament performances across multiple OSL and MSL seasons. His playstyle was characterized by solid macro play and reliable execution of standard Protoss strategies that kept him competitive against the best players of his generation. Canata's PvT was particularly noteworthy, with patient storm-based play and strong defensive positioning that frustrated aggressive Terran opponents. Though he competed during an era stacked with Protoss talent, his longevity and consistent results earned him Legend status. He is remembered as one of the dependable cornerstones of golden era Protoss play.
+Canata (Ko In Kyu) is a South Korean Terran player born in 1987. He won the 2004 iTV Newcomers League and took third place in the 2006 OnGameNet Super Rookie Tournament before becoming a regular in SK Telecom T1's Proleague lineup.
+
+He moved to Air Force ACE in April 2011, also competing in StarCraft II, and later became a caster for SPOTV Games.

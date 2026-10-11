@@ -1,6 +1,6 @@
 +++
 title = "July"
-description = "July — 한국의 저그 선수."
+description = "July(박성준) — 한국의 저그 선수."
 slug = "july"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,34 @@ image = "/images/players/july.jpg"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["박성준", "Park Sung Joon"]
+real_name = "박성준"
+romanized_name = "Park Sung Joon"
+birth_date = "1986-12-18"
+status = "retired"
+aliases = ["JulyZerg", "July[z-zone]"]
+liquipedia = "https://liquipedia.net/starcraft/July"
+soop = "julyzerg"
+sources = ["https://liquipedia.net/starcraft/July"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = ""
+to = "2005-10"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2005-10"
+to = "2007-07"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2007-07"
+to = "2008-04-24"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2008-04-24"
+to = "2010-10-30"
 +++
-July는 브루드 워 역사상 가장 공격적이고 흥미진진한 저그 선수 중 한 명으로, "전쟁의 신"이라는 별명을 얻은 끊임없는 공격 우선 철학으로 유명합니다. OSL 2회 우승자로, 2000년대 초중반 전성기에 저글링과 뮤탈리스크의 파도로 상대에게 숨 쉴 틈을 주지 않았습니다. 특히 ZvT가 파괴적이었으며, 올인 타이밍 공격과 공격적인 저글링 러시로 몇 분 만에 게임을 끝낼 수 있었습니다. 공격적 저그 플레이에 대한 그의 영향은 깊으며 — 인내심 있는 매크로보다 순수한 압박으로 저그가 이길 수 있음을 증명했습니다. 은퇴했지만 역사상 가장 재미있고 두려운 저그 중 한 명으로서의 유산은 확고합니다.
+July(박성준)는 '투신'이라는 별명으로 알려진 한국의 저그 선수로, 공격적인 운영과 뮤탈리스크 컨트롤로 유명하다. Pirates of Space, MBCGame HERO, SK텔레콤 T1, STX SouL에서 활동했다. 2004 질레트 OSL 우승으로 OSL을 제패한 첫 저그가 되었고, 이후 EVER 2005와 EVER 2008 OSL에서도 우승했다. EVER 2008 우승으로 저그 최초로 골든 마우스를 받았다. IOPS 2004와 신한은행 2005 OSL에서는 준우승했다.
+
+이후 리그 오브 레전드 팀 감독을 맡았으며, 2012년 한국 e스포츠 명예의 전당에 헌액되었다.

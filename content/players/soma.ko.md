@@ -1,6 +1,6 @@
 +++
-title = "Soma"
-description = "Soma — 한국의 저그 선수."
+title = "soma"
+description = "soma(박상현) — 한국의 저그 선수."
 slug = "soma"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,18 @@ image = "/images/players/soma.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["조기정", "Cho Ki Jung"]
+real_name = "박상현"
+romanized_name = "Park Sang Hyun"
+birth_date = "1995-08-22"
+status = "active"
+years_active = "2014–present"
+team = "SouLGaming"
+aliases = ["ChoSimZerG", "SoMa[KaL]", "zjd", "SM"]
+liquipedia = "https://liquipedia.net/starcraft/Soma"
+soop = "thakzkf"
+sources = ["https://liquipedia.net/starcraft/Soma"]
+verified = "2026-10-11"
 +++
-Soma는 현대 ASL 씬에서 가장 꾸준한 선수 중 한 명으로, 올라운드 게임을 보여주는 다수의 깊은 대회 진출을 기록한 한국 저그입니다. 매크로 효율과 전술적 공격을 균형 있게 구사하며, 드론을 찍을 때와 압박할 때를 정확히 판단합니다. ZvT가 가장 강한 매치업으로, 뮤탈리스크 컨트롤과 디파일러 활용으로 후반 전투를 결정적으로 뒤집을 수 있습니다. ASL 8강 이상에 여러 차례 진출했으며, 접전에서 절대 최고의 선수들과 경쟁하는 능력은 높은 실력 상한선을 보여줍니다. 꾸준한 성적으로 항상 깊은 진출을 기대할 수 있는 안정적인 선수입니다.
+soma(박상현)는 1995년생 대한민국의 저그 선수로, KeSPA 시대에는 프로 경기를 치르지 않았다. SonicTV 대회에 출전해 제7회 SonicTV 스타리그 16강에 올랐고, 2014년 가방팝 소닉 프로리그에서 Sonic All-Stars 소속으로 뛰었다.
+
+2020년 ASL 시즌 10에서 준우승했으며, ASL 시즌 20(2025)과 시즌 21(2026)에서 연속 우승했다.

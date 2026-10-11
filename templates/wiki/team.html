@@ -51,16 +51,20 @@
     <div class="mt-8">
       <h2 class="text-sm font-semibold mb-3">{% if lang == "ko" %}주요 선수{% else %}Notable Players{% endif %}</h2>
       <div class="flex flex-wrap gap-2">
-        {#- Link only players that have a profile page; match on slug or title (case-insensitive). -#}
+        {#- Link only players that have a profile page; match on slug, ID or alternate ID (case-insensitive). -#}
         {% set players_section = get_section(path="players/_index.md", lang=lang) %}
         {% for player in e.notable_players %}
           {% set key = player | lower | replace(from="_", to="-") %}
-          {% set_global player_url = "" %}
+          {% set_global player_url = "" %}{% set_global player_race = "" %}
           {% for p in players_section.pages %}
-            {% if p.slug == key or p.title | lower == player | lower %}{% set_global player_url = p.path %}{% break %}{% endif %}
+            {% set_global hit = p.slug == key or p.title | lower == player | lower %}
+            {% if not hit and p.extra.aliases is defined %}{% for a in p.extra.aliases %}{% if a | lower == player | lower %}{% set_global hit = true %}{% endif %}{% endfor %}{% endif %}
+            {% if hit %}{% set_global player_url = p.path %}{% set_global player_race = p.extra.race %}{% break %}{% endif %}
           {% endfor %}
           {% if player_url %}
-        <a href="{{ player_url }}" class="glass-card rounded-lg px-3 py-1.5 text-sm text-primary/70 hover:text-primary transition-colors">{{ player }}</a>
+        <a href="{{ player_url }}" class="glass-card rounded-lg px-3 py-1.5 text-sm text-primary/70 hover:text-primary transition-colors inline-flex items-center gap-2">
+          {% if player_race %}<span class="{% if player_race == 'terran' %}bg-race-terran{% elif player_race == 'protoss' %}bg-race-protoss{% else %}bg-race-zerg{% endif %} w-4 h-4 rounded flex items-center justify-center text-[9px] font-black text-base-100" title="{{ player_race | title }}">{% if player_race == "terran" %}T{% elif player_race == "protoss" %}P{% else %}Z{% endif %}</span>{% endif %}
+          {{ player }}</a>
           {% else %}
         <span class="glass-card rounded-lg px-3 py-1.5 text-sm text-base-content/50">{{ player }}</span>
           {% endif %}

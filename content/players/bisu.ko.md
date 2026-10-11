@@ -1,6 +1,6 @@
 +++
 title = "Bisu"
-description = "Bisu — 한국의 프로토스 선수."
+description = "Bisu(김택용) — 한국의 프로토스 선수."
 slug = "bisu"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,29 @@ image = "/images/players/bisu.jpg"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["김택용", "Kim Taek Yong"]
+real_name = "김택용"
+romanized_name = "Kim Taek Yong"
+birth_date = "1989-11-03"
+years_active = "2005–2013"
+aliases = ["Bisu[Shield]"]
+liquipedia = "https://liquipedia.net/starcraft/Bisu"
+soop = "rlaxordyd"
+sources = ["https://liquipedia.net/starcraft/Bisu"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2005-08-11"
+to = "2006-03"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-03"
+to = "2008-02"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2008-02"
+to = "2013-09-09"
 +++
-Bisu는 브루드 워 역사상 가장 혁명적인 선수 중 한 명으로, 그의 이름을 딴 혁신적인 빌드 — 비수 빌드로 PvZ 매치업을 영원히 바꿨습니다. 그의 돌파구 이전에 프로토스는 저그 상대로 상당히 불리하다고 여겨졌지만, 공격적인 커세어-다크 템플러 오프닝에서 빠른 확장으로의 전환이 그 패러다임을 깨고 프로토스에게 승리의 길을 열었습니다. OSL 우승자로, 탁월한 메카닉과 창의적인 전략적 사고를 결합하여 전성기에 거의 무적이었습니다. sAviOr와의 라이벌전은 BW 역사상 가장 찬사받는 경기들을 만들어냈습니다. 현대에는 활동이 줄었지만, "혁명가"로서의 그의 유산은 한 선수가 게임에 기여한 가장 변혁적인 공헌 중 하나로 남아 있습니다.
+Bisu(김택용)는 1989년생 대한민국의 프로토스 선수이다. 2005년 신인 드래프트로 Pirates of Space에 입단해 MBC게임 히어로를 거쳐 2008년부터 2013년까지 SK텔레콤 T1에서 활동했다.
+
+2007년 곰TV MSL 시즌 1과 시즌 2, 2008년 클럽데이 온라인 MSL에서 우승했고 곰TV MSL 시즌 3에서는 준우승을 차지했다. MSL 결승에서 마재윤(sAviOr)을 3:0으로 꺾으며 '혁명가'라는 별명을 얻었고, 이 경기는 프로토스 대 저그 구도의 전환점으로 평가된다. 2012년 한국 e스포츠 명예의 전당에 헌액되었으며, 2013년 스타크래프트 II에서 은퇴한 뒤 아프리카TV에서 활동했다.

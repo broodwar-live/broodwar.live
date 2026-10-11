@@ -1,6 +1,6 @@
 +++
-title = "Zero"
-description = "Zero — 한국의 저그 선수."
+title = "Queen"
+description = "Queen(김명운) — 한국의 저그 선수."
 slug = "zero"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,23 @@ image = "/images/players/zero.jpg"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["김명운", "Kim Myung Woon"]
+real_name = "김명운"
+romanized_name = "Kim Myung Woon"
+birth_date = "1990-02-18"
+aliases = ["ZerO", "MenSol[ZerO]"]
+liquipedia = "https://liquipedia.net/starcraft/ZerO"
+soop = "kimmyungwun"
+sources = ["https://liquipedia.net/starcraft/ZerO"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hanbit Stars"
+slug = "hanbit-stars"
+from = "2007-03-12"
+to = "2008"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2008-09-24"
+to = "2013-10-01"
 +++
-Zero는 황금기에 가장 꾸준한 최상위 선수 중 한 명으로, OSL과 MSL 결승에 여러 차례 진출한 전설적 저그입니다. 강한 매크로 기본기와 현명한 전술적 플레이를 결합하여 게임의 모든 단계에서 위험했습니다. 특히 ZvP가 두려움의 대상으로, 공격적인 뮤탈리스크 견제와 현명한 저글링 런바이로 프로토스 방어를 해체할 수 있었습니다. 최정상급 선수들과의 라이벌전은 많은 명승부를 만들었고, 고압적인 결승전에서의 수행 능력은 놀라운 정신력을 보여주었습니다. 초기 ASL 시즌에 참가하며 황금기와 현대 부활기를 이었습니다. 여러 해에 걸친 지속적 우수성으로 레전드 지위를 당당히 인정받았습니다.
+Queen(김명운, 이전 ID ZerO)은 한국의 저그 선수로, 한빛 스타즈를 거쳐 2008년부터 2013년까지 웅진 스타즈에서 활동했다. 초기에는 뮤탈리스크 컨트롤과 저그전으로 주목받았으며, 2009 로스트사가 MSL 4강에 올랐고 2011 ABC마트 MSL에서 준우승했다. KeSPA 시대가 끝난 뒤 은퇴해 아프리카 방송을 시작했고, 군 복무를 마친 뒤 Queen이라는 ID로 복귀해 2020년 ASL 9와 ASL 10에서 연속 우승했다.

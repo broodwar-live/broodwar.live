@@ -1,15 +1,21 @@
 +++
 title = "Dandy"
-description = "Dandy — Protoss player from South Korea."
+description = "Dandy (Luis Enrique Cutipa Orco) — Terran player from Peru."
 slug = "dandy"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
 image = "/images/players/dandy.png"
-race = "protoss"
-country = "KR"
-country_name = "South Korea"
-aliases = ["이동민"]
+race = "terran"
+country = "PE"
+country_name = "Peru"
+real_name = "Luis Enrique Cutipa Orco"
+birth_date = "1991-12-07"
+team = "SouLGaming"
+aliases = ["SouL)T(Dandy", "Daishinkai", "LG)LUiS", "El_Cheroka", "Amenhotep"]
+liquipedia = "https://liquipedia.net/starcraft/Dandy"
+sources = ["https://liquipedia.net/starcraft/Dandy"]
+verified = "2026-10-11"
 +++
-Dandy is a Korean Protoss competing in the modern scene with a focus on solid fundamentals and standard play. His approach to the game emphasizes clean execution and efficient macro, making him a reliable competitor in ASL qualifiers and online tournaments. Dandy's PvZ is his strongest matchup, featuring effective storm play and smart positioning that allow him to control engagements. He represents the steady middle tier of the Korean Protoss scene, consistently showing up for competition and contributing to the depth that makes the scene so challenging.
+Dandy (Luis Enrique Cutipa Orco) is a Peruvian Terran player who has played for the team SouLGaming.

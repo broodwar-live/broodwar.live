@@ -1,15 +1,28 @@
 +++
-title = "SkyHigh"
-description = "SkyHigh — Zerg player from South Korea."
+title = "sKyHigh"
+description = "sKyHigh (Jo Byung Se) — Terran player from South Korea."
 slug = "skyhigh"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/skyhigh.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이상훈", "Lee Sang Hoon"]
+real_name = "조병세"
+romanized_name = "Jo Byung Se"
+birth_date = "1991-06-01"
+status = "retired"
+years_active = "2007–2016"
+aliases = ["sKyHigh[fOu]"]
+liquipedia = "https://liquipedia.net/starcraft/SKyHigh"
+soop = "chobs0309"
+sources = ["https://liquipedia.net/starcraft/SKyHigh"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2007-08-08"
+to = "2016-10-18"
 +++
-SkyHigh is a Korean Zerg active in the modern scene with solid fundamentals and a patient playstyle that emphasizes building late-game strength through careful and methodical economic development. His ZvP is his strongest matchup, where his defensive play and careful expansion timing allow him to build up strong late-game armies that can overwhelm Protoss opponents. SkyHigh competes in ASL qualifiers and online tournaments, where his consistent approach keeps him competitive. His macro management is efficient and his developing game sense continues to grow.
+sKyHigh (Jo Byung Se) is a South Korean Terran who spent his whole career with CJ Entus from 2007 to 2016. He reached the semifinals of the 2008–09 Averatec-Intel Classic Season 2 and is best remembered for a reverse all-kill against Hwaseung OZ in the 2009 Shinhan Bank Winners League final, which won the title for his team. He later played StarCraft II and coached for CJ Entus.

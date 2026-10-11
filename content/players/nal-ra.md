@@ -1,15 +1,32 @@
 +++
 title = "Nal_rA"
-description = "Nal_rA — Protoss player from South Korea."
+description = "Nal_rA (Kang Min) — Protoss player from South Korea."
 slug = "nal-ra"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/nal-ra.png"
 race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["강민", "Kang Min"]
+real_name = "강민"
+romanized_name = "Kang Min"
+birth_date = "1982-03-15"
+status = "retired"
+aliases = ["Nal rA"]
+liquipedia = "https://liquipedia.net/starcraft/Nal_rA"
+soop = "nalra82"
+sources = ["https://liquipedia.net/starcraft/Nal_rA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Suma GO"
+from = ""
+to = "2004-04-02"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2004-04-02"
+to = ""
 +++
-Nal_rA is a legendary Protoss who was one of the most creative and unpredictable players in Brood War history. Known for his unorthodox strategies and willingness to experiment with builds that no one else would attempt, he brought a sense of wonder to every match he played. Nal_rA's approach defied conventional wisdom — he would employ unusual unit compositions, unexpected tech paths, and psychological mindgames that left opponents bewildered. Despite his unconventional style, he achieved significant tournament results including deep MSL runs, proving that creativity could be a legitimate path to victory at the highest level. His legacy extends beyond results; Nal_rA showed that Brood War could be played as an art form, inspiring countless players to think outside the box.
+Nal_rA (Kang Min) is a South Korean Protoss player, born in 1982, who played for Suma GO and then KTF MagicNs from 2004. Known as "the Dreamer" for his improvised, risk-taking play, he is credited with pioneering builds that shaped how Protoss was played against Zerg and Terran, and is counted among "The Three Kings".
+
+In 2003 he won the Stout MSL and was runner-up in the MyCube OSL, then won the NHN Hangame OnGameNet Starleague. He later finished runner-up in the Pringles MSL Season 1 (2006) and was inducted into the Korean esports Hall of Fame in 2012.

@@ -1,15 +1,30 @@
 +++
 title = "Movie"
-description = "Movie — 한국의 프로토스 선수."
+description = "Movie(진영화) — 한국의 프로토스 선수."
 slug = "movie"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/movie.png"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["이경민", "Lee Kyung Min"]
+real_name = "진영화"
+romanized_name = "Jin Young Hwa"
+birth_date = "1990-08-30"
+aliases = ["By.Movie", "0[WHITE]", "JAMTUBE"]
+liquipedia = "https://liquipedia.net/starcraft/Movie"
+soop = "jyh8610"
+sources = ["https://liquipedia.net/starcraft/Movie"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2007-08-08"
+to = "2012-05-07"
+[[extra.teams]]
+name = "Team 8"
+from = "2012-05-07"
+to = "2012"
 +++
-Movie는 화려한 플레이 스타일과 재미있는 게임으로 현대 씬에서 알려진 한국 프로토스입니다. 공격적인 오프닝과 대담한 공격으로 성공할 때 화려한 결과를 만들어냅니다. PvZ가 가장 흥미로운 매치업으로, 초반 압박에 과감히 투자하여 강도에 준비되지 않은 저그를 압도할 수 있습니다. ASL 예선과 온라인 대회에서 경쟁하며, 공격적 전략으로 때때로 인상적인 이변을 만들어냅니다. 게임이 액션으로 가득하고 초반에 결정되는 경향이 있어 빠른 템포의 프로토스 플레이를 좋아하는 시청자들에게 인기입니다.
+Movie(진영화)는 한국의 프로토스 선수로, 2007년부터 CJ 엔투스에서 활동했고 2012년 5월 Team 8로 이적했다. 최고 성적은 2009 EVER OSL로, 8강에서 ZerO, 4강에서 Shine을 꺾고 결승에 올랐으나 Flash에게 1대3으로 패해 준우승했다. KeSPA의 종목 전환 후 잠시 스타크래프트 II에서 활동하다 은퇴했으며, 이후 아마추어 리그에서 활동하고 있다.

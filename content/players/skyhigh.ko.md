@@ -1,15 +1,28 @@
 +++
-title = "SkyHigh"
-description = "SkyHigh — 한국의 저그 선수."
+title = "sKyHigh"
+description = "sKyHigh(조병세) — 한국의 테란 선수."
 slug = "skyhigh"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/skyhigh.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["이상훈", "Lee Sang Hoon"]
+real_name = "조병세"
+romanized_name = "Jo Byung Se"
+birth_date = "1991-06-01"
+status = "retired"
+years_active = "2007–2016"
+aliases = ["sKyHigh[fOu]"]
+liquipedia = "https://liquipedia.net/starcraft/SKyHigh"
+soop = "chobs0309"
+sources = ["https://liquipedia.net/starcraft/SKyHigh"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2007-08-08"
+to = "2016-10-18"
 +++
-SkyHigh는 탄탄한 기본기와 신중하고 체계적인 경제 발전을 통한 후반 강점 구축을 강조하는 인내심 있는 플레이로 현대 씬에서 활동하는 한국 저그입니다. ZvP가 가장 강한 매치업으로, 방어적 플레이와 신중한 확장 타이밍으로 프로토스를 압도할 수 있는 강한 후반 병력을 구축합니다. ASL 예선과 온라인 대회에서 경쟁하며 꾸준한 접근으로 경쟁력을 유지합니다. 효율적 매크로 관리와 지속적으로 성장하는 발전 중인 게임 센스를 보여줍니다.
+sKyHigh(조병세)는 한국의 테란 선수로, 2007년부터 2016년까지 CJ 엔투스에서만 활동했다. 2008-09 Averatec-Intel 클래식 시즌 2에서 4강에 올랐고, 2009 신한은행 위너스리그 결승에서 화승 OZ를 상대로 역올킬을 달성해 팀 우승을 이끈 것으로 가장 잘 알려져 있다. 이후 스타크래프트 II 선수로 활동했고 CJ 엔투스 코치를 맡았다.

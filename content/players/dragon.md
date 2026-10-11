@@ -1,15 +1,42 @@
 +++
-title = "Dragon"
-description = "Dragon — Terran player from South Korea."
+title = "DragOn"
+description = "DragOn (Alex Empey) — Protoss player from Canada."
 slug = "dragon"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
 image = "/images/players/dragon.png"
-race = "terran"
-country = "KR"
-country_name = "South Korea"
-aliases = ["이정수"]
+race = "protoss"
+country = "CA"
+country_name = "Canada"
+real_name = "Alex Empey"
+birth_date = "1989-04-27"
+status = "active"
+team = "NaS"
+aliases = ["DragOn[PaiN]", "DragOn[NaS]"]
+liquipedia = "https://liquipedia.net/starcraft/DragOn"
+sources = ["https://liquipedia.net/starcraft/DragOn"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "NrG"
+from = ""
+to = ""
+[[extra.teams]]
+name = "vSt"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Los Reyes Del Mambo Evolutions"
+from = ""
+to = ""
+[[extra.teams]]
+name = "PaiN"
+from = ""
+to = ""
+[[extra.teams]]
+name = "North American Squad"
+from = "2018-01-01"
+to = "present"
 +++
-Dragon is a Korean Terran who has built a significant following through his entertaining streams and competitive play. Known for creative and sometimes unorthodox strategies, he brings a fun-first approach to the game that makes his broadcasts among the most watchable in the BW streaming scene. Beyond entertainment, Dragon possesses solid mechanical skill and has competed in ASL qualifiers and various online tournaments with respectable results. His TvT is particularly creative, often featuring proxy strategies and unusual openings that catch opponents off guard. Dragon's contribution to the community extends beyond competition — his streams help introduce new audiences to Brood War and keep the scene vibrant.
+DragOn (Alex Empey) is a Canadian player listed as Protoss, who for many years used a race-picker approach before settling on Protoss full-time from 2023. He founded and leads North American Squad and has captained Team Canada since 2012. His results include a top-16 finish in the AoV iCCup StarLeague and fourth place in TeamLiquid Legacy Starleague 3; as a coach in the Coach Pupil League he won seasons 1 and 2.

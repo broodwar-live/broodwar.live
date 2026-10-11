@@ -1,6 +1,6 @@
 +++
-title = "Soma"
-description = "Soma — Zerg player from South Korea."
+title = "soma"
+description = "soma (Park Sang Hyun) — Zerg player from South Korea."
 slug = "soma"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,18 @@ image = "/images/players/soma.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["조기정", "Cho Ki Jung"]
+real_name = "박상현"
+romanized_name = "Park Sang Hyun"
+birth_date = "1995-08-22"
+status = "active"
+years_active = "2014–present"
+team = "SouLGaming"
+aliases = ["ChoSimZerG", "SoMa[KaL]", "zjd", "SM"]
+liquipedia = "https://liquipedia.net/starcraft/Soma"
+soop = "thakzkf"
+sources = ["https://liquipedia.net/starcraft/Soma"]
+verified = "2026-10-11"
 +++
-Soma is a Korean Zerg who has been one of the most consistent performers in the modern ASL scene, with multiple deep tournament runs that showcase his well-rounded game. His playstyle balances macro efficiency with tactical aggression, knowing when to drone up and when to apply pressure. Soma's ZvT is his strongest matchup, where his mutalisk control and defiler usage can swing late-game battles decisively. He has reached the ASL Ro8 and beyond on multiple occasions, and his ability to compete with the absolute best players in close series demonstrates his high skill ceiling. His steady performances make him a reliable competitor who is always in contention for deep runs.
+soma (Park Sang Hyun) is a South Korean Zerg player born in 1995 who did not play professionally during the KeSPA era. He competed in SonicTV events, reaching the round of 16 of the 7th SonicTV Starleague, and played for the Sonic All-Stars in the 2014 Gabangpop Sonic Proleague.
+
+He was runner-up in ASL Season 10 in 2020 and won consecutive titles in ASL Season 20 (2025) and ASL Season 21 (2026).

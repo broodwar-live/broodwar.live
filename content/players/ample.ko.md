@@ -1,15 +1,26 @@
 +++
 title = "Ample"
-description = "Ample — 한국의 저그 선수."
+description = "Ample(김태영) — 한국의 테란 선수."
 slug = "ample"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/ample.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["고석현", "Go Seok Hyun"]
+real_name = "김태영"
+romanized_name = "Kim Tae Young"
+birth_date = "1992-07-16"
+aliases = ["[ErOs]~Lovedambi", "ErOs_Ample", "Sasin", "4s.사테"]
+liquipedia = "https://liquipedia.net/starcraft/Ample"
+soop = "hoonykkk"
+sources = ["https://liquipedia.net/starcraft/Ample"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2010-08-23"
+to = ""
 +++
-Ample은 발전 중인 게임과 ASL 예선 및 온라인 대회의 정기적 참여로 현대 씬에서 경쟁하는 한국 저그입니다. 향상되는 메카닉과 매크로 관리에 대한 성장하는 이해와 함께 정석 저그 전략이 특징입니다. ZvT에서 가장 가능성을 보이며, 발전하는 뮤탈리스크 컨트롤과 중반 전환의 더 나은 타이밍을 선보입니다. 프로 서킷에 꾸준히 참여하여 게임에 대한 헌신과 한국 저그 인재의 깊이를 보여줍니다. 시즌을 거듭하며 배우고 적응하려는 의지로 예선 풀에서 존재감을 유지합니다.
+Ample(김태영)은 1992년생 대한민국의 테란 선수이다. 2010년 8월 KT 롤스터에 입단했으며, 이후 2011년 제4회 SonicTV BJ 스타리그 등 아마추어 리그에서 활동했다.

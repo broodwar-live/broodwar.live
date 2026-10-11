@@ -1,15 +1,30 @@
 +++
 title = "Hawk"
-description = "Hawk — 한국의 테란 선수."
+description = "Hawk(Devan Subramaniam) — 미국의 저그 선수."
 slug = "hawk"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
 image = "/images/players/hawk.jpeg"
-race = "terran"
-country = "KR"
-country_name = "한국"
-aliases = ["홍석현"]
+race = "zerg"
+country = "US"
+country_name = "미국"
+real_name = "Devan Subramaniam"
+birth_date = "1993-12-23"
+status = "active"
+team = "NaS"
+aliases = ["Hawk248"]
+liquipedia = "https://liquipedia.net/starcraft/Hawk"
+sources = ["https://liquipedia.net/starcraft/Hawk"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "inte Riktigt kloka"
+from = ""
+to = "2021-12-01"
+[[extra.teams]]
+name = "North American Squad"
+from = "2022-01-01"
+to = "present"
 +++
-Hawk는 현대 씬에서 온라인 대회와 ASL 예선에 활발히 참가하는 한국 테란입니다. 매치업에 따라 바이오와 메카닉 전략을 균형있게 구사하며 게임에 대한 적응력을 보여줍니다. TvT가 가장 완성도 높은 매치업으로, 탄탄한 시즈 플레이와 현명한 포지셔닝이 특징입니다. 아직 깊은 한국 테란 인재풀에서 자리를 잡아가는 중이지만, 강한 플레이의 섬광을 보여주며 성장 가능성을 시사합니다. 경쟁 서킷에 정기적으로 참여하며 실력을 유지하고 꾸준히 발전하고 있습니다.
+Hawk(Devan Subramaniam)는 1993년생 미국의 저그 플레이어다. 2021년 12월까지 inte Riktigt kloka 소속이었으며, 2022년 1월부터 North American Squad에서 활동하고 있다.

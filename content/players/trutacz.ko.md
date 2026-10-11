@@ -1,6 +1,6 @@
 +++
-title = "Trutacz"
-description = "Trutacz — 폴란드의 저그 선수."
+title = "trutaCz"
+description = "trutaCz(Michał Szarejko) — 폴란드의 저그 선수."
 slug = "trutacz"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,12 @@ image = "/images/players/trutacz.jpeg"
 race = "zerg"
 country = "PL"
 country_name = "폴란드"
-aliases = []
+real_name = "Michał Szarejko"
+birth_date = "1994-12-18"
+team = "iRk"
+aliases = ["LRM)trutaCz", "CzarnyKapelusz", "hiyo-_-"]
+liquipedia = "https://liquipedia.net/starcraft/TrutaCz"
+sources = ["https://liquipedia.net/starcraft/TrutaCz"]
+verified = "2026-10-11"
 +++
-Trutacz는 폴란드 저그이자 가장 강한 국제 저그 선수 중 한 명으로, BSL 다수 깊은 진출과 한국 외 최고의 테란도 도전할 수 있는 강한 ZvT로 유명합니다. 날카로운 뮤탈리스크 마이크로와 매크로 관리로 절제된 상대와의 긴 게임에서 경쟁합니다. Bonyth, Scan과 함께 국제 BW에서 폴란드의 지배적 위치를 대표하며, 꾸준한 BSL 성적은 폴란드 BW 인재의 깊이를 보여줍니다. ZvP도 국제 수준에서 경쟁력이 있어 어떤 대회에서도 올라운드 위협입니다.
+trutaCz(미하우 샤레이코)는 2005년 브루드워를 시작해 2009년 2:2 선수로 폴란드 국가대표팀에 합류한 폴란드의 저그 플레이어이다. 2012년 두 차례의 Netwars Cup에서 모두 우승했고, 2013년 1월 TeamLiquid Legacy Starleague 두 번째 예선에서 우승했다. 2018년에는 Bombastic StarLeague 시즌 5에 참가했다.

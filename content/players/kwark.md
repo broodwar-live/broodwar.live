@@ -1,15 +1,25 @@
 +++
-title = "Kwark"
-description = "Kwark — Terran player from Poland."
+title = "KwarK"
+description = "KwarK (David Milton) — Protoss player from United Kingdom."
 slug = "kwark"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/kwark.png"
-race = "terran"
-country = "PL"
-country_name = "Poland"
-aliases = []
+race = "protoss"
+country = "GB"
+country_name = "United Kingdom"
+real_name = "David Milton"
+status = "active"
+years_active = "2005–2006, 2019–present"
+team = "aeterna societas honoris"
+aliases = ["Kwark_uk"]
+liquipedia = "https://liquipedia.net/starcraft/KwarK"
+sources = ["https://liquipedia.net/starcraft/KwarK"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "aeterna societas honoris"
+from = "2020-01-01"
+to = "present"
 +++
-Kwark is a Polish Terran active in BSL tournaments and the broader European competitive scene. His mechanical play is reliable and he brings a disciplined approach to international competition, making him a consistent performer in European online leagues. Kwark's TvP is his most polished matchup, with timing attacks and siege pushes that can challenge top international Protoss players. He represents the strong Polish BW community alongside players like Scan and Bonyth, and his regular tournament participation helps maintain Poland's reputation as one of the strongest non-Korean BW nations. He continues to improve with each BSL season.
+KwarK (David Milton) is a British Protoss player who represented the UK at WCG in 2005 and 2006. He returned to Brood War around 2019 with the launch of BSL, joined the team ash in 2020, and reached the Ro16 of BSL 11 and BSL 14 PRO League. He also streams on Twitch.

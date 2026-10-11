@@ -1,15 +1,34 @@
 +++
 title = "free"
-description = "free — Zerg player from South Korea."
+description = "free (Yoon Yong Tae) — Protoss player from South Korea."
 slug = "free"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/free.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이경민", "Lee Kyung Min"]
+real_name = "윤용태"
+romanized_name = "Yoon Yong Tae"
+birth_date = "1988-07-14"
+years_active = "2005–2013"
+aliases = ["free[gm]", "pretty[gm]", "freey"]
+liquipedia = "https://liquipedia.net/starcraft/Free"
+soop = "dbsdydx"
+sources = ["https://liquipedia.net/starcraft/Free"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hanbit Stars"
+slug = "hanbit-stars"
+from = "2005-08-11"
+to = "2008-09"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2008-09"
+to = "2013-10-01"
 +++
-free is a legendary Zerg from the golden era who earned recognition for his strong ZvT play and consistent tournament performances. His approach to the matchup featured smart mutalisk harass, efficient drone management, and patient late-game play that could outlast even the most entrenched Terran positions. free reached deep rounds in both OSL and MSL tournaments multiple times, demonstrating the reliability that earned him Legend status. His macro-focused style served as a model for how Zerg could win through economic superiority rather than flashy aggression. Though retired from active competition, free is remembered as one of the dependable Zerg players who helped define the golden era's competitive standard.
+free (Yoon Yong Tae) is a South Korean Protoss player born in 1988. He played for Hanbit Stars from 2005 and stayed with the team when it became Woongjin Stars in 2008, serving as one of its main Proleague players until 2013.
+
+He reached four individual-league semifinals, including the Hana Daetoo MSL and the Korean Air OSL Season 2, losing each time to the eventual champion. After the KeSPA era he competed in amateur leagues on Afreeca, finishing fourth in the 11th SonicTV Starleague and qualifying for ASL Season 2.

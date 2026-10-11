@@ -1,15 +1,19 @@
 +++
 title = "Nyoken"
-description = "Nyoken — 미국의 테란 선수."
+description = "Nyoken(Daniel Eidson) — 미국의 테란 선수."
 slug = "nyoken"
 template = "players/player.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-image = "/images/players/nyoken.png"
 race = "terran"
 country = "US"
 country_name = "미국"
+real_name = "Daniel Eidson"
+status = "retired"
 aliases = []
+liquipedia = "https://liquipedia.net/starcraft/Nyoken"
+sources = ["https://liquipedia.net/starcraft/Nyoken"]
+verified = "2026-10-11"
 +++
-Nyoken은 북미 최고의 테란이자 서양 브루드 워 커뮤니티의 선도적 인물입니다. BSL과 국제 대회에서 활발히 활동하며, 강한 메카닉과 깊은 매치업 이해로 비한국 테란의 최고 수준을 꾸준히 보여줍니다. TvZ와 TvP 모두 국제 수준에서 경쟁력이 있으며, 진화하는 메타를 연구하고 적응하려는 의지로 유럽과 한국 선수가 지배하는 씬에서 존재감을 유지합니다. 경쟁 너머 콘텐츠 제작과 대회 참여를 통해 북미 BW 씬의 성장에 기여하고 있습니다.
+Nyoken(Daniel Eidson)은 미국의 테란 플레이어로, Game-i 서버 시절부터 활동했으며 2003년부터 매년 WCG 미국 결선에 진출했고 한 차례 월드 파이널 무대를 밟았다. 현재는 선수로 활동하지 않으며, BSL(Bombastic StarLeague) 시즌 5부터 해설자로 활동했다.

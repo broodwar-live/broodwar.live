@@ -1,15 +1,34 @@
 +++
 title = "Action"
-description = "Action — Terran player from South Korea."
+description = "Action (Kim Seong Dae) — Zerg player from South Korea."
 slug = "action"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
 image = "/images/players/action.png"
-race = "terran"
+race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["정명근"]
+real_name = "김성대"
+romanized_name = "Kim Seong Dae"
+birth_date = "1992-04-23"
+status = "retired"
+years_active = "2008–2015"
+aliases = ["NsP_Action", "Guldo"]
+liquipedia = "https://liquipedia.net/starcraft/Action"
+soop = "tjdeosks"
+sources = ["https://liquipedia.net/starcraft/Action"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = "2008-03-05"
+to = "2010-10"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2010-10"
+to = "2015-04-29"
 +++
-Action is a competitive Terran who has been a regular presence in ASL qualifiers and online Korean tournaments throughout the modern era. His playstyle is built on solid fundamentals and reliable mechanics, with a particular emphasis on safe macro openings that allow him to reach the mid-game in strong positions. While he has yet to break through to the main ASL bracket consistently, his persistence and steady improvement reflect the depth of talent in the Korean Terran scene. Action's TvZ features disciplined siege tank play and careful expansion timing, making him a difficult opponent for Zerg players who rely on early aggression.
+Action (Kim Seong Dae) is a South Korean Zerg player who began his career with eSTRO in 2008. After eSTRO disbanded in 2010, he was drafted by KT Rolster, where he remained through the StarCraft II transition until retiring in 2015. His teammates nicknamed him "The Terminator".

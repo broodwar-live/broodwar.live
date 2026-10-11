@@ -1,15 +1,27 @@
 +++
 title = "Rush"
-description = "Rush — Zerg player from South Korea."
+description = "Rush (Yoo Young Jin) — Terran player from South Korea."
 slug = "rush"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
 image = "/images/players/rush.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["서명수", "Seo Myung Soo"]
+real_name = "유영진"
+romanized_name = "Yoo Young Jin"
+birth_date = "1991-11-30"
+aliases = ["Rush[WHITE]", "Rush[kaL]"]
+liquipedia = "https://liquipedia.net/starcraft/Rush"
+soop = "yoo376"
+sources = ["https://liquipedia.net/starcraft/Rush"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2009"
+to = "2012"
 +++
-Rush is a Korean Zerg who has established himself as a strong competitor in the modern ASL scene with aggressive play that lives up to his name. His ZvT features fast-paced zergling and mutalisk harass that puts constant pressure on Terran opponents, and his willingness to commit to early aggression makes him particularly dangerous in the early and mid-game. Rush has made multiple ASL Ro16 and Ro8 appearances, demonstrating consistency against top competition. His ZvP is also solid, featuring lurker-heavy strategies that can control the flow of games. He is known for his entertaining playstyle and willingness to take risks that other players might avoid.
+Rush (Yoo Young Jin) is a South Korean Terran who played for CJ Entus from 2009 to 2012. After a period in StarCraft II, he returned to Brood War in mid-2015 and began streaming on Afreeca that September. He was runner-up in AfreecaTV StarCraft League 12 (2021) and ASL 14 (2022).

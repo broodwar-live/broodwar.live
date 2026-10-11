@@ -1,15 +1,32 @@
 +++
-title = "hero"
-description = "hero — Terran player from South Korea."
+title = "herO"
+description = "herO (Jo Il Jang) — Zerg player from South Korea."
 slug = "hero"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
 image = "/images/players/hero.png"
-race = "terran"
+race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["김태영", "Kim Tae Young"]
+real_name = "조일장"
+romanized_name = "Jo Il Jang"
+birth_date = "1990-06-20"
+status = "active"
+aliases = ["By.herO", "[NeOx]1102", "chobodari", "GOMSUJANG", "firepunchcolor", "GOM[WHITE]"]
+liquipedia = "https://liquipedia.net/starcraft/Hero"
+soop = "byhero"
+sources = ["https://liquipedia.net/starcraft/Hero"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2007-03-12"
+to = "2012-05-16"
+[[extra.teams]]
+name = "Team 8"
+from = "2012-05-16"
+to = "2012"
 +++
-hero is a veteran Terran whose competitive career spans both the golden era proleague scene and the modern ASL. His deep game knowledge and tactical versatility make him a difficult opponent to prepare for, as he draws from years of experience to find the right approach for each matchup. His TvT is considered one of the best in the current scene, with patient siege tank positioning and smart vulture play that controls the pace of mirror matches. hero has made multiple ASL Ro16 and Ro8 appearances, and his ability to produce clutch performances in elimination matches has kept him relevant among younger competitors. He continues to compete at a high level, representing the bridge between BW's golden era and its modern revival.
+herO (Jo Il Jang) is a South Korean Zerg who played for STX SouL from 2007 and moved to Team 8 in 2012. He first drew wide attention in the 2008–09 Batoo OSL, where he beat then top-ranked Bisu and reached the semifinals before losing to Jaedong. In the post-KeSPA era he reached the finals of AfreecaTV StarCraft League 4 in 2017 and ASL 17 in 2024, finishing as runner-up both times.

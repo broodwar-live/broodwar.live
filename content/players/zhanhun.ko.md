@@ -1,15 +1,27 @@
 +++
-title = "ZhanHun"
-description = "ZhanHun — 중국의 테란 선수."
+title = "Zhanhun"
+description = "Zhanhun(庞伟铸) — 중국의 프로토스 선수."
 slug = "zhanhun"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
 image = "/images/players/zhanhun.png"
-race = "terran"
+race = "protoss"
 country = "CN"
 country_name = "중국"
-aliases = ["战魂"]
+real_name = "庞伟铸"
+romanized_name = "Pang Weizhu"
+birth_date = "1992-09-26"
+status = "active"
+team = "SvS"
+aliases = ["Zhanhun，ZhanHun"]
+liquipedia = "https://liquipedia.net/starcraft/Zhanhun"
+sources = ["https://liquipedia.net/starcraft/Zhanhun"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SvS"
+from = "2019-05-01"
+to = "present"
 +++
-ZhanHun은 중국 최고의 테란이자 한국 외에서 성장하는 아시아 브루드 워 커뮤니티의 대표입니다. 국제 온라인 대회와 BSL 이벤트에서 활발히 활동하며, 글로벌 BW 씬에서 중국의 존재감을 확립하는 데 기여했습니다. 국제 선수 기준으로 강한 메카닉을 보유하고 있으며, 특히 시즈 기반 전략으로 유럽 저그 스페셜리스트들과 경쟁할 수 있는 TvZ에 적성이 있습니다. 지역 간 대회 참여로 중국 BW 커뮤니티와 더 넓은 국제 씬을 연결하며, 향상되는 성적은 미래에 중국 선수들이 더 두드러진 경쟁자가 될 가능성을 시사합니다.
+Zhanhun(팡웨이주, 庞伟铸)은 2013년 이후 중국 최고의 프로토스로 평가받는 중국의 프로토스 플레이어이다. 2024년 2월 ASL 17 예선에서 조 최종전까지 진출해, 당시 한국인이 아닌 선수의 ASL 예선 최고 성적을 기록했다. 2019년부터 SvS 팀 소속으로 활동하고 있다.

@@ -1,15 +1,31 @@
 +++
-title = "UpMagic"
-description = "UpMagic — 한국의 테란 선수."
+title = "UpMaGiC"
+description = "UpMaGiC(신희승) — 한국의 테란 선수."
 slug = "upmagic"
 template = "players/player.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-image = "/images/players/upmagic.png"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["방태수", "Bang Tae Soo"]
+real_name = "신희승"
+romanized_name = "Shin Hee Sung"
+birth_date = "1989-03-10"
+status = "retired"
+years_active = "2006–2010"
+aliases = ["Sea.Up", "Hee[White]"]
+liquipedia = "https://liquipedia.net/starcraft/UpMaGiC"
+sources = ["https://liquipedia.net/starcraft/UpMaGiC"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "eNature Top Team"
+from = "2006-03-21"
+to = "2006-10"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = "2006-10"
+to = "2010-06-09"
 +++
-UpMagic은 황금기에서 가장 창의적이고 예측 불가능한 테란 선수 중 한 명으로, 정석을 거부하는 독특한 전략으로 유명했습니다. 비정석 빌드를 실험하려는 의지로 팬들의 사랑을 받았으며 — 그가 어떤 전략을 들고 나올지 아무도 알 수 없었습니다. 다수의 OSL과 MSL 시즌에 참가했으며, 순수한 전술적 독창성으로 상위 랭킹 선수들을 상대로 놀라운 이변을 만들어내기도 했습니다. 그의 TvP는 창의적인 벌처 견제와 예상 밖의 타이밍 공격으로 잘 준비된 프로토스도 무너뜨릴 수 있었습니다. 일관성 부족이 절대적 정상에 오르는 것을 막았지만, 그의 재미있는 플레이 스타일은 모든 경기를 볼 만한 가치가 있게 만들었습니다. 황금기를 매력적으로 만든 혁신의 정신을 대표하는 선수입니다.
+UpMaGiC(신희승)은 이네이쳐 탑팀을 거쳐 eSTRO에서 에이스로 활약한 대한민국의 전 테란 프로게이머이다. "사우스포"라는 별명으로 불렸으며, 독창적인 전략과 테란 대 저그전 메카닉 운영을 정착시킨 선수로 평가받는다. 2010년 승부조작 사건에 연루되어 KeSPA로부터 영구 제명되었다.

@@ -1,6 +1,6 @@
 +++
-title = "Beast"
-description = "Beast — 한국의 저그 선수."
+title = "beast"
+description = "beast(유진우) — 한국의 저그 선수."
 slug = "beast"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,23 @@ image = "/images/players/beast.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["이대현"]
+real_name = "유진우"
+romanized_name = "Yoo Jin Woo"
+birth_date = "1994-12-06"
+team = "SouLGaming"
+aliases = ["Etro_hyemi", "jatgirl", "tamdwan", "JAT!"]
+liquipedia = "https://liquipedia.net/starcraft/Beast"
+soop = "rjsrkdgkwk12"
+sources = ["https://liquipedia.net/starcraft/Beast"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hwaseung OZ"
+slug = "hwaseung-oz"
+from = "2011-03-28"
+to = "2011"
+[[extra.teams]]
+name = "Team 8"
+from = "2011"
+to = "2011"
 +++
-Beast는 공격적 성향과 초반 압박에 집중하며 현대 씬에서 활동하는 한국 저그입니다. ZvT에서 빠른 저글링 러시와 뮤탈리스크 견제로 오프닝부터 테란에게 압박을 가합니다. ASL 예선과 한국 온라인 대회에서 경쟁하며, 리스크를 감수하는 의지로 보수적 선수 상대 이변의 가능성이 있습니다. 초반 교전에서의 마이크로가 날카롭지만 후반 플레이는 아직 발전 중입니다. 현대 한국 공격적 저그의 학파를 대표합니다.
+beast(유진우, 별칭 "jatgirl")는 한국의 저그 선수로, 2011년 화승 OZ와 Team 8에 소속되었던 전 프로게이머이다. 2014년 말에서 2015년 초 무렵 군 복무를 시작했다. 전역 후 2017년 스타크래프트: 리마스터 비공개 출시 직후 한국 래더에서 1위에 올랐다.

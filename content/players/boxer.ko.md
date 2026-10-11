@@ -1,6 +1,6 @@
 +++
-title = "Boxer"
-description = "Boxer — 한국의 테란 선수."
+title = "BoxeR"
+description = "BoxeR(임요환) — 한국의 테란 선수."
 slug = "boxer"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,44 @@ image = "/images/players/boxer.jpg"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["임요환", "Lim Yo Hwan"]
+real_name = "임요환"
+romanized_name = "Lim Yo Hwan"
+birth_date = "1980-09-04"
+status = "retired"
+years_active = "2001–2010"
+team = "SK Telecom T1"
+aliases = ["SlayerS_`BoxeR`", "gonia119", "Manofoneway", "SlayerSBoxeR"]
+liquipedia = "https://liquipedia.net/starcraft/BoxeR"
+sources = ["https://liquipedia.net/starcraft/BoxeR"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Ideal Space"
+from = "2001-01"
+to = "2002-10"
+[[extra.teams]]
+name = "Orion"
+from = "2002-10"
+to = "2003-12"
+[[extra.teams]]
+name = "4 Union"
+from = "2003-12"
+to = "2004-04"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2004-04"
+to = "2006-12"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2006-12"
+to = "2008-12"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2008-12"
+to = "2010"
 +++
-"황제"로 불리는 Boxer는 프로 스타크래프트의 창시자이자 브루드 워를 한국의 문화 현상으로 확립한 가장 중요한 인물입니다. 최초의 온게임넷 스타리그 2연패를 달성하며 2000년대 초반 한국 e스포츠의 폭발적 성장기에 그 얼굴이 되었습니다. 혁신적인 전술과 쇼맨십이 그의 플레이를 정의했으며, 드랍십의 창의적 활용과 파격적인 병력 조합 등 수많은 테란 전략을 개척했습니다. 개인 타이틀 외에도 전설적인 SK텔레콤 T1 왕조를 건설했습니다. 오래전 경쟁 무대에서 은퇴했지만, 게임에 미친 영향은 측정할 수 없을 만큼 큽니다. e스포츠가 진정한 셀러브리티를 만들 수 있음을 증명하며 이후 모든 프로게이머의 길을 열었습니다.
+BoxeR(임요환)는 "황제"라는 별명으로 널리 알려진 대한민국의 테란 프로게이머로, 초창기 프로 스타크래프트를 대표하는 인물 중 하나이다. 2001년 한빛소프트 스타리그와 코카콜라 스타리그에서 우승했고, 2002년 KPGA 1차 투어에서도 우승했다. 스타리그 준우승도 네 차례(2001, 2002, 2004, 2005) 기록했으며, WCG에서 두 번 우승했다.
+
+IS(Ideal Space), 오리온, SK텔레콤 T1, 공군 ACE 등에서 활동했고, 이후 스타크래프트 II에서 SK텔레콤 T1 감독을 맡았다. 2012년 한국 e스포츠 명예의 전당에 헌액되었다.

@@ -1,6 +1,6 @@
 +++
 title = "Flash"
-description = "Flash — 한국의 테란 선수."
+description = "Flash(이영호) — 한국의 테란 선수."
 slug = "flash"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,30 @@ image = "/images/players/flash.png"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["이영호", "Lee Young Ho"]
+real_name = "이영호"
+romanized_name = "Lee Young Ho"
+birth_date = "1992-07-05"
+status = "active"
+years_active = "2007–2015, 2016–present"
+aliases = ["By.Flash", "FlaShWkdWkdman"]
+liquipedia = "https://liquipedia.net/starcraft/Flash"
+soop = "byflash"
+sources = ["https://liquipedia.net/starcraft/Flash"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pantech EX"
+from = "2007"
+to = "2007-03"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2007-03"
+to = "2009-08"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08"
+to = "2015-12-01"
 +++
-브루드 워 역대 최고의 선수로 널리 인정받는 Flash는 15년 이상 프로 스타크래프트를 지배해 왔습니다. "BW의 신"이라 불리며, KeSPA 시절 다수의 OSL·MSL 우승을 차지했으며, 현대 ASL에서도 우승을 이어가고 있습니다. 완벽한 매크로, 독보적인 멀티태스킹, 압도적인 메카닉 플레이를 기반으로 최고 수준의 TvZ를 재정의했습니다. 전성기 시절 그의 기계적 정밀함과 전략적 깊이는 사실상 무적이었으며, Jaedong과의 전설적인 라이벌전은 e스포츠 역사상 가장 상징적인 경기들을 만들어냈습니다. 현재도 ASL에서 활발히 활동하며 스트리밍을 통해 여전히 변함없는 실력을 보여주고 있습니다.
+Flash(이영호)는 2007년 데뷔해 KTF 매직엔스와 KT 롤스터에서 활동한 대한민국의 테란 프로게이머로, 스타크래프트 II 시기에도 2015년까지 KT에 몸담았다. 15세에 2008 박카스 스타리그에서 우승하며 최연소 스타리그 우승자가 되었고, 이후 2009 EVER 스타리그, 2010 대한항공 스타리그 시즌 2, 그리고 하나대투증권·빅파일·ABC마트 MSL에서 우승했다. 2012년 한국 e스포츠 명예의 전당에 헌액되었다.
+
+2016년 아프리카TV를 통해 브루드워로 복귀한 뒤 ASL 시즌 2, 3, 4, 8에서 우승했고, ASL 6(2018)과 ASL 21(2026)에서 준우승했다.

@@ -1,6 +1,6 @@
 +++
 title = "Sea"
-description = "Sea — 한국의 테란 선수."
+description = "Sea(염보성) — 한국의 테란 선수."
 slug = "sea"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,25 @@ image = "/images/players/sea.jpg"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["오영종", "Oh Young Jong"]
+real_name = "염보성"
+romanized_name = "Yum Bo Sung"
+birth_date = "1990-03-29"
+aliases = ["Sea[Shield]", "jat.sea", "noinsung"]
+liquipedia = "https://liquipedia.net/starcraft/Sea"
+soop = "yuambo"
+sources = ["https://liquipedia.net/starcraft/Sea"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2005-03-24"
+to = "2006-04"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-04"
+to = "2011-11-04"
+[[extra.teams]]
+name = "Team 8"
+from = "2011-11-04"
+to = "2012-10-04"
 +++
-Sea는 황금기부터 현대 ASL까지 아우르는 브루드 워에서 가장 오래 활약하는 선수 중 한 명입니다. 공격적이고 창의적인 스타일로 유명하며, 수많은 비정석 빌드를 개척하여 상대를 혼란에 빠뜨리고 팬들을 대담함으로 즐겁게 했습니다. 특히 그의 TvT는 과감한 프록시 전략과 파격적인 오프닝으로 미러 매치를 볼거리로 만들었습니다. 전성기에 OSL과 MSL 깊은 라운드에 진출했으며, 현대 ASL 예선에서도 활발히 활동하며 놀라운 선수 생명력을 보여주고 있습니다. 가장 인기 있는 BW 스트리머 중 한 명으로, 재미있는 성격과 비주류 전략 실험을 즐기는 팬들이 많습니다.
+Sea(염보성)는 한국의 테란 선수로, 2005년부터 2012년까지 Pirates of Space, MBCGame HERO, Team 8에서 활동했다. 16세에 2006 신한은행 OSL 시즌 1 본선에 진출했고, KTF 선수들을 연달아 꺾어 'KTF 킬러'라는 별명을 얻었다. MBCGame HERO의 프로리그 성공에 크게 기여했으며, 2006년 그랜드 파이널 SK텔레콤 T1전에서 마지막 세트를 따냈다. KeSPA 이후 시기에는 2016년 아프리카TV 스타리그 2에서 준우승했다.

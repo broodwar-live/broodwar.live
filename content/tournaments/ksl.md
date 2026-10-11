@@ -16,7 +16,9 @@ season = 4
 year = 2019
 status = "completed"
 winner = "Light"
+winner_slug = "light"
 runner_up = "Rain"
+runner_up_slug = "rain"
 score = "4–2"
 prize_pool = ""
 [[extra.seasons]]
@@ -24,7 +26,9 @@ season = 3
 year = 2019
 status = "completed"
 winner = "Rain"
+winner_slug = "rain"
 runner_up = "Mini"
+runner_up_slug = "mini"
 score = "4–1"
 prize_pool = ""
 [[extra.seasons]]
@@ -32,7 +36,9 @@ season = 2
 year = 2018
 status = "completed"
 winner = "Soulkey"
+winner_slug = "soulkey"
 runner_up = "Sharp"
+runner_up_slug = "sharp"
 score = "4–1"
 prize_pool = ""
 [[extra.seasons]]
@@ -40,7 +46,9 @@ season = 1
 year = 2018
 status = "completed"
 winner = "Last"
+winner_slug = "last"
 runner_up = "Jaedong"
+runner_up_slug = "jaedong"
 score = "4–0"
 prize_pool = ""
 +++

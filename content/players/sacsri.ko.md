@@ -1,15 +1,33 @@
 +++
 title = "Sacsri"
-description = "Sacsri — 한국의 저그 선수."
+description = "Sacsri(이예훈) — 한국의 저그 선수."
 slug = "sacsri"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/sacsri.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["한주원", "Han Joo Won"]
+real_name = "이예훈"
+romanized_name = "Lee Yah Hoon"
+birth_date = "1992-02-18"
+status = "retired"
+years_active = "2008–2014"
+aliases = ["Sea.Sacsri", "YeHoon"]
+liquipedia = "https://liquipedia.net/starcraft/Sacsri"
+soop = "gnsl418"
+sources = ["https://liquipedia.net/starcraft/Sacsri"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "WeMade FOX"
+slug = "wemade-fox"
+from = "2008-08-13"
+to = "2011-11-04"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2011-11-04"
+to = "2014-04-10"
 +++
-Sacsri는 효율적 매크로와 주요 매치업에서의 현명한 병력 관리에 집중하며 현대 프로 씬에서 활동하는 한국 저그입니다. ZvP에서 탄탄한 러커 포지셔닝과 강한 후반 기반을 구축하는 인내심 있는 경제 발전을, ZvT에서 발전하는 뮤탈리스크 컨트롤과 향상되는 견제 타이밍을 보여줍니다. ASL 예선과 한국 온라인 대회에서 경쟁하며 꾸준한 기본기로 강한 경쟁을 상대로 괜찮은 성적을 보여줍니다. 체계적인 게임 접근으로 안정적이고 꾸준한 선수입니다.
+Sacsri(이예훈)는 2008년부터 위메이드 FOX에서 활동하다 2011년 SK텔레콤 T1으로 이적해 2014년까지 활동한 대한민국의 저그 프로게이머이다.

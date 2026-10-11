@@ -1,6 +1,6 @@
 +++
 title = "Mong"
-description = "Mong — Terran player from South Korea."
+description = "Mong (Yoon Chan Hee) — Terran player from South Korea."
 slug = "mong"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,21 @@ image = "/images/players/mong.jpg"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["윤찬희"]
+real_name = "윤찬희"
+romanized_name = "Yoon Chan Hee"
+birth_date = "1992-05-17"
+years_active = "2010–2014"
+aliases = ["Mong[Name]", "Monster[WHITE]", "Ever)T(Gowoon", "Buffalo", "mstzmstz"]
+liquipedia = "https://liquipedia.net/starcraft/Mong"
+soop = "cksgmldbs"
+sources = ["https://liquipedia.net/starcraft/Mong"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2010-03-24"
+to = ""
 +++
-Mong is a veteran Terran who competed during the original proleague era and has remained active through the modern ASL scene. Known for solid mechanics and a dependable playstyle, he brings years of professional experience to every match. His TvZ is his strongest matchup, featuring disciplined mech play and careful expansion timing that frustrates aggressive Zerg players. Mong has been a familiar face in ASL qualifying rounds, occasionally advancing deep enough to face top-tier opponents. His longevity in the scene speaks to both his love of the game and his ability to adapt to the evolving meta, making him a respected figure among both veterans and newer competitors.
+Mong (Yoon Chan Hee) is a South Korean Terran player born in 1992 in Goyang. He joined CJ Entus in 2010.
+
+In April 2012 he won the Onse Telecom SonicTV BJ Starleague, his first major title, and he went on to compete in SonicTV Starleague events. He is a popular streamer on Afreeca, playing on the Fish server.

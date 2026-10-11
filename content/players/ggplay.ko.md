@@ -1,15 +1,40 @@
 +++
 title = "GGPlay"
-description = "GGPlay — 러시아의 프로토스 선수."
+description = "GGPlay(김준영) — 한국의 저그 선수."
 slug = "ggplay"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
 image = "/images/players/ggplay.jpg"
-race = "protoss"
-country = "RU"
-country_name = "러시아"
-aliases = []
+race = "zerg"
+country = "KR"
+country_name = "한국"
+real_name = "김준영"
+romanized_name = "Kim Joon Yung"
+birth_date = "1985-12-05"
+status = "retired"
+years_active = "2004–2009"
+aliases = ["GGPlay[GsP]", "SoL.TheBest", "SoL.Joon", "dNC.Joon", "NineteenNiety"]
+liquipedia = "https://liquipedia.net/starcraft/GGPlay"
+sources = ["https://liquipedia.net/starcraft/GGPlay"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hanbit Stars"
+slug = "hanbit-stars"
+from = "2004"
+to = "2008-03-10"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2008-03-10"
+to = "2008-10-29"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2008-10-29"
+to = "2009-08"
 +++
-GGPlay는 러시아 프로토스이자 러시아 BW 커뮤니티에서 가장 강한 선수 중 한 명으로, BSL 대회와 유럽 온라인 리그에서 활발히 활동합니다. 많은 동유럽 선수들이 선호하는 빠른 템포의 접근을 반영한 공격적인 게이트웨이 플레이와 타이밍 공격이 특징입니다. PvT가 시그니처 매치업으로, 상대를 당황시킬 수 있는 대담한 압박 빌드를 선보입니다. 국제 BW 씬에서 러시아의 성장하는 존재감을 대표하며, BSL 예선에서 탄탄한 성적을 거두어 유럽 커뮤니티에서 경쟁력 있는 세력으로 자리잡았습니다.
+GGPlay(김준영)는 1985년생 대한민국의 은퇴한 저그 선수이다. 한빛 스타즈에서 활동했고, 2008년 잠시 CJ 엔투스를 거쳐 2009년까지 웅진 스타즈에서 뛰었다.
+
+최고 성적은 2007년 다음 스타리그(OSL) 우승으로, 결승에서 Iris를 상대로 0:2에서 3:2 역전승을 거뒀다. 이후 2008 인크루트 OSL 4강에 올랐다. 손목터널증후군으로 인해 은퇴한 것으로 알려져 있다.

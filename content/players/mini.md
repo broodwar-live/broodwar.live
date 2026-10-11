@@ -1,6 +1,6 @@
 +++
 title = "Mini"
-description = "Mini — Protoss player from South Korea."
+description = "Mini (Byun Hyun Je) — Protoss player from South Korea."
 slug = "mini"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,20 @@ image = "/images/players/mini.jpg"
 race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["변현제", "Byun Hyun Je"]
+real_name = "변현제"
+romanized_name = "Byun Hyun Je"
+birth_date = "1994-01-28"
+aliases = ["Ever)P(mini", "WGM.Sapa", "Moo.Sapa", "Mini1", "bye0128"]
+liquipedia = "https://liquipedia.net/starcraft/Mini"
+soop = "bye1013"
+sources = ["https://liquipedia.net/starcraft/Mini"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2010-03-23"
+to = "2013-08-31"
 +++
-Mini is one of the top Protoss players in the modern ASL scene, known for his aggressive style and exceptional micro control that make him a constant threat in any tournament bracket. His PvT is particularly feared, featuring bold zealot-archon pushes and precise storm placement that can dismantle even the most fortified Terran positions. Mini has reached multiple ASL semifinals and finals, establishing himself as a perennial contender for the championship. His willingness to take risks in high-pressure situations sets him apart from more conservative Protoss players, and his mechanical speed allows him to execute complex multi-pronged attacks that few opponents can handle. He continues to be one of the most exciting players to watch in competitive Brood War.
+Mini (Byun Hyun Je) is a South Korean Protoss player, born in 1994. He played for STX SouL from 2010 until retiring from StarCraft II in August 2013, serving mainly as a Proleague regular. After military service he returned to Brood War and Afreeca streaming in 2017.
+
+In the post-KeSPA era he won AfreecaTV StarCraft League Season 12 (2021) and was runner-up in ASL Seasons 7, 11 and 16 and in Korea StarCraft League Season 3.

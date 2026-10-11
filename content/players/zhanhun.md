@@ -1,15 +1,27 @@
 +++
-title = "ZhanHun"
-description = "ZhanHun — Terran player from China."
+title = "Zhanhun"
+description = "Zhanhun (Pang Weizhu) — Protoss player from China."
 slug = "zhanhun"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
 image = "/images/players/zhanhun.png"
-race = "terran"
+race = "protoss"
 country = "CN"
 country_name = "China"
-aliases = ["战魂"]
+real_name = "庞伟铸"
+romanized_name = "Pang Weizhu"
+birth_date = "1992-09-26"
+status = "active"
+team = "SvS"
+aliases = ["Zhanhun，ZhanHun"]
+liquipedia = "https://liquipedia.net/starcraft/Zhanhun"
+sources = ["https://liquipedia.net/starcraft/Zhanhun"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SvS"
+from = "2019-05-01"
+to = "present"
 +++
-ZhanHun is the top Chinese Terran and a representative of the growing Asian Brood War community outside Korea. Active in international online competitions and BSL events, he has helped establish China as an emerging presence in the global BW scene. His mechanical play is strong for an international player, with a particular aptitude for TvZ where his siege-based strategies can compete with European Zerg specialists. ZhanHun's participation in cross-regional tournaments helps connect the Chinese BW community with the broader international scene, and his improving results suggest the potential for Chinese players to become more prominent competitors in the future.
+Zhanhun (Pang Weizhu) is a Chinese Protoss player, regarded as the best Protoss in China since 2013. In February 2024 he reached the final round of an ASL 17 qualifier group, the best ASL qualifying result by a non-Korean player at the time. He has played for team SvS since 2019.

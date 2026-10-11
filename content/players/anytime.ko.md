@@ -1,15 +1,43 @@
 +++
 title = "Anytime"
-description = "Anytime — 한국의 테란 선수."
+description = "Anytime(오영종) — 한국의 프로토스 선수."
 slug = "anytime"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/anytime.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["김동현", "Kim Dong Hyun"]
+real_name = "오영종"
+romanized_name = "Oh Yeong Jong"
+birth_date = "1986-10-18"
+status = "retired"
+years_active = "2004–2011"
+aliases = ["Anytime..[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/Anytime"
+soop = "zeusboy2714"
+sources = ["https://liquipedia.net/starcraft/Anytime"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Plus"
+from = "2004"
+to = "2006-03-23"
+[[extra.teams]]
+name = "Lecaf OZ"
+from = "2006-03-23"
+to = "2008"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2008"
+to = "2010-10-30"
+[[extra.teams]]
+name = "Hwaseung OZ"
+slug = "hwaseung-oz"
+from = "2010-10-30"
+to = "2011-11-04"
 +++
-Anytime은 한국 프로 씬에서 활동하는 안정적인 테란으로, 균형 잡힌 매치업 지식과 꾸준한 메카닉을 모든 시리즈에 보여줍니다. 리스크를 최소화하면서 탄탄한 생산과 확장 타이밍을 유지하는 안전하고 정석적인 플레이를 강조합니다. 세 매치업 모두에서 극적인 약점 없이 고르게 경쟁하여 ASL 예선과 온라인 대회에서 믿을 수 있는 선수입니다. TvZ에서는 인내심 있는 메카닉 전환과 절제된 공격으로 저그의 과도한 욕심을 견제합니다. 아직 ASL 본선 단골은 아니지만, 예선에서의 꾸준한 출전은 경쟁 플레이에 대한 헌신과 지속적 성장 가능성을 보여줍니다.
+Anytime(오영종)은 1986년생 대한민국의 전 프로게이머로, 프로토스를 플레이했다. 2004년부터 2011년까지 Plus, Lecaf OZ, 공군 ACE, 화승 OZ에서 활동했다. 2005년 So1 OSL 결승에서 BoxeR를 3대2로 꺾고 우승했으며, 2006년 신한은행 스타리그 시즌 2에서도 결승에 올라 NaDa에게 패해 준우승을 차지했다.
+
+다크 템플러 운영으로 이름을 알려 '사신토스'라는 별명을 얻었으며, 2012년 e스포츠 명예의 전당에 헌액되었다.

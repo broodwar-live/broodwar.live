@@ -12,8 +12,11 @@
 {
   "@type": "Person",
   "name": {{ page.title | json_encode | safe }},
+  {% if page.extra.real_name is defined %}"alternateName": {{ page.extra.real_name | json_encode | safe }},{% endif %}
+  {% if page.extra.birth_date is defined %}"birthDate": "{{ page.extra.birth_date }}",{% endif %}
   "description": {{ page.description | default(value='') | json_encode | safe }},
   "url": "{{ current_url | safe }}",
+  {% if page.extra.liquipedia is defined %}"sameAs": [{{ page.extra.liquipedia | json_encode | safe }}],{% endif %}
   "nationality": {{ page.extra.country_name | json_encode | safe }}
 }
 {% endblock %}
@@ -22,6 +25,22 @@
 {% set t = config.extra.i18n[lang] %}
 {% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
+{% set race_class = "text-base-content" %}{% set race_bg = "bg-base-content" %}{% set race_name = e.race | title %}{% set race_letter = "?" %}
+{% if e.race == "terran" %}{% set race_class = "text-race-terran" %}{% set race_bg = "bg-race-terran" %}{% set race_name = t.player_race_terran %}{% set race_letter = "T" %}
+{% elif e.race == "protoss" %}{% set race_class = "text-race-protoss" %}{% set race_bg = "bg-race-protoss" %}{% set race_name = t.player_race_protoss %}{% set race_letter = "P" %}
+{% elif e.race == "zerg" %}{% set race_class = "text-race-zerg" %}{% set race_bg = "bg-race-zerg" %}{% set race_name = t.player_race_zerg %}{% set race_letter = "Z" %}{% endif %}
+{% set status = "" %}{% if e.status is defined %}{% set status = e.status %}{% endif %}
+{% set cc = e.country %}
+
+{#- Titles come from the tournament series pages (single source of truth): every season whose
+    winner_slug / runner_up_slug equals this page's slug. -#}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+{% set_global n_titles = 0 %}{% set_global n_runner = 0 %}
+{% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}
+  {% if s.winner_slug is defined and s.winner_slug == page.slug %}{% set_global n_titles = n_titles + 1 %}{% endif %}
+  {% if s.runner_up_slug is defined and s.runner_up_slug == page.slug %}{% set_global n_runner = n_runner + 1 %}{% endif %}
+{% endfor %}{% endif %}{% endfor %}
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
     <a href="{{ lp }}/players/" class="hover:text-base-content/60">{{ t.players }}</a>
@@ -30,45 +49,125 @@
   </nav>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    <div class="lg:col-span-2">
-      <div class="flex items-center gap-4 mb-2">
-        <h1 class="text-2xl font-display">{{ page.title }}</h1>
-      </div>
-      <div class="flex items-center gap-3 mt-1">
-        <span class="text-[10px] font-bold badge-race
-          {% if e.race == 'terran' %}text-race-terran
-          {% elif e.race == 'protoss' %}text-race-protoss
-          {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">
-          {{ e.race | title }}
-        </span>
-        <span class="text-xs text-base-content/40">{{ e.country_name }}</span>
-      </div>
+    <div class="lg:col-span-2 min-w-0">
+      <header class="mb-6">
+        <div class="flex flex-wrap items-center gap-3">
+          <h1 class="text-3xl font-display">{{ page.title }}</h1>
+          {% if status == "active" %}
+          <span class="text-[10px] px-2 py-0.5 rounded bg-success/10 text-success font-semibold uppercase tracking-wider">{{ t.player_status_active }}</span>
+          {% elif status == "retired" %}
+          <span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/40 font-semibold uppercase tracking-wider">{{ t.player_status_retired }}</span>
+          {% endif %}
+        </div>
+        {% if e.real_name is defined %}
+        <p class="mt-1 text-sm text-base-content/60">{{ e.real_name }}{% if e.romanized_name is defined and e.romanized_name != e.real_name %} <span class="text-base-content/35">· {{ e.romanized_name }}</span>{% endif %}</p>
+        {% endif %}
+        <div class="flex flex-wrap items-center gap-3 mt-3 text-xs">
+          <span class="inline-flex items-center gap-1.5 font-semibold {{ race_class }}"><span class="{{ race_bg }} w-5 h-5 rounded flex items-center justify-center text-[10px] font-black text-base-100" aria-hidden="true">{{ race_letter }}</span>{{ race_name }}</span>
+          <span class="text-base-content/50"><span aria-hidden="true">{% include "players/flag.html" %}</span> {{ e.country_name }}</span>
+          {% if n_titles > 0 %}<span class="text-warning/80 font-semibold">{{ n_titles }}× {{ t.player_champion }}</span>{% endif %}
+        </div>
+      </header>
 
-      <div class="mt-6 prose prose-invert max-w-none">
+      <div class="prose prose-invert max-w-none">
         {{ page.content | safe }}
       </div>
+
+      {% if n_titles > 0 or n_runner > 0 %}
+      <section class="mt-10" aria-labelledby="player-titles">
+        <h2 id="player-titles" class="text-lg font-semibold mb-1">{{ t.player_titles }}</h2>
+        <p class="text-xs text-base-content/35 mb-4">{{ t.player_titles_note }}</p>
+        <div class="overflow-x-auto">
+          <table class="table table-sm w-full">
+            <thead>
+              <tr class="text-xs text-base-content/40">
+                <th>{{ t.player_result }}</th>
+                <th>{{ t.tournaments }}</th>
+                <th>{{ t.player_year }}</th>
+                <th>{{ t.player_final }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for role in ["winner", "runner_up"] %}
+              {% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}
+              {% set_global hit = false %}{% set_global opp = "" %}{% set_global opp_slug = "" %}
+              {% if role == "winner" and s.winner_slug is defined and s.winner_slug == page.slug %}
+                {% set_global hit = true %}{% set_global opp = s.runner_up %}{% if s.runner_up_slug is defined %}{% set_global opp_slug = s.runner_up_slug %}{% endif %}
+              {% elif role == "runner_up" and s.runner_up_slug is defined and s.runner_up_slug == page.slug %}
+                {% set_global hit = true %}{% set_global opp = s.winner %}{% if s.winner_slug is defined %}{% set_global opp_slug = s.winner_slug %}{% endif %}
+              {% endif %}
+              {% if hit %}
+              {#- Link to the season's own page when one exists, else to the series page. -#}
+              {% set_global season_url = tp.path %}
+              {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == tp.slug and sp.extra.season == s.season %}{% set_global season_url = sp.path %}{% endif %}{% endfor %}
+              <tr>
+                <td class="whitespace-nowrap">{% if role == "winner" %}<span class="text-warning font-semibold">&#9733; {{ t.player_champion }}</span>{% else %}<span class="text-base-content/50">{{ t.player_runner_up }}</span>{% endif %}</td>
+                <td class="text-sm"><a href="{{ season_url }}" class="hover:text-primary">{% if s.season is number %}{{ tp.extra.short_name }} {{ s.season }}{% else %}{{ s.season }}{% endif %}</a></td>
+                <td class="font-stats text-sm text-base-content/50">{{ s.year }}</td>
+                <td class="text-sm text-base-content/60">{% if opp %}{% if role == "winner" %}{{ t.player_vs }}{% else %}{{ t.player_lost_to }}{% endif %} {% if opp_slug %}<a href="{{ lp }}/players/{{ opp_slug }}/" class="hover:text-primary">{{ opp }}</a>{% else %}{{ opp }}{% endif %}{% if s.score is defined and s.score %} <span class="font-stats text-base-content/40">({{ s.score }})</span>{% endif %}{% endif %}</td>
+              </tr>
+              {% endif %}
+              {% endfor %}{% endif %}{% endfor %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if e.teams is defined and e.teams | length > 0 %}
+      <section class="mt-10" aria-labelledby="player-teams">
+        <h2 id="player-teams" class="text-lg font-semibold mb-4">{{ t.player_team_history }}</h2>
+        <ol class="space-y-2 text-sm">
+          {% for tm in e.teams %}
+          <li class="flex flex-wrap items-baseline gap-x-3">
+            <span class="font-stats text-xs text-base-content/40 w-40 shrink-0">{% if tm.from %}{{ tm.from }}{% else %}?{% endif %} – {% if tm.to == "present" %}{{ t.player_present }}{% elif tm.to %}{{ tm.to }}{% else %}?{% endif %}</span>
+            {% if tm.slug is defined %}<a href="{{ lp }}/wiki/teams/{{ tm.slug }}/" class="text-primary/80 hover:text-primary">{{ tm.name }}</a>{% else %}<span>{{ tm.name }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endif %}
     </div>
 
-    <div class="glass-card rounded-box p-5">
-      {% if e.image %}
-      <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-square object-cover rounded-lg mb-4" loading="lazy" />
-      {% endif %}
-      <h3 class="text-xs font-semibold text-base-content/50 uppercase tracking-wider mb-4">{% if lang == "ko" %}정보{% else %}Info{% endif %}</h3>
-      <dl class="space-y-3 text-sm">
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}종족{% else %}Race{% endif %}</dt><dd class="font-semibold
-          {% if e.race == 'terran' %}text-race-terran
-          {% elif e.race == 'protoss' %}text-race-protoss
-          {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">{{ e.race | title }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}국가{% else %}Country{% endif %}</dt><dd>{{ e.country_name }}</dd></div>
-      </dl>
-
-      {% if e.aliases | length > 0 %}
-      <div class="mt-5 pt-4 border-t border-primary/5">
-        <span class="text-xs text-base-content/30">{% if lang == "ko" %}별명{% else %}Also known as{% endif %}</span>
-        <p class="mt-1 text-sm text-base-content/50">{{ e.aliases | join(sep=", ") }}</p>
+    <aside class="glass-card rounded-box p-5 self-start" aria-label="{{ t.player_info }}">
+      {% if e.image is defined and e.image %}
+      <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-square object-cover object-top rounded-lg mb-4" loading="lazy" />
+      {% else %}
+      <div class="{{ race_bg }} w-full aspect-square rounded-lg mb-4 flex flex-col items-center justify-center text-base-100" aria-hidden="true">
+        <span class="text-6xl font-black">{{ race_letter }}</span>
+        <span class="mt-2 text-sm font-semibold opacity-70">{{ page.title }}</span>
       </div>
       {% endif %}
-    </div>
+      <h2 class="text-xs font-semibold text-base-content/50 uppercase tracking-wider mb-4">{{ t.player_info }}</h2>
+      <dl class="space-y-3 text-sm">
+        <div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_id }}</dt><dd class="font-semibold text-right">{{ page.title }}</dd></div>
+        {% if e.real_name is defined %}<div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_real_name }}</dt><dd class="text-right">{{ e.real_name }}{% if e.romanized_name is defined and e.romanized_name != e.real_name %}<br><span class="text-xs text-base-content/40">{{ e.romanized_name }}</span>{% endif %}</dd></div>{% endif %}
+        {% if e.birth_date is defined %}<div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_born }}</dt><dd class="font-stats text-right"><time datetime="{{ e.birth_date }}">{{ e.birth_date }}</time></dd></div>{% endif %}
+        <div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_race }}</dt><dd class="font-semibold {{ race_class }}">{{ race_name }}</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_country }}</dt><dd class="text-right"><span aria-hidden="true">{% include "players/flag.html" %}</span> {{ e.country_name }}</dd></div>
+        {% if e.team is defined %}<div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_team }}</dt><dd class="text-right">{{ e.team }}</dd></div>{% endif %}
+        {% if e.years_active is defined %}<div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_years_active }}</dt><dd class="font-stats text-right">{{ e.years_active }}</dd></div>{% endif %}
+        {% if status %}<div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_status }}</dt><dd class="text-right">{% if status == "active" %}{{ t.player_status_active }}{% else %}{{ t.player_status_retired }}{% endif %}</dd></div>{% endif %}
+        {% if n_titles > 0 or n_runner > 0 %}<div class="flex justify-between gap-4"><dt class="text-base-content/40 shrink-0">{{ t.player_titles }}</dt><dd class="font-stats text-right"><a href="#player-titles" class="hover:text-primary">{{ n_titles }} / {{ n_runner }}</a></dd></div>{% endif %}
+      </dl>
+
+      {% if e.aliases is defined and e.aliases | length > 0 %}
+      <div class="mt-5 pt-4 border-t border-primary/5">
+        <span class="text-xs text-base-content/30">{{ t.player_alt_ids }}</span>
+        <p class="mt-1 text-sm text-base-content/50 break-words">{{ e.aliases | join(sep=", ") }}</p>
+      </div>
+      {% endif %}
+
+      <div class="mt-5 pt-4 border-t border-primary/5">
+        <span class="text-xs text-base-content/30">{{ t.player_links }}</span>
+        <ul class="mt-2 space-y-1.5 text-sm">
+          {% if e.liquipedia is defined %}<li><a href="{{ e.liquipedia }}" target="_blank" rel="noopener" class="text-primary/80 hover:text-primary">Liquipedia &#8599;</a></li>{% endif %}
+          {% if e.soop is defined %}<li><a href="https://www.sooplive.co.kr/station/{{ e.soop }}" target="_blank" rel="noopener nofollow" class="text-primary/80 hover:text-primary">SOOP ({{ e.soop }}) &#8599;</a></li>{% endif %}
+          <li><a href="{{ config.extra.github_content_base }}/{{ page.relative_path }}" target="_blank" rel="noopener" class="text-base-content/40 hover:text-base-content/70">{{ t.edit_on_github }}</a></li>
+        </ul>
+      </div>
+    </aside>
   </div>
 
   {% include "partials/provenance.html" %}

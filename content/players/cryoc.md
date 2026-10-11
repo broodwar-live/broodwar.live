@@ -1,15 +1,19 @@
 +++
 title = "Cryoc"
-description = "Cryoc — Protoss player from France."
+description = "Cryoc (Robert Kostack) — Terran player from Germany."
 slug = "cryoc"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
-image = "/images/players/cryoc.png"
-race = "protoss"
-country = "FR"
-country_name = "France"
-aliases = []
+race = "terran"
+country = "DE"
+country_name = "Germany"
+real_name = "Robert Kostack"
+team = "iFU"
+aliases = ["iFU.Cryoc"]
+liquipedia = "https://liquipedia.net/starcraft/Cryoc"
+sources = ["https://liquipedia.net/starcraft/Cryoc"]
+verified = "2026-10-11"
 +++
-Cryoc is a French Protoss competing in the European BW scene through BSL qualifying rounds and regional online tournaments. He represents the French BW community alongside Tempest, contributing to France's growing presence in international competition. His playstyle features standard Protoss fundamentals with a developing understanding of matchup dynamics, and his PvZ shows the most improvement in recent seasons. Cryoc's regular participation in European events demonstrates the passion of the French community for competitive Brood War and helps sustain the scene's diversity.
+Cryoc (Robert Kostack) is a German Terran player who emerged in the foreign scene in late 2011. He represented Germany in Altitude Nation Wars and Western Europe in SBWI Nation Wars, and by 2013 was counted among the top foreign Terrans. In late 2013 and 2014 he took part in the German King of the Hill series, defending his title twice in a row.

@@ -1,6 +1,6 @@
 +++
 title = "Rain"
-description = "Rain — 한국의 프로토스 선수."
+description = "Rain(정윤종) — 한국의 프로토스 선수."
 slug = "rain"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,25 @@ image = "/images/players/rain.jpg"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["정윤종", "Jung Yoon Jong"]
+real_name = "정윤종"
+romanized_name = "Jung Yoon Jong"
+birth_date = "1992-08-14"
+years_active = "2009–2014, 2016–present"
+aliases = ["By.Sun", "By.Rain"]
+liquipedia = "https://liquipedia.net/starcraft/Rain"
+soop = "ioioiobb"
+sources = ["https://liquipedia.net/starcraft/Rain"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "MBCGame Hero"
+from = "2009-03-24"
+to = "2010-10-01"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2010-10-01"
+to = "2014-09-30"
 +++
-Rain은 현대 프로토스를 대표하는 선수 중 한 명입니다. 정밀한 스톰 드롭, 공격적인 게이트웨이 압박, 탈락전에서의 클러치 플레이가 그의 시그니처 스타일로, 빅 매치 플레이어라는 명성을 얻었습니다. 상대 전략을 읽고 시리즈 중간에 조정하는 능력은 현역 프로토스 중 타의 추종을 불허합니다. 개인적 탁월함을 넘어, 수십 시즌의 ASL에 걸친 지속적 우수성은 어떤 시대의 선수도 달성하기 어려운 일관성을 보여줍니다. 현대 프로토스 플레이의 금본위제로 남아 있습니다.
+Rain(정윤종)은 By.Sun이라는 아이디로도 알려진 대한민국의 프로토스 프로게이머로, 2009년 MBCgame HERO에 지명된 뒤 2010년 SK텔레콤 T1으로 이적했다. 10–11 프로리그 신인상을 받았고 STX 마스터즈 결승에서 화승 OZ를 상대로 올킬을 기록했으며, 이후 SKT와 함께 스타크래프트 II로 전향했다.
+
+2016년 아프리카TV 방송과 함께 브루드워로 복귀했다. ASL 시즌 5(2018)와 KSL 시즌 3(2019)에서 우승했고, KSL 시즌 4(2019)와 ASL 시즌 13(2022)에서 준우승했다.

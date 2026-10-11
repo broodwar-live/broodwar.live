@@ -1,15 +1,25 @@
 +++
-title = "Kwark"
-description = "Kwark — 폴란드의 테란 선수."
+title = "KwarK"
+description = "KwarK(David Milton) — 영국의 프로토스 선수."
 slug = "kwark"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/kwark.png"
-race = "terran"
-country = "PL"
-country_name = "폴란드"
-aliases = []
+race = "protoss"
+country = "GB"
+country_name = "영국"
+real_name = "David Milton"
+status = "active"
+years_active = "2005–2006, 2019–present"
+team = "aeterna societas honoris"
+aliases = ["Kwark_uk"]
+liquipedia = "https://liquipedia.net/starcraft/KwarK"
+sources = ["https://liquipedia.net/starcraft/KwarK"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "aeterna societas honoris"
+from = "2020-01-01"
+to = "present"
 +++
-Kwark는 BSL 대회와 유럽 프로 씬에서 활발히 활동하는 폴란드 테란입니다. 안정적인 메카닉과 절제된 국제 대회 접근으로 유럽 온라인 리그에서 꾸준한 성적을 보여줍니다. TvP가 가장 완성도 높은 매치업으로, 타이밍 공격과 시즈 푸시로 최고의 국제 프로토스 선수들에게 도전할 수 있습니다. Scan, Bonyth 같은 선수들과 함께 강한 폴란드 BW 커뮤니티를 대표하며, 정기적인 대회 참여로 비한국 BW 최강국 중 하나로서의 폴란드의 명성을 유지하는 데 기여합니다. BSL 시즌마다 꾸준히 성장하고 있습니다.
+KwarK(데이비드 밀턴)는 2005년과 2006년 WCG 영국 대표로 출전한 영국의 프로토스 플레이어이다. 2019년경 BSL 출범과 함께 브루드워에 복귀했고, 2020년 ash 팀에 합류했으며 BSL 11과 BSL 14 PRO 리그에서 16강에 올랐다. 트위치에서 방송도 하고 있다.

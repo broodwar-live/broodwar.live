@@ -1,6 +1,6 @@
 +++
 title = "BarrackS"
-description = "BarrackS — 한국의 테란 선수."
+description = "BarrackS(황병영) — 한국의 테란 선수."
 slug = "barracks-player"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,25 @@ image = "/images/players/barracks.png"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["이원혁", "Lee Won Hyuk"]
+real_name = "황병영"
+romanized_name = "Hwang Byung Yung"
+birth_date = "1991-07-24"
+status = "retired"
+years_active = "2007–2013"
+team = "StarCastTV Stars"
+aliases = ["By.BarrackS", "By", "S-Teacher", "Barracktube", "barrac"]
+liquipedia = "https://liquipedia.net/starcraft/BarrackS"
+soop = "hby0724"
+sources = ["https://liquipedia.net/starcraft/BarrackS"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2007-08-08"
+to = "2009-08-25"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08-25"
+to = "2013-12-23"
 +++
-BarrackS는 현대 ASL 씬에서 빠르게 강력한 경쟁자로 자리잡은 떠오르는 테란 스타입니다. 빠른 템포의 마린-메딕 푸시와 멀티 드롭 전략으로 초반부터 상대에게 막대한 압박을 가하는 공격적인 바이오 플레이가 특징입니다. 특히 TvZ가 인상적으로, 저그가 후반 경제를 확립하기 전의 좁은 타이밍을 파고드는 공격을 선보입니다. ASL 예선과 본선에서 꾸준히 깊이 진출하며 상승세에 있음을 보여주고 있습니다. 빠른 메카닉 스피드와 치열한 마이크로 전투를 마다하지 않는 적극성으로 시청자에게는 재미를, 상대에게는 부담을 주는 선수입니다.
+BarrackS(황병영)는 1991년생 대한민국의 테란 프로게이머로, 2007년부터 2013년까지 KTF 매직엔스와 그 후신인 KT 롤스터에서 활동했다. 개인리그에서는 곰TV 클래식 시리즈와 2009 EVER OSL에 출전했으며, OSL에서는 36강에서 JangBi에게 패해 탈락했다. 이후 KT 롤스터 소속으로 스타크래프트 II에서도 활동했다.

@@ -1,6 +1,6 @@
 +++
 title = "g0rynich"
-description = "g0rynich — Zerg player from Russia."
+description = "g0rynich (Alexander Davydov) — Zerg player from Russia."
 slug = "g0rynich"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,26 @@ image = "/images/players/g0rynich.jpg"
 race = "zerg"
 country = "RU"
 country_name = "Russia"
-aliases = []
+real_name = "Александр Давыдов"
+romanized_name = "Alexander Davydov"
+birth_date = "1986-03-05"
+status = "active"
+team = "SouLGaming"
+aliases = ["3D.Notforu", "SouL)Z(g0rynich"]
+liquipedia = "https://liquipedia.net/starcraft/G0rynich"
+sources = ["https://liquipedia.net/starcraft/G0rynich"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Shock Squadron"
+from = "2005"
+to = "2007-02-10"
+[[extra.teams]]
+name = "3D Clan"
+from = "2007-02-10"
+to = "2017-11-02"
+[[extra.teams]]
+name = "SouLGaming"
+from = "2017-11-02"
+to = "present"
 +++
-g0rynich is a Russian Zerg active in the European Brood War scene, competing in BSL qualifying rounds and online tournaments with consistent dedication. His playstyle features developing Zerg fundamentals with a preference for mutalisk-based strategies that emphasize harass and map control over passive macro play. g0rynich represents the Russian BW community in international competition, and his regular participation helps grow Russia's presence in the global scene. His improving mechanics and deepening game understanding demonstrate steady progress and commitment to competitive Brood War.
+g0rynich (Alexander Davydov) is a Russian Zerg player who was long considered the top Zerg in Russia, particularly in 2006–07. He played for Shock Squadron and 3D Clan before joining SouLGaming in 2017. His results include third place at WCG Russia 2006 and podium finishes in the Asus Spring 2006, Summer 2006 and Autumn 2007 tournaments.

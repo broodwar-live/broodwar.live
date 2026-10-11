@@ -1,6 +1,6 @@
 +++
-title = "Beast"
-description = "Beast — Zerg player from South Korea."
+title = "beast"
+description = "beast (Yoo Jin Woo) — Zerg player from South Korea."
 slug = "beast"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,23 @@ image = "/images/players/beast.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이대현"]
+real_name = "유진우"
+romanized_name = "Yoo Jin Woo"
+birth_date = "1994-12-06"
+team = "SouLGaming"
+aliases = ["Etro_hyemi", "jatgirl", "tamdwan", "JAT!"]
+liquipedia = "https://liquipedia.net/starcraft/Beast"
+soop = "rjsrkdgkwk12"
+sources = ["https://liquipedia.net/starcraft/Beast"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hwaseung OZ"
+slug = "hwaseung-oz"
+from = "2011-03-28"
+to = "2011"
+[[extra.teams]]
+name = "Team 8"
+from = "2011"
+to = "2011"
 +++
-Beast is a Korean Zerg active in the modern scene with aggressive tendencies and a focus on early-game pressure. His ZvT features fast zergling rushes and mutalisk harass that put Terran opponents under pressure from the opening minutes. Beast competes in ASL qualifiers and Korean online tournaments, where his willingness to take risks gives him upset potential against more conservative players. His micro in early-game skirmishes is sharp, though his late-game play is still developing. He represents the aggressive school of modern Korean Zerg play.
+beast (Yoo Jin Woo, also known as "jatgirl") is a South Korean Zerg and former progamer who was with Hwaseung OZ and Team 8 in 2011. He began his mandatory military service around the turn of 2015. After returning, he reached first place on the Korean StarCraft: Remastered ladder shortly after its closed release in 2017.
