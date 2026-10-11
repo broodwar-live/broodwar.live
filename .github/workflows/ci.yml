@@ -45,3 +45,6 @@ jobs:
         run: |
           python3 scripts/check-links.py public
           python3 scripts/check-ko-links.py public
+
+      - name: Check player playoff records against the season data
+        run: python3 scripts/check-playoff-records.py public
