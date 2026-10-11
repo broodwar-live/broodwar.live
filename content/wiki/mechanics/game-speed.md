@@ -1,50 +1,36 @@
 +++
 title = "Game Speed"
-description = "How game speed settings affect timing, frame rate, and real-time conversion in Brood War."
+description = "How Brood War's speed settings map frames to real time, and how this wiki converts frames to seconds."
 slug = "game-speed"
 template = "wiki/mechanic.html"
 [extra]
-unverified = true
+sources = ["https://liquipedia.net/starcraft/Game_Speed", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-StarCraft: Brood War operates on a fixed-tick game engine. The simulation advances in discrete **frames**, and the game speed setting determines how many frames are processed per real-time second. All competitive play uses the **Fastest** speed setting, which is the standard for ladder games, tournaments, and professional matches.
+StarCraft: Brood War advances its simulation in discrete steps called **frames** (logical steps). Every timing in the game — weapon cooldowns, build times, spell durations, movement — is defined in frames. The speed setting only changes how long the game waits between frames. Competitive play uses **Fastest**.
 
-## Speed Settings
+## Speed settings
 
-Brood War offers 7 speed settings:
+| Speed | ms per frame | Frames per real second |
+|-------|--------------|------------------------|
+| Slowest | 167 | ≈ 5.99 |
+| Slower | 111 | ≈ 9.01 |
+| Slow | 83 | ≈ 12.05 |
+| Normal | 67 | ≈ 14.93 |
+| Fast | 56 | ≈ 17.86 |
+| Faster | 48 | ≈ 20.83 |
+| Fastest | 42 | ≈ 23.81 |
 
-| Speed    | Frames per second | ms per frame |
-|----------|-------------------|-------------|
-| Slowest  | ~6.37             | ~157        |
-| Slower   | ~8.49             | ~118        |
-| Slow     | ~10.62            | ~94         |
-| Normal   | ~12.74            | ~79         |
-| Fast     | ~14.87            | ~67         |
-| Faster   | ~16.99            | ~59         |
-| Fastest  | ~23.81            | ~42         |
+## Converting frames
 
-The "Fastest" setting processes approximately **23.81 logical frames per second**, though the commonly cited figure of **15.17 game-seconds per real-second** accounts for the distinction between "game time" and real time. In practical terms, 1 real second at Fastest speed corresponds to roughly 15.17 game frames when measuring in the engine's internal "game second" unit.
+- **Real time on Fastest**: seconds = frames × 0.042 (frames ÷ 23.81). A 10,000-frame game lasts about 420 seconds, or 7 minutes.
+- **Game seconds**: build and research times are traditionally quoted in "game seconds" of about 15 frames each (close to Normal speed). This wiki follows that convention for build, research and spell durations: seconds = frames ÷ 15. A Marine's 360 frames is listed as 24 s, which takes about 15 real seconds on Fastest.
 
-## Frame-to-Real-Time Conversion
+Liquipedia lists times in real seconds on Fastest, so its numbers are smaller by a factor of about 1.6 than the game-second values used here.
 
-For replay analysis and timing discussions, the standard conversion is:
+## Why frames matter
 
-```
-real_seconds = frames / 15.17
-```
-
-This means a game that lasts 10,000 frames is approximately 659 real-time seconds, or about 11 minutes. Build order timings in competitive play are often expressed in either frame counts or game-time minutes, and knowing the conversion is essential for replay analysis tools.
-
-## Why It Matters
-
-Frame-perfect timing is important in several areas of competitive play:
-
-- **Build orders**: The exact frame at which you issue a command determines whether a build order is economically optimal. A supply depot started 50 frames late can cascade into a delayed expansion.
-- **Micro techniques**: Many advanced micro tricks depend on exploiting the gap between frames — for example, attack-move canceling and stutter-stepping work because the game only processes commands on frame boundaries.
-- **Cooldown management**: Weapon cooldowns, spell cooldowns, and production times are all measured in frames. Understanding these values lets players optimize engagement timing.
-
-## Remastered Note
-
-StarCraft: Remastered uses the same underlying frame-based engine as the original. The speed settings and frame timings are identical — Remastered only changes the graphics and audio layer, not the simulation. This means all frame-based analysis and timing data from original Brood War applies equally to Remastered.
+Because the simulation only advances in whole frames, attack cooldowns, unit production and spell timers are exact frame counts. Replay analysis works directly with frame numbers, and tools convert them to real time with the 42 ms figure.

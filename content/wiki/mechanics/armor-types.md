@@ -1,55 +1,44 @@
 +++
 title = "Armor & Unit Size"
-description = "How armor, unit size, and upgrade levels affect damage calculations in Brood War."
+description = "How armor, unit size, shields and upgrades affect damage calculations in Brood War."
 slug = "armor-types"
 template = "wiki/mechanic.html"
 [extra]
-unverified = true
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Armor", "https://liquipedia.net/starcraft/Damage"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-In StarCraft: Brood War, every unit has an **armor value** and a **unit size** (Small, Medium, or Large). These two properties, combined with the attacker's damage type, determine how much damage is actually dealt per hit. Armor and size interactions are fundamental to understanding why certain unit matchups play out the way they do.
+Every unit and building in StarCraft: Brood War has an **armor** value and a **size** — Small, Medium or Large. Together with the attacker's [damage type](@/wiki/mechanics/damage-types.md) they decide how much of a hit actually lands.
 
-## Unit Sizes
+## Unit sizes
 
-Every unit in the game is classified as one of three sizes:
+Sizes come from the game data (BWAPI):
 
-- **Small**: Zerglings, Marines, Zealots, Scourge, Vultures, Firebats, Interceptors
-- **Medium**: Hydralisks, Medics, Lurkers, Ghosts, Valkryies, Mutalisks, Corsairs
-- **Large**: Ultralisks, Dragoons, Siege Tanks, Carriers, Battlecruisers, Archons, Reavers
+- **Small**: Marine, Firebat, Medic, Ghost, SCV, Zergling, Drone, Scourge, Infested Terran, Mutalisk, Probe, Zealot, High Templar, Dark Templar, Observer, Interceptor, Spider Mine
+- **Medium**: Vulture, Hydralisk, Lurker, Queen, Defiler, Corsair
+- **Large**: Goliath, Siege Tank, Wraith, Dropship, Science Vessel, Valkyrie, Battlecruiser, Overlord, Ultralisk, Guardian, Devourer, Dragoon, Reaver, Shuttle, Scout, Arbiter, Carrier, Archon, Dark Archon — and every building
 
-Unit size interacts with the attacker's damage type (see Damage Types article). A Siege Tank's explosive damage deals full damage to large units but only 50% to small units.
+## How a hit is resolved
 
-## Armor Mechanics
+The OpenBW engine processes each hit in this order:
 
-Armor **reduces incoming damage per hit** by a flat amount. The formula is:
+1. Damage of less than 0.5 is raised to 0.5 (hallucinations take double damage).
+2. A Defensive Matrix absorbs damage first.
+3. Protoss **shields** absorb damage next. Shields take the full amount regardless of damage type; only the Plasma Shields upgrade (shield armor) reduces it.
+4. What is left is reduced by the unit's **armor** (a flat 1 point per point of armor).
+5. Only then is the **damage-type multiplier** for the target's size applied.
+6. If no shields were hit, the result is never lower than 0.5.
 
-```
-effective_damage = max(base_damage - target_armor, 0.5)
-```
+So a Vulture shot (20 concussive) against a Dragoon with 1 armor first removes 20 shields; once the shields are gone, each shot does (20 − 1) × 25% = 4.75 damage to hit points. Spell damage such as Psionic Storm or Irradiate ignores armor entirely.
 
-Each point of armor subtracts 1 point from every individual hit of damage. The minimum damage per hit is 0.5, meaning armor can never completely negate an attack.
+## Armor values and upgrades
 
-### Armor Upgrades
+Most units start with 0 or 1 armor and gain +1 per armor upgrade level, up to +3. Units with 2 or more base armor are the Sunken Colony, Guardian, Devourer and Valkyrie (2), the Battlecruiser (3) and the Carrier (4). The Ultralisk has its own extra upgrade, Chitinous Plating (+2). Larvae and eggs have 10 armor. Buildings generally have 1 armor, except anti-air structures and some others with 0.
 
-Each armor upgrade level adds **+1 armor** to all units of that type. Upgrades are researched at the appropriate tech building (Engineering Bay for Terran infantry, Forge for Protoss ground units, Evolution Chamber for Zerg). Each race can upgrade armor up to **+3** through three successive research levels.
+Upgrades are researched at the Engineering Bay (infantry), Armory (vehicles and ships), Forge (Protoss ground armor and shields), Cybernetics Core (Protoss air), Evolution Chamber (Zerg ground) and Spire (Zerg air).
 
-## Armor vs Fast Attackers
+## Why it matters
 
-Because armor reduces damage **per hit**, it is proportionally more effective against units with fast attack speeds and low per-hit damage than against units with slow attacks and high per-hit damage.
-
-For example, a Marine attacks every 15 frames and deals 6 base damage. Against a unit with 3 armor, each Marine shot deals only 3 damage — a 50% reduction. But a Siege Tank in siege mode deals 70 damage per shot. Against 3 armor, it still deals 67 — less than a 5% reduction.
-
-This is why armor upgrades are especially valuable against bio-heavy compositions (Marines, Hydralisks) and less impactful against siege units.
-
-## Protoss Shields
-
-Protoss units have a unique additional layer: **plasma shields**. Shields absorb damage before hit points, and shield damage **always takes full damage regardless of damage type**. This means concussive and explosive damage reductions only apply once the shield is depleted and hit points are being damaged. Shield armor can be upgraded separately at the Forge.
-
-## Strategic Takeaways
-
-- Armor upgrades are most impactful against fast-attacking, low-damage units
-- Weapon upgrades are always valuable, but especially when facing high-armor opponents
-- Protoss shields act as a universal damage buffer, making early-game Zealots and Dragoons deceptively tanky
-- The +1 attack vs +1 armor race is a real strategic decision — getting your upgrades ahead of your opponent provides a meaningful combat advantage
+Because armor is subtracted from **every hit**, it matters most against fast, low-damage attacks. A Marine's 6-damage shot against 3 armor drops to 3, a 50% cut; a sieged tank's 70-damage shot against a large target with 3 armor still deals 67. Multi-hit attacks such as the Zealot's two 8-damage blows pay the armor twice per swing. Fully upgraded Ultralisks (1 base + 2 Chitinous + 3 carapace = 6 armor) reduce un-upgraded Marine shots to the 0.5 minimum.

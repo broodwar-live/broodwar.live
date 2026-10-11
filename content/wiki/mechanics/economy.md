@@ -1,55 +1,33 @@
 +++
 title = "Economy & Expansion"
-description = "Economic strategy, expansion timing, and the macro vs micro balance in Brood War."
+description = "Expansions, larva-based production and the macro vs micro balance in Brood War."
 slug = "economy"
 template = "wiki/mechanic.html"
 [extra]
-unverified = true
+sources = ["https://liquipedia.net/starcraft/Maps/Terrain_Features", "https://liquipedia.net/starcraft/Larva_(Unit)", "https://liquipedia.net/starcraft/Hatchery", "https://liquipedia.net/starcraft/Macromanagement", "https://liquipedia.net/starcraft/Micromanagement", "https://liquipedia.net/starcraft/Lift_off"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-Economy is the engine of every Brood War game. The player who gathers more resources can produce more units, research more upgrades, and recover faster from losses. **Expanding** — taking additional base locations — is the primary way to increase income. Knowing when to expand, when to attack, and how to balance economy against army production is the strategic core of the game.
+Income comes from workers mining minerals and gas (see [Resources](@/wiki/mechanics/resources.md)). Since each base has a limited number of patches and a geyser, more income means more bases, and every resource spent on workers and expansions is not spent on army.
 
-## The Natural Expansion
+## Expansions
 
-Almost every standard game involves taking a **natural expansion** — the base location closest to your starting position. The natural is relatively safe because it is near your main base and can be defended with the same army. Timing your natural expansion is one of the first major strategic decisions:
+- The **natural expansion** is the base closest to the main, usually the first expansion taken. On most maps it leads directly to the main base.
+- **Mineral-only** expansions have minerals but no geyser.
+- **Island** expansions can only be reached by air (or by Terran buildings flying there).
 
-- **Fast expand**: Taking the natural very early (before producing many combat units). Greedy but pays off if the opponent does not punish it. Terran fast-expanding behind a bunker in TvZ is a classic example.
-- **Delayed expand**: Producing army first, expanding once you have enough units to defend. Safer but slower economically.
-- **One-base play**: Not expanding at all and instead investing everything into an early attack. High risk — if the attack fails, the one-base player falls hopelessly behind economically.
+Players choose between expanding early for economy, delaying the expansion behind an army, or staying on one base to attack. Terran Command Centers can be built in the main and flown to a new base.
 
-## Third Base and Beyond
+## Race differences
 
-The third base marks the transition into mid-game economics. Taking a third is critical for Zerg (who need the larva and income for their mass-production style) and important for Protoss and Terran in longer games.
+- **Zerg** units all come from larvae. Each Hatchery, Lair or Hive holds up to three larvae and spawns a new one about every 342 frames, so extra Hatcheries add both a mining base and production.
+- **Terran** and **Protoss** produce from individual buildings, so their production is scaled by building more Barracks, Factories, Gateways and so on.
 
-Beyond three bases, the game becomes about **map control** — denying the opponent expansions while securing your own. Each additional base increases income but also stretches your army thinner across more defensive positions.
+## Macro and micro
 
-## Mineral-Only Bases
+- **Macro** (macromanagement): worker and unit production, expansions, supply, upgrades and spending resources as they come in.
+- **Micro** (micromanagement): controlling units in combat — focus fire, retreating damaged units, spellcasting and positioning.
 
-Some expansion locations on maps have minerals but **no vespene geyser**. These mineral-only bases are cheaper to set up (no refinery needed) and useful for boosting mineral income for mineral-heavy army compositions (Marines, Zerglings, Zealots). They are particularly valued by Zerg for additional larva production.
-
-## The Economy-Army Trade-off
-
-Every resource spent on workers and expansions is a resource not spent on army. This creates a fundamental tension:
-
-- **More workers = more income** but means fewer combat units right now
-- **More army = stronger in the short term** but weaker economy long-term
-- The player who finds the right balance — spending just enough on army to survive while maximizing economic investment — gains a compounding advantage
-
-This is the essence of **macro play**: the discipline to invest in economy when it is safe to do so, and the judgment to know when "safe" ends and army production must take priority.
-
-## Macro vs Micro
-
-- **Macro**: Economic management, worker production, expansion timing, continuous unit production, and upgrade scheduling. "Can you spend your money as fast as you earn it?"
-- **Micro**: Unit control in combat — focus fire, positioning, spell usage, retreat timing. "Can you get maximum value from the units you have?"
-
-Both matter, but at most levels of play, macro has a larger impact on game outcomes. A player with perfect micro but poor macro will have a smaller, under-upgraded army. A player with good macro but average micro will have a larger, better-upgraded force that can afford to take inefficient trades and still come out ahead.
-
-## When to Expand vs When to Attack
-
-There is no universal answer, but general principles:
-
-- **Expand when you have a defensive advantage**: After holding an enemy attack, while the opponent rebuilds, or when you have a fortified position (Siege Tank line, Lurker contain).
-- **Attack when you have a timing advantage**: When your upgrades finish before the opponent's, when you hit a powerful army composition before they have the counter, or when you scout that they are expanding greedily.
-- **Never expand and attack at the same time** in the early game — you will not have enough resources for both. Choose one.
+Both matter; floating unspent resources and losing units carelessly are the two most common ways to fall behind.

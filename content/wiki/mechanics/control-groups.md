@@ -1,51 +1,32 @@
 +++
 title = "Control Groups & Hotkeys"
-description = "Unit control groups, building hotkeys, and APM mechanics in Brood War."
+description = "Selection limits, control groups and APM in Brood War."
 slug = "control-groups"
 template = "wiki/mechanic.html"
 [extra]
-unverified = true
+sources = ["https://liquipedia.net/starcraft/Micromanagement", "https://liquipedia.net/starcraft/Shortcuts", "https://liquipedia.net/starcraft/Actions_per_Minute", "https://liquipedia.net/starcraft/Lift_off"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-StarCraft: Brood War's control scheme is famously demanding. Unlike modern RTS games, BW limits control groups to **12 units each**, has no auto-casting for most abilities, and requires manual camera movement. These constraints make mechanical skill — expressed through hotkey usage and APM — a major differentiator between players.
+StarCraft: Brood War's interface is famously restrictive, and much of the game's mechanical difficulty comes from it. Players rely on keyboard shortcuts and control groups to manage armies and production.
 
-## Control Groups
+## Selection limits
 
-Players can assign groups of selected units to number keys **0-9** using Ctrl+Number, then recall the group by pressing the number key. Double-tapping the key centers the camera on the group.
+- A selection, and therefore a control group, holds at most **12 units**. Ctrl-clicking or double-clicking a unit selects up to 12 units of that type on screen.
+- **Buildings cannot be multi-selected**: only one building can be selected at a time, and buildings cannot be box-selected. Production from several Barracks or Gateways therefore means selecting each one in turn.
 
-### The 12-Unit Limit
+## Control groups
 
-Each control group holds a maximum of **12 units**. This is one of Brood War's most defining mechanical constraints. An army of 60 units requires at least 5 control groups to fully control. In practice, players constantly re-assign groups on the fly as units are produced, lost in battle, or need to be split for multi-pronged attacks.
+Units or a building can be bound to the number keys with Ctrl + number and recalled by pressing the number; pressing it twice centres the screen on the group. Large armies need several groups, which is why splitting and multitasking are so valued. Players commonly bind their Command Centers, Hatcheries, Nexuses and Comsat Stations so they can act without moving the screen.
 
-This limitation is why "army splitting" and "multi-tasking" are such valued skills. A player who can effectively micro multiple groups simultaneously — attacking the front while dropping the back — has an enormous advantage over one who can only control a single group.
+The F2–F4 keys store and recall screen locations.
 
-### Building Hotkeys
+## Command shortcuts
 
-Buildings can also be assigned to control groups. Players commonly hotkey:
-
-- **Production buildings**: Assign all Barracks to one group, Factories to another. Press the key, then press the unit hotkey to queue production without moving the camera.
-- **Tech buildings**: Hotkey the Forge, Engineering Bay, or Evolution Chamber to start upgrades quickly.
-- **Defensive buildings**: Hotkey Comsat Stations for rapid Scanner Sweep deployment.
-
-## Camera Hotkeys
-
-Keys **F2, F3, and F4** save camera positions. Press **Shift+F2** to save the current camera location, then **F2** to snap back to it. Professional players use these for rapid camera switching between their bases, rally points, and battle locations.
+Every command has a key: A (attack), M (move), P (patrol), H (hold position), S (stop), and per-unit keys for production and spells. Shift-queueing lets a unit carry out several orders in sequence, such as patrolling between up to ten points.
 
 ## APM and EAPM
 
-**APM (Actions Per Minute)** measures how many commands a player issues per minute. Professional players typically average 250-400 APM, with bursts exceeding 600 during intense micro.
-
-**EAPM (Effective APM)** filters out redundant or meaningless actions — repeated unit selections, spam clicking, and rapid-fire commands that do not change game state. EAPM is a more accurate measure of a player's actual impact on the game. A player with 300 APM and 200 EAPM is mechanically efficient; one with 400 APM and 150 EAPM is mostly spamming.
-
-## Common Hotkey Techniques
-
-- **Rally switching**: Setting building rally points to different locations based on the tactical situation, using hotkeyed production buildings.
-- **Rapid-fire production**: Selecting a hotkeyed building group and repeatedly pressing the unit hotkey to queue units across multiple buildings.
-- **Stacking**: Using control groups to quickly move units into the same position for concentrated firepower.
-- **Tab cycling**: In a mixed control group, pressing Tab cycles through unit types, allowing ability usage on specific units within the group.
-
-## Why It Matters
-
-Brood War's mechanical demands are inseparable from its strategic depth. The 12-unit group limit means army control is always imperfect, creating opportunities for better players to gain advantages through superior multitasking. The gap between "knowing the right play" and "executing it under pressure" is what makes Brood War uniquely compelling as a competitive game.
+**APM** (actions per minute) counts how many commands a player issues. There is no single standard: replay tools such as BWChart, SCRChart and bwRepInfo each count slightly differently, and they usually ignore the first part of the game. **EAPM** (effective APM) removes actions considered redundant, such as reselecting the same group or repeating the same order, to estimate useful activity.

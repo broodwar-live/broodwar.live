@@ -1,54 +1,45 @@
 +++
 title = "Splash & Area Damage"
-description = "Area-of-effect damage mechanics, splash zones, and friendly fire in Brood War."
+description = "Splash radii, falloff, friendly fire and area spells in Brood War."
 slug = "splash-damage"
 template = "wiki/mechanic.html"
 [extra]
-unverified = true
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Splash_Damage", "https://liquipedia.net/starcraft/Damage", "https://liquipedia.net/starcraft/Nuclear_Strike"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-Most units in StarCraft: Brood War deal damage to a single target. However, several units and abilities deal **splash damage** (also called area-of-effect or AoE damage), hitting multiple units within a radius of the impact point. Splash damage is disproportionately powerful because it scales with enemy unit density — the more units packed together, the more value each splash source provides.
+Most attacks in StarCraft: Brood War hit one target, but several weapons and spells damage everything in an area. Splash scales with how tightly the enemy is packed, which is why spreading units matters so much against it.
 
-## Splash Zones
+## Radial splash and falloff
 
-Many splash weapons have **tiered damage zones**: units closest to the impact point take full damage, while those farther away take reduced damage.
+Radial splash weapons have three radii. A unit within the **inner** radius of the impact takes 100% damage, within the **medium** radius 50%, and within the **outer** radius 25%; armor and the damage-type multiplier are applied after this reduction. Burrowed units only take splash if they are inside the inner radius. Splash also hits cloaked units that are not detected.
 
-- **Inner zone**: 100% damage (full splash radius)
-- **Middle zone**: 50% damage
-- **Outer zone**: 25% damage
+| Source | Damage | Inner / medium / outer radius (px) | Hurts own units? |
+|--------|--------|------------------------------------|------------------|
+| Siege Tank (Siege Mode) | 70 explosive | 10 / 25 / 40 | Yes |
+| Spider Mine | 125 explosive | 50 / 75 / 100 | Yes |
+| Infested Terran | 500 explosive | 20 / 40 / 60 | Yes |
+| Reaver Scarab | 100 normal (125 upgraded) | 20 / 40 / 60 | No |
+| Archon | 30 normal | 3 / 15 / 30 | No |
+| Firebat | 8 concussive | 15 / 20 / 25 | No |
+| Corsair, Valkyrie | air-to-air splash | 5 / 50 / 100 | No |
+| Nuclear Strike | 500 or ⅔ of max HP + shields | 128 / 192 / 256 | Yes |
 
-The Siege Tank in siege mode is the classic example: 70 base damage at the center, 35 in the middle ring, and 17.5 in the outer ring. This tiered system means clustered units take devastating damage while spread-out units may only catch the reduced outer ring.
+Weapons that do not hurt their owner's units still hit **allied** players' units in team games.
 
-## Units with Splash Damage
+## Line splash
 
-### Terran
-- **Siege Tank (Siege Mode)**: 70 explosive splash damage. The most iconic splash unit in the game. Tiered splash zones. Has a minimum range — units directly adjacent to the tank cannot be hit.
-- **Firebat**: Concussive splash in a frontal cone. Effective against packed light units like Zerglings.
-- **Valkyrie**: Fires a volley of missiles with splash, making it devastating against clumped air units like Mutalisks or Scourge.
+The **Lurker**'s spines travel in a line from the Lurker toward its target and deal full damage (20 normal) to every enemy ground unit along the line; it does not hurt its owner's units.
 
-### Protoss
-- **Reaver (Scarab)**: 100 normal splash damage. Single-zone splash (no falloff). Slow attack rate but enormous per-shot impact.
-- **Archon**: 30 normal splash damage. Effective against groups of small units.
-- **Psionic Storm** (High Templar spell): 112 total damage dealt over multiple ticks to all units in the area. Ignores armor. Does not stack — two storms on the same area do not deal double damage.
-- **Corsair (Disruption Web)**: Not damage, but disables ground unit attacks in an area — functionally AoE crowd control.
+## Area spells
 
-### Zerg
-- **Lurker**: 20 normal splash damage in a line (not a circle). The line extends from the Lurker to its target, hitting everything in the path. Devastating in choke points where units must walk through the line.
-- **Plague** (Defiler spell): Deals damage over time to all units in the area, reducing them to a minimum of 1 HP but never killing. Ignores armor.
+- **Psionic Storm**: 112 damage (8 × 14) to all units within 48 px, including friendly ones; ignores armor; does not stack; buildings are immune.
+- **Irradiate**: 250 damage over time to biological units within 32 px of the irradiated unit.
+- **Plague**: about 296 damage over time to units and buildings in a 128×128 px area; cannot kill.
+- **EMP Shockwave**, **Ensnare**, **Stasis Field**, **Maelstrom**, **Dark Swarm** and **Disruption Web** affect an area without dealing damage.
 
-## Friendly Fire
+## Strategic implications
 
-A critical detail: **Siege Tank splash damages friendly units**. If your Marines are standing next to an enemy Zergling and a Siege Tank fires at the Zergling, the Marines take splash damage too. This makes Terran army positioning uniquely challenging — Tanks and infantry must be carefully separated to avoid self-inflicted casualties.
-
-No other race's splash weapons deal friendly fire damage under normal circumstances. Psionic Storm also damages friendly units, making careless Storm placement punishing for Protoss as well.
-
-## Strategic Implications
-
-Splash damage creates several strategic dynamics:
-
-- **Unit spreading**: Against splash-heavy opponents, spreading units reduces incoming damage. Against non-splash armies, clumping for focus fire is better.
-- **Choke point value**: Splash damage is amplified in tight spaces where units cannot spread. Storms and Lurkers at choke points are game-winning.
-- **Splash stacking**: Multiple Siege Tanks firing into the same area multiply the splash effect. Tank lines are powerful precisely because each additional Tank adds its full splash to the same engagement area.
-- **Target priority**: Killing splash sources first is almost always correct. Focus-firing Siege Tanks, sniping High Templar, or burrowing under Reavers removes the opponent's highest-value damage dealers.
+Splash rewards spreading against tanks, Reavers, Lurkers and Storm, and punishes clumping. Because tank and mine splash hits friendly units, Terran players must keep their own forces from standing in their tanks' line of fire or in their own minefields.
