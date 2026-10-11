@@ -9,7 +9,7 @@ broodwar.live is a free, open-source reference site for the StarCraft: Brood War
 - [Players](https://broodwar.live/players): Pro player profiles, career stats, Elo ratings, head-to-head records
 - [Matches](https://broodwar.live/matches): Competitive match results with scores, maps, and tournaments
 - [Tournaments](https://broodwar.live/tournaments): ASL, BSL, and other tournament series with season histories
-- [Replays](https://broodwar.live/replays): Upload .rep files for instant build order breakdowns and APM analysis
+- [Replays](https://broodwar.live/replays): Analyze .rep files in the browser (parsed locally with WebAssembly, never uploaded): build orders, APM over time, openings
 - [Builds](https://broodwar.live/builds): Structured build order database backed by pro replay evidence
 - [Streams](https://broodwar.live/streams): Live Korean and international Brood War streams
 - [Balance](https://broodwar.live/balance): Matchup winrate analytics by map, era, and skill bracket

@@ -8,7 +8,7 @@
 
 <p align="center">
   <em>The community platform for StarCraft: Brood War competitive play.</em><br>
-  <em>Players. Build orders. Tournaments. Wiki. Replays and live data coming soon.</em>
+  <em>Players. Build orders. Tournaments. Wiki. Replay analysis. Live data coming soon.</em>
 </p>
 
 <p align="center">
@@ -55,7 +55,7 @@ history, replay analysis, live streams, balance stats) call a separate JSON API,
 | **News** | Live | Project and scene announcements |
 | **Search** | Live | Site-wide search (<kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>K</kbd>) |
 | **Matches** | Needs API | Match results and head-to-head records |
-| **Replays** | Needs API | `.rep` upload with build order, APM and army breakdowns |
+| **Replays** | Live | In-browser `.rep` analysis (WASM): build orders, APM over time, openings — nothing is uploaded |
 | **Live Streams** | Needs API | Korean stream tracking and ASL/BSL schedules |
 | **Balance** | Needs API | Matchup winrates by map and era |
 
