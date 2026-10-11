@@ -5,8 +5,8 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
-    {"@type": "ListItem", "position": 2, "name": "Patch Notes", "item": "{{ config.base_url }}/wiki/patches"},
+    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url | safe }}/wiki"},
+    {"@type": "ListItem", "position": 2, "name": "Patch Notes", "item": "{{ config.base_url | safe }}/wiki/patches"},
     {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 }

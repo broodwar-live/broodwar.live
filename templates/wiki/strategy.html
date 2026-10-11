@@ -5,8 +5,8 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
-    {"@type": "ListItem", "position": 2, "name": "Strategies", "item": "{{ config.base_url }}/wiki/strategies"},
+    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url | safe }}/wiki"},
+    {"@type": "ListItem", "position": 2, "name": "Strategies", "item": "{{ config.base_url | safe }}/wiki/strategies"},
     {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 },
@@ -14,8 +14,8 @@
   "@type": "Article",
   "headline": {{ page.title | json_encode | safe }},
   "description": {{ page.description | default(value='') | json_encode | safe }},
-  "url": "{{ current_url }}",
-  "publisher": {"@id": "{{ config.base_url }}/#organization"}
+  "url": "{{ current_url | safe }}",
+  "publisher": {"@id": "{{ config.base_url | safe }}/#organization"}
 }
 {% endblock %}
 
