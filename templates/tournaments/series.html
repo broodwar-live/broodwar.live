@@ -22,73 +22,83 @@
 {% set t = config.extra.i18n[lang] %}
 {% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="{{ lp }}/tournaments/" class="hover:text-base-content/60">{{ t.tournaments }}</a>
-    <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ e.short_name }}</span>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/tournaments/" class="hover:text-primary">{{ t.tournaments }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ e.short_name }}</span>
   </nav>
 
-  <div class="flex items-center gap-4 mb-2">
+  <div class="flex flex-wrap items-center gap-3 mb-2">
     <h1 class="text-2xl font-display">{{ page.title }}</h1>
-    <span class="text-[10px] px-2 py-0.5 rounded
-      {% if e.status == 'active' %}bg-success/10 text-success{% else %}bg-base-content/5 text-base-content/30{% endif %}">
-      {% if e.status == "active" %}{% if lang == "ko" %}활성{% else %}Active{% endif %}{% else %}{% if lang == "ko" %}종료{% else %}Retired{% endif %}{% endif %}
+    <span class="text-[11px] px-2 py-0.5 rounded font-semibold
+      {% if e.status == 'active' %}bg-success/10 text-success{% else %}bg-base-content/5 text-base-content/70{% endif %}">
+      {% if e.status == "active" %}{{ t.data_status_active }}{% else %}{{ t.data_status_retired }}{% endif %}
     </span>
   </div>
-  <p class="text-xs text-base-content/40 mb-6">{{ e.organizer }} &middot; {{ e.region }} &middot; {{ e.format }}</p>
+  <p class="text-sm text-base-content/70 mb-6">{{ e.organizer }} &middot; {{ e.region }} &middot; {{ e.format }}</p>
 
-  <div class="prose prose-invert max-w-3xl mb-10">
+  <div class="prose prose-invert max-w-3xl mb-10 [&_table]:block [&_table]:overflow-x-auto">
     {{ page.content | safe }}
   </div>
 
   {% if e.seasons is defined and e.seasons | length > 0 %}
   {#- Only show columns that at least one season fills in. -#}
-  {% set has_prize = false %}{% set has_date = false %}{% set has_score = false %}
+  {% set_global has_prize = false %}{% set_global has_date = false %}{% set_global has_score = false %}
   {% for s in e.seasons %}
     {% if s.prize_pool is defined and s.prize_pool %}{% set_global has_prize = true %}{% endif %}
     {% if s.final_date is defined and s.final_date %}{% set_global has_date = true %}{% endif %}
     {% if s.score is defined and s.score %}{% set_global has_score = true %}{% endif %}
   {% endfor %}
-  <h2 class="text-lg font-semibold mb-4">{% if lang == "ko" %}시즌 기록{% else %}Season History{% endif %}</h2>
-  <div class="overflow-x-auto">
-    <table class="table table-zebra w-full">
-      <thead>
-        <tr class="text-xs text-base-content/40">
-          <th>{% if lang == "ko" %}시즌{% else %}Season{% endif %}</th>
-          <th>{% if lang == "ko" %}연도{% else %}Year{% endif %}</th>
-          <th>{% if lang == "ko" %}우승자{% else %}Champion{% endif %}</th>
-          <th>{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</th>
-          {% if has_score %}<th>{% if lang == "ko" %}결승 스코어{% else %}Final{% endif %}</th>{% endif %}
-          {% if has_date %}<th>{% if lang == "ko" %}결승일{% else %}Final Date{% endif %}</th>{% endif %}
-          {% if has_prize %}<th>{% if lang == "ko" %}상금{% else %}Prize Pool{% endif %}</th>{% endif %}
-          <th>{% if lang == "ko" %}상태{% else %}Status{% endif %}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for s in e.seasons %}
-        <tr>
-          <td class="font-stats text-sm">{{ s.season }}</td>
-          <td class="font-stats text-sm">{{ s.year }}</td>
-          <td class="text-sm font-semibold">{% if s.winner is defined and s.winner %}{{ s.winner }}{% else %}&mdash;{% endif %}</td>
-          <td class="text-sm text-base-content/50">{% if s.runner_up is defined and s.runner_up %}{{ s.runner_up }}{% else %}&mdash;{% endif %}</td>
-          {% if has_score %}<td class="font-stats text-sm whitespace-nowrap">{% if s.score is defined and s.score %}{{ s.score }}{% else %}<span class="text-base-content/25">&mdash;</span>{% endif %}</td>{% endif %}
-          {% if has_date %}<td class="font-stats text-sm text-base-content/40 whitespace-nowrap">{% if s.final_date is defined and s.final_date %}<time datetime="{{ s.final_date }}">{{ s.final_date }}</time>{% else %}<span class="text-base-content/25">&mdash;</span>{% endif %}</td>{% endif %}
-          {% if has_prize %}<td class="text-sm text-base-content/40">{% if s.prize_pool is defined and s.prize_pool %}{{ s.prize_pool }}{% else %}<span class="text-base-content/25">&mdash;</span>{% endif %}</td>{% endif %}
-          <td>
-            {% if s.status == "live" %}
-            <span class="text-[10px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
-            {% elif s.status == "completed" %}
-            <span class="text-[10px] text-base-content/30">&#10003;</span>
-            {% endif %}
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <h2 id="season-history" class="text-lg font-semibold mb-4">{{ t.data_season_history }}</h2>
+  <div class="relative" data-scroll-cue>
+    <div class="overflow-x-auto rounded-box border border-primary/10">
+      <table class="table table-zebra w-full" data-sortable>
+        <thead>
+          <tr class="text-xs text-base-content/70">
+            <th scope="col" data-sort="num">{{ t.data_season }}</th>
+            <th scope="col" data-sort="num">{{ t.player_year }}</th>
+            <th scope="col" data-sort="text">{{ t.player_champion }}</th>
+            <th scope="col" data-sort="text">{{ t.player_runner_up }}</th>
+            {% if has_score %}<th scope="col">{{ t.data_final_score }}</th>{% endif %}
+            {% if has_date %}<th scope="col" data-sort="text">{{ t.data_final_date }}</th>{% endif %}
+            {% if has_prize %}<th scope="col">{{ t.data_prize_pool }}</th>{% endif %}
+            <th scope="col"><span class="sr-only">{{ t.player_status }}</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for s in e.seasons %}
+          {% set sid = "season-" ~ s.season %}{% set sid = sid | slugify %}
+          {% set_global season_url = "" %}
+          {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == page.slug and sp.extra.season == s.season %}{% set_global season_url = sp.path %}{% endif %}{% endfor %}
+          <tr id="{{ sid }}" class="scroll-mt-24 target:bg-primary/10">
+            <th scope="row" class="font-stats text-sm font-semibold" data-sort-value="{% if s.season is number %}{{ s.season }}{% else %}{{ s.year }}{% endif %}">{% if season_url %}<a href="{{ season_url }}" class="text-primary hover:underline">{% if s.season is number %}{{ e.short_name }} {{ s.season }}{% else %}{{ s.season }}{% endif %}</a>{% else %}{% if s.season is number %}{{ e.short_name }} {{ s.season }}{% else %}{{ s.season }}{% endif %}{% endif %}</th>
+            <td class="font-stats text-sm">{{ s.year }}</td>
+            <td class="text-sm font-semibold whitespace-nowrap">{% if s.winner is defined and s.winner %}{% if s.winner_slug is defined and s.winner_slug %}<a href="{{ lp }}/players/{{ s.winner_slug }}/" class="hover:text-primary hover:underline">&#9733; {{ s.winner }}</a>{% else %}&#9733; {{ s.winner }}{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>
+            <td class="text-sm text-base-content/80 whitespace-nowrap">{% if s.runner_up is defined and s.runner_up %}{% if s.runner_up_slug is defined and s.runner_up_slug %}<a href="{{ lp }}/players/{{ s.runner_up_slug }}/" class="hover:text-primary hover:underline">{{ s.runner_up }}</a>{% else %}{{ s.runner_up }}{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>
+            {% if has_score %}<td class="font-stats text-sm whitespace-nowrap">{% if s.score is defined and s.score %}{{ s.score }}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
+            {% if has_date %}<td class="font-stats text-sm text-base-content/70 whitespace-nowrap">{% if s.final_date is defined and s.final_date %}<time datetime="{{ s.final_date }}">{{ s.final_date }}</time>{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
+            {% if has_prize %}<td class="text-sm text-base-content/70 whitespace-nowrap">{% if s.prize_pool is defined and s.prize_pool %}{{ s.prize_pool }}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
+            <td>
+              {% if s.status == "live" %}
+              <span class="text-[11px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
+              {% elif s.status == "completed" %}
+              <span class="text-xs text-success" title="{{ t.data_completed }}">&#10003;<span class="sr-only"> {{ t.data_completed }}</span></span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div data-scroll-hint hidden class="pointer-events-none absolute top-0 bottom-0 right-0 w-10 rounded-r-box bg-linear-to-l from-base-100 to-transparent"></div>
+    <p data-scroll-hint hidden class="mt-1.5 text-right text-[11px] text-base-content/60">{{ t.data_scroll_hint }} &rarr;</p>
   </div>
   {% endif %}
 
   {% include "partials/provenance.html" %}
 </div>
 {% endblock %}
+
+{% block scripts %}<script src="/js/table-sort.js" defer></script>{% endblock %}

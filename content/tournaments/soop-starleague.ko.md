@@ -5,6 +5,7 @@ slug = "soop-starleague"
 template = "tournaments/series.html"
 [extra]
 short_name = "SSL"
+season_count = 1
 organizer = "SOOP"
 status = "retired"
 format = "Individual"

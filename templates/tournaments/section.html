@@ -5,49 +5,65 @@
 {% set t = config.extra.i18n[lang] %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <h1 class="text-2xl font-display mb-2">{{ section.title }}</h1>
-  <p class="text-sm text-base-content/50 mb-8">{{ section.description }}</p>
+  <p class="text-sm text-base-content/70 mb-8">{{ section.description }}</p>
 
   {# Series pages (ASL, BSL, etc.) #}
+  <h2 class="sr-only">{{ t.data_series }}</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {% for page in section.pages %}
     {% set e = page.extra %}
     {% if e.short_name is defined %}
-    <a href="{{ page.path }}" class="glass-card rounded-box p-5 glow-blue">
+    {% set_global n_seasons = 0 %}
+    {% if e.seasons is defined %}{% set_global n_seasons = e.seasons | length %}{% elif e.season_count is defined %}{% set_global n_seasons = e.season_count %}{% endif %}
+    <a href="{{ page.path }}" class="glass-card rounded-box p-5 glow-blue flex flex-col">
       <div class="flex items-center justify-between mb-2">
         <span class="text-lg font-bold">{{ e.short_name }}</span>
-        <span class="text-[10px] px-2 py-0.5 rounded
-          {% if e.status == 'active' %}bg-success/10 text-success{% else %}bg-base-content/5 text-base-content/30{% endif %}">
-          {% if e.status == "active" %}{% if lang == "ko" %}활성{% else %}Active{% endif %}{% else %}{% if lang == "ko" %}종료{% else %}Retired{% endif %}{% endif %}
+        <span class="text-[11px] px-2 py-0.5 rounded font-semibold
+          {% if e.status == 'active' %}bg-success/10 text-success{% else %}bg-base-content/5 text-base-content/70{% endif %}">
+          {% if e.status == "active" %}{{ t.data_status_active }}{% else %}{{ t.data_status_retired }}{% endif %}
         </span>
       </div>
       <h3 class="text-sm font-semibold">{{ page.title }}</h3>
-      <p class="text-xs text-base-content/40 mt-1">{{ e.region }} &middot; {{ e.format }}</p>
-      {% if e.seasons is defined and e.seasons | length > 0 %}
-      <span class="text-[11px] text-base-content/25 mt-3 block">{{ e.seasons | length }} {% if lang == "ko" %}시즌{% else %}seasons{% endif %}</span>
+      <p class="text-xs text-base-content/70 mt-1">{{ e.region }} &middot; {{ e.format }}</p>
+      {% if n_seasons > 0 %}
+      <span class="text-xs text-base-content/60 mt-3 block font-stats">{{ n_seasons }} {% if n_seasons == 1 and lang != "ko" %}season{% else %}{{ t.data_seasons }}{% endif %}</span>
       {% endif %}
     </a>
     {% endif %}
     {% endfor %}
   </div>
 
-  {# Season pages (ASL S21, BSL S19, etc.) #}
-  <h2 class="text-lg font-semibold mt-10 mb-4">{% if lang == "ko" %}최근 시즌{% else %}Recent Seasons{% endif %}</h2>
-  <div class="space-y-2">
-    {% for page in section.pages %}
-    {% if page.extra.series_name is defined %}
+  {#- Season pages (ASL S21, BSL S19, ...), newest first: by year descending, then by
+      reversed title order (Season 21 before Season 20) within a year. -#}
+  {% set_global max_year = 0 %}{% set_global min_year = 9999 %}
+  {% for page in section.pages %}{% if page.extra.series_name is defined %}
+    {% if page.extra.year > max_year %}{% set_global max_year = page.extra.year %}{% endif %}
+    {% if page.extra.year < min_year %}{% set_global min_year = page.extra.year %}{% endif %}
+  {% endif %}{% endfor %}
+  {% if max_year > 0 %}
+  <h2 class="text-lg font-semibold mt-10 mb-4">{{ t.data_recent_seasons }}</h2>
+  <ol class="space-y-2">
+    {% for i in range(end=max_year - min_year + 1) %}
+    {% set y = max_year - i %}
+    {% for page in section.pages | sort(attribute="title") | reverse %}
+    {% if page.extra.series_name is defined and page.extra.year == y %}
     {% set e = page.extra %}
-    <a href="{{ page.path }}" class="glass-card rounded-box px-4 py-3 flex items-center gap-4 glow-blue">
-      <span class="text-sm font-bold text-primary/70 w-16 shrink-0">{{ e.series_name }}</span>
-      <span class="font-semibold text-sm flex-1">{{ e.season_label }}</span>
-      <span class="text-xs text-base-content/40">{{ e.year }}</span>
-      {% if e.status == "live" %}
-      <span class="text-[10px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
-      {% elif e.champion %}
-      <span class="text-xs text-base-content/50">{{ e.champion }}</span>
-      {% endif %}
-    </a>
+    <li>
+      <a href="{{ page.path }}" class="glass-card rounded-box px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-1 glow-blue">
+        <span class="text-sm font-bold text-primary w-14 shrink-0">{{ e.series_name }}</span>
+        <span class="font-semibold text-sm flex-1 min-w-0">{{ e.season_label }}</span>
+        <span class="text-xs text-base-content/70 font-stats">{{ e.year }}</span>
+        {% if e.status == "live" %}
+        <span class="text-[11px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
+        {% elif e.champion %}
+        <span class="text-xs text-base-content/80 w-24 text-right truncate"><span class="text-warning" aria-hidden="true">&#9733;</span> {{ e.champion }}</span>
+        {% endif %}
+      </a>
+    </li>
     {% endif %}
     {% endfor %}
-  </div>
+    {% endfor %}
+  </ol>
+  {% endif %}
 </div>
 {% endblock %}
