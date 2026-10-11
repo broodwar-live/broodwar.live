@@ -1,19 +1,21 @@
 +++
 title = "Ground Zero"
-description = "Ground Zero 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
+description = "그라운드 제로는 [Ragnarok]Valkyrie가 만든 4인용 재(Ash World) 맵으로, 11-12 프로리그와 티빙 스타리그 2012에서 사용되었다."
 slug = "ground-zero"
 template = "wiki/map.html"
 [extra]
-unverified = true
 name_en = "Ground Zero"
+name_ko = "그라운드 제로"
 dimensions = "128x128"
-tileset = "Badlands"
+tileset = "Ash World"
 players = 4
-spawn_positions = ""
-era = "2003-2005"
+spawn_positions = "1, 5, 7, 11"
+era = "2011-present"
+sources = ["https://liquipedia.net/starcraft/Ground_Zero", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/506_Ground_Zero"]
+verified = "2026-10-11"
 +++
-2003년부터 2005년까지 프로 경쟁에서 사용된 한국 브루드워 황금기의 클래식 4인용 배드랜드 맵이다. 그라운드 제로는 4개 스폰 위치가 회전 대칭으로 배치된 배드랜드 타일셋의 거친 적갈색 지형이 특징이다. 경쟁 맵에서 균형을 맞추기 어려운 매치업인 테란 대 저그에서 균형 잡힌 게임을 만들어내는 것으로 특히 유명해졌다.
+**그라운드 제로**는 [Ragnarok]Valkyrie가 제작한 애시 월드(Ash World) 타일셋의 4인용 맵이다. 크기는 128x128, 시작 위치는 1시, 5시, 7시, 11시이다. 블리자드가 만든 같은 이름의 옛 맵과는 다른 맵이다.
 
-맵 레이아웃은 개방 지형과 초크포인트의 좋은 균형을 제공한다. 앞마당은 의미 있는 방어적 보호를 제공하는 언덕을 통해 접근 가능하며, 맵 중앙은 대규모 교전에 적합한 넓은 지형으로 열린다. 배드랜드 능선은 양 종족이 활용할 수 있는 자연적 군대 집결 포지션과 시야선을 만든다 — 테란은 시즈 탱크 라인으로, 저그는 높은 오버로드 정찰로.
+2011년 말 SK플래닛 프로리그 11-12에 도입되었고 이후 수정판 **네오 그라운드 제로**가 나왔다. 여러 버전에 걸쳐 프로리그 시즌1·2와 티빙 스타리그 2012에서 쓰였고, 이후 TeamLiquid Legacy Starleague, BSL, ASL 시즌8에서도 사용되었다.
 
-초기 OSL 시즌에 등장했으며 특히 TvZ에서의 경쟁 밸런스 기여로 높이 평가되었다. 맵의 거리가 잘 조정되어 — 저그가 즉시 압도당하지 않고 경제를 확립할 만큼 길면서도 테란 타이밍 어택이 유효할 만큼 짧았다. 다른 매치업에서도 견고한 게임을 만들어냈지만, TvZ 밸런스가 명성을 만들었다. 지형 레이아웃이 어떻게 매치업 밸런스를 달성할 수 있는지 보여준 초기 황금기의 사려 깊게 설계된 맵으로 기억된다.
+맵 정중앙이 지나갈 수 없는 지형으로 되어 있는 것이 특징이다. 네오 버전에서는 앞마당 뒤 절벽이 없어지고, 세 번째 멀티가 미네랄 멀티로 바뀌었으며, 앞마당 미네랄 배치가 달라졌다.

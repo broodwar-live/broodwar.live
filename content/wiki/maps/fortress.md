@@ -1,19 +1,20 @@
 +++
 title = "Fortress"
-description = "Overview of Fortress, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Fortress is a 4-player Jungle World map by Earthattack, used in the Proleague in 2010-2011."
 slug = "fortress"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Fortress"
+name_ko = "포트리스"
 dimensions = "128x128"
 tileset = "Jungle World"
 players = 4
-spawn_positions = ""
-era = "2004-2006"
+spawn_positions = "3, 6, 9, 12"
+era = "2010-2011"
+sources = ["https://liquipedia.net/starcraft/Fortress", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/390_Fortress", "https://web.archive.org/web/20220309032209/https://namu.wiki/w/%ED%88%AC%ED%98%BC(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A 4-player jungle map from the mid-golden era used in professional competition from 2004 through 2006, characterized by heavily defended natural expansions that encouraged defensive play and late-game battles. The jungle tileset provides lush terrain with prominent cliff faces and narrow ramps that make each base area feel like a fortified position — true to the map's name.
+**Fortress** is a 4-player map on the Jungle World tileset, made by Earthattack (김응서). It is 128x128 with start locations at 3, 6, 9 and 12 o'clock.
 
-Fortress's natural expansions are protected by tight ramps and cliff walls that create strong chokepoints, making early aggression extremely difficult to execute. Players could safely establish economic foundations behind these natural defenses, leading to games that frequently progressed to the late stages with large, tech-heavy armies. The center of the map features more open terrain where these built-up armies would eventually clash in decisive engagements.
+Fortress was first offered as a candidate for Round 4 of the 2009-10 Proleague without being selected, then returned in altered form and was used from May 2010 to August 2011 in the 2009-10 and 2010-11 Shinhan Bank Proleague seasons. Its revision **Fortress SE** was later used in KSL Season 1 (2018).
 
-The map appeared in OSL seasons during its active period and was known for producing long, strategic games. The heavily defended naturals favored all races in different ways — Protoss could safely tech to carriers or arbiters, Terran could establish strong mech compositions behind siege lines, and Zerg had time to reach hive tech and build massive armies. The map was sometimes criticized for making early-game interaction too rare, but it was praised for the quality of the late-game battles it produced. Fortress is remembered as a quintessential defensive map that represented the strategic depth possible when players are given time to develop their economies and armies fully.
+The four corner islands can only be reached on the ground by workers mining through stacks of mineral patches; once those are mined out, the islands are air-only. Resource amounts differ by base (for example 1500 per patch in the main and 1750 at the natural). Fortress SE swapped the resource amounts of the semi-island and center expansions.

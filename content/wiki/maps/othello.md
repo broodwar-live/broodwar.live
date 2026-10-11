@@ -1,19 +1,20 @@
 +++
 title = "Othello"
-description = "Overview of Othello, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Othello is a 4-player Twilight map by Forgotten_, used in the OSL, MSL and Proleague in 2008."
 slug = "othello"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Othello"
+name_ko = "오델로"
 dimensions = "128x128"
-tileset = "Space Platform"
+tileset = "Twilight"
 players = 4
-spawn_positions = ""
-era = "2007-2009"
+spawn_positions = "1, 5, 7, 10"
+era = "2008"
+sources = ["https://liquipedia.net/starcraft/Othello", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/178_Othello"]
+verified = "2026-10-11"
 +++
-A 4-player space platform map used in Korean professional play from 2007 through 2009, known for creating tense, high-stakes games through its narrow pathways and limited expansion options. The space platform tileset provides dark metallic bridges suspended over void, with four spawn positions arranged in rotational symmetry. Each main base connects to a natural expansion via narrow platform bridges that serve as natural chokepoints.
+**Othello** is a 4-player map on the Twilight tileset, made by 조승연 (Forgotten_). TLPD lists it as 128x128 with start locations at 1, 5, 7 and 10 o'clock.
 
-Othello's most distinctive feature is its constrained expansion layout. Unlike maps with abundant resource locations, Othello offers limited expansion options beyond the natural, forcing players to fight over every available base. The narrow platform bridges between bases create natural bottlenecks where small armies can hold against larger forces, and where siege tanks and lurkers become especially powerful. This scarcity of resources and tight pathing creates constant tension and frequent confrontations.
+Othello was used from April to August 2008, appearing simultaneously in the 2008 Shinhan Bank Proleague, the 2008 Arena MSL and the 2008 EVER OSL.
 
-The map appeared in OSL and MSL seasons during its active period, producing games marked by careful resource management and aggressive expansion denial. The limited expansions slightly favored defensive play and races that could efficiently use limited resources — Terran mech builds were particularly strong on narrow bridges. Protoss had to be creative with force field-like positioning using zealots in the tight corridors, while Zerg often struggled with the constrained expansion paths that limited their natural multi-base economic style.
+There are many cliffs, including above the natural and the third, so tank drops were popular. A narrow gap behind the natural lets only small units through. The map was considered Terran-favoured in TvZ and somewhat Zerg-favoured in ZvP because of an easy third gas, and some positional imbalances existed due to mineral placement.

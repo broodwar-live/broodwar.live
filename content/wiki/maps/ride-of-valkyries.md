@@ -1,19 +1,20 @@
 +++
 title = "Ride of Valkyries"
-description = "Overview of Ride of Valkyries, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Ride of Valkyries is a 2-player Twilight map by [Ragnarok]Valkyrie, used in the OSL and MSL in 2005-2006."
 slug = "ride-of-valkyries"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Ride of Valkyries"
-dimensions = "128x128"
+name_ko = "라이드 오브 발키리"
+dimensions = "128x96"
 tileset = "Twilight"
-players = 4
-spawn_positions = ""
-era = "2008-2010"
+players = 2
+spawn_positions = "4, 8"
+era = "2005-2006"
+sources = ["https://liquipedia.net/starcraft/Ride_of_Valkyries", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/16_Ride_of_Valkyries"]
+verified = "2026-10-11"
 +++
-A 4-player twilight map from the late golden era of Korean Brood War, used in professional tournaments from 2008 through 2010. Named after Wagner's iconic orchestral piece, the map features rotational symmetry with four spawn positions set against the atmospheric twilight tileset. Each main base connects to a natural expansion through a defended ramp, while the map's overall size and layout encourage long, strategically deep games.
+**Ride of Valkyries** is a 2-player map on the Twilight tileset, made by [Ragnarok]Valkyrie. It is 128x96 with start locations at 4 and 8 o'clock.
 
-Ride of Valkyries' design philosophy prioritized strategic depth over action speed. The distances between bases are generous, giving players time to develop their economies and tech trees before major engagements. The twilight terrain features elevated ridges and lowered passages that create natural army staging areas and chokepoints, rewarding players who understand how to use terrain to their advantage.
+It was used from March 2005 to March 2006 in individual leagues — the 2005 EVER OSL, the 2005 So1 OSL, the 2005-06 Shinhan Bank OSL and the 2005-06 CYON MSL — as well as the OnGameNet Dual Tournaments and MBCGame Survivor League. It never appeared in the Proleague.
 
-The map was known for producing epic late-game battles, particularly in TvZ where Terran mech armies would clash with Zerg hive-tech compositions in sprawling engagements across the twilight landscape. Protoss players could build toward powerful carrier or arbiter-based armies thanks to the map's defensive natural expansions. The long games made it a favorite among viewers who appreciated strategic play, though it was sometimes criticized for being slow-paced. Ride of Valkyries is remembered as a map that rewarded patience, planning, and deep game knowledge.
+A large raised plateau in the middle dominates the map and pushes players toward aggressive play to avoid being trapped on low ground. A second entrance to the natural is blocked by mineral walls, so early on the natural has a single access point.

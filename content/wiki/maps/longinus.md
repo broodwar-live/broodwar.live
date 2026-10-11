@@ -1,19 +1,20 @@
 +++
 title = "Longinus"
-description = "Overview of Longinus, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Longinus is a 3-player Jungle World map by KuKulZa, used in Korean leagues in 2006-2007."
 slug = "longinus"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Longinus"
+name_ko = "롱기누스"
 dimensions = "128x128"
 tileset = "Jungle World"
 players = 3
 spawn_positions = "3, 7, 11"
-era = "2008-2014"
+era = "2006-2007"
+sources = ["https://liquipedia.net/starcraft/Longinus", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/7_Longinus"]
+verified = "2026-10-11"
 +++
-A 3-player jungle map with wide-open spaces and long distances between bases that was a key tournament map during the later years of the Korean professional leagues. Spawns are at the 3, 7, and 11 o'clock positions, arranged in a triangular pattern with significant ground distance between each pair. Each main base connects to a natural expansion with a ramp choke, while the expansive center area is largely open jungle terrain.
+**Longinus** is a 3-player map on the Jungle World tileset, made by 이한빈 (KuKulZa). It is 128x128 with start locations at 3, 7 and 11 o'clock.
 
-Longinus was used extensively in OSL and MSL seasons from 2008 through 2014, earning a reputation for producing long, strategic games. The large map size and wide-open spaces meant that early rushes were rarely effective, pushing the meta toward economic development and late-game army compositions. The map's size also made it a favorite for Zerg players, who could use the vast terrain for creep spread and multi-hatch strategies.
+Longinus appeared in 2006 in the SKY Proleague, the Pringles MSL and the MBCGame Survivor League, and was used until April 2007. **Longinus II**, released in the second half of 2006, reworked the natural mineral placement and added a second geyser to the expansions at 1, 5 and 9 o'clock. The map stayed popular on iCCup and was later used in BSL.
 
-The map's balance tilted slightly toward macro-oriented play. Zerg benefited from the long distances, which gave them time to build up hive-tech armies. Terran mech builds were strong due to the open terrain providing excellent siege lines, but the distances made it harder to execute timing attacks. Protoss had to be creative with shuttle-based harassment to slow down opponents' economic development. The 3-player format added strategic depth through spawn uncertainty, and Longinus is remembered as one of the premier macro maps of the late golden era.
+The center is raised high ground that players fight to control, and three double-gas expansions especially benefit Zerg. At some positions Terran can fully wall the natural against Zerglings with two Supply Depots and a Barracks, enabling very fast Command Center expansions.

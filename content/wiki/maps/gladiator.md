@@ -1,19 +1,20 @@
 +++
 title = "Gladiator"
-description = "Overview of Gladiator, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Gladiator is a 4-player Twilight map by Str18-02, used in the last OSLs of the KeSPA era and later in ASL and KSL."
 slug = "gladiator"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Gladiator"
+name_ko = "글라디에이터"
 dimensions = "128x128"
-tileset = "Jungle World"
-players = 2
-spawn_positions = ""
-era = "2002-2004"
+tileset = "Twilight"
+players = 4
+spawn_positions = "1, 5, 7, 11"
+era = "2010-2018"
+sources = ["https://liquipedia.net/starcraft/Gladiator", "https://web.archive.org/web/2018/http://tl.net/tlpd/korean/maps/744_Gladiator", "https://web.archive.org/web/20211019140251/https://namu.wiki/w/%EA%B8%80%EB%9D%BC%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-An early competitive 2-player jungle map from the foundational era of Korean Brood War esports, used in professional play from 2002 through 2004. Gladiator features two spawn positions with close proximity on a 128x128 jungle terrain. The short distance between bases and the map's compact layout made it one of the most aggressive maps of its era, producing rush-heavy games where early combat was virtually guaranteed.
+**Gladiator** is a 4-player map on the Twilight tileset, made by 우상희 (Str18-02). It is 128x128 with start locations at 1, 5, 7 and 11 o'clock.
 
-The map's design reflects the early period of competitive BW mapmaking, when shorter rush distances and simpler layouts were the norm. Each main base connects to a natural expansion, but the closeness of the two spawns means that defensive play is risky — an opponent can arrive with an attack force before economic builds have time to pay off. The jungle terrain provides some cliffs and elevated terrain for positional play, but the overall emphasis is on direct confrontation.
+Gladiator was introduced for the 2010 Bacchus OSL and was also used in the 2011 Jin Air OSL and the 2012 Tving OSL. The fourth game of the 2012 Tving OSL final — the last OSL final — was played on it. In the AfreecaTV era it appeared in the VANT36.5 National Starleague, ASL Seasons 4 and 5, KSL Season 1 and BSL, and it was selected as a StarCraft: Remastered ladder map.
 
-Gladiator appeared in early OSL seasons and helped define the aggressive meta of early 2000s Korean Brood War. The map was particularly demanding for Zerg players, who need time and space to establish their multi-hatchery economy — the close spawns denied them both. Terran and Protoss early aggression builds thrived on the short distances. The map is remembered as representative of an era before mapmaking sophistication increased, when the philosophy was that close spawns and forced fighting made for the most exciting spectator experience.
+The center is ringed by pointed, radial high-ground ridges that form a doughnut-shaped area around the middle. The map is generally described as a matchup-dependent ("rock-paper-scissors") map rather than an evenly balanced one.

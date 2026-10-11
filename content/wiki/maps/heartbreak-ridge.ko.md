@@ -1,19 +1,21 @@
 +++
 title = "Heartbreak Ridge"
-description = "Heartbreak Ridge 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
+description = "단장의 능선은 [Ragnarok]Valkyrie가 만든 2인용 정글 맵으로, 2009~2010년 스타리그·MSL·프로리그에서 사용되었다."
 slug = "heartbreak-ridge"
 template = "wiki/map.html"
 [extra]
-unverified = true
 name_en = "Heartbreak Ridge"
+name_ko = "단장의 능선"
 dimensions = "128x96"
 tileset = "Jungle World"
 players = 2
 spawn_positions = "4, 10"
-era = "2008-present"
+era = "2009-2010"
+sources = ["https://liquipedia.net/starcraft/Heartbreak_Ridge", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/199_Heartbreak_Ridge", "https://web.archive.org/web/20220309032209/https://namu.wiki/w/%ED%88%AC%ED%98%BC(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-2008년부터 현재까지 지속적으로 사용되며 브루드워 역사상 가장 오래 경쟁 맵으로 활약한 가로 레이아웃의 클래식 2인용 정글 맵이다. 넓은 128x96 맵에서 4시와 10시 방향에 스폰이 위치한다. 각 본진은 언덕을 통해 앞마당으로 내려가며, 앞마당의 미네랄 라인은 위쪽 절벽에 노출되어 있다 — 이것이 맵의 전술적 정체성을 정의하는 대표적 특징이다.
+**단장의 능선**(Heartbreak Ridge)은 [Ragnarok]Valkyrie가 제작한 정글(Jungle World) 타일셋의 2인용 맵이다. 크기는 128x96, 시작 위치는 4시와 10시이다.
 
-절벽 공격 가능한 앞마당이 하트브레이크 리지의 가장 유명한 요소이다. 테란은 고지대에 시즈 탱크를 배치하여 상대의 채굴 작업을 위협할 수 있고, 프로토스는 셔틀로 리버를 절벽에 드롭할 수 있다. 이는 초반 내내 긴장감을 조성하며 방어자는 위쪽에서의 앞마당 공격을 적극적으로 막아야 한다. 2인용 맵치고 러시 거리가 비교적 짧아 공격적 오프닝과 초반 압박을 장려한다.
+신한은행 프로리그 08-09 4라운드에 도입되었고 09-10 시즌 2라운드에 맞춰 수정되었다. 2009년 4월부터 2010년 8월까지 박카스 스타리그 2009, EVER 스타리그 2009, 아발론 MSL 2009, 곰TV 클래식 시즌3, WCG 2009 등에서 사용되었으며, 이후 KSL 시즌2에서도 다시 쓰였다.
 
-하트브레이크 리지는 OSL/MSL 후기와 현대 ASL 시즌에 걸쳐 수많은 명승부를 치렀다. 대부분의 매치업에서 공격적 플레이를 선호하며 — 특히 TvZ가 역동적인데, 테란의 앞마당 절벽 공격 능력과 저그의 빠른 확장 필요성이 충돌한다. 맵 중앙은 대규모 교전이 가능한 개활지이며, 측면 경로는 우회 기회를 제공한다. 경쟁 맵풀에서의 장수는 단순하지만 전략적으로 풍부한 디자인의 지속적인 매력을 증명한다.
+앞마당을 내려다보는 절벽은 겹쳐진 중립 신전으로 막혀 있고, 가치가 0인 미네랄 벽을 캐내면 자신의 세 번째 멀티로 가는 뒷길이나 상대 앞마당 위 절벽으로 가는 길이 열린다. 맵 이름의 유래가 된 중앙의 여러 능선은 수비하는 쪽에 유리해 탱크나 러커 조이기를 풀기 어렵다. 네 번째 가스 멀티를 확보하기 어려워 맵 장악이 중요하다.

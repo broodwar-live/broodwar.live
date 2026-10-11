@@ -1,19 +1,18 @@
 +++
 title = "Empire of the Sun"
-description = "Overview of Empire of the Sun, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Empire of the Sun is a 4-player Jungle World map by Rose.of.Dream, used in the 2010-11 Proleague."
 slug = "empire-of-the-sun"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Empire of the Sun"
+name_ko = "태양의 제국"
 dimensions = "128x128"
-tileset = "Desert"
+tileset = "Jungle World"
 players = 4
-spawn_positions = ""
-era = "2007-2009"
+spawn_positions = "1, 5, 7, 11"
+era = "2010-2011"
+sources = ["https://liquipedia.net/starcraft/Empire_of_the_Sun", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/406_Empire_of_the_Sun"]
+verified = "2026-10-11"
 +++
-A 4-player desert map used in late golden era tournaments from 2007 through 2009, known for its wide-open terrain that strongly favored mobile army compositions. The desert tileset provides bright, sun-baked terrain with clear sight lines across large expanses of open ground. Four spawn positions are arranged with rotational symmetry, each with a main base connecting to a natural expansion.
+**Empire of the Sun** is a 4-player map on the Jungle World tileset, made by 변종석 (Rose.of.Dream.). It is 128x128 with start locations at 1, 5, 7 and 11 o'clock.
 
-Empire of the Sun's defining characteristic is its open terrain — the desert landscape features fewer chokepoints and obstacles than maps built on other tilesets, creating vast open battlefields where army positioning and movement speed are paramount. The expansions beyond the natural are scattered across the open desert, requiring players to project military force across wide areas to defend their economic investments.
-
-The map appeared in OSL and MSL seasons during its active period, producing games that rewarded mobile, aggressive strategies. Zerg thrived on the map thanks to their natural speed advantage, using mutalisk harass and zergling flanks across the open terrain. Terran bio armies could maneuver effectively, but mech builds struggled with the wide-open engagement areas where tanks could be surrounded. Protoss had to carefully choose engagement locations to avoid being flanked in the desert expanse. The map is remembered as one of the most mobility-favoring designs of the golden era, where the open terrain created dramatic running battles across the sun-scorched landscape.
+It was one of the new maps of the 2010-11 Shinhan Bank Proleague and was used from October 2010 to August 2011, including the 2011 Winners League. A new version, New Empire of the Sun, appeared in Round 5 of that Proleague season; it shrank the hill in front of the natural and added a ramp for shorter rush distances, reduced the hills in the center, made the island ramps undroppable and thickened the cliffs around the mains. Version 1.4, used in the Winners League, split the gas at the 12 and 6 o'clock islands into two 2500-gas geysers.

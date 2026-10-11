@@ -1,19 +1,20 @@
 +++
 title = "Heartbreak Ridge"
-description = "Overview of Heartbreak Ridge, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Heartbreak Ridge is a 2-player Jungle World map by [Ragnarok]Valkyrie, used in the OSL, MSL and Proleague in 2009-2010."
 slug = "heartbreak-ridge"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Heartbreak Ridge"
+name_ko = "단장의 능선"
 dimensions = "128x96"
 tileset = "Jungle World"
 players = 2
 spawn_positions = "4, 10"
-era = "2008-present"
+era = "2009-2010"
+sources = ["https://liquipedia.net/starcraft/Heartbreak_Ridge", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/199_Heartbreak_Ridge", "https://web.archive.org/web/20220309032209/https://namu.wiki/w/%ED%88%AC%ED%98%BC(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A classic 2-player jungle map with a horizontal layout that stands as one of the longest-running competitive maps in Brood War history, continuously used from 2008 through the present day. Spawns are at the 4 and 10 o'clock positions on a wide 128x96 map. Each main base features a ramp leading down to a natural expansion whose mineral line is exposed to cliffs above — a signature feature that defines the map's tactical identity.
+**Heartbreak Ridge** (Korean: 단장의 능선) is a 2-player map on the Jungle World tileset, made by [Ragnarok]Valkyrie. It is 128x96 with start locations at 4 and 10 o'clock.
 
-The cliffable natural expansion is Heartbreak Ridge's most famous element. Terran players can position siege tanks on the high ground to threaten the opponent's mining operations, while Protoss can use reavers from shuttle drops onto the cliff. This creates constant early-game tension and forces defenders to actively protect their natural from above. The rush distance is relatively short for a 2-player map, encouraging aggressive openings and early pressure.
+It was introduced in Round 4 of the 2008-09 Shinhan Bank Proleague and revised for Round 2 of the 2009-10 season. Between April 2009 and August 2010 it was used in the 2009 Bacchus OSL, the 2009 EVER OSL, the 2009 Avalon MSL, GOMTV Classic Season 3 and WCG 2009, among others. It later returned in KSL Season 2.
 
-Heartbreak Ridge has hosted countless memorable tournament games across both the late OSL/MSL era and modern ASL seasons. The map favors aggressive play across most matchups — TvZ is particularly dynamic, with Terran's ability to cliff the natural against Zerg's need for fast expansion. The center of the map is open terrain that allows for large engagements, while side paths provide flanking opportunities. Its longevity in the competitive pool speaks to the enduring appeal of its simple but strategically rich design.
+Stacked neutral temples block the cliff overlooking each natural, and a wall of zero-value minerals can be mined out to open a back route into one's own third or onto the cliff above the opponent's natural. The many ridges in the middle, which give the map its name, favour the defender and make tank and Lurker contains hard to break. Securing a fourth gas is difficult, so map control is important.

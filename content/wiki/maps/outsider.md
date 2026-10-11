@@ -1,19 +1,20 @@
 +++
 title = "Outsider"
-description = "Overview of Outsider, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Outsider is a 3-player Ash World map by Earthattack, used in Korean leagues in 2009-2010."
 slug = "outsider"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Outsider"
+name_ko = "아웃사이더"
 dimensions = "128x128"
-tileset = "Badlands"
-players = 4
-spawn_positions = ""
-era = "2019-2021"
+tileset = "Ash World"
+players = 3
+spawn_positions = "1, 5, 9"
+era = "2009-2010"
+sources = ["https://liquipedia.net/starcraft/Outsider", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/200_Outsider"]
+verified = "2026-10-11"
 +++
-A 4-player badlands map that was part of the ASL competitive pool from 2019 through 2021, known for its unique island expansion and open center area. The map features rotational symmetry with four spawn positions, each with a main base connecting to a ground-accessible natural expansion. What sets Outsider apart is the inclusion of island expansions that can only be reached by air transport, adding an economic dimension not found on most modern competitive maps.
+**Outsider** is a 3-player map on the Ash World tileset, made by Earthattack (김응서). It is 128x128 with start locations at 1, 5 and 9 o'clock.
 
-The open center area creates a wide battlefield where large-scale engagements occur, while the badlands terrain provides rugged ridges and elevated positions around the periphery. The island expansions become critical in the late game, as players who can secure and defend them gain a significant economic advantage. This rewards races with strong air transport — Protoss shuttles and Terran dropships become essential tools for exploiting these remote resource locations.
+Outsider was introduced in Round 4 of the 2008-09 Shinhan Bank Proleague and was used from April 2009 to August 2010, including the 2009 Bacchus OSL and the 2009 Avalon MSL. A revised **Outsider SE** followed; the map later appeared in ASL Season 3.
 
-During its time in the ASL rotation, Outsider produced diverse and strategically interesting games. The island expansions slightly favored Terran and Protoss, who have more efficient air transport options, while Zerg had to rely on overlord drops to access them. The open center encouraged aggressive mid-game play, as passive players risked falling behind economically against opponents who secured the islands early.
+The map's signature is a ring of expansions along its edge. Mineral lines along the edge act as walls; what looks like a mineral-only base from inside one's main can be taken as a gas expansion from the far side. Workers can be slipped through the mineral lines, but those bases are then very exposed to drops, and the edge expansions are frequent targets for Tank, Reaver and Lurker harassment.

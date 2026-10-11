@@ -1,19 +1,20 @@
 +++
 title = "Arcadia"
-description = "Overview of Arcadia, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Arcadia is a 4-player Badlands map by CyGnus, used in Korean professional leagues in 2006-2007."
 slug = "arcadia"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Arcadia"
+name_ko = "아카디아"
 dimensions = "128x128"
-tileset = "Twilight"
+tileset = "Badlands"
 players = 4
-spawn_positions = ""
-era = "2008-2010"
+spawn_positions = "1, 5, 7, 11"
+era = "2006-2007"
+sources = ["https://liquipedia.net/starcraft/Arcadia", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/13_Arcadia", "https://web.archive.org/web/20211019140251/https://namu.wiki/w/%EA%B8%80%EB%9D%BC%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A 4-player twilight map from the late professional era, used in competition from 2008 through 2010. Arcadia features the atmospheric purple-blue twilight tileset with four spawn positions in rotational symmetry. Named after the idyllic Greek region, the map offers a pastoral battlefield with multiple attack routes and abundant expansion options that encourage diverse strategic approaches.
+**Arcadia** is a 4-player map on the Badlands tileset, made by 송기범 (skb9728_CyGnus). It is 128x128 with start locations at 1, 5, 7 and 11 o'clock. A revised version, Arcadia 2 (Arcadia II), followed the original.
 
-The map's design emphasizes player choice — multiple corridors connect each quadrant, ensuring that no single path dominates the map's dynamics. The natural expansions are protected by ramps with reasonable chokepoint defense, while additional expansion locations are spread across the map, rewarding players who can control and defend wider territory. The twilight terrain creates elevated positions and lowered passages that add tactical depth to army movements.
+It was used from April 2006 to January 2007, in events including the 2006 SKY Proleague and the Pringles MSL Season 1. Arcadia returned years later as one of the maps of the VANT36.5 National Starleague.
 
-Arcadia appeared in the final years of OSL and MSL, as well as early Proleague seasons, and was known for producing strategically varied games. The multiple attack routes prevented predictable play patterns, as opponents could always approach from unexpected angles. The abundance of expansion options meant that games often developed into wide-ranging territorial conflicts rather than concentrated chokepoint battles. The map played fairly evenly across matchups, with each race finding ways to exploit the multiple paths and expansion options to suit their strengths.
+Arcadia is a fairly standard macro map with a wide center. Its best-known feature is a mineral-only expansion tucked next to each natural that is very easy to take; the 12 and 6 o'clock expansions have two entrances, and the island bases sit outside siege tank range.

@@ -1,19 +1,21 @@
 +++
 title = "Hitchhiker"
-description = "Hitchhiker 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
+description = "히치하이커는 조승연(Forgotten_)이 만든 2인용 얼음 맵으로, 2006~2007년 스타리그에 쓰였고 ASL 시즌9에서 다시 채택되었다."
 slug = "hitchhiker"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Hitchhiker"
-dimensions = "128x128"
-tileset = "Desert World"
-players = 4
-spawn_positions = ""
-era = "2024-present"
+name_en = "Hitchhiker"
+name_ko = "히치하이커"
+dimensions = "128x96"
+tileset = "Ice"
+players = 2
+spawn_positions = "5, 11"
+era = "2006-2007, 2020"
+sources = ["https://liquipedia.net/starcraft/Hitchhiker", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/122_Hitchhiker", "https://web.archive.org/web/20220309025419/https://namu.wiki/w/%ED%8F%B4%EB%A6%AC%ED%8F%AC%EC%9D%B4%EB%93%9C"]
+verified = "2026-10-11"
 +++
-2024년 현대 경쟁 로테이션에 도입된 4인용 사막 맵으로, 맵풀의 다른 맵들과 구별되는 독특한 경로와 확장 레이아웃이 특징이다. 사막 타일셋은 뛰어난 시야의 밝고 명확한 지형을 제공하며, 4개의 스폰 위치가 맵 사분면에 걸쳐 회전 대칭으로 배치된다.
+**히치하이커**는 조승연(Forgotten_)이 제작한 얼음(Ice) 타일셋의 2인용 맵이다. 크기는 128x96, 시작 위치는 5시와 11시이다.
 
-히치하이커의 가장 큰 특징은 비관습적인 확장 경로이다 — 앞마당에 접근 가능하지만 지형 장애물을 돌아가야 하여 확장 경로를 따라 견제 기회가 생긴다. 맵 중앙은 비교적 개방적이지만, 군대 포지셔닝에 활용할 수 있는 사막 능선으로 측면이 보호된다. 세 번째 기지 옵션은 본진에서 더 멀리 진출해야 하므로 중반 확장 결정이 특히 영향력 있다.
+2006년 12월부터 2007년 8월까지 온게임넷 대회인 신한은행 스타리그 2006-07 시즌3, 다음 스타리그 2007, 듀얼 토너먼트, 스타 챌린지에서 사용되었다. 2020년 ASL 시즌9 맵으로 다시 채택되었다.
 
-적극적이고 기동성 있는 플레이 스타일을 장려하는 맵이다. 넓은 통로와 개방 사막 지형은 빠르게 재배치할 수 있는 군대에 유리하여 저그와 바이오 중심 테란 구성이 기동성에서 우위를 갖는다. 프로토스는 교전 시점과 장소를 전략적으로 선택해야 하며, 개방 지형은 느린 데스볼에게 불리할 수 있다. ASL 맵풀에 최근 추가된 만큼 히치하이커의 경쟁적 정체성은 아직 형성 중이며, 선수들이 독특한 레이아웃에 맞춰 빌드를 조정하고 있다.
+상대 본진으로 가는 직선 경로는 좁은 계곡이며, 그 옆에 탱크를 배치해 지킬 수 있다. 맵 곳곳이 사이 디스럽터, 젤나가 신전, 파워 제너레이터 같은 중립 건물로 막혀 벽과 길목 역할을 한다. 본진 사이 거리가 가까워 초반 전략이 자주 나왔다.

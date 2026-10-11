@@ -1,19 +1,21 @@
 +++
-title = "Circuit Breaker"
-description = "Circuit Breaker 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
+title = "Circuit Breakers"
+description = "써킷브레이커는 김응서(Earthattack)가 만든 4인용 우주 플랫폼 맵으로, 10-11 프로리그에 처음 쓰였고 지금도 널리 쓰인다."
 slug = "circuit-breaker"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_en = "Circuit Breaker"
+name_en = "Circuit Breakers"
+name_ko = "써킷브레이커"
 dimensions = "128x128"
 tileset = "Space Platform"
 players = 4
 spawn_positions = "1, 5, 7, 11"
 era = "2010-present"
+sources = ["https://liquipedia.net/starcraft/Circuit_Breakers", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/404_Circuit_Breaker", "https://web.archive.org/web/20220309032209/https://namu.wiki/w/%ED%88%AC%ED%98%BC(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-저명한 맵 제작자 Earthattack(김응서)이 만든 4인용 우주 플랫폼 맵으로, 브루드워 역사상 가장 균형 잡히고 오래 사용된 맵 중 하나이다. 1시, 5시, 7시, 11시 방향에 회전 대칭으로 스폰이 배치된다. 각 본진은 절벽이 있는 앞마당으로 이어지며 — 미네랄 라인이 위쪽 고지대에서의 견제에 노출되어 고유한 전술적 요소를 만든다. 중앙 개활지와 측면 우회로를 포함한 다양한 경로가 4개 구역을 모두 연결하여 측면 기동이 가능하다.
+**써킷브레이커**(Circuit Breakers, 흔히 Circuit Breaker로도 표기)는 김응서(Earthattack)가 제작한 우주 플랫폼(Space Platform) 타일셋의 4인용 맵이다. 크기는 128x128, 시작 위치는 1시, 5시, 7시, 11시이다.
 
-서킷 브레이커는 OSL/MSL 후반기에 도입되어 이후 거의 모든 ASL 시즌에 등장하며 경쟁 로테이션에 계속 유지되고 있다. 파이팅 스피릿에 필적하는 수명을 자랑하며, 현대 한국 브루드워에서 가장 중요한 경기들을 치렀다. 어두운 금속 다리와 플랫폼의 우주 플랫폼 미학으로 한눈에 알아볼 수 있다.
+신한은행 프로리그 10-11 신규 맵으로 등장했고 PDPop MSL 2010-11, ABC마트 MSL 2011에서도 사용되었다. 케스파 공식 리그 종료 후에도 표준 맵으로 자리 잡아 VANT36.5 대국민 스타리그, ASL 여러 시즌(1, 2, 3, 6), KSL 시즌1~4, BSL에서 쓰였고, 투혼과 함께 스타크래프트: 리마스터 래더의 단골 맵이 되었다.
 
-브루드워를 위해 만들어진 가장 균형 잡힌 디자인 중 하나로 널리 인정받고 있다. 6개 매치업 모두 공정하게 진행되며 어떤 종족도 유의미한 통계적 우위를 갖지 않는다. 절벽 공격 가능한 앞마당은 초반 방어에 긴장감을 더하며 — 특히 저그는 벌처나 질럿의 고지대 드롭을 경계해야 한다. 테란의 시즈 푸시는 주요 통로에서 효과적이고, 프로토스는 다양한 경로를 셔틀 기반 견제에 활용할 수 있다. 풍부한 확장 옵션 덕분에 게임이 후반까지 진행되는 경우가 많다.
+멀티는 모두 16곳이다. 본진(미네랄 9덩이, 가스 1개)에서 언덕 하나를 내려가면 막을 수 있는 앞마당이 있고, 앞마당은 일부가 절벽으로 둘러싸인 미네랄 멀티와 이어지며, 네 번째 멀티는 3시, 6시, 9시, 12시에 있다. 본진이 넓어 드롭 위협이 항상 존재하고, 세 번째 멀티 앞 언덕이 중요한 거점이다. 브루드 워 역사상 밸런스가 좋은 맵 중 하나로 꼽힌다.

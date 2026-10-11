@@ -1,19 +1,20 @@
 +++
 title = "Transistor"
-description = "Overview of Transistor, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Transistor is a 3-player Space Platform map by Str18-02, used in ASL Season 5 in 2018."
 slug = "transistor"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Transistor"
+name_ko = "트랜지스터"
 dimensions = "128x128"
-tileset = "Twilight"
-players = 4
-spawn_positions = ""
-era = "2022-present"
+tileset = "Space Platform"
+players = 3
+spawn_positions = "1, 5, 9"
+era = "2018"
+sources = ["https://liquipedia.net/starcraft/Transistor", "https://web.archive.org/web/20211019140251/https://namu.wiki/w/%EA%B8%80%EB%9D%BC%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A 4-player twilight map that has been part of the competitive pool since 2022, featuring interesting terrain features that reward creative strategies and multi-pronged attacks. Transistor's twilight tileset provides the atmospheric purple-blue backdrop characteristic of the theme, while four spawn positions are arranged with rotational symmetry. Each main base connects to a natural expansion through a ramp, with the map's terrain complexity increasing as you move toward the center.
+**Transistor** is a 3-player map on the Space Platform tileset, made by 우상희 (Str18-02). It is 128x128 with start locations at 1, 5 and 9 o'clock.
 
-The map's design encourages dynamic, creative play. The terrain features — elevated platforms, lowered corridors, and branching pathways — create numerous tactical options for army movement and positioning. Players who can devise multi-pronged attacks through different elevation levels and pathways gain significant advantages, as defenders must split their attention across multiple approach vectors simultaneously.
+Transistor was made for AfreecaTV StarLeague Season 5 and was used from March to May 2018. A revised Neo Transistor followed.
 
-Transistor has produced exciting games in its ASL appearances, rewarding players with strong multitasking and creative army splits. The terrain complexity means that standard, predictable strategies are less effective — the map rewards innovation and adaptation. In terms of matchup balance, the multiple pathways benefit mobile compositions, giving Zerg's speed and Terran's drop play natural advantages. Protoss must be strategic about which terrain features to contest and which to concede. The map's name, evoking the electronic component that amplifies signals, fits its design philosophy — small tactical advantages get amplified through the map's complex terrain into decisive strategic gains.
+The natural is placed inside the main for early stability, but its entrance opens in both directions to encourage early strategic play. At each start location a crystal doodad overlaps the base site; it disappears where a player spawns but remains at the unused start location. Each main has 10 mineral patches, one of which holds only 499 minerals.

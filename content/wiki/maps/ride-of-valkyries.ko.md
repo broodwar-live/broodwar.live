@@ -1,19 +1,21 @@
 +++
 title = "Ride of Valkyries"
-description = "Ride of Valkyries 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
+description = "라이드 오브 발키리는 [Ragnarok]Valkyrie가 만든 2인용 황혼 맵으로, 2005~2006년 스타리그와 MSL에서 사용되었다."
 slug = "ride-of-valkyries"
 template = "wiki/map.html"
 [extra]
-unverified = true
 name_en = "Ride of Valkyries"
-dimensions = "128x128"
+name_ko = "라이드 오브 발키리"
+dimensions = "128x96"
 tileset = "Twilight"
-players = 4
-spawn_positions = ""
-era = "2008-2010"
+players = 2
+spawn_positions = "4, 8"
+era = "2005-2006"
+sources = ["https://liquipedia.net/starcraft/Ride_of_Valkyries", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/16_Ride_of_Valkyries"]
+verified = "2026-10-11"
 +++
-2008년부터 2010년까지 프로 대회에서 사용된 한국 브루드워 후기 황금기의 4인용 트와일라잇 맵이다. 바그너의 상징적 관현악곡의 이름을 딴 이 맵은 대기적 트와일라잇 타일셋을 배경으로 4개 스폰 위치의 회전 대칭 구조이다. 각 본진은 방어된 언덕을 통해 앞마당과 연결되며, 맵의 전체적인 크기와 레이아웃이 길고 전략적으로 깊은 게임을 유도한다.
+**라이드 오브 발키리**는 [Ragnarok]Valkyrie가 제작한 황혼(Twilight) 타일셋의 2인용 맵이다. 크기는 128x96, 시작 위치는 4시와 8시이다.
 
-라이드 오브 발키리즈의 디자인 철학은 액션 속도보다 전략적 깊이를 우선시했다. 기지 간 거리가 넉넉하여 주요 교전 전에 경제와 테크 트리를 발전시킬 시간을 제공한다. 트와일라잇 지형의 높은 능선과 낮은 통로는 자연적 군대 집결 지역과 초크포인트를 만들어 지형 활용법을 이해하는 선수에게 보상을 준다.
+2005년 3월부터 2006년 3월까지 EVER 스타리그 2005, So1 스타리그 2005, 신한은행 스타리그 2005-06, CYON MSL 2005-06 등 개인리그와 듀얼 토너먼트, 서바이버 리그에서 사용되었다. 프로리그에는 쓰이지 않았다.
 
-특히 TvZ에서 테란 메카닉 군대와 저그 하이브 테크 구성이 트와일라잇 풍경에서 광활한 교전을 벌이는 장대한 후반 전투를 만들어내는 것으로 유명했다. 프로토스는 맵의 방어적 앞마당 덕분에 강력한 캐리어나 아비터 기반 군대를 구축할 수 있었다. 긴 게임은 전략적 플레이를 감상하는 시청자들의 인기를 끌었지만, 때로는 느린 페이스로 비판받기도 했다. 인내심, 계획, 깊은 게임 지식에 보상을 주는 맵으로 기억된다.
+맵 중앙의 넓은 고지대가 핵심으로, 낮은 지대에 갇히지 않으려면 적극적으로 움직여야 한다. 앞마당의 두 번째 입구는 미네랄 벽으로 막혀 있어 초반에는 진입로가 하나뿐이다.

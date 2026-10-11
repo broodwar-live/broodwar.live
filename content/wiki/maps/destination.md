@@ -1,19 +1,19 @@
 +++
 title = "Destination"
-description = "Overview of Destination, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Destination is a 2-player Badlands map by Earthattack, used in Korean leagues in 2008-2009 and named best map of the 2008-09 season."
 slug = "destination"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Destination"
+name_ko = "데스티네이션"
 dimensions = "128x96"
 tileset = "Badlands"
 players = 2
 spawn_positions = "5, 11"
-era = "2007-2012"
+era = "2008-2009"
+sources = ["https://liquipedia.net/starcraft/Destination", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/188_Destination"]
+verified = "2026-10-11"
 +++
-A 2-player badlands map from the golden era of Korean Brood War that became famous for producing deep, strategic games. Spawns are at the 5 and 11 o'clock positions on a 128x96 map, creating a diagonal layout. The map features a distinctive economic structure — the closest natural is a mineral-only expansion, while the gas expansion sits further from the main base, forcing players to make difficult decisions about economic development versus defensive positioning.
+**Destination** is a 2-player map on the Badlands tileset, made by Earthattack (김응서). It is 128x96 with start locations at 5 and 11 o'clock.
 
-Destination was a fixture in OSL and MSL tournaments from 2007 through 2012, hosting many memorable professional matches. The map was particularly notable in TvZ, where the mineral-only natural created unique dynamics — Zerg had to decide between taking a fast but gas-less natural or pushing for a riskier gas expansion early. Terran players often exploited the layout with timing attacks targeting the exposed gas expansion.
-
-The map's relatively moderate rush distance — not too short, not too long — meant that both aggressive and macro styles were viable. The badlands terrain provided clear sight lines and open engagement areas, while the split expansion layout created strategic depth that rewarded thoughtful play. Destination is remembered as one of the best-designed 2-player maps of the golden era, with its economic layout influencing map design philosophy for years afterward.
+Destination was introduced in the 2008 ClubDay MSL and was used from September 2008 to October 2009, including the 2008-09 Shinhan Bank Proleague and the GOMTV Averatec-Intel Classic. It was named Best Map of the 2008-09 season at the 4th Korean e-Sports Awards in December 2009.
+Each natural is reached by two narrow bridges, and a mineral-blocked back door leads into each main. Cliffs behind the natural expose it to tank, Storm and Lurker harassment, the third gas is far from the natural, and there are no island expansions. Three bridges in the center divide the map. TvZ on Destination was known for mechanical Terran play rather than standard bio.

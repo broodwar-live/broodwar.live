@@ -1,19 +1,20 @@
 +++
 title = "Camelot"
-description = "Overview of Camelot, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Camelot is a 2-player Space Platform map by LatiAs, introduced for ASL Season 3 in 2017."
 slug = "camelot"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Camelot"
-dimensions = "128x128"
-tileset = "Jungle World"
-players = 4
-spawn_positions = ""
-era = "2018-2020"
+name_ko = "카멜롯"
+dimensions = "128x96"
+tileset = "Space Platform"
+players = 2
+spawn_positions = "4, 10"
+era = "2017"
+sources = ["https://liquipedia.net/starcraft/Camelot", "https://web.archive.org/web/2018/http://tl.net/tlpd/sospa/maps/737_Camelot"]
+verified = "2026-10-11"
 +++
-A modern 4-player jungle map used in ASL competition from 2018 through 2020, featuring a standard layout with well-defined choke points that produced consistently competitive games. The jungle tileset provides lush green terrain with cliffs, trees, and elevated ridges, while the four spawn positions are arranged with rotational symmetry across the map's quadrants.
+**Camelot** is a 2-player map on the Space Platform tileset, made by LatiAs (주현서), the author of Demian. TLPD lists it as 128x96 with start locations at 4 and 10 o'clock.
 
-Camelot's design follows classic BW mapmaking principles — each main base connects to a natural expansion through a clear ramp chokepoint, with the center serving as the primary engagement area. The well-defined choke points give defensive players options to hold with smaller forces, while the multiple pathways between quadrants prevent any position from being impregnable. Third base locations are accessible but require moving army presence away from the natural, creating strategic tension.
+Camelot was unveiled on 3 April 2017 as one of the new maps of AfreecaTV StarLeague (ASL) Season 3 and was used from April to June 2017. It was generally regarded as Terran-favoured.
 
-The map was introduced during the modern ASL era and saw regular use across multiple seasons. It produced balanced games across most matchups, with the choke points enabling safe defensive play while the jungle terrain's cliffs and elevation changes rewarded creative aggression through drop play and high-ground harassment. Named after the legendary court of King Arthur, Camelot evoked a sense of classical elegance in its design — straightforward, well-balanced, and reliable as a competitive battlefield.
+The main and natural sit on the same level with a wide, rampless choke instead of a ramp, which makes early harassment stronger and early expansions harder to defend. The center is open, allowing flanking. The map went through several revisions up to version 1.6, adjusting expansion entrances, ramps and resource layouts.

@@ -1,19 +1,18 @@
 +++
 title = "La Mancha"
-description = "Overview of La Mancha, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "La Mancha is a 4-player Desert map by Rose.of.Dream, used in the 2010-11 Proleague, Jin Air OSL 2011 and ABC Mart MSL 2011."
 slug = "la-mancha"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "La Mancha"
+name_ko = "라만차"
 dimensions = "128x128"
 tileset = "Desert"
 players = 4
 spawn_positions = "1, 5, 7, 11"
-era = "2019-present"
+era = "2011"
+sources = ["https://liquipedia.net/starcraft/La_Mancha", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/418_La_Mancha"]
+verified = "2026-10-11"
 +++
-A 4-player desert map with a distinctive open center that has been a regular fixture in ASL seasons since 2019. Spawns are at the standard 1, 5, 7, and 11 o'clock positions with rotational symmetry. Each main base connects to a natural expansion through a wide ramp, offering less chokepoint protection than many other competitive maps. The center of the map is dominated by open desert terrain with minimal obstacles, creating a vast battlefield for army engagements.
+**La Mancha** is a 4-player map on the Desert tileset, made by 변종석 (Rose.of.Dream.). It is 128x128 with start locations at 1, 5, 7 and 11 o'clock.
 
-La Mancha's wide ramps and open layout define its strategic identity. The lack of tight chokes means defensive holds are harder to execute, pushing the meta toward mobile, aggressive play. In TvT, the open terrain creates fascinating mech vs bio dynamics, as tank lines must cover wide angles. Zerg players benefit significantly from the open center, using speed and mobility to exploit the multiple approach vectors for mutalisk harass and zergling runbys.
-
-The map has been used in multiple ASL seasons and is considered well-balanced across most matchups. Protoss players sometimes struggle with the wide-open spaces, as it is harder to create favorable force-on-force engagements without terrain chokepoints. The desert tileset gives the map a bright, distinctive appearance, and the third base positions are somewhat exposed, encouraging mid-game conflicts over expansion control.
+La Mancha replaced Grand Line in Round 3 (the Winners League round) of the 2010-11 Shinhan Bank Proleague and was used from January to September 2011, including the 2011 Jin Air OSL and the 2011 ABC Mart MSL. It was later used in BSL. The map is named after the Spanish region known for its windmills.

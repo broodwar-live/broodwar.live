@@ -1,19 +1,20 @@
 +++
 title = "Sparkle"
-description = "Overview of Sparkle, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Sparkle is a 4-player Twilight island map by Waldstein, used in ASL Season 5 in 2018."
 slug = "sparkle"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Sparkle"
+name_ko = "스파클"
 dimensions = "128x128"
 tileset = "Twilight"
 players = 4
-spawn_positions = ""
-era = "2024-present"
+spawn_positions = "1, 4, 7, 10"
+era = "2018"
+sources = ["https://liquipedia.net/starcraft/Sparkle", "https://web.archive.org/web/20211019140251/https://namu.wiki/w/%EA%B8%80%EB%9D%BC%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A modern 4-player twilight map introduced to the ASL competitive pool in 2024, featuring balanced spawn positions and multiple expansion paths that encourage diverse strategies. The twilight tileset's purple-blue atmosphere provides a visually striking backdrop, while the map's rotational symmetry ensures no spawn position holds an inherent advantage.
+**Sparkle** is a 4-player map on the Twilight tileset, made by 양창목 (Waldstein). It is 128x128 with start locations at 1, 4, 7 and 10 o'clock.
 
-Each main base connects to a natural expansion with a ramp that provides moderate defensive protection. Beyond the natural, multiple expansion paths branch outward, giving players flexibility in their economic development. The center of the map features open terrain ringed by raised platforms, creating opportunities for high-ground army positioning and vision control during mid-game engagements.
+Sparkle was introduced in March 2018 for AfreecaTV StarLeague Season 5 and was also used in BSL.
 
-Sparkle's design rewards players who adapt their strategy to the flow of the game. The multiple expansion paths mean that static defensive setups are vulnerable to multi-pronged attacks, while the open center invites decisive engagements. In its early competitive life, the map has shown balanced results across matchups, with the terrain features offering tactical options for all three races. Protoss can use the raised platforms for army staging, Terran benefits from the siege-friendly elevated positions, and Zerg exploits the multiple paths for mobility-based play.
+It is an island map decorated with neutral Zerg Hives and Terran Neural Disruptors. To offset Zerg's usual weakness on island maps, each edge of the map has a gas source that only Zerg can harvest.

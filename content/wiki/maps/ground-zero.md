@@ -1,19 +1,20 @@
 +++
 title = "Ground Zero"
-description = "Overview of Ground Zero, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Ground Zero is a 4-player Ash World map by [Ragnarok]Valkyrie, used in the 2011-12 Proleague and Tving OSL 2012."
 slug = "ground-zero"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Ground Zero"
+name_ko = "그라운드 제로"
 dimensions = "128x128"
-tileset = "Badlands"
+tileset = "Ash World"
 players = 4
-spawn_positions = ""
-era = "2003-2005"
+spawn_positions = "1, 5, 7, 11"
+era = "2011-present"
+sources = ["https://liquipedia.net/starcraft/Ground_Zero", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/506_Ground_Zero"]
+verified = "2026-10-11"
 +++
-A classic 4-player badlands map from the golden era of Korean Brood War, used in professional competition from 2003 through 2005. Ground Zero features the rugged brown-red terrain of the badlands tileset with four spawn positions in rotational symmetry. The map became particularly well-known for producing balanced Terran vs Zerg games, a matchup that was often difficult to balance on competitive maps.
+**Ground Zero** is a 4-player map on the Ash World tileset, made by [Ragnarok]Valkyrie. It is 128x128 with start locations at 1, 5, 7 and 11 o'clock. It should not be confused with Blizzard's older map of the same name.
 
-The map's layout provides a good balance of open terrain and chokepoints. Natural expansions are accessible through ramps that offer meaningful defensive protection, while the center of the map opens up into broader terrain suitable for large engagements. The badlands ridges create natural army staging positions and vision lines that both races could exploit — Terran with siege tank lines and Zerg with elevated overlord scouting.
+Ground Zero entered the 2011-12 SK Planet Proleague in late 2011 and was later revised as **Neo Ground Zero**. Across its versions the map was used in Proleague Seasons 1 and 2 and the 2012 Tving OSL, and later in the TeamLiquid Legacy Starleague, BSL and ASL Season 8.
 
-Ground Zero appeared in early OSL seasons and was valued for its contribution to competitive balance, particularly in TvZ. The map's distances were well-calibrated — long enough for Zerg to establish their economy without being immediately overrun, but short enough that Terran timing attacks remained viable. The map also produced solid games in other matchups, though it was the TvZ balance that gave it its reputation. Ground Zero is remembered as a thoughtfully designed map from the early golden era that demonstrated how terrain layout could achieve matchup balance.
+The exact center of the map is unwalkable, which is unusual. The Neo version removed the cliff behind the natural, turned the third bases into mineral-only expansions and changed the natural's mineral formation.

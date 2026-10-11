@@ -1,19 +1,20 @@
 +++
 title = "Match Point"
-description = "Overview of Match Point, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Match Point is a 2-player Space Platform map by Earthattack, used in Korean leagues in 2009-2010 and later in ASL."
 slug = "match-point"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Match Point"
+name_ko = "매치포인트"
 dimensions = "112x128"
 tileset = "Space Platform"
 players = 2
 spawn_positions = "1, 7"
-era = "2009-2014"
+era = "2009-2010"
+sources = ["https://liquipedia.net/starcraft/Match_Point", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/235_Match_Point", "https://web.archive.org/web/20220309032209/https://namu.wiki/w/%ED%88%AC%ED%98%BC(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A 2-player space platform map with a vertical layout that became one of the most exciting maps in competitive Brood War during its era. Spawns are at the 1 and 7 o'clock positions on a 112x128 map, with the vertical orientation creating a top-versus-bottom dynamic. The central area features an elevated high-ground platform that serves as the map's key strategic control point, while multiple attack paths branch around it.
+**Match Point** is a 2-player map on the Space Platform tileset, made by Earthattack (김응서). Liquipedia lists it as 112x128; the start locations are at 1 and 7 o'clock.
 
-The relatively compact design and moderate rush distance make Match Point a map that rewards aggressive, action-packed play. Early pressure builds are viable, but the central high ground provides defenders with a powerful positional advantage if they can secure it first. The space platform bridges create natural chokepoints along the side paths, while the main central corridor is wider and more open, leading to diverse engagement types.
+Match Point was used from October 2009 to October 2010, including the 2009-10 Shinhan Bank Proleague, the 2010 Hana Daetoo Securities MSL, the 2010 Korean Air OSL Season 1 and WCG Korea 2010. In the AfreecaTV era it returned for ASL Seasons 7, 9 and 21 and for KSL Season 4.
 
-Match Point was popular in both Korean professional tournaments and international competition from 2009 through 2014, appearing in multiple OSL, MSL, and early ASL seasons. The map produced consistently exciting games due to its compact design — passive play is punished because the short distances allow opponents to exploit any economic greed quickly. Terran benefits from the siege-friendly central high ground, Protoss can use the multiple paths for shuttle harassment, and Zerg must play aggressively to prevent being contained by the map's relatively tight layout.
+Each main has 9 mineral patches and one geyser; the natural has 7 patches and one geyser. The natural is reached up a ramp, which makes Protoss fast expansions comfortable. The center is unbuildable and the general push direction runs across large platforms, with many small side routes; rush distances are short.

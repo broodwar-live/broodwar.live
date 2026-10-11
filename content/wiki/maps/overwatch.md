@@ -1,19 +1,19 @@
 +++
 title = "Overwatch"
-description = "Overview of Overwatch, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Overwatch is a 2-player Twilight map by -NegativeZero-, used in foreign leagues from 2013 and in KSL Season 3 and ASL Season 8."
 slug = "overwatch"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Overwatch"
-dimensions = "128x128"
-tileset = "Jungle World"
+dimensions = "112x128"
+tileset = "Twilight"
 players = 2
-spawn_positions = ""
-era = "2004-2006"
+spawn_positions = "5, 11"
+era = "2013-2019"
+sources = ["https://liquipedia.net/starcraft/Overwatch"]
+verified = "2026-10-11"
 +++
-A 2-player jungle map from the golden era of Korean Brood War, used in professional tournaments from 2004 through 2006. Overwatch features two spawn positions on a 128x128 jungle terrain, with the map's name reflecting its emphasis on high-ground control and vision advantages. Elevated ridges and cliffs overlook key areas of the map, making the fight for terrain control as important as army composition.
+**Overwatch** is a 2-player map on the Twilight tileset, made by the foreign mapmaker -NegativeZero-. It is 112x128 with start locations at 5 and 11 o'clock.
 
-The map's defining characteristic is its prominent high-ground features near the center and along the main attack paths. These elevated positions give significant advantages to the army that controls them — siege tanks gain extended range, reavers can reach vulnerable mineral lines, and any unit on the high ground benefits from vision superiority. The natural expansions are positioned such that they can be pressured from above, creating constant tension in the early game.
+Overwatch debuted in the 2013 SBWI Summer Tournament and was used in the first SBWI Teamleague, for whose playoffs it was revised as **Neo Overwatch** to make Terran more viable. In February 2019 it was announced as a ladder map and as a map for KSL Season 3, and it was also used in ASL Season 8.
 
-Overwatch was known for producing aggressive, fast-paced games due to the relatively short rush distance combined with the high-ground aggression potential. Early rushes were common, as players sought to deny their opponent the ability to secure high-ground positions. The map appeared in OSL seasons during its active period and hosted several memorable early-golden-era professional matches. It is remembered as a map that rewarded aggressive play and punished players who ceded map control, embodying the high-tempo style that characterized mid-2000s Korean Brood War.
+The direct path between the players is constricted by bridges and a tight central gap, so larger armies take wider routes. Two large high-ground pods between the natural and the center matter for fights around the third gas, and two curved ridges dominate the middle. The original third gas base was low ground open from three sides; Neo Overwatch raised it and gave it two ramps, enlarged the mains and adjusted chokes and resources.

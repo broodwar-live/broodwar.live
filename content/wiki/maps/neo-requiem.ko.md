@@ -1,19 +1,21 @@
 +++
 title = "Neo Requiem"
-description = "Neo Requiem 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
+description = "네오 레퀴엠은 지근영(DreamReaver)과 변종석(Rose.of.Dream)이 만든 4인용 재 맵 레퀴엠의 수정판이다."
 slug = "neo-requiem"
 template = "wiki/map.html"
 [extra]
-unverified = true
 name_en = "Neo Requiem"
+name_ko = "네오 레퀴엠"
 dimensions = "128x128"
-tileset = "Twilight"
+tileset = "Ash World"
 players = 4
-spawn_positions = ""
-era = "2009-2011"
+spawn_positions = "3, 6, 9, 12"
+era = "2004-2006, 2008-2009"
+sources = ["https://liquipedia.net/starcraft/Requiem", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/28_Requiem", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/23_Neo_Requiem"]
+verified = "2026-10-11"
 +++
-2009년부터 2011년까지 프로 대회에서 사용된 한국 브루드워 후기 황금기의 4인용 트와일라잇 맵이다. 네오 레퀴엠은 원본 레퀴엠의 밸런스 수정 버전으로, "네오" 접두사는 경쟁적 공정성 향상을 위한 지형 조정을 나타낸다. 트와일라잇 타일셋은 대기적 보라-파란 비주얼을 제공하며, 4개 스폰 위치가 회전 대칭으로 배치된다.
+**네오 레퀴엠**은 지근영(DreamReaver)과 변종석(Rose.of.Dream.)이 제작한 애시 월드(Ash World) 타일셋의 4인용 맵 **레퀴엠**의 수정판이다. 크기는 128x128, 시작 위치는 3시, 6시, 9시, 12시이다.
 
-세 종족 모두에서 놀랍도록 균형 잡힌 매치업 통계로 유명해졌다 — 대회 운영진의 인기를 끈 드문 성취였다. 각 본진은 적당한 초크포인트 방어가 있는 언덕을 통해 앞마당과 연결되며, 각 기지에서 중앙으로 향하는 다양한 경로가 있다. 중앙에는 다양한 교전 시나리오를 만드는 개방 지형과 높은 포지션의 혼합이 있다.
+레퀴엠은 2004~2005년 EVER 스타리그 2004, IOPS 스타리그 2004-05 등에서 쓰였다. 네오 레퀴엠은 2005년 SKY 프로리그 등에서 많이 사용되었고, 2008년 10월부터 2009년 1월까지 신한은행 프로리그 08-09와 곰TV 클래식 시즌2에서 다시 쓰였다.
 
-네오 레퀴엠은 OSL과 MSL의 마지막 시즌과 초기 ASL 경쟁에 등장했다. 많은 맵들이 명확한 종족 선호도를 보이던 시기에 균형 잡힌 통계는 특히 인상적이었다. 트와일라잇 지형 특징은 흥미로운 전술적 플레이를 가능하게 했다 — 높은 플랫폼이 시야 이점을 제공하고, 낮은 통로가 측면 공격을 위한 대안 경로를 만들었다. 어떤 단일 플레이 스타일이나 종족 구성을 선호하기보다, 상대 전략을 읽고 그에 맞춰 조정할 수 있는 적응력 있는 선수에게 보상을 주는 맵이었다.
+중앙을 미네랄로 된 커다란 십자 모양이 가른다. 모서리 멀티는 진짜 섬이 아니라 미네랄을 캐거나 일꾼으로 미네랄 사이를 통과해 들어갈 수 있다. 중앙에서 본진으로 내려가는 언덕 구조라 조여지면 뚫고 나오기가 매우 어렵고, 본진 입구는 당시 다른 맵보다 넓다.

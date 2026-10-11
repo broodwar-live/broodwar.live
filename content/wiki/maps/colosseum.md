@@ -1,19 +1,20 @@
 +++
 title = "Colosseum"
-description = "Overview of Colosseum, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
+description = "Colosseum is a 4-player Desert map by Str18-02, used in the 2008 Proleague; its revision Colosseum II followed in 2008-09."
 slug = "colosseum"
 template = "wiki/map.html"
 [extra]
-unverified = true
-name_ko = "Colosseum"
+name_ko = "콜로세움"
 dimensions = "128x128"
-tileset = "Jungle World"
-players = 2
-spawn_positions = ""
-era = "2005-2008"
+tileset = "Desert"
+players = 4
+spawn_positions = "2, 5, 8, 11"
+era = "2008-2009"
+sources = ["https://liquipedia.net/starcraft/Colosseum", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/172_Colosseum", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/192_Colosseum_II"]
+verified = "2026-10-11"
 +++
-An iconic 2-player jungle map that was a centerpiece of professional Brood War competition in the mid-2000s, used in major OSL and MSL tournaments from 2005 through 2008. The map features two spawn positions on opposite sides with a relatively short rush distance, creating an inherently aggressive dynamic. Each main base connects to a natural expansion with a ramp, but the proximity of the two bases means early pressure is always a viable strategy.
+**Colosseum** is a 4-player map on the Desert tileset, made by 우상희 (Str18-02). TLPD lists it as 128x128 with start locations at 2, 5, 8 and 11 o'clock.
 
-Colosseum's short rush distance is its defining feature — it forces players into early-game confrontations and punishes overly greedy economic openings. The jungle terrain provides cliffs and elevated terrain near the center, creating high-ground advantages for armies that control key positions. The map's compact layout means that mid-game battles happen quickly and frequently, producing action-packed games that were exciting for spectators.
+The map was introduced for the 2008 Shinhan Bank Proleague and the 2008 Arena MSL. A revised version, **Colosseum II**, was used in the 2008-09 Shinhan Bank Proleague and the GOMTV Averatec-Intel Classic Season 2; overall the map was in use from April 2008 to August 2009. Colosseum also appeared in KSL Season 3.
 
-The map was particularly notable in TvZ and PvZ, where the short distance allowed aggressive Terran and Protoss openings to pressure Zerg before they could establish a safe expansion. Zerg players had to be creative with defensive hatchery placement and early unit production to survive the opening minutes. Colosseum hosted some memorable OSL and MSL matches and is remembered as one of the premier aggressive maps of the golden era, embodying the philosophy that great games come from forcing constant interaction between players.
+Its defining features are a narrow choke into the main with neutral creep (letting Zerg place a Sunken Colony there without an extra Hatchery) and a raised natural behind that choke from which ranged units can fire down into the approach, making early expansions easy to hold against ground attacks. Colosseum II moved the secondary expansions farther from the natural and removed the outer mineral-only bases.
