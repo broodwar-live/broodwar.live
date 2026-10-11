@@ -17,18 +17,18 @@ runner_up = "BoxeR"
 runner_up_slug = "boxer"
 final_score = "3–1"
 final_date = "2002-10-12"
-semifinalists = [{ name = "YellOw" }, { name = "Elky" }]
+semifinalists = [{ name = "YellOw", slug = "yellow" }, { name = "Elky" }]
 start_date = "2002-07-12"
 end_date = "2002-10-12"
 maps = [{ name = "Gaema Gowon" }, { name = "Neo Bifrost" }, { name = "Neo Forbidden Zone" }, { name = "Neo Vertigo" }]
-participants = [{ name = "GARIMTO" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa" }, { name = "Reach", slug = "reach" }, { name = "ChRh" }, { name = "CryStal" }, { name = "ElkY" }, { name = "H.O.T-Forever" }, { name = "Oddysay" }, { name = "JinNam" }, { name = "Sync" }, { name = "MuMyung" }, { name = "TheMarine" }, { name = "Sinji_NT" }, { name = "V-Gundam" }, { name = "YellOw" }]
+participants = [{ name = "GARIMTO", slug = "garimto" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa", slug = "chojja" }, { name = "Reach", slug = "reach" }, { name = "ChRh", slug = "chrh" }, { name = "CryStal" }, { name = "ElkY" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Oddysay" }, { name = "JinNam", slug = "jinnam" }, { name = "Sync", slug = "sync" }, { name = "MuMyung", slug = "mumyung" }, { name = "TheMarine", slug = "themarine" }, { name = "Sinji_NT" }, { name = "V-Gundam" }, { name = "YellOw", slug = "yellow" }]
 sources = ["https://liquipedia.net/starcraft/2002_SKY_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Semifinals"
 best_of = 5
 matches = [
-  { a = "Reach", a_slug = "reach", score_a = 3, b = "YellOw", score_b = 2 },
+  { a = "Reach", a_slug = "reach", score_a = 3, b = "YellOw", b_slug = "yellow", score_b = 2 },
   { a = "BoxeR", a_slug = "boxer", score_a = 3, b = "Elky", score_b = 0 },
 ]
 [[extra.bracket]]

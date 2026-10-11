@@ -21,7 +21,7 @@ semifinalists = [{ name = "XellOs", slug = "xellos" }, { name = "GoRush", slug =
 start_date = "2005-04-08"
 end_date = "2005-07-02"
 maps = [{ name = "Forte" }, { name = "Neo Requiem", slug = "neo-requiem" }, { name = "Luna the Final" }, { name = "Ride of Valkyries", slug = "ride-of-valkyries" }]
-participants = [{ name = "HoOny" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "GGPlay", slug = "ggplay" }, { name = "Kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "GoRush", slug = "gorush" }, { name = "Reach", slug = "reach" }, { name = "Iris", slug = "iris" }, { name = "JJu", slug = "jju" }, { name = "Stork", slug = "stork" }, { name = "Midas" }, { name = "July", slug = "july" }, { name = "NaDa", slug = "nada" }, { name = "OversKy" }, { name = "XellOs", slug = "xellos" }, { name = "YellOw" }]
+participants = [{ name = "HoOny" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "GGPlay", slug = "ggplay" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "GoRush", slug = "gorush" }, { name = "Reach", slug = "reach" }, { name = "Iris", slug = "iris" }, { name = "JJu", slug = "jju" }, { name = "Stork", slug = "stork" }, { name = "Midas", slug = "midas" }, { name = "July", slug = "july" }, { name = "NaDa", slug = "nada" }, { name = "OversKy" }, { name = "XellOs", slug = "xellos" }, { name = "YellOw", slug = "yellow" }]
 sources = ["https://liquipedia.net/starcraft/2005_EVER_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -30,7 +30,7 @@ best_of = 3
 matches = [
   { a = "XellOs", a_slug = "xellos", score_a = 2, b = "iloveoov", b_slug = "iloveoov", score_b = 0 },
   { a = "Iris", a_slug = "iris", score_a = 0, b = "July", b_slug = "july", score_b = 2 },
-  { a = "Goodfriend", a_slug = "goodfriend", score_a = 2, b = "Midas", score_b = 1 },
+  { a = "Goodfriend", a_slug = "goodfriend", score_a = 2, b = "Midas", b_slug = "midas", score_b = 1 },
   { a = "GoRush", a_slug = "gorush", score_a = 2, b = "Reach", b_slug = "reach", score_b = 1 },
 ]
 [[extra.bracket]]

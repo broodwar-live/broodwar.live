@@ -21,17 +21,17 @@ semifinalists = [{ name = "Jaeyun" }, { name = "Bonyth", slug = "bonyth" }]
 start_date = "2019-09-14"
 end_date = "2019-11-03"
 maps = [{ name = "Oxide" }, { name = "New Bloody Ridge" }, { name = "Power Bond" }, { name = "Sylphid", slug = "sylphid" }, { name = "Ground Zero", slug = "ground-zero" }, { name = "Multiverse" }, { name = "Gladiator", slug = "gladiator" }]
-participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "trutaCz", slug = "trutacz" }, { name = "Dewalt", slug = "dewalt" }, { name = "DragOn", slug = "dragon" }, { name = "UltrA" }, { name = "CastrO" }, { name = "Cryoc", slug = "cryoc" }, { name = "Ty2" }, { name = "seriOsity" }, { name = "TTF" }, { name = "Eriador" }, { name = "VinGzil" }, { name = "Nyoken", slug = "nyoken" }, { name = "g0rynich", slug = "g0rynich" }, { name = "Gosudark" }, { name = "TerrOr" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Tech" }, { name = "Favorit" }, { name = "Casper" }, { name = "Avi-Love", slug = "avi" }, { name = "Dienmax" }, { name = "spx" }, { name = "babo" }, { name = "cRoSs" }, { name = "LaAbuela" }, { name = "Jaeyun" }, { name = "LancerX" }]
+participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "trutaCz", slug = "trutacz" }, { name = "Dewalt", slug = "dewalt" }, { name = "DragOn", slug = "dragon" }, { name = "UltrA", slug = "ultra" }, { name = "CastrO" }, { name = "Cryoc", slug = "cryoc" }, { name = "Ty2" }, { name = "seriOsity" }, { name = "TTF" }, { name = "Eriador" }, { name = "VinGzil" }, { name = "Nyoken", slug = "nyoken" }, { name = "g0rynich", slug = "g0rynich" }, { name = "Gosudark", slug = "gosudark" }, { name = "TerrOr", slug = "terror-peru" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Tech" }, { name = "Favorit" }, { name = "Casper" }, { name = "Avi-Love", slug = "avi" }, { name = "Dienmax" }, { name = "spx", slug = "spx" }, { name = "Jiren", slug = "jiren" }, { name = "cRoSs", slug = "cross" }, { name = "LaAbuela" }, { name = "Jaeyun" }, { name = "LancerX" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/7", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Quarterfinals"
 best_of = 5
 matches = [
-  { a = "spx", score_a = 2, b = "Jaeyun", score_b = 3, date = "2019-10-19" },
-  { a = "TerrOr", score_a = 2, b = "trutaCz", b_slug = "trutacz", score_b = 3, date = "2019-10-19" },
+  { a = "spx", a_slug = "spx", score_a = 2, b = "Jaeyun", score_b = 3, date = "2019-10-19" },
+  { a = "TerrOr", a_slug = "terror-peru", score_a = 2, b = "trutaCz", b_slug = "trutacz", score_b = 3, date = "2019-10-19" },
   { a = "Ty2", score_a = 0, b = "Bonyth", b_slug = "bonyth", score_b = 3, date = "2019-10-20" },
-  { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "babo", score_b = 0, date = "2019-10-20" },
+  { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "Jiren", b_slug = "jiren", score_b = 0, date = "2019-10-20" },
 ]
 [[extra.bracket]]
 round = "Semifinals"

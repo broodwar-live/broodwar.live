@@ -1,6 +1,6 @@
 +++
 title = "BSL 시즌 18"
-description = "봄바스틱 스타리그 시즌 18 (2024년): Dewalt가 그랜드 파이널에서 ZhanHun를 5:1로 꺾고 우승."
+description = "봄바스틱 스타리그 시즌 18 (2024년): Dewalt가 그랜드 파이널에서 Zhanhun를 5:1로 꺾고 우승."
 slug = "bsl-s18"
 template = "tournaments/season.html"
 [extra]
@@ -12,7 +12,9 @@ year = 2024
 status = "completed"
 prize_pool = "US$4,000"
 champion = "Dewalt"
-runner_up = "ZhanHun"
+champion_slug = "dewalt"
+runner_up = "Zhanhun"
+runner_up_slug = "zhanhun"
 final_score = "5–1"
 final_date = "2024-05-19"
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/18", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
@@ -24,4 +26,4 @@ score_a = 5
 player_b = "ZhanHun"
 score_b = 1
 +++
-Dewalt가 2024년 5월 19일 그랜드 파이널에서 ZhanHun을 꺾고 우승했습니다. 승자조 출신으로 1승을 안고 시작한 Dewalt는 실제로 치른 다섯 세트 중 네 세트를 따내 5:1로 승리했습니다.
+Dewalt가 2024년 5월 19일 그랜드 파이널에서 Zhanhun을 꺾고 우승했습니다. 승자조 출신으로 1승을 안고 시작한 Dewalt는 실제로 치른 다섯 세트 중 네 세트를 따내 5:1로 승리했습니다.

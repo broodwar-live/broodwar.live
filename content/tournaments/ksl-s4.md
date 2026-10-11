@@ -21,7 +21,7 @@ semifinalists = [{ name = "Zero", slug = "zero" }, { name = "SoMa", slug = "soma
 start_date = "2019-10-31"
 end_date = "2019-11-29"
 maps = [{ name = "Fighting Spirit", slug = "fighting-spirit" }, { name = "Match Point", slug = "match-point" }, { name = "Circuit Breakers", slug = "circuit-breaker" }, { name = "Block Chain" }, { name = "Overwatch", slug = "overwatch" }, { name = "Neo Sylphid" }, { name = "Eddy", slug = "eddy" }]
-participants = [{ name = "Rain", slug = "rain" }, { name = "Mini", slug = "mini" }, { name = "Stork", slug = "stork" }, { name = "Snow", slug = "snow" }, { name = "BeSt", slug = "best" }, { name = "ForGG" }, { name = "Hyuk" }, { name = "Light", slug = "light" }, { name = "Modesty", slug = "modesty" }, { name = "Mind", slug = "mind" }, { name = "ZerO", slug = "zero" }, { name = "Rush", slug = "rush" }, { name = "Sacsri", slug = "sacsri" }, { name = "Sharp", slug = "sharp" }, { name = "SoMa", slug = "soma" }, { name = "sOrry", slug = "royal" }]
+participants = [{ name = "Rain", slug = "rain" }, { name = "Mini", slug = "mini" }, { name = "Stork", slug = "stork" }, { name = "Snow", slug = "snow" }, { name = "BeSt", slug = "best" }, { name = "fOrGG", slug = "forgg" }, { name = "Hyuk", slug = "hyuk" }, { name = "Light", slug = "light" }, { name = "Modesty", slug = "modesty" }, { name = "Mind", slug = "mind" }, { name = "ZerO", slug = "zero" }, { name = "Rush", slug = "rush" }, { name = "Sacsri", slug = "sacsri" }, { name = "Sharp", slug = "sharp" }, { name = "SoMa", slug = "soma" }, { name = "sOrry", slug = "royal" }]
 sources = ["https://liquipedia.net/starcraft/2019_Korea_StarCraft_League_Season_4"]
 verified = "2026-10-11"
 [[extra.bracket]]

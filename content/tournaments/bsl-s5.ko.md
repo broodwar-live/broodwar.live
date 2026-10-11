@@ -21,7 +21,7 @@ semifinalists = [{ name = "trutaCz", slug = "trutacz" }, { name = "kogeT", slug 
 start_date = "2018-11-09"
 end_date = "2018-12-23"
 maps = [{ name = "Aztec", slug = "aztec" }, { name = "Benzene", slug = "benzene" }, { name = "Blue Storm", slug = "blue-storm" }, { name = "Circuit Breakers", slug = "circuit-breaker" }, { name = "Eddy", slug = "eddy" }, { name = "Heartbeat" }, { name = "Kiseyras" }, { name = "Roadkill", slug = "roadkill" }, { name = "Sylphid", slug = "sylphid" }]
-participants = [{ name = "Dewalt", slug = "dewalt" }, { name = "Dandy", slug = "dandy" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "kogeT", slug = "koget" }, { name = "Favorit" }, { name = "KuH" }, { name = "Kingdom" }, { name = "Splax" }, { name = "Arew" }, { name = "Cryoc", slug = "cryoc" }, { name = "Kame" }, { name = "Bonyth", slug = "bonyth" }, { name = "Marwin" }, { name = "Avi-Love", slug = "avi" }, { name = "DragOn", slug = "dragon" }, { name = "spx" }, { name = "babo" }, { name = "Gosudark" }, { name = "TerrOr" }, { name = "Bakuryu", slug = "bakuryu" }, { name = "UltrA" }, { name = "Bylat" }, { name = "g0rynich", slug = "g0rynich" }, { name = "KenZy" }, { name = "trutaCz", slug = "trutacz" }, { name = "Ty2" }, { name = "ZeTy" }, { name = "Lumire" }]
+participants = [{ name = "Dewalt", slug = "dewalt" }, { name = "Dandy", slug = "dandy" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "kogeT", slug = "koget" }, { name = "Favorit" }, { name = "KuH" }, { name = "Kingdom" }, { name = "Splax" }, { name = "Arew" }, { name = "Cryoc", slug = "cryoc" }, { name = "Kame" }, { name = "Bonyth", slug = "bonyth" }, { name = "Marwin" }, { name = "Avi-Love", slug = "avi" }, { name = "DragOn", slug = "dragon" }, { name = "spx", slug = "spx" }, { name = "Jiren", slug = "jiren" }, { name = "Gosudark", slug = "gosudark" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Bakuryu", slug = "bakuryu" }, { name = "UltrA", slug = "ultra" }, { name = "Bylat" }, { name = "g0rynich", slug = "g0rynich" }, { name = "KenZy" }, { name = "trutaCz", slug = "trutacz" }, { name = "Ty2" }, { name = "ZeTy" }, { name = "Lumire" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/5", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -30,7 +30,7 @@ best_of = 5
 matches = [
   { a = "Dewalt", a_slug = "dewalt", score_a = 2, b = "trutaCz", b_slug = "trutacz", score_b = 3, date = "2018-12-17" },
   { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "Dandy", b_slug = "dandy", score_b = 1, date = "2018-12-15" },
-  { a = "kogeT", a_slug = "koget", score_a = 3, b = "TerrOr", score_b = 0, date = "2018-12-16" },
+  { a = "kogeT", a_slug = "koget", score_a = 3, b = "TerrOr", b_slug = "terror-peru", score_b = 0, date = "2018-12-16" },
   { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "KenZy", score_b = 1, date = "2018-12-16" },
 ]
 [[extra.bracket]]

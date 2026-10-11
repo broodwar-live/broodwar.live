@@ -20,7 +20,7 @@ final_date = "2026-06-07"
 start_date = "2026-03-01"
 end_date = "2026-06-07"
 maps = [{ name = "Attitude" }, { name = "Jane Doe" }, { name = "KnockOut" }, { name = "Match Point", slug = "match-point" }, { name = "Octagon" }, { name = "Pole Star" }, { name = "Sylphid", slug = "sylphid" }, { name = "Dragon's Lair" }]
-participants = [{ name = "Dewalt", slug = "dewalt" }, { name = "cRoSs" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Bonyth", slug = "bonyth" }, { name = "Mazur" }, { name = "KwarK", slug = "kwark" }, { name = "izu" }, { name = "HBO" }, { name = "DragOn", slug = "dragon" }, { name = "rasowy" }, { name = "Artosis" }, { name = "Azhi_Dahaki" }, { name = "Hawk", slug = "hawk" }, { name = "OyA", slug = "oya" }, { name = "ZZZero" }, { name = "DoodleDoodle" }, { name = "TerrOr" }, { name = "cavapoo" }, { name = "WolFix" }, { name = "PerroFlaco" }, { name = "MadiNho" }, { name = "dxtr13" }, { name = "Napoleon" }, { name = "spx" }, { name = "StRyKeR" }, { name = "Jimin" }, { name = "Sterling" }, { name = "Razz" }, { name = "JDConan" }, { name = "UltrA" }, { name = "Gosudark" }, { name = "nesh" }, { name = "Aether" }, { name = "nOmaD" }, { name = "LancerX" }, { name = "Strudel" }]
+participants = [{ name = "Dewalt", slug = "dewalt" }, { name = "cRoSs", slug = "cross" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Bonyth", slug = "bonyth" }, { name = "Mazur" }, { name = "KwarK", slug = "kwark" }, { name = "izu" }, { name = "HBO" }, { name = "DragOn", slug = "dragon" }, { name = "rasowy" }, { name = "Artosis" }, { name = "Azhi_Dahaki" }, { name = "Hawk", slug = "hawk" }, { name = "OyA", slug = "oya" }, { name = "ZZZero", slug = "zzzero" }, { name = "DoodleDoodle" }, { name = "TerrOr", slug = "terror-peru" }, { name = "cavapoo" }, { name = "WolFix" }, { name = "PerroFlaco" }, { name = "MadiNho" }, { name = "dxtr13" }, { name = "Napoleon" }, { name = "spx", slug = "spx" }, { name = "StRyKeR" }, { name = "Jimin" }, { name = "Sterling" }, { name = "Razz" }, { name = "JDConan" }, { name = "UltrA", slug = "ultra" }, { name = "Gosudark", slug = "gosudark" }, { name = "nesh" }, { name = "Aether" }, { name = "nOmaD" }, { name = "LancerX" }, { name = "Strudel" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/22", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -28,7 +28,7 @@ round = "Upper Quarterfinals"
 best_of = 5
 matches = [
   { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "DoodleDoodle", score_b = 0, date = "2026-05-16" },
-  { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "TerrOr", score_b = 2, date = "2026-05-16" },
+  { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "TerrOr", b_slug = "terror-peru", score_b = 2, date = "2026-05-16" },
   { a = "OyA", a_slug = "oya", score_a = 3, b = "JDConan", score_b = 0, date = "2026-05-17" },
   { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "DragOn", b_slug = "dragon", score_b = 0, date = "2026-05-17" },
 ]
@@ -49,21 +49,21 @@ matches = [
 round = "Lower Round 1"
 best_of = 3
 matches = [
-  { a = "DoodleDoodle", score_a = 1, b = "TerrOr", score_b = 2, date = "2026-05-16" },
+  { a = "DoodleDoodle", score_a = 1, b = "TerrOr", b_slug = "terror-peru", score_b = 2, date = "2026-05-16" },
   { a = "JDConan", score_a = 0, b = "DragOn", b_slug = "dragon", score_b = 2, date = "2026-05-17" },
 ]
 [[extra.bracket]]
 round = "Lower Round 2"
 best_of = 5
 matches = [
-  { a = "OyA", a_slug = "oya", score_a = 2, b = "TerrOr", score_b = 3, date = "2026-05-24" },
+  { a = "OyA", a_slug = "oya", score_a = 2, b = "TerrOr", b_slug = "terror-peru", score_b = 3, date = "2026-05-24" },
   { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "DragOn", b_slug = "dragon", score_b = 0, date = "2026-05-24" },
 ]
 [[extra.bracket]]
 round = "Lower Round 3"
 best_of = 5
 matches = [
-  { a = "TerrOr", score_a = 2, b = "Dewalt", b_slug = "dewalt", score_b = 3, date = "2026-05-30" },
+  { a = "TerrOr", a_slug = "terror-peru", score_a = 2, b = "Dewalt", b_slug = "dewalt", score_b = 3, date = "2026-05-30" },
 ]
 [[extra.bracket]]
 round = "Lower Final"

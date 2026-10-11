@@ -21,14 +21,14 @@ semifinalists = [{ name = "Hydra", slug = "hydra" }, { name = "soO", slug = "soo
 start_date = "2011-07-13"
 end_date = "2011-09-17"
 maps = [{ name = "New Bloody Ridge" }, { name = "La Mancha", slug = "la-mancha" }, { name = "Gladiator", slug = "gladiator" }, { name = "Pathfinder" }]
-participants = [{ name = "JangBi", slug = "jangbi" }, { name = "BaBy", slug = "ty" }, { name = "by.hero", slug = "hero" }, { name = "Shuttle", slug = "shuttle" }, { name = "Bogus" }, { name = "Hyun", slug = "hyun" }, { name = "Tempest", slug = "tempest" }, { name = "Major" }, { name = "hyvaa" }, { name = "free", slug = "free" }, { name = "Flash", slug = "flash" }, { name = "Killer", slug = "killer" }, { name = "Kal" }, { name = "HiyA", slug = "hiya" }, { name = "soO", slug = "soo" }, { name = "Paralyze" }, { name = "Mind", slug = "mind" }, { name = "Roro" }, { name = "Stork", slug = "stork" }, { name = "Sea", slug = "sea" }, { name = "s2" }, { name = "Fantasy", slug = "fantasy" }, { name = "Hyuk" }, { name = "Hydra", slug = "hydra" }, { name = "Jaedong", slug = "jaedong" }, { name = "Shine", slug = "shine" }, { name = "Calm", slug = "calm" }, { name = "Modesty", slug = "modesty" }]
+participants = [{ name = "JangBi", slug = "jangbi" }, { name = "BaBy", slug = "ty" }, { name = "by.hero", slug = "hero" }, { name = "Shuttle", slug = "shuttle" }, { name = "Bogus" }, { name = "Hyun", slug = "hyun" }, { name = "Tempest", slug = "tempest" }, { name = "Major" }, { name = "hyvaa" }, { name = "free", slug = "free" }, { name = "Flash", slug = "flash" }, { name = "Killer", slug = "killer" }, { name = "Kal", slug = "kal" }, { name = "HiyA", slug = "hiya" }, { name = "soO", slug = "soo" }, { name = "Paralyze" }, { name = "Mind", slug = "mind" }, { name = "Roro" }, { name = "Stork", slug = "stork" }, { name = "Sea", slug = "sea" }, { name = "s2" }, { name = "Fantasy", slug = "fantasy" }, { name = "Hyuk", slug = "hyuk" }, { name = "Hydra", slug = "hydra" }, { name = "Jaedong", slug = "jaedong" }, { name = "Shine", slug = "shine" }, { name = "Calm", slug = "calm" }, { name = "Modesty", slug = "modesty" }]
 sources = ["https://liquipedia.net/starcraft/2011_Jin_Air_OSL", "https://liquipedia.net/starcraft/2011_Jin_Air_OSL/Elimination_Bracket", "https://liquipedia.net/starcraft/2011_Jin_Air_OSL/Round_of_16"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Quarterfinals"
 best_of = 3
 matches = [
-  { a = "Fantasy", a_slug = "fantasy", score_a = 2, b = "Hyuk", score_b = 0, date = "2011-08-26" },
+  { a = "Fantasy", a_slug = "fantasy", score_a = 2, b = "Hyuk", b_slug = "hyuk", score_b = 0, date = "2011-08-26" },
   { a = "Hydra", a_slug = "hydra", score_a = 2, b = "Modesty", b_slug = "modesty", score_b = 1, date = "2011-08-26" },
   { a = "soO", a_slug = "soo", score_a = 2, b = "Killer", b_slug = "killer", score_b = 1, date = "2011-08-26" },
   { a = "JangBi", a_slug = "jangbi", score_a = 2, b = "Flash", b_slug = "flash", score_b = 1, date = "2011-08-26" },

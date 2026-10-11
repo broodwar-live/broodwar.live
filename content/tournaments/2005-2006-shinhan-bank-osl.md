@@ -21,15 +21,15 @@ semifinalists = [{ name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "ca
 start_date = "2005-12-09"
 end_date = "2006-03-04"
 maps = [{ name = "Pioneer Period" }, { name = "Ride of Valkyries", slug = "ride-of-valkyries" }, { name = "Rush Hour 2" }, { name = "Sin 815" }]
-participants = [{ name = "Anytime", slug = "anytime" }, { name = "BoxeR", slug = "boxer" }, { name = "July", slug = "july" }, { name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "casy" }, { name = "SaferZerg" }, { name = "RainBOw" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "ZergMaN" }, { name = "Rock" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "Iris", slug = "iris" }, { name = "Midas" }, { name = "XellOs", slug = "xellos" }, { name = "(Oops)ClouD" }]
+participants = [{ name = "Anytime", slug = "anytime" }, { name = "BoxeR", slug = "boxer" }, { name = "July", slug = "july" }, { name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "casy" }, { name = "SaferZerg" }, { name = "RainBOw" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "ZergMaN" }, { name = "Rock", slug = "rock" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "Iris", slug = "iris" }, { name = "Midas", slug = "midas" }, { name = "XellOs", slug = "xellos" }, { name = "(Oops)ClouD" }]
 sources = ["https://liquipedia.net/starcraft/2005-2006_Shinhan_Bank_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Quarterfinals"
 best_of = 3
 matches = [
-  { a = "Pusan", a_slug = "pusan", score_a = 2, b = "Midas", score_b = 1, date = "2006-02-10" },
-  { a = "July", a_slug = "july", score_a = 2, b = "Rock", score_b = 0, date = "2006-02-03" },
+  { a = "Pusan", a_slug = "pusan", score_a = 2, b = "Midas", b_slug = "midas", score_b = 1, date = "2006-02-10" },
+  { a = "July", a_slug = "july", score_a = 2, b = "Rock", b_slug = "rock", score_b = 0, date = "2006-02-03" },
   { a = "BoxeR", a_slug = "boxer", score_a = 1, b = "iloveoov", b_slug = "iloveoov", score_b = 2, date = "2006-02-10" },
   { a = "Casy", a_slug = "casy", score_a = 2, b = "Goodfriend", b_slug = "goodfriend", score_b = 0, date = "2006-02-03" },
 ]

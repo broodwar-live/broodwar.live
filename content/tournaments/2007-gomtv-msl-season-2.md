@@ -21,7 +21,7 @@ semifinalists = [{ name = "firebathero", slug = "firebathero" }, { name = "GoRus
 start_date = "2007-05-03"
 end_date = "2007-07-14"
 maps = [{ name = "Desperado" }, { name = "Loki" }, { name = "Monty Hall" }, { name = "Python", slug = "python" }]
-participants = [{ name = "OversKy" }, { name = "TT" }, { name = "XellOs", slug = "xellos" }, { name = "910" }, { name = "firebathero", slug = "firebathero" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "sAviOr", slug = "savior" }, { name = "Light", slug = "light" }, { name = "Bisu", slug = "bisu" }, { name = "Hwasin" }, { name = "Sheis" }, { name = "July", slug = "july" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "GoRush", slug = "gorush" }, { name = "Sea", slug = "sea" }]
+participants = [{ name = "OversKy" }, { name = "TT" }, { name = "XellOs", slug = "xellos" }, { name = "910" }, { name = "firebathero", slug = "firebathero" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "sAviOr", slug = "savior" }, { name = "Light", slug = "light" }, { name = "Bisu", slug = "bisu" }, { name = "Hwasin", slug = "hwasin" }, { name = "Sheis" }, { name = "July", slug = "july" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "GoRush", slug = "gorush" }, { name = "Sea", slug = "sea" }]
 sources = ["https://liquipedia.net/starcraft/2007_GOMTV_MSL_Season_2", "https://liquipedia.net/starcraft/2007_GOMTV_MSL_Season_2/Round_of_16"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -33,7 +33,7 @@ matches = [
   { a = "firebathero", a_slug = "firebathero", score_a = 2, b = "iloveoov", b_slug = "iloveoov", score_b = 1, date = "2007-06-07" },
   { a = "Stork", a_slug = "stork", score_a = 0, b = "sAviOr", b_slug = "savior", score_b = 2, date = "2007-06-07" },
   { a = "Light", a_slug = "light", score_a = 0, b = "Bisu", b_slug = "bisu", score_b = 2, date = "2007-06-10" },
-  { a = "Hwasin", score_a = 2, b = "Sheis", score_b = 1, date = "2007-06-10" },
+  { a = "Hwasin", a_slug = "hwasin", score_a = 2, b = "Sheis", score_b = 1, date = "2007-06-10" },
   { a = "July", a_slug = "july", score_a = 2, b = "Nal_rA", b_slug = "nal-ra", score_b = 1, date = "2007-06-07" },
   { a = "GoRush", a_slug = "gorush", score_a = 2, b = "Sea", b_slug = "sea", score_b = 0, date = "2007-06-10" },
 ]
@@ -43,7 +43,7 @@ best_of = 5
 matches = [
   { a = "Stork", a_slug = "stork", score_a = 3, b = "910", score_b = 0, date = "2007-06-28" },
   { a = "firebathero", a_slug = "firebathero", score_a = 3, b = "sAviOr", b_slug = "savior", score_b = 2, date = "2007-06-24" },
-  { a = "Bisu", a_slug = "bisu", score_a = 3, b = "Hwasin", score_b = 2, date = "2007-06-21" },
+  { a = "Bisu", a_slug = "bisu", score_a = 3, b = "Hwasin", b_slug = "hwasin", score_b = 2, date = "2007-06-21" },
   { a = "July", a_slug = "july", score_a = 0, b = "GoRush", b_slug = "gorush", score_b = 3, date = "2007-06-17" },
 ]
 [[extra.bracket]]

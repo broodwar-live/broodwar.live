@@ -21,7 +21,7 @@ semifinalists = [{ name = "Bisu", slug = "bisu" }, { name = "Luxury", slug = "lu
 start_date = "2008-01-16"
 end_date = "2008-03-15"
 maps = [{ name = "Blue Storm", slug = "blue-storm" }, { name = "Demon's Forest" }, { name = "Katrina", slug = "katrina" }, { name = "Troy" }, { name = "Fantasy II" }]
-participants = [{ name = "BackHo", slug = "backho" }, { name = "Flash", slug = "flash" }, { name = "Jaedong", slug = "jaedong" }, { name = "BeSt", slug = "best" }, { name = "FrOzen", slug = "frozen" }, { name = "July", slug = "july" }, { name = "Bisu", slug = "bisu" }, { name = "Sea", slug = "sea" }, { name = "Luxury", slug = "luxury" }, { name = "Much", slug = "much" }, { name = "XellOs", slug = "xellos" }, { name = "Rumble" }, { name = "Rock" }, { name = "sAviOr", slug = "savior" }, { name = "Stork", slug = "stork" }, { name = "YellOw(ArnC)" }]
+participants = [{ name = "BackHo", slug = "backho" }, { name = "Flash", slug = "flash" }, { name = "Jaedong", slug = "jaedong" }, { name = "BeSt", slug = "best" }, { name = "FrOzen", slug = "frozen" }, { name = "July", slug = "july" }, { name = "Bisu", slug = "bisu" }, { name = "Sea", slug = "sea" }, { name = "Luxury", slug = "luxury" }, { name = "Much", slug = "much" }, { name = "XellOs", slug = "xellos" }, { name = "Rumble" }, { name = "Rock", slug = "rock" }, { name = "sAviOr", slug = "savior" }, { name = "Stork", slug = "stork" }, { name = "YellOw[ArnC]", slug = "yellow-arnc" }]
 sources = ["https://liquipedia.net/starcraft/2008_Bacchus_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

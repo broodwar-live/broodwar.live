@@ -30,7 +30,7 @@ matches = [
   { a = "Jaedong", a_slug = "jaedong", score_a = 3, b = "Snow", b_slug = "snow", score_b = 2, date = "2011-01-27" },
   { a = "Calm", a_slug = "calm", score_a = 0, b = "Hydra", b_slug = "hydra", score_b = 3, date = "2011-01-29" },
   { a = "ZerO", a_slug = "zero", score_a = 3, b = "Stork", b_slug = "stork", score_b = 0, date = "2011-01-27" },
-  { a = "great", a_slug = "great", score_a = 3, b = "Kal", score_b = 2, date = "2011-01-29" },
+  { a = "great", a_slug = "great", score_a = 3, b = "Kal", b_slug = "kal", score_b = 2, date = "2011-01-29" },
 ]
 [[extra.bracket]]
 round = "4강"
