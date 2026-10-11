@@ -1,5 +1,5 @@
 +++
-title = "Soma"
+title = "soma"
 description = "Soma (Park Sang Hyun) — Zerg who rose from the SonicTV scene to win ASL Seasons 20 and 21 back to back."
 slug = "soma"
 template = "players/player.html"

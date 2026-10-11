@@ -47,7 +47,9 @@
     The final is the last bracket round when it holds a single match (language-neutral:
     KO season pages translate round names). A match is a walkover when it sets
     `walkover = "a" | "b" | true` or lacks a score; walkovers count as series results
-    (when the winner is known) but never as games. See templates/players/playoff-record.html. -#}
+    (when the winner is known) but never as games. A match marked `upcoming = true` (an
+    ongoing season's unplayed slot) is skipped entirely, so an unplayed final is never
+    counted. See templates/players/playoff-record.html. -#}
 {% set_global rec_json = "" %}{% set_global rec_seasons = 0 %}
 {% for sp in tsec.pages %}{% if sp.extra.bracket is defined and sp.extra.bracket | length > 0 %}
 {% set_global rec_seasons = rec_seasons + 1 %}
@@ -56,7 +58,7 @@
 {% for rd in se.bracket %}{% set ri = loop.index %}{% set rd_final = loop.last and rd.matches | length == 1 %}
 {% for m in rd.matches %}
 {% set ma = m.a_slug | default(value="") %}{% set mb = m.b_slug | default(value="") %}
-{% if ma == page.slug or mb == page.slug %}
+{% if (ma == page.slug or mb == page.slug) and not (m.upcoming is defined and m.upcoming) %}
   {% if ma == page.slug %}{% set me = "a" %}{% set o_slug = mb %}{% set o_name = m.b %}{% else %}{% set me = "b" %}{% set o_slug = ma %}{% set o_name = m.a %}{% endif %}
   {% set has_sc = m.score_a is defined and m.score_b is defined %}
   {% set wo = (m.walkover is defined and m.walkover) or not has_sc %}

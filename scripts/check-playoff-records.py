@@ -11,7 +11,15 @@ checks, for every player page in the build (EN and KO):
   * series / games / finals W-L in the page's data-rec-* attributes equal the
     recomputation from the brackets;
   * finals W-L equals the titles / runner-up counts in the series pages' season lists
-    (the source of the Titles table), counting the seasons that have a bracket.
+    (the source of the Titles table), counting the seasons that have a bracket;
+  * the number of listed matches (data-rec-matches) equals the recomputation, which
+    skips bracket slots marked `upcoming = true`.
+
+Ongoing seasons (status "live" / "ongoing") are checked for a partial bracket that cannot
+produce a fake result: an `upcoming` match has no scores and no walkover; a match without
+scores or walkover must be marked `upcoming`; champion / runner-up / final score / final
+date stay empty; the final round (last round with a single match) is not played yet; and
+the series season row has no winner. A completed season has no `upcoming` matches.
 
 Series seasons without a bracketed season page are reported but are not an error: the
 record only covers playoffs recorded on season pages. Exits 1 on any mismatch.
@@ -50,17 +58,41 @@ def main():
     pages = [front_matter(p) for p in sorted((content / "tournaments").glob("*.md"))
              if not p.name.endswith(".ko.md") and not p.name.startswith("_")]
 
-    rec = defaultdict(Counter)  # slug -> sw, sl, gw, gl, fw, fl
+    rec = defaultdict(Counter)  # slug -> sw, sl, gw, gl, fw, fl, n (listed matches)
     bracketed = set()  # (series_slug, season)
+    ongoing = set()  # (series_slug, season) of live / ongoing season pages
+    errors = []
     for fm in pages:
         e = fm.get("extra", {})
         bracket = e.get("bracket") or []
+        live = e.get("status") in ("live", "ongoing")
+        where = f"tournaments/{fm.get('slug')}"
+        if live:
+            ongoing.add((e.get("series_slug"), e.get("season")))
+            for k in ("champion", "runner_up", "final_score", "final_date"):
+                if e.get(k):
+                    errors.append(f"{where}: ongoing season sets {k} = {e[k]!r}")
         if not bracket:
             continue
         bracketed.add((e.get("series_slug"), e.get("season")))
         for ri, rd in enumerate(bracket):
             is_final = ri == len(bracket) - 1 and len(rd["matches"]) == 1
-            for m in rd["matches"]:
+            for mi, m in enumerate(rd["matches"], 1):
+                at = f"{where} round {ri + 1} match {mi}"
+                if m.get("upcoming"):
+                    if not live:
+                        errors.append(f"{at}: upcoming match on a season with status {e.get('status')!r}")
+                    if "score_a" in m or "score_b" in m or m.get("walkover"):
+                        errors.append(f"{at}: upcoming match has a score or walkover")
+                    continue  # not played: never a series, game or final
+                unscored = not m.get("walkover") and ("score_a" not in m or "score_b" not in m)
+                if live and unscored:
+                    errors.append(f"{at}: unplayed match on an ongoing season must be marked upcoming")
+                elif live and is_final:
+                    errors.append(f"{at}: the final has a result but the season is still {e.get('status')!r}")
+                for sl in (m.get("a_slug"), m.get("b_slug")):
+                    if sl:
+                        rec[sl]["n"] += 1
                 w = winner(m)
                 games = "score_a" in m and "score_b" in m and not m.get("walkover")
                 for me, op in (("a", "b"), ("b", "a")):
@@ -81,6 +113,10 @@ def main():
     uncovered = []
     for fm in pages:
         for s in fm.get("extra", {}).get("seasons", []) or []:
+            if s.get("status") in ("live", "ongoing") and (s.get("winner") or s.get("runner_up") or s.get("score")):
+                errors.append(f"tournaments/{fm.get('slug')}: ongoing season {s.get('season')} has a winner / runner-up / score")
+            if (fm.get("slug"), s.get("season")) in ongoing and s.get("status") not in ("live", "ongoing"):
+                errors.append(f"tournaments/{fm.get('slug')}: season {s.get('season')} is ongoing on its season page but {s.get('status')!r} in the series list")
             if (fm.get("slug"), s.get("season")) not in bracketed:
                 if s.get("winner_slug") or s.get("runner_up_slug"):
                     uncovered.append(f"{fm.get('slug')} {s.get('season')}")
@@ -90,7 +126,6 @@ def main():
             if s.get("runner_up_slug"):
                 titles[s["runner_up_slug"]]["fl"] += 1
 
-    errors = []
     for slug in sorted(set(rec) | set(titles)):
         r, t = rec.get(slug, Counter()), titles.get(slug, Counter())
         a, b = (r["fw"], r["fl"]), (t["fw"], t["fl"])
@@ -98,15 +133,19 @@ def main():
             errors.append(f"{slug}: bracket finals {a[0]}-{a[1]} != series titles/runner-up {b[0]}-{b[1]}")
 
     attr = re.compile(r'data-rec-(series|games|finals)="?(\d+)-(\d+)')
+    n_attr = re.compile(r'data-rec-matches="?(\d+)')
     checked = 0
     for lang_dir in (build / "players", build / "ko" / "players"):
         for html in sorted(lang_dir.glob("*/index.html")):
             slug = html.parent.name
-            got = {k: (int(w), int(l)) for k, w, l in attr.findall(html.read_text(encoding="utf-8"))}
+            text = html.read_text(encoding="utf-8")
+            got = {k: (int(w), int(l)) for k, w, l in attr.findall(text)}
+            got.update({"matches": int(n) for n in n_attr.findall(text)})
             c = rec.get(slug, Counter())
             want = {}
             if slug in rec:
-                want = {"series": (c["sw"], c["sl"]), "games": (c["gw"], c["gl"]), "finals": (c["fw"], c["fl"])}
+                want = {"series": (c["sw"], c["sl"]), "games": (c["gw"], c["gl"]), "finals": (c["fw"], c["fl"]),
+                        "matches": c["n"]}
             if got != want:
                 errors.append(f"{html.relative_to(build)}: page {got or 'no record'} != data {want or 'no record'}")
             checked += 1

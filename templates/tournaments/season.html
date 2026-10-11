@@ -1,4 +1,28 @@
 {% extends "base.html" %}
+{#- Individual-league season page (content/tournaments/<series>-s<N>.md + .ko.md twin).
+    [extra] fields (all optional unless noted):
+      season_label, series_name, series_slug (required), season, year, status
+        ("completed" | "live" | "ongoing"), prize_pool, champion(_slug), runner_up(_slug),
+        final_score, final_date, semifinalists [{name, slug}], start_date, end_date,
+        maps [{name, slug}], participants [{name, slug}], sources, verified
+      Ongoing seasons ("live" / "ongoing"): leave champion / runner_up / final_* empty until
+        the final is played and set
+          updated              date of the last data refresh (shown in the in-progress notice;
+                               falls back to `verified`)
+          live_source          URL of the live source (Liquipedia), linked from the notice
+          scheduled_final_date announced final date (infobox, until final_date is set)
+      [[extra.group_stages]]   name, format (free text)
+        [[extra.group_stages.groups]]  name, date,
+          standings [{name, slug, advanced = true}]   (final order, 1st first)
+          matches   [{label, a, a_slug, score_a, b, b_slug, score_b}]   (played matches only)
+        Group matches are not playoff matches: player records ignore them.
+      [[extra.bracket]]        round, best_of, matches [{a, a_slug, score_a, b, b_slug, score_b,
+                               date, walkover}]; a slot not yet played is
+                               {a, a_slug, b, b_slug, date, upcoming = true} with no scores and
+                               no walkover -- rendered as "Upcoming", skipped by the player
+                               records and compare.json, so an unplayed final is never counted
+                               (scripts/check-playoff-records.py asserts this).
+      [[extra.matches]]        notable matches, shown only when there is no bracket. -#}
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block jsonld_extra %}
@@ -37,13 +61,21 @@
   <header class="mb-6">
     <div class="flex flex-wrap items-center gap-3">
       <h1 class="text-2xl font-display">{{ page.title }}</h1>
-      {% if e.status == "live" %}
+      {% if e.status == "live" or e.status == "ongoing" %}
       <span class="text-[11px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
       {% elif e.status == "completed" %}
       <span class="text-[11px] px-2 py-0.5 rounded bg-success/10 text-success font-semibold">{{ t.data_completed }}</span>
       {% endif %}
     </div>
     <p class="mt-1 text-sm text-base-content/70">{{ series.title }} &middot; {{ e.year }}</p>
+    {% if e.status == "live" or e.status == "ongoing" %}
+    {% set live_date = e.updated | default(value=e.verified | default(value="")) %}
+    <p class="mt-4 max-w-3xl rounded-box border border-error/25 bg-error/5 px-4 py-3 text-sm text-base-content/80" role="status">
+      <span class="inline-flex items-center gap-1.5 font-semibold text-error"><span class="size-1.5 rounded-full bg-error animate-live-pulse" aria-hidden="true"></span>{{ t.data_in_progress }}</span>{% if live_date %} &mdash; {{ t.data_updated }} <time class="font-stats" datetime="{{ live_date }}">{{ live_date }}</time>{% endif %}.
+      {{ t.data_live_note }}
+      {% if e.live_source is defined and e.live_source %}{{ t.data_live_source }}: <a href="{{ e.live_source }}" target="_blank" rel="noopener nofollow" class="text-primary hover:underline">Liquipedia</a>.{% endif %}
+    </p>
+    {% endif %}
   </header>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -52,7 +84,53 @@
         {{ page.content | safe }}
       </div>
 
-      {# ── Playoffs: rounds -> matches ── #}
+      {# ── Group stages: stages -> groups -> standings + matches (dual tournament etc.) ── #}
+      {% if e.group_stages is defined and e.group_stages | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-groups">
+        <h2 id="season-groups" class="text-lg font-semibold mb-4">{{ t.data_group_stages }}</h2>
+        {% for gs in e.group_stages %}
+        <h3 class="text-sm font-semibold mt-6 first:mt-0 mb-1">{{ gs.name }}</h3>
+        {% if gs.format is defined and gs.format %}<p class="text-xs text-base-content/70 mb-3">{{ gs.format }}</p>{% endif %}
+        <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+          {% for g in gs.groups %}
+          <li class="glass-card rounded-box overflow-hidden text-sm min-w-0">
+            <div class="flex items-center justify-between gap-2 px-3 py-2 border-b border-primary/10 bg-primary/5">
+              <span class="font-semibold">{{ g.name }}</span>
+              {% if g.date is defined and g.date %}<time class="font-stats text-[11px] text-base-content/60" datetime="{{ g.date }}">{{ g.date }}</time>{% endif %}
+            </div>
+            <ol class="px-3 py-2 space-y-1">
+              {% for sd in g.standings %}
+              {% set adv = sd.advanced is defined and sd.advanced %}
+              <li class="flex items-center gap-2 {% if adv %}font-semibold{% else %}text-base-content/70{% endif %}">
+                <span class="font-stats w-4 text-right text-base-content/60">{{ loop.index }}</span>
+                {% set pc_name = sd.name %}{% set pc_slug = sd.slug | default(value="") %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}
+                {% if adv %}<span class="ml-auto text-[11px] px-1.5 py-0.5 rounded bg-success/10 text-success font-semibold">{{ t.data_advanced }}</span>{% endif %}
+              </li>
+              {% endfor %}
+            </ol>
+            {% if g.matches is defined and g.matches | length > 0 %}
+            <ul class="border-t border-primary/10 px-3 py-2 space-y-1 text-xs">
+              {% for m in g.matches %}
+              {% set a_won = m.score_a > m.score_b %}
+              <li class="grid grid-cols-[5.5rem_minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2">
+                <span class="text-base-content/60 truncate">{{ m.label | default(value="") }}</span>
+                <span class="truncate text-right {% if a_won %}font-semibold{% else %}text-base-content/70{% endif %}">{{ m.a }}</span>
+                <span class="font-stats"><span class="{% if a_won %}text-primary{% else %}text-base-content/60{% endif %}">{{ m.score_a }}</span><span class="text-base-content/60">:</span><span class="{% if not a_won %}text-primary{% else %}text-base-content/60{% endif %}">{{ m.score_b }}</span></span>
+                <span class="truncate {% if not a_won %}font-semibold{% else %}text-base-content/70{% endif %}">{{ m.b }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      {# ── Playoffs: rounds -> matches. A match with `upcoming = true` has no scores yet:
+            it renders both players without a winner and an "Upcoming · date" line, and the
+            player records / compare.json skip it (it is never a played final). ── #}
       {% if e.bracket is defined and e.bracket | length > 0 %}
       <section class="mt-10" aria-labelledby="season-playoffs">
         <h2 id="season-playoffs" class="text-lg font-semibold mb-4">{{ t.data_playoffs }}</h2>
@@ -64,17 +142,20 @@
                 <h3 class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ rd.round }}{% if rd.best_of %} <span class="font-stats normal-case text-base-content/60">· Bo{{ rd.best_of }}</span>{% endif %}</h3>
                 <ul class="flex flex-col justify-around gap-3 flex-1">
                   {% for m in rd.matches %}
-                  {% set a_won = m.score_a > m.score_b %}
-                  <li class="glass-card rounded-box overflow-hidden text-sm">
+                  {% set upcoming = m.upcoming is defined and m.upcoming %}
+                  {% if upcoming %}{% set a_won = false %}{% else %}{% set a_won = m.score_a > m.score_b %}{% endif %}
+                  <li class="glass-card rounded-box overflow-hidden text-sm {% if upcoming %}border-dashed{% endif %}">
                     {% for side in ["a", "b"] %}
-                    {% if side == "a" %}{% set pc_name = m.a %}{% set pc_slug = m.a_slug | default(value="") %}{% set sc = m.score_a %}{% set won = a_won %}
+                    {% if upcoming %}{% if side == "a" %}{% set pc_name = m.a %}{% set pc_slug = m.a_slug | default(value="") %}{% else %}{% set pc_name = m.b %}{% set pc_slug = m.b_slug | default(value="") %}{% endif %}{% set sc = "–" %}{% set won = false %}
+                    {% elif side == "a" %}{% set pc_name = m.a %}{% set pc_slug = m.a_slug | default(value="") %}{% set sc = m.score_a %}{% set won = a_won %}
                     {% else %}{% set pc_name = m.b %}{% set pc_slug = m.b_slug | default(value="") %}{% set sc = m.score_b %}{% set won = not a_won %}{% endif %}
                     <div class="flex items-center justify-between gap-3 px-3 py-2 {% if side == 'b' %}border-t border-primary/10{% endif %} {% if won %}bg-primary/5 font-semibold{% else %}text-base-content/70{% endif %}">
                       {% set pc_class = "" %}{% include "tournaments/player-chip.html" %}
                       <span class="font-stats {% if won %}text-primary{% endif %}">{{ sc }}</span>
                     </div>
                     {% endfor %}
-                    {% if m.date %}<div class="px-3 py-1 border-t border-primary/10 text-[11px] text-base-content/60 font-stats"><time datetime="{{ m.date }}">{{ m.date }}</time></div>{% endif %}
+                    {% if upcoming %}<div class="px-3 py-1 border-t border-primary/10 text-[11px] text-base-content/70"><span class="font-semibold uppercase tracking-wider text-info">{{ t.data_upcoming }}</span>{% if m.date %} &middot; <time class="font-stats" datetime="{{ m.date }}">{{ m.date }}</time>{% endif %}</div>
+                    {% elif m.date %}<div class="px-3 py-1 border-t border-primary/10 text-[11px] text-base-content/60 font-stats"><time datetime="{{ m.date }}">{{ m.date }}</time></div>{% endif %}
                   </li>
                   {% endfor %}
                 </ul>
@@ -142,6 +223,7 @@
     {% set v_runner %}{% if e.runner_up is defined and e.runner_up %}{% set pc_name = e.runner_up %}{% set pc_slug = e.runner_up_slug | default(value="") %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}{% endif %}{% endset %}
     {% set v_score %}{% if e.final_score is defined and e.final_score %}<span class="font-stats">{{ e.final_score }}</span>{% endif %}{% endset %}
     {% set v_fdate %}{% if e.final_date is defined and e.final_date %}<time class="font-stats" datetime="{{ e.final_date }}">{{ e.final_date }}</time>{% endif %}{% endset %}
+    {% set v_fsched %}{% if not (e.final_date is defined and e.final_date) and e.scheduled_final_date is defined and e.scheduled_final_date %}<time class="font-stats" datetime="{{ e.scheduled_final_date }}">{{ e.scheduled_final_date }}</time>{% endif %}{% endset %}
     {% set v_semis %}{% if e.semifinalists is defined and e.semifinalists | length > 0 %}{% for sf in e.semifinalists %}{% set pc_name = sf.name | default(value=sf) %}{% set pc_slug = sf.slug | default(value="") %}{% set pc_class = "" %}<span class="block">{% include "tournaments/player-chip.html" %}</span>{% endfor %}{% endif %}{% endset %}
     {% set v_counts %}{% if e.participants is defined and e.participants | length > 0 %}<a href="#season-participants" class="font-stats text-primary hover:underline">{{ e.participants | length }}</a>{% endif %}{% endset %}
     {% set v_maps %}{% if e.maps is defined and e.maps | length > 0 %}<a href="#season-maps" class="font-stats text-primary hover:underline">{{ e.maps | length }}</a>{% endif %}{% endset %}
@@ -159,6 +241,7 @@
       [t.player_runner_up, v_runner | trim],
       [t.data_final_score, v_score | trim],
       [t.data_final_date, v_fdate | trim],
+      [t.data_final_scheduled, v_fsched | trim],
       [t.data_semifinalists, v_semis | trim]
     ] %}
     {% set ib_title = page.title %}

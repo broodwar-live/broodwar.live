@@ -6,6 +6,8 @@
     It is built from the same season data as the player pages (templates/players/player.html):
     the individual playoff record (extra.bracket) and team-league playoff sets
     (extra.team_bracket), with the same rules for walkovers, finals and skipped sets.
+    Bracket matches marked `upcoming = true` (not yet played) are left out; the match
+    index keeps the slot's position on the season page.
 
     {
       "p": players   [slug, ID, real name, race t|p|z|"", aliases "a|b", titles, runner-ups,
@@ -79,7 +81,7 @@
 {%- set_global si = si + 1 -%}
 {%- if se.bracket is defined -%}
 {%- for rd in se.bracket -%}{%- set ri = loop.index0 -%}{%- set rd_final = loop.last and rd.matches | length == 1 -%}
-{%- for m in rd.matches -%}
+{%- for m in rd.matches -%}{%- if not (m.upcoming is defined and m.upcoming) -%}
 {%- set has_sc = m.score_a is defined and m.score_b is defined -%}
 {%- set wo = (m.walkover is defined and m.walkover) or not has_sc -%}
 {%- set win = "" -%}
@@ -90,7 +92,7 @@
 {%- if m.b_slug is defined and m.b_slug -%}{%- set pb = m.b_slug -%}{%- else -%}{%- set pb = "~" ~ m.b -%}{%- endif -%}
 {%- if not first %},{% endif -%}{%- set_global first = false -%}
 [{{ si }},{{ ri }},{{ loop.index }},{{ m.date | default(value="") | json_encode | safe }},{{ pa | json_encode | safe }},{{ pb | json_encode | safe }},{% if has_sc %}{{ m.score_a }},{{ m.score_b }}{% else %}null,null{% endif %},"{{ win }}",{{ (wo and 1 or 0) + (rd_final and 2 or 0) }}]
-{%- endfor -%}{%- endfor -%}
+{%- endif -%}{%- endfor -%}{%- endfor -%}
 {%- endif -%}
 {%- endif -%}
 {%- endfor -%}
