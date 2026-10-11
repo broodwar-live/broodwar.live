@@ -1,6 +1,8 @@
 {% set t = config.extra.i18n[lang] %}
+{#- 404.html is rendered without current_path/current_url. -#}
+{% if current_path is defined %}{% set cur_path = current_path %}{% set cur_url = current_url %}{% set has_url = true %}{% else %}{% set cur_path = "/" %}{% set cur_url = config.base_url ~ "/" %}{% set has_url = false %}{% endif %}
 {#- Path of the English version of this page: strip only the leading "/ko/" language prefix. -#}
-{% if lang == "ko" %}{% set en_tail = current_path | split(pat="/ko/") | last %}{% set en_path = "/" ~ en_tail %}{% else %}{% set en_path = current_path %}{% endif %}
+{% if lang == "ko" %}{% set en_tail = cur_path | split(pat="/ko/") | last %}{% set en_path = "/" ~ en_tail %}{% else %}{% set en_path = cur_path %}{% endif %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
@@ -22,21 +24,23 @@
   {% endif %}
   <title>{% block title %}{{ page_title }}{% endblock %} — broodwar.live</title>
   <meta name="description" content="{{ desc }}" />
-  <link rel="canonical" href="{{ current_url }}" />
+  {% if has_url %}
+  <link rel="canonical" href="{{ cur_url }}" />
   {# Hreflang alternates for multilingual SEO #}
   {% if lang == "en" %}
-  <link rel="alternate" hreflang="en" href="{{ current_url }}" />
-  <link rel="alternate" hreflang="ko" href="{{ config.base_url }}/ko{{ current_path }}" />
+  <link rel="alternate" hreflang="en" href="{{ cur_url }}" />
+  <link rel="alternate" hreflang="ko" href="{{ config.base_url }}/ko{{ cur_path }}" />
   {% else %}
-  <link rel="alternate" hreflang="ko" href="{{ current_url }}" />
+  <link rel="alternate" hreflang="ko" href="{{ cur_url }}" />
   <link rel="alternate" hreflang="en" href="{{ config.base_url }}{{ en_path }}" />
   {% endif %}
   <link rel="alternate" hreflang="x-default" href="{{ config.base_url }}{{ en_path }}" />
+  {% endif %}
   {# Open Graph #}
   <meta property="og:title" content="{{ page_title }}{% if page_title != config.title %} — broodwar.live{% endif %}" />
   <meta property="og:description" content="{{ desc }}" />
   <meta property="og:image" content="{{ get_url(path='images/og-default.png') }}" />
-  <meta property="og:url" content="{{ current_url }}" />
+  <meta property="og:url" content="{{ cur_url }}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="broodwar.live" />
   <meta property="og:locale" content="{% if lang == 'ko' %}ko_KR{% else %}en_US{% endif %}" />
@@ -120,7 +124,7 @@
 
           <div class="hidden lg:flex items-center gap-0.5">
             {% for key in ["players", "matches", "tournaments", "replays", "builds", "wiki"] %}
-            {% set href = "/" ~ key %}{% set active = href in current_path %}
+            {% set href = "/" ~ key %}{% set active = href in cur_path %}
             <a href="{% if lang == 'ko' %}/ko{% endif %}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if active %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}{% if not config.extra.api_enabled and key in ["matches", "replays"] %}<span class="ml-1 align-super text-[8px] font-semibold uppercase tracking-wider text-warning/60">{{ t.soon }}</span>{% endif %}</a>
             {% endfor %}
           </div>
@@ -150,7 +154,7 @@
                 class="relative px-2.5 py-1 text-xs font-medium rounded-md transition-all duration-150 {% if lang == 'en' %}bg-primary/15 text-primary shadow-sm{% else %}text-base-content/35 hover:text-base-content/60{% endif %}">
                 English
               </a>
-              <a href="{% if lang == 'en' %}/ko{{ current_path }}{% else %}{{ current_url }}{% endif %}"
+              <a href="{% if lang == 'en' %}/ko{{ cur_path }}{% else %}{{ cur_url }}{% endif %}"
                 {% if lang == "ko" %}aria-current="true"{% endif %}
                 class="relative px-2.5 py-1 text-xs font-medium rounded-md transition-all duration-150 {% if lang == 'ko' %}bg-primary/15 text-primary shadow-sm{% else %}text-base-content/35 hover:text-base-content/60{% endif %}">
                 한국어
