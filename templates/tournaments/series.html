@@ -1,3 +1,10 @@
+{#- Series page: one row per season in extra.seasons (newest first). Individual leagues use
+    winner / winner_slug and runner_up / runner_up_slug (players/<slug>.md). Team leagues
+    (format = "Team") use winner / winner_team and runner_up / runner_up_team, slugs of
+    content/wiki/teams/<slug>.md, with the team name used at the time; score is the final's
+    score (sets, or team matches won when the final was a multi-match tie, with the match
+    scores in score_detail). A row links to its season page when one has the same
+    series_slug and season. See tournaments/team-season.html for the season schema. -#}
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 
@@ -75,9 +82,9 @@
           <tr id="{{ sid }}" class="scroll-mt-24 target:bg-primary/10">
             <th scope="row" class="font-stats text-sm font-semibold" data-sort-value="{% if s.season is number %}{{ s.season }}{% else %}{{ s.year }}{% endif %}">{% if season_url %}<a href="{{ season_url }}" class="text-primary hover:underline">{% if s.season is number %}{{ e.short_name }} {{ s.season }}{% else %}{{ s.season }}{% endif %}</a>{% else %}{% if s.season is number %}{{ e.short_name }} {{ s.season }}{% else %}{{ s.season }}{% endif %}{% endif %}</th>
             <td class="font-stats text-sm">{{ s.year }}</td>
-            <td class="text-sm font-semibold whitespace-nowrap">{% if s.winner is defined and s.winner %}{% if s.winner_slug is defined and s.winner_slug %}<a href="{{ lp }}/players/{{ s.winner_slug }}/" class="hover:text-primary hover:underline">&#9733; {{ s.winner }}</a>{% else %}&#9733; {{ s.winner }}{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>
-            <td class="text-sm text-base-content/80 whitespace-nowrap">{% if s.runner_up is defined and s.runner_up %}{% if s.runner_up_slug is defined and s.runner_up_slug %}<a href="{{ lp }}/players/{{ s.runner_up_slug }}/" class="hover:text-primary hover:underline">{{ s.runner_up }}</a>{% else %}{{ s.runner_up }}{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>
-            {% if has_score %}<td class="font-stats text-sm whitespace-nowrap">{% if s.score is defined and s.score %}{{ s.score }}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
+            <td class="text-sm font-semibold whitespace-nowrap">{% if s.winner is defined and s.winner %}{% if s.winner_team is defined and s.winner_team %}{% set tc_name = s.winner %}{% set tc_slug = s.winner_team %}{% set tc_class = "" %}<span aria-hidden="true">&#9733;</span> {% include "tournaments/team-chip.html" %}{% elif s.winner_slug is defined and s.winner_slug %}<a href="{{ lp }}/players/{{ s.winner_slug }}/" class="hover:text-primary hover:underline">&#9733; {{ s.winner }}</a>{% else %}&#9733; {{ s.winner }}{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>
+            <td class="text-sm text-base-content/80 whitespace-nowrap">{% if s.runner_up is defined and s.runner_up %}{% if s.runner_up_team is defined and s.runner_up_team %}{% set tc_name = s.runner_up %}{% set tc_slug = s.runner_up_team %}{% set tc_class = "" %}{% include "tournaments/team-chip.html" %}{% elif s.runner_up_slug is defined and s.runner_up_slug %}<a href="{{ lp }}/players/{{ s.runner_up_slug }}/" class="hover:text-primary hover:underline">{{ s.runner_up }}</a>{% else %}{{ s.runner_up }}{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>
+            {% if has_score %}<td class="font-stats text-sm whitespace-nowrap">{% if s.score is defined and s.score %}{{ s.score }}{% if s.score_detail is defined and s.score_detail %} <span class="text-xs text-base-content/70">({{ s.score_detail }})</span>{% endif %}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
             {% if has_date %}<td class="font-stats text-sm text-base-content/70 whitespace-nowrap">{% if s.final_date is defined and s.final_date %}<time datetime="{{ s.final_date }}">{{ s.final_date }}</time>{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
             {% if has_prize %}<td class="text-sm text-base-content/70 whitespace-nowrap">{% if s.prize_pool is defined and s.prize_pool %}{{ s.prize_pool }}{% else %}<span class="text-base-content/60">&mdash;</span>{% endif %}</td>{% endif %}
             <td>

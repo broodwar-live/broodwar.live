@@ -1,0 +1,286 @@
+{#- Team-league season page (Proleague and other team leagues).
+
+    Front matter (content/tournaments/<slug>.md, template = "tournaments/team-season.html"):
+      [extra]
+      series_name / series_slug   e.g. "Proleague" / "proleague" (tournaments/<series_slug>.md)
+      season                      must equal the `season` of this season's row on the series page
+      season_label, year, status ("completed" | "live"), start_date, end_date, prize_pool
+      champion / champion_team    team name at the time / wiki/teams slug (may be omitted)
+      runner_up / runner_up_team  same for the runner-up
+      final_score, final_date     must match the series row (score / final_date)
+      format                      optional one-line format summary (shown in the infobox)
+      teams = [{ name, slug }]    participating teams; slug -> content/wiki/teams/<slug>.md
+      maps = [{ name, slug }]     map pool; slug -> content/wiki/maps/<slug>.md
+      awards = [{ award, name, slug }]       MVPs etc. (player slug optional)
+      standings = [{ name, slug, w, l, set_w, set_l }]   optional regular-season table
+      [[extra.team_bracket]]      playoff rounds, in order; the last round with a single match
+        round, best_of            is the final. best_of = sets per team match.
+        series_best_of            optional: ties decided over several team matches ("legs")
+        [[extra.team_bracket.matches]]
+          a, a_team, b, b_team    team names at the time + wiki/teams slugs
+          score_a, score_b, date  sets won (legs won when the tie has `legs`); date of the last game
+          walkover = "a" | "b"    optional, team-match walkover (no sets)
+          sets = [ { map, map_slug, a, a_slug, a_race, b, b_slug, b_race,
+                     a2, a2_slug, a2_race, b2, b2_slug, b2_race,   (2v2 sets only)
+                     winner = "a" | "b", ace = true, walkover = true } ]
+          [[extra.team_bracket.matches.legs]]   only for multi-match ties:
+            date, score_a, score_b, sets = [...] (oriented like the tie: a = the tie's team a)
+      Races are "t" | "p" | "z" | "r" per set. The key is `team_bracket`, not `bracket`, so
+      team-league sets never enter the individual playoff record (players/player.html).
+      scripts/check-team-leagues.py validates the sums, the series rows and every slug. -#}
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block jsonld_extra %}
+,{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/tournaments"},
+    {"@type": "ListItem", "position": 2, "name": {{ page.extra.series_name | json_encode | safe }}, "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/tournaments/{{ page.extra.series_slug | safe }}"},
+    {"@type": "ListItem", "position": 3, "name": {{ page.extra.season_label | json_encode | safe }}}
+  ]
+},
+{
+  "@type": "SportsEvent",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
+  "sport": "StarCraft: Brood War"
+}
+{% endblock %}
+
+{% block content %}
+{% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
+{% set e = page.extra %}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+{% set series = get_page(path="tournaments/" ~ e.series_slug ~ ".md", lang=lang) %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/tournaments/" class="hover:text-primary">{{ t.tournaments }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <a href="{{ series.path }}" class="hover:text-primary">{{ e.series_name }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ e.season_label }}</span>
+  </nav>
+
+  <header class="mb-6">
+    <div class="flex flex-wrap items-center gap-3">
+      <h1 class="text-2xl font-display">{{ page.title }}</h1>
+      {% if e.status == "live" %}
+      <span class="text-[11px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
+      {% elif e.status == "completed" %}
+      <span class="text-[11px] px-2 py-0.5 rounded bg-success/10 text-success font-semibold">{{ t.data_completed }}</span>
+      {% endif %}
+    </div>
+    <p class="mt-1 text-sm text-base-content/70">{{ series.title }} &middot; {{ e.year }}</p>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 min-w-0">
+      <div class="prose prose-invert max-w-none [&_table]:block [&_table]:overflow-x-auto">
+        {{ page.content | safe }}
+      </div>
+
+      {% if e.team_bracket is defined and e.team_bracket | length > 0 %}
+      {#- ── Playoffs: rounds -> team matches (compact bracket) ── #}
+      <section class="mt-10" aria-labelledby="season-playoffs">
+        <h2 id="season-playoffs" class="text-lg font-semibold mb-4">{{ t.data_playoffs }}</h2>
+        <div class="relative" data-scroll-cue>
+          <div class="overflow-x-auto">
+            <ol class="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:min-w-max">
+              {% for rd in e.team_bracket %}{% set ri = loop.index %}
+              <li class="sm:w-60 flex flex-col">
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ rd.round }}{% if rd.best_of %} <span class="font-stats normal-case text-base-content/60">· {% if rd.series_best_of is defined %}{{ t.tl_series_of | replace(from="{n}", to=rd.series_best_of ~ "") }} · {% endif %}Bo{{ rd.best_of }}</span>{% endif %}</h3>
+                <ul class="flex flex-col justify-around gap-3 flex-1">
+                  {% for m in rd.matches %}
+                  {% set a_won = m.score_a > m.score_b %}{% if m.walkover is defined and m.walkover %}{% set a_won = m.walkover == "a" %}{% endif %}
+                  <li class="glass-card rounded-box overflow-hidden text-sm">
+                    {% for side in ["a", "b"] %}
+                    {% if side == "a" %}{% set tc_name = m.a %}{% set tc_slug = m.a_team | default(value="") %}{% set sc = m.score_a %}{% set won = a_won %}
+                    {% else %}{% set tc_name = m.b %}{% set tc_slug = m.b_team | default(value="") %}{% set sc = m.score_b %}{% set won = not a_won %}{% endif %}
+                    <div class="flex items-center justify-between gap-3 px-3 py-2 {% if side == 'b' %}border-t border-primary/10{% endif %} {% if won %}bg-primary/5 font-semibold{% else %}text-base-content/70{% endif %}">
+                      {% set tc_class = "" %}{% include "tournaments/team-chip.html" %}
+                      <span class="font-stats {% if won %}text-primary{% endif %}">{{ sc }}</span>
+                    </div>
+                    {% endfor %}
+                    <div class="px-3 py-1 border-t border-primary/10 flex items-center justify-between gap-2 text-[11px] text-base-content/70 font-stats">
+                      <span>{% if m.legs is defined %}{% for lg in m.legs %}{{ lg.score_a }}–{{ lg.score_b }}{% if not loop.last %}, {% endif %}{% endfor %}{% elif m.date %}<time datetime="{{ m.date }}">{{ m.date }}</time>{% endif %}</span>
+                      {% if m.sets is defined or m.legs is defined %}<a href="#tl-r{{ ri }}-m{{ loop.index }}" class="text-primary hover:underline font-sans" data-open-sets>{{ t.tl_show_sets }} &darr;</a>{% endif %}
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div data-scroll-hint hidden class="pointer-events-none absolute top-0 bottom-0 right-0 w-10 bg-linear-to-l from-base-100 to-transparent"></div>
+          <p data-scroll-hint hidden class="mt-1.5 text-right text-[11px] text-base-content/60">{{ t.data_scroll_hint }} &rarr;</p>
+        </div>
+      </section>
+
+      {#- ── Set lists: one disclosure per team match; the final starts open ── #}
+      <section class="mt-10" aria-labelledby="season-sets">
+        <h2 id="season-sets" class="text-lg font-semibold mb-1">{{ t.tl_set_lists }}</h2>
+        <p class="text-xs text-base-content/70 mb-4">{{ t.tl_set_lists_note }}</p>
+        <div class="space-y-3">
+          {% for rd in e.team_bracket %}{% set ri = loop.index %}{% set rd_final = loop.last and rd.matches | length == 1 %}
+          {% for m in rd.matches %}
+          {% if m.sets is defined or m.legs is defined %}
+          {% set a_won = m.score_a > m.score_b %}
+          <details id="tl-r{{ ri }}-m{{ loop.index }}" class="tl-sets glass-card rounded-box overflow-hidden scroll-mt-24"{% if rd_final %} open{% endif %}>
+            <summary class="cursor-pointer select-none px-4 py-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span class="text-xs font-semibold uppercase tracking-wider {% if rd_final %}text-warning{% else %}text-base-content/70{% endif %}">{{ rd.round }}</span>
+              <span class="flex-1 min-w-0 text-sm"><span class="{% if a_won %}font-semibold{% else %}text-base-content/70{% endif %}">{{ m.a }}</span> <span class="font-stats"><span class="{% if a_won %}text-primary{% else %}text-base-content/70{% endif %}">{{ m.score_a }}</span><span class="text-base-content/60">–</span><span class="{% if not a_won %}text-primary{% else %}text-base-content/70{% endif %}">{{ m.score_b }}</span></span> <span class="{% if not a_won %}font-semibold{% else %}text-base-content/70{% endif %}">{{ m.b }}</span></span>
+              {% if m.date %}<time class="font-stats text-xs text-base-content/70" datetime="{{ m.date }}">{{ m.date }}</time>{% endif %}
+            </summary>
+            <div class="border-t border-primary/10">
+              <div class="grid grid-cols-[minmax(0,1fr)_3.25rem_minmax(0,1fr)] gap-x-2 px-3 pt-2 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">
+                <span class="text-right truncate">{{ m.a }}</span><span class="text-center">{{ t.tl_set }}</span><span class="truncate">{{ m.b }}</span>
+              </div>
+              {% if m.legs is defined %}
+              {% for lg in m.legs %}
+              <h3 class="mt-2 px-3 py-1.5 bg-base-content/5 text-xs font-semibold flex flex-wrap justify-between gap-2">
+                <span>{{ t.tl_leg | replace(from="{n}", to=loop.index ~ "") }} <span class="font-stats text-base-content/70">{{ lg.score_a }}–{{ lg.score_b }}</span></span>
+                {% if lg.date %}<time class="font-stats font-normal text-base-content/70" datetime="{{ lg.date }}">{{ lg.date }}</time>{% endif %}
+              </h3>
+              {% set sl_sets = lg.sets %}{% include "tournaments/set-list.html" %}
+              {% endfor %}
+              {% else %}
+              {% set sl_sets = m.sets %}{% include "tournaments/set-list.html" %}
+              {% endif %}
+            </div>
+          </details>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {#- ── Regular-season standings ── #}
+      {% if e.standings is defined and e.standings | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-standings">
+        <h2 id="season-standings" class="text-lg font-semibold mb-4">{{ t.tl_standings }}</h2>
+        <div class="overflow-x-auto rounded-box border border-primary/10">
+          <table class="table table-sm w-full" data-sortable>
+            <thead>
+              <tr class="text-xs text-base-content/70">
+                <th scope="col" data-sort="num" aria-sort="ascending">#</th>
+                <th scope="col" data-sort="text">{{ t.tl_team }}</th>
+                <th scope="col" data-sort="num" class="text-right">{{ t.tl_match_wl }}</th>
+                <th scope="col" data-sort="num" class="text-right">{{ t.tl_set_wl }}</th>
+                <th scope="col" data-sort="num" class="text-right max-sm:hidden">{{ t.tl_set_diff }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for st in e.standings %}
+              {% set diff = st.set_w - st.set_l %}
+              <tr>
+                <td class="font-stats text-sm text-base-content/70">{{ loop.index }}</td>
+                <th scope="row" class="text-sm font-medium" data-sort-value="{{ st.name }}">{% set tc_name = st.name %}{% set tc_slug = st.slug | default(value="") %}{% set tc_class = "" %}{% include "tournaments/team-chip.html" %}</th>
+                <td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{{ st.w * 1000 - st.l }}">{{ st.w }}–{{ st.l }}</td>
+                <td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{{ st.set_w }}">{{ st.set_w }}–{{ st.set_l }}</td>
+                <td class="font-stats text-sm text-right text-base-content/70 max-sm:hidden" data-sort-value="{{ diff }}">{% if diff > 0 %}+{% endif %}{{ diff }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      {% endif %}
+
+      {#- ── Map pool ── #}
+      {% if e.maps is defined and e.maps | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-maps">
+        <h2 id="season-maps" class="text-lg font-semibold mb-4">{{ t.data_map_pool }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ e.maps | length }})</span></h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          {% for mp in e.maps %}
+          {% if mp.slug is defined and mp.slug %}
+          {% set map_page = get_page(path="wiki/maps/" ~ mp.slug ~ ".md", lang=lang) %}
+          <li><a href="{{ map_page.path }}" class="glass-card rounded-box px-3 py-2 flex items-center gap-2 text-sm text-primary hover:underline"><span aria-hidden="true">&#9638;</span>{{ mp.name }}</a></li>
+          {% else %}
+          <li class="rounded-box border border-primary/10 px-3 py-2 flex items-center gap-2 text-sm text-base-content/80"><span aria-hidden="true" class="text-base-content/60">&#9638;</span>{{ mp.name }}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {#- ── Teams ── #}
+      {% if e.teams is defined and e.teams | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-teams">
+        <h2 id="season-teams" class="text-lg font-semibold mb-4">{{ t.tl_teams }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ e.teams | length }})</span></h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-sm">
+          {% for tm in e.teams %}
+          <li class="min-w-0 flex">{% set tc_name = tm.name %}{% set tc_slug = tm.slug | default(value="") %}{% set tc_class = "" %}{% include "tournaments/team-chip.html" %}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    </div>
+
+    {#- Infobox -#}
+    {% set v_series %}<a href="{{ series.path }}" class="text-primary hover:underline">{{ series.extra.short_name }}</a>{% endset %}
+    {% set v_dates %}{% if e.start_date is defined and e.start_date %}<span class="font-stats"><time datetime="{{ e.start_date }}">{{ e.start_date }}</time> – {% if e.end_date is defined and e.end_date %}<time datetime="{{ e.end_date }}">{{ e.end_date }}</time>{% endif %}</span>{% endif %}{% endset %}
+    {% set v_champ %}{% if e.champion is defined and e.champion %}<span class="text-warning" aria-hidden="true">&#9733;</span> {% set tc_name = e.champion %}{% set tc_slug = e.champion_team | default(value="") %}{% set tc_class = "font-semibold" %}{% include "tournaments/team-chip.html" %}{% endif %}{% endset %}
+    {% set v_runner %}{% if e.runner_up is defined and e.runner_up %}{% set tc_name = e.runner_up %}{% set tc_slug = e.runner_up_team | default(value="") %}{% set tc_class = "" %}{% include "tournaments/team-chip.html" %}{% endif %}{% endset %}
+    {% set v_score %}{% if e.final_score is defined and e.final_score %}<span class="font-stats">{{ e.final_score }}</span>{% endif %}{% endset %}
+    {% set v_fdate %}{% if e.final_date is defined and e.final_date %}<time class="font-stats" datetime="{{ e.final_date }}">{{ e.final_date }}</time>{% endif %}{% endset %}
+    {% set v_awards %}{% if e.awards is defined and e.awards | length > 0 %}{% for aw in e.awards %}<span class="block"><span class="text-base-content/70">{{ aw.award }}:</span> {% if aw.slug is defined and aw.slug %}{% set aw_page = get_page(path="players/" ~ aw.slug ~ ".md", lang=lang) %}<a href="{{ aw_page.path }}" class="text-primary hover:underline">{{ aw.name }}</a>{% else %}{{ aw.name }}{% endif %}</span>{% endfor %}{% endif %}{% endset %}
+    {% set v_teams %}{% if e.teams is defined and e.teams | length > 0 %}<a href="#season-teams" class="font-stats text-primary hover:underline">{{ e.teams | length }}</a>{% endif %}{% endset %}
+    {% set v_maps %}{% if e.maps is defined and e.maps | length > 0 %}<a href="#season-maps" class="font-stats text-primary hover:underline">{{ e.maps | length }}</a>{% endif %}{% endset %}
+    {% set ib_rows = [
+      [t.data_series, v_series],
+      [t.data_season, e.season_label],
+      [t.player_year, "<span class=\"font-stats\">" ~ e.year ~ "</span>"],
+      [t.data_dates, v_dates | trim],
+      [t.tl_format, e.format | default(value="")],
+      [t.data_prize_pool, e.prize_pool | default(value="")],
+      [t.tl_teams, v_teams | trim],
+      [t.data_map_pool, v_maps | trim]
+    ] %}
+    {% set ib_rows2 = [
+      [t.player_champion, v_champ | trim],
+      [t.player_runner_up, v_runner | trim],
+      [t.data_final_score, v_score | trim],
+      [t.data_final_date, v_fdate | trim],
+      [t.tl_awards, v_awards | trim]
+    ] %}
+    {% set ib_title = page.title %}
+    {% set ib_label = t.data_season_info %}
+    {% set ib_sections = [["", ib_rows], [t.data_results, ib_rows2]] %}
+    {% set ib_links = [[t.data_all_seasons, series.path ~ "#season-history"]] %}
+    {% include "partials/infobox.html" %}
+  </div>
+
+  {# ── Navbox: every season of this series ── #}
+  {% if series.extra.seasons is defined and series.extra.seasons | length > 0 %}
+  <nav class="navbox mt-10" aria-label="{{ series.extra.short_name }} {{ t.data_all_seasons }}">
+    <div class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2"><a href="{{ series.path }}" class="hover:text-primary">{{ series.title }}</a></div>
+    <ul class="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+      {% for s in series.extra.seasons | reverse %}
+      {% set_global sp_url = "" %}
+      {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == e.series_slug and sp.extra.season == s.season %}{% set_global sp_url = sp.path %}{% endif %}{% endfor %}
+      {% set sid = "season-" ~ s.season %}{% set sid = sid | slugify %}
+      <li>{% if s.season == e.season %}<span class="navbox-current" aria-current="page">{{ s.season }}</span>{% elif sp_url %}<a href="{{ sp_url }}">{{ s.season }}</a>{% else %}<a href="{{ series.path }}#{{ sid }}" class="opacity-80">{{ s.season }}</a>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  {% include "partials/provenance.html" %}
+</div>
+{% endblock %}
+
+{% block scripts %}<script src="/js/table-sort.js" defer></script>
+<script>
+// "Sets" links in the bracket open the matching set list before jumping to it.
+document.addEventListener("click", function (ev) {
+  var a = ev.target.closest && ev.target.closest("a[data-open-sets]");
+  if (!a) return;
+  var d = document.getElementById(a.getAttribute("href").slice(1));
+  if (d && d.tagName === "DETAILS") d.open = true;
+});
+</script>{% endblock %}

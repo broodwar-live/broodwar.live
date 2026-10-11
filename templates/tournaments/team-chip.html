@@ -1,0 +1,3 @@
+{#- Team name, linked to its wiki/teams page when a slug is given. Set tc_name (the name used at
+    the time) and tc_slug (wiki/teams/<slug>.md, may be empty) before including; optional tc_class. -#}
+{% if tc_slug %}{% set tc_page = get_page(path="wiki/teams/" ~ tc_slug ~ ".md", lang=lang) %}<a href="{{ tc_page.path }}" class="min-w-0 truncate hover:text-primary hover:underline {{ tc_class | default(value='') }}"{% if tc_page.title != tc_name %} title="{{ tc_page.title }}"{% endif %}>{{ tc_name }}</a>{% else %}<span class="min-w-0 truncate {{ tc_class | default(value='') }}">{{ tc_name }}</span>{% endif %}

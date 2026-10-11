@@ -76,6 +76,47 @@
 {% endfor %}{% endfor %}
 {% endif %}{% endfor %}
 {% set recs = load_data(literal="[" ~ (rec_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
+{#- Team-league playoff sets: every set on a team-league season page (extra.team_bracket, see
+    tournaments/team-season.html) in which this player played, as a JSON record like `recs`.
+    Kept apart from `recs` so the individual playoff record above is unchanged. Each record:
+    k sort key, d date, p/s link/title, l league, r round, f final (st "final" | ""), mt/mts
+    own team name/slug, ot/ots opposing team, fmt "1v1" | "2v2", o opponent key (1v1 only:
+    slug or "~name"), os/on/or opponent slug/name/race, pn partner (2v2), map/ms map name/slug,
+    ace, res "W" | "L". Walkover sets are skipped. See players/team-league-record.html. -#}
+{% set_global tl_json = "" %}{% set_global tl_seasons = 0 %}
+{% for sp in tsec.pages %}{% if sp.extra.team_bracket is defined and sp.extra.team_bracket | length > 0 %}
+{% set_global tl_seasons = tl_seasons + 1 %}
+{% set se = sp.extra %}
+{% for rd in se.team_bracket %}{% set ri = loop.index %}{% set rd_final = loop.last and rd.matches | length == 1 %}
+{% for m in rd.matches %}{% set mi = loop.index %}
+{% if m.legs is defined %}{% set games = m.legs %}{% elif m.sets is defined %}{% set games = [m] %}{% else %}{% set games = [] %}{% endif %}
+{% for g in games %}{% set gi = loop.index %}
+{% for st in g.sets %}
+  {% set sa1 = st.a_slug | default(value="") %}{% set sa2 = st.a2_slug | default(value="") %}
+  {% set sb1 = st.b_slug | default(value="") %}{% set sb2 = st.b2_slug | default(value="") %}
+  {% set me = "" %}
+  {% if sa1 == page.slug or sa2 == page.slug %}{% set me = "a" %}{% elif sb1 == page.slug or sb2 == page.slug %}{% set me = "b" %}{% endif %}
+  {% if me and not (st.walkover is defined and st.walkover) %}
+    {% set two = st.a2 is defined or st.b2 is defined %}
+    {% if me == "a" %}
+      {% set mt = m.a %}{% set mts = m.a_team | default(value="") %}{% set ot = m.b %}{% set ots = m.b_team | default(value="") %}
+      {% set on = st.b %}{% set os = sb1 %}{% set orc = st.b_race | default(value="") %}
+      {% if two %}{% if sa1 == page.slug %}{% set pn = st.a2 | default(value="") %}{% else %}{% set pn = st.a %}{% endif %}{% set on = st.b ~ " & " ~ st.b2 | default(value="") %}{% set os = "" %}{% set orc = "" %}{% else %}{% set pn = "" %}{% endif %}
+    {% else %}
+      {% set mt = m.b %}{% set mts = m.b_team | default(value="") %}{% set ot = m.a %}{% set ots = m.a_team | default(value="") %}
+      {% set on = st.a %}{% set os = sa1 %}{% set orc = st.a_race | default(value="") %}
+      {% if two %}{% if sb1 == page.slug %}{% set pn = st.b2 | default(value="") %}{% else %}{% set pn = st.b %}{% endif %}{% set on = st.a ~ " & " ~ st.a2 | default(value="") %}{% set os = "" %}{% set orc = "" %}{% else %}{% set pn = "" %}{% endif %}
+    {% endif %}
+    {% set ok = "" %}{% if not two %}{% if os %}{% set ok = os %}{% set o_page = get_page(path="players/" ~ os ~ ".md", lang=lang) %}{% set on = o_page.title %}{% else %}{% set ok = "~" ~ on %}{% endif %}{% endif %}
+    {% set d = g.date | default(value=m.date | default(value="")) %}
+    {% set k = d ~ "-" ~ (ri < 10 and "0" or "") ~ ri ~ "-" ~ (mi < 10 and "0" or "") ~ mi ~ "-" ~ gi ~ "-" ~ (loop.index < 10 and "0" or "") ~ loop.index %}
+    {% set_global tl_json = tl_json ~ "," ~ {"k": k, "d": d, "p": sp.path ~ "#tl-r" ~ ri ~ "-m" ~ mi, "s": sp.title, "l": se.series_name, "r": rd.round, "f": rd_final, "st": rd_final and "final" or "", "mt": mt, "mts": mts, "ot": ot, "ots": ots, "fmt": two and "2v2" or "1v1", "o": ok, "os": os, "on": on, "or": orc, "pn": pn, "map": st.map | default(value=""), "ms": st.map_slug | default(value=""), "ace": st.ace | default(value=false), "res": st.winner == me and "W" or "L"} | json_encode | safe %}
+  {% endif %}
+{% endfor %}
+{% endfor %}{% endfor %}{% endfor %}
+{% endif %}{% endfor %}
+{% set tls = load_data(literal="[" ~ (tl_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
+
 {#- Totals (finals and walkovers included) for the header, infobox and summary. -#}
 {% set_global r_sw = 0 %}{% set_global r_sl = 0 %}{% set_global r_fw = 0 %}{% set_global r_fl = 0 %}
 {% for r in recs %}
@@ -159,6 +200,8 @@
 
       {% if recs | length > 0 %}{% include "players/playoff-record.html" %}{% endif %}
 
+      {% if tls | length > 0 %}{% include "players/team-league-record.html" %}{% endif %}
+
       {% if e.teams is defined and e.teams | length > 0 %}
       <section class="mt-10" aria-labelledby="player-teams">
         <h2 id="player-teams" class="text-lg font-semibold mb-4">{{ t.player_team_history }}</h2>
@@ -188,6 +231,8 @@
     {% set v_status %}{% if status == "active" %}{{ t.player_status_active }}{% elif status == "retired" %}{{ t.player_status_retired }}{% endif %}{% endset %}
     {% set v_titles %}{% if n_titles > 0 or n_runner > 0 %}<a href="#player-titles" class="font-stats text-primary hover:underline" title="{{ t.player_champion }} / {{ t.player_runner_up }}">{{ n_titles }} / {{ n_runner }}</a>{% endif %}{% endset %}
     {% set v_record %}{% if r_sw + r_sl > 0 %}<a href="#player-record" class="font-stats text-primary hover:underline">{{ r_sw }}–{{ r_sl }}</a>{% endif %}{% endset %}
+    {% set_global tl_w = 0 %}{% for r in tls %}{% if r.res == "W" %}{% set_global tl_w = tl_w + 1 %}{% endif %}{% endfor %}
+    {% set v_tl %}{% if tls | length > 0 %}<a href="#player-tl" class="font-stats text-primary hover:underline">{{ tl_w }}–{{ tls | length - tl_w }}</a>{% endif %}{% endset %}
     {% set v_aliases %}{% if e.aliases is defined and e.aliases | length > 0 %}{{ e.aliases | join(sep=", ") }}{% endif %}{% endset %}
     {% set ib_rows = [
       [t.player_id, "<span class=\"font-semibold\">" ~ page.title ~ "</span>"],
@@ -200,6 +245,7 @@
       [t.player_status, v_status | trim],
       [t.player_titles, v_titles | trim],
       [t.rec_infobox, v_record | trim],
+      [t.tl_infobox, v_tl | trim],
       [t.player_alt_ids, v_aliases | trim]
     ] %}
     {% set ib_sections = [["", ib_rows]] %}

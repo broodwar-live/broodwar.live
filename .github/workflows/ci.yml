@@ -48,3 +48,6 @@ jobs:
 
       - name: Check player playoff records against the season data
         run: python3 scripts/check-playoff-records.py public
+
+      - name: Check team-league data (set sums, finals, slugs) and the pages built from it
+        run: python3 scripts/check-team-leagues.py public

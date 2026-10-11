@@ -50,7 +50,7 @@ Tailwind CSS + daisyUI로 스타일링하며, Cloudflare Pages에서 서비스�
 |------|------|------|
 | **선수** | 운영 중 | 프로 선수 150명의 프로필 (영어·한국어) |
 | **빌드 오더** | 운영 중 | 모든 종족전의 빌드 오더 가이드 |
-| **대회** | 운영 중 | ASL, BSL, KSL, OSL, MSL 및 시즌 페이지 |
+| **대회** | 운영 중 | ASL, BSL, KSL, OSL, MSL, 프로리그(팀리그) 및 시즌 페이지 |
 | **위키** | 운영 중 | 유닛, 건물, 업그레이드, 기술, 맵, 메커니즘, 패치, 팀, 전략 |
 | **뉴스** | 운영 중 | 프로젝트 및 씬 소식 |
 | **검색** | 운영 중 | 사이트 전체 검색 (<kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>K</kbd>) |
@@ -110,6 +110,24 @@ config.toml            사이트 설정, 다국어 문자열, 기능 플래그
 3. `zola serve`로 미리 본 뒤 풀 리퀘스트를 열어 주세요. CI가 사이트를 빌드하고 링크를 검사합니다.
 
 뉴스 글은 `content/news/`에 `date`, `authors`, 선택적인 `tags`를 프런트 매터에 넣어 작성합니다.
+
+### 팀리그
+
+팀리그(현재는 프로리그)는 개인리그와 같은 시리즈/시즌 구조를 쓰되 팀 전용 키를 사용합니다. 전체
+스키마는 `templates/tournaments/team-season.html` 맨 위 주석에 있습니다.
+
+- **시리즈 페이지**(`content/tournaments/proleague.md`, `format = "Team"`): 시즌·라운드 결승·그랜드
+  파이널마다 `[[extra.seasons]]` 한 줄 — `winner` / `winner_team`, `runner_up` / `runner_up_team`
+  (당시 팀명 + `content/wiki/teams/<slug>.md` 슬러그), `score`(`"4–3"`, 여러 매치로 치른 결승은
+  이긴 매치 수와 `score_detail`), `final_date`, `prize_pool`. 팀 페이지의 우승 경력은 이 줄에서 계산합니다.
+- **시즌 페이지**(`template = "tournaments/team-season.html"`): `teams`, `maps`, `awards`, 선택적인
+  `standings`, 그리고 팀 매치 라운드 `[[extra.team_bracket]]`. 매치마다 `a` / `a_team`, `b` / `b_team`,
+  `score_a`, `score_b`, `date`, 세트 목록 `sets`(`{ map, map_slug, a, a_slug, a_race, b, b_slug, b_race,
+  winner = "a" | "b", ace = true }`, 팀플은 `a2` / `b2`)를 적습니다. 여러 매치로 치른 대결은
+  `[[extra.team_bracket.matches.legs]]`를 씁니다. 정규시즌 전체 경기는 기록하지 않습니다.
+- 선수 페이지에는 "팀리그 플레이오프 세트 전적"이 따로 표시되고 상대 전적 표에 열이 추가되며, 개인리그
+  플레이오프 전적은 바뀌지 않습니다. CI의 `scripts/check-team-leagues.py`가 세트 합계, 결승과 시리즈
+  줄의 일치, 모든 팀·선수·맵 슬러그를 검사합니다.
 
 ## 배포
 

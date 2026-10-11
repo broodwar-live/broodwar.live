@@ -74,20 +74,34 @@
   {% if n_wo > 0 %}<p class="text-xs text-base-content/70">{{ t.rec_walkover_note | replace(from="{n}", to=n_wo ~ "") }}</p>{% endif %}
   {% if n_und > 0 %}<p class="text-xs text-base-content/70">{{ t.rec_undecided_note | replace(from="{n}", to=n_und ~ "") }}</p>{% endif %}
 
-  {#- Head-to-head: one row per opponent, most series first (ties by name). -#}
+  {#- Head-to-head: one row per opponent, most series first (ties by name). The team-league
+      column (tw/tl) counts 1v1 sets from `tls` (players/player.html); opponents met only in
+      team-league playoffs get rows with no individual series (n = 0), after the others. -#}
+  {% set tl_by_fmt = tls | group_by(attribute="fmt") %}
+  {% if tl_by_fmt["1v1"] is defined %}{% set tl1 = tl_by_fmt["1v1"] %}{% else %}{% set tl1 = [] %}{% endif %}
+  {% set tl_by_o = tl1 | group_by(attribute="o") %}
+  {% set rec_by_o = recs | group_by(attribute="o") %}
   {% set_global h2h_json = "" %}
-  {% for ok, o_recs in recs | group_by(attribute="o") %}
+  {% for ok, o_recs in rec_by_o %}
     {% set_global hw = 0 %}{% set_global hl = 0 %}{% set_global hgw = 0 %}{% set_global hgl = 0 %}
     {% for r in o_recs %}
       {% if r.res == "W" %}{% set_global hw = hw + 1 %}{% elif r.res == "L" %}{% set_global hl = hl + 1 %}{% endif %}
       {% if not r.wo %}{% set_global hgw = hgw + r.mg %}{% set_global hgl = hgl + r.og %}{% endif %}
     {% endfor %}
+    {% set_global htw = 0 %}{% set_global htl = 0 %}
+    {% if tl_by_o[ok] is defined %}{% for r in tl_by_o[ok] %}{% if r.res == "W" %}{% set_global htw = htw + 1 %}{% else %}{% set_global htl = htl + 1 %}{% endif %}{% endfor %}{% endif %}
     {% set o0 = o_recs | first %}
-    {% set_global h2h_json = h2h_json ~ "," ~ {"o": ok, "os": o0.os, "on": o0.on, "nl": o0.on | lower, "n": o_recs | length, "w": hw, "l": hl, "gw": hgw, "gl": hgl, "last": o0.k} | json_encode | safe %}
+    {% set_global h2h_json = h2h_json ~ "," ~ {"o": ok, "os": o0.os, "on": o0.on, "nl": o0.on | lower, "n": o_recs | length, "w": hw, "l": hl, "gw": hgw, "gl": hgl, "tw": htw, "tl": htl, "last": o0.k} | json_encode | safe %}
   {% endfor %}
+  {% for ok, o_tl in tl_by_o %}{% if rec_by_o[ok] is not defined %}
+    {% set_global htw = 0 %}{% for r in o_tl %}{% if r.res == "W" %}{% set_global htw = htw + 1 %}{% endif %}{% endfor %}
+    {% set o0 = o_tl | first %}
+    {% set_global h2h_json = h2h_json ~ "," ~ {"o": ok, "os": o0.os, "on": o0.on, "nl": o0.on | lower, "n": 0, "w": 0, "l": 0, "gw": 0, "gl": 0, "tw": htw, "tl": o_tl | length - htw, "last": o0.k} | json_encode | safe %}
+  {% endif %}{% endfor %}
+  {% set has_tl = tl1 | length > 0 %}
   {% set h2h = load_data(literal="[" ~ (h2h_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="nl") | reverse | sort(attribute="n") | reverse %}
   <h3 id="player-h2h" class="text-base font-semibold mt-8 mb-1 scroll-mt-24">{{ t.rec_h2h }}</h3>
-  <p class="text-xs text-base-content/70 mb-3">{{ t.rec_h2h_note }}</p>
+  <p class="text-xs text-base-content/70 mb-3">{{ t.rec_h2h_note }}{% if has_tl %} {{ t.tl_h2h_note }}{% endif %}</p>
   {% set n_h2h = h2h | length %}
   {% if n_h2h > 10 %}<input type="checkbox" id="rec-more-h2h" class="rec-more sr-only" aria-controls="player-h2h-list">{% endif %}
   <div class="overflow-x-auto">
@@ -98,15 +112,17 @@
           <th scope="col" data-sort="num" data-sort-key="h2h-played" aria-sort="descending" class="text-right">{{ t.rec_played }}</th>
           <th scope="col" data-sort="num" class="text-right">{{ t.rec_series }}</th>
           <th scope="col" data-sort="num" class="text-right">{{ t.rec_games }}</th>
+          {% if has_tl %}<th scope="col" data-sort="num" class="text-right"><abbr title="{{ t.tl_h2h_col_title }}" class="no-underline">{{ t.tl_h2h_col }}</abbr></th>{% endif %}
         </tr>
       </thead>
       <tbody>
         {% for h in h2h %}
         <tr data-opp="{{ h.o }}">
           <td class="text-sm min-w-0" data-sort-value="{{ h.on }}">{% set pc_name = h.on %}{% set pc_slug = h.os %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}</td>
-          <td class="font-stats text-sm text-right">{{ h.n }}</td>
-          <td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{% if h.w + h.l > 0 %}{{ h.w * 1000 / (h.w + h.l) + h.n }}{% else %}0{% endif %}">{% if h.os %}<a href="?vs={{ h.os }}#player-matches" class="text-primary hover:underline" title="{{ t.rec_h2h_link | replace(from='{name}', to=h.on) }}">{{ h.w }}–{{ h.l }}</a>{% else %}{{ h.w }}–{{ h.l }}{% endif %}</td>
-          <td class="font-stats text-sm text-right whitespace-nowrap text-base-content/70" data-sort-value="{% if h.gw + h.gl > 0 %}{{ h.gw * 1000 / (h.gw + h.gl) }}{% else %}0{% endif %}">{{ h.gw }}–{{ h.gl }}</td>
+          <td class="font-stats text-sm text-right" data-sort-value="{{ h.n }}">{% if h.n > 0 %}{{ h.n }}{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>
+          <td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{% if h.w + h.l > 0 %}{{ h.w * 1000 / (h.w + h.l) + h.n }}{% else %}0{% endif %}">{% if h.n == 0 %}<span class="text-base-content/60">–</span>{% elif h.os %}<a href="?vs={{ h.os }}#player-matches" class="text-primary hover:underline" title="{{ t.rec_h2h_link | replace(from='{name}', to=h.on) }}">{{ h.w }}–{{ h.l }}</a>{% else %}{{ h.w }}–{{ h.l }}{% endif %}</td>
+          <td class="font-stats text-sm text-right whitespace-nowrap text-base-content/70" data-sort-value="{% if h.gw + h.gl > 0 %}{{ h.gw * 1000 / (h.gw + h.gl) }}{% else %}0{% endif %}">{% if h.n > 0 %}{{ h.gw }}–{{ h.gl }}{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>
+          {% if has_tl %}<td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{% if h.tw + h.tl > 0 %}{{ h.tw * 1000 / (h.tw + h.tl) + h.tw + h.tl }}{% else %}-1{% endif %}">{% if h.tw + h.tl > 0 %}<a href="#player-tl-sets" class="text-primary hover:underline">{{ h.tw }}–{{ h.tl }}</a>{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>{% endif %}
         </tr>
         {% endfor %}
       </tbody>

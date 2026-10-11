@@ -50,7 +50,7 @@
     {% set e = page.extra %}
     <li>
       <a href="{{ page.path }}" class="glass-card rounded-box px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-1 glow-blue">
-        <span class="text-sm font-bold text-primary w-14 shrink-0">{{ e.series_name }}</span>
+        <span class="text-sm font-bold text-primary w-20 shrink-0">{{ e.series_name }}</span>
         <span class="font-semibold text-sm flex-1 min-w-0">{{ e.season_label }}</span>
         <span class="text-xs text-base-content/70 font-stats">{{ e.year }}</span>
         {% if e.status == "live" %}

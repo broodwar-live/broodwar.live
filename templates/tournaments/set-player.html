@@ -1,0 +1,9 @@
+{#- One player in a team-league set: race tile (from the set, so random and off-race picks show
+    correctly) + name, linked to the profile when a slug is given. Set sp_name, sp_slug (may be
+    empty), sp_race ("t" | "p" | "z" | "r" | ""), sp_rev (true = tile after the name, for the
+    right-aligned side) and sp_class before including. -#}
+{% set sp_t = t.player_race_terran %}{% set sp_cls = "bg-race-terran" %}{% set sp_l = "T" %}
+{% if sp_race == "p" %}{% set sp_t = t.player_race_protoss %}{% set sp_cls = "bg-race-protoss" %}{% set sp_l = "P" %}
+{% elif sp_race == "z" %}{% set sp_t = t.player_race_zerg %}{% set sp_cls = "bg-race-zerg" %}{% set sp_l = "Z" %}
+{% elif sp_race == "r" %}{% set sp_t = "Random" %}{% set sp_cls = "bg-base-content/60" %}{% set sp_l = "R" %}{% endif %}
+<span class="inline-flex items-center gap-1.5 min-w-0 max-w-full {% if sp_rev %}flex-row-reverse{% endif %}">{% if sp_race %}<span class="{{ sp_cls }} w-4 h-4 shrink-0 rounded flex items-center justify-center text-[11px] leading-none font-black text-base-100" title="{{ sp_t }}"><span aria-hidden="true">{{ sp_l }}</span><span class="sr-only">{{ sp_t }}</span></span>{% else %}<span class="w-4 h-4 shrink-0 rounded bg-base-content/10" aria-hidden="true"></span>{% endif %}{% if sp_slug %}{% set sp_page = get_page(path="players/" ~ sp_slug ~ ".md", lang=lang) %}<a href="{{ sp_page.path }}" class="truncate hover:text-primary hover:underline {{ sp_class | default(value='') }}">{{ sp_name }}</a>{% else %}<span class="truncate {{ sp_class | default(value='') }}">{{ sp_name }}</span>{% endif %}</span>
