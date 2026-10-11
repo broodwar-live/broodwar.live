@@ -1,25 +1,26 @@
 +++
 title = "KT 롤스터"
-description = "KT 롤스터 — 스타크래프트: 브루드 워 프로게임단."
+description = "KT 롤스터(전 KTF 매직엔스) — 2009–10, 2010–11 프로리그 우승팀."
 slug = "kt-rolster"
 template = "wiki/team.html"
 [extra]
-unverified = true
-status = "active"
+status = "disbanded"
 region = "South Korea"
 founded = "1999"
-notable_players = ["Flash", "Stats", "Reach"]
+disbanded = "2016"
+notable_players = ["Flash", "YellOw", "Reach", "Nal_rA", "Stats"]
+sources = ["https://liquipedia.net/starcraft/KT_Rolster", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons"]
+verified = "2026-10-11"
 +++
-KT 롤스터는 스타크래프트: 브루드 워 역사상 가장 유명한 팀으로, 역대 최고의 선수로 평가받는 Flash(이영호)의 소속팀이다. 1999년 KTF 매직엔스로 창단되어 이후 KT 롤스터로 재편성되었으며, 프로리그 시대 한국 프로게임단의 중심에 있었다.
+KT 롤스터는 한국에서 가장 오래된 스타크래프트 프로게임단 중 하나이며, [SK텔레콤 T1](/ko/wiki/teams/sk-telecom-t1/)의 오랜 라이벌이다. 브루드 워 시기는 프로리그가 스타크래프트 II로 전환된 2012년까지였고, KT는 2016년 10월 스타크래프트 II 선수단을 해체했다. 조직 자체는 다른 종목에서 계속 활동했다.
 
-## Flash 시대
+## 팀명 변천
 
-2007년 이영호(Flash)가 입단하면서 팀의 궤도가 완전히 바뀌었다. Flash는 유망한 신인에서 무적의 챔피언으로 성장하며 KT 롤스터를 리그에서 가장 두려운 팀으로 만들었다. 그의 완벽한 기계적 플레이, 전략적 깊이, 끊임없는 노력은 팀에 다수의 프로리그 우승을 안겨주었고, KT 롤스터를 BW 최고의 왕조로 자리매김하게 했다.
+- 1999년 12월 — 프로게임단(N016)으로 창단
+- 2001년 3월 — KTF 매직엔스
+- 2009년 — 잠시 KT 매직엔스, KT 핑거붐, 올레 KT
+- 2009년 8월 — KT 롤스터
 
-## 프로리그 유산
+## 프로리그 성적
 
-Flash 이전에도 KT 롤스터는 초기 시대 가장 인기 있는 프로토스 선수 중 한 명인 Reach 등 강력한 선수진을 자랑했다. 팀은 꾸준히 경쟁력 있는 라인업을 유지했으며 규율 잡힌 플레이로 명성을 쌓았다. Stats는 후기에 안정적인 프로토스 성적을 올렸다.
-
-## 현대
-
-KT 롤스터의 BW 유산은 Flash의 아프리카 스타크래프트 리그(ASL) 참가와 인기 스트리밍 활동을 통해 현대까지 이어지고 있다. 조직은 여전히 활동 중이며, KT 롤스터라는 이름은 브루드 워 커뮤니티에서 비할 데 없는 명성을 지니고 있다. 많은 팬들에게 KT 롤스터와 Flash는 분리할 수 없는 존재이다.
+KTF의 첫 전성기에는 YellOw, Reach, Nal_rA, GoodFriend 등 스타리그 우승자·결승 진출자가 있었지만, 2005 SKY 프로리그 그랜드 파이널에서 SK텔레콤 T1에 패했다. 이들이 노쇠하거나 군 입대로 떠나자 Flash가 팀의 에이스가 되었고, 개인전과 에이스 결정전을 모두 이겨야 하는 경우가 많아 "KTFlash"라는 별명이 붙었다(리퀴피디아). Stats, Violet 등 자체 육성 선수들의 활약으로 KT는 **2009–10 신한은행 프로리그**(결승에서 SK텔레콤 T1을 4–2로 꺾음)와 **2010–11 신한은행 프로리그**에서 우승했고, SK플래닛 프로리그 2011–12 시즌 1에서는 준우승했다.

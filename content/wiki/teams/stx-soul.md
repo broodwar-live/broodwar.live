@@ -1,26 +1,22 @@
 +++
 title = "STX Soul"
-description = "STX Soul — StarCraft: Brood War professional team."
+description = "STX SouL — Korean StarCraft team founded as SouL in 2000 and sponsored by STX from 2004."
 slug = "stx-soul"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "2002"
-disbanded = "2013"
-notable_players = ["Bisu", "Last", "Mini"]
+founded = "2000"
+notable_players = ["Calm", "July", "Shuttle", "Hwasin", "Tossgirl"]
+sources = ["https://liquipedia.net/starcraft/STX_SouL", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons"]
+verified = "2026-10-11"
 +++
-STX Soul — known through various sponsors as Hanbit Stars, Lecaf OZ, and ultimately STX Soul — was a team defined by iconic Protoss play and one of the most celebrated championship moments in Brood War history. Founded in 2002, the team endured multiple sponsor transitions while maintaining a tradition of developing skilled players.
+STX SouL was created in July 2000 as SouL, which the team said stood for "StarCraft of Unbelievable Legend". It played under that name until STX Corporation, a large Korean shipping company, took over the sponsorship in April 2004.
 
-## Bisu: The Revolutionist
+## Players
 
-Kim Taek Yong (Bisu) is the player most closely associated with the team, and his impact on the game cannot be overstated. Bisu's 2007 MSL championship run against sAviOr is one of the most iconic moments in all of competitive gaming. At a time when sAviOr's Zerg was considered invincible in ZvP, Bisu developed an entirely new Protoss style — aggressive corsair-dark templar openings and innovative unit compositions — that shattered the existing metagame. This "Bisu Build" transformed PvZ overnight and earned Bisu the title of revolutionary.
+Notable members included MSL champion Calm and Tossgirl, whom Liquipedia describes as the only female progamer. Three-time OSL winner July also played for SouL, although two of his titles came while he was with MBCGame HERO. Team captains over the years included Hwasin, July, SoO and Shuttle.
 
-## Last and Mini
+## Results
 
-In the later years, Last (Kim Sung Hyun) emerged as one of the strongest Terran players in the game, a reputation he maintains in the modern ASL era. Mini (Jang Min Chul) provided solid Protoss play and Proleague consistency. Together they kept the team competitive as the professional scene evolved.
-
-## Disbandment
-
-STX Soul disbanded in 2013 when STX withdrew from esports sponsorship. The team's legacy is defined by Bisu's genius and the culture of innovation that permeated the roster. Last's continued excellence in the ASL keeps the team's spirit alive in modern competition.
+STX never won a regular Proleague season or round. It finished second in the 2003 KeMongSa KPGA Tour Team League and the 2004 SKY Proleague Round 2, third in the 2004 SKY Proleague Round 3 and the 2009–10 Shinhan Bank Proleague, and won team events outside the regular Proleague seasons, such as the 2009 Ultimate Proleague Championship and the 2007 Kyung Nam STX Masters.

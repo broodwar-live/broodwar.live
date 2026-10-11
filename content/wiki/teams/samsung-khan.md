@@ -1,26 +1,27 @@
 +++
 title = "Samsung Khan"
-description = "Samsung Khan — StarCraft: Brood War professional team."
+description = "Samsung KHAN — Korean StarCraft: Brood War team, Proleague champion in 2007 (Round 1) and 2008."
 slug = "samsung-khan"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2000"
-disbanded = "2015"
-notable_players = ["Stork", "JangBi", "July"]
+notable_players = ["Stork", "JangBi"]
+sources = ["https://liquipedia.net/starcraft/Samsung_KHAN", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons"]
+verified = "2026-10-11"
 +++
-Samsung Khan was one of the most consistently competitive teams in StarCraft: Brood War, producing multiple individual champions and maintaining a strong Proleague presence throughout the golden era of Korean professional gaming. Founded in 2000, the team represented Samsung's commitment to esports during the peak years of televised Brood War.
+Samsung KHAN, sponsored by Samsung Electronics, was created in June 2000. The team was known for strong 2v2 (teamplay) line-ups and for Protoss players, above all Stork and JangBi.
 
-## Championship Players
+## Players
 
-The team's roster reads like a hall of fame. Stork (Song Byung Goo) was the face of Samsung Khan for years, his elegant and methodical Protoss play making him one of the most respected players in the game. JangBi (Han Sang Wook) brought an explosive, aggressive Protoss style that complemented Stork perfectly and culminated in an unforgettable MSL championship run. July (Park Sung Joon) was an early Zerg star whose all-in aggression and fearless play style made him one of the most exciting players to watch.
+Stork was the team's long-time captain and its biggest individual star; Liquipedia notes that despite consistently deep runs in individual leagues he won only one Starleague, the 2008 Incruit OSL. JangBi emerged in 2008 as a strong Protoss known for his PvT and Psionic Storm use.
 
-## Proleague Contender
+## Proleague
 
-Samsung Khan was a perennial Proleague contender, rarely dominant but never a pushover. The team's consistent results across multiple seasons reflected strong coaching and talent development. Their ability to produce top-tier players across different races and eras demonstrated organizational depth that few teams could match.
+- **2007 Shinhan Bank Proleague Round 1** — champion
+- **2008 Shinhan Bank Proleague** — champion; Liquipedia credits the team's 2v2 strength as essential to this win
+- 2008–09 Shinhan Bank Proleague — fourth place after playoff wins over STX SouL and a loss to CJ Entus
+- Runner-up in 2005 SKY Proleague Round 2 and the 2007 Grand Final; third in 2011–12 Season 1
 
-## Disbandment
-
-Samsung exited the Brood War scene as part of a broader corporate withdrawal from esports sponsorship. The team officially disbanded in 2015, marking the end of one of the longest-running organizations in professional BW. Samsung Khan's legacy lives on through the careers of its alumni and the memories of their championship moments.
+Samsung later continued in StarCraft II as Samsung Galaxy.

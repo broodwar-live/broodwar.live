@@ -1,30 +1,19 @@
 +++
 title = "OZ"
-description = "OZ — StarCraft: Brood War professional team."
+description = "OZ — short name of the team known as Lecaf OZ and later Hwaseung OZ."
 slug = "oz"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "2002"
-disbanded = "2007"
-notable_players = ["NaDa", "Hwasin", "Iris"]
+founded = "2001"
+disbanded = "2011"
+notable_players = ["Jaedong"]
+sources = ["https://liquipedia.net/starcraft/Hwaseung_OZ", "https://liquipedia.net/starcraft/WeMade_FOX"]
+verified = "2026-10-11"
 +++
-OZ was an early-era Korean Brood War team that predated the Hwaseung OZ sponsorship era, operating during the formative years of professional StarCraft in South Korea. Founded in 2002 under various sponsor names including Toona and Pantech, the team contributed to building the competitive infrastructure that would define Korean esports for a decade.
+"OZ" is the short name of a single team that played as **Lecaf OZ** from March 2006 and as **Hwaseung OZ** from January 2009 until it was dissolved in 2011. Earlier the same team had been called IS (Ideal Space, 2001), KTEC Plus (2003) and Plus (2004). It was not a separate early-era organisation.
 
-## Early Pro Scene
+For the team's history, players and titles, see [Hwaseung OZ](/wiki/teams/hwaseung-oz/).
 
-OZ competed during the period when Korean professional BW was transitioning from a niche hobby into a mainstream entertainment phenomenon. The team was part of the early Proleague seasons, helping establish the team competition format that would become the backbone of Korean competitive StarCraft. Playing alongside the nascent versions of teams that would become dynasties, OZ helped fill out the league and make team competition viable.
-
-## Notable Players
-
-The team's roster included several players who would go on to significant careers. NaDa (Lee Yoon Yeol) spent early career time associated with the organization before his legendary run with SK Telecom T1. Hwasin was a Protoss player known for aggressive cannon rush strategies and creative play. Iris (Kim Seung Ho) was a solid Terran who contributed consistent results during his time with the team.
-
-## Transition
-
-The OZ organization went through several sponsor changes before becoming Hwaseung OZ in the mid-2000s, eventually becoming the home of Jaedong. The earlier incarnation of OZ represents the foundational period of Korean BW — before the massive corporate sponsorships, before the superstars, when teams were still figuring out how professional StarCraft was supposed to work.
-
-## Legacy
-
-OZ's legacy is one of pioneering — being present at the birth of Korean professional BW and helping to establish the norms and structures that the golden age would build upon. While overshadowed by the later Hwaseung OZ era, the original team's contribution to the scene's development should not be forgotten.
+Note: the sponsor names Toona and Pantech belong to a different team's lineage — the one that became [WeMade FOX](/wiki/teams/wemade-fox/).

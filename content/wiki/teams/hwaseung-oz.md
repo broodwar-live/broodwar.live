@@ -1,26 +1,33 @@
 +++
 title = "Hwaseung OZ"
-description = "Hwaseung OZ — StarCraft: Brood War professional team."
+description = "Hwaseung OZ (formerly IS, KTEC Plus, Plus and Lecaf OZ) — Jaedong's team, 2007 Proleague champion."
 slug = "hwaseung-oz"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "2002"
-disbanded = "2012"
-notable_players = ["Jaedong", "Luxury", "Calm"]
+founded = "2001"
+disbanded = "2011"
+notable_players = ["Jaedong", "Anytime", "fOrGG", "Hiya", "BackHo"]
+sources = ["https://liquipedia.net/starcraft/Hwaseung_OZ", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-Hwaseung OZ holds a special place in Brood War history as the home of Lee Jae Dong — Jaedong, "The Tyrant" — one of the greatest players to ever compete in StarCraft. Founded in 2002, the team went through several sponsor changes but maintained a consistent identity built around aggressive, fearless play.
+Hwaseung OZ is best remembered as the team of Jaedong, a fixture of its Proleague line-ups from 2006 until the team folded.
 
-## Jaedong: The Tyrant
+## Name history
 
-Jaedong's career at Hwaseung OZ is inseparable from the team's identity. His explosive Zerg play, characterized by devastating mutalisk control and relentless aggression, made him the most feared player of his generation alongside Flash. The rivalry between Jaedong and Flash — "The Rivalry" — is the defining narrative of late-era professional Brood War, and Hwaseung OZ was the stage from which Jaedong waged that legendary competition. Jaedong won multiple OSL and MSL titles while representing the team.
+- January 2001 — formed as IS (Ideal Space), with players such as Boxer, YellOw, NaDa and IntoTheRainbow
+- July 2003 — KTEC Plus; January 2004 — Plus
+- March 2006 — Lecaf OZ (Lecaf is a footwear subsidiary of the Hwaseung group)
+- January 2009 — Hwaseung OZ
+- August 2011 — Hwaseung announced it would stop sponsoring the team, which was dissolved in September 2011
 
-## Supporting Cast
+## Players
 
-While Jaedong was the undisputed star, Hwaseung OZ fielded capable supporting players. Luxury (Kim Dong Soo) provided creative Protoss play that could steal games against favored opponents. Calm (Kim Yoon Hwan) contributed steady Terran results in Proleague matches. The team's overall strength allowed Jaedong to shine in individual leagues while the roster held its own in team competition.
+Anytime, ShinHwA and ToSky joined in 2004, and BackHo and Jaedong in 2005. Around Jaedong the team fielded Terrans such as fOrGG and Hiya and Protoss Anytime and BackHo.
 
-## Disbandment
+## Titles
 
-Hwaseung OZ disbanded in 2012 as the professional BW landscape shifted. The team's legacy is forever linked to Jaedong's brilliance — a player whose talent and competitive fire made Hwaseung OZ one of the most exciting teams to follow in Brood War history.
+- As Ideal Space: iTV Hangame Survivor Pro League 2001 and the 2002 OnGameNet Special Team Exhibition
+- As Lecaf OZ: **2007 Shinhan Bank Proleague Round 2** and the **2007 Shinhan Proleague Grand Final**
+- Runner-up in 2007 Round 1, the 2008–09 Shinhan Bank Proleague and the 2009 Winners League

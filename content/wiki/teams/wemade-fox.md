@@ -1,30 +1,27 @@
 +++
 title = "WeMade FOX"
-description = "WeMade FOX — StarCraft: Brood War professional team."
+description = "WeMade FOX (formerly Toona SG, P&C Curriors and Pantech EX) — Korean StarCraft team, 2003–2011."
 slug = "wemade-fox"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "2004"
-disbanded = "2012"
-notable_players = ["Mind", "Sharp", "Best"]
+founded = "2003"
+disbanded = "2011"
+notable_players = ["NaDa", "Mind", "Rock", "Silver", "GoodFriend"]
+sources = ["https://liquipedia.net/starcraft/WeMade_FOX", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-WeMade FOX was a solid Proleague competitor throughout the mid-to-late golden age of Korean professional Brood War. Founded in 2004 under WeMade Entertainment's sponsorship, the team built a reputation for developing well-rounded players across all three races and maintaining consistent results without ever quite reaching the heights of the top-tier dynasties.
+WeMade FOX was founded by coach Son Ho Chang in June 2003 and went through several sponsors before game developer WeMade took over.
 
-## Key Players
+## Name history
 
-Shin Sang Moon (Mind) was the team's most accomplished player, a strategic Terran known for thoughtful play and strong decision-making. Mind's MSL championship victory was the team's crowning individual achievement, demonstrating that methodical preparation could overcome raw mechanical talent. Lee Byung Ryul (Sharp) brought an aggressive Terran style that complemented Mind's more measured approach, giving the team tactical flexibility in Proleague matches.
+- June 2003 — SG Family; August 2003 — Toona SG
+- August 2004 — Pantech & Curitel Curriors
+- April 2006 — Pantech EX
+- August 2007 — WeMade FOX
+- 22 August 2011 — disbanded
 
-## Best: Fan Favorite Protoss
+## Players
 
-Park Sang Hyun (Best) became one of the most popular Protoss players of his era, known for flashy dragoon control and entertaining games. His aggressive play style and mechanical skill with gateway units made him a fan favorite, and his best performances rivaled anyone in the league. Best's dragoon micro in particular became a signature that fans associated with WeMade FOX.
-
-## Proleague Presence
-
-WeMade FOX was the definition of a steady contender — rarely the favorite, but always dangerous. The team's coaching staff developed a culture of preparation that allowed them to compete above their perceived talent level. Their Proleague runs often featured upset victories against higher-seeded opponents.
-
-## Disbandment
-
-WeMade FOX disbanded in 2012 as part of the broader contraction of professional BW. The team's legacy is one of consistency and player development — a well-run organization that gave opportunities to players who might have been overlooked by the marquee teams.
+The team's franchise player was NaDa, who joined from KTF; with SiR@SoNi, GoodFriend, Rock and Silver he made the team a Proleague force. It won the **2004 SKY Proleague Round 2** but lost the 2004 Grand Final to Hanbit Stars. The next generation was led by Mind, who won the 2007 GOMTV MSL Season 3 over Bisu. After weak 2008 and 2009 seasons the team revived around 2010 with Mind, BaBy, RorO, Midas, Shine and Pure alongside veterans NaDa and Rock, but it was disbanded soon after NaDa retired.

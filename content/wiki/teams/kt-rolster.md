@@ -1,25 +1,26 @@
 +++
 title = "KT Rolster"
-description = "KT Rolster — StarCraft: Brood War professional team."
+description = "KT Rolster (formerly KTF MagicNs) — Korean StarCraft: Brood War Proleague team, 2009–10 and 2010–11 Proleague champion."
 slug = "kt-rolster"
 template = "wiki/team.html"
 [extra]
-unverified = true
-status = "active"
+status = "disbanded"
 region = "South Korea"
 founded = "1999"
-notable_players = ["Flash", "Stats", "Reach"]
+disbanded = "2016"
+notable_players = ["Flash", "YellOw", "Reach", "Nal_rA", "Stats"]
+sources = ["https://liquipedia.net/starcraft/KT_Rolster", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons"]
+verified = "2026-10-11"
 +++
-KT Rolster is the most storied team in StarCraft: Brood War history, synonymous with the career of Flash — widely regarded as the greatest player to ever compete. Originally founded as KTF MagicNs in 1999, the organization rebranded to KT Rolster and became a fixture of Korean professional Brood War throughout the Proleague era.
+KT Rolster is one of the oldest Korean professional StarCraft teams and the long-time rival of [SK Telecom T1](/wiki/teams/sk-telecom-t1/). The team's Brood War era ran until 2012, when the Proleague moved to StarCraft II; KT disbanded its StarCraft II roster in October 2016 and the organisation continued in other titles.
 
-## The Flash Era
+## Name history
 
-The team's trajectory changed forever when Lee Young Ho (Flash) joined in 2007. Flash's ascent from promising rookie to untouchable champion transformed KT Rolster into the most feared team in the league. His mechanical precision, strategic depth, and relentless work ethic carried the team to multiple Proleague championships and cemented KT Rolster's legacy as the definitive BW dynasty.
+- December 1999 — founded as a professional gaming team (N016)
+- March 2001 — KTF MagicNs
+- 2009 — briefly KT MagicNs, KT Fingerboom and olleh KT
+- August 2009 — KT Rolster
 
-## Proleague Legacy
+## Proleague record
 
-Before Flash, KT Rolster already boasted strong rosters featuring players like Reach, one of the most popular Protoss players of the early era. The team consistently fielded competitive lineups and maintained a reputation for disciplined, well-coached play. Stats contributed reliable Protoss results during the later years.
-
-## Modern Era
-
-KT Rolster's BW legacy extends into the modern era through Flash's continued presence in the Afreeca StarCraft League (ASL) and his popular streaming career. The organization remains active, and the KT Rolster name carries unmatched prestige in the Brood War community. For many fans, KT Rolster and Flash are inseparable — the team that housed the greatest individual career the game has ever seen.
+KTF's first golden age featured Starleague champions and finalists such as YellOw, Reach, Nal_rA and GoodFriend, but the team lost the 2005 SKY Proleague Grand Final to SK Telecom T1. As those players aged or left for military service, Flash became the team's ace; Liquipedia notes he often had to win both his own set and the ace match, earning the team the nickname "KTFlash". With support from homegrown players such as Stats and Violet, KT won the **2009–10 Shinhan Bank Proleague** (beating SK Telecom T1 4–2 in the final) and the **2010–11 Shinhan Bank Proleague**, and finished second in SK Planet Proleague 2011–12 Season 1.

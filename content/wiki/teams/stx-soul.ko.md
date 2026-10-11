@@ -1,26 +1,22 @@
 +++
 title = "STX 소울"
-description = "STX 소울 — 스타크래프트: 브루드 워 프로게임단."
+description = "STX 소울 — 2000년 SouL로 창단, 2004년부터 STX 후원."
 slug = "stx-soul"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "2002"
-disbanded = "2013"
-notable_players = ["Bisu", "Last", "Mini"]
+founded = "2000"
+notable_players = ["Calm", "July", "Shuttle", "Hwasin", "Tossgirl"]
+sources = ["https://liquipedia.net/starcraft/STX_SouL", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons"]
+verified = "2026-10-11"
 +++
-STX 소울은 한빛 스타즈, 르까프 OZ 등 여러 스폰서를 거치며 상징적인 프로토스 플레이와 브루드 워 역사상 가장 유명한 우승 순간 중 하나를 만들어낸 팀이다. 2002년 창단되어 여러 스폰서 전환을 겪으면서도 실력 있는 선수를 양성하는 전통을 유지했다.
+STX 소울은 2000년 7월 SouL이라는 이름으로 창단되었다. 팀은 SouL이 "StarCraft of Unbelievable Legend"의 약자라고 밝혔다. 2004년 4월 국내 대형 해운 기업인 STX가 후원을 맡을 때까지 이 이름으로 활동했다.
 
-## Bisu: 혁명가
+## 선수
 
-김택용(Bisu)은 이 팀과 가장 밀접하게 연관된 선수이며, 그의 게임에 대한 영향은 아무리 강조해도 지나치지 않다. Bisu의 2007년 MSL 우승전 sAviOr와의 대결은 모든 경쟁 게임 역사에서 가장 상징적인 순간 중 하나이다. sAviOr의 저그가 ZvP에서 무적으로 여겨지던 시절, Bisu는 공격적인 커세어-다크 템플러 오프닝과 혁신적인 유닛 조합이라는 완전히 새로운 프로토스 스타일을 개발하여 기존 메타게임을 산산조각 냈다. 이 "비수 빌드"는 하룻밤 사이에 PvZ를 변혁시키며 혁명가라는 칭호를 안겨주었다.
+MSL 우승자 Calm과 리퀴피디아가 유일한 여성 프로게이머로 소개하는 Tossgirl이 대표적이다. OSL 3회 우승자 July도 소울에서 뛰었지만, 그중 두 번의 우승은 MBC게임 HERO 시절에 거둔 것이다. 역대 주장으로는 Hwasin, July, SoO, Shuttle 등이 있었다.
 
-## Last와 Mini
+## 성적
 
-후기에는 Last(김성현)가 게임에서 가장 강한 테란 선수 중 한 명으로 부상했으며, 이 명성은 현대 ASL 시대에도 유지되고 있다. Mini(장민철)는 안정적인 프로토스 플레이와 프로리그 일관성을 제공했다. 이들은 프로 씬이 변화하는 가운데 팀의 경쟁력을 유지했다.
-
-## 해체
-
-STX 소울은 STX가 e스포츠 후원에서 철수하면서 2013년 해체되었다. 팀의 유산은 Bisu의 천재성과 로스터에 스며든 혁신의 문화로 정의된다. Last의 ASL에서의 지속적인 활약은 현대 경쟁에서 팀의 정신을 이어가고 있다.
+STX는 정규 프로리그 시즌·라운드 우승을 한 번도 차지하지 못했다. 2003 케몬사 KPGA 투어 팀리그와 2004 SKY 프로리그 2라운드 준우승, 2004 SKY 프로리그 3라운드와 2009–10 신한은행 프로리그 3위를 기록했고, 2009 얼티밋 프로리그 챔피언십, 2007 경남 STX 마스터즈 같은 정규 시즌 외 팀 대회에서 우승했다.

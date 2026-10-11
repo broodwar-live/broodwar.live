@@ -1,26 +1,32 @@
 +++
 title = "CJ 엔투스"
-description = "CJ 엔투스 — 스타크래프트: 브루드 워 프로게임단."
+description = "CJ 엔투스(전 GO, 슈마 GO) — 2011–12 프로리그 시즌 2 우승팀."
 slug = "cj-entus"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "1999"
-disbanded = "2016"
-notable_players = ["sAviOr", "EffOrt", "hero"]
+founded = "2001"
+notable_players = ["sAviOr", "EffOrt", "Leta", "XellOs", "sKyHigh"]
+sources = ["https://liquipedia.net/starcraft/CJ_Entus", "https://liquipedia.net/starcraft/Hite_Entus", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-CJ 엔투스는 한국 프로 브루드 워의 창립 기둥 중 하나로, 1999년부터 2016년까지 지속적으로 운영되었다. 팀은 특히 뛰어난 저그 선수 배출과 프로 시대 전체에 걸친 경쟁력 유지로 유명했다.
+CJ 엔투스는 한국에서 가장 오래된 스타크래프트 팀 중 하나다. "엔투스"는 "entertain us"에서 왔으며, 세 종족 모두 선수층이 가장 두터운 팀 중 하나로 평가받았다.
 
-## sAviOr 시대
+## 팀명 변천
 
-마재윤(sAviOr), "지휘자"는 2000년대 중반 CJ 엔투스를 대표했다. 그의 혁명적인 저그 플레이는 MSL을 지배했으며, 당대 최고의 저그 선수로 평가받았다. sAviOr의 ZvT와 ZvP 전략적 혁신은 수년간 메타게임에 영향을 미쳤다. 2010년 승부조작 스캔들로 선수 생활이 불명예스럽게 끝났지만, 게임의 전술적 발전에 대한 그의 영향력은 부인할 수 없다.
+- 2001년 1월 — 프로슈머로 창단
+- 2002년 4월 — 그레이티스트 원(GO), 2003년 9월 — 슈마 GO, 2004년 9월 — 다시 GO
+- 2006년 4월 — CJ 엔투스
+- 2010년 10월 — 승부조작 사건으로 크게 약화된 하이트 스파키즈와 합병해 [하이트 엔투스](/ko/wiki/teams/hite-entus/)로 활동
+- 2011년 5월 — 하이트 명명권 계약 종료로 다시 CJ 엔투스
 
-## EffOrt와 후기
+## 선수
 
-sAviOr의 몰락 이후, 김정우(EffOrt)가 팀의 새로운 저그 에이스로 부상했다. EffOrt의 뛰어난 디파일러 컨트롤과 후반 게임 마스터리는 그를 현대 시대 가장 두려운 선수 중 한 명으로 만들었다. 패배가 거의 확정된 게임을 정확한 플레이그와 다크 스웜으로 뒤집는 능력이 그의 시그니처가 되었다. hero(김태영)는 안정적이고 믿음직한 테란 플레이로 팀을 뒷받침했다.
+본좌 sAviOr, 스타리그 우승자 XellOs와 GGPlay, 그리고 Iris, OversKy 같은 강자들이 이 팀에서 뛰었다. sAviOr는 승부조작 사건으로 은퇴했고, 이후에는 주장 Leta와 sKyHigh, EffOrt가 팀을 이끌었다.
 
-## 유산
+## 우승 기록
 
-CJ 엔투스는 CJ 그룹이 e스포츠에서 철수하면서 2016년 해체되었다. 17년간의 운영 기록은 BW 역사상 가장 오래 운영된 조직 중 하나이다. CJ 엔투스는 한국 프로 브루드 워의 전체 여정을 대표한다 — 초기부터 황금기를 거쳐 프로 시대의 황혼까지.
+- (슈마) GO 시절: 2003 네오위즈 피망컵, 2003 케몬사 KPGA 투어 팀리그, 2003 라이프존 KPGA 팀리그, 2004–05 MBC무비스 MBC게임 팀리그
+- 2009 신한은행 위너스리그 — 결승에서 sKyHigh의 역올킬로 화승 OZ를 4–3으로 꺾고 우승
+- 2011–12 SK플래닛 프로리그 시즌 2 (BW/SC2 병행)

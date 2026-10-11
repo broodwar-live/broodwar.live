@@ -1,26 +1,27 @@
 +++
 title = "Woongjin Stars"
-description = "Woongjin Stars — StarCraft: Brood War professional team."
+description = "Woongjin Stars — Korean StarCraft team (formerly Hanbit Stars), sponsored by Woongjin from 2008 until it disbanded in 2013."
 slug = "woongjin-stars"
 template = "wiki/team.html"
 [extra]
-unverified = true
 status = "disbanded"
 region = "South Korea"
-founded = "2007"
+founded = "2001"
 disbanded = "2013"
-notable_players = ["Zero", "free", "Soulkey"]
+notable_players = ["GGPlay", "Zero", "free", "Soulkey", "Light"]
+sources = ["https://liquipedia.net/starcraft/Woongjin_Stars", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons"]
+verified = "2026-10-11"
 +++
-Woongjin Stars was a relatively young entrant to the Korean Proleague scene, founded in 2007 during what many consider the late golden age of professional Brood War. Despite their shorter lifespan compared to legacy organizations, the team quickly established itself as a competitive force and became known for developing talented Zerg players.
+Woongjin Stars was the continuation of [Hanbit Stars](/wiki/teams/hanbit-stars/). After Hanbit Soft sold the team in 2008, the Woongjin group began sponsoring it in September 2008. Founded as Hanbit Stars in 2001, the team disbanded in December 2013 after a brief period in StarCraft II.
 
-## Rise to Prominence
+## Players
 
-The team's ascent was rapid. Within a few seasons of joining the Proleague, Woongjin Stars were competing at the highest level against established powerhouses. Their success was built on strong coaching and an eye for recruiting promising young talent. The organization invested heavily in player development, and the results showed on the battlefield.
+Under the Woongjin name the team kept producing strong players, notably GGPlay, ZerO, Free and Soulkey; Light later captained the team. It shared a practice-house building with CJ Entus, and the two teams had good relations — CJ traded GGPlay and later Kwanro to Woongjin. In June 2010 Woongjin became the first team in Proleague history to field a line-up made up only of Zerg players, against Hite SPARKYZ.
 
-## Key Players
+## Results
 
-Kim Myung Woon (Zero) was the team's standout Zerg ace during the late Proleague era, known for his solid macro play and reliable performances in team matches. free (Choi Ji Hyuk) provided consistent results as a versatile player. Soulkey (Kim Min Chul) developed at Woongjin Stars before becoming one of the top Zerg players in StarCraft II, demonstrating the team's talent pipeline.
+Woongjin never reached another Brood War Proleague final. Its best Proleague-level result under this name was third place in the 2010 Shinhan Bank Winners League.
 
-## Disbandment
+## End
 
-Woongjin Stars disbanded in 2013 as the professional BW scene contracted. The team's six-year run was shorter than many of its competitors, but Woongjin Stars proved that a well-run organization could compete with decades-old teams in a remarkably short time. Their alumni went on to successful careers in both BW and SC2.
+The Woongjin group declared bankruptcy in September 2012. The team waived most of its roster in October 2013 and disbanded two months later, in December 2013.
