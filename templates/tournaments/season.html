@@ -39,7 +39,7 @@
     <span class="text-[10px] px-2 py-0.5 rounded bg-success/10 text-success">{% if lang == "ko" %}완료{% else %}Completed{% endif %}</span>
     {% endif %}
   </div>
-  <p class="text-xs text-base-content/40 mb-8">{{ e.year }} · {{ e.prize_pool }}</p>
+  <p class="text-xs text-base-content/40 mb-8">{{ e.year }}{% if e.prize_pool is defined and e.prize_pool %} · {{ e.prize_pool }}{% endif %}</p>
 
   <div class="prose prose-invert max-w-3xl mb-10">
     {{ page.content | safe }}
@@ -51,7 +51,10 @@
     <h2 class="text-sm font-semibold mb-4">{% if lang == "ko" %}결과{% else %}Results{% endif %}</h2>
     <dl class="space-y-3 text-sm">
       <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}우승{% else %}Champion{% endif %}</dt><dd class="font-semibold"><a href="/players/{{ e.champion | lower }}" class="text-primary hover:text-primary/80 transition-colors">{{ e.champion }}</a></dd></div>
-      {% if e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd><a href="/players/{{ e.runner_up | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.runner_up }}</a></dd></div>{% endif %}
+      {% if e.runner_up is defined and e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd><a href="/players/{{ e.runner_up | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.runner_up }}</a></dd></div>{% endif %}
+      {% if e.final_score is defined and e.final_score %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}결승 스코어{% else %}Final Score{% endif %}</dt><dd class="font-stats">{{ e.final_score }}</dd></div>{% endif %}
+      {% if e.final_date is defined and e.final_date %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}결승일{% else %}Final Date{% endif %}</dt><dd class="font-stats"><time datetime="{{ e.final_date }}">{{ e.final_date }}</time></dd></div>{% endif %}
+      {% if e.prize_pool is defined and e.prize_pool %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}상금{% else %}Prize Pool{% endif %}</dt><dd>{{ e.prize_pool }}</dd></div>{% endif %}
       {% if e.semifinalists is defined and e.semifinalists | length > 0 %}
       <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}4강{% else %}Semi-finalists{% endif %}</dt><dd>{% for sf in e.semifinalists %}<a href="/players/{{ sf | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ sf }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
       {% endif %}

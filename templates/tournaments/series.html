@@ -42,6 +42,13 @@
   </div>
 
   {% if e.seasons is defined and e.seasons | length > 0 %}
+  {#- Only show columns that at least one season fills in. -#}
+  {% set has_prize = false %}{% set has_date = false %}{% set has_score = false %}
+  {% for s in e.seasons %}
+    {% if s.prize_pool is defined and s.prize_pool %}{% set_global has_prize = true %}{% endif %}
+    {% if s.final_date is defined and s.final_date %}{% set_global has_date = true %}{% endif %}
+    {% if s.score is defined and s.score %}{% set_global has_score = true %}{% endif %}
+  {% endfor %}
   <h2 class="text-lg font-semibold mb-4">{% if lang == "ko" %}시즌 기록{% else %}Season History{% endif %}</h2>
   <div class="overflow-x-auto">
     <table class="table table-zebra w-full">
@@ -51,7 +58,9 @@
           <th>{% if lang == "ko" %}연도{% else %}Year{% endif %}</th>
           <th>{% if lang == "ko" %}우승자{% else %}Champion{% endif %}</th>
           <th>{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</th>
-          <th>{% if lang == "ko" %}상금{% else %}Prize Pool{% endif %}</th>
+          {% if has_score %}<th>{% if lang == "ko" %}결승 스코어{% else %}Final{% endif %}</th>{% endif %}
+          {% if has_date %}<th>{% if lang == "ko" %}결승일{% else %}Final Date{% endif %}</th>{% endif %}
+          {% if has_prize %}<th>{% if lang == "ko" %}상금{% else %}Prize Pool{% endif %}</th>{% endif %}
           <th>{% if lang == "ko" %}상태{% else %}Status{% endif %}</th>
         </tr>
       </thead>
@@ -60,9 +69,11 @@
         <tr>
           <td class="font-stats text-sm">{{ s.season }}</td>
           <td class="font-stats text-sm">{{ s.year }}</td>
-          <td class="text-sm font-semibold">{{ s.winner | default(value="—") }}</td>
-          <td class="text-sm text-base-content/50">{{ s.runner_up | default(value="—") }}</td>
-          <td class="text-sm text-base-content/40">{{ s.prize_pool }}</td>
+          <td class="text-sm font-semibold">{% if s.winner is defined and s.winner %}{{ s.winner }}{% else %}&mdash;{% endif %}</td>
+          <td class="text-sm text-base-content/50">{% if s.runner_up is defined and s.runner_up %}{{ s.runner_up }}{% else %}&mdash;{% endif %}</td>
+          {% if has_score %}<td class="font-stats text-sm whitespace-nowrap">{% if s.score is defined and s.score %}{{ s.score }}{% else %}<span class="text-base-content/25">&mdash;</span>{% endif %}</td>{% endif %}
+          {% if has_date %}<td class="font-stats text-sm text-base-content/40 whitespace-nowrap">{% if s.final_date is defined and s.final_date %}<time datetime="{{ s.final_date }}">{{ s.final_date }}</time>{% else %}<span class="text-base-content/25">&mdash;</span>{% endif %}</td>{% endif %}
+          {% if has_prize %}<td class="text-sm text-base-content/40">{% if s.prize_pool is defined and s.prize_pool %}{{ s.prize_pool }}{% else %}<span class="text-base-content/25">&mdash;</span>{% endif %}</td>{% endif %}
           <td>
             {% if s.status == "live" %}
             <span class="text-[10px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
