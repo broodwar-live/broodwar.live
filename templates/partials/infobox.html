@@ -26,7 +26,7 @@
 
     {% if ib_image %}
     <img src="{{ ib_image }}" alt="{{ ib_image_alt | default(value=ib_title) }}" loading="lazy"
-         class="w-full {% if ib_image_aspect == 'square' %}aspect-square{% else %}aspect-video{% endif %} {% if ib_image_fit == 'contain' %}object-contain bg-base-300/50{% else %}object-cover object-top{% endif %}" />
+         class="w-full max-lg:max-h-80 {% if ib_image_aspect == 'square' %}aspect-square{% else %}aspect-video{% endif %} {% if ib_image_fit == 'contain' %}object-contain bg-base-300/50{% else %}object-cover object-top{% endif %}" />
     {% elif ib_placeholder %}
     {{ ib_placeholder | safe }}
     {% endif %}

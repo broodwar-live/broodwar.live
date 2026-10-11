@@ -8,7 +8,7 @@
     {% for term in terms %}
     <a href="{{ term.permalink }}" class="glass-card rounded-box px-4 py-3 glow-blue">
       <span class="text-sm font-medium">{{ term.name | title }}</span>
-      <span class="text-[11px] text-base-content/25 ml-2">{{ term.pages | length }}</span>
+      <span class="text-[11px] text-base-content/60 ml-2">{{ term.pages | length }}</span>
     </a>
     {% endfor %}
   </div>
