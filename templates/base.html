@@ -249,6 +249,7 @@
               <li><a href="https://github.com/broodwar-live" target="_blank" rel="noopener" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">GitHub</a></li>
               <li><a href="https://discord.gg/broodwar" target="_blank" rel="noopener" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">Discord</a></li>
               <li><a href="https://github.com/broodwar-live/broodwar.live/issues" target="_blank" rel="noopener" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.report_a_bug }}</a></li>
+              <li><a href="{% if lang == 'ko' %}/ko{% endif %}/credits/" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.credits }}</a></li>
             </ul>
           </nav>
         </div>
@@ -257,10 +258,12 @@
       <div class="border-t border-primary/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-4 text-[11px] text-base-content/20">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1 text-[11px] text-base-content/20">
               <span>&copy; 2026 broodwar.live</span>
               <span>&middot;</span>
               <span>{{ t.open_source }}</span>
+              <span>&middot;</span>
+              <a href="{% if lang == 'ko' %}/ko{% endif %}/credits/" class="hover:text-base-content/50 transition-colors">{{ t.license_note }}</a>
             </div>
             <p class="text-[11px] text-base-content/15 text-center sm:text-right max-w-lg leading-relaxed">
               {{ t.disclaimer }}
