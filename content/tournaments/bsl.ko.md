@@ -1,40 +1,17 @@
 +++
-title = "브루드 워 스타리그"
+title = "봄바스틱 스타리그"
+description = "한국 외 지역 선수들을 위한 커뮤니티 운영 국제 브루드 워 개인 리그, 봄바스틱 스타리그(BSL)."
 slug = "bsl"
 template = "tournaments/series.html"
 [extra]
 short_name = "BSL"
-organizer = "BSL Team"
+organizer = "ZZZero / BSL staff"
 status = "active"
 format = "Individual"
 region = "International"
-[[extra.seasons]]
-season = 20
-year = 2026
-status = "live"
-winner = ""
-runner_up = ""
-prize_pool = "$5,000"
-[[extra.seasons]]
-season = 19
-year = 2025
-status = "completed"
-winner = "Dewalt"
-runner_up = "Sziky"
-prize_pool = "$5,000"
-[[extra.seasons]]
-season = 18
-year = 2025
-status = "completed"
-winner = "Dewalt"
-runner_up = "Scan"
-prize_pool = "$4,000"
-[[extra.seasons]]
-season = 17
-year = 2024
-status = "completed"
-winner = "Dewalt"
-runner_up = "Scan"
-prize_pool = "$4,000"
+sources = ["https://liquipedia.net/starcraft/BSL_HasuLeague"]
+unverified = true
 +++
-유럽, 아메리카, 한국의 최고 선수들이 참가하는 최대 규모의 국제 브루드 워 토너먼트 시리즈입니다. BSL은 상당한 상금과 높은 제작 품질을 갖춘 주요 커뮤니티 운영 리그로 성장했습니다.
+봄바스틱 스타리그(BSL)는 한국 외 지역의 스타크래프트 커뮤니티를 위해 운영되는 개인 리그로, ZZZero와 BSL 운영진이 운영합니다. 2010년대 초부터 번호를 매긴 시즌으로 열리고 있습니다.
+
+시즌별 결과는 아직 검증되지 않아 표기하지 않았습니다.

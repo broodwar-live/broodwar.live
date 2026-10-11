@@ -1,5 +1,6 @@
 +++
 title = "AfreecaTV StarCraft League"
+description = "ASL, the Korean individual Brood War league run by AfreecaTV (now SOOP) since 2016 — champions and finals by season."
 slug = "asl"
 template = "tournaments/series.html"
 [extra]
@@ -8,152 +9,213 @@ organizer = "AfreecaTV / SOOP"
 status = "active"
 format = "Individual"
 region = "South Korea"
+sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://liquipedia.net/starcraft/Premier_Tournaments", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://inews24.com/view/2011561"]
+verified = "2026-10-11"
 [[extra.seasons]]
-season = 21
+season = 22
 year = 2026
 status = "live"
 winner = ""
 runner_up = ""
-prize_pool = "₩50,000,000"
+score = ""
+final_date = ""
+prize_pool = ""
+[[extra.seasons]]
+season = 21
+year = 2026
+status = "completed"
+winner = "Soma"
+runner_up = "Flash"
+score = "4–3"
+final_date = "2026-05-24"
+prize_pool = ""
 [[extra.seasons]]
 season = 20
 year = 2025
 status = "completed"
-winner = "Flash"
-runner_up = "Rain"
-prize_pool = "₩50,000,000"
+winner = "Soma"
+runner_up = "Snow"
+score = "4–2"
+final_date = "2025-10-26"
+prize_pool = ""
 [[extra.seasons]]
 season = 19
 year = 2025
 status = "completed"
-winner = "Rain"
-runner_up = "Snow"
-prize_pool = "₩50,000,000"
+winner = "Soulkey"
+runner_up = "Best"
+score = "4–3"
+final_date = "2025-05-25"
+prize_pool = ""
 [[extra.seasons]]
 season = 18
 year = 2024
 status = "completed"
-winner = "Snow"
-runner_up = "Soulkey"
-prize_pool = "₩50,000,000"
+winner = "Soulkey"
+runner_up = "Sharp"
+score = "4–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 17
 year = 2024
 status = "completed"
-winner = "Flash"
-runner_up = "Rain"
-prize_pool = "₩50,000,000"
+winner = "Soulkey"
+runner_up = "Hero"
+score = "4–3"
+final_date = "2024-04-27"
+prize_pool = ""
 [[extra.seasons]]
 season = 16
 year = 2023
 status = "completed"
-winner = "Rain"
-runner_up = "Flash"
-prize_pool = "₩50,000,000"
+winner = "Soulkey"
+runner_up = "Mini"
+score = "4–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 15
 year = 2023
 status = "completed"
-winner = "Snow"
-runner_up = "Soulkey"
-prize_pool = "₩40,000,000"
+winner = "JyJ"
+runner_up = "Mind"
+score = "4–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 14
 year = 2022
 status = "completed"
-winner = "Rain"
-runner_up = "Mini"
-prize_pool = "₩40,000,000"
+winner = "Royal"
+runner_up = "Rush"
+score = "4–2"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 13
 year = 2022
 status = "completed"
-winner = "Snow"
+winner = "Light"
 runner_up = "Rain"
-prize_pool = "₩40,000,000"
+score = "4–0"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 12
 year = 2021
 status = "completed"
-winner = "Rain"
-runner_up = "Flash"
-prize_pool = "₩40,000,000"
+winner = "Mini"
+runner_up = "Rush"
+score = "4–3"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 11
 year = 2021
 status = "completed"
-winner = "Flash"
-runner_up = "Sharp"
-prize_pool = "₩40,000,000"
+winner = "Larva"
+runner_up = "Mini"
+score = "4–3"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 10
 year = 2020
 status = "completed"
-winner = "Mini"
-runner_up = "Rush"
-prize_pool = "₩40,000,000"
+winner = "Queen"
+runner_up = "Soma"
+score = "4–3"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 9
 year = 2020
 status = "completed"
-winner = "Flash"
-runner_up = "Mini"
-prize_pool = "₩40,000,000"
+winner = "Queen"
+runner_up = "Light"
+score = "4–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 8
 year = 2019
 status = "completed"
-winner = "Rain"
-runner_up = "Flash"
-prize_pool = "₩40,000,000"
+winner = "Flash"
+runner_up = "Snow"
+score = "4–0"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 7
 year = 2019
 status = "completed"
-winner = "Flash"
-runner_up = "Jaedong"
-prize_pool = "₩40,000,000"
+winner = "Last"
+runner_up = "Mini"
+score = "3–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 6
 year = 2018
 status = "completed"
-winner = "Flash"
-runner_up = "Soulkey"
-prize_pool = "₩40,000,000"
+winner = "EffOrt"
+runner_up = "Flash"
+score = "3–2"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 5
 year = 2018
 status = "completed"
 winner = "Rain"
-runner_up = "Flash"
-prize_pool = "₩35,000,000"
+runner_up = "Snow"
+score = "3–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 4
 year = 2017
 status = "completed"
-winner = "Rain"
-runner_up = "EffOrt"
-prize_pool = "₩35,000,000"
+winner = "Flash"
+runner_up = "Hero"
+score = "3–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 3
 year = 2017
 status = "completed"
 winner = "Flash"
-runner_up = "Jaedong"
-prize_pool = "₩35,000,000"
+runner_up = "Shine"
+score = "3–0"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 2
-year = 2017
+year = 2016
 status = "completed"
 winner = "Flash"
-runner_up = "Bisu"
-prize_pool = "₩35,000,000"
+runner_up = "Sea"
+score = "3–1"
+final_date = ""
+prize_pool = ""
 [[extra.seasons]]
 season = 1
 year = 2016
 status = "completed"
-winner = "Flash"
-runner_up = "Bisu"
-prize_pool = "₩35,000,000"
+winner = "Shuttle"
+runner_up = "Sharp"
+score = "3–0"
+final_date = ""
+prize_pool = ""
 +++
-The premier individual StarCraft: Brood War league, successor to the original Starleagues. Broadcast on AfreecaTV (now SOOP) since 2016, ASL has become the definitive modern BW tournament with top Korean pros competing for the championship.
+The AfreecaTV StarCraft League (ASL) is the individual Brood War league broadcast by AfreecaTV, which renamed itself SOOP in 2024. It started in 2016, four years after the OnGameNet and MBCGame Starleagues ended, and has since become the main stage for Korean professional players. The autumn 2024 edition ran under the name SOOP StarCraft League (SSL); it is counted here as Season 18.
+
+## Records
+
+- **Most titles:** Flash (Seasons 2, 3, 4 and 8) and Soulkey (Seasons 16–19) have four titles each.
+- **Longest streak:** Soulkey won four consecutive seasons, from Season 16 to Season 19.
+- **Back-to-back champions:** Flash (Seasons 2–4), Queen (Seasons 9–10), Soulkey (Seasons 16–19) and Soma (Seasons 20–21).
+
+Finals were best-of-five until Season 7 and best-of-seven from Season 8 onward. Final dates are listed only where they have been confirmed.

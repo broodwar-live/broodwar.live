@@ -1,18 +1,18 @@
 +++
 title = "BSL Season 20"
-description = "Brood War Starleague Season 20 (2026) — results and bracket."
+description = "Bombastic StarLeague Season 20."
 slug = "bsl-s20"
 template = "tournaments/season.html"
 [extra]
+season_label = "Season 20"
 series_name = "BSL"
 series_slug = "bsl"
-season_label = "Season 20"
 season = 20
-year = 2026
-status = "live"
-prize_pool = "$5,000"
+year = ""
+status = "unknown"
+prize_pool = ""
 champion = ""
 runner_up = ""
-semifinalists = []
+unverified = true
 +++
-The 20th season of BSL is currently underway, featuring the best international Brood War players.
+Results for this season have not been verified yet.

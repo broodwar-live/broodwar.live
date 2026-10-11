@@ -1,40 +1,17 @@
 +++
-title = "Brood War Starleague"
+title = "Bombastic StarLeague"
+description = "The Bombastic StarLeague (BSL), a community-run international Brood War league for players outside Korea."
 slug = "bsl"
 template = "tournaments/series.html"
 [extra]
 short_name = "BSL"
-organizer = "BSL Team"
+organizer = "ZZZero / BSL staff"
 status = "active"
 format = "Individual"
 region = "International"
-[[extra.seasons]]
-season = 20
-year = 2026
-status = "live"
-winner = ""
-runner_up = ""
-prize_pool = "$5,000"
-[[extra.seasons]]
-season = 19
-year = 2025
-status = "completed"
-winner = "Dewalt"
-runner_up = "Sziky"
-prize_pool = "$5,000"
-[[extra.seasons]]
-season = 18
-year = 2025
-status = "completed"
-winner = "Dewalt"
-runner_up = "Scan"
-prize_pool = "$4,000"
-[[extra.seasons]]
-season = 17
-year = 2024
-status = "completed"
-winner = "Dewalt"
-runner_up = "Scan"
-prize_pool = "$4,000"
+sources = ["https://liquipedia.net/starcraft/BSL_HasuLeague"]
+unverified = true
 +++
-The largest international Brood War tournament series, featuring top players from Europe, Americas, and Korea. BSL has grown into a major community-run league with substantial prize pools and high production quality.
+The Bombastic StarLeague (BSL) is a community-organised individual league aimed at the StarCraft scene outside Korea, organised by ZZZero and the BSL staff. It has run numbered seasons since the early 2010s.
+
+Season-by-season results have not been verified yet and are therefore not listed.

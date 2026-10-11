@@ -1,54 +1,28 @@
 +++
 title = "ASL 시즌 19"
-description = "아프리카TV 스타크래프트 리그 시즌 19 (2025) — 결과 및 대진표."
+description = "아프리카TV 스타크래프트 리그 시즌 19 (2025) 결승 결과: Soulkey 4:3 Best."
 slug = "asl-s19"
 template = "tournaments/season.html"
 [extra]
+season_label = "시즌 19"
 series_name = "ASL"
 series_slug = "asl"
-season_label = "시즌 19"
 season = 19
 year = 2025
 status = "completed"
-prize_pool = "₩50,000,000"
-champion = "Rain"
-runner_up = "Snow"
-semifinalists = ["Flash", "Soulkey"]
+prize_pool = ""
+champion = "Soulkey"
+runner_up = "Best"
+final_score = "4–3"
+final_date = "2025-05-25"
+semifinalists = []
+sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://v.daum.net/v/20250514024200753?f=p"]
+verified = "2026-10-11"
 [[extra.matches]]
-round = "결승"
-player_a = "Rain"
+round = "Finals"
+player_a = "Soulkey"
 score_a = 4
-player_b = "Snow"
-score_b = 3
-[[extra.matches]]
-round = "4강 1경기"
-player_a = "Rain"
-score_a = 3
-player_b = "Flash"
-score_b = 1
-[[extra.matches]]
-round = "4강 2경기"
-player_a = "Snow"
-score_a = 3
-player_b = "Soulkey"
-score_b = 2
-[[extra.bracket]]
-round = "4강"
-player_a = "Rain"
-score_a = 3
-player_b = "Flash"
-score_b = 1
-[[extra.bracket]]
-round = "4강"
-player_a = "Snow"
-score_a = 3
-player_b = "Soulkey"
-score_b = 2
-[[extra.bracket]]
-round = "결승"
-player_a = "Rain"
-score_a = 4
-player_b = "Snow"
+player_b = "Best"
 score_b = 3
 +++
-Rain이 결승에서 Snow를 4-3으로 아슬아슬하게 꺾으며 마무리한 스릴 넘치는 시즌.
+김민철(Soulkey)이 2025년 5월 25일 결승에서 도재욱(Best)을 4:3으로 꺾고 ASL 4연속 우승을 달성했습니다. ASL에서 4시즌 연속 우승을 차지한 선수는 김민철이 유일합니다.

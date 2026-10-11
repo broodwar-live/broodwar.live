@@ -1,54 +1,28 @@
 +++
 title = "ASL 시즌 18"
-description = "아프리카TV 스타크래프트 리그 시즌 18 (2024) — 결과 및 대진표."
+description = "아프리카TV 스타크래프트 리그 시즌 18 (2024) 결승 결과: Soulkey 4:1 Sharp."
 slug = "asl-s18"
 template = "tournaments/season.html"
 [extra]
+season_label = "시즌 18"
 series_name = "ASL"
 series_slug = "asl"
-season_label = "시즌 18"
 season = 18
 year = 2024
 status = "completed"
-prize_pool = "₩50,000,000"
-champion = "Snow"
-runner_up = "Soulkey"
-semifinalists = ["Rain", "Flash"]
+prize_pool = ""
+champion = "Soulkey"
+runner_up = "Sharp"
+final_score = "4–1"
+final_date = ""
+semifinalists = []
+sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://v.daum.net/v/20250514024200753?f=p"]
+verified = "2026-10-11"
 [[extra.matches]]
-round = "결승"
-player_a = "Snow"
-score_a = 4
-player_b = "Soulkey"
-score_b = 1
-[[extra.matches]]
-round = "4강 1경기"
-player_a = "Snow"
-score_a = 3
-player_b = "Rain"
-score_b = 2
-[[extra.matches]]
-round = "4강 2경기"
+round = "Finals"
 player_a = "Soulkey"
-score_a = 3
-player_b = "Flash"
-score_b = 1
-[[extra.bracket]]
-round = "4강"
-player_a = "Snow"
-score_a = 3
-player_b = "Rain"
-score_b = 2
-[[extra.bracket]]
-round = "4강"
-player_a = "Soulkey"
-score_a = 3
-player_b = "Flash"
-score_b = 1
-[[extra.bracket]]
-round = "결승"
-player_a = "Snow"
 score_a = 4
-player_b = "Soulkey"
+player_b = "Sharp"
 score_b = 1
 +++
-Snow가 시즌을 지배하며 결승에서 Soulkey를 4-1로 격파했습니다.
+2024년 가을 'SOOP 스타크래프트 리그(SSL)'라는 이름으로 열린 시즌입니다. 김민철(Soulkey)이 결승에서 조기석(Sharp)을 4:1로 꺾고 3연속 우승을 달성했습니다.

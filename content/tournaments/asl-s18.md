@@ -1,54 +1,28 @@
 +++
 title = "ASL Season 18"
-description = "AfreecaTV StarCraft League Season 18 (2024) — results and bracket."
+description = "AfreecaTV StarCraft League Season 18 (2024): Soulkey defeated Sharp 4–1 in the final."
 slug = "asl-s18"
 template = "tournaments/season.html"
 [extra]
+season_label = "Season 18"
 series_name = "ASL"
 series_slug = "asl"
-season_label = "Season 18"
 season = 18
 year = 2024
 status = "completed"
-prize_pool = "₩50,000,000"
-champion = "Snow"
-runner_up = "Soulkey"
-semifinalists = ["Rain", "Flash"]
+prize_pool = ""
+champion = "Soulkey"
+runner_up = "Sharp"
+final_score = "4–1"
+final_date = ""
+semifinalists = []
+sources = ["https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://v.daum.net/v/20250514024200753?f=p"]
+verified = "2026-10-11"
 [[extra.matches]]
 round = "Finals"
-player_a = "Snow"
-score_a = 4
-player_b = "Soulkey"
-score_b = 1
-[[extra.matches]]
-round = "Semi-final 1"
-player_a = "Snow"
-score_a = 3
-player_b = "Rain"
-score_b = 2
-[[extra.matches]]
-round = "Semi-final 2"
 player_a = "Soulkey"
-score_a = 3
-player_b = "Flash"
-score_b = 1
-[[extra.bracket]]
-round = "Semi-final"
-player_a = "Snow"
-score_a = 3
-player_b = "Rain"
-score_b = 2
-[[extra.bracket]]
-round = "Semi-final"
-player_a = "Soulkey"
-score_a = 3
-player_b = "Flash"
-score_b = 1
-[[extra.bracket]]
-round = "Finals"
-player_a = "Snow"
 score_a = 4
-player_b = "Soulkey"
+player_b = "Sharp"
 score_b = 1
 +++
-Snow dominated the season, sweeping through the bracket and defeating Soulkey 4-1 in a convincing finals performance.
+Held in autumn 2024 under the name SOOP StarCraft League (SSL), this edition gave Soulkey his third straight title with a 4–1 win over Sharp in the final.
