@@ -146,7 +146,10 @@
         {% if n > 0 %}{% set fp = (fs.pages | sort(attribute="slug"))[(doy + ft[2]) % n] %}
         <a href="{{ fp.path }}" class="dash-card group flex flex-col overflow-hidden hover:border-primary/50 transition-colors">
           {% if fp.extra.image is defined and fp.extra.image %}
-          <img src="{{ fp.extra.image }}" alt="" loading="lazy" decoding="async" width="320" height="140" class="h-28 w-full object-cover bg-base-300">
+          {% set fp_path = "images/" ~ (fp.extra.image | split(pat="/images/") | last) %}
+          {% set fp_1x = resize_image(path=fp_path, width=400, height=600, op="fit", format="webp", quality=80) %}
+          {% set fp_2x = resize_image(path=fp_path, width=800, height=1200, op="fit", format="webp", quality=80) %}
+          <img src="{{ fp_1x.url }}"{% if fp_2x.width > fp_1x.width %} srcset="{{ fp_1x.url }} {{ fp_1x.width }}w, {{ fp_2x.url }} {{ fp_2x.width }}w" sizes="(min-width: 640px) 33vw, 100vw"{% endif %} alt="" loading="lazy" decoding="async" width="{{ fp_1x.width }}" height="{{ fp_1x.height }}" class="h-28 w-full object-cover bg-base-300">
           {% endif %}
           <span class="flex flex-col gap-1 p-3">
             <span class="text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ ft[1] }}</span>

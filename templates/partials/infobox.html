@@ -25,7 +25,14 @@
     </div>
 
     {% if ib_image %}
-    <img src="{{ ib_image }}" alt="{{ ib_image_alt | default(value=ib_title) }}" loading="lazy"
+    {#- ib_image is a /images/... URL of a file under static/. Serve build-time WebP copies
+        (≈1x and ≈2x the ~384px column; `fit` never upscales) instead of the original. The
+        infobox is above the fold on every layout, so it is fetched eagerly with high priority. -#}
+    {% set ib_path = "images/" ~ (ib_image | split(pat="/images/") | last) %}
+    {% set ib_1x = resize_image(path=ib_path, width=400, height=600, op="fit", format="webp", quality=80) %}
+    {% set ib_2x = resize_image(path=ib_path, width=800, height=1200, op="fit", format="webp", quality=80) %}
+    <img src="{{ ib_1x.url }}"{% if ib_2x.width > ib_1x.width %} srcset="{{ ib_1x.url }} {{ ib_1x.width }}w, {{ ib_2x.url }} {{ ib_2x.width }}w" sizes="(min-width: 1024px) 384px, calc(100vw - 32px)"{% endif %}
+         width="{{ ib_1x.width }}" height="{{ ib_1x.height }}" alt="{{ ib_image_alt | default(value=ib_title) }}" fetchpriority="high" decoding="async"
          class="w-full max-lg:max-h-80 {% if ib_image_aspect == 'square' %}aspect-square{% else %}aspect-video{% endif %} {% if ib_image_fit == 'contain' %}object-contain bg-base-300/50{% else %}object-cover object-top{% endif %}" />
     {% elif ib_placeholder %}
     {{ ib_placeholder | safe }}

@@ -93,6 +93,37 @@ covered by our content license.
 | [Zero](@/players/zero.md) | `zero.jpg` | [ZerO](https://liquipedia.net/starcraft/ZerO) | [Queen 김명운.jpg](https://liquipedia.net/commons/File:Queen_%EA%B9%80%EB%AA%85%EC%9A%B4.jpg) |
 | [ZhanHun](@/players/zhanhun.md) | `zhanhun.png` | [Zhanhun](https://liquipedia.net/starcraft/Zhanhun) | [Zhanhun Hangzhou0410.png](https://liquipedia.net/commons/File:Zhanhun_Hangzhou0410.png) |
 
+## Map images
+
+The 17 map overview images (shown in the map infobox) are byte-identical copies of files on
+[Liquipedia](https://liquipedia.net/starcraft/) Commons, verified by SHA-1 in October 2026 (all but
+Fighting Spirit are the image currently shown in the map's Liquipedia infobox). Liquipedia tags all of them with its **`blizzard`
+license**: they are renders of Blizzard game assets, copyright Blizzard Entertainment, used on
+Liquipedia under a fair-use assertion for identifying the map in an educational article. We use
+them on the same terms, for identification and commentary only. Map layouts are the work of
+their respective map makers. "Upstream source" is where the Liquipedia file page says the image
+came from, where it says so.
+
+| Map | Our file | Source file | Author | Upstream source |
+|---|---|---|---|---|
+| [Andromeda](@/wiki/maps/andromeda.md) | `andromeda.jpg` | [(4)Andromeda1.0 logo.jpg](https://liquipedia.net/commons/File:%284%29Andromeda1.0_logo.jpg) | not stated | — |
+| [Aztec](@/wiki/maps/aztec.md) | `aztec.jpg` | [Aztec.jpg](https://liquipedia.net/commons/File:Aztec.jpg) | not stated | — |
+| [Benzene](@/wiki/maps/benzene.md) | `benzene.jpg` | [Benzene.jpg](https://liquipedia.net/commons/File:Benzene.jpg) | not stated | — |
+| [Blue Storm](@/wiki/maps/blue-storm.md) | `blue-storm.jpg` | [Bluestorm.jpg](https://liquipedia.net/commons/File:Bluestorm.jpg) | not stated | — |
+| [Butter](@/wiki/maps/butter.md) | `butter.jpg` | [Butter.jpg](https://liquipedia.net/commons/File:Butter.jpg) | Hozzi | [panschk.de mappage](http://www.panschk.de/mappage/comments.php?mapid=5393) |
+| [Circuit Breakers](@/wiki/maps/circuit-breaker.md) | `circuit-breaker.jpg` | [Circuit Breakers.jpg](https://liquipedia.net/commons/File:Circuit_Breakers.jpg) | not stated | — |
+| [Destination](@/wiki/maps/destination.md) | `destination.jpg` | [188 Destination.jpg](https://liquipedia.net/commons/File:188_Destination.jpg) | not stated | [RepDepot](http://www.repdepot.net/map.php?id=1384) |
+| [Fighting Spirit](@/wiki/maps/fighting-spirit.md) | `fighting-spirit.jpg` | [Fighting spirit 1 4.jpg](https://liquipedia.net/commons/File:Fighting_spirit_1_4.jpg) | not stated | — |
+| [Heartbreak Ridge](@/wiki/maps/heartbreak-ridge.md) | `heartbreak-ridge.jpg` | [199 Heartbreak Ridge.jpg](https://liquipedia.net/commons/File:199_Heartbreak_Ridge.jpg) | not stated | [RepDepot](http://www.repdepot.net/img/minimap/1024/1217.jpg) |
+| [La Mancha](@/wiki/maps/la-mancha.md) | `la-mancha.jpg` | [La Mancha.jpg](https://liquipedia.net/commons/File:La_Mancha.jpg) | not stated | — |
+| [Longinus](@/wiki/maps/longinus.md) | `longinus.jpg` | [Longinus.jpg](https://liquipedia.net/commons/File:Longinus.jpg) | not stated | — |
+| [Lost Temple](@/wiki/maps/lost-temple.md) | `lost-temple.jpg` | [NeoLostTempleKBK.jpg](https://liquipedia.net/commons/File:NeoLostTempleKBK.jpg) | not stated | [TLPD](https://tl.net/tlpd/maps/47_Neo_Lost_Temple_KBK) |
+| [Match Point](@/wiki/maps/match-point.md) | `match-point.jpg` | [MatchPoint.jpg](https://liquipedia.net/commons/File:MatchPoint.jpg) | not stated | [RepDepot](http://www.repdepot.net/map.php?id=1453) |
+| [Polypoid](@/wiki/maps/polypoid.md) | `polypoid.jpg` | [Polypoid 1.75.jpg](https://liquipedia.net/commons/File:Polypoid_1.75.jpg) | not stated | [910map](https://910map.tistory.com/173) |
+| [Python](@/wiki/maps/python.md) | `python.jpg` | [Python 1.3.jpg](https://liquipedia.net/commons/File:Python_1.3.jpg) | not stated | [RepDepot](http://repdepot.net/map.php?id=42) |
+| [Sylphid](@/wiki/maps/sylphid.md) | `sylphid.jpg` | [Sylphide.jpg](https://liquipedia.net/commons/File:Sylphide.jpg) | not stated | — |
+| [Tau Cross](@/wiki/maps/tau-cross.md) | `tau-cross.jpg` | [Taucross.jpg](https://liquipedia.net/commons/File:Taucross.jpg) | not stated | — |
+
 ## Game assets and trademarks
 
 StarCraft and Brood War are trademarks of Blizzard Entertainment, Inc. broodwar.live is not

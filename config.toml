@@ -10,6 +10,15 @@ build_search_index = false
 generate_feeds = true
 feed_filenames = ["search.json"]
 minify_html = true
+# Map/unit/building images are only read by resize_image (templates/partials/infobox.html,
+# templates/index.html), which publishes WebP copies under /processed_images/, so the
+# multi-hundred-KB originals are not shipped. images/players/ stays published: the API
+# (api.broodwar.live player_sync) hands out /images/players/<slug>.<ext> as image_url.
+ignored_static = [
+  "images/wiki/maps/*",
+  "images/wiki/units/*",
+  "images/wiki/buildings/*",
+]
 
 [languages.ko]
 title = "broodwar.live"

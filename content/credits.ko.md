@@ -89,6 +89,36 @@ broodwar.live는 무료 비상업 팬 프로젝트입니다. 이 페이지는 �
 | [Zero](@/players/zero.ko.md) | `zero.jpg` | [ZerO](https://liquipedia.net/starcraft/ZerO) | [Queen 김명운.jpg](https://liquipedia.net/commons/File:Queen_%EA%B9%80%EB%AA%85%EC%9A%B4.jpg) |
 | [ZhanHun](@/players/zhanhun.ko.md) | `zhanhun.png` | [Zhanhun](https://liquipedia.net/starcraft/Zhanhun) | [Zhanhun Hangzhou0410.png](https://liquipedia.net/commons/File:Zhanhun_Hangzhou0410.png) |
 
+## 맵 이미지
+
+맵 정보 상자에 표시되는 17장의 맵 전경 이미지는 [Liquipedia](https://liquipedia.net/starcraft/)
+Commons의 파일과 바이트 단위로 동일한 사본이며, 2026년 10월 SHA-1로 대조해 확인했습니다(투혼을 제외한
+모든 이미지는 현재 Liquipedia 맵 정보 상자에 표시되는 이미지입니다). Liquipedia는 이 파일 모두에 **`blizzard` 라이선스** 태그를 달고 있습니다. 즉
+Blizzard 게임 자산을 렌더링한 이미지로 저작권은 Blizzard Entertainment에 있으며, Liquipedia는
+교육적 문서에서 맵을 식별하기 위한 공정 이용(fair use)으로 사용하고 있습니다. 저희도 같은 조건으로
+식별과 해설 목적으로만 사용합니다. 맵 레이아웃은 각 맵 제작자의 작품입니다. "업스트림 출처"는
+Liquipedia 파일 페이지에 이미지 출처가 적혀 있는 경우 그 출처입니다.
+
+| 맵 | 사이트 파일 | 원본 파일 | 저작자 | 업스트림 출처 |
+|---|---|---|---|---|
+| [Andromeda](@/wiki/maps/andromeda.ko.md) | `andromeda.jpg` | [(4)Andromeda1.0 logo.jpg](https://liquipedia.net/commons/File:%284%29Andromeda1.0_logo.jpg) | 명시 없음 | — |
+| [Aztec](@/wiki/maps/aztec.ko.md) | `aztec.jpg` | [Aztec.jpg](https://liquipedia.net/commons/File:Aztec.jpg) | 명시 없음 | — |
+| [Benzene](@/wiki/maps/benzene.ko.md) | `benzene.jpg` | [Benzene.jpg](https://liquipedia.net/commons/File:Benzene.jpg) | 명시 없음 | — |
+| [Blue Storm](@/wiki/maps/blue-storm.ko.md) | `blue-storm.jpg` | [Bluestorm.jpg](https://liquipedia.net/commons/File:Bluestorm.jpg) | 명시 없음 | — |
+| [Butter](@/wiki/maps/butter.ko.md) | `butter.jpg` | [Butter.jpg](https://liquipedia.net/commons/File:Butter.jpg) | Hozzi | [panschk.de mappage](http://www.panschk.de/mappage/comments.php?mapid=5393) |
+| [Circuit Breakers](@/wiki/maps/circuit-breaker.ko.md) | `circuit-breaker.jpg` | [Circuit Breakers.jpg](https://liquipedia.net/commons/File:Circuit_Breakers.jpg) | 명시 없음 | — |
+| [Destination](@/wiki/maps/destination.ko.md) | `destination.jpg` | [188 Destination.jpg](https://liquipedia.net/commons/File:188_Destination.jpg) | 명시 없음 | [RepDepot](http://www.repdepot.net/map.php?id=1384) |
+| [Fighting Spirit](@/wiki/maps/fighting-spirit.ko.md) | `fighting-spirit.jpg` | [Fighting spirit 1 4.jpg](https://liquipedia.net/commons/File:Fighting_spirit_1_4.jpg) | 명시 없음 | — |
+| [Heartbreak Ridge](@/wiki/maps/heartbreak-ridge.ko.md) | `heartbreak-ridge.jpg` | [199 Heartbreak Ridge.jpg](https://liquipedia.net/commons/File:199_Heartbreak_Ridge.jpg) | 명시 없음 | [RepDepot](http://www.repdepot.net/img/minimap/1024/1217.jpg) |
+| [La Mancha](@/wiki/maps/la-mancha.ko.md) | `la-mancha.jpg` | [La Mancha.jpg](https://liquipedia.net/commons/File:La_Mancha.jpg) | 명시 없음 | — |
+| [Longinus](@/wiki/maps/longinus.ko.md) | `longinus.jpg` | [Longinus.jpg](https://liquipedia.net/commons/File:Longinus.jpg) | 명시 없음 | — |
+| [Lost Temple](@/wiki/maps/lost-temple.ko.md) | `lost-temple.jpg` | [NeoLostTempleKBK.jpg](https://liquipedia.net/commons/File:NeoLostTempleKBK.jpg) | 명시 없음 | [TLPD](https://tl.net/tlpd/maps/47_Neo_Lost_Temple_KBK) |
+| [Match Point](@/wiki/maps/match-point.ko.md) | `match-point.jpg` | [MatchPoint.jpg](https://liquipedia.net/commons/File:MatchPoint.jpg) | 명시 없음 | [RepDepot](http://www.repdepot.net/map.php?id=1453) |
+| [Polypoid](@/wiki/maps/polypoid.ko.md) | `polypoid.jpg` | [Polypoid 1.75.jpg](https://liquipedia.net/commons/File:Polypoid_1.75.jpg) | 명시 없음 | [910map](https://910map.tistory.com/173) |
+| [Python](@/wiki/maps/python.ko.md) | `python.jpg` | [Python 1.3.jpg](https://liquipedia.net/commons/File:Python_1.3.jpg) | 명시 없음 | [RepDepot](http://repdepot.net/map.php?id=42) |
+| [Sylphid](@/wiki/maps/sylphid.ko.md) | `sylphid.jpg` | [Sylphide.jpg](https://liquipedia.net/commons/File:Sylphide.jpg) | 명시 없음 | — |
+| [Tau Cross](@/wiki/maps/tau-cross.ko.md) | `tau-cross.jpg` | [Taucross.jpg](https://liquipedia.net/commons/File:Taucross.jpg) | 명시 없음 | — |
+
 ## 게임 자산 및 상표
 
 StarCraft와 Brood War는 Blizzard Entertainment, Inc.의 상표입니다. broodwar.live는 Blizzard

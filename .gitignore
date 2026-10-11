@@ -3,3 +3,4 @@ node_modules/
 .DS_Store
 node_modules/
 _build/
+static/processed_images/
