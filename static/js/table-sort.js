@@ -6,6 +6,8 @@
 // A cell may carry data-sort-value to sort by something other than its text.
 // A header that already has aria-sort="ascending|descending" in the markup is applied
 // on load. Rows that tie keep their original relative order (stable sort).
+// A header with data-sort-key="x" can be selected from the URL with ?sort=x
+// (numeric columns sort descending, text ascending); this overrides the markup default.
 //
 // Scroll cue: [data-scroll-cue] wraps an .overflow-x-auto element; when the content is
 // wider than the box, the wrapper gets data-overflowing and its [data-scroll-hint]
@@ -53,8 +55,11 @@
     });
   }
 
+  var urlSort = new URLSearchParams(window.location.search).get("sort");
+
   Array.prototype.forEach.call(document.querySelectorAll("table[data-sortable]"), function (table) {
     var initial = null;
+    var fromUrl = null;
     Array.prototype.forEach.call(table.querySelectorAll("th[data-sort]"), function (th) {
       var btn = document.createElement("button");
       btn.type = "button";
@@ -68,6 +73,7 @@
       btn.appendChild(icon);
       th.appendChild(btn);
       if (th.hasAttribute("aria-sort")) initial = th;
+      if (urlSort && th.getAttribute("data-sort-key") === urlSort) fromUrl = th;
       btn.addEventListener("click", function () {
         var cur = th.getAttribute("aria-sort");
         var dir = cur === "ascending" ? "descending" : cur === "descending" ? "ascending"
@@ -75,7 +81,11 @@
         sortTable(table, th, dir);
       });
     });
-    if (initial) sortTable(table, initial, initial.getAttribute("aria-sort"));
+    if (fromUrl) {
+      sortTable(table, fromUrl, fromUrl.getAttribute("data-sort") === "num" ? "descending" : "ascending");
+    } else if (initial) {
+      sortTable(table, initial, initial.getAttribute("aria-sort"));
+    }
   });
 
   Array.prototype.forEach.call(document.querySelectorAll("[data-scroll-cue]"), function (wrap) {
