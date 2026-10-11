@@ -10,6 +10,9 @@
 
   let index = null
   let loaded = false
+  // Each language has its own index (config.toml): KO pages search KO titles
+  // and link to /ko/ URLs.
+  const lang = document.documentElement.lang === "ko" ? "ko" : "en"
 
   function open() {
     overlay.classList.remove("hidden")
@@ -59,7 +62,7 @@
 
       // Load the search index
       const indexScript = document.createElement("script")
-      indexScript.src = "/search_index.en.js"
+      indexScript.src = `/search_index.${lang}.js`
       document.head.appendChild(indexScript)
       await new Promise((resolve, reject) => {
         indexScript.onload = resolve
@@ -68,11 +71,22 @@
 
       // elasticlunr index is exposed as window.searchIndex
       if (window.elasticlunr && window.searchIndex) {
+        // Zola's KO index names Korean pipeline functions that plain
+        // elasticlunr.js lacks; tokens are already whitespace-split words, so
+        // pass-through stand-ins (plus a light trimmer) are sufficient.
+        const P = window.elasticlunr.Pipeline
+        for (const name of window.searchIndex.pipeline || []) {
+          if (P.registeredFunctions[name]) continue
+          const fn = name.startsWith("trimmer")
+            ? (t) => t.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "")
+            : (t) => t
+          P.registerFunction(fn, name)
+        }
         index = window.elasticlunr.Index.load(window.searchIndex)
         loaded = true
       }
     } catch (e) {
-      results.innerHTML = '<p class="text-sm text-error/60">Failed to load search index.</p>'
+      results.innerHTML = `<p class="text-sm text-error/60">${lang === "ko" ? "검색 색인을 불러오지 못했습니다." : "Failed to load search index."}</p>`
     }
   }
 
@@ -97,7 +111,7 @@
     })
 
     if (hits.length === 0) {
-      results.innerHTML = '<p class="text-sm text-base-content/30 py-4 text-center">No results found.</p>'
+      results.innerHTML = `<p class="text-sm text-base-content/30 py-4 text-center">${lang === "ko" ? "검색 결과가 없습니다." : "No results found."}</p>`
       return
     }
 
