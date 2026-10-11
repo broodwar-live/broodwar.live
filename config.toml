@@ -12,12 +12,11 @@ build_search_index = false
 generate_feeds = true
 feed_filenames = ["search.json", "compare.json"]
 minify_html = true
-# Map/unit/building images are only read by resize_image (templates/partials/infobox.html,
+# Unit/building images are only read by resize_image (templates/partials/infobox.html,
 # templates/index.html), which publishes WebP copies under /processed_images/, so the
 # multi-hundred-KB originals are not shipped. images/players/ stays published: the API
 # (api.broodwar.live player_sync) hands out /images/players/<slug>.<ext> as image_url.
 ignored_static = [
-  "images/wiki/maps/*",
   "images/wiki/units/*",
   "images/wiki/buildings/*",
 ]
@@ -166,6 +165,7 @@ ui_col_score = "Score"
 ui_col_runner_up = "Runner-up"
 ui_all_tournaments = "All tournaments"
 ui_title_leaders = "Title leaders"
+ui_discussions = "Discussions"
 ui_title_leaders_note = "Premier individual league titles recorded on this site (ASL, BSL, KSL, MSL, OSL, SOOP)."
 ui_titles = "titles"
 ui_all_players = "All players"
@@ -582,6 +582,7 @@ ui_col_score = "스코어"
 ui_col_runner_up = "준우승"
 ui_all_tournaments = "전체 토너먼트"
 ui_title_leaders = "최다 우승"
+ui_discussions = "커뮤니티 토론"
 ui_title_leaders_note = "이 사이트에 기록된 개인리그(ASL, BSL, KSL, MSL, OSL, SOOP) 우승 횟수입니다."
 ui_titles = "회"
 ui_all_players = "전체 선수"

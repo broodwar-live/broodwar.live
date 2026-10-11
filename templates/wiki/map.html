@@ -63,7 +63,8 @@
       {% endif %}
     </div>
 
-    {#- Infobox. A minimap image is shown only when static/images/wiki/maps/<slug>.jpg exists. -#}
+    {#- Infobox. A minimap image is shown only when static/images/wiki/maps/<slug>.jpg exists.
+        None ship today: the Liquipedia map renders are Blizzard-copyrighted. -#}
     {% set img_meta = get_image_metadata(path="images/wiki/maps/" ~ page.slug ~ ".jpg", allow_missing=true) %}
     {% set ib_image = "" %}{% if img_meta %}{% set ib_image = "/images/wiki/maps/" ~ page.slug ~ ".jpg" %}{% endif %}
     {% set ib_image_aspect = "square" %}{% set ib_image_fit = "contain" %}
