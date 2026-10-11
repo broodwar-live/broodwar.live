@@ -10,6 +10,10 @@
 /js/*
   Cache-Control: public, max-age=86400
 
+# resize_image output: file names carry a hash of the source and resize arguments.
+/processed_images/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /images/*
   Cache-Control: public, max-age=2592000
 
