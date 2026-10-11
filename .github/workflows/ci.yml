@@ -40,3 +40,8 @@ jobs:
 
       - name: Check internal links
         run: zola check --skip-external-links
+
+      - name: Check built links (broken targets, KO pages linking to EN)
+        run: |
+          python3 scripts/check-links.py public
+          python3 scripts/check-ko-links.py public
