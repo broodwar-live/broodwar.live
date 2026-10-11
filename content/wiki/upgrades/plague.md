@@ -1,22 +1,21 @@
 +++
 title = "Plague"
-description = "Plague — Zerg upgrade in StarCraft: Brood War."
+description = "Plague is a Zerg Defiler Mound research that gives the Defiler its Plague spell."
 slug = "plague"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "defiler-mound"
-research_time = 67
+research_time = 100
 affects = ["defiler"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Plague is a Defiler ability that deals approximately 300 damage over time to all units and buildings within its area of effect. The damage cannot kill units — it reduces HP to a minimum of 1, leaving them critically wounded. Plague ignores armor and affects both biological and mechanical units. The visual effect marks all Plagued units with a green cloud, making it easy to identify weakened targets for follow-up attacks.
+Plague costs 150 energy and covers an area in a cloud that deals damage over time to every unit and building inside — including the caster's own, but not the casting Defiler itself or burrowed units. Plague cannot reduce a target below 1 hit point. It is researched at the Defiler Mound. See the [Plague ability](/wiki/abilities/plague/) page.
 
-Plague is devastating against mech armies in ZvT. Plagued Siege Tanks, Goliaths, and Science Vessels are left with almost no HP, making them vulnerable to any follow-up damage — even a single Zergling attack can finish them. Against Protoss, Plague strips shields and health from Dragoons and Carriers alike. The ability forces opponents to either repair/heal immediately or retreat the affected units, disrupting their positioning. Combined with Dark Swarm and Consume for sustained casting, Plague is central to Zerg's late-game power spike.
-
-Plague is researched at the Defiler Mound, usually alongside Consume, around the 14-16 minute mark. Some builds prioritize Consume first since it enables repeated Plague casting. In practice, both upgrades are completed before the first major Defiler engagement, forming the backbone of Zerg's late-game army composition.
+Plague is especially strong against Protoss, since it ignores shields and damages hit points directly, and against groups of Terran bio.

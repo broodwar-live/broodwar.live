@@ -1,22 +1,21 @@
 +++
 title = "마인드 컨트롤"
-description = "Mind Control — 스타크래프트: 브루드 워 Protoss 업그레이드."
+description = "마인드 컨트롤은 프로토스 템플러 아카이브에서 연구하는 기술로, 다크 아콘이 적 유닛을 영구히 빼앗을 수 있게 한다."
 slug = "mind-control"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 race = "protoss"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "templar-archives"
-research_time = 75
+research_time = 120
 affects = ["dark-archon"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-마인드 컨트롤은 다크 아콘의 능력으로, 단일 적 유닛을 영구적으로 지배하여 시전자 편으로 전환합니다. 이 능력은 다크 아콘의 남은 에너지를 모두 소모하여, 에너지가 재생될 때까지 이후 어떤 스킬도 시전할 수 없습니다. 탈취한 유닛은 모든 능력과 업그레이드를 유지하며, 일꾼을 탈취하면 프로토스 플레이어가 해당 종족의 건물을 지을 수 있습니다.
+마인드 컨트롤은 에너지 150으로 대상 유닛을 영구히 프로토스 쪽으로 넘기며, 사용한 다크 아콘의 실드는 모두 사라진다. 일꾼을 빼앗으면 다른 종족의 건물을 지을 수 있다. 템플러 아카이브에서 연구한다. 자세한 내용은 [마인드 컨트롤 능력](/ko/wiki/abilities/mind-control/) 문서를 참고하라.
 
-마인드 컨트롤은 다크 아콘 생산의 높은 비용과 사용 시 에너지 전량 소모로 인해 경쟁전에서 극히 드뭅니다. 하지만 등장 시 게임을 뒤바꿀 수 있습니다. 가장 전설적인 사용은 적 드론이나 SCV를 탈취해 다른 종족의 테크 트리를 구축하는 것입니다 — 프로토스가 해처리를 짓고 저그 유닛을 생산하는 것은 브루드 워의 가장 상징적인 장면 중 하나입니다. 실용적으로는 시즈 탱크나 디파일러 같은 핵심 유닛을 마인드 컨트롤하면 전투를 결정적으로 뒤집을 수 있습니다.
-
-마인드 컨트롤은 템플러 아카이브에서 연구하며 완전히 후반 영역으로, 보통 15-20분 이후입니다. 비정상적이거나 절박한 게임 상황에서만 등장하며, 대회에서의 실제 빈도는 매우 낮습니다.
+프로 경기에서는 상황에 따라 쓰는 후반 기술이다.

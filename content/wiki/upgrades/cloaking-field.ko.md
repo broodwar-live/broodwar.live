@@ -1,22 +1,21 @@
 +++
 title = "클로킹 필드"
-description = "Cloaking Field — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "클로킹 필드는 테란 컨트롤 타워에서 연구하는 기술로, 레이스가 클로킹할 수 있게 한다."
 slug = "cloaking-field"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "control-tower"
-research_time = 67
+research_time = 100
 affects = ["wraith"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-클로킹 필드는 레이스가 투명 상태가 될 수 있게 하며, 활성화 중 에너지를 소모합니다. 클로킹 레이스는 디텍션(옵저버, 오버로드, 사이언스 베슬, 고정 탐지기) 없이는 적 유닛의 타겟이 될 수 없습니다. 클로킹은 시간에 따라 에너지를 소진하므로 에너지가 낮아지면 주기적으로 해제하거나 안전한 곳을 찾아야 합니다.
+클로킹 필드는 레이스를 투명하게 만든다. 사용 시 에너지 25가 들고, 클로킹을 해제하거나 에너지가 바닥날 때까지 시간에 따라 에너지가 줄어든다. 클로킹한 레이스는 미사일 터렛, 사이언스 베슬, 컴샛 스캔, 오버로드, 스포어 콜로니, 옵저버, 포톤 캐논 같은 탐지가 있어야 공격할 수 있다. 자세한 내용은 [클로킹 능력](/ko/wiki/abilities/cloaking-field/) 문서를 참고하라.
 
-경쟁전에서 클로킹 필드는 틈새적이지만 효과적인 업그레이드로, 주로 경제 견제에 사용됩니다. 클로킹 레이스의 일꾼 사냥은 상대에게 모든 기지에 디텍션 투자를 강요하여 군대 생산에서 자원을 전환시킵니다. TvT에서 기습 레이스 클로킹 전환이 무방비 상대를 초토화할 수 있고, TvZ에서 클로킹 레이스가 오버로드를 잡고 미네랄 라인을 견제할 수 있어 가장 많이 사용됩니다. TvP에서는 옵저버의 보편성 때문에 덜 흔합니다.
-
-클로킹 필드는 컨트롤 타워에서 연구하며, 레이스 플레이에 투자하는 특수 빌드에서 주로 나타납니다. 타이밍은 공격적 레이스 오프닝의 8분부터 중반 테크 전환까지 다양합니다.
+주로 레이스 위주 빌드, 특히 테란전에서 쓰인다.

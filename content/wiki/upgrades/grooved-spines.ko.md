@@ -1,22 +1,21 @@
 +++
 title = "홈 있는 가시"
-description = "Grooved Spines — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "홈 있는 가시는 저그 히드라리스크 덴 업그레이드로, 히드라리스크의 사거리를 4에서 5로 늘린다."
 slug = "grooved-spines"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "hydralisk-den"
-research_time = 50
+research_time = 100
 affects = ["hydralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-홈 있는 가시는 히드라리스크의 공격 사거리를 1 증가시켜 (4에서 5로) 전투에서 상당히 더 긴 사거리를 제공합니다. 추가 사거리 덕분에 교전 시 더 빨리 사격을 시작하고, 대형에서 다른 유닛 뒤에서 공격하며, 근접 유닛을 더 효과적으로 카이팅합니다. 사거리 증가는 지상과 공중 공격 모두에 적용되어 대공 능력도 향상됩니다.
+홈 있는 가시는 히드라리스크 가시 공격의 사거리를 1(32픽셀) 늘려 지상·공중 모두 4에서 5로 만든다. 히드라리스크 덴에서 연구하며 레어가 필요하지 않다.
 
-경쟁전에서 홈 있는 가시는 히드라리스크 효율에 핵심입니다. 없으면 히드라리스크가 위험할 정도로 짧은 거리까지 접근해야 사격할 수 있어 스플래시 피해와 근접 공격에 노출됩니다. 추가 사거리로 대형의 더 많은 히드라리스크가 동시에 사격하여 군대의 실질 DPS가 극적으로 증가합니다. ZvP에서 사거리 히드라리스크는 드라군과 더 유리한 조건으로 교전합니다. ZvT에서 사거리는 러커 포지션 뒤에서 피해에 기여하고 시즈 탱크 스플래시를 피하는 데 도움됩니다.
-
-홈 있는 가시는 히드라리스크 덴에서 연구하며, 히드라리스크 빌드에서 항상 근육 강화와 함께 시작합니다. 덴 완성 즉시 7-9분경에 두 업그레이드를 시작하며, 히드라리스크 사용 시 이 업그레이드를 건너뛰는 일은 사실상 없습니다.
+근육 강화와 함께 히드라리스크 운영의 기본 업그레이드다.

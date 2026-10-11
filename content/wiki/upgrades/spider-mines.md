@@ -1,22 +1,21 @@
 +++
 title = "Spider Mines"
-description = "Spider Mines — Terran upgrade in StarCraft: Brood War."
+description = "Spider Mines is a Terran Machine Shop research that lets each Vulture lay up to three Spider Mines."
 slug = "spider-mines"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 100
 gas = 100
 levels = 1
 researched_at = "machine-shop"
-research_time = 35
+research_time = 80
 affects = ["vulture"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Spider Mines allows each Vulture to plant up to 3 mines that burrow underground and become invisible. When an enemy ground unit moves nearby, the mine unburrows and detonates for 125 explosive splash damage. Mines remain indefinitely until triggered or destroyed by detection, making them a persistent map control tool.
+After this research each Vulture can plant up to three Spider Mines. A mine burrows into the ground, stays hidden from units without detection, and springs at nearby enemy ground units, dealing 125 explosive splash damage — which can also hurt the Terran player's own units. Mines ignore air units, buildings and hovering units such as Vultures. See the [Spider Mines ability](/wiki/abilities/spider-mines/) page.
 
-Spider Mines are a core component of TvZ mech play. Vultures plant mines at expansion locations to deny Zerg economic growth, at choke points to slow Zergling run-bys, and along retreat paths to punish aggressive movements. A single well-placed mine field can kill dozens of Zerglings. In TvP, mines threaten Zealot-heavy armies and can catch Shuttles dropping Reavers. The psychological pressure of mines forces opponents to invest in detection and move cautiously across the map.
-
-Spider Mines are researched at the Machine Shop, usually as one of the first upgrades in TvZ mech builds, around 6-7 minutes. Vulture mine harassment begins immediately after research completes and continues throughout the game. The upgrade is less common in TvP and TvT but still sees occasional use.
+Spider Mines are a staple of Factory play, used for zoning, scouting and defending against Zealots and Dragoons in TvP.

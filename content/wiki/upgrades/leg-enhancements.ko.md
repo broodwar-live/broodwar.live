@@ -1,22 +1,21 @@
 +++
 title = "다리 강화"
-description = "Leg Enhancements — 스타크래프트: 브루드 워 Protoss 업그레이드."
+description = "다리 강화는 프로토스 시타델 오브 아둔 업그레이드로, 질럿의 이동 속도를 높인다."
 slug = "leg-enhancements"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 race = "protoss"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "citadel-of-adun"
-research_time = 67
+research_time = 133
 affects = ["zealot"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-다리 강화는 질럿의 이동 속도를 극적으로 증가시켜 느리고 쉽게 카이팅당하는 근접 유닛을 대부분의 지상 유닛을 추격할 수 있는 빠르고 위협적인 전사로 변모시킵니다. 속도 향상이 충분히 커서 질럿이 모든 적 조합과 상호작용하는 방식을 변화시킵니다 — 후퇴하는 원거리 유닛과의 거리를 좁히고 적을 효과적으로 포위할 수 있습니다.
+다리 강화는 질럿의 이동 속도를 올려, 후퇴하는 유닛을 따라잡고 빠르게 합류할 수 있게 한다. 시타델 오브 아둔에서 연구하며 질럿에게만 적용된다.
 
-다리 강화는 게임 전체에서 가장 영향력 있는 단일 업그레이드 중 하나입니다. 속도 질럿은 모든 매치업에서 프로토스 전략의 주축입니다. PvT에서 빠른 질럿은 마린을 잡아 테란이 쉽게 카이팅할 수 없는 교전을 강요합니다. PvZ에서 속도 질럿은 히드라리스크에 치명적이며 도주하는 드론을 추격합니다. PvP에서 속도 질럿은 지상전을 지배합니다. 전략적 질문은 이 업그레이드를 할지가 아니라 언제 할지입니다.
-
-다리 강화는 시타델 오브 아둔에서 연구합니다. 타이밍은 매치업과 빌드에 따라 다르지만, 보통 8-10분경에 시작합니다. 공격적 빌드에서는 더 일찍, 테크 중심 빌드에서는 약간 늦출 수 있으나 완전히 건너뛰는 경우는 거의 없습니다.
+질럿 속도 업그레이드는 저그전과, 질럿을 대량으로 섞는 테란전 후반에 흔히 연구한다.

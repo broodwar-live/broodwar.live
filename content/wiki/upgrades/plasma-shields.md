@@ -1,22 +1,28 @@
 +++
 title = "Plasma Shields"
-description = "Plasma Shields — Protoss upgrade in StarCraft: Brood War."
+description = "Plasma Shields is the Protoss Forge upgrade that reduces damage dealt to shields by 1 per level, up to three levels."
 slug = "plasma-shields"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 race = "protoss"
 minerals = 200
 gas = 200
 levels = 3
 researched_at = "forge"
-research_time = 80
-affects = ["zealot", "dragoon", "high-templar", "dark-templar", "archon", "dark-archon", "reaver", "shuttle", "observer", "scout", "corsair", "carrier", "arbiter", "probe"]
+research_time = 266
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Plasma Shields adds +1 shield armor to every Protoss unit and building. This is unique among upgrades because it affects all Protoss units universally — from Probes to Carriers. Shield armor reduces damage dealt to the shield HP layer before health damage begins. Since shields regenerate over time, the upgrade effectively provides renewable damage reduction.
+Each level of Plasma Shields acts as one point of armor for shields: every hit that strikes a unit's or building's shields is reduced by the upgrade level before it is applied (hull armor from Ground or Air Armor only applies once damage reaches hit points). It affects every Protoss unit and structure. Levels 2 and 3 need a Cybernetics Core. It is the most expensive Protoss upgrade, at 200 minerals and gas for level 1 and +100 per further level.
 
-In competitive play, Plasma Shields is generally lower priority than Ground Weapons and Ground Armor because shields regenerate naturally, making raw HP armor more valuable in sustained combat. However, the upgrade becomes more valuable in prolonged engagements and late-game scenarios where units have time to regenerate shields between fights. It benefits high-shield units like Archons significantly, and the universal coverage means even Observers and Shuttles gain survivability.
+Because of its cost, Plasma Shields is generally a late-game upgrade, researched when the Forge is free and the economy can support it.
 
-Plasma Shields is typically a late-game upgrade, researched at the Forge after Ground Weapons and Ground Armor have been advanced to level 2 or 3. Some players skip it entirely in favor of faster tech or army production. When researched, it is usually around the 15+ minute mark in games that have entered a macro phase.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 200 / 200 | 266 s | — |
+| 2 | 300 / 300 | 298 s | Cybernetics Core |
+| 3 | 400 / 400 | 330 s | Cybernetics Core |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

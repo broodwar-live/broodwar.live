@@ -1,22 +1,29 @@
 +++
 title = "보병 무기"
-description = "Infantry Weapons — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "보병 무기는 테란 엔지니어링 베이에서 3단계까지 연구하는 업그레이드로, 마린·파이어뱃·고스트의 공격력을 올린다."
 slug = "infantry-weapons"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 100
 gas = 100
 levels = 3
 researched_at = "engineering-bay"
-research_time = 80
+research_time = 266
 affects = ["marine", "firebat", "ghost"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-보병 무기 업그레이드는 각 레벨마다 마린, 파이어뱃, 고스트의 기본 공격력을 +1씩 증가시킵니다. 엔지니어링 베이에서 연구하며, 2레벨과 3레벨은 사이언스 퍼실리티가 필요합니다. 피해 증가는 발사당 적용되므로 빠르게 연사하는 마린에게 특히 효과적입니다.
+보병 무기는 단계마다 배럭 공격 유닛의 피해를 올린다. 마린의 가우스 소총, 고스트의 C-10 저격 소총, 파이어뱃 화염방사기의 각 타격이 1씩 강해진다. 메딕과 건설로봇에는 효과가 없다. 2·3단계는 사이언스 퍼실리티가 완성되어 있어야 한다.
 
-경쟁전 바이오 플레이에서 +1 보병 무기는 보통 가장 먼저 연구하는 업그레이드입니다. 핵심 구간은 저글링 상대로, +1 마린은 저글링을 4발이 아닌 3발에 처치할 수 있어 초중반 전투에서 비용 효율이 크게 향상됩니다. 프로토스 상대로도 업그레이드된 마린은 질럿, 드라군과 훨씬 효율적으로 교전합니다. 프로 선수들은 중반 내내 3레벨까지 연속으로 연구합니다.
+마린이 저글링·뮤탈리스크를 상대로 대량으로 싸우는 저그전에서는 엔지니어링 베이 공격력 업그레이드가 바이오 운영의 기본이며, 보통 두 번째 엔지니어링 베이에서 보병 방어력을 함께 올린다.
 
-보병 무기는 보통 첫 엔지니어링 베이 완성 직후, 표준 TvZ 및 TvP 바이오 빌드에서 6-7분경에 시작합니다. 상대보다 먼저 +3 무기에 도달하면 장기 매크로 게임에서 결정적인 차이를 만들 수 있습니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 175 / 175 | 298초 | 사이언스 퍼실리티 |
+| 3 | 250 / 250 | 330초 | 사이언스 퍼실리티 |
+
+연구 시간은 이 위키의 다른 문서와 같이 보통 속도 기준 게임 초(프레임 ÷ 15)다.

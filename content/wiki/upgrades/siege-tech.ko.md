@@ -1,22 +1,21 @@
 +++
 title = "시즈 모드"
-description = "Siege Tech — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "시즈 모드는 테란 머신 샵에서 연구하는 기술로, 시즈 탱크가 시즈 모드로 전환할 수 있게 한다."
 slug = "siege-tech"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "machine-shop"
-research_time = 50
+research_time = 80
 affects = ["siege-tank"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-시즈 모드는 시즈 탱크를 사거리 12에서 발사당 70의 폭발형 스플래시 피해를 주는 고정 포병 플랫폼으로 변환합니다. 시즈 모드에서 탱크는 이동이 불가하고 최소 사거리가 있지만, 파괴적인 범위 피해가 테란 포지션 전쟁의 핵심을 정의합니다. 변환에 수 초가 걸리며, 이 동안 탱크는 취약합니다.
+시즈 모드 연구 후 시즈 탱크는 움직이지 못하는 포격 모드로 전환할 수 있다. 시즈 모드에서는 사거리 12에서 폭발형 범위 피해 70을 주며(탱크 모드는 사거리 7, 피해 30), 최소 사거리가 생기고 시즈를 풀기 전까지 이동할 수 없다. 자세한 내용은 [시즈 모드 능력](/ko/wiki/abilities/siege-mode/) 문서를 참고하라.
 
-시즈 모드는 모든 매치업에서 테란 전략의 근간입니다. TvZ에서 시즈 탱크 방어선은 저그가 돌파하려면 큰 투자가 필요합니다. TvP에서 보병 지원을 받는 탱크 푸시는 느리지만 압도적인 전진을 만듭니다. TvT에서 탱크 포지셔닝과 시즈 라인은 핵심 전략 요소로, 누가 더 좋은 탱크 배치를 확보하느냐에 따라 게임이 결정되곤 합니다.
-
-시즈 모드는 머신 샵 완성 즉시 연구하며, 메카닉 오프닝에서 보통 6-7분경입니다. 바이오-메카닉 하이브리드 빌드에서는 약간 늦을 수 있지만, 이 업그레이드를 건너뛰는 경쟁전 메카닉 빌드는 없습니다.
+테란이 탱크를 뽑는 거의 모든 경기에서 연구하며, 시즈 탱크 라인은 프로토스전과 테란전의 중심이다.

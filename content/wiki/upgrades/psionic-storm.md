@@ -1,22 +1,21 @@
 +++
 title = "Psionic Storm"
-description = "Psionic Storm — Protoss upgrade in StarCraft: Brood War."
+description = "Psionic Storm is a Protoss Templar Archives research that gives the High Templar its Psionic Storm spell."
 slug = "psionic-storm"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 race = "protoss"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "templar-archives"
-research_time = 75
+research_time = 120
 affects = ["high-templar"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Psionic Storm is a High Templar ability that deals 112 damage over several seconds to all units within its area of effect. The damage ignores armor and affects both ground and air units, making it equally devastating against any composition. Multiple storms do not stack — casting two storms on the same area does not double the damage, requiring careful placement.
+Psionic Storm costs 75 energy and creates a storm over an area that damages every unit inside over a few seconds, friend or foe; buildings are not affected, and overlapping storms do not stack. It is researched at the Templar Archives. See the [Psionic Storm ability](/wiki/abilities/psionic-storm/) page.
 
-Psionic Storm is the defining spell of Protoss and one of the most powerful abilities in Brood War. Storm drops (High Templar delivered by Shuttle) are a core strategy in PvT and PvZ, capable of annihilating clumped Marines, Hydralisks, or workers in seconds. In PvT, Storm is the primary answer to massed bio armies. In PvZ, it devastates Hydralisk-heavy compositions. The counterplay is spreading units to minimize storm coverage, which itself creates tactical opportunities for the Protoss player.
-
-Psionic Storm is researched at the Templar Archives, typically completed around the 10-12 minute mark in builds that prioritize Templar tech. In PvT, the timing of the first Storm often defines the mid-game transition. It is considered so essential that virtually every Protoss game plan eventually incorporates it.
+Storm is the High Templar's main reason to exist and is researched in nearly every game that uses them — against Hydralisks and Mutalisks in PvZ and against bio in PvT.

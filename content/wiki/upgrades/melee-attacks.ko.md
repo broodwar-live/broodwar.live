@@ -1,22 +1,29 @@
 +++
 title = "근접 공격력"
-description = "Melee Attacks — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "근접 공격력은 저그 에볼루션 챔버에서 3단계까지 연구하는 업그레이드로, 저글링과 울트라리스크의 공격력을 올린다."
 slug = "melee-attacks"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 100
 gas = 100
 levels = 3
 researched_at = "evolution-chamber"
-research_time = 80
+research_time = 266
 affects = ["zergling", "ultralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-근접 공격력 업그레이드는 각 레벨마다 저글링과 울트라리스크의 기본 근접 피해를 +1씩 증가시킵니다. 저글링은 빠르게 공격하고 각 알에서 2마리씩 나오므로 무리 전체의 누적 피해 증가가 상당합니다. 울트라리스크의 경우 이미 높은 기본 피해와 스플래시 공격에 더해져 후반으로 갈수록 치명적입니다. 에볼루션 챔버에서 연구하며, 상위 레벨은 레어와 하이브가 각각 필요합니다.
+근접 공격력은 단계마다 저글링의 발톱 피해를 1, 울트라리스크 칼날의 피해를 3 올린다(브루들링도 +1). 2단계는 레어, 3단계는 하이브가 필요하다. 단계당 비용 증가는 미네랄·가스 50이다.
 
-경쟁전에서 근접 공격력은 저글링 전투력에 중요합니다. +1 저글링은 마린과 프로브에 대한 임계점에 도달하여 더 적은 타격으로 처치하면 교환 효율이 극적으로 향상됩니다. ZvP에서 업그레이드된 저글링은 역습 시 질럿과 프로브에 훨씬 위협적입니다. ZvT에서 근접 업그레이드는 저글링 런바이를 더 치명적으로 만듭니다. 후반 울트라리스크 플레이에서 다크 스웜 아래 피해 극대화에 필수입니다.
+저글링 위주의 운영과 후반 울트라리스크 조합에 쓰이며, 저글링은 부신 분비선과 함께 올리는 경우가 많다.
 
-근접 공격력 타이밍은 전략에 따라 다릅니다. 저글링 중심 빌드에서 6-7분에 시작할 수 있고, 다른 테크를 우선하는 빌드에서는 중반에 나옵니다. 많은 저그 플레이어가 초반에 근접 공격력보다 갑피를 우선시합니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 150 / 150 | 298초 | 레어 |
+| 3 | 200 / 200 | 330초 | 하이브 |
+
+연구 시간은 이 위키의 다른 문서와 같이 보통 속도 기준 게임 초(프레임 ÷ 15)다.

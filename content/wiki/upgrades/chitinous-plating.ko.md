@@ -1,22 +1,21 @@
 +++
 title = "키틴질 갑옷"
-description = "Chitinous Plating — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "키틴질 갑옷은 저그 울트라리스크 캐번 업그레이드로, 울트라리스크의 방어력을 2 올린다."
 slug = "chitinous-plating"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "ultralisk-cavern"
-research_time = 67
+research_time = 133
 affects = ["ultralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-키틴질 갑옷은 울트라리스크의 방어력을 +2 추가하며, 기본 방어력 1과 에볼루션 챔버의 갑피 업그레이드 위에 중첩됩니다. 풀 업그레이드(키틴질 갑옷 + 3레벨 갑피) 시 울트라리스크는 총 방어력 6에 도달하여 각 피격의 피해를 6만큼 줄입니다. 이로써 마린 사격이나 저글링 무리 같은 빠른 저피해 공격에 대해 경이적으로 견고해집니다.
+키틴질 갑옷은 울트라리스크의 기본 방어력 1과 갑피 업그레이드에 더해 방어력 2를 추가하며, 갑피 3단계와 함께면 방어력이 최대 6이 된다. 무기 업그레이드가 없는 마린(한 발 피해 6)의 공격은 방어력 6에 막혀 최소 피해 0.5만 들어간다.
 
-경쟁전에서 키틴질 갑옷은 울트라리스크를 효과적으로 만드는 데 필수입니다. 없으면 울트라리스크가 대량의 소화기 사격에 너무 많은 피해를 받아 의미 있는 피해를 주기 전에 죽습니다. 풀 방어력 울트라리스크는 마린 사격에 거의 면역이 되어 방어력 감소 후 각 마린 사격이 1-2 피해만 주므로 처치에 막대한 화력이 필요합니다. 마린이 사격할 수 없는 다크 스웜 아래에서 방어력 강화 울트라리스크는 지상군으로 사실상 처치 불가능합니다.
-
-키틴질 갑옷은 울트라리스크 캐번에서 연구하며, 보통 완성 즉시 하이브 테크에 도달한 게임에서 15-18분경입니다. 항상 동화 합성(속도)과 함께 연구하며, 두 업그레이드 모두 울트라리스크가 후반에 최대 잠재력을 발휘하는 데 필요합니다.
+저그가 울트라리스크에 투자할 때 동화 합성과 함께 연구한다.

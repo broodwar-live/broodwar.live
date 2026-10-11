@@ -1,22 +1,21 @@
 +++
 title = "부신 분비선"
-description = "Adrenal Glands — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "부신 분비선은 저그 스포닝 풀 업그레이드로, 저글링의 공격 속도를 높이며 하이브가 필요하다."
 slug = "adrenal-glands"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "spawning-pool"
-research_time = 50
+research_time = 100
 affects = ["zergling"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-부신 분비선은 저글링의 공격 속도를 거의 2배로 증가시켜 각 저글링이 거의 두 배 빠르게 공격합니다. 대사 촉진(속도 업그레이드)과 결합하면 "크랙링" — 극도로 빠르면서 초당 피해가 파괴적인 저글링이 됩니다. 하이브 테크가 필요하여 완전히 후반 업그레이드입니다. DPS 증가가 극적이어서 크랙링 무리가 건물과 무방비 기지를 수 초 만에 파괴합니다.
+부신 분비선은 저글링의 공격 쿨다운을 절반으로 줄이는데, 엔진의 최소 쿨다운 5프레임 제한 때문에 실제로는 8프레임에서 5프레임으로 줄어든다. 그래도 공격력이 크게 늘어난다. 스포닝 풀에서 연구하지만 하이브가 완성되어 있어야 한다.
 
-경쟁전에서 부신 분비선은 저글링을 소모성 견제 유닛에서 진정한 전투 위협으로 변모시키는 강력한 후반 업그레이드입니다. 원거리 유닛이 사격할 수 없는 다크 스웜 아래에서 크랙링은 지상 군대를 상대로 거의 막을 수 없습니다. ZvT 후반에서 다크 스웜과 크랙링의 조합은 저그의 주요 승리 조건 중 하나로, 마린과 시즈 탱크가 무력해집니다. ZvP에서 크랙링은 프로토스 기지를 압도합니다.
-
-부신 분비선은 하이브 테크 확보 후 스포닝 풀에서 연구하며, 후반에 도달한 게임에서 보통 15-18분경입니다. 모든 게임에서 연구되지는 않으며, 디파일러와 울트라리스크와 함께 저글링 중심 후반 조합을 확정할 때만 나타납니다.
+후반에 대사 촉진과 부신 분비선을 모두 갖춘 저글링(흔히 "아드레날린 저글링")은 디파일러, 울트라리스크와 함께 쓰이며, 특히 테란전 다크 스웜 아래에서 위력적이다.

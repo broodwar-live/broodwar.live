@@ -1,22 +1,29 @@
 +++
 title = "지상 무기"
-description = "Ground Weapons — 스타크래프트: 브루드 워 Protoss 업그레이드."
+description = "지상 무기는 프로토스 포지에서 3단계까지 연구하는 업그레이드로, 질럿·드라군·다크 템플러·아콘의 공격력을 올린다."
 slug = "ground-weapons"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 race = "protoss"
 minerals = 100
 gas = 100
 levels = 3
 researched_at = "forge"
-research_time = 80
-affects = ["zealot", "dragoon", "dark-templar", "reaver"]
+research_time = 266
+affects = ["zealot", "dragoon", "dark-templar", "archon"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-지상 무기 업그레이드는 각 레벨마다 질럿, 드라군, 다크 템플러, 리버의 기본 공격력을 +1씩 증가시킵니다. 질럿은 공격당 두 번 타격하므로 레벨당 실질적으로 +2 피해를 얻습니다. 포지에서 연구하며, 2레벨과 3레벨은 템플러 아카이브가 필요합니다. 리버 스캐럽 피해도 증가시켜 이미 파괴적인 공격을 더욱 강화합니다.
+지상 무기는 단계마다 질럿 사이 블레이드 두 번의 타격 각각 +1(공격 1회당 +2), 드라군 +2, 다크 템플러와 아콘 +3의 피해를 더한다. 리버의 스캐럽에는 적용되지 않으며, 스캐럽은 별도의 스캐럽 피해 업그레이드가 있다. 2·3단계는 템플러 아카이브가 필요하다. 단계당 비용 증가는 미네랄·가스 50이다.
 
-지상 무기는 게이트웨이 중심 프로토스 플레이에서 모든 매치업에 걸쳐 높은 우선순위 업그레이드입니다. +1 질럿은 마린과 저글링에 대해 핵심 피해 임계점에 도달하고, +1 드라군은 적 원거리 유닛과 훨씬 효율적으로 교전합니다. PvZ에서 업그레이드된 질럿은 저글링 상대로 비용 효율이 크게 향상됩니다. PvP에서는 무기 우위가 드라군 대 드라군 전투를 결정하곤 합니다. 프로 선수들은 중반 내내 포지를 계속 가동합니다.
+모든 매치업에서 게이트웨이 중심 프로토스 운영의 기본 업그레이드로, 중반에 포지가 준비되면 바로 시작하는 경우가 많다.
 
-지상 무기 1레벨은 보통 포지 완성 즉시 시작하며, 빌드에 따라 포지 퍼스트에서 5분, 게이트웨이 퍼스트에서 7-8분경입니다. 중반에 도달하는 모든 게임에서 3레벨까지 연속 업그레이드가 표준입니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 150 / 150 | 298초 | 템플러 아카이브 |
+| 3 | 200 / 200 | 330초 | 템플러 아카이브 |
+
+연구 시간은 이 위키의 다른 문서와 같이 보통 속도 기준 게임 초(프레임 ÷ 15)다.

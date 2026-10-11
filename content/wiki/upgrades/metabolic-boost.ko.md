@@ -1,22 +1,21 @@
 +++
 title = "대사 촉진"
-description = "Metabolic Boost — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "대사 촉진은 저그 스포닝 풀 업그레이드로, 저글링의 이동 속도를 높인다."
 slug = "metabolic-boost"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 100
 gas = 100
 levels = 1
 researched_at = "spawning-pool"
-research_time = 50
+research_time = 100
 affects = ["zergling"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-대사 촉진은 저글링의 이동 속도를 극적으로 증가시켜 비교적 느린 유닛을 게임 내 가장 빠른 지상 유닛 중 하나로 변모시킵니다. 속도 저글링은 거의 모든 지상 유닛을 추격하고, 불리한 교전에서 탈출하며, 적 기지로의 파괴적인 런바이를 실행할 수 있습니다. 업그레이드된 저글링과 비업그레이드 저글링의 속도 차이는 엄청나며, 유닛 사용 방식을 근본적으로 변화시킵니다.
+대사 촉진은 저글링의 이동 속도를 올려 게임에서 가장 빠른 지상 유닛 중 하나로 만든다. 스포닝 풀만 있으면 연구할 수 있고 저글링에게만 적용된다.
 
-대사 촉진은 거의 모든 저그 게임에서 연구되며 브루드 워에서 가장 보편적으로 중요한 업그레이드 중 하나입니다. ZvZ에서 저글링 속도 타이밍이 초반을 정의합니다: 클래식 9풀 스피드 빌드는 공격을 위해 가능한 빨리 속도 저글링을 확보합니다. ZvT에서 속도 저글링은 확장 런바이와 시즈 탱크 포지션 포위에 필수입니다. ZvP에서 속도 저글링은 프로브를 위협하고 프로토스에게 월오프나 질럿 방어 투자를 강요합니다.
-
-대사 촉진은 스포닝 풀에서 연구하며, 속도 우선 빌드의 5-6분부터 경제 우선 빌드의 7-8분까지 타이밍이 다양합니다. 정확한 타이밍과 관계없이 거의 건너뛰지 않으며, 속도 저글링은 게임 전체에 걸쳐 유효합니다.
+저그가 저글링을 쓰는 거의 모든 경기에서 연구하며, 보통 처음 모은 가스 100으로 시작한다.

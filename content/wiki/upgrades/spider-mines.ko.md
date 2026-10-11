@@ -1,22 +1,21 @@
 +++
 title = "스파이더 마인"
-description = "Spider Mines — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "스파이더 마인은 테란 머신 샵에서 연구하는 기술로, 벌처마다 스파이더 마인을 3개까지 매설할 수 있게 한다."
 slug = "spider-mines"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 100
 gas = 100
 levels = 1
 researched_at = "machine-shop"
-research_time = 35
+research_time = 80
 affects = ["vulture"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-스파이더 마인은 각 벌처가 최대 3개의 지뢰를 설치할 수 있게 합니다. 지뢰는 땅속에 매립되어 보이지 않으며, 적 지상 유닛이 근처를 지나면 올라와 125의 폭발형 스플래시 피해로 폭발합니다. 작동하거나 디텍션으로 파괴될 때까지 무기한 유지되어 지속적인 맵 컨트롤 도구입니다.
+연구 후 벌처는 하나당 스파이더 마인을 3개까지 매설할 수 있다. 마인은 땅속에 숨어 탐지 수단이 없는 상대에게 보이지 않으며, 가까이 온 적 지상 유닛에게 튀어나가 폭발형 범위 피해 125를 준다. 이 피해는 아군 유닛에게도 들어갈 수 있다. 공중 유닛, 건물, 그리고 벌처 같은 호버 유닛에는 반응하지 않는다. 자세한 내용은 [스파이더 마인 능력](/ko/wiki/abilities/spider-mines/) 문서를 참고하라.
 
-스파이더 마인은 TvZ 메카닉 플레이의 핵심 요소입니다. 벌처가 확장 위치에 지뢰를 설치해 저그의 경제 성장을 차단하고, 초크 포인트에 설치해 저글링 런바이를 늦추며, 후퇴 경로에 설치해 공격적 이동을 처벌합니다. 잘 배치된 지뢰밭 하나로 수십 마리의 저글링을 처치할 수 있습니다. TvP에서도 질럿 중심 군대를 위협하고, 리버를 드랍하는 셔틀을 잡을 수 있습니다.
-
-스파이더 마인은 머신 샵에서 연구하며, 보통 TvZ 메카닉 빌드에서 첫 업그레이드 중 하나로 6-7분경에 시작합니다. 연구 완료 직후부터 벌처 마인 견제가 시작되어 게임 내내 계속됩니다.
+스파이더 마인은 팩토리 운영의 기본으로, 프로토스전에서 길목 장악, 정찰, 질럿·드라군 방어에 쓰인다.

@@ -1,22 +1,21 @@
 +++
 title = "U-238 탄환"
-description = "U-238 Shells — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "U-238 탄환은 테란 아카데미 업그레이드로, 마린의 사거리를 4에서 5로 늘린다."
 slug = "u-238-shells"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "academy"
-research_time = 50
+research_time = 100
 affects = ["marine"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-U-238 탄환은 마린의 공격 사거리를 1 증가시켜 (4에서 5로) 전투에서 상당한 사거리 우위를 제공합니다. 추가 사거리 덕분에 마린이 대형 후방에서 사격할 수 있어 스플래시 피해에 동시에 맞는 유닛 수가 줄고 전반적인 교전 효율이 향상됩니다.
+U-238 탄환은 마린 가우스 소총의 사거리를 1(32픽셀) 늘려 4에서 5로 만든다. 마린에게만 적용되며 고스트와 파이어뱃은 변하지 않는다.
 
-경쟁전 바이오 플레이에서 U-238 탄환은 매우 중요합니다. 추가 사거리로 질럿을 더 효과적으로 카이팅하고, 세밀한 마이크로로 러커 사거리 밖에서 공격하며, 더 안전한 거리에서 저글링과 교전할 수 있습니다. TvT에서는 사거리 우위가 마린 대 마린 소규모 전투의 승패를 결정합니다. 고지대나 협곡 뒤에서 싸울 때도 추가 사거리 덕분에 더 많은 마린이 피해에 기여할 수 있어 효과적입니다.
-
-U-238 탄환은 보통 아카데미에서 스팀팩 직후 또는 동시에 6-7분경 연구합니다. 일부 빌드 오더에서는 질럿 카이팅이 최우선인 특정 TvP 오프닝처럼 사거리 우위가 더 즉각적으로 유용한 매치업에서 스팀팩보다 먼저 우선시합니다.
+스팀팩과 함께 마린·메딕 운영의 핵심이 되는 아카데미 연구로, 늘어난 사거리 덕분에 마린이 앞줄 뒤에서 사격하고 러커·히드라리스크·드라군과 더 대등하게 싸울 수 있다.

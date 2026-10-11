@@ -1,22 +1,29 @@
 +++
 title = "Melee Attacks"
-description = "Melee Attacks — Zerg upgrade in StarCraft: Brood War."
+description = "Melee Attacks is the Zerg Evolution Chamber upgrade that raises the damage of Zerglings and Ultralisks over three levels."
 slug = "melee-attacks"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 100
 gas = 100
 levels = 3
 researched_at = "evolution-chamber"
-research_time = 80
+research_time = 266
 affects = ["zergling", "ultralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Melee Attacks adds +1 base melee damage to Zerglings and Ultralisks. Since Zerglings attack rapidly and come in pairs from each egg, the cumulative damage increase across a swarm is substantial. For Ultralisks, the damage boost compounds with their already high base damage and splash attacks, making them increasingly lethal in the late game. Researched at the Evolution Chamber, with higher levels requiring a Lair and Hive respectively.
+Melee Attacks adds +1 damage per level to the Zergling's claws and +3 to the Ultralisk's Kaiser Blades (Broodlings also gain +1). Level 2 requires a Lair and level 3 a Hive. Its cost rises by 50 minerals and gas per level.
 
-In competitive play, Melee Attacks is important for Zergling combat effectiveness. +1 Zerglings hit breakpoints against Marines and Probes — killing them in fewer hits dramatically improves trade efficiency. In ZvP, upgraded Zerglings are far more threatening to Zealots and Probes during counterattacks. In ZvT, melee upgrades make Zergling run-bys more punishing. For Ultralisk play in the late game, melee attack upgrades are critical for maximizing their damage output under Dark Swarm.
+It is the natural upgrade for Zergling-heavy play and for late-game Ultralisk armies, often combined with Adrenal Glands for Zerglings.
 
-The timing of Melee Attacks varies by strategy. In Zergling-heavy builds, it may start as early as 6-7 minutes. In builds that prioritize other tech, it comes later in mid-game. Many Zerg players prioritize Carapace over Melee Attacks in the early game.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 100 / 100 | 266 s | — |
+| 2 | 150 / 150 | 298 s | Lair |
+| 3 | 200 / 200 | 330 s | Hive |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

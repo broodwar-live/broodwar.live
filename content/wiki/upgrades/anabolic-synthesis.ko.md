@@ -1,22 +1,21 @@
 +++
 title = "동화 합성"
-description = "Anabolic Synthesis — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "동화 합성은 저그 울트라리스크 캐번 업그레이드로, 울트라리스크의 이동 속도를 높인다."
 slug = "anabolic-synthesis"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 race = "zerg"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "ultralisk-cavern"
-research_time = 67
+research_time = 133
 affects = ["ultralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-동화 합성은 울트라리스크의 이동 속도를 증가시켜 이 거대한 유닛이 원거리 적과의 거리를 좁히고 저그 군대의 나머지와 보조를 맞출 수 있게 합니다. 속도 없이 울트라리스크는 마린, 드라군, 벌처에게 카이팅당해 목표에 도달하기 전에 죽을 정도로 느립니다. 업그레이드 후 적 전선으로 돌격을 이끌고 후퇴하는 유닛을 효과적으로 추격할 수 있습니다.
+동화 합성은 울트라리스크의 이동 속도를 올려 원거리 유닛이 물러나기 전에 따라잡을 수 있게 한다. 울트라리스크 캐번에서 연구한다.
 
-경쟁전에서 동화 합성은 울트라리스크 효율에 필수입니다. 빠른 울트라리스크는 다크 스웜 아래 마린 라인으로 돌격하여 테란이 후퇴하고 재배치하기 전에 거리를 좁힙니다. ZvP에서 속도 울트라리스크는 프로토스 포지션을 압도하고 카이팅을 시도하는 드라군을 추격합니다. 속도, 높은 방어력(키틴질 갑옷), 스플래시 피해의 조합으로 풀 업그레이드 울트라리스크는 후반에서 가장 강력한 지상 유닛 중 하나입니다.
-
-동화 합성은 울트라리스크 캐번에서 연구하며, 보통 캐번 완성 즉시 키틴질 갑옷과 함께 15-18분경에 시작합니다. 두 울트라리스크 업그레이드는 항상 함께 연구하며, 속도와 방어력 없이 울트라리스크를 생산하는 것은 경쟁 레벨에서 낭비로 간주됩니다.
+저그가 울트라리스크에 투자할 때, 보통 테란전 후반에 키틴질 갑옷과 함께 연구한다.

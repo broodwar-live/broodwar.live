@@ -1,22 +1,21 @@
 +++
 title = "이래디에이트"
-description = "Irradiate — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "이래디에이트는 테란 사이언스 퍼실리티에서 연구하는 기술로, 사이언스 베슬의 이래디에이트 마법을 사용할 수 있게 한다."
 slug = "irradiate"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 race = "terran"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "science-facility"
-research_time = 50
+research_time = 80
 affects = ["science-vessel"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-이래디에이트는 사이언스 베슬의 능력으로, 대상 생체 유닛에게 30초간 250의 피해를 주며 소범위 내 인접한 생체 유닛에게도 스플래시됩니다. 대상 유닛이 녹색으로 빛나며 인접한 아군 생체 유닛에게 피해를 주어 밀집된 공중 유닛에게 치명적입니다. 이래디에이트는 유닛을 직접 죽이지 못하고 HP를 최소 1까지 줄입니다.
+이래디에이트 연구 후 사이언스 베슬은 에너지 75로 유닛에 방사능을 걸 수 있으며, 대상과 주변의 생체 유닛이 시간에 따라 피해를 입는다. 기계 유닛과 건물은 피해를 받지 않는다. 모든 유닛이 생체인 저그에게 특히 효과적이다. 자세한 내용은 [이래디에이트 능력](/ko/wiki/abilities/irradiate/) 문서를 참고하라.
 
-이래디에이트는 TvZ 중후반을 정의합니다. 밀집된 뮤탈리스크 무리 중 한 마리에 시전하면 스플래시 효과로 여러 뮤탈리스크를 동시에 처치할 수 있어 뮤탈리스크 견제의 주요 카운터입니다. 오버로드에도 효과적이어서 저그의 정찰과 서플라이를 차단하며, 밀집된 히드라리스크나 저글링에게도 유용합니다. 이 능력은 상대에게 생체 유닛을 분산시키거나 빠르게 잃는 선택을 강요합니다.
-
-이래디에이트는 사이언스 퍼실리티에서 연구하며, 보통 TvZ에서 첫 사이언스 베슬 생산과 함께 10-12분경에 시작합니다. 테란이 저그 공중 플레이에 대해 더 지배적인 위치로 전환하는 중반 타이밍입니다.
+저그전에서 이래디에이트는 뮤탈리스크, 러커, 디파일러를 상대하는 사이언스 베슬의 주력 무기다.

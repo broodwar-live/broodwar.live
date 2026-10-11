@@ -1,22 +1,21 @@
 +++
 title = "사이오닉 스톰"
-description = "Psionic Storm — 스타크래프트: 브루드 워 Protoss 업그레이드."
+description = "사이오닉 스톰은 프로토스 템플러 아카이브에서 연구하는 기술로, 하이 템플러의 사이오닉 스톰을 사용할 수 있게 한다."
 slug = "psionic-storm"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 race = "protoss"
 minerals = 200
 gas = 200
 levels = 1
 researched_at = "templar-archives"
-research_time = 75
+research_time = 120
 affects = ["high-templar"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-사이오닉 스톰은 하이 템플러의 능력으로, 효과 범위 내 모든 유닛에게 수 초에 걸쳐 112의 피해를 줍니다. 피해는 방어력을 무시하며 지상과 공중 유닛 모두에게 적용되어 어떤 조합에도 동등하게 파괴적입니다. 여러 스톰은 중첩되지 않으므로 같은 지역에 두 번 시전해도 피해가 배가 되지 않아 신중한 배치가 필요합니다.
+사이오닉 스톰은 에너지 75로 일정 지역에 폭풍을 일으켜, 몇 초 동안 안에 있는 적과 아군 유닛 모두에게 피해를 준다. 건물에는 피해가 없고, 스톰을 겹쳐도 피해가 중첩되지 않는다. 템플러 아카이브에서 연구한다. 자세한 내용은 [사이오닉 스톰 능력](/ko/wiki/abilities/psionic-storm/) 문서를 참고하라.
 
-사이오닉 스톰은 프로토스의 대표 스킬이자 브루드 워에서 가장 강력한 능력 중 하나입니다. 스톰 드랍(셔틀로 운반한 하이 템플러)은 PvT와 PvZ의 핵심 전략으로, 밀집된 마린, 히드라리스크, 일꾼을 수 초 만에 전멸시킵니다. PvT에서 스톰은 대량 바이오 군대의 주요 대응책이며, PvZ에서 히드라리스크 중심 조합을 궤멸시킵니다. 대응 플레이는 유닛을 분산시켜 스톰 범위를 최소화하는 것입니다.
-
-사이오닉 스톰은 템플러 아카이브에서 연구하며, 템플러 테크를 우선시하는 빌드에서 보통 10-12분경에 완성됩니다. PvT에서 첫 스톰 타이밍이 중반 전환을 정의하곤 합니다. 거의 모든 프로토스 게임 플랜이 궁극적으로 스톰을 포함할 정도로 필수적입니다.
+하이 템플러를 쓰는 거의 모든 경기에서 연구하며, 저그전의 히드라리스크·뮤탈리스크와 테란전 바이오를 상대로 쓰인다.
