@@ -1,6 +1,6 @@
 +++
 title = "July"
-description = "July — Zerg player from South Korea."
+description = "July (Park Sung Joon) — Zerg player from South Korea."
 slug = "july"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,34 @@ image = "/images/players/july.jpg"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["박성준", "Park Sung Joon"]
+real_name = "박성준"
+romanized_name = "Park Sung Joon"
+birth_date = "1986-12-18"
+status = "retired"
+aliases = ["JulyZerg", "July[z-zone]"]
+liquipedia = "https://liquipedia.net/starcraft/July"
+soop = "julyzerg"
+sources = ["https://liquipedia.net/starcraft/July"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = ""
+to = "2005-10"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2005-10"
+to = "2007-07"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2007-07"
+to = "2008-04-24"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2008-04-24"
+to = "2010-10-30"
 +++
-July was one of the most aggressive and exciting Zerg players in Brood War history, known for his relentless attack-first philosophy that earned him the nickname "The God of War." A two-time OSL champion, his peak years in the early-to-mid 2000s saw him overwhelm opponents with wave after wave of zerglings and mutalisks, rarely giving them a moment to breathe. July's ZvT was particularly devastating, featuring all-in timing attacks and aggressive zergling floods that could end games in minutes. His influence on aggressive Zerg play is profound — he proved that Zerg could win through sheer pressure rather than patient macro. Though retired, July's legacy as one of the most entertaining and feared Zerg players in history remains firmly intact.
+July (Park Sung Joon), nicknamed "Tushin" (God of War), is a South Korean Zerg known for aggressive play and Mutalisk control. He played for Pirates of Space, MBCGame HERO, SK Telecom T1 and STX SouL. By winning the 2004 Gillette OSL he became the first Zerg to win an OSL, and he added the EVER 2005 and EVER 2008 OSL titles, the latter making him the first Zerg to earn the Golden Mouse. He was also OSL runner-up in IOPS 2004 and Shinhan Bank 2005.
+
+He later became a head coach in League of Legends and was inducted into the Korean esports Hall of Fame in 2012.

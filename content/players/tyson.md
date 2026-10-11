@@ -1,15 +1,31 @@
 +++
 title = "Tyson"
-description = "Tyson — Terran player from South Korea."
+description = "Tyson (Park Ji-Hoon) — Protoss player from South Korea."
 slug = "tyson"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/tyson.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["김승현", "Kim Seung Hyun"]
+real_name = "박지훈"
+romanized_name = "Park Ji-Hoon"
+birth_date = "1990-12-10"
+status = "retired"
+years_active = "2007–2012"
+aliases = ["By.Tyson", "By.Bridge", "By.TeReSa", "By.Davichi", "By.Han", "박수범", "Park Soo Bum"]
+liquipedia = "https://liquipedia.net/starcraft/Tyson"
+soop = "subeom12"
+sources = ["https://liquipedia.net/starcraft/Tyson"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2007-03-12"
+to = "2011"
+[[extra.teams]]
+name = "Team 8"
+from = "2011-11"
+to = "2012"
 +++
-Tyson is an aggressive bio Terran active in the modern Korean scene, known for powerful timing attacks and strong micro that can overwhelm opponents in the early and mid-game. His marine-medic control is sharp, and he excels at finding the right moments to push before his opponents have assembled adequate defenses. Tyson's TvP features particularly punishing pressure builds that force Protoss players into reactive positions. He has been a regular in ASL qualifiers and has shown the ability to take games off top-tier opponents when his builds connect cleanly. His commitment to fast-paced bio strategies makes him a volatile but dangerous opponent who can end games quickly when firing on all cylinders.
+Tyson (Park Ji-Hoon) is a South Korean Protoss and former progamer. Drafted by MBCGame HERO in 2007, he played in Proleague for the team, posting a 13–7 record in 2009–10, and moved to Team 8 after MBCGame HERO disbanded. He retired once Proleague completed its move to StarCraft II and went on to stream on Afreeca, competing in events such as the SOSPA Ranking Tournament and SonicTV BJ Starleague.

@@ -1,6 +1,6 @@
 +++
 title = "Last"
-description = "Last — Terran player from South Korea."
+description = "Last (Kim Sung Hyun) — Terran player from South Korea."
 slug = "last"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,18 @@ image = "/images/players/last.jpg"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["김성현", "Kim Sung Hyun"]
+real_name = "김성현"
+romanized_name = "Kim Sung Hyun"
+birth_date = "1992-12-25"
+aliases = ["Last[fOu]"]
+liquipedia = "https://liquipedia.net/starcraft/Last"
+soop = "rlatjdgus228"
+sources = ["https://liquipedia.net/starcraft/Last"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2008-08-13"
+to = "2013-12-20"
 +++
-Last is one of the premier Terran players of the modern era, crowned KSL champion and a consistent top-four finisher in ASL seasons. His playstyle is built on exceptional mechanics and a methodical approach that rarely gives opponents openings to exploit. Last's TvP is considered among the best in the current scene, featuring well-timed pushes and clean transitions that suffocate Protoss players. His TvZ is equally formidable, with precise siege tank lines and smart use of vulture harass to control the map. A product of the Remastered revival, Last has proven himself against both returning legends and new challengers, solidifying his position as one of the most reliable competitors in modern Brood War.
+Last (Kim Sung Hyun) is a South Korean Terran player, born in 1992, who played for STX SouL from 2008 to 2013, including in StarCraft II. In the post-KeSPA era he won Korea StarCraft League Season 1 in 2018 and the AfreecaTV StarCraft League Season 7 in 2019.

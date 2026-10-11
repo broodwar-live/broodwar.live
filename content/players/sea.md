@@ -1,6 +1,6 @@
 +++
 title = "Sea"
-description = "Sea — Terran player from South Korea."
+description = "Sea (Yum Bo Sung) — Terran player from South Korea."
 slug = "sea"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,25 @@ image = "/images/players/sea.jpg"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["오영종", "Oh Young Jong"]
+real_name = "염보성"
+romanized_name = "Yum Bo Sung"
+birth_date = "1990-03-29"
+aliases = ["Sea[Shield]", "jat.sea", "noinsung"]
+liquipedia = "https://liquipedia.net/starcraft/Sea"
+soop = "yuambo"
+sources = ["https://liquipedia.net/starcraft/Sea"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2005-03-24"
+to = "2006-04"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-04"
+to = "2011-11-04"
+[[extra.teams]]
+name = "Team 8"
+from = "2011-11-04"
+to = "2012-10-04"
 +++
-Sea is one of Brood War's most enduring competitors, with a career spanning from the golden era through the modern ASL scene. Known for his aggressive, creative style, he pioneered numerous unorthodox builds that kept opponents guessing and delighted fans with their audacity. His TvT was particularly entertaining, often featuring bold proxy strategies and unconventional openings that turned mirror matches into spectacles. Sea reached deep rounds in both OSL and MSL during his peak and has remained active in ASL qualifiers in the modern era, demonstrating remarkable longevity. He is also one of the most popular BW streamers, drawing audiences who appreciate his entertaining personality and willingness to experiment with off-meta strategies.
+Sea (Yum Bo Sung) is a South Korean Terran who played for Pirates of Space, MBCGame HERO and Team 8 between 2005 and 2012. He qualified for the 2006 Shinhan Bank OSL Season 1 at 16 and earned the nickname "KTF Killer" for a run of wins over KTF players. He was a key part of MBCGame HERO's Proleague success, winning the deciding set of the 2006 grand final against SK Telecom T1. In the post-KeSPA era he finished second in AfreecaTV StarCraft League 2 in 2016.

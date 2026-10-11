@@ -1,15 +1,32 @@
 +++
 title = "Lazy"
-description = "Lazy — Terran player from South Korea."
+description = "Lazy (Kim Ki Hoon) — Protoss player from South Korea."
 slug = "lazy"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/lazy.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["김재국", "Kim Jae Guk"]
+real_name = "김기훈"
+romanized_name = "Kim Ki Hoon"
+birth_date = "1993-05-11"
+status = "retired"
+years_active = "2010–2011"
+aliases = ["NsP_Lazy", "NsP_Notice"]
+liquipedia = "https://liquipedia.net/starcraft/Lazy"
+soop = "hateliar"
+sources = ["https://liquipedia.net/starcraft/Lazy"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = "2010-08-23"
+to = "2010-10"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2010-10"
+to = "2011-11"
 +++
-Lazy is a well-rounded Terran active in the Korean competitive scene, known for his solid mechanics and balanced approach across all three matchups. Unlike many modern Terrans who specialize in one or two matchups, Lazy maintains competitive results against Protoss, Zerg, and Terran opponents alike. His playstyle prioritizes fundamentals over flashy plays, with clean build order execution and efficient macro that keeps him in games against stronger mechanical players. Lazy appears regularly in ASL qualifiers and online tournaments, where his consistency makes him a reliable performer. He represents the steady, fundamentals-first approach to Terran that can grind out wins through sheer efficiency.
+Lazy (Kim Ki Hoon) is a South Korean Protoss and former progamer. He started as a practice partner for eSTRO in 2010 and joined MBCGame HERO through the draft held after eSTRO disbanded, staying until 2011. He has since played in amateur leagues.

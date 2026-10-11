@@ -1,6 +1,6 @@
 +++
 title = "Terror"
-description = "Terror — 한국의 저그 선수."
+description = "Terror(이예준) — 한국의 저그 선수."
 slug = "terror"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,18 @@ image = "/images/players/terror.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["정호진"]
+real_name = "이예준"
+romanized_name = "Lee Ye Joon"
+birth_date = "1989-10-19"
+aliases = ["Terror[fou]", "1a2a3a[fOu]", "이철민", "철구형2↑"]
+liquipedia = "https://liquipedia.net/starcraft/Terror"
+soop = "y1026"
+sources = ["https://liquipedia.net/starcraft/Terror"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2006-08-21"
+to = "2008"
 +++
-Terror는 발전 중인 게임과 성장에 대한 헌신을 보여주는 정기적 대회 참여로 현대 프로 씬에서 활동하는 한국 저그입니다. 초반 압박과 상대를 당황시키는 것을 목표로 하는 저글링 기반 공격에 집중하는 공격적 저그 전략이 특징입니다. ASL 예선과 한국 온라인 대회에서 경쟁하며, 공격적 오프닝에 과감히 투입하는 의지로 놀라운 결과를 만들 수 있습니다. 소규모 교전에서의 마이크로가 향상되고 있으며, 지속적 경쟁 참여는 헌신을 보여줍니다.
+Terror(이예준)는 한국의 저그 전 프로게이머로, 2006년부터 2008년까지 STX SouL에서 활동했다. 이후 아프리카에서 인기 BJ로 활동했으며, 제1회 소닉TV BJ 스타리그 결승에서 Minus)Eagle을 4대1로 꺾고 우승했다. 아프리카TV 스타리그 2 본선에 진출했으나 조별 리그에서 탈락했고, Terror TEMPTS 스타리그와 Terror's BJ 스타리그를 주최했다.

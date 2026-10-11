@@ -1,15 +1,37 @@
 +++
 title = "MIsO"
-description = "MIsO — 한국의 저그 선수."
+description = "MIsO(한두열) — 한국의 저그 선수."
 slug = "miso"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/miso.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["이명오", "Lee Myung Oh"]
+real_name = "한두열"
+romanized_name = "Han Doo Yeol"
+birth_date = "1992-12-08"
+team = "SouLGaming"
+aliases = ["MisO_Lt", "Where", "SouL)Z(Miso", "hdy"]
+liquipedia = "https://liquipedia.net/starcraft/MIsO"
+soop = "hdy4546"
+sources = ["https://liquipedia.net/starcraft/MIsO"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2008-08-13"
+to = "2010-10-12"
+[[extra.teams]]
+name = "Hite Entus"
+slug = "hite-entus"
+from = "2010-10-12"
+to = "2011-05-08"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2011-05-08"
+to = "2012"
 +++
-MIsO는 발전 중인 게임과 성장에 대한 헌신을 보여주는 프로 서킷의 정기적 참여로 현대 씬에서 경쟁하는 한국 저그입니다. 향상되는 메카닉과 매치업 이해에 대한 성장하는 자신감과 함께 정석 저그 매크로가 특징입니다. ZvT에서 가장 많은 발전을 보이며, 더 나은 뮤탈리스크 컨트롤과 중요한 중반 전환에서의 현명한 경제적 결정을 선보입니다. ASL 예선과 온라인 대회에서 활발히 활동하며 매 시즌 경험을 쌓고 경쟁 순위 향상을 위해 노력합니다.
+MIsO(한두열)는 한국의 저그 전 프로게이머로, 2008년부터 2012년까지 CJ 엔투스(2010~2011년에는 하이트 엔투스)에서 활동했다. 이후 해외 선수 중심 팀인 SouLGaming에 합류했다.

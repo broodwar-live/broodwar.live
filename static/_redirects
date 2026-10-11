@@ -10,3 +10,11 @@
 # Language shortcuts
 /ko  /ko/  301
 /en  /     301
+
+# Merged or renamed player profiles
+/players/circuit/     /players/casy/     301
+/players/queen/       /players/zero/     301
+/players/where/       /players/miso/     301
+/ko/players/circuit/  /ko/players/casy/  301
+/ko/players/queen/    /ko/players/zero/  301
+/ko/players/where/    /ko/players/miso/  301

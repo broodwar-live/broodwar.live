@@ -1,6 +1,6 @@
 +++
 title = "Bonyth"
-description = "Bonyth — 폴란드의 프로토스 선수."
+description = "Bonyth(Tomasz Kamiński) — 폴란드의 프로토스 선수."
 slug = "bonyth"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,27 @@ image = "/images/players/bonyth.png"
 race = "protoss"
 country = "PL"
 country_name = "폴란드"
-aliases = []
+real_name = "Tomasz Kamiński"
+birth_date = "1991-04-28"
+status = "active"
+team = "irk"
+aliases = ["NrT.Bonyth", "[R8]Bonyth", "SouL)P(Bonyth"]
+liquipedia = "https://liquipedia.net/starcraft/Bonyth"
+sources = ["https://liquipedia.net/starcraft/Bonyth"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SouLGaming"
+from = "1991-04-28"
+to = "2022-07-26"
+[[extra.teams]]
+name = "StarCastTV Stars"
+from = "2022-07-26"
+to = "2024-12-29"
+[[extra.teams]]
+name = "irk"
+from = "2024-12-30"
+to = "present"
 +++
-Bonyth는 폴란드 프로토스이자 브루드 워 역사상 가장 강한 국제 선수 중 한 명입니다. BSL 다회 우승자이자 매 시즌 결승 진출자로, 정밀한 스톰 플레이와 한국 수준의 테란도 도전할 수 있는 뛰어난 PvT로 유럽 씬을 지배해 왔습니다. 비한국 선수로서 뛰어난 메카닉을 보유하고 있으며, BSL 시즌 전반의 안정성은 국제 커뮤니티에서 타의 추종을 불허합니다. PvZ도 강하며, 현명한 병력 조합과 효율적 매크로로 저그에게 지속적 압박을 가합니다. Scan, Trutacz와 함께 폴란드 BW 레전드로서 비한국 최강 BW 국가로서의 폴란드 확립에 핵심적 역할을 했습니다.
+Bonyth(Tomasz Kamiński)는 폴란드의 프로토스 플레이어로, 한국 외 지역 최강급 선수 중 한 명으로 꼽힌다. BSL 시즌 8부터 11까지 우승했고, 그 밖의 여러 BSL 시즌에서도 3위 안에 들었다. 2019년 모스크바에서 열린 RCG 2019 Corrupted Cup 우승, AMD Red League와 Deathfate Pro League 2 우승 등의 성적도 있다.
+
+SouLGaming과 StarCastTV Stars를 거쳐 2024년 말 iRk에 합류했다.

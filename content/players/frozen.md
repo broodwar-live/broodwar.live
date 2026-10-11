@@ -1,15 +1,31 @@
 +++
-title = "FrOzEn"
-description = "FrOzEn — Zerg player from South Korea."
+title = "FrOzen"
+description = "FrOzen (Kim Dong Kun) — Terran player from South Korea."
 slug = "frozen"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/frozen.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이정현", "Lee Jung Hyun"]
+real_name = "김동건"
+romanized_name = "Kim Dong Kun"
+birth_date = "1988-11-29"
+status = "retired"
+aliases = ["FrOzean", "FrOzen[Name]", "CuteAngeL[Name]", "FrOzean[Name]", "O.oc", "CuteAngel"]
+liquipedia = "https://liquipedia.net/starcraft/FrOzen"
+sources = ["https://liquipedia.net/starcraft/FrOzen"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = ""
+to = "2009"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2009"
+to = ""
 +++
-FrOzEn is a legendary Zerg from the golden era who was known for his innovative strategies and creative approach to the game. His willingness to experiment with unusual builds and unit compositions made him unpredictable and entertaining to watch. FrOzEn's ZvP was his standout matchup, where his creative use of lurkers and mutalisk harass could destabilize even well-prepared Protoss opponents. He reached deep rounds in major tournaments and earned recognition for pushing the boundaries of what Zerg could do strategically. His legacy as one of the golden era's creative minds continues to inspire players who value innovation in their approach to the game.
+FrOzen (Kim Dong Kun) is a retired South Korean Terran player, born in 1988. He began his career with Samsung KHAN and was traded to STX SouL in late 2009. He reached the round of 16 of the 2008 Clubday MSL and the 2009 Lost Saga MSL, and won his set against Jaedong in the 2007 Proleague finals.

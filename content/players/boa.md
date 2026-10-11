@@ -1,15 +1,26 @@
 +++
-title = "Boa"
-description = "Boa — Terran player from South Korea."
+title = "BoA"
+description = "BoA (John Dong) — Protoss player from Canada."
 slug = "boa"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
 image = "/images/players/boa.png"
-race = "terran"
-country = "KR"
-country_name = "South Korea"
-aliases = ["김원형"]
+race = "protoss"
+country = "CA"
+country_name = "Canada"
+real_name = "John Dong"
+birth_date = "1993-10-25"
+status = "active"
+team = "Crazy Warriors Team"
+aliases = []
+liquipedia = "https://liquipedia.net/starcraft/BoA"
+sources = ["https://liquipedia.net/starcraft/BoA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Crazy Warriors Team"
+from = "2022-01-21"
+to = "present"
 +++
-Boa is a Korean Terran who has been a regular presence in ASL qualifiers, bringing solid mechanical play and a methodical approach to each series. His playstyle emphasizes reliable macro and safe openings that allow him to reach the mid-game without falling behind economically. Boa's TvZ is his strongest matchup, where his patient siege tank play and careful map control frustrate Zerg opponents looking for openings to exploit. While he competes in a stacked Korean Terran field, his persistence and steady improvement show promise. He is a consistent competitor in the broader Korean tournament circuit, contributing to the depth that makes the scene so competitive.
+BoA (John Dong) is a Canadian Protoss player based in the United States, born in 1993. He has played for Crazy Warriors Team since January 2022.

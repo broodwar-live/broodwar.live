@@ -1,15 +1,27 @@
 +++
 title = "Rush"
-description = "Rush — 한국의 저그 선수."
+description = "Rush(유영진) — 한국의 테란 선수."
 slug = "rush"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
 image = "/images/players/rush.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["서명수", "Seo Myung Soo"]
+real_name = "유영진"
+romanized_name = "Yoo Young Jin"
+birth_date = "1991-11-30"
+aliases = ["Rush[WHITE]", "Rush[kaL]"]
+liquipedia = "https://liquipedia.net/starcraft/Rush"
+soop = "yoo376"
+sources = ["https://liquipedia.net/starcraft/Rush"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2009"
+to = "2012"
 +++
-Rush는 이름에 걸맞는 공격적 플레이로 현대 ASL 씬에서 강력한 경쟁자로 자리잡은 한국 저그입니다. ZvT에서 빠른 템포의 저글링과 뮤탈리스크 견제로 테란에게 지속적 압박을 가하며, 초반 공격에 과감히 투자하는 의지로 초중반에 특히 위험합니다. ASL 16강과 8강에 여러 차례 진출하며 최상위 경쟁에서 안정성을 보여주었습니다. ZvP도 탄탄하며, 러커 중심 전략으로 게임의 흐름을 통제합니다. 재미있는 플레이 스타일과 다른 선수들이 피할 수 있는 리스크를 감수하는 의지로 유명합니다.
+Rush(유영진)는 한국의 테란 선수로, 2009년부터 2012년까지 CJ 엔투스에서 활동했다. 스타크래프트 II에서 활동한 뒤 2015년 중반 브루드 워로 복귀했고, 같은 해 9월 아프리카 방송을 시작했다. 아프리카TV 스타리그 12(2021)와 ASL 14(2022)에서 준우승했다.

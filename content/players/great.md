@@ -1,15 +1,33 @@
 +++
-title = "Great"
-description = "Great — Terran player from South Korea."
+title = "great"
+description = "great (Cha Myung Hwan) — Zerg player from South Korea."
 slug = "great"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
-image = "/images/players/great.png"
-race = "terran"
+race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이성환", "Lee Sung Hwan"]
+real_name = "차명환"
+romanized_name = "Cha Myung Hwan"
+birth_date = "1989-11-27"
+status = "retired"
+years_active = "2007–2012"
+team = "Air Force ACE"
+aliases = ["Hades", "by.great", "KT.MGW)Great"]
+liquipedia = "https://liquipedia.net/starcraft/Great"
+sources = ["https://liquipedia.net/starcraft/Great"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = "2007-03-12"
+to = "2011-10"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2011-10"
+to = "2012"
 +++
-Great is a Korean Terran competing in the modern scene with solid fundamentals and steady results in online tournaments and ASL qualifiers. His playstyle is built on efficient macro and clean build order execution, with a preference for standard play that minimizes risk. Great's TvP features reliable timing attacks and disciplined army positioning, while his TvZ demonstrates patience and good siege tank control. He is a regular in the Korean competitive circuit, contributing to the depth of talent that makes qualifying for the ASL main bracket so challenging. His fundamentally sound approach keeps him competitive against a wide range of opponents.
+great (Cha Myung Hwan) is a South Korean Zerg player who served as Samsung KHAN's Zerg ace before joining Air Force ACE in October 2011. He was runner-up in the 2010 PDPop MSL. He was known for steering ZvZ games past the usual Mutalisk phase into late-game Hive tech.

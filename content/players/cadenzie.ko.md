@@ -1,15 +1,22 @@
 +++
-title = "Cadenzie"
-description = "Cadenzie — 캐나다의 프로토스 선수."
+title = "CadenZie"
+description = "CadenZie(Zoe Summers) — 영국의 저그 선수."
 slug = "cadenzie"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
-image = "/images/players/cadenzie.png"
-race = "protoss"
-country = "CA"
-country_name = "캐나다"
-aliases = []
+race = "zerg"
+country = "GB"
+country_name = "영국"
+real_name = "Zoe Summers"
+birth_date = "1986-12-21"
+status = "retired"
+years_active = "2018–2023"
+aliases = ["CadenZa", "DenZie", "카덴지"]
+liquipedia = "https://liquipedia.net/starcraft/CadenZie"
+soop = "cadenzie"
+sources = ["https://liquipedia.net/starcraft/CadenZie"]
+verified = "2026-10-11"
 +++
-Cadenzie는 BSL 이벤트와 북미 대회를 통해 국제 브루드 워 씬에서 경쟁하는 캐나다 프로토스입니다. 탄탄한 매크로 기본기와 스톰 기반 후반 전략을 선호하는 플레이로 캐나다 BW 커뮤니티를 대표합니다. PvT가 가장 완성도 높은 매치업으로, 강력한 후반 프로토스 병력 조합에 도달하는 것을 목표로 하는 인내심 있는 게임플레이가 특징입니다. 국제 대회에 정기적으로 참여하여 글로벌 BW 씬에서 북미의 존재감을 유지하며, 꾸준한 성장은 경쟁적 플레이에 대한 헌신을 보여줍니다.
+CadenZie(Zoe Summers)는 영국 스코틀랜드 출신의 저그 플레이어로, 한국에서 전업 선수 겸 스트리머로 활동했다. 2018년 아프리카TV BJ 멸망전 시즌 1과 시즌 2에서 모두 우승 팀의 일원이었고, 같은 해 9월 레이디 아프리카TV 스타리그 6에서 우승했다. 코치 퓨필 리그에서 코치를 맡았고 해설 활동도 했다. 2023년 12월 10일 은퇴를 발표했다.

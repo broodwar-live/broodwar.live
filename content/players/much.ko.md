@@ -1,15 +1,36 @@
 +++
 title = "Much"
-description = "Much — 한국의 저그 선수."
+description = "Much(박영민) — 한국의 프로토스 선수."
 slug = "much"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/much.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["김대엽", "Kim Dae Yup"]
+real_name = "박영민"
+romanized_name = "Park Yeong Min"
+birth_date = "1984-01-13"
+status = "retired"
+years_active = "2005–2011"
+aliases = ["Much[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/Much"
+sources = ["https://liquipedia.net/starcraft/Much"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Greatest One"
+from = "2005-03-24"
+to = "2006-04"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2006-04"
+to = "2009-12-16"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2009-12-16"
+to = "2011"
 +++
-Much는 안정적이고 기본기에 충실한 플레이로 당대 최고의 선수들과 경쟁력을 유지한 황금기의 전설적 저그입니다. 효율적 매크로 관리와 현명한 병력 포지셔닝을 강조했으며, 특히 러커 기반 방어와 인내심 있는 확장 플레이가 매우 효과적인 ZvP에서 강했습니다. OSL과 MSL 대회에서 깊은 라운드에 진출했으며, 여러 시즌에 걸친 안정성으로 황금기 저그의 든든한 기둥 중 한 명으로 인정받았습니다. 기본기 우선 스타일은 공격적 선수들의 화려함은 없었지만, 순수한 효율과 게임 이해로 결과를 만들어냈습니다.
+Much(박영민)는 2005년 데뷔해 2006년부터 2009년까지 CJ 엔투스에서 활동하고 이후 공군 ACE에서 복무한 대한민국의 은퇴한 프로토스 프로게이머이다. 아레나 MSL과 WCG 2008 한국 대표 선발전에서 4강에 올랐고, 2007년 온게임넷 스타챌린지 시즌 2에서 우승했다. 팬들 사이에서는 "할아버지 토스"라는 별명으로 불렸다.

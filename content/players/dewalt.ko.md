@@ -1,15 +1,34 @@
 +++
 title = "Dewalt"
-description = "Dewalt — 우크라이나의 저그 선수."
+description = "Dewalt(Андрей Беляев) — 러시아의 프로토스 선수."
 slug = "dewalt"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
 image = "/images/players/dewalt.png"
-race = "zerg"
-country = "UA"
-country_name = "우크라이나"
-aliases = []
+race = "protoss"
+country = "RU"
+country_name = "러시아"
+real_name = "Андрей Беляев"
+romanized_name = "Andrey Belyaev"
+birth_date = "1994-08-18"
+status = "active"
+years_active = "2010–present"
+team = "Crazy Warriors Team"
+aliases = ["reps)Dewalt", "MisaCampo", "lambo-_-", "gosuprobe.", "sas.Dewalt", "MineralWalk", "sas.glOw", "Dewaltinho"]
+liquipedia = "https://liquipedia.net/starcraft/Dewalt"
+sources = ["https://liquipedia.net/starcraft/Dewalt"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Crazy Warriors Team"
+from = "2022-01-14"
+to = "2024-12-31"
+[[extra.teams]]
+name = "inte Riktigt kloka"
+from = "2025-01-01"
+to = "present"
 +++
-Dewalt는 BSL 3연패로 게임 역사상 가장 지배적인 비한국인 선수로서의 위치를 확립한 국제 브루드 워의 부동의 왕자입니다. 우크라이나 출신으로, 그의 ZvT는 파괴적인 타이밍 공격, 정교한 뮤탈리스크 마이크로, 한국 수준의 테란도 압도할 수 있는 현명한 후반 전환으로 국제 씬 전체에서 두려움의 대상입니다. 메카닉 실력이 한국 최정상급 프로에 필적하며, BSL 대회에서의 안정성은 타의 추종을 불허합니다. 개인적 지배를 넘어 국제 BW 경쟁의 수준을 끌어올려 다른 최고 선수들도 경쟁하기 위해 수준을 높여야 했습니다. 역대 최고의 비한국인 선수로서의 유산은 확고하며, 모든 국제 선수가 평가받는 기준으로 남아 있습니다.
+Dewalt(Андрей Беляев)는 1994년생 러시아 노보시비르스크 출신의 프로토스 선수이다. 2012년 Defiler Tour 40에서 우승했고, 2013년 ICCup으로부터 최우수 프로토스와 최고 유망주로 선정되었다.
+
+2013년 잠시 은퇴를 선언했으나 같은 해 브루드워로 복귀했다. 2018년 BSL 4에서 4위, 2019년 BSL 6에서 4강에 올랐다. 2022년부터 2024년까지 Crazy Warriors Team 소속이었으며, 2025년 inte Riktigt kloka(iRk)에 합류했다.

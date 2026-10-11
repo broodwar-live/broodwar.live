@@ -1,15 +1,39 @@
 +++
-title = "GoodFriend"
-description = "GoodFriend — Zerg player from South Korea."
+title = "Goodfriend"
+description = "Goodfriend (Lee Byung Min) — Terran player from South Korea."
 slug = "goodfriend"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/goodfriend.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["장경복", "Jang Kyung Bok"]
+real_name = "이병민"
+romanized_name = "Lee Byung Min"
+birth_date = "1986-11-20"
+status = "retired"
+years_active = "2003–2008"
+aliases = ["T.3)Friend", "Munchu[SaM]"]
+liquipedia = "https://liquipedia.net/starcraft/Goodfriend"
+sources = ["https://liquipedia.net/starcraft/Goodfriend"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Toona SG"
+from = "2003"
+to = "2004-08"
+[[extra.teams]]
+name = "Pantech & Curitel Curriors"
+from = "2004-08"
+to = "2005-09-03"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2005-09-03"
+to = "2008-01-17"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = "2008-01-17"
+to = "2008-06-03"
 +++
-GoodFriend is a Korean Zerg active in the modern competitive scene, competing in ASL qualifiers and online tournaments with a balanced approach to the game. His ZvT is his strongest matchup, featuring solid mutalisk harass and smart defensive play that keeps Terran opponents from gaining map control. GoodFriend's macro management is clean, and his ability to maintain economic development while handling pressure demonstrates good game sense. He is part of the competitive middle tier in the Korean Zerg scene, consistently showing up for tournament play and building experience.
+Goodfriend (Lee Byung Min) is a retired South Korean Terran player, born in 1986. He played for Toona SG, Pantech & Curitel Curriors, KTF MagicNs and eSTRO between 2003 and 2008. He was runner-up of the EVER Starleague 2005, losing the final to July, and also reached the semifinals of the 2006 Shinhan Bank OSL Season 2.

@@ -1,15 +1,27 @@
 +++
 title = "Stats"
-description = "Stats — 한국의 프로토스 선수."
+description = "Stats(김대엽) — 한국의 프로토스 선수."
 slug = "stats"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/stats.png"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["김대엽", "Kim Dae Yeob"]
+real_name = "김대엽"
+romanized_name = "Kim Dae Yeob"
+birth_date = "1992-05-15"
+status = "retired"
+years_active = "2009–2016"
+aliases = ["bp3[nsp]", "NsP_PrOtoss"]
+liquipedia = "https://liquipedia.net/starcraft/Stats"
+sources = ["https://liquipedia.net/starcraft/Stats"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-07-02"
+to = "2016-10-18"
 +++
-Stats는 극적인 약점을 피하는 올라운드 게임으로 현대 씬에서 꾸준한 성적을 보여주는 한국 프로토스입니다. 탄탄한 매크로와 일관성 있게 실행되는 정석 빌드를 기반으로 ASL 예선과 온라인 대회에서 안정적인 경쟁자입니다. PvZ에서는 효율적 스톰 플레이와 현명한 병력 포지셔닝을, PvT에서는 공격적 테란 타이밍을 견딜 수 있는 인내심 있는 방어 셋업을 보여줍니다. 프로 서킷에서의 경험으로 고압 상황에서 차분한 태도를 유지하며, 꾸준한 성적으로 현대 한국 프로토스 판도에서 존재감을 유지합니다.
+Stats(김대엽)는 1992년생 대한민국의 프로토스 프로게이머로, 2009년부터 2016년까지 KT 롤스터에서 활동했다. 2009-10 프로리그에서 팀의 주력 프로토스로 자리 잡았고, 결승에서 Bisu를 꺾으며 KT의 SK텔레콤 T1전 승리에 기여했다. 개인리그에서는 2009 네이트 MSL과 빅파일 MSL에서 16강에 올랐다. 이후 스타크래프트 II로 활동을 이어갔다.

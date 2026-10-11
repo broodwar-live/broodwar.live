@@ -1,6 +1,6 @@
 +++
 title = "Mong"
-description = "Mong — 한국의 테란 선수."
+description = "Mong(윤찬희) — 한국의 테란 선수."
 slug = "mong"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,21 @@ image = "/images/players/mong.jpg"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["윤찬희"]
+real_name = "윤찬희"
+romanized_name = "Yoon Chan Hee"
+birth_date = "1992-05-17"
+years_active = "2010–2014"
+aliases = ["Mong[Name]", "Monster[WHITE]", "Ever)T(Gowoon", "Buffalo", "mstzmstz"]
+liquipedia = "https://liquipedia.net/starcraft/Mong"
+soop = "cksgmldbs"
+sources = ["https://liquipedia.net/starcraft/Mong"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2010-03-24"
+to = ""
 +++
-Mong은 오리지널 프로리그 시대에 활약했으며 현대 ASL까지 활동을 이어가고 있는 베테랑 테란입니다. 탄탄한 메카닉과 안정적인 플레이 스타일로 알려져 있으며, 모든 경기에 수년간의 프로 경험을 가져옵니다. TvZ가 가장 강한 매치업으로, 절제된 메카닉 플레이와 신중한 확장 타이밍으로 공격적인 저그를 좌절시킵니다. ASL 예선 단골 출전자로 때로는 최상위 선수들과 맞붙을 만큼 깊이 진출하기도 합니다. 씬에서의 오랜 활동은 게임에 대한 사랑과 진화하는 메타에 적응하는 능력을 모두 보여주며, 베테랑과 신규 선수 모두에게 존경받는 인물입니다.
+Mong(윤찬희)은 1992년 고양에서 태어난 대한민국의 테란 선수이다. 2010년 CJ 엔투스에 입단했다.
+
+2012년 4월 온세텔레콤 SonicTV BJ 스타리그에서 우승하며 첫 주요 타이틀을 얻었고, 이후 SonicTV 스타리그 대회에 꾸준히 출전했다. 아프리카TV 인기 BJ로 Fish 서버에서 활동하고 있다.

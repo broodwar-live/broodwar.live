@@ -1,15 +1,33 @@
 +++
 title = "Larva"
-description = "Larva — Zerg player from South Korea."
+description = "Larva (Lim Hong Gyu) — Zerg player from South Korea."
 slug = "larva"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/larva.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["임홍규", "Lim Hong Gyu"]
+real_name = "임홍규"
+romanized_name = "Lim Hong Gyu"
+birth_date = "1994-07-19"
+aliases = ["Larva[S.G]", "jat.honggu", "Jat.Hong9", "[NeOx]Hong9"]
+liquipedia = "https://liquipedia.net/starcraft/Larva_(Player)"
+soop = "dpfgc3"
+sources = ["https://liquipedia.net/starcraft/Larva_(Player)"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "eSTRO"
+slug = "estro"
+from = ""
+to = "2010-10"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2011-03-28"
+to = ""
 +++
-Larva is one of the most popular Zerg players in the modern BW scene, known as much for his entertaining streams as for his competitive play. His mechanical speed is exceptional, and his mutalisk micro can rival even the best players when he is in top form. Larva has competed in ASL events and achieved notable results, including deep runs that demonstrate his genuine competitive ability. His ZvT features aggressive mutalisk harass and fast-paced play that makes every game exciting to watch. Beyond competition, Larva's streaming career has made him one of the most recognizable figures in the BW community, drawing large audiences with his energetic personality and entertaining games.
+Larva (Lim Hong Gyu) is a South Korean Zerg player born in 1994. He played for eSTRO and joined SK Telecom T1 in 2011.
+
+He gained wider attention after the release of StarCraft: Remastered, reached the top four of ASL Season 4, and won ASL Season 11 in 2021. He is also a popular streamer on Afreeca.

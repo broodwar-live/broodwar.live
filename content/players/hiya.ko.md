@@ -1,15 +1,28 @@
 +++
 title = "HiyA"
-description = "HiyA — 한국의 테란 선수."
+description = "HiyA(구성훈) — 한국의 테란 선수."
 slug = "hiya"
 template = "players/player.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-image = "/images/players/hiya.png"
 race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["문학동", "Moon Hak Dong"]
+real_name = "구성훈"
+romanized_name = "Ku Sung Hoon"
+birth_date = "1989-07-21"
+status = "retired"
+years_active = "2006–2011"
+aliases = ["Inguh", "HiyA[fOu]", "Constantly"]
+liquipedia = "https://liquipedia.net/starcraft/HiyA"
+soop = "rladuddo99"
+sources = ["https://liquipedia.net/starcraft/HiyA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hwaseung OZ"
+slug = "hwaseung-oz"
+from = "2006-03-21"
+to = "2011"
 +++
-HiyA는 현대 프로 씬에서 활동하는 한국 테란으로, 강한 TvT 플레이와 상대를 계속 반응하게 만드는 공격적인 드롭 기반 전략으로 인정받고 있습니다. 미러 매치업의 장악이 그의 가장 큰 무기로, 인내심 있는 시즈 라인과 타이밍 좋은 드랍십 견제로 맵 전체에 지속적 압박을 가합니다. ASL 예선에 여러 차례 출전했으며 기회주의적 플레이로 상위 랭킹 선수들을 꺾기도 했습니다. TvP에서도 공격적인 오프닝에 과감히 투자하여 정석 플레이를 예상하는 프로토스를 놀라게 할 수 있습니다. 한국 테란 씬에 깊이를 더하는 탄탄한 중위권 경쟁자입니다.
+HiyA(구성훈)는 2006년부터 팀 해체 때까지 화승 OZ에서 활동한 대한민국의 전 테란 프로게이머이다. 2007 신한은행 프로리그 결승에서 firebathero를 상대로 승부를 결정짓는 5세트를 승리했고, 08–09 위너스리그에서는 17승 9패를 기록했다. 화승 OZ 해체와 함께 은퇴했으며, 2012 티빙 스타리그 듀얼토너먼트에 잠시 출전한 뒤 아프리카TV 방송과 아마추어 리그 활동을 이어갔다.

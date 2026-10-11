@@ -1,6 +1,6 @@
 +++
-title = "Trutacz"
-description = "Trutacz — Zerg player from Poland."
+title = "trutaCz"
+description = "trutaCz (Michał Szarejko) — Zerg player from Poland."
 slug = "trutacz"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,12 @@ image = "/images/players/trutacz.jpeg"
 race = "zerg"
 country = "PL"
 country_name = "Poland"
-aliases = []
+real_name = "Michał Szarejko"
+birth_date = "1994-12-18"
+team = "iRk"
+aliases = ["LRM)trutaCz", "CzarnyKapelusz", "hiyo-_-"]
+liquipedia = "https://liquipedia.net/starcraft/TrutaCz"
+sources = ["https://liquipedia.net/starcraft/TrutaCz"]
+verified = "2026-10-11"
 +++
-Trutacz is a Polish Zerg and one of the strongest international Zerg players, with multiple BSL deep runs and a reputation for strong ZvT that can challenge the best Terran players outside Korea. His mutalisk micro is sharp, and his macro management allows him to compete in long games against disciplined opponents. Trutacz represents Poland's dominant position in international BW alongside Bonyth and Scan, and his consistent BSL results demonstrate the depth of Polish BW talent. His ZvP is also competitive at the international level, making him a well-rounded threat in any tournament bracket.
+trutaCz (Michał Szarejko) is a Polish Zerg player who started playing Brood War in 2005 and joined the Polish national team as a 2v2 player in 2009. In 2012 he won both Netwars Cups, and in January 2013 he won the second TeamLiquid Legacy Starleague qualifier. He later competed in Bombastic StarLeague Season 5 in 2018.

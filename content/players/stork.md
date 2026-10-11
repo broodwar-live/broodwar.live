@@ -1,6 +1,6 @@
 +++
 title = "Stork"
-description = "Stork — Protoss player from South Korea."
+description = "Stork (Song Byung Goo) — Protoss player from South Korea."
 slug = "stork"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,20 @@ image = "/images/players/stork.jpg"
 race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["송병구", "Song Byung Goo"]
+real_name = "송병구"
+romanized_name = "Song Byung Goo"
+birth_date = "1988-08-04"
+aliases = ["Stork[gm]", "mansa[ok]", "sbg[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/Stork"
+soop = "koreasbg"
+sources = ["https://liquipedia.net/starcraft/Stork"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = "2004"
+to = "2013-09-07"
 +++
-Stork is a legendary Protoss who was one of the most consistent top-tier players during the golden era, reaching multiple OSL finals and establishing himself as a permanent fixture in the upper echelons of competitive BW. His PvT was among the best in the world, featuring precise storm play and patient army control that could neutralize even the strongest Terran pushes. Stork's game sense was exceptional, with an ability to read opponent strategies and adjust his own play accordingly. In the modern era, he has participated in ASL events, bringing his refined style to a new generation. His sustained excellence across multiple years of golden era competition earned him well-deserved recognition as one of the greatest Protoss players of all time.
+Stork (Song Byung Goo) is a South Korean Protoss who played for Samsung KHAN from 2004 to 2013 and is counted among TaekBangLeeSsang. Known for macro-oriented play, he was named one of the "Three Neo-Kings" of Protoss and helped shape modern PvT. He won the 2008 Incruit OSL and was runner-up in the EVER 2007, Bacchus 2008 and Bacchus 2010 OSLs and in the 2007 GomTV MSL Season 2.
+
+He later served as head and playing coach of Samsung Galaxy in StarCraft II, and was inducted into the Korean esports Hall of Fame in 2012.

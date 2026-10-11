@@ -1,15 +1,31 @@
 +++
-title = "Hyun"
-description = "Hyun — Zerg player from South Korea."
+title = "HyuN"
+description = "HyuN (Ko Seok Hyun) — Zerg player from South Korea."
 slug = "hyun"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/hyun.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이현우", "Lee Hyun Woo"]
+real_name = "고석현"
+romanized_name = "Ko Seok Hyun"
+birth_date = "1988-01-15"
+status = "retired"
+years_active = "2006–2011"
+aliases = ["Dream.t)HyuN", "michingae1"]
+liquipedia = "https://liquipedia.net/starcraft/HyuN"
+soop = "understay"
+sources = ["https://liquipedia.net/starcraft/HyuN"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2006-03-01"
+to = "2006-04"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-04"
+to = "2011-10-31"
 +++
-Hyun is a Korean Zerg active in the modern scene with solid macro fundamentals and a patient playstyle. His ZvT is his most developed matchup, where his defensive play and late-game transitions demonstrate good understanding of the positional aspects of the matchup. Hyun competes in ASL qualifiers and Korean online tournaments, showing steady results that reflect his reliable approach. His willingness to play long games and outscale opponents gives him a distinct identity among the more aggressive Zerg players in the scene.
+HyuN (Ko Seok Hyun) is a South Korean Zerg player who played Brood War for MBCGame HERO from 2006 to 2011. In November 2011 he moved to StarCraft II, joining Team SCV Life and later playing for Jin Air Green Wings.

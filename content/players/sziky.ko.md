@@ -1,15 +1,39 @@
 +++
 title = "Sziky"
-description = "Sziky — 헝가리의 프로토스 선수."
+description = "Sziky(Szikszai Miklós) — 헝가리의 저그 선수."
 slug = "sziky"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
 image = "/images/players/sziky.png"
-race = "protoss"
+race = "zerg"
 country = "HU"
 country_name = "헝가리"
+real_name = "Szikszai Miklós"
+birth_date = "1989-10-17"
+status = "active"
+years_active = "2009–present"
+team = "StarCastTV Stars"
 aliases = []
+liquipedia = "https://liquipedia.net/starcraft/Sziky"
+sources = ["https://liquipedia.net/starcraft/Sziky"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "mousesports"
+from = "2009-01"
+to = "2010-12"
+[[extra.teams]]
+name = "sas"
+from = "2010-12-01"
+to = "2013-01-01"
+[[extra.teams]]
+name = "SouLGaming"
+from = "2013-01-02"
+to = "2022-05-01"
+[[extra.teams]]
+name = "StarCastTV Stars"
+from = "2021-11-06"
+to = "present"
 +++
-Sziky는 헝가리 프로토스이자 유럽 씬에서 가장 강한 국제 선수 중 한 명입니다. BSL 대회와 유럽 온라인 리그에서 활발히 활동하며, 정밀한 스톰 플레이와 현명한 PvT 전략으로 꾸준한 위협으로 자리잡았습니다. 한국 외 최고 수준의 메카닉을 보유하고 있으며, 모든 매치업에서 유럽 최고 선수들과 경쟁하는 올라운드 게임을 보여줍니다. 성장하는 헝가리 BW 커뮤니티를 대표하며 BSL 플레이오프 단골로, 경험과 침착함으로 중요한 경기에서 우위를 점합니다.
+Sziky(식사이 미클로시)는 2010년 이후 한국 외 지역 정상급 선수로 꼽혀 온 헝가리의 저그 플레이어이다. 2009년부터 mousesports에서 활동했고, 2010년 말부터 헝가리 팀 sas, 2013년부터 2022년까지 SouLGaming에서 활동했다. 2021년부터 StarCastTV Stars 소속으로 활동하고 있다.

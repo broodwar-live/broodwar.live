@@ -1,15 +1,37 @@
 +++
-title = "Oya"
-description = "Oya — 독일의 저그 선수."
+title = "OyA"
+description = "OyA(Johan Persson) — 스웨덴의 프로토스 선수."
 slug = "oya"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/oya.png"
-race = "zerg"
-country = "DE"
-country_name = "독일"
-aliases = []
+race = "protoss"
+country = "SE"
+country_name = "스웨덴"
+real_name = "Johan Persson"
+birth_date = "1996-10-06"
+status = "active"
+team = "IRk"
+aliases = ["OyAji"]
+liquipedia = "https://liquipedia.net/starcraft/OyA"
+sources = ["https://liquipedia.net/starcraft/OyA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "iG"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Los Reyes Del Mambo Evolutions"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Neo.G"
+from = ""
+to = ""
+[[extra.teams]]
+name = "inte Riktigt kloka"
+from = "2018-01-01"
+to = "present"
 +++
-Oya는 독일의 강하고 확립된 국제 선수 로스터와 함께 BSL 대회와 온라인 리그에서 경쟁하며 유럽 BW 씬에서 활동하는 독일 저그입니다. 매 경쟁 시즌마다 꾸준히 향상되는 매크로 플레이와 정석 전략에 집중하는 발전 중인 저그 기본기가 특징입니다. 유럽 대회에 꾸준히 참여하여 국제 씬에서 독일의 두드러진 위치를 유지하고 대륙 전체의 유럽 저그 인재 깊이에 의미있게 기여합니다.
+OyA(요한 페르손)는 스웨덴의 프로토스 플레이어이다. iG, Neo.G 등의 팀을 거쳤으며, 2018년부터 iRk(inte Riktigt kloka) 팀에서 활동하고 있다.

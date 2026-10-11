@@ -1,15 +1,39 @@
 +++
 title = "Luxury"
-description = "Luxury — 한국의 프로토스 선수."
+description = "Luxury(박찬수) — 한국의 저그 선수."
 slug = "luxury"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
-image = "/images/players/luxury.png"
-race = "protoss"
+race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["이지훈", "Lee Ji Hoon"]
+real_name = "박찬수"
+romanized_name = "Park Chan Soo"
+birth_date = "1987-12-07"
+status = "retired"
+years_active = "2005–2010"
+aliases = ["Sea.Practice", "Sea.Chance", "Luxury[GsP]", "Minus)Saphir"]
+liquipedia = "https://liquipedia.net/starcraft/Luxury"
+sources = ["https://liquipedia.net/starcraft/Luxury"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KOR"
+from = "2005-03-24"
+to = "2006-06-29"
+[[extra.teams]]
+name = "OnGameNet SPARKYZ"
+from = "2006-06-29"
+to = "2008-09"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2008-09"
+to = "2009-08"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08"
+to = "2010-06-09"
 +++
-Luxury는 프로 브루드 워에 우아하고 세련된 플레이 스타일을 가져온 황금기의 전설적 프로토스입니다. 깔끔한 실행, 현명한 병력 컨트롤, 효율적인 자원 관리를 강조하며 여러 시즌에 걸쳐 최고 수준에서 경쟁했습니다. PvT가 그의 시그니처 매치업으로, 정확한 스톰 배치와 인내심 있는 방어 플레이로 가장 공격적인 테란 푸시도 무력화할 수 있었습니다. OSL과 MSL 대회에서 여러 차례 깊이 진출하며 동세대에서 가장 기술적으로 완성도 높은 프로토스 중 한 명으로 인정받았습니다. 그의 경기는 종종 아름답다고 묘사되었으며, 소수만이 따라할 수 있는 수준의 정밀함을 반영했습니다.
+Luxury(박찬수)는 1987년생 대한민국의 전 저그 프로게이머로, YellOw의 쌍둥이 동생이다. 2005년 KOR(이후 온게임넷 스파키즈)에서 데뷔했고, 2008년 KTF 매직엔스로 이적했으며 2010년 KT 롤스터를 떠났다. 2008년 박카스 스타리그와 EVER 스타리그 2008에서 연속으로 4강에 올랐고, 2009년 로스트사가 MSL 결승에서 JangBi를 3대1로 꺾고 우승했다.

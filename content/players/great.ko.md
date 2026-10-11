@@ -1,15 +1,33 @@
 +++
-title = "Great"
-description = "Great — 한국의 테란 선수."
+title = "great"
+description = "great(차명환) — 한국의 저그 선수."
 slug = "great"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
-image = "/images/players/great.png"
-race = "terran"
+race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["이성환", "Lee Sung Hwan"]
+real_name = "차명환"
+romanized_name = "Cha Myung Hwan"
+birth_date = "1989-11-27"
+status = "retired"
+years_active = "2007–2012"
+team = "Air Force ACE"
+aliases = ["Hades", "by.great", "KT.MGW)Great"]
+liquipedia = "https://liquipedia.net/starcraft/Great"
+sources = ["https://liquipedia.net/starcraft/Great"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = "2007-03-12"
+to = "2011-10"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2011-10"
+to = "2012"
 +++
-Great는 탄탄한 기본기와 온라인 대회 및 ASL 예선에서의 꾸준한 성적으로 현대 씬에서 경쟁하는 한국 테란입니다. 효율적인 매크로와 깔끔한 빌드 오더 실행을 기반으로 리스크를 최소화하는 정석 플레이를 선호합니다. TvP에서는 안정적인 타이밍 공격과 절제된 병력 포지셔닝을, TvZ에서는 인내심과 좋은 시즈 탱크 컨트롤을 보여줍니다. ASL 본선 진출을 매우 어렵게 만드는 인재 깊이에 기여하는 한국 경쟁 서킷의 단골 선수입니다. 기본기에 충실한 접근으로 다양한 상대를 상대로 경쟁력을 유지합니다.
+great(차명환)는 삼성전자 KHAN의 저그 에이스로 활약하다 2011년 10월 공군 ACE에 입단한 대한민국의 저그 프로게이머이다. 2010 PDPop MSL에서 준우승했다. 저그 대 저그 경기를 뮤탈리스크 싸움 이후 하이브 단계까지 끌고 가는 경기 운영으로 알려졌다.

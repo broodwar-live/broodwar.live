@@ -1,6 +1,6 @@
 +++
 title = "BarrackS"
-description = "BarrackS — Terran player from South Korea."
+description = "BarrackS (Hwang Byung Yung) — Terran player from South Korea."
 slug = "barracks-player"
 template = "players/player.html"
 [taxonomies]
@@ -10,6 +10,25 @@ image = "/images/players/barracks.png"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이원혁", "Lee Won Hyuk"]
+real_name = "황병영"
+romanized_name = "Hwang Byung Yung"
+birth_date = "1991-07-24"
+status = "retired"
+years_active = "2007–2013"
+team = "StarCastTV Stars"
+aliases = ["By.BarrackS", "By", "S-Teacher", "Barracktube", "barrac"]
+liquipedia = "https://liquipedia.net/starcraft/BarrackS"
+soop = "hby0724"
+sources = ["https://liquipedia.net/starcraft/BarrackS"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2007-08-08"
+to = "2009-08-25"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08-25"
+to = "2013-12-23"
 +++
-BarrackS is a rising Terran star in the modern ASL scene who has quickly established himself as a serious contender. His aggressive bio play is the hallmark of his style, featuring fast-paced marine-medic pushes and multi-drop strategies that put immense pressure on opponents from the early game onward. His TvZ is particularly impressive, with timing attacks that exploit the narrow windows before Zerg can establish their late-game economy. BarrackS has made consistent deep runs in ASL qualifying and main brackets, signaling that he is on an upward trajectory. His mechanical speed and willingness to engage in scrappy micro battles make his games exciting to watch and his opponents uncomfortable to face.
+BarrackS (Hwang Byung Yung) is a South Korean Terran player, born in 1991, who played for KTF MagicNs and its successor KT Rolster from 2007 to 2013. His individual league appearances included the GOM Classic series and the 2009 EVER OSL, where he was eliminated by JangBi in the round of 36. He later competed in StarCraft II for KT Rolster.

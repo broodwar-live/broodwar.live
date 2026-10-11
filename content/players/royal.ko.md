@@ -1,15 +1,26 @@
 +++
-title = "Royal"
-description = "Royal — 한국의 저그 선수."
+title = "RoyaL"
+description = "RoyaL(김지성) — 한국의 테란 선수."
 slug = "royal"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
 image = "/images/players/royal.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["이정우"]
+real_name = "김지성"
+romanized_name = "Kim Ji Sung"
+birth_date = "1995-08-10"
+aliases = ["sOrry", "Neo.G_hudadak", "ErOs_sOrry"]
+liquipedia = "https://liquipedia.net/starcraft/RoyaL"
+sources = ["https://liquipedia.net/starcraft/RoyaL"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2011-08-30"
+to = "2016-10-18"
 +++
-Royal은 균형 잡힌 접근과 꾸준하고 고무적인 향상을 보이는 발전하는 메카닉으로 현대 씬에서 경쟁하는 한국 저그입니다. ZvT와 ZvP 모두 경쟁력이 있으며, 향상되는 효율과 점점 자신감 있는 의사결정으로 실행되는 정석 전략이 특징입니다. ASL 예선과 온라인 대회에 출전하며 올라운드 게임으로 다양한 상대를 상대로 경쟁에 참여합니다. 꾸준한 참여와 점진적 성장은 깊은 한국 저그 필드에서 경쟁하는 데 필요한 헌신을 보여줍니다.
+RoyaL(김지성)은 1995년생 대한민국의 테란 플레이어로, 예전에는 'sOrry'라는 아이디를 사용했다. 2011년부터 2016년까지 SK텔레콤 T1 소속이었으며 스타크래프트 II에서도 활동했다. 2019년 KSL 시즌 4 본선에 진출하며 첫 메이저 브루드 워 대회에 출전했고, 2022년 ASL 시즌 14에서 우승했다.

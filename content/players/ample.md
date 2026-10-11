@@ -1,15 +1,26 @@
 +++
 title = "Ample"
-description = "Ample — Zerg player from South Korea."
+description = "Ample (Kim Tae Young) — Terran player from South Korea."
 slug = "ample"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/ample.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-aliases = ["고석현", "Go Seok Hyun"]
+real_name = "김태영"
+romanized_name = "Kim Tae Young"
+birth_date = "1992-07-16"
+aliases = ["[ErOs]~Lovedambi", "ErOs_Ample", "Sasin", "4s.사테"]
+liquipedia = "https://liquipedia.net/starcraft/Ample"
+soop = "hoonykkk"
+sources = ["https://liquipedia.net/starcraft/Ample"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2010-08-23"
+to = ""
 +++
-Ample is a Korean Zerg competing in the modern scene with a developing game and regular participation in ASL qualifiers and online tournaments. His playstyle features standard Zerg strategies with improving mechanics and a growing understanding of macro management. Ample's ZvT shows the most promise, with developing mutalisk control and better timing on his mid-game transitions. His consistent participation in the competitive circuit demonstrates dedication to the game and the depth of Zerg talent in the Korean scene. His willingness to learn and adapt across seasons keeps him relevant in the qualifier pool.
+Ample (Kim Tae Young) is a South Korean Terran player born in 1992. He joined KT Rolster in August 2010 and has since competed in amateur leagues, including the 4th SonicTV BJ Starleague in 2011.

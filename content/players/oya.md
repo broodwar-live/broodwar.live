@@ -1,15 +1,37 @@
 +++
-title = "Oya"
-description = "Oya — Zerg player from Germany."
+title = "OyA"
+description = "OyA (Johan Persson) — Protoss player from Sweden."
 slug = "oya"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/oya.png"
-race = "zerg"
-country = "DE"
-country_name = "Germany"
-aliases = []
+race = "protoss"
+country = "SE"
+country_name = "Sweden"
+real_name = "Johan Persson"
+birth_date = "1996-10-06"
+status = "active"
+team = "IRk"
+aliases = ["OyAji"]
+liquipedia = "https://liquipedia.net/starcraft/OyA"
+sources = ["https://liquipedia.net/starcraft/OyA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "iG"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Los Reyes Del Mambo Evolutions"
+from = ""
+to = ""
+[[extra.teams]]
+name = "Neo.G"
+from = ""
+to = ""
+[[extra.teams]]
+name = "inte Riktigt kloka"
+from = "2018-01-01"
+to = "present"
 +++
-Oya is a German Zerg active in the European BW scene, competing in BSL tournaments and online leagues alongside Germany's strong and established roster of international players. His playstyle features developing Zerg fundamentals with a focus on macro play and standard strategies that are steadily improving with each competitive season. Oya's consistent participation in European events helps maintain Germany's prominent position in the international scene and contributes meaningfully to the depth of European Zerg talent across the continent.
+OyA (Johan Persson) is a Swedish Protoss player. His past teams include iG and Neo.G, and he has played for team iRk (inte Riktigt kloka) since 2018.

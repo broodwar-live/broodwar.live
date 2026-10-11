@@ -1,15 +1,39 @@
 +++
 title = "Luxury"
-description = "Luxury — Protoss player from South Korea."
+description = "Luxury (Park Chan Soo) — Zerg player from South Korea."
 slug = "luxury"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
-image = "/images/players/luxury.png"
-race = "protoss"
+race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["이지훈", "Lee Ji Hoon"]
+real_name = "박찬수"
+romanized_name = "Park Chan Soo"
+birth_date = "1987-12-07"
+status = "retired"
+years_active = "2005–2010"
+aliases = ["Sea.Practice", "Sea.Chance", "Luxury[GsP]", "Minus)Saphir"]
+liquipedia = "https://liquipedia.net/starcraft/Luxury"
+sources = ["https://liquipedia.net/starcraft/Luxury"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KOR"
+from = "2005-03-24"
+to = "2006-06-29"
+[[extra.teams]]
+name = "OnGameNet SPARKYZ"
+from = "2006-06-29"
+to = "2008-09"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2008-09"
+to = "2009-08"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08"
+to = "2010-06-09"
 +++
-Luxury is a legendary Protoss from the golden era who brought an elegant and refined style of play to professional Brood War. His approach to the game emphasized clean execution, smart army control, and efficient resource management that allowed him to compete at the highest levels across multiple seasons. Luxury's PvT was his signature matchup, where his precise storm placement and patient defensive play could neutralize even the most aggressive Terran pushes. He made multiple deep runs in OSL and MSL tournaments, earning recognition as one of the most technically polished Protoss players of his generation. His games were often described as beautiful to watch, reflecting a level of precision that few players could match.
+Luxury (Park Chan Soo) is a South Korean former Zerg player, born in 1987, and the twin brother of YellOw. He played for KOR (later OnGameNet SPARKYZ) from 2005, moved to KTF MagicNs in 2008, and left KT Rolster in 2010. In 2008 he reached consecutive OSL semifinals in the Bacchus and EVER Starleagues, and in 2009 he won the Lost Saga MSL, defeating JangBi 3–1 in the final.

@@ -1,15 +1,33 @@
 +++
 title = "Sacsri"
-description = "Sacsri — Zerg player from South Korea."
+description = "Sacsri (Lee Yah Hoon) — Zerg player from South Korea."
 slug = "sacsri"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/sacsri.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-aliases = ["한주원", "Han Joo Won"]
+real_name = "이예훈"
+romanized_name = "Lee Yah Hoon"
+birth_date = "1992-02-18"
+status = "retired"
+years_active = "2008–2014"
+aliases = ["Sea.Sacsri", "YeHoon"]
+liquipedia = "https://liquipedia.net/starcraft/Sacsri"
+soop = "gnsl418"
+sources = ["https://liquipedia.net/starcraft/Sacsri"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "WeMade FOX"
+slug = "wemade-fox"
+from = "2008-08-13"
+to = "2011-11-04"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2011-11-04"
+to = "2014-04-10"
 +++
-Sacsri is a Korean Zerg active in the modern competitive scene with a focus on efficient macro play and smart army management across the key matchups. His ZvP features solid lurker positioning and patient economic development that builds strong late-game foundations, while his ZvT shows developing mutalisk control and improving harass timing. Sacsri competes in ASL qualifiers and Korean online tournaments, where his consistent fundamentals yield respectable results against strong competition. His methodical approach to the game makes him a reliable and steady competitor.
+Sacsri (Lee Yah Hoon) is a South Korean Zerg player who played for WeMade FOX from 2008 and moved to SK Telecom T1 in 2011, staying until 2014.

@@ -1,15 +1,20 @@
 +++
-title = "Koget"
-description = "Koget — 러시아의 저그 선수."
+title = "kogeT"
+description = "kogeT(Marcin Nowak) — 폴란드의 테란 선수."
 slug = "koget"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/koget.png"
-race = "zerg"
-country = "RU"
-country_name = "러시아"
-aliases = []
+race = "terran"
+country = "PL"
+country_name = "폴란드"
+real_name = "Marcin Nowak"
+birth_date = "1988-10-07"
+team = "NetWars"
+aliases = ["kogeP"]
+liquipedia = "https://liquipedia.net/starcraft/KogeT"
+sources = ["https://liquipedia.net/starcraft/KogeT"]
+verified = "2026-10-11"
 +++
-Koget은 BSL 이벤트와 온라인 대회에서 꾸준한 헌신으로 유럽 BW 씬에서 경쟁하는 러시아 저그입니다. 향상되는 매크로 관리와 매치업 이해에 대한 성장하는 자신감의 발전 중인 게임으로 러시아 커뮤니티를 대표합니다. ZvP가 가장 많이 연습한 매치업으로, 유럽 수준의 상대에게 도전할 수 있는 효과적인 러커 전략이 특징입니다. 정기적 경쟁 참여로 국제 씬에서 러시아의 성장하는 영향력에 기여하며, 시즌마다 측정 가능한 발전을 이어갑니다.
+kogeT(Marcin Nowak)는 1988년생 폴란드의 테란 플레이어로, 2013년부터 덴마크 코펜하겐에 거주하고 있다. 2002년부터 온라인에서 활동했으며 2006년부터 2014년까지는 주로 저그를 플레이하다 테란으로 전향했고, Netwars 팀을 이끌었다. 2008년 포즈난 PGA 대회 2위, Rymarov LanCraft Summer 우승, 이후 TeamLiquid Legacy Starleague Championship 3위와 Bombastic StarLeague 4 준우승 등의 성적을 거두었다.

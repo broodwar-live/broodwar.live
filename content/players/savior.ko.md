@@ -1,15 +1,32 @@
 +++
 title = "sAviOr"
-description = "sAviOr — 한국의 저그 선수."
+description = "sAviOr(마재윤) — 한국의 저그 선수."
 slug = "savior"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/savior.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["마재윤", "Ma Jae Yoon"]
+real_name = "마재윤"
+romanized_name = "Ma Jae Yoon"
+birth_date = "1987-11-23"
+status = "retired"
+aliases = ["IPXZerg", "sAviOr[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/SAviOr"
+sources = ["https://liquipedia.net/starcraft/SAviOr"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Greatest One"
+from = ""
+to = "2006-04"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2006-04"
+to = "2010-06-09"
 +++
-"마에스트로"로 불리는 sAviOr는 2000년대 중반 전성기에 MSL 4연패를 달성하며 어떤 e스포츠에서도 보기 드문 지배력을 보여준 가장 압도적인 저그 선수였습니다. ZvT에 대한 전략적 정복은 매치업을 혁명화했으며, 우수한 매크로와 타이밍으로 가장 강한 테란 상대로도 저그가 템포를 지배할 수 있음을 보여주었습니다. 기이할 정도의 정확성으로 상대 전략을 읽고 최대 효율을 위해 유닛을 배치하는 비범한 게임 센스를 가졌습니다. Bisu를 비롯한 최정상급 선수들과의 라이벌전은 황금기 최고의 경기들을 만들어냈습니다. 안타깝게도 2010년 승부조작 스캔들에 연루되어 영구 제명으로 선수 경력이 오명으로 끝났습니다. 그럼에도 역사상 가장 전략적으로 뛰어난 선수 중 한 명으로서의 게임 내 유산은 여전히 의미 있습니다.
+sAviOr(마재윤)는 1987년생 대한민국의 전 저그 선수로, '마에스트로'라는 별명으로 불렸다. GO(Greatest One)를 거쳐 2010년까지 CJ 엔투스에서 활동했다.
+
+2005 UZOO MSL, 2006 프링글스 MSL 시즌 1·2, 2006 신한은행 스타리그 시즌 3에서 우승했고, MSL에서 두 차례 준우승했다. KeSPA 랭킹 1위를 아홉 차례 기록했으며, 테란전 3해처리 뮤탈리스크 빌드 등을 대중화한 선수로 평가된다. 2010년 승부조작 사건에 연루되면서 선수 경력이 끝났다.

@@ -1,15 +1,39 @@
 +++
 title = "Sziky"
-description = "Sziky — Protoss player from Hungary."
+description = "Sziky (Szikszai Miklós) — Zerg player from Hungary."
 slug = "sziky"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
 image = "/images/players/sziky.png"
-race = "protoss"
+race = "zerg"
 country = "HU"
 country_name = "Hungary"
+real_name = "Szikszai Miklós"
+birth_date = "1989-10-17"
+status = "active"
+years_active = "2009–present"
+team = "StarCastTV Stars"
 aliases = []
+liquipedia = "https://liquipedia.net/starcraft/Sziky"
+sources = ["https://liquipedia.net/starcraft/Sziky"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "mousesports"
+from = "2009-01"
+to = "2010-12"
+[[extra.teams]]
+name = "sas"
+from = "2010-12-01"
+to = "2013-01-01"
+[[extra.teams]]
+name = "SouLGaming"
+from = "2013-01-02"
+to = "2022-05-01"
+[[extra.teams]]
+name = "StarCastTV Stars"
+from = "2021-11-06"
+to = "present"
 +++
-Sziky is a Hungarian Protoss and one of the strongest international players in the European scene. Active in BSL tournaments and European online leagues, he has established himself as a consistent threat with his precise storm play and smart PvT strategies. Sziky's mechanical skill is among the best outside Korea, and his ability to compete with top European players across all matchups demonstrates his well-rounded game. He represents the growing Hungarian BW community and has been a regular fixture in BSL playoff rounds, where his experience and composure give him an edge in high-stakes matches.
+Sziky (Szikszai Miklós) is a Hungarian Zerg player and one of the leading non-Korean players since 2010. He played for mousesports from 2009, then for the Hungarian team sas from late 2010 and SouLGaming from 2013 to 2022. He has played for StarCastTV Stars since 2021.

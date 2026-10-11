@@ -1,15 +1,22 @@
 +++
 title = "Mighty"
-description = "Mighty — Terran player from United States."
+description = "Mighty (Lee Gwang Yong) — Protoss player from South Korea."
 slug = "mighty"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/mighty.png"
-race = "terran"
-country = "US"
-country_name = "United States"
-aliases = []
+race = "protoss"
+country = "KR"
+country_name = "South Korea"
+real_name = "이광용"
+romanized_name = "Lee Gwang Yong"
+birth_date = "1995-08-28"
+team = "SouLGaming"
+aliases = ["SouL)P(Mighty"]
+liquipedia = "https://liquipedia.net/starcraft/Mighty"
+soop = "lky6407"
+sources = ["https://liquipedia.net/starcraft/Mighty"]
+verified = "2026-10-11"
 +++
-Mighty is an American Terran competing in the international Brood War scene through online tournaments and BSL events. Based in the United States, he represents the North American competitive community alongside players like Nyoken and TT1. His playstyle features standard Terran fundamentals with improving mechanics and game understanding. While facing a competitive gap against top European players, Mighty's dedication to the game and regular participation in online events help sustain the North American BW community and demonstrate the global appeal of competitive Brood War.
+Mighty (Lee Gwang Yong) is a South Korean amateur Protoss player who has played for SouLGaming.

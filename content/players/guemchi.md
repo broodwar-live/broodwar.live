@@ -1,15 +1,40 @@
 +++
-title = "Guemchi"
-description = "Guemchi — Zerg player from South Korea."
+title = "GuemChi"
+description = "GuemChi (Kim Seung Hyun) — Protoss player from South Korea."
 slug = "guemchi"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/guemchi.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "South Korea"
-aliases = ["김기현"]
+real_name = "김승현"
+romanized_name = "Kim Seung Hyun"
+birth_date = "1989-11-08"
+status = "retired"
+team = "Air Force ACE"
+aliases = ["Sea.GuemChi", "ST.Xanadu", "IamMang"]
+liquipedia = "https://liquipedia.net/starcraft/GuemChi"
+soop = "rlatldgus"
+sources = ["https://liquipedia.net/starcraft/GuemChi"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hanbit Stars"
+slug = "hanbit-stars"
+from = "2007-08-08"
+to = "2008-09"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2009-10"
+to = ""
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = ""
+to = ""
 +++
-Guemchi is a Korean Zerg active in the modern scene with a scrappy, aggressive playstyle that makes him an unpredictable opponent. His willingness to take risks in the early game gives him upset potential against higher-ranked players, particularly in ZvP where his zergling and lurker pressure can catch Protoss players off guard. Guemchi has competed in ASL qualifiers with respectable results and has taken sets off top players on occasion. His aggressive approach to the game makes his matches exciting to watch, even if it sometimes leads to inconsistent results. He is a valuable part of the competitive scene.
+GuemChi (Kim Seung Hyun) is a South Korean Protoss player born in 1989. He played for Hanbit Stars and Woongjin Stars and later for Air Force ACE.
+
+He reached the round of 16 of the 2009 Nate MSL after defeating Bisu and Bogus in his group, and recorded an all-kill against CJ Entus in the 2010 Winner's League. He has since streamed on Afreeca.

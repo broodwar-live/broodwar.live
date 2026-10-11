@@ -1,15 +1,37 @@
 +++
 title = "Hydra"
-description = "Hydra — 한국의 저그 선수."
+description = "Hydra(신동원) — 한국의 저그 선수."
 slug = "hydra"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/hydra.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-aliases = ["김범준", "Kim Beom Jun"]
+real_name = "신동원"
+romanized_name = "Shin Dong Won"
+birth_date = "1991-09-04"
+status = "retired"
+years_active = "2008–2014"
+aliases = ["By.Hydra"]
+liquipedia = "https://liquipedia.net/starcraft/Hydra"
+sources = ["https://liquipedia.net/starcraft/Hydra"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2008-03-05"
+to = "2010-10-12"
+[[extra.teams]]
+name = "Hite Entus"
+slug = "hite-entus"
+from = "2010-10-12"
+to = "2011-05-08"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2011-05-08"
+to = "2014-09-11"
 +++
-Hydra는 탄탄한 메카닉과 모든 매치업에서 안정적인 접근으로 현대 씬에서 경쟁하는 한국 저그입니다. ZvT에서 강한 뮤탈리스크 플레이와 효율적 드론 관리로 씬 최고의 테란과 경쟁합니다. ASL 예선과 온라인 대회에서 활발히 활동하며, 안정성과 강한 기본기로 경쟁 대화에서 존재감을 유지합니다. ZvP에서도 좋은 러커 활용과 현명한 병력 포지셔닝을 보여줍니다. 한국 BW의 저그 인재 깊이에 기여하는 꾸준한 존재감의 안정적 선수입니다.
+Hydra(신동원)는 한국의 저그 선수로, 2008년부터 2014년까지 CJ 엔투스(2010~2011년에는 하이트 엔투스)에서 활동했다. 2010년 승부조작 사건 이후 팀의 주전 저그로 자리 잡았고, 같은 해 12월 PDPop MSL 결승에서 Great를 3대1로 꺾고 우승했다. 2011년에는 MSL과 OSL에서 모두 4강에 올랐다. 이후 ROOT Gaming 소속으로 스타크래프트 II에서 활동했으며, 두 게임 모두에서 메이저 대회 우승을 차지한 몇 안 되는 선수 중 한 명이다.

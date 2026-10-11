@@ -1,15 +1,30 @@
 +++
 title = "Hawk"
-description = "Hawk — Terran player from South Korea."
+description = "Hawk (Devan Subramaniam) — Zerg player from United States."
 slug = "hawk"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
 image = "/images/players/hawk.jpeg"
-race = "terran"
-country = "KR"
-country_name = "South Korea"
-aliases = ["홍석현"]
+race = "zerg"
+country = "US"
+country_name = "United States"
+real_name = "Devan Subramaniam"
+birth_date = "1993-12-23"
+status = "active"
+team = "NaS"
+aliases = ["Hawk248"]
+liquipedia = "https://liquipedia.net/starcraft/Hawk"
+sources = ["https://liquipedia.net/starcraft/Hawk"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "inte Riktigt kloka"
+from = ""
+to = "2021-12-01"
+[[extra.teams]]
+name = "North American Squad"
+from = "2022-01-01"
+to = "present"
 +++
-Hawk is a Korean Terran competing in the modern scene, active in online tournaments and ASL qualifier rounds. His playstyle features a balance of bio and mech strategies depending on the matchup, showing adaptability in his approach to the game. Hawk's TvT is his most developed matchup, with solid siege play and smart positioning. While still establishing himself among the deeper Korean Terran talent pool, he has shown flashes of strong play that suggest room for growth. His regular participation in the competitive circuit keeps him sharp and steadily improving.
+Hawk (Devan Subramaniam) is an American Zerg player, born in 1993. He played for inte Riktigt kloka until December 2021 and has been part of North American Squad since January 2022.

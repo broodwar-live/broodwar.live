@@ -1,15 +1,40 @@
 +++
-title = "Guemchi"
-description = "Guemchi — 한국의 저그 선수."
+title = "GuemChi"
+description = "GuemChi(김승현) — 한국의 프로토스 선수."
 slug = "guemchi"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/guemchi.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-aliases = ["김기현"]
+real_name = "김승현"
+romanized_name = "Kim Seung Hyun"
+birth_date = "1989-11-08"
+status = "retired"
+team = "Air Force ACE"
+aliases = ["Sea.GuemChi", "ST.Xanadu", "IamMang"]
+liquipedia = "https://liquipedia.net/starcraft/GuemChi"
+soop = "rlatldgus"
+sources = ["https://liquipedia.net/starcraft/GuemChi"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hanbit Stars"
+slug = "hanbit-stars"
+from = "2007-08-08"
+to = "2008-09"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2009-10"
+to = ""
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = ""
+to = ""
 +++
-Guemchi는 거칠고 공격적인 플레이로 예측 불가능한 상대가 되는 현대 한국 저그입니다. 초반 리스크를 감수하는 의지로 상위 랭킹 선수 상대 이변의 가능성이 있으며, 특히 저글링과 러커 압박으로 프로토스를 당황시킬 수 있는 ZvP에서 그렇습니다. ASL 예선에서 괜찮은 성적을 거두며 때때로 최상위 선수에게서 세트를 따내기도 합니다. 공격적 접근이 때로 불안정한 결과로 이어지기도 하지만 경기를 흥미롭게 만듭니다. 프로 씬의 소중한 일원입니다.
+GuemChi(김승현)는 1989년생 대한민국의 프로토스 선수이다. 한빛 스타즈와 웅진 스타즈를 거쳐 공군 ACE에서 활동했다.
+
+2009 네이트 MSL에서 Bisu와 Bogus를 꺾고 16강에 진출했으며, 2010 위너스리그에서 CJ 엔투스를 상대로 올킬을 기록했다. 이후 아프리카TV에서 방송 활동을 했다.

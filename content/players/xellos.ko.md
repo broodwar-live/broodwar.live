@@ -1,15 +1,43 @@
 +++
 title = "XellOs"
-description = "XellOs — 한국의 프로토스 선수."
+description = "XellOs(서지훈) — 한국의 테란 선수."
 slug = "xellos"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
-image = "/images/players/xellos.png"
-race = "protoss"
+race = "terran"
 country = "KR"
 country_name = "한국"
-aliases = ["서지훈", "Seo Ji Hoon"]
+real_name = "서지훈"
+romanized_name = "Seo Ji Hoon"
+birth_date = "1985-02-09"
+status = "retired"
+years_active = "2003–2011"
+aliases = ["XellOs[yG]"]
+liquipedia = "https://liquipedia.net/starcraft/XellOs"
+sources = ["https://liquipedia.net/starcraft/XellOs"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Greatest One"
+from = ""
+to = "2006-04"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2006-04"
+to = "2008-12-15"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2008-12-15"
+to = "2011"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2011"
+to = "2011"
 +++
-XellOs는 화려하고 공격적인 플레이 스타일로 상당한 대회 성과를 달성한 황금기의 전설적 프로토스입니다. 대담한 공격과 단호한 공격성으로 상대가 반응하기 전에 압도하는 것이 그의 접근을 정의했습니다. 특히 PvZ가 찬사받았으며, 날카로운 타이밍 공격과 다크 템플러, 커세어의 창의적 활용으로 순식간에 게임을 뒤집을 수 있었습니다. 여러 메이저 대회 우승을 차지했으며, 공격을 준비하기 가장 어려운 단판제에서 가장 위험한 상대로 평가받았습니다. 흥미진진한 스타일로 팬들의 사랑을 받았으며, 공격적 프로토스 플레이에 대한 그의 영향은 현대 선수들의 종족 접근 방식에 계속 느껴지고 있습니다.
+XellOs(서지훈)는 1985년생 대한민국의 은퇴한 테란 선수이다. GO(Greatest One)와 CJ 엔투스에서 활동했으며, 2008년부터 2011년까지 공군 ACE에서 복무했다.
+
+2003년 올림푸스 온게임넷 스타리그에서 4강에서 BoxeR를 3:0으로, 결승에서 YellOw를 5세트 접전 끝에 꺾고 우승했으며, '완벽 테란'이라는 별명을 얻었다. 2012년 한국 e스포츠 명예의 전당에 헌액되었다.
