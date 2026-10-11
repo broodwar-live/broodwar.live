@@ -14,6 +14,7 @@ prize_pool = "PLN 500"
 champion = "trutaCz"
 champion_slug = "trutacz"
 runner_up = "ZZZero"
+runner_up_slug = "zzzero"
 final_score = "4–1"
 final_date = "2013-04-20"
 start_date = "2013-01-29"
@@ -26,22 +27,22 @@ round = "Upper Quarterfinals"
 best_of = 5
 matches = [
   { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "AMLAcZ", score_b = 1, date = "2013-04-20" },
-  { a = "ZZZero", score_a = 3, b = "Fosken", score_b = 0, date = "2013-04-20" },
+  { a = "ZZZero", a_slug = "zzzero", score_a = 3, b = "Fosken", score_b = 0, date = "2013-04-20" },
   { a = "trutaCz", a_slug = "trutacz", score_a = 3, b = "SouthPark", score_b = 1, date = "2013-04-20" },
-  { a = "WolFix", score_a = 0, b = "Julia", score_b = 3, date = "2013-04-20" },
+  { a = "WolFix", score_a = 0, b = "Julian", b_slug = "julian", score_b = 3, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Upper Semifinals"
 best_of = 5
 matches = [
-  { a = "Bonyth", a_slug = "bonyth", score_a = 1, b = "ZZZero", score_b = 3, date = "2013-04-20" },
-  { a = "trutaCz", a_slug = "trutacz", score_a = 3, b = "Julia", score_b = 0, date = "2013-04-20" },
+  { a = "Bonyth", a_slug = "bonyth", score_a = 1, b = "ZZZero", b_slug = "zzzero", score_b = 3, date = "2013-04-20" },
+  { a = "trutaCz", a_slug = "trutacz", score_a = 3, b = "Julian", b_slug = "julian", score_b = 0, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Upper Final"
 best_of = 5
 matches = [
-  { a = "ZZZero", score_a = 3, b = "trutaCz", b_slug = "trutacz", score_b = 2, date = "2013-04-20" },
+  { a = "ZZZero", a_slug = "zzzero", score_a = 3, b = "trutaCz", b_slug = "trutacz", score_b = 2, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Lower Round 1"
@@ -54,14 +55,14 @@ matches = [
 round = "Lower Round 2"
 best_of = 3
 matches = [
-  { a = "Julia", score_a = 2, b = "AMLAcZ", score_b = 0, date = "2013-04-20" },
+  { a = "Julian", a_slug = "julian", score_a = 2, b = "AMLAcZ", score_b = 0, date = "2013-04-20" },
   { a = "Bonyth", a_slug = "bonyth", score_a = 2, b = "WolFix", score_b = 0, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Lower Round 3"
 best_of = 3
 matches = [
-  { a = "Julia", score_a = 0, b = "Bonyth", b_slug = "bonyth", score_b = 2, date = "2013-04-20" },
+  { a = "Julian", a_slug = "julian", score_a = 0, b = "Bonyth", b_slug = "bonyth", score_b = 2, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Lower Final"
@@ -73,7 +74,7 @@ matches = [
 round = "Grand Final"
 best_of = 7
 matches = [
-  { a = "ZZZero", score_a = 1, b = "trutaCz", b_slug = "trutacz", score_b = 4, date = "2013-04-20" },
+  { a = "ZZZero", a_slug = "zzzero", score_a = 1, b = "trutaCz", b_slug = "trutacz", score_b = 4, date = "2013-04-20" },
 ]
 +++
 trutaCz won BSL Season 1, beating ZZZero 4–1 in the grand final on 20 April 2013. This first edition was open only to players from Poland. The season ran from 29 January to 20 April 2013 with a prize pool of PLN 500.

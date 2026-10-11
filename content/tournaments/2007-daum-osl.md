@@ -21,7 +21,7 @@ semifinalists = [{ name = "Stork", slug = "stork" }, { name = "Flash", slug = "f
 start_date = "2007-05-11"
 end_date = "2007-07-21"
 maps = [{ name = "Fantasy" }, { name = "Hitchhiker", slug = "hitchhiker" }, { name = "Monty Hall" }, { name = "Python", slug = "python" }]
-participants = [{ name = "Bisu", slug = "bisu" }, { name = "Casy", slug = "casy" }, { name = "GGPlay", slug = "ggplay" }, { name = "Reach", slug = "reach" }, { name = "DarkElf" }, { name = "sAviOr", slug = "savior" }, { name = "Stork", slug = "stork" }, { name = "Flash", slug = "flash" }, { name = "Shark" }, { name = "Hwasin" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Iris", slug = "iris" }, { name = "Justin" }, { name = "Light", slug = "light" }, { name = "NaDa", slug = "nada" }, { name = "UpMaGiC", slug = "upmagic" }]
+participants = [{ name = "Bisu", slug = "bisu" }, { name = "Casy", slug = "casy" }, { name = "GGPlay", slug = "ggplay" }, { name = "Reach", slug = "reach" }, { name = "DarkElf" }, { name = "sAviOr", slug = "savior" }, { name = "Stork", slug = "stork" }, { name = "Flash", slug = "flash" }, { name = "Shark" }, { name = "Hwasin", slug = "hwasin" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Iris", slug = "iris" }, { name = "Justin" }, { name = "Light", slug = "light" }, { name = "NaDa", slug = "nada" }, { name = "UpMaGiC", slug = "upmagic" }]
 sources = ["https://liquipedia.net/starcraft/2007_Daum_OSL", "https://liquipedia.net/starcraft/2007_Daum_OSL/Elimination_Bracket", "https://liquipedia.net/starcraft/2007_Daum_OSL/Results_and_Standings_(Group_Stage_(Ro16))"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -31,7 +31,7 @@ matches = [
   { a = "sAviOr", a_slug = "savior", score_a = 1, b = "Iris", b_slug = "iris", score_b = 2, date = "2007-06-29" },
   { a = "Stork", a_slug = "stork", score_a = 2, b = "Reach", b_slug = "reach", score_b = 1, date = "2007-06-29" },
   { a = "Bisu", a_slug = "bisu", score_a = 0, b = "Flash", b_slug = "flash", score_b = 2, date = "2007-06-29" },
-  { a = "GGPlay", a_slug = "ggplay", score_a = 2, b = "Hwasin", score_b = 1, date = "2007-06-29" },
+  { a = "GGPlay", a_slug = "ggplay", score_a = 2, b = "Hwasin", b_slug = "hwasin", score_b = 1, date = "2007-06-29" },
 ]
 [[extra.bracket]]
 round = "Semifinals"

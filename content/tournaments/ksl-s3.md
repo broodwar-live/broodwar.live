@@ -21,7 +21,7 @@ semifinalists = [{ name = "Stork", slug = "stork" }, { name = "Snow", slug = "sn
 start_date = "2019-04-18"
 end_date = "2019-06-08"
 maps = [{ name = "Circuit Breakers", slug = "circuit-breaker" }, { name = "Colosseum II" }, { name = "Cross Game" }, { name = "Eddy", slug = "eddy" }, { name = "Fighting Spirit", slug = "fighting-spirit" }, { name = "Medusa" }, { name = "Overwatch", slug = "overwatch" }]
-participants = [{ name = "Rain", slug = "rain" }, { name = "Last", slug = "last" }, { name = "Soulkey", slug = "soulkey" }, { name = "Sharp", slug = "sharp" }, { name = "BeSt", slug = "best" }, { name = "Ample", slug = "ample" }, { name = "Action", slug = "action" }, { name = "Mini", slug = "mini" }, { name = "fOrGG" }, { name = "Jaedong", slug = "jaedong" }, { name = "Snow", slug = "snow" }, { name = "MIsO", slug = "miso" }, { name = "Stork", slug = "stork" }, { name = "Modesty", slug = "modesty" }, { name = "Shine", slug = "shine" }, { name = "ZerO", slug = "zero" }]
+participants = [{ name = "Rain", slug = "rain" }, { name = "Last", slug = "last" }, { name = "Soulkey", slug = "soulkey" }, { name = "Sharp", slug = "sharp" }, { name = "BeSt", slug = "best" }, { name = "Ample", slug = "ample" }, { name = "Action", slug = "action" }, { name = "Mini", slug = "mini" }, { name = "fOrGG", slug = "forgg" }, { name = "Jaedong", slug = "jaedong" }, { name = "Snow", slug = "snow" }, { name = "MIsO", slug = "miso" }, { name = "Stork", slug = "stork" }, { name = "Modesty", slug = "modesty" }, { name = "Shine", slug = "shine" }, { name = "ZerO", slug = "zero" }]
 sources = ["https://liquipedia.net/starcraft/2019_Korea_StarCraft_League_Season_3"]
 verified = "2026-10-11"
 [[extra.bracket]]

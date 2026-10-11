@@ -21,7 +21,7 @@ semifinalists = [{ name = "ZerO", slug = "zero" }, { name = "Stork", slug = "sto
 start_date = "2009-01-15"
 end_date = "2009-03-20"
 maps = [{ name = "Byzantium 2" }, { name = "Carthage" }, { name = "Destination", slug = "destination" }, { name = "Neo Harmony" }]
-participants = [{ name = "Bisu", slug = "bisu" }, { name = "firebathero", slug = "firebathero" }, { name = "YellOw(ArnC)" }, { name = "JangBi", slug = "jangbi" }, { name = "NaDa", slug = "nada" }, { name = "free", slug = "free" }, { name = "Kal" }, { name = "Stork", slug = "stork" }, { name = "Much", slug = "much" }, { name = "fOrGG" }, { name = "Jaedong", slug = "jaedong" }, { name = "Tempest", slug = "tempest" }, { name = "Flash", slug = "flash" }, { name = "sAviOr", slug = "savior" }, { name = "Doctor.K" }, { name = "Hwasin" }, { name = "ZerO", slug = "zero" }, { name = "Horang2", slug = "horang2" }, { name = "Canata", slug = "canata" }, { name = "maGma" }, { name = "Sea", slug = "sea" }, { name = "Luxury", slug = "luxury" }, { name = "UpMaGiC", slug = "upmagic" }, { name = "by.hero", slug = "hero" }, { name = "Fantasy", slug = "fantasy" }, { name = "Hyuk" }, { name = "FrOzean" }, { name = "Kwanro", slug = "kwanro" }, { name = "Iris", slug = "iris" }, { name = "RuBy" }, { name = "go.go" }, { name = "Leta", slug = "leta" }]
+participants = [{ name = "Bisu", slug = "bisu" }, { name = "firebathero", slug = "firebathero" }, { name = "YellOw[ArnC]", slug = "yellow-arnc" }, { name = "JangBi", slug = "jangbi" }, { name = "NaDa", slug = "nada" }, { name = "free", slug = "free" }, { name = "Kal", slug = "kal" }, { name = "Stork", slug = "stork" }, { name = "Much", slug = "much" }, { name = "fOrGG", slug = "forgg" }, { name = "Jaedong", slug = "jaedong" }, { name = "Tempest", slug = "tempest" }, { name = "Flash", slug = "flash" }, { name = "sAviOr", slug = "savior" }, { name = "Doctor.K" }, { name = "Hwasin", slug = "hwasin" }, { name = "ZerO", slug = "zero" }, { name = "Horang2", slug = "horang2" }, { name = "Canata", slug = "canata" }, { name = "maGma" }, { name = "Sea", slug = "sea" }, { name = "Luxury", slug = "luxury" }, { name = "UpMaGiC", slug = "upmagic" }, { name = "by.hero", slug = "hero" }, { name = "Fantasy", slug = "fantasy" }, { name = "Hyuk", slug = "hyuk" }, { name = "FrOzen", slug = "frozen" }, { name = "Kwanro", slug = "kwanro" }, { name = "Iris", slug = "iris" }, { name = "RuBy", slug = "ruby" }, { name = "go.go", slug = "go-go" }, { name = "Leta", slug = "leta" }]
 sources = ["https://liquipedia.net/starcraft/2009_Lost_Saga_MSL", "https://liquipedia.net/starcraft/2009_Lost_Saga_MSL/Round_of_16"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -29,13 +29,13 @@ round = "Round of 16"
 best_of = 3
 matches = [
   { a = "sAviOr", a_slug = "savior", score_a = 2, b = "UpMaGiC", b_slug = "upmagic", score_b = 1, date = "2009-02-19" },
-  { a = "ZerO", a_slug = "zero", score_a = 2, b = "YellOw(ArnC)", score_b = 1, date = "2009-02-21" },
+  { a = "ZerO", a_slug = "zero", score_a = 2, b = "YellOw[ArnC]", b_slug = "yellow-arnc", score_b = 1, date = "2009-02-21" },
   { a = "Leta", a_slug = "leta", score_a = 2, b = "Flash", b_slug = "flash", score_b = 1, date = "2009-02-19" },
-  { a = "Hwasin", score_a = 1, b = "Luxury", b_slug = "luxury", score_b = 2, date = "2009-02-19" },
+  { a = "Hwasin", a_slug = "hwasin", score_a = 1, b = "Luxury", b_slug = "luxury", score_b = 2, date = "2009-02-19" },
   { a = "Stork", a_slug = "stork", score_a = 2, b = "Kwanro", b_slug = "kwanro", score_b = 1, date = "2009-02-21" },
-  { a = "fOrGG", score_a = 2, b = "free", b_slug = "free", score_b = 1, date = "2009-02-21" },
+  { a = "fOrGG", a_slug = "forgg", score_a = 2, b = "free", b_slug = "free", score_b = 1, date = "2009-02-21" },
   { a = "Tempest", a_slug = "tempest", score_a = 1, b = "NaDa", b_slug = "nada", score_b = 2, date = "2009-02-19" },
-  { a = "FrOzean", score_a = 0, b = "JangBi", b_slug = "jangbi", score_b = 2, date = "2009-02-21" },
+  { a = "FrOzen", a_slug = "frozen", score_a = 0, b = "JangBi", b_slug = "jangbi", score_b = 2, date = "2009-02-21" },
 ]
 [[extra.bracket]]
 round = "Quarterfinals"
@@ -43,7 +43,7 @@ best_of = 5
 matches = [
   { a = "sAviOr", a_slug = "savior", score_a = 1, b = "ZerO", b_slug = "zero", score_b = 3, date = "2009-02-26" },
   { a = "Leta", a_slug = "leta", score_a = 2, b = "Luxury", b_slug = "luxury", score_b = 3, date = "2009-02-28" },
-  { a = "Stork", a_slug = "stork", score_a = 3, b = "fOrGG", score_b = 0, date = "2009-03-07" },
+  { a = "Stork", a_slug = "stork", score_a = 3, b = "fOrGG", b_slug = "forgg", score_b = 0, date = "2009-03-07" },
   { a = "NaDa", a_slug = "nada", score_a = 2, b = "JangBi", b_slug = "jangbi", score_b = 3, date = "2009-03-05" },
 ]
 [[extra.bracket]]

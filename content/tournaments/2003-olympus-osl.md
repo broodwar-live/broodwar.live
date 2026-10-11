@@ -14,13 +14,14 @@ prize_pool = "₩45,000,000"
 champion = "XellOs"
 champion_slug = "xellos"
 runner_up = "YellOw"
+runner_up_slug = "yellow"
 final_score = "3–2"
 final_date = "2003-07-13"
 semifinalists = [{ name = "BoxeR", slug = "boxer" }, { name = "Junwi" }]
 start_date = "2003-04-04"
 end_date = "2003-07-13"
 maps = [{ name = "Guillotine" }, { name = "Neo Bifrost" }, { name = "Nostalgia", slug = "nostalgia" }, { name = "Sin Gaema Gowon" }]
-participants = [{ name = "fOru" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa" }, { name = "Kingdom" }, { name = "ElkY" }, { name = "H.O.T-Forever" }, { name = "Zeus" }, { name = "kOs" }, { name = "JinSu" }, { name = "Lee" }, { name = "Junwi" }, { name = "NaDa", slug = "nada" }, { name = "MuMyung" }, { name = "XellOs", slug = "xellos" }, { name = "TheWinD" }, { name = "YellOw" }]
+participants = [{ name = "fOru" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa", slug = "chojja" }, { name = "Kingdom", slug = "kingdom" }, { name = "ElkY" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Zeus", slug = "zeus" }, { name = "kOs" }, { name = "JinSu" }, { name = "Lee" }, { name = "Junwi" }, { name = "NaDa", slug = "nada" }, { name = "MuMyung", slug = "mumyung" }, { name = "XellOs", slug = "xellos" }, { name = "TheWinD" }, { name = "YellOw", slug = "yellow" }]
 sources = ["https://liquipedia.net/starcraft/2003_Olympus_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -28,13 +29,13 @@ round = "Semifinals"
 best_of = 5
 matches = [
   { a = "XellOs", a_slug = "xellos", score_a = 3, b = "BoxeR", b_slug = "boxer", score_b = 0 },
-  { a = "Junwi", score_a = 0, b = "YellOw", score_b = 3 },
+  { a = "Junwi", score_a = 0, b = "YellOw", b_slug = "yellow", score_b = 3 },
 ]
 [[extra.bracket]]
 round = "Finals"
 best_of = 5
 matches = [
-  { a = "XellOs", a_slug = "xellos", score_a = 3, b = "YellOw", score_b = 2 },
+  { a = "XellOs", a_slug = "xellos", score_a = 3, b = "YellOw", b_slug = "yellow", score_b = 2 },
 ]
 +++
 XellOs won the 2003 Olympus OSL, defeating YellOw 3–2 in the final on 13 July 2003. BoxeR and Junwi went out in the semifinals.

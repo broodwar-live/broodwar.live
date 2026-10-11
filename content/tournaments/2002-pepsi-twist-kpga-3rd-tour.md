@@ -17,25 +17,25 @@ runner_up = "Reach"
 runner_up_slug = "reach"
 final_score = "3–0"
 final_date = "2002-10-05"
-semifinalists = [{ name = "ChRh" }, { name = "BoxeR", slug = "boxer" }]
+semifinalists = [{ name = "ChRh", slug = "chrh" }, { name = "BoxeR", slug = "boxer" }]
 start_date = "2002-07-04"
 end_date = "2002-10-05"
 maps = [{ name = "Plains to Hill" }, { name = "River of Flames" }, { name = "Blade Storm" }, { name = "Indian Lament 2" }, { name = "Lost Temple KPGA" }]
-participants = [{ name = "EJi" }, { name = "BoxeR", slug = "boxer" }, { name = "H.O.T-Forever" }, { name = "GARIMTO" }, { name = "ChRh" }, { name = "JinSu" }, { name = "RainBOw" }, { name = "Lee" }, { name = "Side" }, { name = "Reach", slug = "reach" }, { name = "NaDa", slug = "nada" }, { name = "sigamari" }, { name = "SONJJANG" }, { name = "Sync" }, { name = "YellOw" }, { name = "Zeus" }]
+participants = [{ name = "EJi" }, { name = "BoxeR", slug = "boxer" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "GARIMTO", slug = "garimto" }, { name = "ChRh", slug = "chrh" }, { name = "JinSu" }, { name = "RainBOw" }, { name = "Lee" }, { name = "Side" }, { name = "Reach", slug = "reach" }, { name = "NaDa", slug = "nada" }, { name = "sigamari" }, { name = "SONJJANG" }, { name = "Sync", slug = "sync" }, { name = "YellOw", slug = "yellow" }, { name = "Zeus", slug = "zeus" }]
 sources = ["https://liquipedia.net/starcraft/2002_Pepsi_Twist_KPGA_3rd_Tour"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Quarterfinals"
 best_of = 3
 matches = [
-  { a = "Zeus", score_a = 1, b = "ChRh", score_b = 2 },
-  { a = "Reach", a_slug = "reach", score_a = 2, b = "YellOw", score_b = 0 },
+  { a = "Zeus", a_slug = "zeus", score_a = 1, b = "ChRh", b_slug = "chrh", score_b = 2 },
+  { a = "Reach", a_slug = "reach", score_a = 2, b = "YellOw", b_slug = "yellow", score_b = 0 },
 ]
 [[extra.bracket]]
 round = "Semifinals"
 best_of = 3
 matches = [
-  { a = "NaDa", a_slug = "nada", score_a = 2, b = "ChRh", score_b = 0 },
+  { a = "NaDa", a_slug = "nada", score_a = 2, b = "ChRh", b_slug = "chrh", score_b = 0 },
   { a = "BoxeR", a_slug = "boxer", score_a = 1, b = "Reach", b_slug = "reach", score_b = 2 },
 ]
 [[extra.bracket]]

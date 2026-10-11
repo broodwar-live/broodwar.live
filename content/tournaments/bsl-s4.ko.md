@@ -30,7 +30,7 @@ matches = [
   { a = "Dandy", a_slug = "dandy", score_a = 3, b = "trutaCz", b_slug = "trutacz", score_b = 2, date = "2018-05-26" },
   { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "Naugrim", score_b = 2, date = "2018-05-26" },
   { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "Kare", score_b = 0, date = "2018-06-02" },
-  { a = "kogeT", a_slug = "koget", score_a = 3, b = "TerrOr", score_b = 2, date = "2018-06-02" },
+  { a = "kogeT", a_slug = "koget", score_a = 3, b = "TerrOr", b_slug = "terror-peru", score_b = 2, date = "2018-06-02" },
 ]
 [[extra.bracket]]
 round = "4강"

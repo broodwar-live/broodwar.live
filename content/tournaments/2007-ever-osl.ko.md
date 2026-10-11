@@ -21,14 +21,14 @@ semifinalists = [{ name = "UpMaGiC", slug = "upmagic" }, { name = "Bisu", slug =
 start_date = "2007-09-28"
 end_date = "2007-12-22"
 maps = [{ name = "Blue Storm", slug = "blue-storm" }, { name = "Fantasy II" }, { name = "Katrina", slug = "katrina" }, { name = "Persona", slug = "persona" }]
-participants = [{ name = "Bisu", slug = "bisu" }, { name = "DarkElf" }, { name = "GGPlay", slug = "ggplay" }, { name = "Rock" }, { name = "Flash", slug = "flash" }, { name = "Jaedong", slug = "jaedong" }, { name = "Stork", slug = "stork" }, { name = "FrOzen", slug = "frozen" }, { name = "July", slug = "july" }, { name = "Hwasin" }, { name = "sAviOr", slug = "savior" }, { name = "Iris", slug = "iris" }, { name = "Light", slug = "light" }, { name = "NaDa", slug = "nada" }, { name = "Shudder" }, { name = "UpMaGiC", slug = "upmagic" }]
+participants = [{ name = "Bisu", slug = "bisu" }, { name = "DarkElf" }, { name = "GGPlay", slug = "ggplay" }, { name = "Rock", slug = "rock" }, { name = "Flash", slug = "flash" }, { name = "Jaedong", slug = "jaedong" }, { name = "Stork", slug = "stork" }, { name = "FrOzen", slug = "frozen" }, { name = "July", slug = "july" }, { name = "Hwasin", slug = "hwasin" }, { name = "sAviOr", slug = "savior" }, { name = "Iris", slug = "iris" }, { name = "Light", slug = "light" }, { name = "NaDa", slug = "nada" }, { name = "Shudder" }, { name = "UpMaGiC", slug = "upmagic" }]
 sources = ["https://liquipedia.net/starcraft/2007_EVER_OSL", "https://liquipedia.net/starcraft/2007_EVER_OSL/Elimination_Bracket", "https://liquipedia.net/starcraft/2007_EVER_OSL/Ro16"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "8강"
 best_of = 3
 matches = [
-  { a = "UpMaGiC", a_slug = "upmagic", score_a = 2, b = "Hwasin", score_b = 1, date = "2007-11-30" },
+  { a = "UpMaGiC", a_slug = "upmagic", score_a = 2, b = "Hwasin", b_slug = "hwasin", score_b = 1, date = "2007-11-30" },
   { a = "Light", a_slug = "light", score_a = 1, b = "Jaedong", b_slug = "jaedong", score_b = 2, date = "2007-11-30" },
   { a = "sAviOr", a_slug = "savior", score_a = 1, b = "Bisu", b_slug = "bisu", score_b = 2, date = "2007-11-30" },
   { a = "Stork", a_slug = "stork", score_a = 2, b = "Flash", b_slug = "flash", score_b = 1, date = "2007-11-30" },
