@@ -20,7 +20,8 @@ winner_slug = "light"
 runner_up = "Rain"
 runner_up_slug = "rain"
 score = "4–2"
-prize_pool = ""
+final_date = "2019-11-29"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 3
 year = 2019
@@ -30,7 +31,8 @@ winner_slug = "rain"
 runner_up = "Mini"
 runner_up_slug = "mini"
 score = "4–1"
-prize_pool = ""
+final_date = "2019-06-08"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 2
 year = 2018
@@ -40,7 +42,8 @@ winner_slug = "soulkey"
 runner_up = "Sharp"
 runner_up_slug = "sharp"
 score = "4–1"
-prize_pool = ""
+final_date = "2018-12-15"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 1
 year = 2018
@@ -50,7 +53,8 @@ winner_slug = "last"
 runner_up = "Jaedong"
 runner_up_slug = "jaedong"
 score = "4–0"
-prize_pool = ""
+final_date = "2018-09-08"
+prize_pool = "₩80,000,000"
 +++
 The Korea StarCraft League (KSL) was an individual StarCraft: Remastered league run by Blizzard itself, held in parallel with the ASL. It ran for four seasons in 2018 and 2019. In March 2020, after AfreecaTV and Blizzard signed an exclusive broadcasting agreement, the league was not continued.
 
