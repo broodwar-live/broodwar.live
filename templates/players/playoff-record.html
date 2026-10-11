@@ -113,16 +113,18 @@
           <th scope="col" data-sort="num" class="text-right">{{ t.rec_series }}</th>
           <th scope="col" data-sort="num" class="text-right">{{ t.rec_games }}</th>
           {% if has_tl %}<th scope="col" data-sort="num" class="text-right"><abbr title="{{ t.tl_h2h_col_title }}" class="no-underline">{{ t.tl_h2h_col }}</abbr></th>{% endif %}
+          <th scope="col"><span class="sr-only">{{ t.cmp_nav }}</span></th>
         </tr>
       </thead>
       <tbody>
         {% for h in h2h %}
-        <tr data-opp="{{ h.o }}">
+        <tr data-opp="{{ h.o }}" data-h2h="{{ h.w }}-{{ h.l }} {{ h.gw }}-{{ h.gl }} {{ h.tw }}-{{ h.tl }}">
           <td class="text-sm min-w-0" data-sort-value="{{ h.on }}">{% set pc_name = h.on %}{% set pc_slug = h.os %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}</td>
           <td class="font-stats text-sm text-right" data-sort-value="{{ h.n }}">{% if h.n > 0 %}{{ h.n }}{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>
           <td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{% if h.w + h.l > 0 %}{{ h.w * 1000 / (h.w + h.l) + h.n }}{% else %}0{% endif %}">{% if h.n == 0 %}<span class="text-base-content/60">–</span>{% elif h.os %}<a href="?vs={{ h.os }}#player-matches" class="text-primary hover:underline" title="{{ t.rec_h2h_link | replace(from='{name}', to=h.on) }}">{{ h.w }}–{{ h.l }}</a>{% else %}{{ h.w }}–{{ h.l }}{% endif %}</td>
           <td class="font-stats text-sm text-right whitespace-nowrap text-base-content/70" data-sort-value="{% if h.gw + h.gl > 0 %}{{ h.gw * 1000 / (h.gw + h.gl) }}{% else %}0{% endif %}">{% if h.n > 0 %}{{ h.gw }}–{{ h.gl }}{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>
           {% if has_tl %}<td class="font-stats text-sm text-right whitespace-nowrap" data-sort-value="{% if h.tw + h.tl > 0 %}{{ h.tw * 1000 / (h.tw + h.tl) + h.tw + h.tl }}{% else %}-1{% endif %}">{% if h.tw + h.tl > 0 %}<a href="#player-tl-sets" class="text-primary hover:underline">{{ h.tw }}–{{ h.tl }}</a>{% else %}<span class="text-base-content/60">–</span>{% endif %}</td>{% endif %}
+          <td class="text-right whitespace-nowrap">{% if h.os %}<a href="{{ lp }}/compare/?a={{ page.slug }}&amp;b={{ h.os }}" class="text-xs text-primary hover:underline" title="{{ t.cmp_compare_title | replace(from='{a}', to=page.title) | replace(from='{b}', to=h.on) }}">{{ t.cmp_compare_link }}</a>{% endif %}</td>
         </tr>
         {% endfor %}
       </tbody>
