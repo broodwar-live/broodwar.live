@@ -128,6 +128,20 @@ keep descriptive Korean names, which Korean fans also know from SC2.
 | shields | 실드 | 보호막 |
 | control group | 부대 지정 | |
 | build order | 빌드 오더 | |
+| bio (marine/medic play) | 바이오닉 (마린+메딕: 마메) | 보병 |
+| cheese / all-in build | 날빌 (all-in: 올인) | 치즈 |
+| hard counter | 천적 | 하드 카운터 |
+| contain | 조이기 | |
+| creep | 크립 | 점막 |
+| detector | 디텍터 | 탐지기 |
+| FFE (Forge Fast Expand) | 포지 더블 | |
+| 1 Gate FE / 12 Hatch / 14 CC | 1게이트 더블넥 / 12앞마당 / 노배럭 더블 | Build titles use Korean community names; the English name stays searchable via the EN twin page. |
+| Pneumatized Carapace | 뉴머타이즈드 카라페이스 (오버로드 속업) | |
+| Charon Boosters | 카론 부스터 (골리앗 사업) | 차론 |
+| Maelstrom | 메일스트롬 | 멜스트롬 |
+| Irradiate | 이래디에이트 | 이레디에이트 |
+| Stasis Field | 스테이시스 필드 | 스태시스 |
+| Liquipedia | 리퀴피디아 | |
 | individual league (OSL/MSL/ASL) | 개인리그 | |
 | final | 결승 | |
 | champion / runner-up | 우승 / 준우승 | |
@@ -138,5 +152,7 @@ keep descriptive Korean names, which Korean fans also know from SC2.
   transliteration (`러커 어스펙트`) is rare.
 - **Remastered official upgrade names** were not verified against a Korean
   client; only Archon's official name is cited on its page.
+- **바이오닉 vs 바이오**, **날빌** for cheese, **포지 더블** vs 포지 더블넥 for FFE,
+  and the new Korean build titles (메카닉 FD, 팩더블, SK테란) should be checked.
 - **시즈탱크 vs 시즈 탱크:** Namuwiki titles the article with a space; press and
   casters write it solid. We chose solid.

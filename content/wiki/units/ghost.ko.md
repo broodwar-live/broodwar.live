@@ -32,7 +32,7 @@ upgrades = ["infantry-weapons", "infantry-armor"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-고스트는 아카데미와 사이언스 퍼실리티의 애드온 코버트 옵스가 필요한 배럭 보병이다. 진동형 공격은 평범하지만 클로킹, 락다운, 핵 공격이 진짜 가치다.
+고스트는 아카데미와 사이언스 퍼실리티의 애드온 코버트 옵스가 필요한 배럭 보병이다. 진동형 공격은 평범하고, 진짜 가치는 클로킹·락다운·핵 공격에 있다.
 
 ## 저그전
 
@@ -44,7 +44,7 @@ verified = "2026-10-11"
 
 ## 프로토스전
 
-락다운은 드라군, 리버, 셔틀, 캐리어, 아비터 같은 프로토스 기계 유닛에 통하므로, 후반 캐리어·아비터 상대로 틈새 역할을 한다.
+락다운은 드라군, 리버, 셔틀, 캐리어, 아비터 같은 프로토스 기계 유닛에 통하므로, 후반 캐리어·아비터를 상대하는 특수 카드로 쓰인다.
 
 ## 주요 메커니즘
 

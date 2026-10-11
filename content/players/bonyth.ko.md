@@ -1,6 +1,6 @@
 +++
 title = "Bonyth"
-description = "Bonyth(Tomasz Kamiński) — 폴란드의 프로토스 선수."
+description = "Bonyth(Tomasz Kamiński)는 폴란드의 프로토스 선수다."
 slug = "bonyth"
 template = "players/player.html"
 [taxonomies]
@@ -31,6 +31,6 @@ name = "irk"
 from = "2024-12-30"
 to = "present"
 +++
-Bonyth(Tomasz Kamiński)는 폴란드의 프로토스 플레이어로, 한국 외 지역 최강급 선수 중 한 명으로 꼽힌다. BSL 시즌 8부터 11까지 우승했고, 그 밖의 여러 BSL 시즌에서도 3위 안에 들었다. 2019년 모스크바에서 열린 RCG 2019 Corrupted Cup 우승, AMD Red League와 Deathfate Pro League 2 우승 등의 성적도 있다.
+Bonyth(Tomasz Kamiński)는 폴란드의 프로토스 선수로, 한국 밖에서 손꼽히는 최강자 가운데 한 명이다. BSL 시즌 8부터 11까지 우승했고, 다른 여러 BSL 시즌에서도 3위 안에 들었다. 2019년 모스크바에서 열린 RCG 2019 Corrupted Cup 우승, AMD Red League와 Deathfate Pro League 2 우승 같은 성적도 거뒀다.
 
 SouLGaming과 StarCastTV Stars를 거쳐 2024년 말 iRk에 합류했다.

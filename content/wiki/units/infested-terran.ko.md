@@ -1,6 +1,6 @@
 +++
 title = "인페스티드 테란"
-description = "인페스티드 테란은 인페스티드 커맨드 센터에서 생산하는 저그 자폭 유닛으로, 폭발하며 범위에 500의 피해를 준다."
+description = "인페스티드 테란은 인페스티드 커맨드 센터에서 생산하는 저그 자폭 유닛으로, 터지면서 주변에 500의 범위 피해를 준다."
 slug = "infested-terran"
 template = "wiki/unit.html"
 [taxonomies]
@@ -32,11 +32,11 @@ upgrades = ["carapace"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-인페스티드 테란은 인페스티드 커맨드 센터에서만 생산할 수 있다. 인페스티드 커맨드 센터는 퀸이 체력이 절반 이하인 테란 커맨드 센터를 감염시켜 얻는다. 대상에게 달려가 폭발해 강력한 범위 피해를 준다.
+인페스티드 테란은 인페스티드 커맨드 센터에서만 생산할 수 있다. 인페스티드 커맨드 센터는 체력이 절반 이하로 떨어진 테란 커맨드 센터를 퀸이 감염시켜 얻는다. 대상에게 달려가 폭발해 강력한 범위 피해를 준다.
 
-## 경쟁전에서의 역할
+## 실전에서의 역할
 
-상대가 테란이어야 하고, 손상된 커맨드 센터가 감염되도록 내버려 두어야 하므로 경쟁전에서는 거의 볼 수 없다. 전략적 선택지라기보다 진기한 유닛이다.
+상대가 테란이고, 그 테란이 부서진 커맨드 센터를 감염되도록 내버려 둬야 하므로 프로 경기에서는 거의 볼 수 없다. 전략이라기보다 보기 드문 볼거리에 가깝다.
 
 ## 주요 메커니즘
 

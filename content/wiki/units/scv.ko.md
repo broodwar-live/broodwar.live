@@ -33,7 +33,7 @@ upgrades = ["infantry-armor"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-SCV는 테란의 일꾼이다. 미네랄과 가스를 캐고, 모든 테란 건물을 지으며, 기계 유닛과 건물을 자원을 들여 수리할 수 있다. 드론과 달리 건물을 지어도 사라지지 않고, 건물이 완성될 때까지 건설에 묶인다.
+SCV는 테란의 일꾼이다. 미네랄과 가스를 캐고, 모든 테란 건물을 지으며, 자원을 들여 기계 유닛과 건물을 수리할 수 있다. 드론과 달리 건물을 지어도 사라지지 않고, 건물이 완성될 때까지 건설에 묶인다.
 
 ## 모든 종족전
 

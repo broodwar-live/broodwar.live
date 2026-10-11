@@ -1,6 +1,6 @@
 +++
 title = "저그"
-description = "해처리가 만드는 라바에서 유닛이 태어나는 군락 종족, 저그 개요."
+description = "저그 개요: 해처리의 라바에서 모든 유닛이 태어나는 군단 종족."
 slug = "zerg"
 template = "wiki/race.html"
 [taxonomies]
@@ -14,11 +14,11 @@ weaknesses = ["건물을 지을 때마다 드론이 소모된다", "대부분의
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Larva_(Unit)", "https://liquipedia.net/starcraft/Hatchery", "https://liquipedia.net/starcraft/Overlord", "https://liquipedia.net/starcraft/Jaedong", "https://liquipedia.net/starcraft/SAviOr", "https://liquipedia.net/starcraft/July", "https://liquipedia.net/starcraft/EffOrt", "https://liquipedia.net/starcraft/Soulkey"]
 verified = "2026-10-11"
 +++
-저그는 곤충형 군단이다. 브루드워에서 저그 유닛은 모두 생체 유닛이라 이래디에이트나 메일스트롬 같은 마법에 취약하며, 종족 전체가 라바 기반 생산과 점막을 중심으로 돌아간다.
+저그는 곤충을 닮은 외계 생명체 군단이다. 브루드워에서 저그 유닛은 모두 생체 유닛이라 이래디에이트나 메일스트롬 같은 마법에 취약하며, 종족 전체가 라바 기반 생산과 점막을 중심으로 돌아간다.
 
 ## 건설과 경제
 
-해처리, 레어, 하이브는 각각 라바를 최대 3개까지 가지며 약 342프레임마다 하나씩 새로 만든다. 라바는 대부분의 저그 유닛으로 변태하며, 러커·가디언·디바우러는 각각 히드라리스크와 뮤탈리스크에서 변태한다. 드론은 자신이 짓는 건물이 되며, 해처리와 익스트랙터를 제외한 모든 건물은 점막 위에 지어야 한다. 오버로드는 하나당 인구수 8(해처리는 1)을 제공하고, 은폐 유닛을 탐지하며, 벤트럴 색 연구 후에는 유닛을 수송할 수 있다.
+해처리, 레어, 하이브는 각각 라바를 최대 3개까지 가지며 약 342프레임마다 하나씩 새로 만든다. 라바는 대부분의 저그 유닛으로 변태하며, 러커·가디언·디바우러는 각각 히드라리스크와 뮤탈리스크에서 변태한다. 드론은 건물을 지으면 그 건물로 변태하며, 해처리와 익스트랙터를 제외한 모든 건물은 점막 위에 지어야 한다. 오버로드는 하나당 인구수 8(해처리는 1)을 제공하고, 클로킹 유닛을 탐지하며, 벤트럴 색 연구 후에는 유닛을 수송할 수 있다.
 
 ## 핵심 유닛
 
@@ -32,7 +32,7 @@ verified = "2026-10-11"
 
 ## 프로 경기에서
 
-저그는 보통 일찍 확장하고 라바를 위해 해처리를 추가한다. 저테전에서는 뮤탈리스크에서 러커와 디파일러로 넘어가며, 다크 스웜으로 마린과 시즈탱크를 상대하는 경우가 많다. 저프전에서는 히드라리스크, 러커, 이후 디파일러로 질럿·드라군·템플러 병력을 상대한다. 저저전은 저글링과 뮤탈리스크가 지배하며 후반까지 가는 경우가 드물다.
+저그는 보통 앞마당을 일찍 가져가고, 라바를 늘리려고 해처리를 추가한다. 저테전에서는 뮤탈리스크에서 러커와 디파일러로 넘어가며, 다크 스웜으로 마린과 시즈탱크를 상대하는 경우가 많다. 저프전에서는 히드라리스크, 러커, 이후 디파일러로 질럿·드라군·템플러 병력을 상대한다. 저저전은 저글링과 뮤탈리스크 싸움이 중심이며 후반까지 가는 경우가 드물다.
 
 ## 대표 선수
 

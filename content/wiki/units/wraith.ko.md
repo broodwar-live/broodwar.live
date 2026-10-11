@@ -32,7 +32,7 @@ upgrades = ["cloaking-field", "ship-weapons", "ship-plating"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-레이스는 스타포트의 기본 전투 비행선이다. 제미니 미사일은 공중 대상에게 폭발형 피해 20을, 버스트 레이저는 지상 대상에게 일반형 피해 8을 준다. 컨트롤 타워에서 클로킹을 연구하면 에너지를 소모해 투명해질 수 있다.
+레이스는 스타포트의 기본 전투 비행선이다. 제미니 미사일은 공중 대상에게 폭발형 피해 20을, 버스트 레이저는 지상 대상에게 일반형 피해 8을 준다. 컨트롤 타워에서 클로킹을 연구하면 에너지를 써서 클로킹할 수 있다.
 
 ## 저그전
 
@@ -40,7 +40,7 @@ verified = "2026-10-11"
 
 ## 테란전
 
-클로킹 레이스를 포함한 레이스 빌드는 테란전에서 알려진 전략으로, 상대에게 미사일 터렛, 컴샛 스테이션 스캔, 골리앗 투자를 강요한다.
+클로킹 레이스를 앞세운 레이스 빌드는 테란전에서 잘 알려진 전략으로, 상대가 미사일 터렛, 컴샛 스테이션 스캔, 골리앗에 자원을 쓰게 만든다.
 
 ## 프로토스전
 

@@ -1,6 +1,6 @@
 +++
 title = "Terror"
-description = "Terror(이예준) — 한국의 저그 선수."
+description = "Terror(이예준)는 한국의 저그 선수다."
 slug = "terror"
 template = "players/player.html"
 [taxonomies]
@@ -25,4 +25,4 @@ slug = "stx-soul"
 from = "2006-08-21"
 to = "2008"
 +++
-Terror(이예준)는 한국의 저그 전 프로게이머로, 2006년부터 2008년까지 STX SouL에서 활동했다. 이후 아프리카에서 인기 BJ로 활동했으며, 제1회 소닉TV BJ 스타리그 결승에서 Minus)Eagle을 4대1로 꺾고 우승했다. 아프리카TV 스타리그 2 본선에 진출했으나 조별 리그에서 탈락했고, Terror TEMPTS 스타리그와 Terror's BJ 스타리그를 주최했다.
+Terror(이예준)는 대한민국의 전 저그 프로게이머로, 2006년부터 2008년까지 STX SouL에서 활동했다. 이후 아프리카TV의 인기 BJ로 활동했으며, 제1회 소닉TV BJ 스타리그 결승에서 Minus)Eagle을 4:1로 꺾고 우승했다. 아프리카TV 스타리그 2 본선에 올랐으나 조별 리그에서 탈락했고, Terror TEMPTS 스타리그와 Terror's BJ 스타리그를 주최했다.

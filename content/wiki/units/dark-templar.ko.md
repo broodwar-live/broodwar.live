@@ -1,6 +1,6 @@
 +++
 title = "다크 템플러"
-description = "다크 템플러는 브루드 워에서 추가된 영구 은폐 프로토스 근접 유닛으로, 템플러 아카이브 이후 게이트웨이에서 생산한다."
+description = "다크 템플러는 브루드 워에서 추가된 프로토스 근접 유닛으로, 항상 클로킹 상태이며 템플러 아카이브를 지으면 게이트웨이에서 뽑을 수 있다."
 slug = "dark-templar"
 template = "wiki/unit.html"
 [taxonomies]
@@ -32,7 +32,7 @@ upgrades = ["ground-weapons", "ground-armor", "plasma-shields"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-다크 템플러는 브루드 워에서 추가되었다. 템플러 아카이브 완성 후 게이트웨이에서 생산하며, 영구적으로 은폐되어 있어 디텍터가 있어야 보고 공격할 수 있다. 워프 블레이드는 타격당 일반형 피해 40을 준다.
+다크 템플러는 브루드 워에서 추가되었다. 템플러 아카이브 완성 후 게이트웨이에서 생산하며, 항상 클로킹 상태라 디텍터가 있어야 보고 공격할 수 있다. 워프 블레이드는 타격당 일반형 피해 40을 준다.
 
 ## 테란전
 
@@ -40,7 +40,7 @@ verified = "2026-10-11"
 
 ## 프로토스전
 
-다크 템플러 공격은 프로토스전에서 흔한 위협이어서 포톤 캐논이나 옵저버를 제때 준비해야 한다.
+프로토스전에서는 다크 템플러 공격이 흔한 위협이라 포톤 캐논이나 옵저버를 제때 준비해야 한다.
 
 ## 저그전
 
@@ -49,5 +49,5 @@ verified = "2026-10-11"
 ## 주요 메커니즘
 
 - 일반형 피해 40, 쿨다운 30프레임, 근접
-- 영구 은폐, 에너지 불필요
+- 항상 클로킹 상태(에너지 소모 없음)
 - 체력 80, 실드 40, 기본 방어력 1, 소형

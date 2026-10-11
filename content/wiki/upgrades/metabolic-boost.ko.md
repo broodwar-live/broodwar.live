@@ -17,6 +17,6 @@ affects = ["zergling"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
 verified = "2026-10-11"
 +++
-메타볼릭 부스트는 저글링의 이동 속도를 올려 게임에서 가장 빠른 지상 유닛 중 하나로 만든다. 스포닝 풀만 있으면 연구할 수 있고 저글링에게만 적용된다.
+메타볼릭 부스트는 저글링의 이동 속도를 올려, 게임에서 손꼽히게 빠른 지상 유닛으로 만든다. 스포닝 풀만 있으면 연구할 수 있고 저글링에게만 적용된다. 흔히 '저글링 발업' 또는 줄여서 '발업'이라고 부른다.
 
-저그가 저글링을 쓰는 거의 모든 경기에서 연구하며, 보통 처음 모은 가스 100으로 시작한다.
+저글링을 쓰는 경기라면 거의 예외 없이 연구하며, 보통 처음 캔 가스 100으로 바로 시작한다.

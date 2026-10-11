@@ -1,6 +1,6 @@
 +++
 title = "Sync"
-description = "Sync(변길섭) — 한국의 테란 선수."
+description = "Sync(변길섭)는 한국의 테란 프로게이머다."
 slug = "sync"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,6 @@ slug = "kt-rolster"
 from = "2003-12"
 to = "2008-01"
 +++
-Sync(변길섭)는 1984년생 한국의 테란 선수로, 한빛 스타즈, KTF 매직엔스에서 활동했다. 한빛 스타즈에서 데뷔해 2002 NATE 스타리그 결승에서 [강도경(H.O.T-Forever)](/ko/players/hot-forever/)을 3:1로 꺾고 우승했다. 이후 [박정석(Reach)](/ko/players/reach/)과 함께 KTF 매직엔스로 이적했다.
+Sync(변길섭)는 1984년생 대한민국의 테란 프로게이머로, 한빛 스타즈와 KTF 매직엔스에서 활동했다. 한빛 스타즈에서 데뷔해 2002 NATE 스타리그 결승에서 [H.O.T-Forever(강도경)](/ko/players/hot-forever/)를 3:1로 꺾고 우승했다. 이후 [Reach(박정석)](/ko/players/reach/)와 함께 KTF 매직엔스로 이적했다.
 
 broodwar.live에 수록된 시즌 가운데 [2002 NATE OSL](/ko/tournaments/2002-nate-osl/)에서 우승했다.
