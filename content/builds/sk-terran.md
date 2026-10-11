@@ -10,11 +10,46 @@ tags = ["standard", "hybrid", "versatile"]
 [extra]
 race = "terran"
 matchup = "TvZ"
-games = 298
-winrate = 52
+sources = ["https://liquipedia.net/starcraft/SK_Terran", "https://liquipedia.net/starcraft/1_Rax_FE_(vs._Zerg)"]
+unverified = true
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "11/18"
+item = "buildings/barracks"
+note = "SCV scouts"
+[[extra.steps]]
+supply = "15-18"
+item = "buildings/command-center"
+note = "At natural expansion"
+[[extra.steps]]
+supply = ""
+item = "buildings/barracks"
+note = "Add Barracks to spend income"
+[[extra.steps]]
+supply = ""
+item = "buildings/academy"
+[[extra.steps]]
+supply = ""
+item = "units/medic"
+[[extra.steps]]
+supply = ""
+item = "buildings/engineering-bay"
+note = "Early Engineering Bays for infantry upgrades"
+[[extra.steps]]
+supply = ""
+item = "buildings/starport"
+note = "Second Starport early"
+[[extra.steps]]
+supply = ""
+item = "buildings/science-facility"
+[[extra.steps]]
+supply = ""
+item = "units/science-vessel"
 +++
-Named after the SK Telecom T1 team's signature style, this is a 1/1/1 opening — one barracks, one factory, one starport — giving simultaneous access to all tech paths. It is the most versatile TvZ opening in competitive play. A wraith provides early harassment and scouting, a siege tank anchors defense, and marines handle anti-air duties.
+SK Terran is best described as tank-less TvZ: a mid/late-game style built on large, mobile squads of Marines and Medics with an ever-increasing number of Science Vessels for Irradiate and Defensive Matrix. The name comes from an early Terran player known as SoulKey (not the later Zerg pro of the same ID), one of the first to use it regularly, and players such as [NaDa](@/players/nada.md) helped popularize it.
 
-The key decision point comes after the initial 1/1/1 setup: you can transition into bio with medics and infantry upgrades, commit to mech with additional factories, or mix both depending on what you scout. Build a comsat station early to track lurker movements.
+SK Terran usually follows a fast expansion — 1 Rax FE is preferable, while 2 Rax FE is a slower, safer option. Add Engineering Bays for quick infantry upgrades, a second Starport early for vessels, and extra Barracks to spend your income. Move out with at least two groups of Marines and Medics plus a Science Vessel, keep units hotkeyed and spread, and irradiate key units like Defilers, Ultralisks and Lurkers.
 
-SK Terran works on virtually any map because of its adaptability. It is weakest when the player fails to commit to a clear transition — the jack-of-all-trades opening becomes a liability if you stay unfocused past the mid-game. Zerg players who scout the 1/1/1 can prepare for all three transitions simultaneously.
+The style is highly aggressive: split the bio and play guerrilla across the map, raiding expansions and dropping to keep Zerg on the defensive. It is especially strong on maps with large open areas or many paths between expansions, and on low-gas maps since you do not need gas for both vessels and tanks. Never let Zerg fight under Dark Swarm near your base, and protect your vessels from Scourge.

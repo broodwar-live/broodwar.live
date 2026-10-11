@@ -1,6 +1,6 @@
 +++
 title = "함선 무기"
-description = "Ship Weapons — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "함선 무기는 테란 아머리에서 3단계까지 연구하는 업그레이드로, 레이스·배틀크루저·발키리의 공격력을 올린다."
 slug = "ship-weapons"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "armory"
-research_time = 80
-affects = ["wraith", "valkyrie", "battlecruiser"]
+research_time = 266
+affects = ["wraith", "battlecruiser", "valkyrie"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-함선 무기 업그레이드는 각 레벨마다 레이스, 발키리, 배틀크루저의 기본 공격력을 +1씩 증가시킵니다. 아머리에서 연구하며, 상위 레벨은 사이언스 퍼실리티가 필요합니다. 피해 보너스는 발사당 적용되어, 공격 주기마다 여러 번 타격하는 발키리 같은 다중 타격 유닛에게 유리합니다.
+함선 무기는 단계마다 테란 공중 공격 유닛의 피해를 올린다. 레이스는 지상 공격(버스트 레이저) +1, 공중 공격(제미니 미사일) +2, 배틀크루저는 레이저 포대 +3, 발키리는 할로 로켓 한 발당 +1이다. 2·3단계는 사이언스 퍼실리티가 필요하다. 단계당 비용 증가가 미네랄·가스 50으로, 다른 테란 무기 업그레이드보다 적다.
 
-함선 무기는 경쟁전에서 틈새 업그레이드로, 테란이 공중 중심 조합을 확정할 때만 의미가 있습니다. TvT나 TvZ에서 드문 레이스 기반 전략에서는 일꾼과 핵심 건물에 대한 견제 잠재력을 높입니다. TvZ에서 대량 뮤탈리스크를 상대하는 발키리 대공에도 함선 무기 업그레이드가 도움됩니다. 배틀크루저 플레이는 고레벨 경기에서 흔치 않지만, 등장 시 함선 무기가 이미 높은 화력을 크게 강화합니다.
+주로 레이스나 배틀크루저 위주의 경기, 예를 들어 테프전·테테전 후반의 배틀크루저 전환에서 볼 수 있다.
 
-이 업그레이드는 표준 경쟁전 빌드에서 거의 연구되지 않습니다. 연구할 때는 보통 지상 메카닉 업그레이드가 충분히 진행된 후반이나 특수한 공중 전환 빌드에서 나옵니다. 대부분의 게임은 함선 무기가 영향을 미치기 전에 끝납니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 150 / 150 | 298초 | 사이언스 퍼실리티 |
+| 3 | 200 / 200 | 330초 | 사이언스 퍼실리티 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

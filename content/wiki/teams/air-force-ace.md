@@ -1,25 +1,26 @@
 +++
 title = "Air Force ACE"
-description = "Air Force ACE — StarCraft: Brood War professional team."
+description = "Air Force ACE — the Republic of Korea Air Force's StarCraft team for progamers doing military service, formed in 2007."
 slug = "air-force-ace"
 template = "wiki/team.html"
 [extra]
 status = "disbanded"
 region = "South Korea"
 founded = "2007"
-disbanded = "2012"
-notable_players = ["NaDa", "FirebatHero"]
+notable_players = ["Boxer", "Reach", "Anytime", "FirebatHero", "Much"]
+sources = ["https://liquipedia.net/starcraft/Air_Force_ACE"]
+verified = "2026-10-11"
 +++
-Air Force ACE was one of the most unique institutions in esports history — a competitive Brood War team composed of professional gamers fulfilling their mandatory South Korean military service. Founded in 2007 as part of the Republic of Korea Air Force's esports division, ACE competed in the Korean Proleague alongside corporate-sponsored teams, creating one of the strangest and most fascinating dynamics in professional gaming.
+Air Force ACE was a Proleague team made up of professional gamers serving their mandatory military service in the Republic of Korea Air Force. The full name was Air-Force Challenges E-Sports (ACE).
 
-## A Military Esports Team
+## Formation
 
-South Korea's mandatory military service requirement meant that every male professional gamer would eventually need to serve. The Air Force recognized the public relations value of esports and created ACE as a way to keep top players active in competition during their service. Players wore military uniforms to matches and trained on a military base, blending the discipline of military life with the demands of professional StarCraft.
+In late 2006 the Air Force announced that enlisted former progamers Clon, ChRh and H.O.T-Forever could enter the winter preliminaries. In April 2007 these three, together with Boxer, Mumyung, Sunny, fOru and Rage, formed the core of the official team, which first played in the Shinhan Bank Proleague 2007 season. It was recorded in the Guinness World Records Gamer's Edition as the first military progaming team.
 
-## Notable Conscripts
+## Players
 
-The team's roster was a rotating cast of the game's biggest names serving their mandatory duty. Yoo Byung Jae (NaDa), one of the greatest Terran players in history, competed for ACE during his service. Kim Kwang Soo (FirebatHero) brought his famously passionate celebrations and solid Terran play to the team. Each generation of conscripts brought different star players, making the roster unpredictable but often surprisingly strong.
+Because the roster changed with each intake of conscripts, it included many veterans: Boxer was the team's early ace, later followed by players such as DaezanG, OversKy, Anytime, Reach, Much (captain), ggaemo and FirebatHero, who joined from Samsung KHAN in 2010.
 
-## Legacy
+## Results
 
-Air Force ACE disbanded in 2012 as the professional BW scene wound down. The team remains a fascinating artifact of Korean culture — a place where military obligation and esports excellence intersected. No other competitive gaming scene has produced anything quite like it.
+Statistically the weakest team in the Proleague, ACE finished last in every season except 2008, when it placed just ahead of eSTRO. Liquipedia notes, however, that relative to its small roster it had the highest number of individual Starleague top-three finishes per player.

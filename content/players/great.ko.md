@@ -1,17 +1,35 @@
 +++
-title = "Great"
-description = "Great — 한국의 테란 선수."
+title = "great"
+description = "great(차명환) — 삼성 칸의 에이스 저그, 2011 PDPop MSL 준우승, 이후 공군 ACE."
 slug = "great"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
-image = "/images/players/great.png"
-race = "terran"
+race = "zerg"
 country = "KR"
 country_name = "한국"
-rating = 2420
-tier = "B"
-aliases = ["이성환", "Lee Sung Hwan"]
+real_name = "차명환"
+romanized_name = "Cha Myung Hwan"
+birth_date = "1989-11-27"
+status = "retired"
+years_active = "2007–2012"
+team = "Air Force ACE"
+aliases = ["Hades", "by.great", "KT.MGW)Great"]
+liquipedia = "https://liquipedia.net/starcraft/Great"
+sources = ["https://liquipedia.net/starcraft/Great"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = "2007-03-12"
+to = "2011-10"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2011-10"
+to = "2012"
 +++
-Great는 탄탄한 기본기와 온라인 대회 및 ASL 예선에서의 꾸준한 성적으로 현대 씬에서 경쟁하는 한국 테란입니다. 효율적인 매크로와 깔끔한 빌드 오더 실행을 기반으로 리스크를 최소화하는 정석 플레이를 선호합니다. TvP에서는 안정적인 타이밍 공격과 절제된 병력 포지셔닝을, TvZ에서는 인내심과 좋은 시즈 탱크 컨트롤을 보여줍니다. ASL 본선 진출을 매우 어렵게 만드는 인재 깊이에 기여하는 한국 경쟁 서킷의 단골 선수입니다. 기본기에 충실한 접근으로 다양한 상대를 상대로 경쟁력을 유지합니다.
+great(차명환)는 1989년생 대한민국의 저그 선수이다. 2007년 3월 [삼성 칸](@/wiki/teams/samsung-khan.ko.md)에 입단해 팀의 주력 저그로 성장했다. 삼성 칸이 정상에 오른 [2008 Shinhan Bank Proleague](@/tournaments/2008-shinhan-bank-proleague.ko.md) 결승에서는 1세트에 나서 [Leta](@/players/leta.ko.md)에게 졌는데, 이 경기가 그날 삼성의 유일한 패배였다.
+
+개인리그 최고 성적은 [2011 PDPop MSL](@/tournaments/2011-pdpop-msl.ko.md) 준우승으로, 결승에서 [Hydra](@/players/hydra.ko.md)에게 1:3으로 졌다. 그에 앞서 [2010 Hana Daetoo Securities MSL](@/tournaments/2010-hana-daetoo-securities-msl.ko.md)에서는 8강에 올랐다. 초기 버전 네오 메두사에서 프로토스를 상대로 전진 해처리 조이기를 처음 선보여 [Bisu](@/players/bisu.ko.md)와 [Free](@/players/free.ko.md)를 잡아냈고, 저저전을 뮤탈리스크 단계 이후 하이브 테크까지 끌고 가는 운영으로도 알려졌다. 2011년 10월 병역을 위해 [공군 ACE](@/wiki/teams/air-force-ace.ko.md)에 입대했다.

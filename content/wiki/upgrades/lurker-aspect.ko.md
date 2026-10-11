@@ -1,6 +1,6 @@
 +++
 title = "러커 변태"
-description = "Lurker Aspect — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "러커 변태는 레어가 필요한 저그 히드라리스크 덴 연구로, 히드라리스크가 러커로 변태할 수 있게 한다."
 slug = "lurker-aspect"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 200
 gas = 200
 levels = 1
 researched_at = "hydralisk-den"
-research_time = 50
-affects = ["hydralisk"]
+research_time = 120
+affects = ["hydralisk", "lurker"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-러커 변태는 히드라리스크가 저그의 가장 중요한 방어 유닛 중 하나인 러커로 변태할 수 있게 합니다. 러커는 땅속에 매립되어 투명해지며, 경로 상의 모든 지상 유닛에게 20의 피해를 주는 지하 가시를 일직선으로 발사합니다. 매립 중 이동이 불가하며 타격하려면 디텍션이 필요합니다. 변태 과정에 수 초가 걸리며 히드라리스크를 소모합니다. 레어 테크가 필요합니다.
+러커 변태를 연구하면 히드라리스크를 러커로 변태시킬 수 있다(러커 한 기마다 미네랄 50, 가스 100 추가). 히드라리스크 덴에서 연구하며 레어가 완성되어 있어야 한다. 러커는 버로우한 상태에서만 공격하며, 땅속 가시로 일직선상의 지상 유닛을 공격한다.
 
-러커 변태는 저그의 가장 중요한 테크 잠금 해제 중 하나이며 특히 ZvT에서 핵심입니다. 러커는 테란 바이오 푸시에 대한 주요 방어 유닛으로, 초크 포인트 뒤에 매립된 러커가 테란에게 전진 전 사이언스 베슬 디텍션과 신중한 시즈 포지셔닝 투자를 강요합니다. 러커 없이 저그는 스팀팩 마린과 메딕 군대 상대로 지면을 유지할 신뢰할 수 있는 방법이 없습니다. ZvP에서 러커는 질럿 중심 조합에 효과적이며 확장을 지상 공격으로부터 보호합니다.
-
-러커 변태는 레어 완성 즉시 히드라리스크 덴에서 연구하며, 표준 ZvT 빌드에서 보통 8-10분경입니다. 매치업에서 가장 시간에 민감한 업그레이드 중 하나로, 러커 지연은 초기 테란 푸시에 패배로 이어질 수 있습니다.
+러커는 테란 바이오를 상대하는 저그의 핵심 유닛이라, 저테전에서는 빠르게 러커를 띄우는 오프닝이 흔하다.

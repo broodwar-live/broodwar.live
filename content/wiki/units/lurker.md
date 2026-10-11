@@ -1,5 +1,6 @@
 +++
 title = "Lurker"
+description = "The Lurker is a Zerg unit, added in Brood War, that morphs from a Hydralisk and attacks only while burrowed, hitting enemy ground units in a line with its spines."
 slug = "lurker"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,43 @@ minerals = 125
 gas = 125
 supply = 2
 hp = 125
+shields = 0
 armor = 1
 damage = 20
+damage_type = "normal"
 build_time = 40
 attack_speed = 37
 range = 6
 speed = 5.82
-shields = 0
 size = "medium"
 ground_attack = true
 air_attack = false
-damage_type = "normal"
-dps = 6.16
+dps = 8.11
 sight = 8
-built_from = "hydralisk"
+morphs_from = "hydralisk"
 abilities = []
-upgrades = ["missile-attacks", "carapace"]
+upgrades = ["lurker-aspect", "missile-attacks", "carapace"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-One of the most feared defensive units in Brood War, the Lurker is a Hydralisk evolution that burrows underground and attacks with subterranean spines dealing 20 splash damage in a line. Lurkers can only attack while burrowed and are invisible without detection, creating a devastating combination of area denial and invisibility. They are the Zerg's answer to Marine/Medic pushes and a cornerstone of Zerg defensive play.
+The Lurker was introduced in Brood War. It morphs from a Hydralisk after Lurker Aspect is researched at the Hydralisk Den (which requires a Lair). A Lurker cannot attack until it burrows; once burrowed it is invisible without detection and attacks with spines that damage every enemy ground unit in a line.
 
 ## Versus Terran
 
-Lurkers are most impactful in ZvT, forming the primary defensive line against Marine/Medic bio pushes. A well-placed Lurker contain at a choke point can hold off vastly larger bio armies. The transition from Hydralisk to Lurker mid-game is one of the most critical timing decisions, as Lurkers without detection coverage are nearly invincible against bio.
+Lurkers are a key ZvT unit against Marine/Medic armies. Terran answers them with Comsat Station scans, Science Vessels and Siege Tanks, which outrange them.
 
 ## Versus Protoss
 
-Lurkers behind the Zerg army dissuade Zealot charges and force Protoss to invest in Observers in ZvP. Without detection, Lurkers are devastating against Dragoon-Zealot compositions. The threat of Lurkers shapes Protoss tech choices, making Robotics Facility a near-mandatory investment for Observer production.
+Lurkers are a core part of many ZvP armies, holding positions against Zealots and Dragoons and forcing Protoss to bring Observers.
 
 ## Versus Zerg
 
-Lurkers create area denial that shapes positional play in ZvZ. They are particularly effective at defending choke points and ramps. The ZvZ Lurker war — fighting over detection and positioning — adds a strategic layer to the matchup beyond pure Mutalisk control.
+Lurkers appear in some ZvZ games to hold ground against Zerglings; the opponent needs Overlords or Spore Colonies to detect them.
 
 ## Key Mechanics
 
-Lurkers deal 20 Normal damage in a line splash — all units along the spine line take damage. They have 6 range and can only fire while burrowed, requiring an opponent to have detection to even see them. The line splash hits both enemies and allies, so careful positioning is important. Lurkers are Medium-sized with 125 HP and 1 base armor, making them reasonably durable when burrowed. They require the Lurker Aspect upgrade from the Hydralisk Den.
-
-## Micro Techniques
-
-- **Choke point positioning**: Burrowing Lurkers at ramps and narrow passages where their line splash covers the entire path
-- **Leapfrog burrowing**: Alternating groups of Lurkers between burrowed and moving to maintain constant coverage while advancing
-- **Re-burrowing**: Unburrowing and re-burrowing to adjust position as the battle shifts
-- **Lurker drop**: Loading Lurkers into Overlords and dropping them behind enemy lines for surprise area denial
-
-## Counters
-
-Detection is the primary counter — without it, Lurkers are invincible. Science Vessels with Irradiate can kill burrowed Lurkers. Siege Tanks outrange Lurkers from outside their attack range. Psionic Storm damages burrowed Lurkers. Air units are completely immune to Lurker attacks. Observers must be kept alive to maintain vision for the Protoss army.
-
-## Combat Data
-
-- **Cooldown**: 2.44s (37 frames)
-- 20 Normal splash damage in a line — passes through all units in the path
-- Range: 6; must be burrowed to attack; invisible without detection
-- Line splash damages both enemies and allies — careful positioning is required
-- **AI Note**: Lurkers auto-target the nearest enemy when burrowed; the line splash direction depends on target position, which can hit unintended units
-- **Notable**: Lurker placement at choke points creates near-impenetrable defenses against bio armies without detection
-
-## Historical Notes
-
-The Lurker was added in Brood War and immediately became one of the most defining units in competitive play. The ZvT matchup fundamentally revolves around the Terran's ability to break Lurker defenses with detection and Siege Tanks versus the Zerg's ability to hold positions with Lurker-Zergling combinations. Savior's innovative Lurker holds against Terran pushes helped establish the modern ZvT meta.
+- 20 normal damage in a line, 37-frame cooldown, range 6
+- Can only attack while burrowed; burrowed Lurkers need detection to be targeted
+- The line splash hits enemy units only
+- Total cost 125/125 (Hydralisk 75/25 plus 50/100 to morph), 2 supply
+- 125 HP, 1 base armor, medium size; takes 4 slots in an Overlord

@@ -1,17 +1,20 @@
 +++
 title = "Sniper Ridge"
+description = "Sniper Ridge is a 4-player Jungle World map by [Ragnarok]Valkyrie, used in the 2011-12 Proleague; its revision New Sniper Ridge was used in the 2012 Tving OSL."
 slug = "sniper-ridge"
 template = "wiki/map.html"
 [extra]
-name_ko = "Sniper Ridge"
+name_ko = "저격능선"
 dimensions = "128x128"
-tileset = "Badlands"
-players = 2
-spawn_positions = ""
-era = "2003-2005"
+tileset = "Jungle World"
+players = 4
+spawn_positions = "1, 5, 7, 11"
+era = "2011-present"
+sources = ["https://liquipedia.net/starcraft/Sniper_Ridge", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/508_Sniper_Ridge"]
+verified = "2026-10-11"
 +++
-A 2-player badlands map from the early golden era, used in professional tournaments from 2003 through 2005, best known for the long-range siege tank warfare it produced in TvT matchups. The map features two spawn positions on a 128x128 badlands terrain, with elevated ridges and open plains that create long sight lines perfectly suited for siege tank positioning. The natural expansions sit on lower ground, vulnerable to siege fire from the ridges above.
+**Sniper Ridge** (Korean: 저격능선) is a 4-player map on the Jungle World tileset, made by [Ragnarok]Valkyrie. It is 128x128 with start locations at 1, 5, 7 and 11 o'clock.
 
-Sniper Ridge earned its name from the gameplay it encouraged — the map's terrain created extended standoffs where siege tanks would leapfrog across ridges, each side trying to gain the high-ground advantage for the critical engagement. The long sight lines and open terrain made the map particularly punishing for armies caught in the open without proper positioning. The elevated ridges near the center were the most contested areas, as controlling them gave a decisive advantage in range and vision.
+Sniper Ridge was released in late 2011 for the 2011-12 SK Planet Proleague. A few months later the revised **New Sniper Ridge** was introduced for the 2012 Tving OSL and largely replaced the original; it was also used in Proleague Season 2, the SonicTV Starleague and the TeamLiquid Legacy Starleague, and it remained popular for community events.
 
-While Sniper Ridge was most famous as a TvT specialist map where tank warfare reached its most refined form, it also produced interesting games in other matchups. In TvZ, the open terrain and long distances gave Terran excellent siege lines but also allowed Zerg room to maneuver around static defenses. In TvP, the ridges created dramatic reaver vs tank positioning battles. The map is remembered as a quintessential example of how terrain design can shape the meta-game of specific matchups.
+Ridges around the map allow strong Lurker contains in ZvP, and the double-gas expansion in the center is valuable but hard to hold. New Sniper Ridge changed the natural's mineral formation to ease Mutalisk harassment, widened the chokes at the third gas and added a ramp to it.

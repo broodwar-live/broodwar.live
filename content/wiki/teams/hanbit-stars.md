@@ -1,29 +1,23 @@
 +++
 title = "Hanbit Stars"
-description = "Hanbit Stars — StarCraft: Brood War professional team."
+description = "Hanbit Stars — Busan-born Korean StarCraft team (2001–2008), 2004 SKY Proleague champion; later Woongjin Stars."
 slug = "hanbit-stars"
 template = "wiki/team.html"
 [extra]
 status = "disbanded"
 region = "South Korea"
-founded = "2002"
-disbanded = "2012"
-notable_players = ["Leta", "Movie"]
+founded = "2001"
+disbanded = "2008"
+notable_players = ["H.O.T-Forever", "Garimto", "Kingdom", "Reach", "Sync"]
+sources = ["https://liquipedia.net/starcraft/Woongjin_Stars", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-Hanbit Stars was one of the quieter organizations in Korean professional Brood War — a team that rarely made headlines but provided a steady home for developing talent over a decade of competition. Founded in 2002, Hanbit Stars competed in the Proleague through multiple sponsor changes while building a reputation as a resilient mid-tier organization.
+Hanbit Stars was the name of the team that later became [Woongjin Stars](/wiki/teams/woongjin-stars/). It began in Busan as a guild called StarCraft Mania, made up entirely of Busan-based players — among the earliest were head coach Lee Jae-kyun, captain H.O.T-Forever, S.E.S, FlyToTheSky, GARIMTO, Reach and Kingdom. After the group moved to Seoul and its stars posted strong results, Hanbit Soft (the Korean distributor of StarCraft) began sponsoring it in May 2001 as Hanbit Stars.
 
-## Steady Contenders
+## Results
 
-Hanbit Stars rarely challenged for Proleague titles, but the team was far from a doormat. Their roster featured players capable of upsetting any opponent on a given day, and their coaching emphasized disciplined preparation over flashy play. The team's consistent presence in the league for ten years speaks to solid organizational management and a stable team culture.
+The team developed players such as Autumn, Sync, Control, Junwi, Clon and Sunny. It was runner-up in the first OGN Proleague (2003 KTF EVER Cup) and won both the **2004 SKY Proleague Round 1** and the **2004 SKY Proleague Grand Final**.
 
-## Key Players
+## Sale
 
-Kim Taek Hwan (Leta) was the team's most prominent Terran player, known for his mechanical skill and ability to compete against top-tier opponents. His bio play was respected among peers, and he delivered key Proleague victories throughout his tenure. Movie (Kim Sung Je) contributed as a reliable Protoss player who could hold his own in the demanding Proleague format.
-
-## Development Pipeline
-
-Hanbit Stars' greatest contribution to the BW scene may have been its role as a development ground. Several players who passed through the organization went on to successful careers elsewhere, in both Brood War and StarCraft II. The team provided crucial early-career experience for players who might not have received opportunities at more established organizations.
-
-## Disbandment
-
-Hanbit Stars disbanded in 2012 alongside many of its contemporaries. While the team never achieved the fame of KT Rolster or SKT T1, Hanbit Stars represents the backbone of the Proleague system — the steady, professional organizations that made Korean competitive BW a functioning league rather than a collection of superteams.
+In May 2008 Hanbit Soft decided to sell the team because of financial difficulties. Woongjin took over the sponsorship in September 2008 and the team continued as Woongjin Stars.

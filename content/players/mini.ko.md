@@ -1,6 +1,6 @@
 +++
 title = "Mini"
-description = "Mini — 한국의 프로토스 선수."
+description = "Mini(변현제) — STX 소울 출신 프로토스, ASL 시즌 12 우승, ASL·KSL 준우승 4회."
 slug = "mini"
 template = "players/player.html"
 [taxonomies]
@@ -10,8 +10,22 @@ image = "/images/players/mini.jpg"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2740
-tier = "A+"
-aliases = ["변현제", "Byun Hyun Je"]
+real_name = "변현제"
+romanized_name = "Byun Hyun Je"
+birth_date = "1994-01-28"
+status = "active"
+years_active = "2010–2013, 2017–present"
+aliases = ["Ever)P(mini", "WGM.Sapa", "Moo.Sapa", "Mini1", "bye0128"]
+liquipedia = "https://liquipedia.net/starcraft/Mini"
+soop = "bye1013"
+sources = ["https://liquipedia.net/starcraft/Mini"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2010-03-23"
+to = "2013-08-31"
 +++
-Mini는 현대 ASL 씬 최고의 프로토스 중 한 명으로, 공격적인 스타일과 뛰어난 마이크로 컨트롤로 어떤 대회 대진에서도 항상 위협적인 존재입니다. 특히 PvT가 두려움의 대상으로, 대담한 질럿-아콘 푸시와 정확한 스톰 배치로 가장 견고한 테란 진지도 해체할 수 있습니다. ASL 4강과 결승에 여러 차례 진출하며 우승의 항상적 경쟁자로 자리매김했습니다. 고압 상황에서 리스크를 감수하는 의지가 보수적인 프로토스와 차별화되며, 빠른 메카닉 스피드로 소수의 상대만이 감당할 수 있는 복잡한 다방면 공격을 실행합니다. 경쟁적 브루드 워에서 가장 흥미로운 선수 중 한 명입니다.
+Mini(변현제)는 1994년생 대한민국의 프로토스 프로게이머이다. 2010년 [STX 소울](@/wiki/teams/stx-soul.ko.md)에 입단해 스타크래프트 II 시기를 거쳐 2013년 팀이 해체될 때까지 주로 프로리그에서 활동했다. 2015년 4월 군에 입대했고, 2017년 1월 아프리카TV 방송인으로 브루드 워에 복귀했다. 실드 배터리를 적극적으로 활용하는 플레이로 알려져 있다.
+
+복귀 후에는 꾸준한 성적을 내는 프로토스로 자리 잡았다. [ASL 시즌 5](@/tournaments/asl-s5.ko.md)에서 4강에 올랐다. [ASL 시즌 7](@/tournaments/asl-s7.ko.md)에서는 [Last](@/players/last.ko.md)에게 져 준우승했다. [KSL 시즌 3](@/tournaments/ksl-s3.ko.md)에서는 [Rain](@/players/rain.ko.md)에게 져 준우승했다. [ASL 시즌 11](@/tournaments/asl-s11.ko.md)에서는 [Larva](@/players/larva.ko.md)에게 져 준우승했다. [ASL 시즌 16](@/tournaments/asl-s16.ko.md)에서는 [Soulkey](@/players/soulkey.ko.md)에게 져 준우승했다. 2021년 [ASL 시즌 12](@/tournaments/asl-s12.ko.md) 결승에서는 [Rush](@/players/rush.ko.md)를 4:3으로 꺾고 우승했다.

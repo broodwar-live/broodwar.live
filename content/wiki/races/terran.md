@@ -1,34 +1,39 @@
 +++
 title = "Terran"
+description = "Overview of the Terrans, the human race built around flexible production, add-ons and positional play."
 slug = "terran"
 template = "wiki/race.html"
 [taxonomies]
 race = ["terran"]
 [extra]
 letter = "T"
-tagline = "Adaptable human forces with strong defensive capabilities"
-playstyle = "Terran is the most mechanically flexible race. Players can wall off with supply depots, siege up behind tanks, harass with vulture speed, or go for bio pushes with marine/medic. Strong macro play and multi-pronged attacks are hallmarks of top Terran players."
-strengths = ["Buildings can lift off and fly to new locations", "Siege tanks provide devastating area control", "Mechanical units can be repaired to full health", "ComSat Station provides instant map vision anywhere", "Strong defensive options with bunkers and turrets"]
-weaknesses = ["Slow early-game expansion compared to Zerg", "Supply depots are vulnerable and require space", "Most units are relatively slow without upgrades", "Late-game transitions can be difficult to execute"]
+tagline = "Adaptable human forces built on siege lines, bio and strong defences"
+playstyle = "Terran armies come in two broad styles — bio (Marines, Medics, Firebats) and mech (Vultures, Siege Tanks, Goliaths) — supported by Science Vessels. Siege Tanks give Terran strong positional control, Bunkers, Missile Turrets and building walls make it hard to rush, and many buildings can lift off and relocate."
+strengths = ["Six buildings can lift off and fly to a new location", "Siege Tanks provide long-range area control", "SCVs repair mechanical units and buildings", "Comsat Station scans give vision and detection anywhere on the map", "Bunkers, Missile Turrets and depot/Barracks walls give strong early defence"]
+weaknesses = ["An SCV is occupied for the whole construction of each building", "Sieged tanks are immobile and vulnerable while packing up", "Terran units do not regenerate HP and rely on Medics and SCV repair"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Lift_off", "https://liquipedia.net/starcraft/SCV", "https://liquipedia.net/starcraft/Comsat_Station", "https://liquipedia.net/starcraft/Flash", "https://liquipedia.net/starcraft/NaDa", "https://liquipedia.net/starcraft/Iloveoov", "https://liquipedia.net/starcraft/Last"]
+verified = "2026-10-11"
 +++
-The Terran are human exiles from Earth, surviving on the fringes of the galaxy with a military built on conventional ballistic weaponry, powered armor, and nuclear technology. In competitive Brood War, Terran is the most mechanically versatile race, offering two fundamentally different army compositions — bio (Marine, Medic, Firebat) and mech (Vulture, Siege Tank, Goliath) — as well as hybrid styles that blend elements of both.
+The Terrans are the human faction of StarCraft. In Brood War they combine infantry, vehicles and ships with add-on buildings, and they are known for strong positional play built around the Siege Tank.
 
-## Strengths
+## Building and economy
 
-Terran's greatest strength is positional control. Siege Tanks provide unmatched area denial, turning any patch of high ground into a fortress. The Comsat Station on every Command Center gives instant detection and scouting anywhere on the map — a detection advantage no other race enjoys. Terran buildings can lift off and fly to new locations, enabling creative base layouts and last-resort evacuations. SCVs repair mechanical units to full health, meaning a Terran mech army that wins a fight can be back to full strength in seconds. Bunkers, Missile Turrets, and Supply Depot walls give Terran the strongest defensive infrastructure in the game.
+An SCV stays with a building until it finishes. Six buildings — Command Center, Barracks, Engineering Bay, Factory, Starport and Science Facility — can lift off, fly and land elsewhere, which Terran uses for scouting, relocating or floating a Command Center to a new base. Add-ons such as the Comsat Station and Machine Shop attach to their parent building. Supply Depots give 8 supply and the Command Center 10.
 
-## Weaknesses
+## Key units
 
-Terran expansion is slower and riskier than Zerg, as each new base needs significant investment in defensive structures. Supply Depots are vulnerable buildings that take up space and can be targeted to supply-block the Terran player. Most Terran units are relatively slow without speed upgrades, making repositioning against mobile opponents difficult. Late-game transitions — such as switching from bio to mech or adding Battlecruisers — are expensive and risky, as there is a vulnerable window during the tech switch.
+- **Marine** — cheap ranged infantry; with Stim Pack and Medic support it is the core of bio play.
+- **Medic** — heals biological units and can cast Restoration and Optical Flare.
+- **Vulture** — fast unit with concussive damage that lays Spider Mines.
+- **Siege Tank** — 70 explosive splash damage at range 12 in Siege Mode.
+- **Goliath** — anti-air with long range after Charon Boosters.
+- **Science Vessel** — detector that casts Defensive Matrix, Irradiate and EMP Shockwave.
+- **SCV** — worker that also repairs mechanical units and buildings.
 
-## Key Units
+## In competitive play
 
-The **Marine** is the backbone of every Terran army — cheap, fast to produce, and deadly in numbers with Stim Pack. The **Siege Tank** defines Terran's identity as a positional race, controlling space with massive range and splash damage. The **Vulture** provides speed, harassment, and map control through Spider Mines. The **Science Vessel** is the critical support unit in the mid-to-late game, providing detection, Irradiate against biological armies, and Defensive Matrix for key units. The **Medic** keeps bio armies alive, turning fragile Marines into a sustainable fighting force.
+TvZ features bio with Science Vessels (Irradiate against Mutalisks and Defilers) or mech. TvP usually centres on Siege Tanks and Vultures with mines, with Science Vessels to EMP High Templar and Arbiters. TvT is a positional mirror decided largely by tank placement and vision.
 
-## Competitive Meta
+## Notable players
 
-In the modern competitive meta, Terran excels through precise mechanical play and strong macro. TvZ revolves around bio or mech pushes supported by Science Vessel Irradiate, transitioning into the late game against Defiler-based Zerg armies. TvP features bio play with Siege Tank support, with the critical mid-game battle centered on landing EMPs against High Templar Storm. TvT is the most positional mirror matchup in the game, decided almost entirely by Siege Tank placement and mech control.
-
-## Famous Players
-
-**Flash** (Lee Young Ho) is widely considered the greatest Brood War player of all time, dominating the late professional era with flawless mech and bio play. **NaDa** was the first Royal Roader and one of the most successful Terran players in OSL/MSL history. **iloveoov** pioneered aggressive Terran macro play, earning the nickname "The Revolutionist." **Fantasy** was known for innovative strategies and clutch performances. **Last** (Kim Sung Hyun) is one of the strongest modern-era Terran players, competing at the highest level in ASL.
+[Flash](@/players/flash.md) (Lee Young Ho), [NaDa](@/players/nada.md) (Lee Yoon Yeol), [iloveoov](@/players/iloveoov.md) (Choi Yun Sung, "Cheater Terran") and [Last](@/players/last.md) (Kim Sung Hyun).

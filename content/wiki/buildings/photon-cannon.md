@@ -1,5 +1,6 @@
 +++
 title = "Photon Cannon"
+description = "The Photon Cannon is the Protoss static defense, attacking ground and air and detecting cloaked units."
 slug = "photon-cannon"
 template = "wiki/building.html"
 [taxonomies]
@@ -16,7 +17,9 @@ build_time = 50
 hotkey = "B→C"
 size = "large"
 produces = []
-required_by = ["forge"]
+requires = ["forge"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Photon Cannon is Protoss's static defense structure, attacking both ground and air units with 20 normal damage. It also functions as a detector, revealing cloaked and burrowed units within its detection range. The Photon Cannon requires a Forge before it can be built and must be placed within a Pylon's power field. Losing the Pylon powering a Photon Cannon disables it entirely.
 

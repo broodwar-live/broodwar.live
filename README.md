@@ -8,21 +8,24 @@
 
 <p align="center">
   <em>The community platform for StarCraft: Brood War competitive play.</em><br>
-  <em>Player stats. Replay analysis. Build orders. Live streams.</em>
+  <em>Players. Build orders. Tournaments. Wiki. Replay analysis. Live data coming soon.</em>
 </p>
 
 <p align="center">
-  <a href="https://elixir-lang.org/">
-    <img alt="Elixir" src="https://img.shields.io/badge/Elixir-1.18+-4B275F?logo=elixir&logoColor=white&style=for-the-badge">
+  <a href="https://www.getzola.org/">
+    <img alt="Zola" src="https://img.shields.io/badge/Zola-0.23-F46623?style=for-the-badge">
   </a>
-  <a href="https://www.phoenixframework.org/">
-    <img alt="Phoenix" src="https://img.shields.io/badge/Phoenix-1.8-FD4F00?logo=phoenixframework&logoColor=white&style=for-the-badge">
+  <a href="https://tailwindcss.com/">
+    <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge">
   </a>
-  <a href="https://www.sqlite.org/">
-    <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge">
+  <a href="https://pages.cloudflare.com/">
+    <img alt="Cloudflare Pages" src="https://img.shields.io/badge/Cloudflare_Pages-F38020?logo=cloudflare&logoColor=white&style=for-the-badge">
   </a>
   <a href="LICENSE">
-    <img alt="License" src="https://img.shields.io/badge/License-MIT-c6a0f6?style=for-the-badge">
+    <img alt="Code: MIT" src="https://img.shields.io/badge/Code-MIT-c6a0f6?style=for-the-badge">
+  </a>
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+    <img alt="Content: CC BY-SA 4.0" src="https://img.shields.io/badge/Content-CC_BY--SA_4.0-8aadf4?style=for-the-badge">
   </a>
 </p>
 
@@ -30,140 +33,129 @@
 
 ---
 
-The unified home for the BW competitive community — think [basketball-reference.com](https://www.basketball-reference.com) for Brood War. Built with Elixir/Phoenix, Phoenix LiveView, SQLite, and Rust NIFs.
+The unified home for the BW competitive community — think
+[basketball-reference.com](https://www.basketball-reference.com) for Brood War.
+
+This repository is the **static site**: Markdown content rendered by [Zola](https://www.getzola.org/),
+styled with Tailwind CSS + daisyUI, and served from Cloudflare Pages. Dynamic features (match
+history, replay analysis, live streams, balance stats) call a separate JSON API,
+[api.broodwar.live](https://github.com/broodwar-live/api.broodwar.live), with small vanilla-JS widgets.
+
+> **Status:** early development. The API is not deployed yet, so API-backed pages show a
+> "coming soon" state (`extra.api_enabled = false` in `config.toml`).
 
 ## Features
 
-| Feature | Description |
-|---------|-------------|
-| **Player Profiles** | Career stats, Elo history, head-to-head records |
-| **Match History** | Game results with build orders, APM, and army timelines |
-| **Replay Analysis** | Upload a `.rep` and get instant breakdowns — build orders, APM curves, army composition |
-| **Build Orders** | Structured, searchable database backed by pro replay evidence |
-| **Balance Analytics** | Matchup winrates by map, era, and skill bracket |
-| **Live Streams** | Korean stream tracking, ASL/BSL schedules |
-| **Tournaments** | Tournament brackets, results, and history |
-| **Wiki** | Community knowledge base for maps, strategies, and game mechanics |
+| Feature | Status | Description |
+|---------|--------|-------------|
+| **Players** | Live | Profiles for 150 pro players, in English and Korean |
+| **Build Orders** | Live | Build order guides for every matchup |
+| **Tournaments** | Live | ASL, BSL, KSL, OSL, MSL, the Proleague (team league) and season pages |
+| **Wiki** | Live | Units, buildings, upgrades, abilities, maps, mechanics, patches, teams, strategies |
+| **News** | Live | Project and scene announcements |
+| **Search** | Live | Site-wide search (<kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>K</kbd>) |
+| **Matches** | Needs API | Match results and head-to-head records |
+| **Replays** | Live | In-browser `.rep` analysis (WASM): build orders, APM over time, openings — nothing is uploaded |
+| **Live Streams** | Needs API | Korean stream tracking and ASL/BSL schedules |
+| **Balance** | Needs API | Matchup winrates by map and era |
 
 ## Quick Start
 
-```bash
-# Install dependencies and set up the database
-mix setup
-
-# Start the server
-mix phx.server
-```
-
-Visit [localhost:4000](http://localhost:4000).
-
-## Architecture
-
-```
-lib/
-├── broodwar/                 # Domain contexts
-│   ├── players.ex            # Player profiles, Elo, career stats
-│   ├── matches.ex            # Match results, head-to-head records
-│   ├── replays.ex            # Replay uploads, parsed data
-│   ├── builds_context.ex     # Build order database
-│   ├── streams.ex            # Live stream tracking
-│   ├── tournaments.ex        # Tournament data
-│   ├── wiki/                 # Wiki pages and content
-│   ├── maps/                 # Map pool and metadata
-│   └── ingestion/            # Background data sync
-│       ├── liquipedia.ex     # Liquipedia scraping
-│       ├── player_sync.ex    # Player data sync
-│       └── tournament_sync.ex
-├── broodwar_nif/             # Rust NIF bridge
-│   └── replay_parser.ex      # Thin wrapper around bw-engine
-├── broodwar_web/             # Web layer
-│   ├── live/                 # LiveView pages
-│   │   ├── players_live.ex   # Player list + search
-│   │   ├── player_detail_live.ex
-│   │   ├── matches_live.ex   # Match history
-│   │   ├── match_detail_live.ex
-│   │   ├── replay_live.ex    # Replay upload + browser
-│   │   ├── replay_detail_live.ex
-│   │   ├── builds_live.ex    # Build order database
-│   │   ├── build_detail_live.ex
-│   │   └── balance_live.ex   # Balance analytics
-│   └── controllers/
-│       └── api/              # JSON API
-│           ├── player_controller.ex
-│           ├── match_controller.ex
-│           ├── replay_controller.ex
-│           ├── build_controller.ex
-│           ├── map_controller.ex
-│           ├── balance_controller.ex
-│           ├── stream_controller.ex
-│           └── tournament_controller.ex
-└── native/
-    └── replay_parser/        # Rust NIF (via Rustler)
-```
-
-### Key Technical Decisions
-
-- **Phoenix LiveView** for all interactive UI — no SPA, no client-side framework
-- **SQLite** via `ecto_sqlite3` — single-file database, deployed alongside the app
-- **Rust NIFs** via Rustler for replay parsing — delegates to [bw-engine](https://github.com/broodwar-live/bw-engine)
-- **Oban** for background jobs — Liquipedia scraping, replay processing, stats aggregation
-- **Req** for HTTP client
-
-## API
-
-Public JSON API at `/api`. See the full [API conventions](https://github.com/broodwar-live/.claude/blob/main/rules/api.md).
-
-```
-GET /api/players          # Player list with search/filter
-GET /api/players/:id      # Player profile and stats
-GET /api/matches          # Match history
-GET /api/replays          # Replay metadata
-GET /api/builds           # Build order database
-GET /api/maps             # Map pool
-GET /api/balance          # Matchup winrates
-GET /api/streams          # Live streams
-GET /api/tournaments      # Tournament data
-```
-
-## Development
-
-### Prerequisites
-
-- Elixir 1.18+ / Erlang OTP 27+
-- Rust stable toolchain (for NIF compilation)
-- Node.js (for esbuild/tailwind asset tooling)
-
-### Commands
+Prerequisites: [Zola](https://www.getzola.org/documentation/getting-started/installation/) **0.23.6**
+(0.22 and older don't work) and Node.js 22+.
 
 ```bash
-mix setup                 # Install deps, create DB, build assets
-mix phx.server            # Start dev server
-mix test                  # Run tests
-mix precommit             # Compile (warnings-as-errors) + format + test
-mix format                # Format code
+npm ci                # Tailwind CSS + daisyUI
+npm run build:css     # Build static/css/app.css
+zola serve            # http://127.0.0.1:1111, live reload
 ```
 
-### Database
-
-SQLite with WAL mode for concurrent reads during writes. Migrations must be reversible.
+While editing templates or classes, run `npm run dev:css` in a second terminal to rebuild CSS on
+change. `static/css/app.css` is committed — rebuild and commit it when you add Tailwind classes.
 
 ```bash
-mix ecto.create           # Create database
-mix ecto.migrate          # Run migrations
-mix ecto.reset            # Drop + recreate + seed
+zola build                          # Production build into public/
+zola check --skip-external-links    # Validate internal links
 ```
+
+## Project Structure
+
+```
+content/               Markdown content (TOML front matter), English + Korean (*.ko.md)
+├── players/           Player profiles
+├── builds/            Build orders
+├── tournaments/       Leagues and seasons
+├── wiki/              Units, buildings, maps, mechanics, patches, teams, ...
+├── news/              News articles
+├── matches/ replays/ streams/ balance/   API-backed pages
+└── credits.md         Licensing and attribution
+templates/             Tera templates (base.html, per-section templates, partials/)
+src/app.css            Tailwind entry point
+static/                Built CSS, vanilla JS widgets, images, _headers, _redirects
+config.toml            Site config, i18n strings, feature flags
+```
+
+Templates target Zola 0.23 (Tera 2), pinned in CI and in the Cloudflare build command. Tera 2 has
+no macros, so shared markup lives in `templates/partials/` and is pulled in with `include`. See
+[cloudflare-pages.md](cloudflare-pages.md).
+
+## Contributing Content
+
+Every page has an **Edit on GitHub** link. To add or fix content:
+
+1. Edit or add a Markdown file under `content/` — keep the English (`page.md`) and Korean
+   (`page.ko.md`) versions in sync where you can.
+2. Cite sources for facts and numbers (Liquipedia, VODs, official results). Don't invent stats.
+3. Run `zola serve` to preview, then open a pull request. CI builds the site and checks links.
+
+News posts go in `content/news/` with `date`, `authors` and optional `tags` in the front matter.
+
+### Team leagues
+
+Team leagues (the Proleague so far) use the same series/season layout as the individual
+leagues, with team-specific keys; the full schema is documented at the top of
+`templates/tournaments/team-season.html`.
+
+- **Series page** (`content/tournaments/proleague.md`, `template = "tournaments/series.html"`,
+  `format = "Team"`): one `[[extra.seasons]]` row per season, round final or grand final with
+  `season`, `year`, `winner` / `winner_team`, `runner_up` / `runner_up_team` (team name used at
+  the time + slug of `content/wiki/teams/<slug>.md`), `score` (`"4–3"`, en dash; for a final
+  decided over several team matches, the matches won, with the match scores in
+  `score_detail`), `final_date` and `prize_pool`. Team pages list their titles and finals from
+  these rows.
+- **Season page** (`template = "tournaments/team-season.html"`, `series_slug` + `season`
+  matching a series row): `teams`, `maps`, `awards`, optional `standings`, and
+  `[[extra.team_bracket]]` rounds of team matches. Each match has `a` / `a_team`, `b` /
+  `b_team`, `score_a`, `score_b`, `date` and a `sets` list
+  (`{ map, map_slug, a, a_slug, a_race, b, b_slug, b_race, winner = "a" | "b", ace = true }`,
+  plus `a2` / `b2` fields for 2v2 sets); ties played over several team matches use
+  `[[extra.team_bracket.matches.legs]]`. Only playoffs are recorded, not every regular-season
+  match.
+- Team-league sets appear on player pages as a separate "Team league playoff sets" section and
+  a column in the head-to-head table; the individual playoff record is not affected.
+  `scripts/check-team-leagues.py` (run in CI) checks that set winners add up to every score,
+  that finals match the series rows, and that every team, player and map slug resolves.
+
+## Deployment
+
+Cloudflare Pages builds every push to `main` (preview deployments for PRs) with Zola pinned in
+the build command. See [cloudflare-pages.md](cloudflare-pages.md).
 
 ## Related Projects
 
+- [api.broodwar.live](https://github.com/broodwar-live/api.broodwar.live) — Phoenix JSON API (replay parsing, stream polling, data endpoints)
 - [bw-engine](https://github.com/broodwar-live/bw-engine) — Rust replay parser and game engine (NIF + WASM)
-- [assets-pipeline](https://github.com/broodwar-live/assets-pipeline) — BW asset extraction tool
-- [assets](https://github.com/broodwar-live/assets) — Pre-built unit sprites and icons
-- [alphacraft](https://github.com/broodwar-live/alphacraft) — ML agent for competitive BW play
-
-## Legal Disclaimer
-
-This project is not affiliated with, endorsed by, or associated with Blizzard Entertainment, Inc. or Microsoft Corporation. "StarCraft" and "Brood War" are registered trademarks of Blizzard Entertainment, Inc. This is a free, open-source, non-commercial community project built by fans for fans.
 
 ## License
 
-MIT
+- **Code** — [MIT](LICENSE)
+- **Content** (`content/`) — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Third-party material** (e.g. player photos from Liquipedia) keeps its original license — see
+  [Credits & Licensing](https://broodwar.live/credits/)
+
+## Legal Disclaimer
+
+This project is not affiliated with, endorsed by, or associated with Blizzard Entertainment, Inc.
+or Microsoft Corporation. "StarCraft" and "Brood War" are registered trademarks of Blizzard
+Entertainment, Inc. This is a free, open-source, non-commercial community project built by fans
+for fans.

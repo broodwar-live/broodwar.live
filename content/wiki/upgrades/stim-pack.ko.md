@@ -1,6 +1,6 @@
 +++
 title = "스팀팩"
-description = "Stim Pack — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "스팀팩은 테란 아카데미에서 연구하는 기술로, 마린과 파이어뱃이 체력을 소모해 공격·이동 속도를 높일 수 있게 한다."
 slug = "stim-pack"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 100
 gas = 100
 levels = 1
 researched_at = "academy"
-research_time = 50
+research_time = 80
 affects = ["marine", "firebat"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-스팀팩은 마린과 파이어뱃이 HP 10을 소모하여 약 10초간 공격 속도 50%, 이동 속도 50%를 일시적으로 증가시킵니다. 느린 바이오 유닛을 빠르고 높은 DPS의 전투원으로 변모시켜 적을 카이팅하고 집중 사격으로 압도적인 효율을 발휘합니다. HP 소모는 전투 중 메딕 힐링으로 대부분 상쇄됩니다.
+연구하면 마린과 파이어뱃이 스팀팩을 쓸 수 있다. 마린은 체력 10, 파이어뱃은 체력 20을 소모하고, 잠시 동안 무기 쿨다운이 절반으로 줄며 이동 속도가 빨라진다. 체력이 너무 적으면 쓸 수 없다. 깎인 체력은 보통 함께 다니는 메딕이 회복시킨다. 자세한 내용은 [스팀팩](/ko/wiki/abilities/stim-pack/) 문서에서 다룬다.
 
-스팀팩은 테란 바이오에서 가장 중요한 단일 업그레이드입니다. 스팀팩 없이는 마린과 파이어뱃 군대가 모든 교전에서 극적으로 약해집니다 — 교전 진입이 느리고, 후퇴가 느리며, 초당 피해량이 훨씬 낮습니다. 모든 경쟁전 바이오 빌드에서 가능한 한 빨리 연구합니다. TvZ에서 저글링과 뮤탈리스크, TvP에서 질럿과 드라군, TvT 바이오 미러에서 상대를 기동으로 앞서기 위해 모든 매치업에서 필수입니다.
-
-스팀팩은 보통 아카데미 완성 직후, 표준 바이오 오프닝에서 5-6분경에 연구합니다. 프로 선수들은 종종 첫 공격 타이밍을 스팀팩 완성에 맞추는데, 이 업그레이드가 주는 파워 스파이크가 매우 크기 때문입니다.
+스팀팩은 테란 바이오 운영을 대표하는 연구로, 마린을 쓰는 빌드라면 거의 빠짐없이 연구한다.

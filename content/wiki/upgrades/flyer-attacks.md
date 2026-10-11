@@ -1,6 +1,6 @@
 +++
 title = "Flyer Attacks"
-description = "Flyer Attacks — Zerg upgrade in StarCraft: Brood War."
+description = "Flyer Attacks is the Zerg Spire upgrade that raises the damage of Mutalisks, Guardians and Devourers over three levels."
 slug = "flyer-attacks"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "spire"
-research_time = 80
+research_time = 266
 affects = ["mutalisk", "guardian", "devourer"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Flyer Attacks adds +1 base attack damage to Mutalisks, Guardians, and Devourers. For Mutalisks, the damage increase improves harassment efficiency against workers and structures, and the Glaive Wurm bounce damage also scales slightly. For Guardians, extra damage per shot makes their siege attacks on buildings and ground armies more devastating. Researched at the Spire, with higher levels requiring a Greater Spire.
+Flyer Attacks adds +1 damage per level to the Mutalisk's Glave Wurm and +2 to the Guardian's Acid Spore and the Devourer's Corrosive Acid. It is researched at the Spire or Greater Spire; level 2 requires a Lair and level 3 a Hive — not a Greater Spire.
 
-In competitive play, Flyer Attacks is important when Zerg commits to significant Mutalisk numbers or transitions into Guardian pushes. In ZvT, upgraded Mutalisks kill Marines and SCVs faster, making harassment runs more efficient. In ZvZ, the Mutalisk mirror battle is often decided by which player reaches +1 air attack first. Guardian pushes in late-game ZvT benefit enormously from attack upgrades, as Guardians slowly demolish Terran defenses from range.
+It matters most in Mutalisk-centred games, for example the Mutalisk-versus-Mutalisk fights of ZvZ, where the first air attack upgrade can swing engagements.
 
-Flyer Attacks is typically researched at the Spire once Mutalisk count reaches a critical mass, usually around the 9-11 minute mark in Mutalisk-heavy builds. In Guardian-based late-game strategies, air upgrades continue at the Greater Spire. The upgrade is irrelevant in builds that skip air units entirely.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 100 / 100 | 266 s | — |
+| 2 | 175 / 175 | 298 s | Lair |
+| 3 | 250 / 250 | 330 s | Hive |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

@@ -1,17 +1,20 @@
 +++
 title = "Katrina"
+description = "Katrina is a 4-player Jungle World map by Str18-02, used in Korean leagues in 2007-2008 and known as a Protoss-favoured map."
 slug = "katrina"
 template = "wiki/map.html"
 [extra]
-name_ko = "Katrina"
+name_ko = "카트리나"
 dimensions = "128x128"
 tileset = "Jungle World"
 players = 4
-spawn_positions = ""
-era = "2006-2008"
+spawn_positions = "3, 6, 9, 12"
+era = "2007-2008"
+sources = ["https://liquipedia.net/starcraft/Katrina", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/162_Katrina"]
+verified = "2026-10-11"
 +++
-A popular 4-player jungle map from the mid-2000s Korean competitive scene, used in professional tournaments from 2006 through 2008. Katrina features rotational symmetry with balanced spawn positions across the map's four quadrants. Each main base connects to a natural expansion through a ramp, with the lush jungle tileset providing cliffs, trees, and elevated terrain that create natural defensive features and vision blockers.
+**Katrina** is a 4-player map on the Jungle World tileset, made by 우상희 (Str18-02). It is 128x128 with start locations at 3, 6, 9 and 12 o'clock. A revised **Katrina SE** followed the original.
 
-The map was designed during a period when Korean mapmaking was reaching new heights of sophistication. Katrina's layout struck a balance between aggressive and defensive play — the rush distances were moderate, making early pressure viable but not overwhelming. The natural expansion ramps provided meaningful chokepoint defense without being so tight that they encouraged excessive turtling.
+Katrina was used from September 2007 to August 2008, including the 2007 EVER OSL, the 2008 Bacchus OSL, GOMTV MSL Season 4 and the 2007 Shinhan Bank Proleague.
 
-Katrina appeared in both OSL and MSL seasons during its active period and was known for producing well-rounded games that tested all aspects of player skill. The jungle terrain created interesting engagements around cliffs and elevated positions, while the multiple paths between bases prevented any single defensive stance from being unassailable. The map played fairly evenly across all matchups, which contributed to its popularity among tournament organizers seeking balanced map pools for the competitive scene.
+Much of the map is cliffed, which made Carriers very effective and Gateway-based PvT difficult; two-base Carrier play was a common Protoss plan in PvT there. The natural sits behind the main, making fast expansions easier. Katrina is generally remembered as Protoss-favoured.

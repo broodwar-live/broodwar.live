@@ -3,19 +3,20 @@
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   {% if section.ancestors | length > 1 %}
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="/wiki" class="hover:text-base-content/60">{{ t.wiki }}</a>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/wiki/" class="hover:text-base-content/60">{{ t.wiki }}</a>
     <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ section.title }}</span>
+    <span class="text-base-content/60">{{ section.title }}</span>
   </nav>
   {% endif %}
 
   <header class="mb-8">
     <h1 class="text-2xl font-display">{{ section.title }}</h1>
     {% if section.description %}
-    <p class="mt-2 text-sm text-base-content/50">{{ section.description }}</p>
+    <p class="mt-2 text-sm text-base-content/60">{{ section.description }}</p>
     {% endif %}
   </header>
 
@@ -26,9 +27,9 @@
     <a href="{{ sub.permalink }}" class="glass-card rounded-box p-6 glow-blue">
       <h3 class="font-semibold">{{ sub.title }}</h3>
       {% if sub.description %}
-      <p class="text-xs text-base-content/40 mt-2">{{ sub.description }}</p>
+      <p class="text-xs text-base-content/60 mt-2">{{ sub.description }}</p>
       {% endif %}
-      <span class="text-[11px] text-base-content/20 mt-3 block">{{ sub.pages | length }} entries</span>
+      <span class="text-[11px] text-base-content/60 mt-3 block">{{ sub.pages | length }} entries</span>
     </a>
     {% endfor %}
   </div>
@@ -40,7 +41,7 @@
     <a href="{{ page.permalink }}" class="glass-card rounded-box px-4 py-3 glow-blue">
       <span class="text-sm font-medium">{{ page.title }}</span>
       {% if page.extra.race is defined %}
-      <span class="text-[10px] font-bold ml-2
+      <span class="text-[11px] font-bold ml-2
         {% if 'terran' in page.taxonomies.race %}text-race-terran
         {% elif 'protoss' in page.taxonomies.race %}text-race-protoss
         {% elif 'zerg' in page.taxonomies.race %}text-race-zerg

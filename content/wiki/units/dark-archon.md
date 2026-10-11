@@ -1,5 +1,6 @@
 +++
 title = "Dark Archon"
+description = "The Dark Archon is a Protoss spellcaster, added in Brood War, formed by merging two Dark Templar and able to cast Feedback, Mind Control and Maelstrom."
 slug = "dark-archon"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,33 @@ minerals = 250
 gas = 200
 supply = 4
 hp = 25
+shields = 200
 armor = 1
 damage = 0
+damage_type = "normal"
 build_time = 20
 attack_speed = 0
-range = 10
+range = 0
 speed = 4.92
-shields = 200
 size = "large"
 ground_attack = false
 air_attack = false
-damage_type = "normal"
-dps = 0
 sight = 10
-built_from = "merge"
+merges_from = "dark-templar"
 abilities = ["mind-control", "maelstrom", "feedback"]
-upgrades = ["maelstrom", "mind-control", "plasma-shields"]
+upgrades = ["mind-control", "maelstrom", "ground-armor", "plasma-shields"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-An exotic spellcaster formed by merging two Dark Templar, the Dark Archon possesses some of the most unique and powerful abilities in Brood War. Mind Control permanently converts an enemy unit to your side, Maelstrom freezes all biological units in an area, and Feedback deals damage equal to a target's remaining energy. With no attack of its own, the Dark Archon is a pure spellcasting unit — rarely seen but capable of game-changing plays.
+The Dark Archon is created by merging two Dark Templar. It has no attack and relies on three spells: Feedback, Maelstrom and Mind Control.
 
-## Versus Zerg
+## Role in Competitive Play
 
-Maelstrom is incredibly powerful against Zerg's entirely biological army, freezing Zerglings, Hydralisks, and Mutalisks in place for other Protoss units to destroy. Mind Control can steal expensive Zerg units or, in rare cases, a Drone to establish a Zerg tech tree. The Maelstrom-storm combo against Zerg armies is devastating when executed properly.
-
-## Versus Terran
-
-Feedback can instantly kill full-energy Science Vessels or Medics in PvT, removing critical support units. Mind Control on a Siege Tank turns the enemy's strongest unit against them. However, the high cost of merging two Dark Templar and EMP vulnerability limit Dark Archon usage to specific strategic situations.
-
-## Versus Protoss
-
-Dark Archons are extremely rare in PvP. Feedback can eliminate enemy High Templar, and Mind Control can steal expensive units, but the investment of two Dark Templar is difficult to justify in the mirror. Maelstrom has no effect on the robotic units that dominate PvP armies.
+Dark Archons are uncommon. Mind Control can steal an enemy unit, and in PvZ or PvT stealing a worker can give Protoss access to a second race's buildings and units. Maelstrom stops biological units for a short time and has been used against Zerg. Feedback drains the target's energy and damages it by the same amount.
 
 ## Key Mechanics
 
-Mind Control costs 150 energy and permanently converts one enemy unit, but the Dark Archon loses its shields in the process. Maelstrom costs 100 energy and freezes all biological units in an area for roughly 7 seconds — this goes through Dark Swarm and cannot be dispelled. Feedback costs 50 energy and deals damage equal to the target's current energy, potentially one-shotting full-energy casters. The Dark Archon has 200 shields and 25 HP.
-
-## Micro Techniques
-
-- **Feedback sniping**: Targeting full-energy Science Vessels, Medics, or Defilers to instantly kill them
-- **Maelstrom into storm**: Freezing biological armies with Maelstrom then following up with Psionic Storm for devastating combos
-- **Mind Control steal**: Converting high-value units like Siege Tanks, Science Vessels, or Ultralisks
-- **Energy management**: Carefully choosing which spell to cast based on available energy and situation
-
-## Counters
-
-Dark Archons are slow and have no attack, making them vulnerable to focus fire once detected. EMP strips their shields and energy simultaneously, completely neutralizing them. Any non-biological unit is immune to Maelstrom. Mind Control's shield loss makes the Dark Archon extremely fragile afterward. Their high cost means losing one is a significant investment lost.
-
-## Combat Data
-
-- **Mind Control**: Permanently converts one enemy unit, costs all energy (minimum 150)
-- **Maelstrom**: Freezes all biological units in area for ~5 seconds, 100 energy
-- **Feedback**: Deals damage equal to target's current energy, 50 energy — one-shots full-energy casters
-- Mind Control causes the Dark Archon to lose all shields
-- Maelstrom passes through Dark Swarm and cannot be dispelled
-- **AI Note**: Dark Archons have no auto-attack; all value comes from manual spellcasting
-
-## Historical Notes
-
-While rare in professional play, Dark Archons have produced some of the most memorable moments in BW showmatches and occasional tournament games. Mind Controlling an enemy worker to build that race's structures has created wild multi-race compositions that delight spectators. The Maelstrom-storm combo against Zerg armies, while difficult to set up, remains one of the most satisfying ability combinations in the game.
+- Feedback (50 energy): removes all of the target's energy and deals damage equal to the energy removed
+- Mind Control (150 energy, researched at the Templar Archives): permanently takes control of the target, but drains the Dark Archon's shields
+- Maelstrom (100 energy, researched at the Templar Archives): stops biological units in an area from moving or attacking for a short time
+- 25 HP, 200 shields, 1 base armor, large size; cost equals two Dark Templar (250/200)

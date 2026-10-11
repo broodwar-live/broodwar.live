@@ -1,5 +1,6 @@
 +++
 title = "스폰 브루들링"
+description = "스폰 브루들링은 로봇이 아닌 지상 유닛 하나를 즉사시키고 브루들링을 생성하는 퀸 마법이다."
 slug = "spawn-broodling"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,9 +10,17 @@ name_en = "Spawn Broodling"
 caster = "queen"
 energy = 150
 hp_cost = 0
+range = 9
+hotkey = "B"
+researched_at = "queens-nest"
+research_minerals = 100
+research_gas = 100
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Queen_(Unit)"]
+verified = "2026-10-11"
 +++
-스폰 브루들링은 단일 비로봇 지상 유닛을 즉사시키고 그 자리에 두 마리의 브루들링을 생성한다. 브루들링은 저그 선수를 위해 싸우는 작고 임시적인 근접 유닛으로, 약 120초 후 죽는다. 이 능력은 모든 방어력, 보호막, 체력을 무시한다 — 스탯에 관계없이 어떤 유닛도 생존할 수 없다. 퀸에서 에너지 150을 소모하며 퀸즈 네스트에서 연구가 필요하다. 로봇 유닛(리버, 드라군 등), 건물, 공중 유닛은 대상이 될 수 없다.
+스폰 브루들링은 지상 유닛 하나를 체력·실드·방어력과 관계없이 즉사시키고, 그 자리에 브루들링을 최대 두 마리 만들어 낸다. 브루들링은 약한 근접 유닛으로 1,800프레임(게임 시간 120초, 가장 빠름 속도에서는 실제로 약 76초)이 지나면 사라진다. 공중 유닛, 건물, 로봇 유닛(지상에서는 프로브와 리버), 아칸과 다크 아칸은 대상으로 지정할 수 없고, 환상 유닛에 쓰면 브루들링은 나오지 않고 환상만 사라진다.
 
-프로 경기에서 스폰 브루들링은 치명적인 대시즈 도구이다. 가장 큰 영향력을 발휘하는 사용법은 시즈 모드의 시즈 탱크 — 테란 최강의 지상 유닛 — 를 아무런 대응 없이 즉사시키는 것이다. ZvT에서 단일 퀸이 탱크 라인을 하나씩 체계적으로 제거할 수 있으며, 퀸은 비행 유닛이므로 지상 유닛이 접근할 수 없는 각도에서 접근할 수 있다. 하이 템플러, 디파일러 등 고가치 생체 지상 유닛도 한 방에 제거한다. 일부 저그 선수는 ZvP에서 스캐럽 발사 전에 리버를 저격하는 데 사용하기도 한다.
+에너지 150이 들고 사거리는 9이며, [퀸즈 네스트](@/wiki/buildings/queens-nest.ko.md)에서 미네랄 100, 가스 100(1,200프레임, 80초)에 연구한다.
 
-퀸은 체력이 약하고 프로 경기에서 잘 생산되지 않아 스폰 브루들링의 등장 빈도를 제한한다. 효과적으로 사용하려면 안전한 각도에서 퀸을 진입시키고, 최고 가치 대상에 시전한 후 즉시 후퇴해야 한다. 오버로드 시야와 함께 사용하면 정확한 대상 지정이 가능하다. 가장 큰 실수는 시전 전에 퀸을 잃는 것이다 — 항상 대공으로부터 퀸을 멀리 두고 명확한 대상이 있을 때만 투입해야 한다.
+대표적인 대상은 시즈 모드의 시즈탱크이며, 하이 템플러·다크 템플러·디파일러 같은 비싼 지상 유닛도 노릴 수 있다. 다만 퀸이 약하고 프로 경기에서 거의 나오지 않아 보기 드문 기술이다.

@@ -1,17 +1,20 @@
 +++
 title = "Gold Rush"
+description = "Gold Rush is a 3-player Desert map by Earthattack, used in ASL Season 4 in 2017."
 slug = "gold-rush"
 template = "wiki/map.html"
 [extra]
-name_ko = "Gold Rush"
+name_ko = "골드러시"
 dimensions = "128x128"
-tileset = "Badlands"
-players = 4
-spawn_positions = ""
-era = "2017-2019"
+tileset = "Desert"
+players = 3
+spawn_positions = "4, 8, 12"
+era = "2017"
+sources = ["https://liquipedia.net/starcraft/Gold_Rush", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/sospa/maps/743_Gold_Rush", "https://web.archive.org/web/20220309032209/https://namu.wiki/w/%ED%88%AC%ED%98%BC(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A 4-player badlands map from the early ASL revival era, used in competitive play from 2017 through 2019. Gold Rush features the rugged brown-red terrain of the badlands tileset with four spawn positions in rotational symmetry. The map's defining characteristic is its rich mineral expansions — resource-heavy bases scattered across the map that create faster economic development and, consequently, faster-paced games than maps with standard mineral counts.
+**Gold Rush** is a 3-player map on the Desert tileset, made by Earthattack (김응서). It is 128x128. Liquipedia gives the start locations as 4, 8 and 12 o'clock (TLPD lists 1, 5 and 9).
 
-The rich mineral patches accelerate the game's economic pace, allowing players to reach higher-tech units and larger armies sooner than on standard maps. This design choice fundamentally affected the map's meta — timing attacks arrived earlier, tech transitions happened faster, and the late game featured larger army clashes. The badlands terrain provides ridges and elevated positions that create natural chokepoints and siege-friendly terrain between the abundant resource locations.
+Gold Rush was one of the maps of AfreecaTV StarLeague Season 4 (September-November 2017) and was also used in BSL. English-language casters nicknamed it "Skull Desert".
 
-Gold Rush appeared during the early years of the ASL, a period when competitive Brood War was experiencing a renaissance after the closure of OSL and MSL. The map contributed to the exciting, high-action atmosphere that helped re-establish professional BW as a spectator sport. The rich mineral mechanic slightly favored aggressive builds that could exploit the accelerated economy, making it a map where early pressure and mid-game timing attacks were particularly effective. It is remembered as an innovative map that used resource distribution to shape the pace and style of competitive games.
+It is a concept map built around special "gates" on the outskirts of the map that open alternative paths into a player's main, natural and other expansions. The ground-gas base sits behind a choke, while the mineral-only expansion is exposed.

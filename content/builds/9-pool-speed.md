@@ -10,8 +10,32 @@ tags = ["standard", "safe", "zergling"]
 [extra]
 race = "zerg"
 matchup = "ZvZ"
-games = 312
-winrate = 50
+sources = ["https://liquipedia.net/starcraft/9_Pool_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "8"
+item = "units/drone"
+[[extra.steps]]
+supply = "9"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "8"
+item = "units/overlord"
+[[extra.steps]]
+supply = "8"
+item = "units/drone"
+[[extra.steps]]
+supply = ""
+item = "units/zergling"
+timing = "@100% Spawning Pool"
+note = "Usually 6, depending on scouting"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "@100 gas"
 +++
 The standard safe ZvZ opening. Build a spawning pool at 9 supply and research metabolic boost (zergling speed) as soon as the pool finishes. This timing is late enough to get a few extra drones for economy but early enough to have zerglings ready to defend any cheese or early aggression.
 

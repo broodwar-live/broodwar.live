@@ -1,5 +1,6 @@
 +++
 title = "Mind Control"
+description = "Mind Control is a Dark Archon spell that permanently takes control of an enemy unit."
 slug = "mind-control"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,15 +10,17 @@ name_ko = "마인드 컨트롤"
 caster = "dark-archon"
 energy = 150
 hp_cost = 0
-range = 10
+range = 8
 hotkey = "C"
 researched_at = "templar-archives"
 research_minerals = 200
 research_gas = 200
-research_time = 100
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Mind_Control"]
+verified = "2026-10-11"
 +++
-Mind Control permanently takes ownership of a single enemy unit, transferring it to the casting player's control. The stolen unit retains all of its upgrades and abilities. Upon casting, the Dark Archon's shields are reduced to 0, and the ability costs all remaining energy (minimum 150 required). Requires research at the Templar Archives.
+Mind Control permanently transfers one enemy non-building unit to the caster. Larvae, eggs, Spider Mines, Interceptors and Scarabs cannot be taken, nor can units in Stasis Field. Casting it drains the Dark Archon's shields to zero. A controlled unit keeps its unit-specific researches (a stolen High Templar, for example, brings its researched spells with it) but not the previous owner's weapon, armor or shield upgrade levels. Units inside a controlled transport change sides with it.
 
-Mind Control is one of the most iconic and dramatic abilities in Brood War history. Stealing a Drone and building Zerg structures as Protoss — or taking an SCV to produce Terran buildings — enables multi-race production, which is one of the game's most legendary moments when it occurs in competitive matches. Beyond the spectacle, Mind Control has practical applications: stealing a detector (Observer, Science Vessel, Overlord) gives the caster's team free detection, and taking a high-value unit like a Siege Tank or Carrier immediately swings the unit count in a fight.
+It costs 150 energy, has a range of 8 and is researched at the [Templar Archives](@/wiki/buildings/templar-archives.md) for 200 minerals and 200 gas (1,800 frames, 120 s).
 
-In competitive play, Mind Control is extremely rare due to the enormous investment required — Dark Archons need two Dark Templar (250/200 total), and the shield loss upon casting leaves the Dark Archon highly vulnerable. The ability is most often seen in ultra-late-game scenarios where resources are abundant and the game has stalled. When using Mind Control, prioritize stealing workers for multi-race production if the game allows it, or steal the most expensive enemy unit you can reach. Protect the Dark Archon immediately after casting, as it will have zero shields.
+Mind Control is rare in professional games. Its best-known use is stealing a worker — an SCV or Drone — to build a second race's tech; it can also take high-value units such as Carriers, Siege Tanks or Defilers, and stolen units count against a separate race's supply cap. The Dark Archon is left without shields afterwards and should be protected.

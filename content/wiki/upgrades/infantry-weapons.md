@@ -1,6 +1,6 @@
 +++
 title = "Infantry Weapons"
-description = "Infantry Weapons — Terran upgrade in StarCraft: Brood War."
+description = "Infantry Weapons is the Terran Engineering Bay upgrade that raises the attack damage of Marines, Firebats and Ghosts over three levels."
 slug = "infantry-weapons"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "engineering-bay"
-research_time = 80
+research_time = 266
 affects = ["marine", "firebat", "ghost"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Infantry Weapons adds +1 base attack damage to Marines, Firebats, and Ghosts. This upgrade is researched at the Engineering Bay, with levels 2 and 3 requiring a Science Facility. The damage increase applies per shot, making it especially impactful for rapid-firing Marines.
+Each level of Infantry Weapons adds damage to the Barracks units that attack: +1 per shot for the Marine's Gauss Rifle, the Ghost's C-10 Canister Rifle, and each hit of the Firebat's Flame Thrower. Medics and SCVs are not affected. Levels 2 and 3 need a completed Science Facility.
 
-In competitive bio play, +1 Infantry Weapons is often the very first upgrade researched. The key breakpoint is against Zerglings: a +1 Marine kills a Zergling in 3 shots instead of 4, a massive improvement in cost-efficiency during early and mid-game engagements. Against Protoss, upgraded Marines trade far more effectively against Zealots and Dragoons. Pros continuously research all three levels through the mid-game, keeping the Engineering Bay active at all times.
+Against Zerg, where Marines fight Zerglings and Mutalisks in large numbers, attack upgrades from an Engineering Bay are a standard part of bio play, usually paired with Infantry Armor from a second Engineering Bay.
 
-Infantry Weapons is typically started as soon as the first Engineering Bay completes, around the 6-7 minute mark in standard TvZ and TvP bio builds. Reaching +3 weapons before the opponent reaches +3 armor can be game-deciding in long macro games.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 100 / 100 | 266 s | — |
+| 2 | 175 / 175 | 298 s | Science Facility |
+| 3 | 250 / 250 | 330 s | Science Facility |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

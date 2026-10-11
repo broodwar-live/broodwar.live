@@ -1,21 +1,30 @@
 +++
-title = "갑피"
-description = "Carapace — 스타크래프트: 브루드 워 Zerg 업그레이드."
+title = "지상 갑피"
+description = "지상 갑피는 저그 에볼루션 챔버에서 3단계까지 연구하는 업그레이드로, 단계마다 저그 지상 유닛의 방어력을 1씩 올린다."
 slug = "carapace"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+aliases = ["갑피"]
 race = "zerg"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "evolution-chamber"
-research_time = 80
-affects = ["zergling", "hydralisk", "lurker", "ultralisk", "drone"]
+research_time = 266
+affects = ["drone", "zergling", "hydralisk", "lurker", "ultralisk", "defiler", "infested-terran"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-갑피 업그레이드는 각 레벨마다 저글링, 히드라리스크, 러커, 울트라리스크, 드론을 포함한 모든 저그 지상 유닛의 방어력을 +1씩 증가시킵니다. 방어력이 높을수록 피격당 받는 피해가 줄어들어 빠른 저피해 공격에 가장 효과적입니다. 에볼루션 챔버에서 연구하며, 상위 레벨은 레어와 하이브가 각각 필요합니다.
+지상 갑피는 단계마다 저그 지상 유닛의 방어력을 1씩 올린다. 드론, 저글링, 히드라리스크, 러커, 울트라리스크, 디파일러, 인페스티드 테란에 적용되며 브루들링, 라바, 알도 해당된다. 2단계는 레어, 3단계는 하이브가 필요하다.
 
-갑피는 공격 업그레이드보다 먼저 저그가 가장 먼저 연구하는 업그레이드인 경우가 많습니다. 핵심 임계점은 +1 갑피 저글링이 마린 사격을 한 발 더 버텨 초중반 교전에서 교환 비율을 극적으로 변화시키는 것입니다. 이 단일 업그레이드 레벨이 저글링이 마린에 도달하기 전에 죽느냐, 싸울 수 있는 충분한 HP로 근접 사거리에 도달하느냐의 차이를 만들 수 있습니다. ZvT에서 +1 갑피 타이밍은 매치업에서 가장 중요한 벤치마크 중 하나입니다. ZvP에서 방어력 강화 저글링은 질럿과 프로브가 처리하기 훨씬 어렵습니다.
+방어력은 타격마다 피해에서 빠지므로 기본 피해가 6인 마린이나 질럿을 상대할 때 가치가 크다. 저그는 중반에 에볼루션 챔버 두 개를 지어 공격력과 방어력 업그레이드를 함께 올리는 경우가 많다. 울트라리스크에게는 키티너스 플레이팅과 중첩된다.
 
-갑피는 보통 에볼루션 챔버에서 5-7분경에 시작하며, ZvT에서 종종 첫 업그레이드로 나옵니다. 3레벨까지 연속 업그레이드가 표준이며, 많은 저그 플레이어가 각 레벨에서 공격 업그레이드보다 갑피를 우선시합니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 150 / 150 | 266초 | — |
+| 2 | 225 / 225 | 298초 | 레어 |
+| 3 | 300 / 300 | 330초 | 하이브 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

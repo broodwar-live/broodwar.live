@@ -1,17 +1,29 @@
 +++
 title = "Fantasy"
-description = "Fantasy — Terran player from South Korea."
+description = "Fantasy (Jung Myung Hoon) — Terran player from South Korea."
 slug = "fantasy"
 template = "players/player.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-image = "/images/players/fantasy.png"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-rating = 2500
-tier = "Legend"
-aliases = ["정명훈", "Jung Myung Hoon"]
+real_name = "정명훈"
+romanized_name = "Jung Myung Hoon"
+birth_date = "1991-07-01"
+status = "retired"
+years_active = "2007–2014"
+aliases = ["By.FanTaSy", "Siz)FanTaSy"]
+liquipedia = "https://liquipedia.net/starcraft/Fantasy_(Player)"
+sources = ["https://liquipedia.net/starcraft/Fantasy_(Player)"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2007-03-12"
+to = "2014-09-30"
 +++
-Fantasy holds the distinction of being the last OnGameNet Starleague champion, winning the final OSL before the league transitioned formats. Competing throughout the golden era and into the modern scene, he earned the nickname for his revolutionary approach to bio Terran play. His aggressive marine-medic timing attacks and innovative TvZ strategies caught even the best Zerg players off guard, and his willingness to deviate from standard builds made him a nightmare to prepare for. Fantasy's mechanical skill was among the best of his generation, with crisp micro that could turn losing engagements into victories. He remained active in early ASL seasons and continues to be remembered as one of the most exciting Terran players to watch.
+Fantasy (Jung Myung Hoon) is a South Korean former Terran player, born in 1991, who spent his entire career with SK Telecom T1 from 2007 to 2014. He reached five OnGameNet Starleague finals, finishing runner-up in the Incruit and BATOO Starleagues (2008), the Jin Air Starleague (2011) and the Tving Starleague (2012), and winning the Bacchus Starleague 2010.
+
+A mech-based TvZ approach he showed during the Incruit OSL became known as the "Fantasy build". He was inducted into the Korean esports Hall of Fame in 2012 and later became a League of Legends coach.

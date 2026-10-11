@@ -1,6 +1,6 @@
 +++
 title = "Soulkey"
-description = "Soulkey — Zerg player from South Korea."
+description = "Soulkey (Kim Min Chul) — Zerg player from South Korea."
 slug = "soulkey"
 template = "players/player.html"
 [taxonomies]
@@ -10,8 +10,27 @@ image = "/images/players/soulkey.jpg"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-rating = 2780
-tier = "S"
-aliases = ["김민철", "Kim Min Chul"]
+real_name = "김민철"
+romanized_name = "Kim Min Chul"
+birth_date = "1991-12-10"
+status = "active"
+years_active = "2008–present"
+aliases = ["Neo.G_Soulkey", "NeedMoney[LMAO]"]
+liquipedia = "https://liquipedia.net/starcraft/Soulkey"
+soop = "minchul"
+sources = ["https://liquipedia.net/starcraft/Soulkey"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2008-08-13"
+to = "2013-12-13"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2013-12-13"
+to = "2014-09-25"
 +++
-Soulkey is one of the elite Zerg players of the modern era, with multiple ASL finals appearances and a reputation for near-perfect defiler control that makes his late-game ZvT virtually unassailable. His deep understanding of Zerg strategy allows him to navigate the complex mid-game transitions of ZvP and ZvT with remarkable precision, consistently finding the right moments to strike. Soulkey's mechanical skill is among the highest of active Zerg players, and his plague-dark swarm combinations have become the gold standard for defiler play. His rivalry with the top Terran and Protoss players has produced some of the most memorable series in ASL history. He remains a perennial title contender and one of the most respected competitors in the modern scene.
+Soulkey (Kim Min Chul) is a South Korean Zerg who played for Woongjin Stars from 2008 and joined SK Telecom T1 in 2013. He first stood out in 2010 with a strong KeSPA Dream League record and an all-kill against STX SouL in the Winners League playoffs. After a spell in StarCraft II, he began streaming on Afreeca in 2016.
+
+In the post-KeSPA era he won Korea StarCraft League 2 in 2018 and four consecutive AfreecaTV StarCraft League titles, ASL 16 through ASL 19 (2023–2025).

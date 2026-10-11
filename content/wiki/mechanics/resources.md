@@ -1,34 +1,27 @@
 +++
 title = "Resources"
-description = "Minerals and vespene gas — the two resources that drive every decision in Brood War."
+description = "Minerals and vespene gas: how they are mined, trip sizes and mining rates in Brood War."
 slug = "resources"
 template = "wiki/mechanic.html"
+[extra]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Mining"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-Every unit, building, upgrade, and technology in StarCraft: Brood War costs some combination of two resources: **minerals** and **vespene gas**. Understanding how these resources are gathered, how quickly they flow, and when to invest in expanding your economy is fundamental to competitive play.
+Every unit, building, upgrade and research in StarCraft: Brood War costs **minerals**, **vespene gas** or both. Each player starts with 50 minerals and 4 workers (SCV, Probe or Drone; each costs 50 minerals).
 
 ## Minerals
 
-Minerals are the primary resource. Every map features mineral patches clustered at base locations, typically 8 patches per main base and 6-8 at natural and expansion sites. Workers (SCV, Probe, Drone) mine minerals by traveling to a patch, harvesting, and returning the load to the nearest base structure.
+Workers mine a mineral patch and carry the load back to the nearest Command Center, Nexus or Hatchery/Lair/Hive. Each trip returns **8 minerals**. When a patch has fewer than 8 left, the last trip takes whatever remains and the patch disappears. How much a patch holds is set by the map.
 
-Each mineral trip yields **8 minerals**. The time per trip depends on the distance between the mineral patch and the base structure — closer patches are mined faster. On average, a single worker mines approximately 0.044 minerals per game frame at optimal distance, translating to roughly 40-45 minerals per minute in real time at Fastest speed.
+Measured rates for a single worker on a patch are about 65 minerals per real minute for an SCV, 67 for a Drone and 68 for a Probe; the difference comes from the shape of each race's town hall, since all workers move at the same speed. Ignoring travel, mining a patch takes roughly 80 frames.
 
-All players start with **50 minerals** and 4 workers. The first major decision in any game — what to build and when — is constrained by this starting amount. A worker costs 50 minerals across all races, so your opening build order is a careful sequence of worker production and early structures.
+## Vespene gas
 
-## Vespene Gas
+Gas requires an extraction building on the geyser: Refinery (Terran), Assimilator (Protoss) or Extractor (Zerg). Each trip returns **8 gas**, and a worker spends 37 frames inside the building. Once a geyser is depleted it still yields **2 gas** per trip. On most modern maps three workers saturate a geyser (about 300 gas per real minute); some older maps need four.
 
-Vespene gas is the secondary resource, required for most advanced units and all upgrades. Gas is harvested from vespene geysers — each base location has exactly one geyser. To mine gas, you must first build an extraction structure on the geyser: a Refinery (Terran), Assimilator (Protoss), or Extractor (Zerg).
+## Resource balance
 
-Each gas trip also yields **8 gas**. The optimal number of workers on a single geyser is **3**, though a fourth worker can marginally increase throughput on geysers that are far from the base structure. Beyond 3 workers, returns diminish sharply.
-
-## Mineral-Only vs Gas-Heavy Units
-
-Understanding resource ratios is critical for army composition. Some units are mineral-only or mineral-heavy (Zerglings, Marines, Zealots), while others are gas-heavy (Siege Tanks, High Templar, Mutalisks). A strong economy means not just having resources, but having the **right ratio** of minerals to gas for your chosen strategy.
-
-Players who float excess minerals often add mineral-dump units (Zerglings, Marines) to supplement gas-heavy compositions. Conversely, gas-starved players must delay tech or take additional expansions with geysers.
-
-## Expansion Timing
-
-Since each base has a finite amount of resources, expanding to additional base locations is essential. Mineral patches eventually mine out (each patch contains 1500 minerals), and a single geyser provides gas too slowly for late-game armies. Knowing when to invest in a new expansion versus spending on army is one of the most important strategic decisions in Brood War. Expanding too early leaves you vulnerable to attack; expanding too late means you fall behind economically and lose the long game.
+Mineral-heavy units (Zerglings, Marines, Zealots) and gas-heavy ones (Mutalisks, High Templar, Science Vessels) make the mineral-to-gas ratio a constant consideration, and extra geysers are one reason to take more bases.

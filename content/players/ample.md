@@ -1,17 +1,29 @@
 +++
 title = "Ample"
-description = "Ample — Zerg player from South Korea."
+description = "Ample (Kim Tae Young) — South Korean Terran, KT Rolster from 2010 and a regular ASL qualifier; KSL Season 3 quarterfinalist."
 slug = "ample"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/ample.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-rating = 2420
-tier = "B"
-aliases = ["고석현", "Go Seok Hyun"]
+real_name = "김태영"
+romanized_name = "Kim Tae Young"
+birth_date = "1992-07-16"
+status = "active"
+aliases = ["[ErOs]~Lovedambi", "ErOs_Ample", "Sasin", "4s.사테"]
+liquipedia = "https://liquipedia.net/starcraft/Ample"
+soop = "hoonykkk"
+sources = ["https://liquipedia.net/starcraft/Ample"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2010-08-23"
+to = ""
 +++
-Ample is a Korean Zerg competing in the modern scene with a developing game and regular participation in ASL qualifiers and online tournaments. His playstyle features standard Zerg strategies with improving mechanics and a growing understanding of macro management. Ample's ZvT shows the most promise, with developing mutalisk control and better timing on his mid-game transitions. His consistent participation in the competitive circuit demonstrates dedication to the game and the depth of Zerg talent in the Korean scene. His willingness to learn and adapt across seasons keeps him relevant in the qualifier pool.
+Ample (Kim Tae Young) is a South Korean Terran player born on 16 July 1992. He joined [KT Rolster](@/wiki/teams/kt-rolster.md) in August 2010, in the last years of the KeSPA league, and in 2011 he played in the 4th SonicTV BJ Starleague, an amateur event. Fans know him by the nickname "Sashin Terran".
+
+In the AfreecaTV era he became a regular in the starleagues. He played in [ASL Season 2](@/tournaments/asl-s2.md), [ASL Season 4](@/tournaments/asl-s4.md), [ASL Season 8](@/tournaments/asl-s8.md), [ASL Season 9](@/tournaments/asl-s9.md), [ASL Season 15](@/tournaments/asl-s15.md), [ASL Season 16](@/tournaments/asl-s16.md), [ASL Season 20](@/tournaments/asl-s20.md) and [ASL Season 21](@/tournaments/asl-s21.md). His deepest run in the leagues recorded here is the quarterfinals of [KSL Season 3](@/tournaments/ksl-s3.md).

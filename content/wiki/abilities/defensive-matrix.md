@@ -1,5 +1,6 @@
 +++
 title = "Defensive Matrix"
+description = "Defensive Matrix is a Science Vessel spell that shields a single unit with a 250-point damage-absorbing barrier."
 slug = "defensive-matrix"
 template = "wiki/ability.html"
 [taxonomies]
@@ -10,11 +11,13 @@ caster = "science-vessel"
 energy = 100
 hp_cost = 0
 range = 10
-duration = 90.0
+duration = 89.6
 hotkey = "D"
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Defensive_Matrix"]
+verified = "2026-10-11"
 +++
-Defensive Matrix creates a temporary 250 HP energy shield on a single target unit that lasts approximately 90 seconds or until all 250 damage points have been absorbed. The shield absorbs all damage types equally and does not stack with additional casts. Costs 100 energy from a Science Vessel with no research requirement.
+Defensive Matrix surrounds one friendly or enemy non-building unit with a barrier that absorbs up to 250 damage. The barrier has no armor and soaks every damage type at full value before shields or hit points are touched. It ends when the 250 points are used up or after 168 status ticks (about 1,344 frames — roughly 90 game seconds, or about 56 seconds of real time on Fastest). Casting it again on the same unit simply resets the barrier to 250 and restarts the timer; matrices do not stack.
 
-In competitive play, Defensive Matrix is a staple ability in TvT mech wars, where matrixing a leading Siege Tank during a push can make the difference between breaking a defensive line or losing the engagement. In TvZ, it protects Science Vessels themselves from Scourge suicide attacks, preserving the Vessel's ability to cast Irradiate. The ability also sees use on Battlecruisers in late-game scenarios, effectively giving them 750 total HP against focused fire.
+It costs 100 energy, has a cast range of 10 (the Science Vessel's sight range) and needs no research. Because BW enforces a minimum of 0.5 damage per hit, a matrixed unit still loses a sliver of HP from each attack.
 
-When using Defensive Matrix, prioritize it on whatever unit the enemy is focusing down — a matrixed unit at the front of a push absorbs damage that would otherwise kill it. Avoid wasting it on full-health units that are not under immediate threat. Remember that Matrix competes with Irradiate for the same 100 energy, so choose wisely based on the situation: Irradiate against clustered biologicals, Matrix when protecting a key unit under fire.
+Matrix is a situational spell — Vessel energy usually goes to Irradiate or EMP Shockwave — but it is used to keep a key unit alive: the lead Siege Tank or Dropship of a push, or a Marine sent ahead to draw Lurker spines. A matrixed cloaked unit becomes visible to the enemy.

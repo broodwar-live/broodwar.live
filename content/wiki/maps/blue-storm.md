@@ -1,17 +1,20 @@
 +++
 title = "Blue Storm"
+description = "Blue Storm is a 2-player Twilight map by Earthattack, used in Korean leagues in 2007-2008 and named best map of the 2007 season."
 slug = "blue-storm"
 template = "wiki/map.html"
 [extra]
-name_ko = "Blue Storm"
+name_ko = "블루스톰"
 dimensions = "128x96"
 tileset = "Twilight"
 players = 2
 spawn_positions = "1, 7"
-era = "2008-2012"
+era = "2007-2008"
+sources = ["https://liquipedia.net/starcraft/Blue_Storm", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/159_Blue_Storm"]
+verified = "2026-10-11"
 +++
-A 2-player twilight map from the golden era of Korean Brood War, known for its striking purple-blue visuals and well-balanced gameplay. Spawns are at the 1 and 7 o'clock positions on a 128x96 map, creating a diagonal layout. Each main base connects to a natural expansion protected by a ramp, while the center of the map features a contested open area where major engagements take place.
+**Blue Storm** is a 2-player map on the Twilight tileset, made by Earthattack (김응서). It is 128x96 with start locations at 1 and 7 o'clock.
 
-Blue Storm was a regular fixture in OSL and MSL tournaments from 2008 through 2012, appearing in multiple seasons across both leagues. The twilight tileset gives the map its signature atmospheric aesthetic — the deep blues and purples create a moody battlefield that became iconic in professional broadcasts. The map's balanced layout meant it was frequently chosen as a deciding game map in best-of series.
+Blue Storm debuted in September 2007 in GOMTV MSL Season 3 and was used until August 2008 across all three major Korean competitions: the OSL (e.g. 2008 Bacchus OSL), the MSL and the Proleague. It received the Best Map award for the 2007 season at the 3rd Korean e-Sports Awards in March 2008. Zerg won most of the early TvZ games, so later versions (1.1 and 1.2) reworked the natural to make Mutalisk harassment less punishing. The map was later used in community leagues such as ASL Season 3, BSL and KSL Season 1.
 
-The map plays well across all matchups due to its straightforward but strategically sound design. The ramp-protected naturals provide safe early expansion for all races, while the open center encourages decisive mid-game engagements. In TvZ, the map's moderate rush distance creates a good balance between aggressive and economic play. Protoss benefits from the defensible natural for fast tech builds, while Zerg can use the map's side paths for mutalisk harassment. Blue Storm is remembered as one of the most visually distinctive and competitively solid maps of its era.
+A direct path between the bases allows quick scouting and early aggression, while a central ravine divides the map; in the mid game each player typically holds one side of it. A cliff directly behind the natural mineral line was the main reason Mutalisks were so effective in the original version.

@@ -1,6 +1,6 @@
 +++
 title = "Mong"
-description = "Mong — Terran player from South Korea."
+description = "Mong (Yoon Chan Hee) — former CJ Entus Terran, SonicTV BJ Starleague winner and long-time ASL regular and streamer."
 slug = "mong"
 template = "players/player.html"
 [taxonomies]
@@ -10,8 +10,24 @@ image = "/images/players/mong.jpg"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-rating = 2560
-tier = "B+"
-aliases = ["윤찬희"]
+real_name = "윤찬희"
+romanized_name = "Yoon Chan Hee"
+birth_date = "1992-05-17"
+status = "active"
+years_active = "2010–2014, 2016–present"
+aliases = ["Mong[Name]", "Monster[WHITE]", "Ever)T(Gowoon", "Buffalo", "mstzmstz"]
+liquipedia = "https://liquipedia.net/starcraft/Mong"
+soop = "cksgmldbs"
+sources = ["https://liquipedia.net/starcraft/Mong"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2010-03-24"
+to = ""
 +++
-Mong is a veteran Terran who competed during the original proleague era and has remained active through the modern ASL scene. Known for solid mechanics and a dependable playstyle, he brings years of professional experience to every match. His TvZ is his strongest matchup, featuring disciplined mech play and careful expansion timing that frustrates aggressive Zerg players. Mong has been a familiar face in ASL qualifying rounds, occasionally advancing deep enough to face top-tier opponents. His longevity in the scene speaks to both his love of the game and his ability to adapt to the evolving meta, making him a respected figure among both veterans and newer competitors.
+Mong (Yoon Chan Hee) is a South Korean Terran player, born in 1992 in Goyang. He joined [CJ Entus](@/wiki/teams/cj-entus.md) in March 2010.
+
+He made his name in the post-KeSPA scene. In April 2012 he won the Onse Telecom SonicTV BJ Starleague, his first major title, in a field that included returning retired pros, and he went on to play in the SonicTV Starleague events, keeping a win rate of around 60% over his first three years there. His strong online results earned him the nicknames "Online FlaSh" and "Afreecan FlaSh", and he became one of the most popular Afreeca streamers on the Fish server.
+
+Since the ASL began he has been one of its most frequent qualifiers, from [ASL Season 1](@/tournaments/asl-s1.md) through [ASL Season 21](@/tournaments/asl-s21.md). His best ASL result is a quarterfinal in [ASL Season 3](@/tournaments/asl-s3.md).

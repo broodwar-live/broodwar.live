@@ -1,17 +1,35 @@
 +++
-title = "hero"
-description = "hero — 한국의 테란 선수."
+title = "herO"
+description = "herO(조일장) — STX 소울 출신 저그, 2008-2009 바투 스타리그 4강, ASL 시즌 4·17 준우승."
 slug = "hero"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["zerg"]
 [extra]
 image = "/images/players/hero.png"
-race = "terran"
+race = "zerg"
 country = "KR"
 country_name = "한국"
-rating = 2720
-tier = "A"
-aliases = ["김태영", "Kim Tae Young"]
+real_name = "조일장"
+romanized_name = "Jo Il Jang"
+birth_date = "1990-06-20"
+status = "active"
+years_active = "2007–2012, 2016–present"
+aliases = ["By.herO", "[NeOx]1102", "chobodari", "GOMSUJANG", "firepunchcolor", "GOM[WHITE]"]
+liquipedia = "https://liquipedia.net/starcraft/Hero"
+soop = "byhero"
+sources = ["https://liquipedia.net/starcraft/Hero"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2007-03-12"
+to = "2012-05-16"
+[[extra.teams]]
+name = "Team 8"
+from = "2012-05-16"
+to = "2012"
 +++
-hero는 황금기 프로리그와 현대 ASL을 모두 아우르는 베테랑 테란입니다. 깊은 게임 지식과 전술적 다재다능함으로 오랜 경험을 바탕으로 각 매치업에 맞는 접근법을 찾아내어 준비하기 어려운 상대입니다. 현 씬 최고 수준의 TvT를 보유하고 있으며, 인내심 있는 시즈 탱크 포지셔닝과 현명한 벌처 플레이로 미러 매치의 페이스를 조절합니다. ASL 16강과 8강에 여러 차례 진출했으며, 탈락전에서의 클러치 플레이로 젊은 선수들 사이에서도 존재감을 유지하고 있습니다. 높은 수준의 경쟁을 이어가며 BW 황금기와 현대 부활기를 잇는 가교 역할을 하고 있습니다.
+herO(조일장)는 1990년생 대한민국의 저그 선수이다. 2007년 [STX 소울](@/wiki/teams/stx-soul.ko.md)에 입단해 2007 프로리그에서 [fOrGG](@/players/forgg.ko.md)를 상대로 방송 데뷔전을 치렀고, 2008년 마이너리그에서 좋은 성적을 내며 두각을 나타냈다. [2008-2009 Batoo OSL](@/tournaments/2008-2009-batoo-osl.ko.md)에서는 당시 랭킹 1위였던 [Bisu](@/players/bisu.ko.md)를 꺾고 4강에 올랐으나 [Jaedong](@/players/jaedong.ko.md)에게 막혔다. 2012년 5월 Team 8로 이적했다.
+
+아프리카TV 시대에는 가장 꾸준한 선수 가운데 한 명이다. [ASL 시즌 4](@/tournaments/asl-s4.ko.md)에서 준우승했는데 결승에서 [Flash](@/players/flash.ko.md)에게 1:3으로 졌고, [ASL 시즌 17](@/tournaments/asl-s17.ko.md)에서도 준우승했는데 결승에서 [Soulkey](@/players/soulkey.ko.md)에게 3:4로 졌다. [ASL 시즌 5](@/tournaments/asl-s5.ko.md), [ASL 시즌 11](@/tournaments/asl-s11.ko.md), [ASL 시즌 12](@/tournaments/asl-s12.ko.md), [ASL 시즌 14](@/tournaments/asl-s14.ko.md), [ASL 시즌 15](@/tournaments/asl-s15.ko.md)에서는 4강에 올랐다.

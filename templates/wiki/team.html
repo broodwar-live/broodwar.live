@@ -5,42 +5,43 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
-    {"@type": "ListItem", "position": 2, "name": "Teams", "item": "{{ config.base_url }}/wiki/teams"},
-    {"@type": "ListItem", "position": 3, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/wiki"},
+    {"@type": "ListItem", "position": 2, "name": "Teams", "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/wiki/teams"},
+    {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "SportsTeam",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
-  "url": "{{ current_url }}",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
   "sport": "StarCraft: Brood War"
 }
 {% endblock %}
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="/wiki" class="hover:text-base-content/60">{{ t.wiki }}</a>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/wiki/" class="hover:text-base-content/60">{{ t.wiki }}</a>
     <span class="mx-1.5">/</span>
-    <a href="/wiki/teams" class="hover:text-base-content/60">{% if lang == "ko" %}팀{% else %}Teams{% endif %}</a>
+    <a href="{{ lp }}/wiki/teams/" class="hover:text-base-content/60">{% if lang == "ko" %}팀{% else %}Teams{% endif %}</a>
     <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ page.title }}</span>
+    <span class="text-base-content/60">{{ page.title }}</span>
   </nav>
 
   <div class="max-w-3xl">
     <div class="flex items-center gap-4 mb-2">
       <h1 class="text-2xl font-display">{{ page.title }}</h1>
       {% if e.status == "active" %}
-      <span class="text-[10px] px-2 py-0.5 rounded bg-success/10 text-success">{% if lang == "ko" %}활성{% else %}Active{% endif %}</span>
+      <span class="text-[11px] px-2 py-0.5 rounded bg-success/10 text-success">{% if lang == "ko" %}활성{% else %}Active{% endif %}</span>
       {% elif e.status == "disbanded" %}
-      <span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/30">{% if lang == "ko" %}해체{% else %}Disbanded{% endif %}</span>
+      <span class="text-[11px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/60">{% if lang == "ko" %}해체{% else %}Disbanded{% endif %}</span>
       {% endif %}
     </div>
-    <p class="text-xs text-base-content/40 mb-6">{{ e.region }}{% if e.founded %} · {% if lang == "ko" %}창단{% else %}Founded{% endif %} {{ e.founded }}{% endif %}{% if e.disbanded %} · {% if lang == "ko" %}해체{% else %}Disbanded{% endif %} {{ e.disbanded }}{% endif %}</p>
+    <p class="text-xs text-base-content/60 mb-6">{{ e.region }}{% if e.founded %} · {% if lang == "ko" %}창단{% else %}Founded{% endif %} {{ e.founded }}{% endif %}{% if e.disbanded %} · {% if lang == "ko" %}해체{% else %}Disbanded{% endif %} {{ e.disbanded }}{% endif %}</p>
 
     <div class="prose prose-invert max-w-none">
       {{ page.content | safe }}
@@ -50,20 +51,94 @@
     <div class="mt-8">
       <h2 class="text-sm font-semibold mb-3">{% if lang == "ko" %}주요 선수{% else %}Notable Players{% endif %}</h2>
       <div class="flex flex-wrap gap-2">
+        {#- Link only players that have a profile page; match on slug, ID or alternate ID (case-insensitive). -#}
+        {% set players_section = get_section(path="players/_index.md", lang=lang) %}
         {% for player in e.notable_players %}
-        <a href="/players/{{ player | lower }}" class="glass-card rounded-lg px-3 py-1.5 text-sm text-primary/70 hover:text-primary transition-colors">{{ player }}</a>
+          {% set key = player | lower | replace(from="_", to="-") %}
+          {% set_global player_url = "" %}{% set_global player_race = "" %}
+          {% for p in players_section.pages %}
+            {% set_global hit = p.slug == key or p.title | lower == player | lower %}
+            {% if not hit and p.extra.aliases is defined %}{% for a in p.extra.aliases %}{% if a | lower == player | lower %}{% set_global hit = true %}{% endif %}{% endfor %}{% endif %}
+            {% if hit %}{% set_global player_url = p.path %}{% set_global player_race = p.extra.race %}{% break %}{% endif %}
+          {% endfor %}
+          {% if player_url %}
+        <a href="{{ player_url }}" class="glass-card rounded-lg px-3 py-1.5 text-sm text-primary/70 hover:text-primary transition-colors inline-flex items-center gap-2">
+          {% if player_race %}<span class="{% if player_race == 'terran' %}bg-race-terran{% elif player_race == 'protoss' %}bg-race-protoss{% else %}bg-race-zerg{% endif %} w-4 h-4 rounded flex items-center justify-center text-[11px] font-black text-base-100" title="{{ player_race | title }}">{% if player_race == "terran" %}T{% elif player_race == "protoss" %}P{% else %}Z{% endif %}</span>{% endif %}
+          {{ player }}</a>
+          {% else %}
+        <span class="glass-card rounded-lg px-3 py-1.5 text-sm text-base-content/60">{{ player }}</span>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
     {% endif %}
   </div>
 
-  <div class="mt-12 pt-6 border-t border-primary/5">
-    <a href="{{ config.extra.github_content_base }}/{{ page.relative_path }}"
-       target="_blank" rel="noopener"
-       class="text-xs text-base-content/25 hover:text-base-content/50 transition-colors">
-      {{ t.edit_on_github }}
-    </a>
-  </div>
+  {#- Team-league titles and finals: every season row of a team-league series page
+      (tournaments/*.md, extra.seasons[].winner_team / runner_up_team) naming this team.
+      Rows keep the team name used at the time. See templates/tournaments/series.html. -#}
+  {% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+  {% set_global tt_json = "" %}
+  {% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}
+    {% set role = "" %}
+    {% if s.winner_team is defined and s.winner_team == page.slug %}{% set role = "W" %}{% set as_name = s.winner %}{% set opp = s.runner_up | default(value="") %}{% set opp_slug = s.runner_up_team | default(value="") %}
+    {% elif s.runner_up_team is defined and s.runner_up_team == page.slug %}{% set role = "R" %}{% set as_name = s.runner_up %}{% set opp = s.winner | default(value="") %}{% set opp_slug = s.winner_team | default(value="") %}{% endif %}
+    {% if role %}
+      {% set sid = "season-" ~ s.season %}{% set sid = sid | slugify %}{% set_global tt_url = tp.path ~ "#" ~ sid %}
+      {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == tp.slug and sp.extra.season == s.season %}{% set_global tt_url = sp.path %}{% endif %}{% endfor %}
+      {% set_global tt_json = tt_json ~ "," ~ {"k": s.final_date | default(value=s.year ~ ""), "role": role, "u": tt_url, "s": s.season, "lg": tp.extra.short_name, "y": s.year, "as": as_name, "o": opp, "os": opp_slug, "sc": s.score | default(value=""), "sd": s.score_detail | default(value="")} | json_encode | safe %}
+    {% endif %}
+  {% endfor %}{% endif %}{% endfor %}
+  {% set tts = load_data(literal="[" ~ (tt_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
+  {% if tts | length > 0 %}
+  {% set_global tt_w = 0 %}{% for r in tts %}{% if r.role == "W" %}{% set_global tt_w = tt_w + 1 %}{% endif %}{% endfor %}
+  <section class="mt-10 max-w-3xl" aria-labelledby="team-league-titles" data-tl-team-finals="{{ tt_w }}-{{ tts | length - tt_w }}">
+    <h2 id="team-league-titles" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.tl_team_titles }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ tt_w }} / {{ tts | length - tt_w }})</span></h2>
+    <p class="text-xs text-base-content/70 mb-4">{{ t.tl_team_titles_note }}</p>
+    <table class="table table-sm w-full max-sm:block" data-sortable>
+      <thead class="max-sm:sr-only">
+        <tr class="text-xs text-base-content/70">
+          <th scope="col" data-sort="text">{{ t.player_result }}</th>
+          <th scope="col" data-sort="text">{{ t.tournaments }}</th>
+          <th scope="col" data-sort="text" aria-sort="descending">{{ t.data_final_date }}</th>
+          <th scope="col">{{ t.player_final }}</th>
+        </tr>
+      </thead>
+      <tbody class="max-sm:block max-sm:space-y-2">
+        {% for r in tts %}
+        <tr class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3">
+          <td class="whitespace-nowrap max-sm:p-0" data-sort-value="{{ r.role }}">{% if r.role == "W" %}<span class="text-warning font-semibold">&#9733; {{ t.player_champion }}</span>{% else %}<span class="text-base-content/70">{{ t.player_runner_up }}</span>{% endif %}</td>
+          <td class="text-sm font-medium max-sm:p-0"><a href="{{ r.u }}" class="text-primary hover:underline">{{ r.s }}</a>{% if r.as != page.title %} <span class="text-xs font-normal text-base-content/70">({{ t.tl_as | replace(from="{name}", to=r.as) }})</span>{% endif %}</td>
+          <td class="font-stats text-sm text-base-content/70 whitespace-nowrap max-sm:p-0" data-sort-value="{{ r.k }}">{% if "-" in r.k %}<time datetime="{{ r.k }}">{{ r.k }}</time>{% else %}{{ r.y }}{% endif %}</td>
+          <td class="text-sm text-base-content/70 max-sm:p-0 max-sm:basis-full">{% if r.o %}{% if r.role == "W" %}{{ t.player_vs }}{% else %}{{ t.player_lost_to }}{% endif %} {% set tc_name = r.o %}{% set tc_slug = r.os %}{% set tc_class = "text-primary" %}{% include "tournaments/team-chip.html" %}{% if r.sc %} <span class="font-stats text-base-content/60">({{ r.sc }}{% if r.sd %}: {{ r.sd }}{% endif %})</span>{% endif %}{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+
+  {#- Roster navbox: every player whose team history (extra.teams[].slug) lists this team. -#}
+  {% set psec = get_section(path="players/_index.md", lang=lang) %}
+  {% set_global roster_n = 0 %}
+  {% for p in psec.pages %}{% if p.extra.teams is defined %}{% for tm in p.extra.teams %}{% if tm.slug is defined and tm.slug == page.slug %}{% set_global roster_n = roster_n + 1 %}{% endif %}{% endfor %}{% endif %}{% endfor %}
+  {% if roster_n > 0 %}
+  <nav class="navbox mt-10" aria-labelledby="team-roster">
+    <h2 id="team-roster" class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-1">{{ page.title }} &middot; {{ t.data_roster }}</h2>
+    <p class="text-xs text-base-content/60 mb-3">{{ t.data_roster_note }}</p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-1.5 text-sm">
+      {% for p in psec.pages %}{% if p.extra.teams is defined %}
+      {% set_global span = "" %}
+      {% for tm in p.extra.teams %}{% if tm.slug is defined and tm.slug == page.slug %}{% set tfrom = tm.from | default(value="?") %}{% set tto = tm.to | default(value="?") %}{% if not tfrom %}{% set tfrom = "?" %}{% endif %}{% if not tto %}{% set tto = "?" %}{% elif tto == "present" %}{% set tto = t.player_present %}{% endif %}{% if span %}{% set_global span = span ~ ", " %}{% endif %}{% set_global span = span ~ tfrom ~ "–" ~ tto %}{% endif %}{% endfor %}
+      {% if span %}
+      {% set pc_name = p.title %}{% set pc_slug = p.slug %}{% set pc_class = "" %}
+      <li class="flex flex-wrap items-baseline justify-between gap-x-3 min-w-0">{% include "tournaments/player-chip.html" %}<span class="text-xs font-stats text-base-content/60 min-w-0 ml-auto text-right">{{ span }}</span></li>
+      {% endif %}
+      {% endif %}{% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  {% include "partials/provenance.html" %}
 </div>
 {% endblock %}

@@ -1,5 +1,6 @@
 +++
 title = "Defiler"
+description = "The Defiler is the Zerg's late-game ground spellcaster, hatched from larva after a Defiler Mound, that casts Dark Swarm and Plague and regains energy with Consume."
 slug = "defiler"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,41 @@ minerals = 50
 gas = 150
 supply = 2
 hp = 80
+shields = 0
 armor = 1
 damage = 0
+damage_type = "normal"
 build_time = 50
 attack_speed = 0
-range = 10
+range = 0
 speed = 4.0
-shields = 0
 size = "medium"
 ground_attack = false
 air_attack = false
-damage_type = "normal"
-dps = 0
 sight = 10
 built_from = "hatchery"
-abilities = ["dark-swarm", "plague", "consume"]
-upgrades = ["consume", "plague"]
+abilities = ["dark-swarm", "plague", "consume", "burrow"]
+upgrades = ["consume", "plague", "carapace"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-The defining late-game unit of the Zerg race — a ground spellcaster whose Dark Swarm and Plague abilities are among the most powerful and game-changing spells in Brood War. The Defiler has no attack but fundamentally alters the dynamics of every engagement. Dark Swarm renders ranged attacks useless against ground units beneath it, while Plague reduces all units in an area to near-death. Consume lets Defilers eat their own Zerglings to regain energy, creating a self-sustaining spellcasting engine.
+The Defiler requires a Defiler Mound (Hive tech). It has no attack, but its spells shape late-game fights. Dark Swarm creates a cloud that protects ground units under it from most ranged attacks, Plague damages every unit in an area over time without killing them, and Consume sacrifices a friendly Zerg unit to restore energy.
 
 ## Versus Terran
 
-Defilers are the cornerstone of ZvT late-game. Dark Swarm completely negates Marine, Siege Tank, and Goliath fire against ground units, allowing Zerglings and Ultralisks to engage with impunity underneath the cloud. Without Dark Swarm, Zerg cannot fight mech armies head-on in the late game. Consume on Zerglings provides self-sustaining energy for continuous spellcasting.
+Defilers are central to late-game ZvT. Dark Swarm allows Zerglings, Ultralisks and Lurkers to fight Terran bio and Siege Tanks, and Plague weakens Marines and Medics. Terran counters with Irradiate, splash damage and by hunting Defilers.
 
 ## Versus Protoss
 
-Plague softens Protoss armies before engagement in ZvP, reducing all units to near-death and making them easy to finish off. Dark Swarm blocks Dragoon fire, protecting Zerglings and Ultralisks during advances. Defiler tech timing is critical in ZvP, as reaching Plague before a major Protoss push can turn a losing engagement into a winning one.
+Defilers are used in late ZvP, where Plague damages Protoss shields and HP and Dark Swarm blocks Dragoon fire. Psionic Storm and Reavers can still damage units under Dark Swarm.
 
 ## Versus Zerg
 
-Defilers are rarely seen in ZvZ. The matchup revolves around Mutalisks and Lurkers rather than the Hive tech that enables Defilers. Dark Swarm has limited value when both players rely on melee Zerglings and burrowed Lurkers. The investment in reaching Defiler tech is rarely worthwhile in the mirror.
+Defilers are rare in ZvZ, which usually ends before Hive tech.
 
 ## Key Mechanics
 
-Dark Swarm costs 100 energy and creates a cloud lasting roughly 60 seconds. All ranged attacks against ground units under the swarm miss entirely — but melee attacks, spells, and splash damage still work. Plague costs 150 energy and deals 295 damage to all units in its area, but cannot kill — it leaves units at 1 HP. Consume costs 0 energy and sacrifices a friendly Zerg unit to restore 50 energy, with a brief cooldown. Defilers have 80 HP, 1 base armor, and are Medium-sized.
-
-## Micro Techniques
-
-- **Dark Swarm advancement**: Casting Dark Swarm ahead of the army to create a safe zone for Zerglings and Ultralisks to advance under
-- **Plague timing**: Plaguing the enemy army just before engagement to soften all units, making them easy to finish off
-- **Consume cycling**: Keeping a stock of Zerglings nearby to Consume for energy, maintaining continuous spellcasting
-- **Defiler burrowing**: Burrowing Defilers at strategic locations to surprise enemies with Dark Swarm or Plague
-
-## Counters
-
-Irradiate from Science Vessels kills Defilers and damages nearby biological units. EMP drains Defiler energy before they can cast. Psionic Storm can kill fragile Defilers. Sniping Defilers before they cast is the primary Terran counter — their death removes the threat of Dark Swarm. Air units can attack through Dark Swarm, as it only protects ground units from ranged ground fire.
-
-## Combat Data
-
-- **Dark Swarm**: Blocks all ranged attacks against ground units under the cloud, 100 energy, ~60s duration
-- **Plague**: 295 damage over time to all units in area (cannot kill — leaves at 1 HP), 150 energy
-- **Consume**: Sacrifices a friendly Zerg unit to restore 50 energy, 0 energy cost
-- No attack — purely a spellcaster
-- **AI Note**: Defilers have no auto-attack; they must be manually positioned and will stand idle if not given orders — keeping them alive behind the army is critical
-- Dark Swarm does NOT block melee attacks, spells, or splash damage — only direct ranged fire
-
-## Historical Notes
-
-The Defiler is often called "the great equalizer" — it transforms Zerg's late-game from hopeless against mech into competitive. The race between Terran trying to kill Defilers and Zerg trying to land Dark Swarms defines the climax of most ZvT games. Jaedong's precise Defiler usage against Flash's mech armies produced some of the most strategically rich games in BW history. Learning when and where to cast Dark Swarm separates Zerg players at every level of play.
+- Dark Swarm (100 energy): ground units under the cloud cannot be hit by most ranged attacks; melee attacks, spells and some splash attacks still work
+- Plague (150 energy, researched at the Defiler Mound): 300 damage over time to all units in the area, cannot reduce a unit below 1 HP
+- Consume (researched at the Defiler Mound): sacrifices a friendly Zerg unit to restore 50 energy
+- 80 HP, 1 base armor, medium size; can burrow after the Burrow research

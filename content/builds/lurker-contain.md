@@ -10,8 +10,50 @@ tags = ["aggressive", "contain", "lurker"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
-games = 198
-winrate = 50
+sources = ["https://liquipedia.net/starcraft/2_Hatch_Lurker_(vs._Terran)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "units/overlord"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "10"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "buildings/lair"
+timing = "@100 gas"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "@100 gas"
+[[extra.steps]]
+supply = "22"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "buildings/hydralisk-den"
+timing = "@50% Lair"
+[[extra.steps]]
+supply = ""
+item = "upgrades/lurker-aspect"
+timing = "@100% Lair"
+[[extra.steps]]
+supply = ""
+item = "units/hydralisk"
+timing = "@50% Lurker Aspect"
+[[extra.steps]]
+supply = ""
+item = "units/lurker"
+note = "Place the third Hatchery when Lurkers hatch"
 +++
 A strategic approach in ZvT where lurkers are rushed and positioned outside Terran's natural expansion to prevent tank pushes or deny expansion attempts. The burrowed lurkers create a zone of control that Terran cannot cross without science vessel detection or siege tank range, buying Zerg valuable time to drone and expand.
 

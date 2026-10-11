@@ -1,17 +1,33 @@
 +++
 title = "Tyson"
-description = "Tyson — 한국의 테란 선수."
+description = "Tyson(박지훈) — 2007–12년 MBC게임 히어로·Team 8의 프로토스, 이후 아프리카TV BJ이자 ASL 본선 진출자."
 slug = "tyson"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/tyson.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2450
-tier = "B+"
-aliases = ["김승현", "Kim Seung Hyun"]
+real_name = "박지훈"
+romanized_name = "Park Ji-Hoon"
+birth_date = "1990-12-10"
+status = "active"
+years_active = "2007–2012, 2022–present"
+aliases = ["By.Tyson", "By.Bridge", "By.TeReSa", "By.Davichi", "By.Han", "박수범", "Park Soo Bum"]
+liquipedia = "https://liquipedia.net/starcraft/Tyson"
+soop = "subeom12"
+sources = ["https://liquipedia.net/starcraft/Tyson"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2007-03-12"
+to = "2011"
+[[extra.teams]]
+name = "Team 8"
+from = "2011-11"
+to = "2012"
 +++
-Tyson은 현대 한국 씬에서 활발히 활동하는 공격적인 바이오 테란으로, 강력한 타이밍 공격과 초중반에 상대를 압도하는 뛰어난 마이크로로 유명합니다. 날카로운 마린-메딕 컨트롤을 보유하며, 상대가 충분한 방어를 갖추기 전의 최적 타이밍을 찾는 데 탁월합니다. 특히 TvP에서 프로토스를 수세로 몰아넣는 강력한 압박 빌드가 돋보입니다. ASL 예선 단골 출전자로 빌드가 깔끔하게 들어갈 때 최상위 선수들을 상대로 게임을 따낼 수 있는 실력을 보여왔습니다. 빠른 템포의 바이오 전략에 대한 헌신으로 변동성이 있지만 위험한 상대이며, 모든 것이 맞아떨어질 때 빠르게 게임을 끝낼 수 있습니다.
+Tyson(박지훈)은 1990년생 대한민국의 프로토스 선수이다. 2007년 3월 [MBC게임 히어로](@/wiki/teams/mbcgame-hero.ko.md)에 드래프트되어 프로리그 주전으로 활약했고, 2009–10 시즌에는 13승 7패를 기록했다. 개인리그에서는 [2008 인크루트 스타리그](@/tournaments/2008-incruit-osl.ko.md), [2010 빅파일 MSL](@/tournaments/2010-bigfile-msl.ko.md), [2010–11 박카스 스타리그](@/tournaments/2010-2011-bacchus-osl.ko.md), [2011 ABC마트 MSL](@/tournaments/2011-abc-mart-msl.ko.md) 본선에 올랐다.
+
+2011년 MBC게임 히어로가 해체되자 Team 8로 옮겼고, 프로리그가 스타크래프트 II로 완전히 전환된 뒤 은퇴했다. 이후 아프리카TV에서 방송을 시작해 SOSPA 랭킹전과 소닉TV BJ 스타리그 등에 출전했다. 2022년 다시 대회에 나서 [ASL 시즌 13](@/tournaments/asl-s13.ko.md)과 [ASL 시즌 19](@/tournaments/asl-s19.ko.md) 본선에 올랐다.

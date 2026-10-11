@@ -1,21 +1,22 @@
 +++
-title = "야마토 포"
-description = "Yamato Gun — 스타크래프트: 브루드 워 Terran 업그레이드."
+title = "야마토 캐논"
+description = "야마토 캐논은 테란 피직스 랩에서 연구하는 기술로, 배틀크루저의 야마토 캐논을 사용할 수 있게 한다."
 slug = "yamato-gun"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+aliases = ["야마토 포"]
 race = "terran"
 minerals = 100
 gas = 100
 levels = 1
 researched_at = "physics-lab"
-research_time = 67
+research_time = 120
 affects = ["battlecruiser"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-야마토 포는 배틀크루저의 능력으로, 집중된 에너지 폭발을 발사하여 단일 대상에게 260의 피해를 줍니다. 사용당 에너지 150을 소모하며 눈에 띄는 시전 애니메이션이 있습니다. 게임 내 대부분의 유닛을 한 방에 처치하고 건물에도 큰 피해를 줄 수 있어 시즈탱크, 캐리어 같은 고가치 대상 저격에 효과적입니다.
+야마토 캐논을 연구하면 배틀크루저가 에너지 150을 써서 한 대상에게 강력한 한 방을 쏠 수 있다. 자세한 내용은 [야마토 캐논](/ko/wiki/abilities/yamato-cannon/) 문서에서 다룬다.
 
-경쟁전에서 야마토 포는 배틀크루저의 극도로 높은 비용, 느린 생산, 빠른 유닛에 대한 취약성 때문에 드물게 등장합니다. 하지만 극후반에 도달한 게임에서 야마토 장착 배틀크루저는 파괴적일 수 있으며, 디파일러, 템플러, 핵심 프로토스 유닛을 원거리에서 한 방에 제거합니다. TvP 후반에서 아비터 저격이나 TvT에서 적 베슬과 탱크 제거에 가장 의미가 있습니다.
-
-야마토 포는 피직스 랩에서 연구하며, 스타포트에 컨트롤 타워와 사이언스 퍼실리티가 필요합니다. 이는 완전히 후반 영역으로, 가장 빨라도 15-20분 이전에는 사용할 수 없으며, 연구하더라도 대개 훨씬 늦습니다.
+배틀크루저를 여러 기 모을 때 연구하며, 캐리어, 포톤 캐논, 미사일 터렛 같은 핵심 목표를 저격하는 데 쓴다.

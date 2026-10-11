@@ -1,24 +1,28 @@
 +++
 title = "SK Telecom T1"
-description = "SK Telecom T1 — StarCraft: Brood War professional team."
+description = "SK Telecom T1 — Korean StarCraft: Brood War team founded by Boxer as Orion in 2002."
 slug = "sk-telecom-t1"
 template = "wiki/team.html"
 [extra]
-status = "active"
+status = "disbanded"
 region = "South Korea"
 founded = "2002"
-notable_players = ["Boxer", "iloveoov", "Fantasy"]
+disbanded = "2016"
+notable_players = ["Boxer", "iloveoov", "Bisu", "Best", "Fantasy"]
+sources = ["https://liquipedia.net/starcraft/SK_Telecom_T1", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-SK Telecom T1 was the first true superteam in StarCraft: Brood War history, built around the legendary Lim Yo Hwan — Boxer, "The Emperor." Founded in 2002, SKT T1 quickly became the most recognizable name in Korean esports, driven by Boxer's unmatched charisma and revolutionary play style that helped legitimize professional gaming in South Korea.
+SK Telecom T1 (SKT T1) was founded by [Boxer](/players/boxer/) in October 2002 under the name Orion, renamed 4 Union in December 2003, and became SK Telecom T1 in April 2004 when SK Telecom took over the sponsorship. It played Brood War until 2012, when the Proleague switched to StarCraft II, and disbanded its StarCraft II roster in October 2016; the T1 organisation continues in League of Legends.
 
-## The Emperor's Team
+## Players
 
-Boxer did not just play StarCraft — he transformed it into a spectator sport. His creative strategies, dramatic comebacks, and showmanship drew massive television audiences. SKT T1 was built in his image: bold, innovative, and always entertaining. Boxer's influence extended far beyond his win-loss record, establishing the template for what a Korean esports superstar could be.
+SKT historically had a strong Terran line-up, including two players regarded as bonjwas, Boxer and iloveoov, along with GoRush, Midas and Canata. Later stars included Bisu, Best and Fantasy. After Boxer left for the Air Force the team declined; a coaching overhaul (with iloveoov among the race coaches) and Boxer's return were credited with its 2008 resurgence.
 
-## Championship Legacy
+## Titles
 
-After Boxer's departure, iloveoov (Choi Yun Sung) took the reins and redefined Terran macro play, earning the nickname "The Revolutionist." His aggressive expansion-heavy style influenced an entire generation of Terran players. Fantasy (Jung Myung Hoon) carried the team's legacy into the final years of professional BW, becoming the last OSL champion in 2012 — a fitting bookend for a team that had been present from the beginning.
-
-## Broader Impact
-
-SKT T1 won multiple Proleague titles and consistently fielded championship-caliber rosters. The organization's legacy extends beyond BW into StarCraft II and League of Legends (as T1), but the Brood War era with Boxer remains the origin story. SKT T1 proved that corporate-sponsored esports teams could become cultural institutions, paving the way for everything that followed.
+- 2003 KTF EVER Cup (as Orion) and 2003–04 LG IBM MBC Team League (as 4 Union)
+- 2004 Tucson MBCGame Team League
+- 2005 SKY Proleague — Liquipedia credits SKT with the "Triple Crown" that year (both rounds and the Grand Final)
+- 2006 SKY Proleague Round 1
+- 2008–09 Shinhan Bank Proleague
+- 2011–12 SK Planet Proleague Season 1

@@ -1,17 +1,20 @@
 +++
 title = "Whiteout"
+description = "Whiteout is a 3-player Ice map by Str18-02, introduced for ASL Season 7 in 2019."
 slug = "whiteout"
 template = "wiki/map.html"
 [extra]
-name_ko = "Whiteout"
+name_ko = "화이트아웃"
 dimensions = "128x128"
 tileset = "Ice"
-players = 4
-spawn_positions = ""
-era = "2020-2022"
+players = 3
+spawn_positions = "2, 6, 10"
+era = "2019-2020"
+sources = ["https://liquipedia.net/starcraft/Whiteout", "https://web.archive.org/web/2018/http://tl.net/tlpd/sospa/maps/757_Whiteout", "https://web.archive.org/web/20211019140251/https://namu.wiki/w/%EA%B8%80%EB%9D%BC%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0(%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)"]
+verified = "2026-10-11"
 +++
-A 4-player ice map from the modern ASL era, used in competitive play from 2020 through 2022. Whiteout features the rare ice tileset with its cool blue-white palette, creating a visually striking battlefield that stands out from the more common jungle and twilight maps. Four spawn positions are arranged with rotational symmetry across the frozen landscape.
+**Whiteout** is a 3-player map on the Ice tileset, made by 우상희 (Str18-02). It is 128x128 with start locations at 2, 6 and 10 o'clock.
 
-The map's open layout is its most prominent characteristic. Wide corridors and minimal terrain obstacles between bases encourage aggressive strategies and frequent army engagements. The ice terrain provides some elevated features and narrow passages, but the overall feeling is one of exposed, open ground where armies can move freely and attack from multiple angles. Natural expansions connect to the main base through ramps, but the relatively wide approaches make them harder to defend than on tighter maps.
+Whiteout was introduced for ASL Season 7 in early 2019 and stayed in use until March 2020; it was also used in BSL.
 
-During its time in the ASL rotation, Whiteout produced action-heavy games that rewarded aggressive play. The open layout slightly favored mobile compositions — Zerg players could exploit the wide terrain with multi-pronged attacks, while Terran bio armies benefited from the room to stutter-step and kite. Protoss had to be creative with army positioning, using the few terrain features available to create favorable engagements. The ice tileset's visual clarity made it popular with broadcast viewers, and the map is remembered for producing exciting, fast-paced games.
+Three wooded areas in the middle of the map severely limit ground vision. A short ramp inside each natural leads up to a small platform overlooking it, and the usual third base lies toward the center, exposed to attacks from three directions.

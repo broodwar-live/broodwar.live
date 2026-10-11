@@ -7,22 +7,25 @@
 </h1>
 
 <p align="center">
-  <em>스타크래프트: Brood War 경쟁전을 위한 커뮤니티 플랫폼.</em><br>
-  <em>선수 통계. 리플레이 분석. 빌드 오더. 라이브 스트림.</em>
+  <em>스타크래프트: 브루드 워 경쟁전을 위한 커뮤니티 플랫폼.</em><br>
+  <em>선수. 빌드 오더. 대회. 위키. 리플레이 분석. 실시간 데이터는 준비 중.</em>
 </p>
 
 <p align="center">
-  <a href="https://elixir-lang.org/">
-    <img alt="Elixir" src="https://img.shields.io/badge/Elixir-1.18+-4B275F?logo=elixir&logoColor=white&style=for-the-badge">
+  <a href="https://www.getzola.org/">
+    <img alt="Zola" src="https://img.shields.io/badge/Zola-0.23-F46623?style=for-the-badge">
   </a>
-  <a href="https://www.phoenixframework.org/">
-    <img alt="Phoenix" src="https://img.shields.io/badge/Phoenix-1.8-FD4F00?logo=phoenixframework&logoColor=white&style=for-the-badge">
+  <a href="https://tailwindcss.com/">
+    <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge">
   </a>
-  <a href="https://www.sqlite.org/">
-    <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge">
+  <a href="https://pages.cloudflare.com/">
+    <img alt="Cloudflare Pages" src="https://img.shields.io/badge/Cloudflare_Pages-F38020?logo=cloudflare&logoColor=white&style=for-the-badge">
   </a>
   <a href="LICENSE">
-    <img alt="License" src="https://img.shields.io/badge/License-MIT-c6a0f6?style=for-the-badge">
+    <img alt="Code: MIT" src="https://img.shields.io/badge/Code-MIT-c6a0f6?style=for-the-badge">
+  </a>
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">
+    <img alt="Content: CC BY-SA 4.0" src="https://img.shields.io/badge/Content-CC_BY--SA_4.0-8aadf4?style=for-the-badge">
   </a>
 </p>
 
@@ -30,140 +33,121 @@
 
 ---
 
-BW 경쟁 커뮤니티의 통합 플랫폼 — Brood War 판 [basketball-reference.com](https://www.basketball-reference.com)을 목표로 합니다. Elixir/Phoenix, Phoenix LiveView, SQLite, Rust NIFs로 구축되었습니다.
+BW 경쟁 커뮤니티의 통합 플랫폼 — 브루드 워 판
+[basketball-reference.com](https://www.basketball-reference.com)을 목표로 합니다.
+
+이 저장소는 **정적 사이트**입니다. Markdown 콘텐츠를 [Zola](https://www.getzola.org/)로 렌더링하고,
+Tailwind CSS + daisyUI로 스타일링하며, Cloudflare Pages에서 서비스합니다. 경기 기록, 리플레이 분석,
+라이브 스트림, 밸런스 통계 같은 동적 기능은 작은 바닐라 JS 위젯이 별도의 JSON API
+[api.broodwar.live](https://github.com/broodwar-live/api.broodwar.live)를 호출하는 방식입니다.
+
+> **상태:** 초기 개발 단계입니다. API가 아직 배포되지 않아 API 기반 페이지는 "준비 중"으로
+> 표시됩니다 (`config.toml`의 `extra.api_enabled = false`).
 
 ## 기능
 
-| 기능 | 설명 |
-|------|------|
-| **선수 프로필** | 커리어 통계, Elo 히스토리, 상대 전적 |
-| **경기 기록** | 빌드 오더, APM, 병력 타임라인이 포함된 경기 결과 |
-| **리플레이 분석** | `.rep` 파일을 업로드하면 빌드 오더, APM 곡선, 병력 구성을 즉시 분석 |
-| **빌드 오더** | 프로 리플레이 근거 기반의 구조화된 검색 가능한 데이터베이스 |
-| **밸런스 분석** | 맵, 시대, 실력대별 종족 상성 승률 |
-| **라이브 스트림** | 한국 스트림 추적, ASL/BSL 일정 |
-| **토너먼트** | 토너먼트 대진표, 결과 및 히스토리 |
-| **위키** | 맵, 전략, 게임 메카닉에 관한 커뮤니티 지식 베이스 |
+| 기능 | 상태 | 설명 |
+|------|------|------|
+| **선수** | 운영 중 | 프로 선수 150명의 프로필 (영어·한국어) |
+| **빌드 오더** | 운영 중 | 모든 종족전의 빌드 오더 가이드 |
+| **대회** | 운영 중 | ASL, BSL, KSL, OSL, MSL, 프로리그(팀리그) 및 시즌 페이지 |
+| **위키** | 운영 중 | 유닛, 건물, 업그레이드, 기술, 맵, 메커니즘, 패치, 팀, 전략 |
+| **뉴스** | 운영 중 | 프로젝트 및 씬 소식 |
+| **검색** | 운영 중 | 사이트 전체 검색 (<kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>K</kbd>) |
+| **경기** | API 필요 | 경기 결과 및 상대 전적 |
+| **리플레이** | 운영 중 | 브라우저 내 `.rep` 분석(WASM): 빌드 오더, 시간대별 APM, 오프닝 — 업로드 없음 |
+| **라이브 스트림** | API 필요 | 한국 방송 추적, ASL/BSL 일정 |
+| **밸런스** | API 필요 | 맵·시대별 종족전 승률 |
 
 ## 빠른 시작
 
-```bash
-# 의존성 설치 및 데이터베이스 설정
-mix setup
-
-# 서버 시작
-mix phx.server
-```
-
-[localhost:4000](http://localhost:4000)에 접속하세요.
-
-## 아키텍처
-
-```
-lib/
-├── broodwar/                 # 도메인 컨텍스트
-│   ├── players.ex            # 선수 프로필, Elo, 커리어 통계
-│   ├── matches.ex            # 경기 결과, 상대 전적
-│   ├── replays.ex            # 리플레이 업로드, 파싱된 데이터
-│   ├── builds_context.ex     # 빌드 오더 데이터베이스
-│   ├── streams.ex            # 라이브 스트림 추적
-│   ├── tournaments.ex        # 토너먼트 데이터
-│   ├── wiki/                 # 위키 페이지 및 콘텐츠
-│   ├── maps/                 # 맵 풀 및 메타데이터
-│   └── ingestion/            # 백그라운드 데이터 동기화
-│       ├── liquipedia.ex     # Liquipedia 스크래핑
-│       ├── player_sync.ex    # 선수 데이터 동기화
-│       └── tournament_sync.ex
-├── broodwar_nif/             # Rust NIF 브릿지
-│   └── replay_parser.ex      # bw-engine 래퍼
-├── broodwar_web/             # 웹 레이어
-│   ├── live/                 # LiveView 페이지
-│   │   ├── players_live.ex   # 선수 목록 + 검색
-│   │   ├── player_detail_live.ex
-│   │   ├── matches_live.ex   # 경기 기록
-│   │   ├── match_detail_live.ex
-│   │   ├── replay_live.ex    # 리플레이 업로드 + 브라우저
-│   │   ├── replay_detail_live.ex
-│   │   ├── builds_live.ex    # 빌드 오더 데이터베이스
-│   │   ├── build_detail_live.ex
-│   │   └── balance_live.ex   # 밸런스 분석
-│   └── controllers/
-│       └── api/              # JSON API
-│           ├── player_controller.ex
-│           ├── match_controller.ex
-│           ├── replay_controller.ex
-│           ├── build_controller.ex
-│           ├── map_controller.ex
-│           ├── balance_controller.ex
-│           ├── stream_controller.ex
-│           └── tournament_controller.ex
-└── native/
-    └── replay_parser/        # Rust NIF (Rustler 사용)
-```
-
-### 주요 기술 결정 사항
-
-- **Phoenix LiveView**로 모든 인터랙티브 UI 구현 — SPA 없음, 클라이언트 사이드 프레임워크 없음
-- **SQLite** — `ecto_sqlite3` 사용, 단일 파일 데이터베이스로 앱과 함께 배포
-- **Rust NIFs** — Rustler를 통한 리플레이 파싱, [bw-engine](https://github.com/broodwar-live/bw-engine)에 위임
-- **Oban** — 백그라운드 작업 처리 (Liquipedia 스크래핑, 리플레이 처리, 통계 집계)
-- **Req** — HTTP 클라이언트
-
-## API
-
-`/api`에서 공개 JSON API를 제공합니다. 전체 [API 규칙](https://github.com/broodwar-live/.claude/blob/main/rules/api.md)을 참조하세요.
-
-```
-GET /api/players          # 선수 목록 (검색/필터)
-GET /api/players/:id      # 선수 프로필 및 통계
-GET /api/matches          # 경기 기록
-GET /api/replays          # 리플레이 메타데이터
-GET /api/builds           # 빌드 오더 데이터베이스
-GET /api/maps             # 맵 풀
-GET /api/balance          # 종족 상성 승률
-GET /api/streams          # 라이브 스트림
-GET /api/tournaments      # 토너먼트 데이터
-```
-
-## 개발
-
-### 사전 요구 사항
-
-- Elixir 1.18+ / Erlang OTP 27+
-- Rust stable 툴체인 (NIF 컴파일용)
-- Node.js (esbuild/tailwind 에셋 도구용)
-
-### 명령어
+준비물: [Zola](https://www.getzola.org/documentation/getting-started/installation/) **0.23.6**
+(0.22 이하는 동작하지 않음) 및 Node.js 22 이상.
 
 ```bash
-mix setup                 # 의존성 설치, DB 생성, 에셋 빌드
-mix phx.server            # 개발 서버 시작
-mix test                  # 테스트 실행
-mix precommit             # 컴파일 (경고를 에러로 처리) + 포맷 + 테스트
-mix format                # 코드 포맷
+npm ci                # Tailwind CSS + daisyUI 설치
+npm run build:css     # static/css/app.css 빌드
+zola serve            # http://127.0.0.1:1111, 라이브 리로드
 ```
 
-### 데이터베이스
-
-동시 읽기를 위해 WAL 모드를 사용하는 SQLite. 마이그레이션은 반드시 되돌릴 수 있어야 합니다.
+템플릿이나 클래스를 수정할 때는 다른 터미널에서 `npm run dev:css`를 실행하면 CSS가 자동으로
+다시 빌드됩니다. `static/css/app.css`는 저장소에 커밋되므로, Tailwind 클래스를 추가했다면 다시 빌드해
+함께 커밋하세요.
 
 ```bash
-mix ecto.create           # 데이터베이스 생성
-mix ecto.migrate          # 마이그레이션 실행
-mix ecto.reset            # 삭제 + 재생성 + 시드
+zola build                          # public/에 프로덕션 빌드
+zola check --skip-external-links    # 내부 링크 검사
 ```
+
+## 프로젝트 구조
+
+```
+content/               Markdown 콘텐츠 (TOML 프런트 매터), 영어 + 한국어 (*.ko.md)
+├── players/           선수 프로필
+├── builds/            빌드 오더
+├── tournaments/       리그 및 시즌
+├── wiki/              유닛, 건물, 맵, 메커니즘, 패치, 팀 등
+├── news/              뉴스 글
+├── matches/ replays/ streams/ balance/   API 기반 페이지
+└── credits.md         라이선스 및 저작자 표시
+templates/             Tera 템플릿 (base.html, 섹션별 템플릿, partials/)
+src/app.css            Tailwind 진입점
+static/                빌드된 CSS, 바닐라 JS 위젯, 이미지, _headers, _redirects
+config.toml            사이트 설정, 다국어 문자열, 기능 플래그
+```
+
+템플릿은 CI와 Cloudflare 빌드 명령에 고정된 Zola 0.23(Tera 2)을 기준으로 합니다. Tera 2에는
+매크로가 없으므로 공통 마크업은 `templates/partials/`에 두고 `include`로 불러옵니다.
+[cloudflare-pages.md](cloudflare-pages.md)를 참고하세요.
+
+## 콘텐츠 기여
+
+모든 페이지에 **GitHub에서 수정** 링크가 있습니다. 콘텐츠를 추가하거나 고치려면:
+
+1. `content/` 아래의 Markdown 파일을 수정하거나 추가합니다. 가능하면 영어(`page.md`)와
+   한국어(`page.ko.md`) 버전을 함께 맞춰 주세요.
+2. 사실과 수치에는 출처(Liquipedia, VOD, 공식 결과)를 남겨 주세요. 통계를 지어내지 마세요.
+3. `zola serve`로 미리 본 뒤 풀 리퀘스트를 열어 주세요. CI가 사이트를 빌드하고 링크를 검사합니다.
+
+뉴스 글은 `content/news/`에 `date`, `authors`, 선택적인 `tags`를 프런트 매터에 넣어 작성합니다.
+
+### 팀리그
+
+팀리그(현재는 프로리그)는 개인리그와 같은 시리즈/시즌 구조를 쓰되 팀 전용 키를 사용합니다. 전체
+스키마는 `templates/tournaments/team-season.html` 맨 위 주석에 있습니다.
+
+- **시리즈 페이지**(`content/tournaments/proleague.md`, `format = "Team"`): 시즌·라운드 결승·그랜드
+  파이널마다 `[[extra.seasons]]` 한 줄 — `winner` / `winner_team`, `runner_up` / `runner_up_team`
+  (당시 팀명 + `content/wiki/teams/<slug>.md` 슬러그), `score`(`"4–3"`, 여러 매치로 치른 결승은
+  이긴 매치 수와 `score_detail`), `final_date`, `prize_pool`. 팀 페이지의 우승 경력은 이 줄에서 계산합니다.
+- **시즌 페이지**(`template = "tournaments/team-season.html"`): `teams`, `maps`, `awards`, 선택적인
+  `standings`, 그리고 팀 매치 라운드 `[[extra.team_bracket]]`. 매치마다 `a` / `a_team`, `b` / `b_team`,
+  `score_a`, `score_b`, `date`, 세트 목록 `sets`(`{ map, map_slug, a, a_slug, a_race, b, b_slug, b_race,
+  winner = "a" | "b", ace = true }`, 팀플은 `a2` / `b2`)를 적습니다. 여러 매치로 치른 대결은
+  `[[extra.team_bracket.matches.legs]]`를 씁니다. 정규시즌 전체 경기는 기록하지 않습니다.
+- 선수 페이지에는 "팀리그 플레이오프 세트 전적"이 따로 표시되고 상대 전적 표에 열이 추가되며, 개인리그
+  플레이오프 전적은 바뀌지 않습니다. CI의 `scripts/check-team-leagues.py`가 세트 합계, 결승과 시리즈
+  줄의 일치, 모든 팀·선수·맵 슬러그를 검사합니다.
+
+## 배포
+
+Cloudflare Pages가 `main`에 푸시될 때마다 빌드합니다 (PR마다 미리보기 배포). Zola 버전은
+빌드 명령에 고정되어 있습니다. [cloudflare-pages.md](cloudflare-pages.md)를 참고하세요.
 
 ## 관련 프로젝트
 
+- [api.broodwar.live](https://github.com/broodwar-live/api.broodwar.live) — Phoenix JSON API (리플레이 파싱, 스트림 폴링, 데이터 엔드포인트)
 - [bw-engine](https://github.com/broodwar-live/bw-engine) — Rust 리플레이 파서 및 게임 엔진 (NIF + WASM)
-- [assets-pipeline](https://github.com/broodwar-live/assets-pipeline) — BW 에셋 추출 도구
-- [assets](https://github.com/broodwar-live/assets) — 사전 빌드된 유닛 스프라이트 및 아이콘
-- [alphacraft](https://github.com/broodwar-live/alphacraft) — 경쟁전 BW를 위한 ML 에이전트
-
-## 법적 고지
-
-이 프로젝트는 Blizzard Entertainment, Inc. 또는 Microsoft Corporation과 제휴, 보증 또는 관련이 없습니다. "StarCraft" 및 "Brood War"는 Blizzard Entertainment, Inc.의 등록 상표입니다. 이 프로젝트는 팬이 팬을 위해 만든 무료 오픈소스 비상업적 커뮤니티 프로젝트입니다.
 
 ## 라이선스
 
-MIT
+- **코드** — [MIT](LICENSE)
+- **콘텐츠** (`content/`) — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ko)
+- **외부 자료** (예: Liquipedia의 선수 사진)는 원래의 라이선스를 따릅니다 —
+  [크레딧 및 라이선스](https://broodwar.live/ko/credits/) 참고
+
+## 법적 고지
+
+이 프로젝트는 Blizzard Entertainment, Inc. 또는 Microsoft Corporation과 제휴, 보증, 관련이 없습니다.
+"StarCraft"와 "Brood War"는 Blizzard Entertainment, Inc.의 등록 상표입니다. 이 프로젝트는 팬이 팬을
+위해 만든 무료 오픈소스 비상업 커뮤니티 프로젝트입니다.

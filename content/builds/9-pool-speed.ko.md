@@ -1,6 +1,6 @@
 +++
-title = "9 Pool Speed"
-description = "9 Pool Speed — 스타크래프트: 브루드 워 ZvZ 빌드 오더."
+title = "9풀 발업"
+description = "9풀 발업(9 Pool Speed): 저저전 빌드 오더."
 slug = "9-pool-speed"
 template = "builds/build.html"
 [taxonomies]
@@ -10,11 +10,35 @@ tags = ["standard", "safe", "zergling"]
 [extra]
 race = "zerg"
 matchup = "ZvZ"
-games = 312
-winrate = 50
+sources = ["https://liquipedia.net/starcraft/9_Pool_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "8"
+item = "units/drone"
+[[extra.steps]]
+supply = "9"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "8"
+item = "units/overlord"
+[[extra.steps]]
+supply = "8"
+item = "units/drone"
+[[extra.steps]]
+supply = ""
+item = "units/zergling"
+timing = "스포닝 풀 완성 시"
+note = "보통 6기, 정찰 결과에 따라 조절"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "가스 100 시"
 +++
-표준 안전 ZvZ 오프닝입니다. 9서플라이에 스포닝 풀을 건설하고 풀이 완성되는 즉시 대사 촉진(저글링 스피드)을 연구합니다. 경제를 위한 추가 드론을 뽑기에 충분히 늦으면서도, 치즈나 초반 공격을 방어할 저글링이 준비되기에 충분히 이른 타이밍입니다.
+저저전의 표준적이고 안전한 오프닝이다. 인구수 9에 스포닝 풀을 짓고, 풀이 완성되자마자 메타볼릭 부스트(저글링 발업)를 연구한다. 경제를 위해 드론을 몇 기 더 뽑을 만큼 늦으면서도, 치즈나 초반 공격을 막을 저글링을 제때 갖출 만큼 빠른 타이밍이다.
 
-핵심 이점은 스피드 저글링입니다 — 느린 저글링을 추월하여 정찰, 맵 컨트롤, 상대 유닛 추격이 가능합니다. 초기 스피드 저글링으로 상대 기지를 정찰하고 워치타워를 장악합니다. 선큰 콜로니에 돌진하는 전투는 피하세요.
+핵심 이점은 발업 저글링이다. 발업이 안 된 저글링보다 빨라 정찰, 맵 장악, 상대 유닛 추격에 유리하다. 처음 나온 발업 저글링으로 상대 기지를 정찰하고 감시탑을 장악한다. 성큰 콜로니에 무작정 달려드는 싸움은 피한다.
 
-모든 ZvZ 맵에서 통하며, 안정적이고 적응력 있는 게임을 원하는 플레이어의 기본 오프닝입니다. 합리적인 경제를 유지하면서 5풀과 기타 치즈를 방어합니다. 저글링 맵 컨트롤 뒤에서 확장한 뒤, 상대의 행동에 따라 뮤탈리스크나 히드라리스크 테크로 전환합니다. 더 빠른 풀 빌드에는 스피드 우위의 컨트롤에 실패했을 때만 약합니다 — 스피드 업그레이드가 약간 늦은 전투 도착을 보상해야 합니다.
+모든 저저전 맵에서 쓸 수 있으며, 안정적이고 유연한 경기를 원하는 플레이어의 기본 오프닝이다. 경제를 적당히 유지하면서 5풀 같은 치즈를 막아 낸다. 저글링으로 맵을 장악한 뒤 앞마당을 가져가고, 상대의 움직임에 따라 뮤탈리스크나 히드라리스크 테크로 넘어간다. 더 빠른 풀 빌드를 상대로는 발업 우위를 살리는 컨트롤에 실패했을 때만 약하다. 전장에 조금 늦게 도착하더라도 발업으로 그 차이를 메워야 한다.

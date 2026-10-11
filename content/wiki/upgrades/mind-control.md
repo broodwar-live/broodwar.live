@@ -1,6 +1,6 @@
 +++
 title = "Mind Control"
-description = "Mind Control — Protoss upgrade in StarCraft: Brood War."
+description = "Mind Control is a Protoss Templar Archives research that lets the Dark Archon take permanent control of an enemy unit."
 slug = "mind-control"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 200
 gas = 200
 levels = 1
 researched_at = "templar-archives"
-research_time = 75
+research_time = 120
 affects = ["dark-archon"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Mind Control is a Dark Archon ability that permanently takes control of a single enemy unit, converting it to the caster's side. The ability costs all of the Dark Archon's remaining energy, leaving it unable to cast any spells afterward until energy regenerates. The stolen unit retains all of its abilities and upgrades, and if a worker is stolen, the Protoss player can build that race's structures.
+Mind Control costs 150 energy and permanently transfers the target unit to the Protoss player; it also removes all of the Dark Archon's shields. Taking a worker lets Protoss build another race's structures. It is researched at the Templar Archives. See the [Mind Control ability](/wiki/abilities/mind-control/) page.
 
-Mind Control is extremely rare in competitive play due to the high cost of Dark Archon production and the total energy drain on use. However, when it appears, it can be game-changing. The most legendary use is stealing an enemy Drone or SCV to build another race's tech tree — a Protoss player building Hatcheries and Zerg units is one of Brood War's most iconic moments. More practically, Mind Controlling a key unit like a Siege Tank or Defiler can swing a battle decisively.
-
-Mind Control is researched at the Templar Archives and belongs firmly to the late game, typically after 15-20 minutes. It is almost exclusively seen in unusual or desperate game states. The spectacle factor is high, but the practical frequency is very low in tournament play.
+In competitive play it is a situational, late-game tool.

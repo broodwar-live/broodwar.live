@@ -1,17 +1,42 @@
 +++
 title = "GoRush"
-description = "GoRush — 한국의 저그 선수."
+description = "GoRush(박태민) — 한국의 저그 선수."
 slug = "gorush"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/gorush.png"
 race = "zerg"
 country = "KR"
 country_name = "한국"
-rating = 2440
-tier = "B"
-aliases = ["박성원", "Park Sung Won"]
+real_name = "박태민"
+romanized_name = "Park Tae Min"
+birth_date = "1984-12-24"
+status = "retired"
+aliases = ["[STAR]GoRush"]
+liquipedia = "https://liquipedia.net/starcraft/GoRush"
+soop = "cztaemin"
+sources = ["https://liquipedia.net/starcraft/GoRush"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SUMA GO"
+from = ""
+to = "2004-09"
+[[extra.teams]]
+name = "Greatest One"
+from = "2004-09"
+to = "2005-03-21"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2005-03-21"
+to = "2008-12-15"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2008-12-15"
+to = ""
 +++
-GoRush는 게임을 결정적으로 끝내는 것을 목표로 하는 공격적 플레이와 초반 압박에 집중하며 현대 씬에서 경쟁하는 한국 저그입니다. ZvP에서 저글링 기반 압박 빌드와 빠른 러커 타이밍으로 프로토스가 후반 병력을 갖추기 전에 게임을 끝내는 것을 목표로 합니다. ASL 예선과 온라인 대회에서 활발히 활동하며, 의도를 정찰하지 못한 상대를 빠르게 이길 수 있습니다. 올인 전략에 주저 없이 투입하는 의지로 변동성 있지만 위험합니다.
+GoRush(박태민)는 은퇴한 한국의 저그 프로게이머로, 2000년 월드 사이버 게임즈 챌린지에서 우승했다. 이후 GO(SUMA GO), Greatest One, SK텔레콤 T1, 공군 ACE에서 활동했다. 저그전에 강했으며, 2004년 당신은 골프왕 MSL에서 우승하고 July와 함께 그해 저그의 약진을 이끌었다.
+
+은퇴 후 온게임넷 해설자로 활동했으며, 2012년 한국 e스포츠 명예의 전당에 헌액되었다.

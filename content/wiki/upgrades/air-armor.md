@@ -1,21 +1,29 @@
 +++
 title = "Air Armor"
-description = "Air Armor — Protoss upgrade in StarCraft: Brood War."
+description = "Air Armor is the Protoss Cybernetics Core upgrade that gives Protoss air units +1 armor per level, up to three levels."
 slug = "air-armor"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
 race = "protoss"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "cybernetics-core"
-research_time = 80
-affects = ["scout", "corsair", "carrier", "arbiter", "shuttle", "observer"]
+research_time = 266
+affects = ["corsair", "scout", "carrier", "arbiter", "shuttle", "observer"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Air Armor adds +1 armor to all Protoss air units, including Scouts, Corsairs, Carriers, Arbiters, Shuttles, and Observers. Higher armor reduces incoming damage per hit, improving survivability against anti-air fire. Researched at the Cybernetics Core, with higher levels requiring a Fleet Beacon.
+Each level of Air Armor adds 1 armor to the Corsair, Scout, Carrier (and its Interceptors), Arbiter, Shuttle and Observer. Like Ground Armor, it applies only to damage that reaches hit points. Levels 2 and 3 need a Fleet Beacon.
 
-Air Armor is mainly relevant when Protoss commits to air-heavy compositions. For Carrier play, armor upgrades make Interceptors and the Carriers themselves harder to destroy, extending their combat lifespan significantly. For Corsair-focused strategies, armor helps Corsairs survive longer against Scourge and anti-air attacks. The upgrade also benefits support units — armored Shuttles survive longer during Reaver drops, and armored Observers are harder to snipe.
+It is usually a low-priority upgrade, researched in long games built around Carriers or large Corsair fleets.
 
-Air Armor is typically researched when committing to air compositions, starting in the mid-to-late game. In Carrier builds, it is usually started after at least one level of Air Weapons, around the 12-15 minute mark. In standard ground-focused Protoss play, this upgrade is rarely if ever researched. It becomes most valuable in extended late-game scenarios where air units are the primary fighting force.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 150 / 150 | 266 s | — |
+| 2 | 225 / 225 | 298 s | Fleet Beacon |
+| 3 | 300 / 300 | 330 s | Fleet Beacon |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

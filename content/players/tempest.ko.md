@@ -1,17 +1,32 @@
 +++
 title = "Tempest"
-description = "Tempest — 프랑스의 프로토스 선수."
+description = "Tempest(박재영) — KTF 매직엔스·KT 롤스터의 프로토스, KT의 09-10 프로리그 우승 결승에 출전."
 slug = "tempest"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/tempest.png"
 race = "protoss"
-country = "FR"
-country_name = "프랑스"
-rating = 2400
-tier = "B"
-aliases = []
+country = "KR"
+country_name = "한국"
+real_name = "박재영"
+romanized_name = "Park Jae Yung"
+birth_date = "1988-07-07"
+status = "retired"
+aliases = ["Tempest)Is(", "Thundery"]
+liquipedia = "https://liquipedia.net/starcraft/Tempest"
+sources = ["https://liquipedia.net/starcraft/Tempest"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2007-03-12"
+to = "2009-08"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08"
+to = ""
 +++
-Tempest는 프랑스 프로토스이자 서유럽 BW 커뮤니티를 대표하는 강한 선수 중 한 명입니다. BSL 대회와 유럽 온라인 리그에서 활발히 활동하며, 특히 PvZ에서 강점을 보이는 창의적인 프로토스 플레이를 선보입니다. 비정석 빌드 실험에 대한 의지와 유럽 메타게임 이해로 다른 국제 선수들에게 까다로운 상대입니다. 프랑스의 경쟁적 BW 커뮤니티를 대표하며 BSL 예선에서 괜찮은 성적을 거두어 국제 씬의 스타일 다양성에 기여합니다.
+Tempest(박재영)는 1988년생 대한민국의 은퇴한 프로토스 프로게이머이다. 2007년 3월 KTF 매직엔스에 입단했고, 2009년 팀이 [KT 롤스터](@/wiki/teams/kt-rolster.ko.md)로 바뀐 뒤에도 남았다. 2부 리그를 거쳐 08-09 시즌 프로리그에서 간간이 출전하기 시작했다. 운영 능력이 뛰어난 선수로 평가받았지만 기복이 심하다는 평도 들었다.
+
+개인리그에서는 [2008 클럽데이 온라인 MSL](@/tournaments/2008-club-day-online-msl.ko.md)과 [2009 로스트사가 MSL](@/tournaments/2009-lost-saga-msl.ko.md)에서 16강에 올랐는데, 두 대회 모두 [Fantasy](@/players/fantasy.ko.md)를 탈락시켰다. 이후 [2010-2011 박카스 스타리그](@/tournaments/2010-2011-bacchus-osl.ko.md)와 [2011 진에어 스타리그](@/tournaments/2011-jin-air-osl.ko.md) 본선에도 진출했다. 아베라텍-인텔 클래식 시즌 2에서는 [Jaedong](@/players/jaedong.ko.md)을 탈락시켰다. [09-10 신한은행 프로리그](@/tournaments/2009-2010-shinhan-bank-proleague.ko.md) 결승에 출전해 KT의 우승을 함께했고, [10-11 신한은행 프로리그](@/tournaments/2010-2011-shinhan-bank-proleague.ko.md)에서도 우승한 KT 선수단의 일원이었다.

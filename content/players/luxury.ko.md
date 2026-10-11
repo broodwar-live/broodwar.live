@@ -1,17 +1,43 @@
 +++
 title = "Luxury"
-description = "Luxury — 한국의 프로토스 선수."
+description = "Luxury(박찬수) — YellOw[ArnC]의 쌍둥이 형제인 저그, 2009 로스트사가 MSL 우승과 2008년 스타리그 두 차례 4강."
 slug = "luxury"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
-image = "/images/players/luxury.png"
-race = "protoss"
+race = "zerg"
 country = "KR"
 country_name = "한국"
-rating = 2440
-tier = "Legend"
-aliases = ["이지훈", "Lee Ji Hoon"]
+real_name = "박찬수"
+romanized_name = "Park Chan Soo"
+birth_date = "1987-12-07"
+status = "retired"
+years_active = "2005–2010"
+aliases = ["Sea.Practice", "Sea.Chance", "Luxury[GsP]", "Minus)Saphir"]
+liquipedia = "https://liquipedia.net/starcraft/Luxury"
+sources = ["https://liquipedia.net/starcraft/Luxury"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KOR"
+from = "2005-03-24"
+to = "2006-06-29"
+[[extra.teams]]
+name = "OnGameNet SPARKYZ"
+from = "2006-06-29"
+to = "2008-09"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2008-09"
+to = "2009-08"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2009-08"
+to = "2010-06-09"
 +++
-Luxury는 프로 브루드 워에 우아하고 세련된 플레이 스타일을 가져온 황금기의 전설적 프로토스입니다. 깔끔한 실행, 현명한 병력 컨트롤, 효율적인 자원 관리를 강조하며 여러 시즌에 걸쳐 최고 수준에서 경쟁했습니다. PvT가 그의 시그니처 매치업으로, 정확한 스톰 배치와 인내심 있는 방어 플레이로 가장 공격적인 테란 푸시도 무력화할 수 있었습니다. OSL과 MSL 대회에서 여러 차례 깊이 진출하며 동세대에서 가장 기술적으로 완성도 높은 프로토스 중 한 명으로 인정받았습니다. 그의 경기는 종종 아름답다고 묘사되었으며, 소수만이 따라할 수 있는 수준의 정밀함을 반영했습니다.
+Luxury(박찬수)는 1987년 12월 7일생 대한민국의 은퇴한 저그 프로게이머로, [YellOw[ArnC]](@/players/yellow-arnc.ko.md)의 쌍둥이 형제이다. 2005년 팀 KOR(이후 온게임넷 스파키즈)에서 두각을 나타냈고, 2008년 9월 KTF 매직엔스로 이적했으며 2010년 [KT 롤스터](@/wiki/teams/kt-rolster.ko.md)를 떠났다.
+
+2008년에는 스타리그 4강에 두 대회 연속 올랐다. [2008 박카스 스타리그](@/tournaments/2008-bacchus-osl.ko.md) 4강에서 [Stork](@/players/stork.ko.md)에게 졌다. 우승 후보 [Flash](@/players/flash.ko.md)를 8강에서 꺾은 [2008 EVER 스타리그](@/tournaments/2008-ever-osl.ko.md)에서도 4강에 올라 [Best](@/players/best.ko.md)에게 패했다. 스파키즈가 삼성 칸에 진 [2008 신한은행 프로리그](@/tournaments/2008-shinhan-bank-proleague.ko.md) 결승에도 출전했다.
+
+KT 이적 후 [2008-2009 바투 스타리그](@/tournaments/2008-2009-batoo-osl.ko.md)에서 8강에 올랐다. 이어 [2009 로스트사가 MSL](@/tournaments/2009-lost-saga-msl.ko.md)에서 [Hwasin](@/players/hwasin.ko.md)·[Leta](@/players/leta.ko.md)·[ZerO](@/players/zero.ko.md)를 꺾고 결승에 올라 [JangBi](@/players/jangbi.ko.md)를 3:1로 제압하고 우승했다.

@@ -1,17 +1,20 @@
 +++
 title = "Benzene"
+description = "Benzene is a 2-player Space Platform map by Str18-02, used in the 2010-11 Proleague and later in ASL."
 slug = "benzene"
 template = "wiki/map.html"
 [extra]
-name_ko = "Benzene"
+name_ko = "벤젠"
 dimensions = "128x112"
 tileset = "Space Platform"
 players = 2
 spawn_positions = "1, 7"
-era = "2010-2016"
+era = "2010-2011, 2020"
+sources = ["https://liquipedia.net/starcraft/Benzene", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/407_Benzene", "https://web.archive.org/web/20220309025419/https://namu.wiki/w/%ED%8F%B4%EB%A6%AC%ED%8F%AC%EC%9D%B4%EB%93%9C"]
+verified = "2026-10-11"
 +++
-A 2-player space platform map with a hexagonal ring structure inspired by the benzene molecule, one of the most creatively designed maps in Brood War competitive history. Spawns are at the 1 and 7 o'clock positions on a 128x112 map. The map's signature layout arranges pathways in a hexagonal pattern, creating six distinct routes between the two bases — a design that fundamentally changed how players approach army movement and positioning.
+**Benzene** is a 2-player map on the Space Platform tileset, made by 우상희 (Str18-02). Liquipedia lists its size as 128x112; the start locations are at 1 and 7 o'clock.
 
-The multiple paths between bases mean that aggressive players can always find alternative attack routes, while defenders must maintain awareness of all approaches. Cliffable positions along the ring structure allow siege tanks and reavers to control key chokepoints from elevated terrain. The space platform bridges create natural bottlenecks that favor smaller, well-positioned armies over larger ones caught in transit.
+Benzene was one of the new maps of the 2010-11 Shinhan Bank Proleague and was also used in the 2010-11 PDPop MSL and the 2011 Winners League. In the Remastered era it was revived for ASL Season 2 and ASL Season 10 (2020), and appeared in the StarCraft: Remastered ladder pool in 2020-2021. It has also been used in BSL and KSL.
 
-Benzene was used in professional tournaments from 2010 through 2016, primarily in OSL, MSL, and early ASL seasons. The map produced highly varied games — from quick rushes through unexpected paths to drawn-out positional wars over bridge control. In terms of matchup balance, Terran players often excelled thanks to the siege-friendly elevated positions, while Zerg could exploit the multiple paths for zergling runbys and mutalisk harassment. Protoss had to carefully choose engagement locations to avoid being flanked through the ring structure.
+Its layout is often compared to Match Point. Stacked neutral Power Generators on the cliff above each natural are cleared fastest with splash-damage units such as Siege Tanks, Reavers or Lurkers.

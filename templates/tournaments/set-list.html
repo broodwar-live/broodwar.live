@@ -1,0 +1,32 @@
+{#- Set list of one team match (templates/tournaments/team-season.html). Set sl_sets (the
+    match's `sets`), sl_a / sl_b (team names at the time) before including. Team A's players
+    are right-aligned, team B's left-aligned; the winner of each set is bold with a check mark. -#}
+<ol class="divide-y divide-primary/10 text-sm">
+  {% for st in sl_sets %}
+  {% set a_won = st.winner == "a" %}
+  {% set is_wo = st.walkover is defined and st.walkover %}
+  <li class="px-3 py-2{% if st.ace is defined and st.ace %} bg-warning/5{% endif %}">
+    <div class="grid grid-cols-[minmax(0,1fr)_3.25rem_minmax(0,1fr)] items-center gap-x-2">
+      <div class="flex flex-col items-end gap-0.5 min-w-0 {% if a_won %}font-semibold{% else %}text-base-content/70{% endif %}">
+        {% set sp_rev = true %}{% set sp_class = "" %}
+        {% set sp_name = st.a %}{% set sp_slug = st.a_slug | default(value="") %}{% set sp_race = st.a_race | default(value="") %}
+        <span class="inline-flex items-center gap-1 min-w-0 max-w-full">{% if a_won %}<span class="text-success text-xs" aria-hidden="true">&#10003;</span><span class="sr-only">{{ t.tl_won }}:</span>{% endif %}{% include "tournaments/set-player.html" %}</span>
+        {% if st.a2 is defined %}{% set sp_name = st.a2 %}{% set sp_slug = st.a2_slug | default(value="") %}{% set sp_race = st.a2_race | default(value="") %}{% include "tournaments/set-player.html" %}{% endif %}
+      </div>
+      <div class="text-center leading-tight">
+        {% if st.ace is defined and st.ace %}<span class="inline-block rounded bg-warning/10 px-1.5 py-0.5 text-[11px] font-semibold text-warning" title="{{ t.tl_ace }}">{{ t.tl_ace_short }}</span>
+        {% else %}<span class="font-stats text-xs text-base-content/70"><span class="sr-only">{{ t.tl_set }} </span>{{ loop.index }}</span>{% endif %}
+      </div>
+      <div class="flex flex-col items-start gap-0.5 min-w-0 {% if not a_won %}font-semibold{% else %}text-base-content/70{% endif %}">
+        {% set sp_rev = false %}
+        {% set sp_name = st.b %}{% set sp_slug = st.b_slug | default(value="") %}{% set sp_race = st.b_race | default(value="") %}
+        <span class="inline-flex items-center gap-1 min-w-0 max-w-full">{% include "tournaments/set-player.html" %}{% if not a_won %}<span class="sr-only">: {{ t.tl_won }}</span><span class="text-success text-xs" aria-hidden="true">&#10003;</span>{% endif %}</span>
+        {% if st.b2 is defined %}{% set sp_name = st.b2 %}{% set sp_slug = st.b2_slug | default(value="") %}{% set sp_race = st.b2_race | default(value="") %}{% include "tournaments/set-player.html" %}{% endif %}
+      </div>
+    </div>
+    {% if (st.map is defined and st.map) or is_wo %}
+    <p class="mt-0.5 text-center text-[11px] text-base-content/70">{% if is_wo %}{{ t.rec_walkover }}{% if st.map is defined and st.map %} &middot; {% endif %}{% endif %}{% if st.map is defined and st.map %}{% if st.map_slug is defined and st.map_slug %}{% set sl_map = get_page(path="wiki/maps/" ~ st.map_slug ~ ".md", lang=lang) %}<a href="{{ sl_map.path }}" class="hover:text-primary hover:underline">{{ st.map }}</a>{% else %}{{ st.map }}{% endif %}{% endif %}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>

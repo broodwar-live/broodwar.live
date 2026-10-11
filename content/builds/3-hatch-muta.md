@@ -10,8 +10,50 @@ tags = ["standard", "mutalisk", "economic"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
-games = 445
-winrate = 50
+sources = ["https://liquipedia.net/starcraft/3_Hatch_Spire_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+note = "At natural expansion"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "13"
+item = "buildings/hatchery"
+note = "Third Hatchery"
+[[extra.steps]]
+supply = "12"
+item = "units/zergling"
+note = "6 Zerglings"
+[[extra.steps]]
+supply = "16"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "buildings/lair"
+timing = "@100 gas"
+[[extra.steps]]
+supply = ""
+item = "buildings/spire"
+timing = "@100% Lair"
+[[extra.steps]]
+supply = ""
+item = "buildings/hatchery"
+timing = "@300 minerals"
+[[extra.steps]]
+supply = "33"
+item = "units/overlord"
+note = "2–4 Overlords"
+[[extra.steps]]
+supply = ""
+item = "units/mutalisk"
+timing = "@100% Spire"
+note = "Or Scourge, depending on Corsairs"
 +++
 The standard mid-game ZvP strategy. Open with three hatcheries for economy, then tech to lair and spire for mutalisk production. Mutalisks are the backbone of ZvP — their speed lets them harass probe lines, snipe high templar, and force Protoss to invest in static defense at every base.
 

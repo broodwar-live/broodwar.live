@@ -5,123 +5,57 @@ slug = "protoss"
 template = "wiki/tech-tree.html"
 [taxonomies]
 race = ["protoss"]
+[extra]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
 
-The Protoss tech tree branches outward from the Cybernetics Core into three distinct paths: Gateway (ground army), Robotics (utility and siege), and Stargate (air power). All Protoss buildings except the Nexus and Pylon require Pylon power to function — if the nearby Pylon is destroyed, the building powers down and stops working. Protoss units regenerate shields passively over time.
+Protoss structures are warped in by Probes and, apart from the Nexus, Pylon and Assimilator, must be placed in a Pylon's power field; a structure whose Pylon is destroyed becomes unpowered and stops working. Almost all Protoss tech flows through the Cybernetics Core, which opens the Gateway, Robotics and Stargate branches.
 
-## Base Buildings
+Requirements below are taken from the game data (BWAPI); research costs and times are on each upgrade's page.
 
-- **Nexus** (starting building)
-  - Trains: Probe (worker unit)
-  - Recall ability (requires Arbiter Tribunal research — cast by Arbiter, not Nexus)
-- **Pylon** — provides 8 supply and powers nearby buildings within its radius
+## Base structures
 
-## Tier 1
-
-- **Gateway** (requires Nexus + Pylon)
+- **Nexus** — trains Probes; provides 9 supply.
+- **Pylon** — provides 8 supply and the power field other structures need.
+- **Assimilator** — built on a Vespene Geyser to harvest gas.
+- **Gateway** (requires Nexus)
   - Zealot
   - Dragoon (requires Cybernetics Core)
-  - High Templar (requires Templar Archives)
-  - Dark Templar (requires Templar Archives)
-- **Forge** — Ground unit upgrades
-  - Ground Weapons (3 levels)
-  - Ground Armor (3 levels)
-  - Plasma Shields (3 levels — affects all units and buildings)
-  - Also required for Photon Cannon construction
+  - High Templar, Dark Templar (require Templar Archives)
+- **Forge** (requires Nexus) — Ground Weapons, Ground Armor and Plasma Shields (3 levels each). Enables the Photon Cannon.
+- **Photon Cannon** (requires Forge) — attacks ground and air; detector.
+- **Shield Battery** (requires Gateway) — restores shields of nearby units with its energy.
+- **Cybernetics Core** (requires Gateway) — researches Singularity Charge (Dragoon range), Air Weapons and Air Armor (3 levels each). Enables the Dragoon, Citadel of Adun, Robotics Facility and Stargate.
 
-## Tier 1.5
+## Gateway tech
 
-- **Assimilator** — built on a Vespene Geyser; required for gas collection
-- **Cybernetics Core** (requires Gateway)
-  - Unlocks: Dragoon
-  - Researches: Singularity Charge (Dragoon range +2)
-  - Required for: Robotics Facility, Stargate, Citadel of Adun
-- **Shield Battery** — recharges unit shields (rarely used in competitive play)
+- **Citadel of Adun** (requires Cybernetics Core) — researches Leg Enhancements (Zealot speed).
+- **Templar Archives** (requires Citadel of Adun) — enables High Templar and Dark Templar; researches Psionic Storm, Hallucination, Khaydarin Amulet (High Templar energy), Maelstrom, Mind Control and Argus Talisman (Dark Archon energy). Required for level 2–3 ground upgrades and for the Arbiter Tribunal.
+- Two High Templar merge into an **Archon**; two Dark Templar merge into a **Dark Archon**.
 
-## Tier 2 — Gateway Branch
-
-- **Citadel of Adun** (requires Cybernetics Core)
-  - Researches: Leg Enhancements (Zealot speed)
-  - Required for: Templar Archives
-- **Templar Archives** (requires Citadel of Adun)
-  - Unlocks: High Templar, Dark Templar
-  - Researches: Psionic Storm (High Templar), Hallucination (High Templar), Mind Control (Dark Archon), Maelstrom (Dark Archon)
-  - High Templar + High Templar merge into **Archon**
-  - Dark Templar + Dark Templar merge into **Dark Archon**
-
-## Tier 2 — Robotics Branch
+## Robotics tech
 
 - **Robotics Facility** (requires Cybernetics Core)
-  - Shuttle (transport)
+  - Shuttle
   - Reaver (requires Robotics Support Bay)
   - Observer (requires Observatory)
-- **Robotics Support Bay** (requires Robotics Facility)
-  - Unlocks: Reaver
-  - Researches: Scarab Damage (Reaver), Shuttle Speed (Gravitic Drive)
-- **Observatory** (requires Robotics Facility)
-  - Unlocks: Observer
-  - Researches: Observer Speed (Gravitic Boosters), Sensor Array (Observer sight range)
+- **Robotics Support Bay** (requires Robotics Facility) — Scarab Damage, Reaver Capacity, Gravitic Drive (Shuttle speed).
+- **Observatory** (requires Robotics Facility) — Sensor Array (Observer sight), Gravitic Boosters (Observer speed).
 
-## Tier 2 — Stargate Branch
+## Stargate tech
 
 - **Stargate** (requires Cybernetics Core)
-  - Scout
-  - Corsair
+  - Scout, Corsair
   - Carrier (requires Fleet Beacon)
   - Arbiter (requires Arbiter Tribunal)
-- **Fleet Beacon** (requires Stargate)
-  - Unlocks: Carrier
-  - Researches: Carrier Capacity (+4 Interceptors), Disruption Web (Corsair), Apial Sensors (Scout sight range), Gravitic Thrusters (Scout speed)
-- **Arbiter Tribunal** (requires Stargate + Templar Archives)
-  - Unlocks: Arbiter
-  - Researches: Recall (Arbiter), Stasis Field (Arbiter)
+- **Fleet Beacon** (requires Stargate) — Apial Sensors and Gravitic Thrusters (Scout), Carrier Capacity, Disruption Web, Argus Jewel (Corsair energy). Required for level 2–3 air upgrades.
+- **Arbiter Tribunal** (requires Templar Archives and Stargate) — Recall, Stasis Field, Khaydarin Core (Arbiter energy).
 
-## Air Upgrades
+Feedback (Dark Archon) needs no research.
 
-- **Cybernetics Core** — Air Weapons (3 levels), Air Armor (3 levels)
+## Common tech paths
 
-## Defensive Structures
-
-- **Photon Cannon** (requires Forge) — attacks ground and air; detector
-
-## Key Tech Paths
-
-### Gateway Heavy (Zealot/Dragoon)
-
-The backbone of most Protoss play. Fast aggression or expand into mass Gateway units.
-
-Nexus → Gateway → Cybernetics Core → Singularity Charge → Citadel of Adun → Leg Enhancements → more Gateways
-
-Key units: Zealot, Dragoon
-
-### Robotics (Reaver/Shuttle)
-
-Critical for PvT and PvP. Reavers provide devastating splash damage delivered by Shuttle drops.
-
-Gateway → Cybernetics Core → Robotics Facility → Robotics Support Bay → Shuttle + Reaver
-
-Key units: Shuttle, Reaver, Observer (detection)
-
-### Stargate (Corsair/Carrier)
-
-Common in PvZ for Corsair opening to counter Mutalisks, transitioning to late-game Carrier or Arbiter.
-
-Gateway → Cybernetics Core → Stargate → Corsair (anti-Mutalisk) → Fleet Beacon or Arbiter Tribunal
-
-Key units: Corsair, Carrier, Arbiter
-
-### Dark Templar Rush
-
-A cheese or timing attack that can outright win if the opponent lacks detection.
-
-Gateway → Cybernetics Core → Citadel of Adun → Templar Archives → Dark Templar
-
-Key units: Dark Templar (permanently cloaked)
-
-### Late-game Arbiter
-
-The pinnacle of Protoss tech. Arbiters cloak all friendly units in their radius and have Recall for army teleportation.
-
-Gateway → Cybernetics Core → Stargate → Citadel of Adun → Templar Archives → Arbiter Tribunal → Arbiter
-
-Key units: Arbiter (Recall, Stasis Field, cloaking field)
+- **Against Terran** — Dragoon-based gateway armies with Observers and Reavers or Shuttles, adding High Templar, Arbiters or Carriers later in the game.
+- **Against Zerg** — Forge-first fast expansions are common, followed by Corsairs and Dark Templar, Reavers, or High Templar with Psionic Storm.
+- **Against Protoss** — Dragoons, often with Robotics (Reavers, Observers) or Dark Templar.

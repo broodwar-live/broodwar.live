@@ -1,6 +1,6 @@
 +++
 title = "Hallucination"
-description = "Hallucination — Protoss upgrade in StarCraft: Brood War."
+description = "Hallucination is a Protoss Templar Archives research that lets High Templar create illusory copies of units."
 slug = "hallucination"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 150
 gas = 150
 levels = 1
 researched_at = "templar-archives"
-research_time = 50
+research_time = 80
 affects = ["high-templar"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Hallucination is a High Templar ability that creates 2 illusory copies of a targeted friendly unit. Hallucinated units look identical to real units to the opponent but deal no damage and take double damage. They last for a limited duration and disappear when killed or when the timer expires. The illusions can be identified by opponents with detection abilities.
+Hallucination costs 100 energy and creates two hallucinated copies of the target unit. Hallucinations deal no damage, take double damage and disappear after a time limit. It is researched at the Templar Archives. See the [Hallucination ability](/wiki/abilities/hallucination/) page.
 
-In competitive play, Hallucination is rarely researched because Psionic Storm is almost always the higher priority at the Templar Archives. However, it has niche utility — Hallucinated Observers can scout enemy positions without risking a real Observer, and Hallucinated Dragoons or Carriers can be used to deceive opponents about army composition or bait defensive reactions. Some creative players use it to fake expansions or army movements in mind-game situations.
-
-Hallucination is a late-game luxury upgrade, only researched when Storm is already available and spare Templar energy exists. In practice, it appears in fewer than 5% of competitive games. When it does appear, it is usually in the very late game as a scouting tool or psychological weapon.
+It is rarely used in competitive play; its most common use is scouting with a hallucinated unit.

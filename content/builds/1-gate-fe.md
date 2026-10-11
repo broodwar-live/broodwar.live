@@ -10,8 +10,46 @@ tags = ["standard", "economic", "safe"]
 [extra]
 race = "protoss"
 matchup = "PvT"
-games = 412
-winrate = 50
+sources = ["https://liquipedia.net/starcraft/21_Nexus"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+note = "Probe scouts"
+[[extra.steps]]
+supply = "12"
+item = "buildings/assimilator"
+[[extra.steps]]
+supply = "13"
+item = "buildings/cybernetics-core"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "16"
+action = "Singularity Charge (Dragoon range)"
+note = "Pull 1 Probe off gas (2 keep mining)"
+[[extra.steps]]
+supply = "19"
+item = "units/dragoon"
+note = "Pause Probe production"
+[[extra.steps]]
+supply = "21"
+item = "buildings/nexus"
+note = "At natural expansion"
+[[extra.steps]]
+supply = "21"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "21"
+item = "units/dragoon"
+[[extra.steps]]
+supply = "23"
+item = "buildings/pylon"
+note = "Resume Probe production"
 +++
 The standard safe PvT opening. Build a single gateway, produce one zealot and then dragoons, and take your natural expansion while the initial units provide defense. This prioritizes economy over early aggression, aiming to outscale Terran in the mid-game.
 

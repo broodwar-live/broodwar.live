@@ -10,8 +10,18 @@ tags = ["economic", "greedy", "macro"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
-games = 367
-winrate = 49
+sources = ["https://liquipedia.net/starcraft/12_Hatch_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "units/overlord"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+note = "At natural expansion"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
 +++
 The greediest standard ZvP opening — a hatchery at the natural expansion at 12 supply, before the spawning pool is even started. This gives Zerg the fastest possible two-base economy, allowing rapid drone production to pull ahead in workers and establish map control through sheer numbers.
 

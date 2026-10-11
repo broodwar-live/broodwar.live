@@ -1,5 +1,6 @@
 +++
 title = "Cybernetics Core"
+description = "The Cybernetics Core unlocks Dragoons and Protoss mid-game tech and researches Singularity Charge and air upgrades."
 slug = "cybernetics-core"
 template = "wiki/building.html"
 [taxonomies]
@@ -17,8 +18,10 @@ hotkey = "B→Y"
 size = "large"
 produces = []
 researches = ["air-weapons", "air-armor"]
-unlocks = ["robotics-facility", "stargate"]
-required_by = ["gateway"]
+unlocks = ["robotics-facility", "stargate", "citadel-of-adun"]
+requires = ["gateway"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Cybernetics Core is a critical Protoss tech building that unlocks Dragoon production at the Gateway and serves as the gateway to all advanced Protoss technology. It researches Singularity Charge, which extends Dragoon attack range and is one of the first essential upgrades in any Protoss build. The Cybernetics Core also researches Air Weapons and Air Armor upgrades for Corsairs, Scouts, Carriers, and other air units.
 

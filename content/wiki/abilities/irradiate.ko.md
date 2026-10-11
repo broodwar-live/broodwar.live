@@ -1,5 +1,6 @@
 +++
 title = "이래디에이트"
+description = "이래디에이트는 대상 주변의 생체 유닛에 지속적으로 총 250의 피해를 주는 사이언스 베슬 마법이다."
 slug = "irradiate"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,9 +10,20 @@ name_en = "Irradiate"
 caster = "science-vessel"
 energy = 75
 hp_cost = 0
+damage = 250
+range = 9
+aoe = "32 px around target"
+duration = 40.0
+hotkey = "I"
+researched_at = "science-facility"
+research_minerals = 200
+research_gas = 200
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Irradiate"]
+verified = "2026-10-11"
 +++
-이래디에이트는 대상 유닛을 치명적인 방사능에 노출시켜, 약 30초에 걸쳐 대상 유닛과 범위 내 모든 인접 생체 유닛에 250 피해를 입힌다. 피해는 지속적으로 적용되며 방사능 대상 근처로 이동하는 생체 유닛에도 영향을 미친다. 기계 유닛은 범위 피해를 받지 않는다. 사이언스 베슬에서 에너지 75를 소모하며 사이언스 퍼실리티에서 연구가 필요하다.
+이래디에이트는 건물을 제외한 모든 유닛에 걸 수 있다. 75 상태 틱(600프레임, 게임 시간 40초, 가장 빠름 속도에서는 실제로 약 25초) 동안 대상 유닛이 방사능을 내뿜어, 반경 32픽셀 안의 모든 생체 유닛에 방어력을 무시하는 총 250의 피해를 준다. 대상이 생체 유닛이면 대상 자신도 피해를 입는다. 거리에 따른 감쇠가 없어서 이래디에이트에 걸린 유닛 둘이 붙어 있으면 서로 두 배로 피해를 준다. 기계 유닛은 피해를 받지 않으므로, 적 생체 유닛 근처에 있는 자기 탱크나 베슬에 거는 '이레이저' 같은 기술도 가능하다. 버로우한 유닛은 직접 걸린 경우에만 피해를 받고, 라바·알·건물은 면역이다.
 
-이래디에이트는 TvZ에서 가장 중요한 능력 중 하나이며 해당 매치업을 정의하는 요소이다. 뮤탈리스크 무리에 한 번만 시전해도 겹쳐 있는 특성상 여러 마리가 연쇄 사망할 수 있으며, 히드라리스크 무리 근처의 오버로드에 시전하면 저그는 오버로드를 빼거나 군대가 녹아내리는 것을 지켜봐야 한다. 프로 경기에서 사이언스 베슬 이래디에이트 타이밍은 TvZ의 핵심 전환점이다 — 베슬이 도착하면 저그는 뮤탈리스크 물량에서 전환해야 하며, 그렇지 않으면 치명적 손실을 입는다.
+에너지 75가 들고 사거리는 9이며, [사이언스 퍼실리티](@/wiki/buildings/science-facility.ko.md)에서 미네랄 200, 가스 200(1,200프레임, 80초)에 연구한다.
 
-뮤탈리스크 무리처럼 겹쳐 있는 공중 유닛을 대상으로 하면 최대 범위 효과를 얻을 수 있다. 지상 유닛에 시전할 때는 가장자리보다 무리 중앙의 유닛을 노려야 한다. 방사능 대상 자체는 생체든 기계든 관계없이 전체 피해를 받으므로, 적 사이언스 베슬이나 셔틀에 시전하는 것도 효과적이다.
+이래디에이트는 테저전의 핵심 마법이다. 뭉친 뮤탈리스크는 한 번에 큰 피해를 입고, 디파일러·러커·울트라리스크는 단일 대상으로 노리는 대표적인 유닛이다. 저그 유닛은 모두 생체라서 프로토스나 테란보다 저그를 상대로 훨씬 쓸모가 크다.

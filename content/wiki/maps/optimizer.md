@@ -1,17 +1,20 @@
 +++
 title = "Optimizer"
+description = "Optimizer is a 4-player Ice map by Earthattack, used in ASL Season 10 in 2020."
 slug = "optimizer"
 template = "wiki/map.html"
 [extra]
-name_ko = "Optimizer"
+name_ko = "옵티마이저"
 dimensions = "128x128"
-tileset = "Badlands"
+tileset = "Ice"
 players = 4
-spawn_positions = ""
-era = "2024-present"
+spawn_positions = "1, 5, 7, 11"
+era = "2020-present"
+sources = ["https://liquipedia.net/starcraft/Optimizer", "https://web.archive.org/web/20220309025419/https://namu.wiki/w/%ED%8F%B4%EB%A6%AC%ED%8F%AC%EC%9D%B4%EB%93%9C"]
+verified = "2026-10-11"
 +++
-A contemporary 4-player badlands map designed for competitive play and introduced as part of the ASL map rotation in 2024. Optimizer features a carefully crafted layout with rotational symmetry, where each spawn position offers a main base with a ramp-protected natural expansion. The badlands terrain creates a mix of open ground and elevated positions throughout the map.
+**Optimizer** is a 4-player map on the Ice tileset, made by Earthattack (김응서). It is 128x128 with start locations at 1, 5, 7 and 11 o'clock.
 
-The map's design philosophy emphasizes strategic variety, with multiple viable paths between each base pair. The center area features contested high ground that serves as a key control point in mid and late-game engagements. Mineral-only expansions near the center provide economic incentives for aggressive map control, while safer gas expansions sit along the outer edges.
+Optimizer was introduced in May 2020 and used in AfreecaTV StarLeague Season 10. It was also part of the StarCraft: Remastered ladder pool in 2021 and has been used in community leagues.
 
-Optimizer was designed with modern competitive balance in mind. The natural chokes are wide enough to prevent hard turtling but narrow enough to offer meaningful defensive advantages. Early results in ASL competition suggest the map plays well across all matchups, with Terran appreciating the siege-friendly terrain features and Zerg benefiting from the multiple expansion routes. Protoss players have found success using the central high ground for army positioning in mid-game pushes.
+Each main base has two Vespene geysers, and the third base is shut off by a small mineral wall that has to be mined out before units can reach it.

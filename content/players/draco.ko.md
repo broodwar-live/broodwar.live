@@ -1,17 +1,51 @@
 +++
 title = "Draco"
-description = "Draco — 브라질의 저그 선수."
+description = "Draco(Krzysztof Nalepka) — 폴란드의 프로토스 선수."
 slug = "draco"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/draco.png"
-race = "zerg"
-country = "BR"
-country_name = "브라질"
-rating = 2410
-tier = "B"
-aliases = []
+race = "protoss"
+country = "PL"
+country_name = "폴란드"
+real_name = "Krzysztof Nalepka"
+birth_date = "1987-12-02"
+status = "retired"
+years_active = "1999–2010"
+aliases = ["61[pG]", "Nal_Draco"]
+liquipedia = "https://liquipedia.net/starcraft/Draco"
+sources = ["https://liquipedia.net/starcraft/Draco"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "anc"
+from = ""
+to = ""
+[[extra.teams]]
+name = "eSu"
+from = ""
+to = ""
+[[extra.teams]]
+name = "ekipa Remontowa"
+from = ""
+to = ""
+[[extra.teams]]
+name = "pro Gaming"
+from = ""
+to = "2005-06"
+[[extra.teams]]
+name = "Meet Your Makers"
+from = "2006"
+to = "2006-07"
+[[extra.teams]]
+name = "OGN SPARKYZ"
+from = "2006-08"
+to = "2007-02"
+[[extra.teams]]
+name = "Betson Vodoo Gaming"
+from = "2009-01"
+to = "2010-02"
 +++
-Draco는 국제 대회에서 라틴 아메리카 BW 커뮤니티를 대표하는 브라질 저그입니다. BSL 예선과 국제 온라인 이벤트에서 활발히 활동하며, 브루드 워에 열성적 팬층이 있는 지역에서 열정과 발전하는 실력을 글로벌 씬에 가져옵니다. 매크로 효율 향상과 뮤탈리스크 컨트롤에 집중하며 국제 메타에 적응한 정석 저그 전략이 특징입니다. 남미 BW 씬의 성장에 기여하며 브루드 워의 경쟁적 매력이 모든 대륙에 걸쳐 확산됨을 보여줍니다.
+Draco(Krzysztof Nalepka)는 1987년생 폴란드 출신의 은퇴한 프로토스 프로게이머로, 당대 한국 정상급 선수들과 겨룰 수 있었던 몇 안 되는 외국인 선수로 평가받았다. pro Gaming, Meet Your Makers, Betson Vodoo Gaming 등에서 활동했으며, 2006년 8월부터 2007년 2월까지 한국의 온게임넷 스파키즈에 소속되었다.
+
+2004년 WCG 폴란드 대표 선발전에서 2위를 차지했고, Rymarov LanCraft 등 동유럽 LAN 대회에서 여러 차례 우승했다. 2010년 2월 프로 활동에서 은퇴했다.

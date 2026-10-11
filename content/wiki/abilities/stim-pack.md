@@ -1,5 +1,6 @@
 +++
 title = "Stim Pack"
+description = "Stim Pack trades 10 HP for a temporary boost to Marine and Firebat movement and attack speed."
 slug = "stim-pack"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,15 +10,16 @@ name_ko = "스팀팩"
 caster = "marine"
 energy = 0
 hp_cost = 10
-duration = 10.0
 hotkey = "T"
 researched_at = "academy"
 research_minerals = 100
 research_gas = 100
-research_time = 50
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Stim Pack grants Marines and Firebats a 50% increase to both attack speed and movement speed for approximately 10 seconds, at the cost of 10 HP per use. The effect is immediate and can be activated repeatedly, though each activation drains another 10 HP. Researched at the Academy for 100/100.
+Stim Pack lets Marines and Firebats spend 10 hit points for a temporary boost. While stimmed, the engine halves the unit's weapon cooldown — doubling its rate of fire (a Marine goes from 15 to 7 frames between shots) — and raises its movement speed by half. It can be used again while active, costing another 10 HP each time. Ensnare cancels the bonus while both are active.
 
-Stim Pack is the defining ability of Terran bio play. Without it, Marine/Medic armies are dramatically less effective in combat, lacking the DPS to trade efficiently against Dragoons or Zerglings. In competitive play, Stim is researched as early as possible in bio builds and is activated before virtually every engagement. Medics heal back the 10 HP cost quickly, making the trade-off negligible when Medic support is present. The timing of the first Stim push — when the upgrade completes and the Terran moves out with their initial Marine/Medic force — is one of the most critical moments in TvP and TvZ.
+It is researched at the [Academy](@/wiki/buildings/academy.md) for 100 minerals and 100 gas (1,200 frames, 80 s).
 
-Use Stim just before engaging, not too early or the duration expires before contact. Avoid stimming when Medics are dead or absent, as the cumulative HP loss can be fatal. Against Psionic Storm, pre-spread your Marines before stimming to minimize splash losses.
+Stim is the defining upgrade of Terran bio. Marine/Medic armies activate it before nearly every fight, with Medics healing back the HP cost. Stimming too early wastes the effect, and stimming without Medics leaves units badly hurt; against Psionic Storm or Lurkers, spreading out matters as much as stimming.

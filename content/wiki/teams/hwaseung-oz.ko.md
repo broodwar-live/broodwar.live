@@ -1,25 +1,33 @@
 +++
 title = "화승 OZ"
-description = "화승 OZ — 스타크래프트: 브루드 워 프로게임단."
+description = "화승 OZ(전 IS, KTEC 플러스, 플러스, 르까프 OZ) — 이제동의 소속팀, 2007 프로리그 우승팀."
 slug = "hwaseung-oz"
 template = "wiki/team.html"
 [extra]
 status = "disbanded"
 region = "South Korea"
-founded = "2002"
-disbanded = "2012"
-notable_players = ["Jaedong", "Luxury", "Calm"]
+founded = "2001"
+disbanded = "2011"
+notable_players = ["Jaedong", "Anytime", "fOrGG", "Hiya", "BackHo"]
+sources = ["https://liquipedia.net/starcraft/Hwaseung_OZ", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-화승 OZ는 역대 최고의 선수 중 한 명인 이재동 — Jaedong, "폭군"의 소속팀으로 브루드 워 역사에서 특별한 위치를 차지하고 있다. 2002년 창단되어 여러 스폰서 변경을 거쳤지만 공격적이고 대담한 플레이를 중심으로 일관된 정체성을 유지했다.
+화승 OZ는 2006년부터 해체 때까지 프로리그 라인업의 중심이었던 이제동(Jaedong)의 팀으로 가장 잘 기억된다.
 
-## Jaedong: 폭군
+## 팀명 변천
 
-화승 OZ에서의 Jaedong 커리어는 팀의 정체성과 분리할 수 없다. 파괴적인 뮤탈리스크 컨트롤과 끊임없는 공격으로 특징지어지는 그의 폭발적인 저그 플레이는 Flash와 함께 당대 가장 두려운 선수로 만들었다. Jaedong과 Flash의 라이벌리 — "더 라이벌리"는 후기 프로 브루드 워의 핵심 서사이며, 화승 OZ는 Jaedong이 그 전설적인 경쟁을 펼친 무대였다. Jaedong은 팀 소속으로 다수의 OSL과 MSL 타이틀을 획득했다.
+- 2001년 1월 — IS(Ideal Space)로 창단. Boxer, YellOw, NaDa, IntoTheRainbow 등이 소속
+- 2003년 7월 — KTEC 플러스, 2004년 1월 — 플러스
+- 2006년 3월 — 르까프 OZ(르까프는 화승그룹의 신발 계열사)
+- 2009년 1월 — 화승 OZ
+- 2011년 8월 — 화승이 후원 중단을 발표했고, 팀은 2011년 9월 해체
 
-## 서포팅 멤버
+## 선수
 
-Jaedong이 의심할 여지 없는 스타였지만, 화승 OZ는 유능한 지원 선수들을 보유했다. Luxury(김동수)는 우세한 상대를 상대로도 게임을 빼앗을 수 있는 창의적인 프로토스 플레이를 제공했다. Calm(김윤환)은 프로리그 경기에서 안정적인 테란 성적을 기여했다. 팀의 전반적인 전력은 Jaedong이 개인전에서 빛나는 동안 단체전에서도 경쟁력을 유지할 수 있게 했다.
+2004년 Anytime, ShinHwA, ToSky가, 2005년 BackHo와 이제동이 합류했다. 이제동을 중심으로 테란 fOrGG, Hiya와 프로토스 Anytime, BackHo 등이 라인업을 구성했다.
 
-## 해체
+## 우승 기록
 
-화승 OZ는 프로 BW 환경이 변화하면서 2012년 해체되었다. 팀의 유산은 영원히 Jaedong의 재능과 연결되어 있다 — 그의 실력과 승부욕은 화승 OZ를 브루드 워 역사에서 가장 흥미진진한 팀 중 하나로 만들었다.
+- IS 시절: iTV 한게임 서바이버 프로리그 2001, 2002 온게임넷 스페셜 팀 엑시비션
+- 르까프 OZ 시절: **2007 신한은행 프로리그 2라운드**, **2007 신한 프로리그 그랜드 파이널**
+- 2007 1라운드, 2008–09 신한은행 프로리그, 2009 위너스리그 준우승

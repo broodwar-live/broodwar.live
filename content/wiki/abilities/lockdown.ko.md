@@ -1,5 +1,6 @@
 +++
 title = "락다운"
+description = "락다운은 기계 유닛 하나를 일시적으로 무력화하는 고스트 마법이다."
 slug = "lockdown"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,9 +10,18 @@ name_en = "Lockdown"
 caster = "ghost"
 energy = 100
 hp_cost = 0
+range = 8
+duration = 69.9
+hotkey = "L"
+researched_at = "covert-ops"
+research_minerals = 200
+research_gas = 200
+research_time = 100
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Lockdown"]
+verified = "2026-10-11"
 +++
-락다운은 단일 기계 유닛을 약 130프레임(가장 빠른 게임 속도 기준 약 8.5초) 동안 완전히 무력화하여 이동, 공격, 능력 사용을 차단한다. 에너지 100을 소모하며 커버트 옵스에서 연구가 필요하다. 기계 및 로봇 유닛에만 적용되며, 생체 유닛이나 건물에는 효과가 없다.
+락다운은 건물을 제외한 기계 유닛 하나를 무력화한다. 대상은 이동·공격·능력 사용을 할 수 없고, 락다운된 캐리어는 인터셉터를 회수한다. 지속 시간은 131 상태 틱(약 1,048프레임, 게임 시간 약 70초, 가장 빠름 속도에서는 실제로 약 44초)으로 스테이시스 필드와 같다. 스테이시스와 달리 대상은 여전히 공격받을 수 있고, 락다운된 은폐 유닛은 적에게 보인다. 메딕의 레스토레이션으로 해제할 수 있다.
 
-프로 경기에서 락다운은 특정 매치업에서 틈새적이지만 치명적인 도구이다. TvP에서 캐리어에 대해 가장 많이 사용되며, 락다운된 캐리어는 인터셉터를 발진시키거나 회수할 수 없다. TvT에서는 적 배틀크루저나 시즈 탱크에 사용된다. 플래시는 캐리어에 고스트 락다운을 사용하여 절망적이던 PvT 후반전을 뒤집은 것으로 유명하다. 아비터에 대해서도 리콜과 스테이시스 필드를 차단하여 프로토스의 후반 전략을 완전히 무력화할 수 있다.
+에너지 100이 들고 사거리는 8이며, [코버트 옵스](@/wiki/buildings/covert-ops.ko.md)에서 미네랄 200, 가스 200(1,500프레임, 100초)에 연구한다. 저그에게는 기계 유닛이 없으므로 저그전에서는 쓸모가 없다.
 
-락다운을 효과적으로 사용하려면 가장 가치 있는 기계 유닛을 우선 대상으로 삼아야 한다 — 락다운된 캐리어나 아비터가 골리앗보다 훨씬 큰 영향력을 가진다. 고스트를 클로킹 상태로 유지하여 시전 전까지 생존을 보장해야 한다. 메딕의 레스토레이션으로 락다운을 해제할 수 있으며, 프로토스 선수는 선제적으로 고스트를 처리하려 할 수 있다는 점에 유의해야 한다.
+락다운은 프로 경기에서 보기 드물다. 쓸 때는 캐리어, 아비터(리콜·스테이시스 차단), 배틀크루저, 시즈탱크처럼 비싼 기계 유닛을 노린다. 고스트를 클로킹한 채 다가가면 사거리 안으로 들어가기 쉽다.

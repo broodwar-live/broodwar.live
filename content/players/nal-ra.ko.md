@@ -1,17 +1,32 @@
 +++
 title = "Nal_rA"
-description = "Nal_rA — 한국의 프로토스 선수."
+description = "Nal_rA(강민)는 한국의 프로토스 프로게이머다."
 slug = "nal-ra"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/nal-ra.png"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2480
-tier = "Legend"
-aliases = ["강민", "Kang Min"]
+real_name = "강민"
+romanized_name = "Kang Min"
+birth_date = "1982-03-15"
+status = "retired"
+aliases = ["Nal rA"]
+liquipedia = "https://liquipedia.net/starcraft/Nal_rA"
+soop = "nalra82"
+sources = ["https://liquipedia.net/starcraft/Nal_rA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Suma GO"
+from = ""
+to = "2004-04-02"
+[[extra.teams]]
+name = "KTF MagicNs"
+from = "2004-04-02"
+to = ""
 +++
-Nal_rA는 브루드 워 역사상 가장 창의적이고 예측 불가능한 선수 중 한 명인 전설적 프로토스입니다. 아무도 시도하지 않을 비정석 전략과 빌드 실험으로 유명하며, 모든 경기에 경이로움을 가져왔습니다. 그의 접근은 기존의 통념을 거부했으며 — 독특한 유닛 조합, 예상 밖의 테크 경로, 상대를 당황시키는 심리적 마인드게임을 구사했습니다. 비정석적 스타일에도 불구하고 MSL 깊은 진출 등 의미 있는 대회 성적을 달성하며, 최고 수준에서 창의성이 승리의 정당한 길이 될 수 있음을 증명했습니다. 성적을 넘어 브루드 워를 예술의 형태로 플레이할 수 있음을 보여주며 수많은 선수들에게 틀을 벗어나 생각하도록 영감을 주었습니다.
+Nal_rA(강민)는 1982년생 대한민국의 프로토스 프로게이머로, 수마 GO를 거쳐 2004년부터 KTF 매직엔스에서 활동했다. 즉흥적이고 과감한 플레이로 '몽상가'라 불렸으며, 프저전과 프테전에서 프로토스의 운영 방식을 바꾼 빌드를 개척한 선수로 평가받는다. '3대 천왕(The Three Kings)' 중 한 명으로 꼽힌다.
+
+2003년 스타우트 MSL에서 우승하고 마이큐브 OSL에서 준우승했으며, 이어서 NHN 한게임 OSL에서 우승했다. 2006년 프링글스 MSL 시즌 1에서 준우승을 기록했고, 2012년 e스포츠 명예의 전당에 헌액되었다.

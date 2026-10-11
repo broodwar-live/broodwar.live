@@ -1,6 +1,6 @@
 +++
-title = "Taenggu"
-description = "Taenggu — Terran player from South Korea."
+title = "TaeNgGu"
+description = "TaeNgGu (Yoon Jong-hyun) — South Korean amateur Terran who qualified for ASL Season 17."
 slug = "taenggu"
 template = "players/player.html"
 [taxonomies]
@@ -10,8 +10,14 @@ image = "/images/players/taenggu.png"
 race = "terran"
 country = "KR"
 country_name = "South Korea"
-rating = 2440
-tier = "B"
-aliases = ["서광원"]
+real_name = "윤종현"
+romanized_name = "Yoon Jong-hyun"
+birth_date = "1994-04-06"
+aliases = ["TaeNgGu11"]
+liquipedia = "https://liquipedia.net/starcraft/TaeNgGu"
+sources = ["https://liquipedia.net/starcraft/TaeNgGu"]
+verified = "2026-10-11"
 +++
-Taenggu is a Korean Terran known for his bio play in the modern competitive scene. His marine-medic based strategies in TvZ and aggressive pushes in TvP give his games a fast-paced tempo that keeps opponents under constant pressure. Taenggu's micro in bio engagements is clean, and his ability to juggle multiple attack groups shows strong multitasking. He has competed in ASL qualifiers and online Korean tournaments, where his aggressive style can produce impressive results against opponents who are unprepared for the pace of his attacks. He continues to develop his play and is a solid contributor to the Korean competitive circuit.
+TaeNgGu (Yoon Jong-hyun) is a South Korean Terran player born in 1994. He is an amateur of the post-KeSPA streaming scene rather than a former team-league professional, and has also used the ID TaeNgGu11; Chinese-speaking fans know him by the nickname 塘沽.
+
+His appearance on the main stage of the Afreeca Starleague came in 2024, when he qualified for [ASL Season 17](@/tournaments/asl-s17.md).

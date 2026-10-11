@@ -1,5 +1,6 @@
 +++
 title = "야마토 캐논"
+description = "야마토 캐논은 배틀크루저가 단일 대상에게 260의 폭발형 피해를 주는 능력이다."
 slug = "yamato-cannon"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,9 +10,18 @@ name_en = "Yamato Cannon"
 caster = "battlecruiser"
 energy = 150
 hp_cost = 0
+damage = 260
+range = 10
+hotkey = "Y"
+researched_at = "physics-lab"
+research_minerals = 100
+research_gas = 100
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Battlecruiser"]
+verified = "2026-10-11"
 +++
-야마토 캐논은 단일 대상에 집중 플라즈마 폭발을 발사하여 260 피해를 입힌다. 사거리 10으로 발사 전 짧은 충전 애니메이션이 있다. 일반 피해 유형으로 모든 방어 크기에 전체 피해를 입힌다. 배틀크루저에서 에너지 150을 소모하며 피직스 랩에서 연구가 필요하다.
+야마토 캐논은 단일 대상에게 260의 피해를 주는 한 방을 쏜다. 무기 데이터상 **폭발형** 피해라서, 실드와 방어력을 거친 뒤 대형 유닛에는 100%, 중형에는 75%, 소형에는 50%의 피해가 들어간다. 사거리는 10이다.
 
-야마토 캐논은 배틀크루저에게 전투 시작 전 핵심 대상을 즉시 제거하는 능력을 부여한다. 260 피해로 디파일러(체력 80), 사이언스 베슬(체력 150), 하이 템플러(체력 40 + 보호막 40) 및 대부분의 시전 유닛을 한 방에 제거한다. 건물에도 막대한 피해를 입혀 기지 습격 시 스포닝 풀이나 게이트웨이 같은 핵심 건물을 저격하는 데 효과적이다. TvP에서 야마토를 보유한 다수의 배틀크루저는 집중 사격으로 체계적으로 캐리어를 파괴할 수 있다 — 야마토 한 발이 캐리어 체력의 절반을 깎는다.
+에너지 150이 들고 [피직스 랩](@/wiki/buildings/physics-lab.ko.md)에서 미네랄 100, 가스 100(1,800프레임, 120초)에 연구한다.
 
-프로 경기에서 배틀크루저 전략은 높은 비용과 느린 생산 시간으로 인해 드물어, 야마토 캐논의 등장 빈도를 제한한다. 배틀크루저가 전장에 있을 때는 야마토를 시전 유닛과 탐지기에 우선 사용해야 한다 — 사이언스 베슬이나 디파일러에 야마토를 쓰면 핵심 지원 유닛을 제거한다. 일반 공격으로 효율적으로 처치할 수 있는 유닛에 야마토를 낭비하지 않아야 한다. 배틀크루저를 함께 유지하여 결합된 야마토 일제 사격으로 고체력 대상을 파괴한다. 에너지 관리가 중요하다 — 교전 전 배틀크루저가 최소 에너지 150까지 축적되도록 하여 각각 야마토를 준비해야 한다.
+야마토는 사이언스 베슬 같은 마법 유닛, 포톤 캐논이나 미사일 터렛, 크게 다친 대형 함선처럼 꼭 잡아야 할 목표를 한 방에 제거하는 데 쓴다. 배틀크루저 자체가 대부분의 종족전에서 잘 나오지 않아 주로 후반 테테전, 가끔 테프전에서 볼 수 있다. 상대는 EMP 쇼크웨이브로 에너지를 빼거나 락다운으로 배틀크루저를 묶어 대응한다.

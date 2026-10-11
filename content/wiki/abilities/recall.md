@@ -1,5 +1,6 @@
 +++
 title = "Recall"
+description = "Recall is an Arbiter spell that teleports the caster's units from a target area to the Arbiter."
 slug = "recall"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,16 +10,17 @@ name_ko = "리콜"
 caster = "arbiter"
 energy = 150
 hp_cost = 0
-range = "unlimited"
-aoe = "64px radius"
+aoe = "128×128 px"
 hotkey = "R"
 researched_at = "arbiter-tribunal"
 research_minerals = 150
 research_gas = 150
-research_time = 100
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Recall"]
+verified = "2026-10-11"
 +++
-Recall instantly teleports all friendly units within a target area to the Arbiter's current position. The recalled units appear around the Arbiter and can act immediately upon arrival. Costs 150 energy from an Arbiter and requires research at the Arbiter Tribunal.
+Recall targets any point on the map; the Arbiter does not need to move. About 22 frames after the cast, every unit belonging to the caster in a 128×128-pixel square around the target point is teleported next to the Arbiter. Buildings, burrowed units, hallucinations and units in Stasis Field are left behind, as are allied players' units. The energy is spent the moment the spell is cast. Ground units cannot be recalled onto terrain they could not stand on.
 
-Recall is one of the most powerful strategic abilities in Brood War, enabling army-scale teleportation across the entire map. Its primary use is surprise attacks — fly an Arbiter to the enemy's base or expansion, then Recall your main army directly into their production area. This bypasses all defensive positions and forces the opponent to fight on your terms. In PvT, Recall is a cornerstone of late-game Protoss strategy, allowing the Protoss to teleport Zealots and Dragoons past Siege Tank lines. In PvZ, Recall enables rapid repositioning to punish Zerg overextension or to strike undefended bases.
+It costs 150 energy and is researched at the [Arbiter Tribunal](@/wiki/buildings/arbiter-tribunal.md) for 150 minerals and 150 gas (1,800 frames, 120 s).
 
-To use Recall effectively, pre-position the Arbiter near the intended target location, then select the recall area over your main army at home. The Arbiter's innate cloaking field makes it difficult for the opponent to see it coming. The main counters are EMP Shockwave (drains the Arbiter's energy before it can cast) and keeping the army near the Arbiter's likely targets. A common mistake is recalling into a defended position — always scout the recall target first. Send the Arbiter to locations with minimal anti-air to maximize survival.
+Recall is mostly a late-game PvT weapon: an Arbiter slips into the Terran main or an expansion and brings the army in behind the tank lines. The Arbiter itself is not cloaked (it cloaks the units around it), so Terrans patrol vulnerable areas with Science Vessels to EMP or shoot down incoming Arbiters, and place Spider Mines and turrets where a Recall is likely.

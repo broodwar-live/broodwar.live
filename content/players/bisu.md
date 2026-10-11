@@ -1,6 +1,6 @@
 +++
 title = "Bisu"
-description = "Bisu — Protoss player from South Korea."
+description = "Bisu (Kim Taek Yong) — Protoss player from South Korea."
 slug = "bisu"
 template = "players/player.html"
 [taxonomies]
@@ -10,8 +10,30 @@ image = "/images/players/bisu.jpg"
 race = "protoss"
 country = "KR"
 country_name = "South Korea"
-rating = 2610
-tier = "B+"
-aliases = ["김택용", "Kim Taek Yong"]
+real_name = "김택용"
+romanized_name = "Kim Taek Yong"
+birth_date = "1989-11-03"
+status = "active"
+years_active = "2005–2013, 2016–present"
+aliases = ["Bisu[Shield]"]
+liquipedia = "https://liquipedia.net/starcraft/Bisu"
+soop = "rlaxordyd"
+sources = ["https://liquipedia.net/starcraft/Bisu"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Pirates of Space"
+from = "2005-08-11"
+to = "2006-03"
+[[extra.teams]]
+name = "MBCGame HERO"
+from = "2006-03"
+to = "2008-02"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = "2008-02"
+to = "2013-09-09"
 +++
-Bisu is one of the most revolutionary players in Brood War history, forever changing the PvZ matchup with the innovative build that bears his name — the Bisu Build. Before his breakthrough, Protoss was considered significantly disadvantaged against Zerg, but his aggressive corsair-dark templar opening into fast expansion shattered that paradigm and gave Protoss players a viable path to victory. An OSL champion, Bisu combined extraordinary mechanical skill with creative strategic thinking that made him nearly unbeatable during his peak. His rivalry with sAviOr produced some of the most celebrated matches in BW history. Though his activity has decreased in the modern era, Bisu's legacy as "The Revolutionist" endures as one of the most transformative contributions any single player has made to the game.
+Bisu (Kim Taek Yong) is a South Korean Protoss player born in 1989. Drafted by Pirates of Space in 2005, he played for MBCGame HERO and then SK Telecom T1 from 2008 to 2013.
+
+He won the GomTV MSL Season 1 and Season 2 in 2007 and the ClubDay Online MSL in 2008, and was runner-up in GomTV MSL Season 3. His 3–0 victory over sAviOr in an MSL final earned him the nickname "Revolutionist" and is regarded as a turning point for the Protoss vs. Zerg matchup. He was inducted into the Korean esports Hall of Fame in 2012 and later played on Afreeca after retiring from StarCraft II in 2013.

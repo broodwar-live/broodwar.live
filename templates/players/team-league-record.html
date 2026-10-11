@@ -1,0 +1,93 @@
+{#- Team-league playoff sets of a player page. Included from players/player.html, which builds
+    `tls` (newest first; record fields documented there) and `tl_seasons`. Separate from the
+    individual playoff record: nothing here feeds data-rec-*. The data-tl-* attributes are
+    read by scripts/check-team-leagues.py; data-opp / data-tl-res on the set rows by
+    scripts/check-compare-data.py. -#}
+{% set_global tw = 0 %}{% set_global tl1w = 0 %}{% set_global tl1l = 0 %}{% set_global tl2w = 0 %}{% set_global tl2l = 0 %}
+{% set_global tfw = 0 %}{% set_global tfl = 0 %}{% set_global taw = 0 %}{% set_global tal = 0 %}
+{% for r in tls %}
+  {% set win = r.res == "W" %}
+  {% if r.fmt == "1v1" %}{% if win %}{% set_global tl1w = tl1w + 1 %}{% else %}{% set_global tl1l = tl1l + 1 %}{% endif %}
+  {% else %}{% if win %}{% set_global tl2w = tl2w + 1 %}{% else %}{% set_global tl2l = tl2l + 1 %}{% endif %}{% endif %}
+  {% if r.f %}{% if win %}{% set_global tfw = tfw + 1 %}{% else %}{% set_global tfl = tfl + 1 %}{% endif %}{% endif %}
+  {% if r.ace %}{% if win %}{% set_global taw = taw + 1 %}{% else %}{% set_global tal = tal + 1 %}{% endif %}{% endif %}
+{% endfor %}
+{% set tw = tl1w + tl2w %}{% set tl = tl1l + tl2l %}{% set n_tls = tls | length %}
+<section class="mt-10" aria-labelledby="player-tl" id="player-tl-section"
+  data-tl-sets="{{ tw }}-{{ tl }}" data-tl-1v1="{{ tl1w }}-{{ tl1l }}" data-tl-finals="{{ tfw }}-{{ tfl }}">
+  <h2 id="player-tl" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.tl_record_title }}</h2>
+  <p class="text-xs text-base-content/70 mb-4">{{ t.tl_record_note | replace(from="{n}", to=tl_seasons ~ "") }}</p>
+
+  <dl class="grid grid-cols-3 gap-2 sm:gap-3 mb-6">
+    {% for tile in [[t.tl_all_sets, tw, tl], [t.tl_finals_sets, tfw, tfl], [t.tl_ace_sets, taw, tal]] %}
+    <div class="glass-card rounded-box px-3 py-2.5 sm:px-4 sm:py-3 min-w-0">
+      <dt class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-base-content/70 truncate">{{ tile[0] }}</dt>
+      <dd class="mt-0.5 font-stats text-lg sm:text-2xl leading-tight whitespace-nowrap">{{ tile[1] }}<span class="text-base-content/60">–</span>{{ tile[2] }}</dd>
+      <dd class="font-stats text-[11px] sm:text-xs text-base-content/70">{% if tile[1] + tile[2] > 0 %}{{ (tile[1] * 100 / (tile[1] + tile[2])) | round | int }}%{% else %}–{% endif %}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+
+  {#- Breakdown: by league, by format -#}
+  <div class="overflow-x-auto mb-2">
+    <table class="table table-sm max-sm:table-xs w-full max-w-2xl">
+      <thead>
+        <tr class="text-xs text-base-content/70">
+          <th scope="col"><span class="sr-only">{{ t.rec_split }}</span></th>
+          <th scope="col" class="text-right">{{ t.tl_set_wl }}</th>
+          <th scope="col" class="text-right">{{ t.rec_win_pct }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="rowgroup" colspan="3" class="pt-4 pb-1 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ t.rec_by_league }}</th></tr>
+        {% set by_lg = tls | group_by(attribute="l") %}
+        {% for lg in by_lg | keys | sort %}
+        {% set_global bw = 0 %}{% for r in by_lg[lg] %}{% if r.res == "W" %}{% set_global bw = bw + 1 %}{% endif %}{% endfor %}
+        {% set bl = by_lg[lg] | length - bw %}
+        <tr><th scope="row" class="text-sm font-medium whitespace-nowrap">{{ lg }}</th><td class="font-stats text-sm text-right">{{ bw }}–{{ bl }}</td><td class="font-stats text-xs text-right text-base-content/70">{{ (bw * 100 / (bw + bl)) | round | int }}%</td></tr>
+        {% endfor %}
+      </tbody>
+      <tbody>
+        <tr><th scope="rowgroup" colspan="3" class="pt-4 pb-1 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ t.tl_by_format }}</th></tr>
+        {% for row in [[t.tl_sets_1v1, tl1w, tl1l], [t.tl_sets_2v2, tl2w, tl2l]] %}{% if row[1] + row[2] > 0 %}
+        <tr><th scope="row" class="text-sm font-medium whitespace-nowrap">{{ row[0] }}</th><td class="font-stats text-sm text-right">{{ row[1] }}–{{ row[2] }}</td><td class="font-stats text-xs text-right text-base-content/70">{{ (row[1] * 100 / (row[1] + row[2])) | round | int }}%</td></tr>
+        {% endif %}{% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {#- Set list, newest first; phones show 10 rows until "show all" is ticked (src/app.css .rec-more). -#}
+  <h3 id="player-tl-sets" class="text-base font-semibold mt-8 mb-3 scroll-mt-24">{{ t.tl_set_list }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ n_tls }})</span></h3>
+  {% if n_tls > 10 %}<input type="checkbox" id="tl-more" class="rec-more sr-only" aria-controls="player-tl-list">{% endif %}
+  <div>
+    <table id="player-tl-list" class="table table-sm w-full max-sm:block rec-collapsible" data-sortable>
+      <thead class="max-sm:sr-only">
+        <tr class="text-xs text-base-content/70">
+          <th scope="col" data-sort="text" aria-sort="descending">{{ t.rec_col_date }}</th>
+          <th scope="col" data-sort="text">{{ t.rec_col_tournament }}</th>
+          <th scope="col">{{ t.tl_col_match }}</th>
+          <th scope="col" data-sort="text">{{ t.rec_col_opponent }}</th>
+          <th scope="col" data-sort="text">{{ t.tl_map }}</th>
+          <th scope="col" data-sort="text">{{ t.rec_col_result }}</th>
+        </tr>
+      </thead>
+      <tbody class="max-sm:block max-sm:space-y-2">
+        {% for r in tls %}
+        <tr{% if r.o %} data-opp="{{ r.o }}"{% endif %} data-tl-res="{{ r.res }}" class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3">
+          <td class="font-stats text-xs text-base-content/70 whitespace-nowrap max-sm:p-0 max-sm:order-2" data-sort-value="{{ r.k }}">{% if r.d %}<time datetime="{{ r.d }}">{{ r.d }}</time>{% endif %}</td>
+          <td class="text-sm max-sm:p-0 max-sm:order-4 max-sm:basis-full"><a href="{{ r.p }}" class="text-primary hover:underline">{{ r.s }}</a> <span class="text-xs whitespace-nowrap {% if r.f %}font-semibold text-warning{% else %}text-base-content/70{% endif %}">&middot; {{ r.r }}</span></td>
+          <td class="text-xs text-base-content/70 max-sm:p-0 max-sm:order-5 max-sm:basis-full">{{ r.mt }} <span aria-hidden="true">&middot;</span> {{ t.player_vs }} {{ r.ot }}</td>
+          <td class="text-sm max-sm:p-0 max-sm:order-6 max-sm:flex-1 max-sm:min-w-0" data-sort-value="{{ r.on }}">{% if r.fmt == "1v1" %}{% set sp_name = r.on %}{% set sp_slug = r.os %}{% set sp_race = r.or %}{% set sp_rev = false %}{% set sp_class = "" %}{% include "tournaments/set-player.html" %}{% else %}<span class="text-base-content/80">{{ r.on }}</span> <span class="text-xs text-base-content/70">(2v2{% if r.pn %}, {{ t.tl_partner | replace(from="{name}", to=r.pn) }}{% endif %})</span>{% endif %}{% if r.ace %} <span class="inline-block rounded bg-warning/10 px-1.5 py-0.5 text-[11px] font-semibold text-warning" title="{{ t.tl_ace }}">{{ t.tl_ace_short }}</span>{% endif %}</td>
+          <td class="text-xs text-base-content/70 max-sm:p-0 max-sm:order-7" data-sort-value="{{ r.map }}">{% if r.ms %}{% set tl_mp = get_page(path="wiki/maps/" ~ r.ms ~ ".md", lang=lang) %}<a href="{{ tl_mp.path }}" class="hover:underline">{{ r.map }}</a>{% else %}{{ r.map }}{% endif %}</td>
+          <td class="max-sm:p-0 max-sm:order-1" data-sort-value="{{ r.res }}">{% if r.res == "W" %}<span class="inline-block rounded bg-success/10 px-1.5 py-0.5 text-[11px] font-semibold text-success" title="{{ t.rec_win_long }}">{{ t.rec_win }}</span>{% else %}<span class="inline-block rounded bg-base-content/5 px-1.5 py-0.5 text-[11px] font-semibold text-base-content/70" title="{{ t.rec_loss_long }}">{{ t.rec_loss }}</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if n_tls > 10 %}
+    <label for="tl-more" class="rec-more-label sm:hidden mt-3 flex justify-center rounded-box border border-primary/20 px-4 py-2 text-sm text-primary cursor-pointer select-none">
+      <span class="rec-more-show">{{ t.rec_show_all | replace(from="{n}", to=n_tls ~ "") }}</span><span class="rec-more-hide">{{ t.rec_show_fewer }}</span>
+    </label>
+    {% endif %}
+  </div>
+</section>

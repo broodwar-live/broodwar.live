@@ -5,123 +5,45 @@ slug = "zerg"
 template = "wiki/tech-tree.html"
 [taxonomies]
 race = ["zerg"]
+[extra]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
 
-The Zerg tech tree is unique in StarCraft. All Zerg units are produced from a single building type — the Hatchery — and buildings are created by morphing (sacrificing) a Drone. The Hatchery itself morphs through three tiers: Hatchery → Lair → Hive, with each tier unlocking access to more advanced structures and units. Zerg is the only race where all ground units can burrow (with the Burrow research) and the only race that shares a single production queue across all unit types.
+Zerg units hatch from Larvae, which each Hatchery, Lair or Hive generates automatically (up to three waiting at a time per hatchery). Structures are made by morphing a Drone, which is consumed, and most must be placed on creep. The main hatchery tiers — Hatchery → Lair → Hive — gate access to higher-tier structures.
 
-## Base Buildings
+Requirements below are taken from the game data (BWAPI); research costs and times are on each upgrade's page.
 
-- **Hatchery** (starting building, Tier 1)
-  - Produces: Larva (spawns automatically, up to 3 at a time)
-  - Larva morph into all Zerg units
-  - Trains: Drone (worker), Zergling (requires Spawning Pool), Overlord, Hydralisk (requires Hydralisk Den)
-  - Morphs into: **Lair**
+## Hatchery tiers
 
-- **Lair** (Tier 2, morphed from Hatchery)
-  - Unlocks access to: Spire, Queen's Nest
-  - Morphs into: **Hive**
+- **Hatchery** — produces Larvae; provides 1 supply. Researches Burrow.
+  - From Larvae: Drone and Overlord (no requirement), Zergling (Spawning Pool), Hydralisk (Hydralisk Den), Mutalisk and Scourge (Spire), Queen (Queen's Nest), Defiler (Defiler Mound), Ultralisk (Ultralisk Cavern).
+- **Lair** (morphed from a Hatchery; requires Spawning Pool) — researches Ventral Sacs (Overlord transport), Antennae (Overlord sight) and Pneumatized Carapace (Overlord speed). Enables the Spire, Queen's Nest and Lurker Aspect, and Zerg attack and armor upgrades beyond level 1.
+- **Hive** (morphed from a Lair; requires Queen's Nest) — enables the Defiler Mound, Ultralisk Cavern, Greater Spire, Nydus Canal, Adrenal Glands and level 3 upgrades.
 
-- **Hive** (Tier 3, morphed from Lair)
-  - Unlocks access to: Defiler Mound, Ultralisk Cavern, Greater Spire, Nydus Canal
+The **Overlord** provides 8 supply and is always a detector; it can carry units only after Ventral Sacs.
 
-## Supply and Detection
+## Hatchery-tier structures
 
-- **Overlord** — provides 8 supply; also serves as detector and transport (after Lair upgrades)
-  - Ventral Sacs (Lair): Overlord becomes a transport
-  - Antennae (Lair): Overlord gains increased sight range
-  - Pneumatized Carapace (Lair): Overlord movement speed increase
+- **Spawning Pool** (requires Hatchery) — Zergling; researches Metabolic Boost and Adrenal Glands (requires Hive). Required for the Lair, Hydralisk Den and Sunken Colony.
+- **Evolution Chamber** (requires Hatchery) — Melee Attacks, Missile Attacks and Carapace (3 levels each; level 2 requires Lair, level 3 Hive). Required for the Spore Colony.
+- **Extractor** — built on a Vespene Geyser to harvest gas.
+- **Creep Colony** — morphs into a **Sunken Colony** (requires Spawning Pool; anti-ground) or a **Spore Colony** (requires Evolution Chamber; anti-air and detector).
+- **Hydralisk Den** (requires Spawning Pool) — Hydralisk; researches Muscular Augments, Grooved Spines and Lurker Aspect (requires Lair). With Lurker Aspect, Hydralisks morph into **Lurkers**.
 
-## Tier 1 Structures
+## Lair-tier structures
 
-- **Spawning Pool** (requires Hatchery)
-  - Unlocks: Zergling
-  - Researches: Metabolic Boost (Zergling speed), Adrenal Glands (Zergling attack speed, requires Hive)
-- **Extractor** — built on a Vespene Geyser; required for gas collection
-- **Evolution Chamber** — Ground unit upgrades
-  - Melee Attacks (3 levels)
-  - Missile Attacks (3 levels)
-  - Carapace (3 levels)
-  - Also required for Sunken Colony and Spore Colony
-- **Creep Colony** — basic defensive structure; morphs into:
-  - **Sunken Colony** (requires Evolution Chamber) — anti-ground
-  - **Spore Colony** (requires Evolution Chamber) — anti-air and detector
+- **Spire** (requires Lair) — Mutalisk and Scourge; Flyer Attacks and Flyer Carapace (3 levels each). Morphs into a **Greater Spire** (requires Hive), which lets Mutalisks morph into **Guardians** and **Devourers** and can continue the flyer upgrades.
+- **Queen's Nest** (requires Lair) — Queen; researches Spawn Broodling, Ensnare and Gamete Meiosis (Queen energy). Required for the Hive. Queens can also infest a Terran Command Center that has been damaged below half its hit points, turning it into an Infested Command Center that produces Infested Terrans.
 
-## Tier 1.5
+## Hive-tier structures
 
-- **Hydralisk Den** (requires Spawning Pool)
-  - Unlocks: Hydralisk
-  - Researches: Muscular Augments (Hydralisk speed), Grooved Spines (Hydralisk range +1)
-  - Lurker Aspect (requires Lair): Hydralisk morphs into **Lurker**
+- **Defiler Mound** (requires Hive) — Defiler; researches Plague, Consume and Metasynaptic Node (Defiler energy). Dark Swarm needs no research.
+- **Ultralisk Cavern** (requires Hive) — Ultralisk; researches Anabolic Synthesis and Chitinous Plating.
+- **Nydus Canal** (requires Hive) — a pair of linked tunnel entrances that move ground units instantly between them.
 
-## Tier 2 Structures
+## Common tech paths
 
-- **Spire** (requires Lair)
-  - Unlocks: Mutalisk, Scourge
-  - Upgrades: Flyer Attacks (3 levels), Flyer Carapace (3 levels)
-  - Morphs into: **Greater Spire** (requires Hive)
-    - Unlocks: Mutalisk morphs into Guardian; Mutalisk morphs into Devourer
-- **Queen's Nest** (requires Lair)
-  - Unlocks: Queen
-  - Researches: Spawn Broodling (Queen), Ensnare (Queen), Gamete Meiosis (Queen energy)
-  - Required for: Hive
-
-## Tier 3 Structures
-
-- **Defiler Mound** (requires Hive)
-  - Unlocks: Defiler
-  - Researches: Plague (Defiler), Consume (Defiler — sacrifice a friendly Zerg unit to regain energy), Metasynaptic Node (Defiler energy)
-- **Ultralisk Cavern** (requires Hive)
-  - Unlocks: Ultralisk
-  - Researches: Anabolic Synthesis (Ultralisk speed), Chitinous Plating (Ultralisk +2 armor)
-- **Nydus Canal** (requires Hive)
-  - Creates a tunnel between two points on creep for instant unit transport
-- **Greater Spire** (morphed from Spire, requires Hive)
-  - Unlocks: Guardian (morphed from Mutalisk), Devourer (morphed from Mutalisk)
-
-## Unique Zerg Mechanic: Morphing
-
-Several Zerg units are produced by morphing an existing unit:
-
-- Drone → any Zerg building (Drone is consumed)
-- Hydralisk → **Lurker** (requires Lurker Aspect at Hydralisk Den)
-- Mutalisk → **Guardian** (requires Greater Spire)
-- Mutalisk → **Devourer** (requires Greater Spire)
-- Two Zerglings → **Infested Terran** is produced from Infested Command Center (Queen infests a damaged Terran Command Center)
-
-## Key Tech Paths
-
-### Zergling/Mutalisk (Ling/Muta)
-
-The signature Zerg style in ZvT and ZvP. Fast, mobile, and harassment-oriented.
-
-Hatchery → Spawning Pool → Metabolic Boost → Lair → Spire → Mutalisk
-
-Key units: Zergling (map control, runbys), Mutalisk (harass, map control)
-
-### Hydralisk/Lurker (Hydra/Lurker)
-
-Strong in ZvP and ZvZ. Hydralisks provide versatile ranged DPS; Lurkers lock down choke points.
-
-Hatchery → Spawning Pool → Hydralisk Den → Lair → Lurker Aspect → Lurker
-
-Key units: Hydralisk (ranged core), Lurker (area denial, siege)
-
-### Hive Tech (Late-game)
-
-The ultimate Zerg endgame. Defilers are among the most powerful spellcasters in BW.
-
-Lair → Queen's Nest → Hive → Defiler Mound → Consume + Dark Swarm / Plague
-
-Key units: Defiler (Dark Swarm negates ranged attacks; Plague strips HP), Ultralisk (tanky melee), Guardian (long-range siege)
-
-### Three Hatch Ling
-
-An aggressive ZvZ build focused on early Zergling flooding before tech.
-
-Hatchery × 3 → Spawning Pool → mass Zergling → transition to Mutalisk or Lurker
-
-### Mutalisk into Hive
-
-The standard ZvT macro game progression.
-
-Spawning Pool → Lair → Spire → Mutalisk harass → expand → Queen's Nest → Hive → Defiler Mound → Defiler + Zergling + Ultralisk army
+- **Mutalisk** — Spawning Pool, Lair, Spire. Mutalisk-based openings are common against Terran and are standard in ZvZ.
+- **Lurker** — Hydralisk Den and Lair for Lurker Aspect; a common ZvT opening and a part of many ZvP games.
+- **Hive** — Queen's Nest into Hive for Defilers (Dark Swarm, Plague), Ultralisks or Guardians in the late game.

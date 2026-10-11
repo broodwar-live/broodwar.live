@@ -1,6 +1,6 @@
 +++
-title = "SK Terran"
-description = "SK Terran — 스타크래프트: 브루드 워 TvZ 빌드 오더."
+title = "SK테란"
+description = "SK테란(SK Terran): 테저전 빌드 오더."
 slug = "sk-terran"
 template = "builds/build.html"
 [taxonomies]
@@ -10,11 +10,46 @@ tags = ["standard", "hybrid", "versatile"]
 [extra]
 race = "terran"
 matchup = "TvZ"
-games = 298
-winrate = 52
+sources = ["https://liquipedia.net/starcraft/SK_Terran", "https://liquipedia.net/starcraft/1_Rax_FE_(vs._Zerg)"]
+unverified = true
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "11/18"
+item = "buildings/barracks"
+note = "SCV 정찰"
+[[extra.steps]]
+supply = "15-18"
+item = "buildings/command-center"
+note = "앞마당에 건설"
+[[extra.steps]]
+supply = ""
+item = "buildings/barracks"
+note = "자원에 맞춰 배럭 추가"
+[[extra.steps]]
+supply = ""
+item = "buildings/academy"
+[[extra.steps]]
+supply = ""
+item = "units/medic"
+[[extra.steps]]
+supply = ""
+item = "buildings/engineering-bay"
+note = "보병 업그레이드용 엔지니어링 베이를 일찍 건설"
+[[extra.steps]]
+supply = ""
+item = "buildings/starport"
+note = "두 번째 스타포트를 일찍 건설"
+[[extra.steps]]
+supply = ""
+item = "buildings/science-facility"
+[[extra.steps]]
+supply = ""
+item = "units/science-vessel"
 +++
-SK텔레콤 T1 팀의 시그니처 스타일에서 이름을 따온 빌드로, 배럭 1개, 팩토리 1개, 스타포트 1개를 동시에 운영하는 1/1/1 오프닝입니다. 모든 테크 경로에 동시 접근이 가능한 가장 다재다능한 TvZ 오프닝입니다. 레이스로 초반 견제와 정찰, 시즈탱크로 방어, 마린으로 대공을 담당합니다.
+SK테란은 한마디로 탱크 없는 테저전이다. 기동력 있는 대규모 마린·메딕 부대와, 이래디에이트와 디펜시브 매트릭스를 쓰는 사이언스 베슬을 점점 늘려 가는 중후반 스타일이다. 이름은 이 스타일을 처음으로 꾸준히 쓴 선수 가운데 하나인 초창기 테란 SoulKey(같은 아이디를 쓴 후대의 저그 프로게이머와는 다른 인물)에서 왔으며, [NaDa](@/players/nada.ko.md) 같은 선수들이 널리 퍼뜨렸다.
 
-핵심 결정 지점은 초기 1/1/1 셋업 이후입니다: 정찰 결과에 따라 메딕과 보병 업그레이드로 바이오, 추가 팩토리로 메카닉, 또는 둘을 혼합할 수 있습니다. 컴샛 스테이션을 일찍 건설하여 러커 움직임을 추적하세요.
+SK테란은 보통 빠른 더블 뒤에 이어진다. 1배럭 더블을 주로 쓰고, 2배럭 더블은 느리지만 더 안전하다. 보병 업그레이드를 서두르기 위해 엔지니어링 베이를, 베슬 생산을 위해 두 번째 스타포트를 일찍 올리고, 남는 자원을 모두 쓸 수 있도록 배럭을 늘린다. 마린·메딕 최소 두 부대와 사이언스 베슬 1기 이상으로 출발하며, 유닛을 부대 지정해 넓게 펼치고 디파일러, 울트라리스크, 러커 같은 핵심 유닛에 이래디에이트를 건다.
 
-SK 테란은 높은 적응력 덕분에 거의 모든 맵에서 통합니다. 중반 이후 명확한 전환을 하지 못하면 약해집니다 — 만능 오프닝이 오히려 어중간한 약점이 됩니다. 1/1/1을 정찰한 저그는 세 가지 전환 모두에 대비할 수 있습니다.
+매우 공격적인 스타일이다. 바이오 병력을 나눠 맵 곳곳에서 게릴라전을 펼치고, 멀티를 치거나 드랍해 저그를 수비에 묶어 둔다. 넓은 평지나 멀티 사이 길이 많은 맵에서 특히 강하며, 베슬과 탱크를 함께 뽑을 만큼 가스가 필요하지 않아 가스가 적은 맵에서도 유리하다. 본진 근처에서 다크 스웜 아래의 저그와 싸우지 말고, 베슬은 스커지로부터 지켜야 한다.

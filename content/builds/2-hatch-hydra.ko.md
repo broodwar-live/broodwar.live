@@ -1,6 +1,6 @@
 +++
-title = "2 Hatch Hydra"
-description = "2 Hatch Hydra — 스타크래프트: 브루드 워 ZvP 빌드 오더."
+title = "2해처리 히드라"
+description = "2해처리 히드라(2 Hatch Hydra): 저프전 빌드 오더."
 slug = "2-hatch-hydra"
 template = "builds/build.html"
 [taxonomies]
@@ -10,11 +10,45 @@ tags = ["aggressive", "timing", "hydralisk"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
-games = 189
-winrate = 52
+sources = ["https://liquipedia.net/starcraft/2_Hatch_Hydra_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = ""
+item = "buildings/hatchery"
+note = "앞마당, 9풀 발업이나 12앞마당으로 시작(선풀 권장)"
+[[extra.steps]]
+supply = ""
+item = "buildings/extractor"
+note = "앞마당 해처리 직후"
+[[extra.steps]]
+supply = ""
+action = "가스에 드론 3기"
+timing = "익스트랙터 완성 시"
+[[extra.steps]]
+supply = ""
+item = "buildings/hydralisk-den"
+timing = "가스 50 시"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "upgrades/grooved-spines"
+timing = "가스 150 시"
+[[extra.steps]]
+supply = ""
+item = "units/hydralisk"
+note = "이후 계속 생산"
+[[extra.steps]]
+supply = ""
+action = "히드라리스크 12기 모이면 출발"
+[[extra.steps]]
+supply = ""
+item = "upgrades/muscular-augments"
+timing = "다음 가스 150 시"
 +++
-ZvP에서 2기지 히드라리스크 타이밍 어택을 하는 공격적 빌드입니다. 해처리 2개에서 히드라리스크를 대량 생산하여, 밀집된 히드라 그룹을 초토화시키는 사이오닉 스톰이 나오기 전에 맵을 건너 공격합니다. 올인 빌드로, 푸시가 실패하면 세 번째 기지 없이 경제에서 뒤처집니다.
+저프전에서 2해처리로 히드라리스크 타이밍 러시를 하는 공격적인 빌드다. 세 번째 해처리가 없다는 사실을 숨긴 채 해처리 2개에서 사업 히드라를 모아 프로토스의 앞마당 넥서스를 노리는 것이 핵심이다. 올인 빌드라서 이 공격으로 프로브를 많이 잡거나 넥서스를 깨지 못하면 사실상 진다.
 
-레어 테크 후 즉시 히드라리스크 덴을 건설하고 양쪽 해처리에서 히드라를 쉬지 않고 생산합니다. 사거리와 속도 업그레이드를 연구합니다. 히드라 약 20기와 저글링 지원으로 공격합니다. 컨트롤이 중요합니다 — 히드라를 펼쳐 질럿 범위 피해를 최소화하고 드라군을 집중 공격합니다.
+9풀 발업부터 12앞마당까지 어느 오프닝으로 시작해도 되며, 앞마당 해처리 직후 익스트랙터를 짓는다. 히드라리스크 덴은 레어가 없어도 지을 수 있다. 가스 50에 덴을 올리고, 가스 150에 사거리 업그레이드를 누른 뒤 히드라를 쉬지 않고 뽑으며, 다음 가스 150으로 발업을 한다. 세 번째 해처리가 없다는 것을 들키지 않도록 정찰 온 프로브는 반드시 잡는다. 히드라가 12기 모이면 출발한다. 히드라를 공격할 수 있는 포톤 캐논을 먼저 깨고, 홀드로 넥서스를 때리면서 병력을 계속 보탠다.
 
-러시 거리가 짧아 스톰 전에 타이밍 어택이 도착하는 맵에서 효과적입니다. 빠른 세 번째 기지 같은 욕심 많은 프로토스 오프닝을 정찰했을 때 사용합니다. 큰 피해를 줬지만 킬에 실패하면 세 번째 해처리를 추가하고 뮤탈리스크로 전환합니다. 스톰 테크를 서두르거나 초기 리버 방어를 갖춘 프로토스, 그리고 이동 시간이 프로토스에게 준비 시간을 주는 큰 맵에서 약합니다.
+데스티네이션처럼 사업 히드라로 앞마당 넥서스를 칠 수 있는 맵에서 효과적이다. 프로토스가 포톤 캐논을 많이 지으면 물러나 운영으로 넘어간다. 이때 프로토스는 한 기지에 묶여 있고 수비 건물에 미네랄을 많이 쓴 상태다. 메두사 같은 맵에서의 탄탄한 심시티와 1게이트 테크에는 약하므로 빌드를 조정해야 한다.

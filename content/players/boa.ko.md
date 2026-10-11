@@ -1,17 +1,27 @@
 +++
-title = "Boa"
-description = "Boa — 한국의 테란 선수."
+title = "BoA"
+description = "BoA(John Dong) — 미국에서 활동하는 캐나다의 프로토스 선수, Crazy Warriors Team 소속, BSL 8강."
 slug = "boa"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
 image = "/images/players/boa.png"
-race = "terran"
-country = "KR"
-country_name = "한국"
-rating = 2470
-tier = "B"
-aliases = ["김원형"]
+race = "protoss"
+country = "CA"
+country_name = "캐나다"
+real_name = "John Dong"
+birth_date = "1993-10-25"
+team = "Crazy Warriors Team"
+aliases = []
+liquipedia = "https://liquipedia.net/starcraft/BoA"
+sources = ["https://liquipedia.net/starcraft/BoA"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Crazy Warriors Team"
+from = "2022-01-21"
+to = "present"
 +++
-Boa는 ASL 예선에 꾸준히 출전하며 탄탄한 메카닉과 체계적인 접근을 보여주는 한국 테란입니다. 안정적인 매크로와 안전한 오프닝으로 경제적으로 뒤처지지 않고 중반에 도달하는 것을 강조합니다. TvZ가 가장 강한 매치업으로, 인내심 있는 시즈 탱크 플레이와 신중한 맵 컨트롤로 빈틈을 찾는 저그를 좌절시킵니다. 쟁쟁한 한국 테란 필드에서 경쟁하지만, 그의 끈기와 꾸준한 성장은 가능성을 보여줍니다. 씬을 경쟁력 있게 만드는 깊이에 기여하는 한국 대회 서킷의 안정적인 선수입니다.
+BoA(John Dong)는 1993년생 캐나다의 프로토스 선수로, 미국에 거주하며 활동한다. 2022년 1월부터 Crazy Warriors Team 소속이다.
+
+한국 외 지역 선수들의 국제 리그인 [봄바스틱 스타리그](@/tournaments/bsl.ko.md)에 꾸준히 출전하고 있다. [BSL 시즌 11](@/tournaments/bsl-s11.ko.md)·[BSL 시즌 14](@/tournaments/bsl-s14.ko.md) 8강이 최고 성적이며, [BSL 시즌 15](@/tournaments/bsl-s15.ko.md) 플레이오프에서는 패자조 3라운드까지 진출했다. 시즌 10·13과 시즌 16부터 19까지도 출전했다.

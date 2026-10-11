@@ -1,17 +1,27 @@
 +++
-title = "Zelot"
-description = "Zelot — 한국의 프로토스 선수."
+title = "ZeLoT"
+description = "ZeLoT(서문지훈) — SouLGaming 소속 한국 아마추어 저그, ASL 본선 진출."
 slug = "zelot"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["zerg"]
 [extra]
 image = "/images/players/zelot.png"
-race = "protoss"
+race = "zerg"
 country = "KR"
 country_name = "한국"
-rating = 2440
-tier = "B"
-aliases = ["조일장"]
+real_name = "서문지훈"
+romanized_name = "Seo Mun Ji Hoon"
+birth_date = "1993-03-19"
+team = "SouLGaming"
+aliases = ["Minus)ZeLoT", "SouL)Z(ZeLoT"]
+liquipedia = "https://liquipedia.net/starcraft/ZeLoT"
+soop = "jh3697"
+sources = ["https://liquipedia.net/starcraft/ZeLoT"]
+verified = "2026-10-11"
 +++
-Zelot은 이름에 걸맞는 질럿 중심의 공격적 스타일을 구사하는 현대 한국 프로토스입니다. PvT에서 초반 게이트웨이 공격과 질럿 중심 압박 빌드로 테란이 방어 인프라를 구축하기 전에 피해를 주는 것을 목표로 합니다. ASL 예선과 한국 온라인 대회에서 경쟁하며, 공격적 접근으로 준비되지 않은 상대를 빠르게 이길 수 있습니다. 공세적 플레이에 대한 헌신으로 게임이 빠르고 재미있지만, 공격을 잘 정찰한 상대에게는 취약할 수 있습니다.
+ZeLoT(서문지훈)은 1993년생 대한민국의 저그 선수이다. KeSPA 시절에는 프로로 활동하지 않았고, 2010년대 초 한국 브루드 워 명맥을 이어 간 아마추어 무대에서 Minus)ZeLoT 등의 아이디로 이름을 알렸다.
+
+SOSPA 랭킹 토너먼트와 SonicTV 스타리그에 출전했으며, 가장 좋은 성적은 제8회 SonicTV 스타리그에서 결선 토너먼트에 올라 [Killer](@/players/killer.ko.md)에게 진 것이다. 2018년 12월 해외 선수 중심 팀인 SouLGaming에 합류했다.
+
+아프리카TV 시대에는 2019년 [ASL 시즌 8](@/tournaments/asl-s8.ko.md)과 2024년 [ASL 시즌 17](@/tournaments/asl-s17.ko.md)에서 두 차례 본선에 진출했다.

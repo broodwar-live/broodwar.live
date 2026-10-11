@@ -1,53 +1,34 @@
 +++
 title = "Fog of War"
-description = "Vision, fog states, and the critical role of information in Brood War."
+description = "Vision, sight ranges and the three visibility states of the Brood War map."
 slug = "fog-of-war"
 template = "wiki/mechanic.html"
+[extra]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Maps/Terrain_Features", "https://liquipedia.net/starcraft/Overlord", "https://liquipedia.net/starcraft/Lift_off"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-Fog of War is the visibility system in StarCraft: Brood War that limits what each player can see on the map. Unlike chess, Brood War is a game of **incomplete information** — you cannot see what your opponent is doing unless you actively scout. The fog of war system creates the tension between scouting, hiding information, and making decisions under uncertainty that defines high-level play.
+Each player sees only what their own units and buildings can see. The rest of the map is hidden by the **fog of war**, so information has to be gathered by scouting.
 
-## Three Visibility States
+## Visibility states
 
-Every tile on the map exists in one of three states for each player:
+- **Unexplored (black)**: areas the player has never seen.
+- **Fogged (grey)**: areas seen before but not currently in sight. Terrain is shown, and enemy buildings appear as they were last seen — even if they have since been destroyed — but units and changes are not.
+- **Visible**: areas currently inside the sight range of one of the player's units or buildings.
 
-### Unexplored (Black)
-Areas you have never had vision of. These appear completely black on the minimap and main screen. You have zero information about what is there — no terrain, no buildings, no units. At the start of the game, most of the map is unexplored.
+## Sight ranges
 
-### Fogged (Grey)
-Areas you have previously explored but currently have no units or buildings providing vision. You can see the **terrain** and the **last known positions of enemy buildings**, but you cannot see enemy units or any changes made since you lost vision. Buildings that have been destroyed while fogged will still appear as "ghost" images until you regain vision.
+Sight is measured in tiles (32 pixels). Some values from the game data:
 
-### Visible (Clear)
-Areas currently within the sight range of one of your units or buildings. You see everything in real time: enemy units, their movement, construction in progress, and army composition.
+- Workers: SCV 7, Drone 7, Probe 8
+- Zergling 5, Hydralisk 6, Marine 7, Zealot 7, Dragoon 8, Siege Tank 10
+- Overlord 9 (11 with Antennae), Observer 9 (11 with Sensor Array), Ghost 9 (11 with Ocular Implants), Science Vessel 10
+- A building under construction sees only 4 tiles; a unit blinded by Optical Flare sees 2
 
-## Vision Sources
-
-Every unit and building has a **sight range** measured in tiles. Common values:
-
-- Workers: 7 tiles
-- Most ground combat units: 7-8 tiles
-- Overlords: 9 tiles (11 with Pneumatized Carapace speed upgrade)
-- Observers: 9 tiles
-- Science Vessels: 10 tiles
-- Comsat Scanner sweep: reveals a large area temporarily
-
-Some units provide **detection** in addition to vision, which reveals cloaked and burrowed units (see Cloaking & Detection article).
+Ground units on low ground cannot see onto higher ground, so an attacker needs a spotter — an air unit, a unit already on the high ground or a Comsat scan — to target units uphill. A unit on high ground becomes briefly visible to the low ground when it fires.
 
 ## Scouting
 
-Because fog of war hides enemy activity, **scouting** is one of the most important skills in Brood War. Players send workers, Overlords, or dedicated scouting units to gather information about the opponent's base and army. Key things to scout for include:
-
-- **Gas timing**: Has the opponent taken gas? Early gas suggests tech play.
-- **Building count**: Number of production buildings reveals commitment to army vs economy.
-- **Tech buildings**: Seeing a specific tech structure (e.g., Spawning Pool, Cybernetics Core, Starport) reveals the opponent's strategic direction.
-- **Army position**: Knowing where the enemy army is (and isn't) enables safe expansion or flanking attacks.
-
-## Minimap Awareness
-
-The minimap is a compressed view of the entire battlefield. Professional players glance at the minimap constantly — some estimate every 2-3 seconds during active play. Dots on the minimap represent units, and color-coded blips reveal enemy movement in visible areas. Missing a dot moving across the minimap can mean missing a drop or a flank that decides the game.
-
-## Strategic Implications
-
-The fog of war is what makes mind games, fakes, and hidden tech viable. A player can build a hidden expansion, tech to a surprise unit composition, or move their army to an unexpected position — all because the opponent cannot see everything at once. The interplay between information-gathering and information-hiding is one of the deepest layers of Brood War strategy.
+Because of the fog, players scout with workers, Overlords, Observers, floating Terran buildings, Comsat scans and fast units to see the opponent's gas timing, production, tech buildings and army position. Hiding information — walling off, denying scouts, building away from where the opponent looks — is the other side of the same contest.

@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  # Keep in sync with the Zola version in the Cloudflare Pages build command (cloudflare-pages.md)
+  ZOLA_VERSION: "0.23.6"
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Zola
+        run: |
+          curl -sSfL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar xz -C /usr/local/bin zola
+          zola --version
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build CSS
+        run: npm run build:css
+
+      - name: Build site
+        run: zola build
+
+      - name: Check internal links
+        run: zola check --skip-external-links
+
+      - name: Check built links (broken targets, KO pages linking to EN)
+        run: |
+          python3 scripts/check-links.py public
+          python3 scripts/check-ko-links.py public
+
+      - name: Check player playoff records against the season data
+        run: python3 scripts/check-playoff-records.py public
+
+      - name: Check team-league data (set sums, finals, slugs) and the pages built from it
+        run: python3 scripts/check-team-leagues.py public
+
+      - name: Check the player-comparison data (/compare.json) against the player pages
+        run: python3 scripts/check-compare-data.py public

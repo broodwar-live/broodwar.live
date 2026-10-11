@@ -1,6 +1,6 @@
 +++
 title = "Adrenal Glands"
-description = "Adrenal Glands — Zerg upgrade in StarCraft: Brood War."
+description = "Adrenal Glands is a Zerg Spawning Pool upgrade that increases Zergling attack speed; it requires a Hive."
 slug = "adrenal-glands"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 200
 gas = 200
 levels = 1
 researched_at = "spawning-pool"
-research_time = 50
+research_time = 100
 affects = ["zergling"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Adrenal Glands nearly doubles Zergling attack speed, making each Zergling attack almost twice as fast. Combined with Metabolic Boost (speed upgrade), Adrenal Glands creates "Cracklings" — Zerglings that are both extremely fast and deal devastating damage per second. Requires Hive tech, making it exclusively a late-game upgrade. The DPS increase is so dramatic that a group of Cracklings can shred buildings and undefended bases in seconds.
+Adrenal Glands halves the Zergling's attack cooldown, subject to the engine's 5-frame minimum, so the cooldown drops from 8 to 5 frames — a significant increase in damage output. It is researched at the Spawning Pool but requires a completed Hive.
 
-In competitive play, Adrenal Glands is a powerful late-game upgrade that transforms Zerglings from expendable harassers into legitimate combat threats. Under Dark Swarm — where ranged units cannot fire — Cracklings are nearly unstoppable against ground armies. In ZvT late game, the combination of Dark Swarm and Cracklings is one of Zerg's primary win conditions, as Marines and Siege Tanks become helpless. In ZvP, Cracklings overwhelm Protoss bases and force constant defensive attention.
-
-Adrenal Glands is researched at the Spawning Pool once Hive tech is available, typically around the 15-18 minute mark in games that reach the late stage. It is not researched in every game — only when the Zerg player commits to a Zergling-heavy late-game composition alongside Defilers and Ultralisks.
+In the late game, Zerglings with both Metabolic Boost and Adrenal Glands (often called "cracklings") are paired with Defilers and Ultralisks, especially in ZvT under Dark Swarm.

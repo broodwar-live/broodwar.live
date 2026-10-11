@@ -1,6 +1,6 @@
 +++
 title = "TY"
-description = "TY — 한국의 테란 선수."
+description = "TY(전태양) — 12세에 위메이드 폭스에 입단한 테란, Team 8 출신, 2010 대한항공 스타리그 시즌 1 8강."
 slug = "ty"
 template = "players/player.html"
 [taxonomies]
@@ -10,8 +10,26 @@ image = "/images/players/ty.jpg"
 race = "terran"
 country = "KR"
 country_name = "한국"
-rating = 2450
-tier = "B"
-aliases = ["전태양", "Jeon Tae Yang"]
+real_name = "전태양"
+romanized_name = "Jun Tae Yang"
+birth_date = "1994-09-18"
+status = "active"
+years_active = "2006–2013, 2024–present"
+aliases = ["By.Baby", "Siz)Sun"]
+liquipedia = "https://liquipedia.net/starcraft/TY"
+soop = "sunstar1994"
+sources = ["https://liquipedia.net/starcraft/TY"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "WeMade FOX"
+slug = "wemade-fox"
+from = "2006"
+to = "2011-09"
+[[extra.teams]]
+name = "Team 8"
+from = "2011-09"
+to = "2013-07-10"
 +++
-TY는 브루드 워와 스타크래프트 II 모두에서 높은 수준으로 경쟁한 드문 선수로, 두 가지 매우 다른 게임에서 전술적 다재다능함을 보여주었습니다. BW에서 그의 테란 플레이는 실시간 전략 게임 기본기에 대한 깊은 이해를 반영한 현명한 의사결정과 적응력 있는 전략이 특징입니다. SC2 경력에서 주목할 만한 대회 성적을 거둔 후 BW 씬에 복귀하여 세련된 전략적 사고를 가져왔습니다. TvP와 TvT가 가장 강한 매치업으로, 두 게임에서의 경험이 병력 포지셔닝과 타이밍에 독특한 관점을 부여합니다. 한국 프로 씬에서 활동하며 정기적으로 스트리밍합니다.
+TY(전태양)는 BaBy라는 아이디로도 알려진 1994년생 대한민국의 테란 프로게이머이다. 아주 어릴 때부터 스타크래프트를 시작해 아홉 살이 되기 전 한빛소프트 아마추어 대회에서 2위에 올랐고, 2006년 열두 살의 나이로 [위메이드 폭스](@/wiki/teams/wemade-fox.ko.md)에 입단했다. 2011년 9월 Team 8로 옮겨 2013년까지 활동했다.
+
+곰TV 클래식 시즌 3에서 [JangBi](@/players/jangbi.ko.md)와 [Modesty](@/players/modesty.ko.md)를 꺾고 16강에 올라 이름을 알렸고, 16강에서 [SkyHigh](@/players/skyhigh.ko.md)에게 졌다. 개인리그에서는 [2010 대한항공 스타리그 시즌 1](@/tournaments/2010-korean-air-osl-season-1.ko.md)에서 8강, [2010 하나대투증권 MSL](@/tournaments/2010-hana-daetoo-securities-msl.ko.md)에서 16강에 진출했다. 이후 스타크래프트 II에서 오래 활동했으며, 2024년 브루드 워로 돌아와 [ASL 시즌 17](@/tournaments/asl-s17.ko.md)과 [ASL 시즌 20](@/tournaments/asl-s20.ko.md)에 출전했다.

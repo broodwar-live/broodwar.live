@@ -1,6 +1,6 @@
 +++
 title = "Vehicle Plating"
-description = "Vehicle Plating — Terran upgrade in StarCraft: Brood War."
+description = "Vehicle Plating is the Terran Armory upgrade that gives Vultures, Siege Tanks and Goliaths +1 armor per level, up to three levels."
 slug = "vehicle-plating"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "armory"
-research_time = 80
+research_time = 266
 affects = ["vulture", "siege-tank", "goliath"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Vehicle Plating adds +1 armor to Vultures, Siege Tanks, and Goliaths. Higher armor reduces incoming damage per hit, which is especially valuable for Siege Tanks that need to survive while deployed in siege mode and for Goliaths absorbing fire on the front line. Researched at the Armory, with higher levels requiring a Science Facility.
+Each level of Vehicle Plating adds 1 armor to the Vulture, the Siege Tank (in both modes) and the Goliath. Levels 2 and 3 need a completed Science Facility.
 
-In competitive mech play, Vehicle Plating is typically researched alongside Vehicle Weapons, though weapons generally take priority. Armored Siege Tanks survive longer against Zealot rushes and Zergling run-bys, while armored Goliaths trade more efficiently against Dragoons and Mutalisks. In TvP, maintaining both weapon and armor upgrades gives mech armies a significant edge in prolonged positional battles.
+In mech play the Armory usually prioritizes Vehicle Weapons; Plating is commonly added from a second Armory in longer games, where it helps against Zealots and Zerglings that deal many small hits.
 
-Vehicle Plating research usually begins after the first level of Vehicle Weapons, starting around mid-game. In long mech games, pros aim for balanced upgrades, alternating weapons and plating levels. The full +3 plating combined with +3 weapons creates an extremely durable mech army that is difficult to trade against efficiently.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 100 / 100 | 266 s | — |
+| 2 | 175 / 175 | 298 s | Science Facility |
+| 3 | 250 / 250 | 330 s | Science Facility |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

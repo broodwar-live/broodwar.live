@@ -1,6 +1,6 @@
 +++
 title = "Anabolic Synthesis"
-description = "Anabolic Synthesis — Zerg upgrade in StarCraft: Brood War."
+description = "Anabolic Synthesis is a Zerg Ultralisk Cavern upgrade that increases Ultralisk movement speed."
 slug = "anabolic-synthesis"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 200
 gas = 200
 levels = 1
 researched_at = "ultralisk-cavern"
-research_time = 67
+research_time = 133
 affects = ["ultralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Anabolic Synthesis increases Ultralisk movement speed, allowing these massive units to close distance on ranged enemies and keep pace with the rest of the Zerg army. Without speed, Ultralisks are too slow to reach their targets before being kited to death by Marines, Dragoons, or Vultures. With the upgrade, they can lead charges into enemy lines and chase down retreating units effectively.
+Anabolic Synthesis raises the Ultralisk's movement speed, letting it reach ranged units before they can retreat. It is researched at the Ultralisk Cavern.
 
-In competitive play, Anabolic Synthesis is essential for Ultralisk effectiveness. Fast Ultralisks can charge into Marine lines under Dark Swarm, closing the gap before Terran can retreat and reposition. In ZvP, speed Ultralisks threaten to overrun Protoss positions and can chase down Dragoons that attempt to kite. The combination of speed, high armor (with Chitinous Plating), and splash damage makes fully upgraded Ultralisks one of the most formidable ground units in the late game.
-
-Anabolic Synthesis is researched at the Ultralisk Cavern, typically alongside Chitinous Plating as soon as the Cavern completes, around the 15-18 minute mark. Both Ultralisk upgrades are always researched together — producing Ultralisks without speed and armor is considered wasteful at the competitive level. The upgrade signals Zerg's commitment to the late-game army composition.
+It is normally researched together with Chitinous Plating whenever Zerg commits to Ultralisks, typically in late-game ZvT.

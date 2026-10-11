@@ -1,17 +1,36 @@
 +++
 title = "Canata"
-description = "Canata — Protoss player from South Korea."
+description = "Canata (Ko In Kyu) — SK Telecom T1 Terran, Proleague champion and 2006 SKY Proleague Round 1 Finals MVP."
 slug = "canata"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
-image = "/images/players/canata.png"
-race = "protoss"
+race = "terran"
 country = "KR"
 country_name = "South Korea"
-rating = 2430
-tier = "Legend"
-aliases = ["이진학", "Lee Jin Hak"]
+real_name = "고인규"
+romanized_name = "Ko In Kyu"
+birth_date = "1987-06-25"
+status = "retired"
+team = "Air Force ACE"
+aliases = ["Canata[yG]"]
+liquipedia = "https://liquipedia.net/starcraft/Canata"
+sources = ["https://liquipedia.net/starcraft/Canata"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "SK Telecom T1"
+slug = "sk-telecom-t1"
+from = ""
+to = "2011-04-04"
+[[extra.teams]]
+name = "Air Force ACE"
+slug = "air-force-ace"
+from = "2011-04-04"
+to = ""
 +++
-Canata is a legendary Protoss player from the golden era who earned respect for his strong fundamentals and consistent tournament performances across multiple OSL and MSL seasons. His playstyle was characterized by solid macro play and reliable execution of standard Protoss strategies that kept him competitive against the best players of his generation. Canata's PvT was particularly noteworthy, with patient storm-based play and strong defensive positioning that frustrated aggressive Terran opponents. Though he competed during an era stacked with Protoss talent, his longevity and consistent results earned him Legend status. He is remembered as one of the dependable cornerstones of golden era Protoss play.
+Canata (Ko In Kyu) is a South Korean Terran born in 1987, nicknamed the "Survivor King". He won the 2004 iTV Newcomers League, beating YellOw[ArnC] 3–2 in the final, and took third place at the 2006 OnGameNet Super Rookie Tournament after eliminating [Jaedong](@/players/jaedong.md) in the quarterfinals.
+
+He spent most of his career with [SK Telecom T1](@/wiki/teams/sk-telecom-t1.md) and played in several of the team's title-winning finals: the [2005 SKY Proleague Round 1](@/tournaments/2005-sky-proleague-round-1.md), the [2005 SKY Proleague Grand Final](@/tournaments/2005-sky-proleague-grand-final.md), the [2006 SKY Proleague Round 1](@/tournaments/2006-sky-proleague-round-1.md) and the [2008–09 Shinhan Bank Proleague](@/tournaments/2008-2009-shinhan-bank-proleague.md). He was named Finals MVP of the 2006 Round 1 final. His best individual results were quarterfinal runs in the [2009 Avalon MSL](@/tournaments/2009-avalon-msl.md) and the [2009 Bacchus OSL](@/tournaments/2009-bacchus-osl.md).
+
+In April 2011 he moved to [Air Force ACE](@/wiki/teams/air-force-ace.md), also playing StarCraft II, and later became a caster for SPOTV Games.

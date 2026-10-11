@@ -1,6 +1,6 @@
 +++
-title = "2 Rax Academy"
-description = "2 Rax Academy — 스타크래프트: 브루드 워 TvP 빌드 오더."
+title = "2배럭 아카데미"
+description = "2배럭 아카데미(2 Rax Academy): 테프전 빌드 오더."
 slug = "2-rax-academy"
 template = "builds/build.html"
 [taxonomies]
@@ -10,11 +10,38 @@ tags = ["bio", "pressure", "timing"]
 [extra]
 race = "terran"
 matchup = "TvP"
-games = 198
-winrate = 52
+sources = ["https://liquipedia.net/starcraft/2_Rax_Academy_(vs._Zerg)"]
+unverified = true
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "11/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "13/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "14/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "18/26"
+item = "buildings/refinery"
+[[extra.steps]]
+supply = "19/26"
+item = "buildings/academy"
+[[extra.steps]]
+supply = "24/26"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "26/34"
+item = "upgrades/stim-pack"
+[[extra.steps]]
+supply = "28/34"
+item = "buildings/comsat-station"
 +++
-배럭 2개와 초기 아카데미를 건설하여 메딕을 빠르게 생산하는 바이오 타이밍 어택입니다. 스톰 테크가 나오기 전인 7분 전후에 스팀팩이 연구된 마린/메딕으로 프로토스를 공격하는 것이 목표입니다. 가장 공격적인 표준 TvP 오프닝 중 하나입니다.
+배럭 2개와 빠른 아카데미로 스팀팩, 메딕, 컴샛 스테이션을 갖추는 바이오 오프닝이다. 다만 기록상 이 빌드는 테프전이 아니라 테저전에서 나왔다. 리퀴피디아는 2003년 [iloveoov](@/players/iloveoov.ko.md)가 만든 최초의 테저전 빠른 더블로 소개하며, 오늘날에는 주로 마린·메딕 푸시를 하는 척 보여 상대가 수비에 과하게 투자하게 만든 뒤 앞마당을 가져가는 데 쓴다.
 
-두 배럭에서 마린을 꾸준히 뽑으면서 스팀팩을 연구합니다. 마린 8기와 메딕 2기 정도가 모이면 전진합니다. 드라군 상대로 스팀 컨트롤이 필수적입니다 — 체력 낮은 마린은 뒤로 빼고, 스팀을 써서 거리를 좁히세요. 본진에서 증원 생산을 계속합니다.
+빌드: 9에 서플라이 디팟, 11과 13에 배럭, 인구수 18~19 무렵 리파이너리와 아카데미, 이어서 스팀팩과 컴샛 스테이션. 두 배럭에서 마린을 꾸준히 뽑는다. 공격할지 앞마당을 가져갈지는 정찰 결과를 보고 정한다. 본진과 병력 규모를 숨기면 상대는 올인을 의심해 수비 건물에 과하게 투자하게 된다.
 
-짧은 러시 거리 맵이나 빠른 확장 같은 욕심 많은 프로토스 오프닝을 정찰했을 때 효과적입니다. 초기 푸시로 킬에 실패하면 팩토리를 추가하여 시즈탱크로 전환합니다. 푸시 중 미네랄 라인을 공격하는 빠른 리버 드롭과, 스캔 에너지가 부족할 때 다크 템플러에 약합니다.
+리퀴피디아에는 테프전용 2배럭 아카데미 문서가 없으므로, 테프전에서는 상황에 따른 선택지로 보는 것이 맞다. 테프전의 마린·메딕 오프닝은 대체로 정찰에 기대며, 초반 압박이 성과를 내지 못하면 팩토리로 넘어간다. 다크 템플러에 대비한 컴샛 스캔이 필요하고, 초반 바이오는 리버 드랍에 약하다.

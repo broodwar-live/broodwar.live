@@ -1,5 +1,6 @@
 +++
 title = "디스럽션 웹"
+description = "디스럽션 웹은 아래에 있는 지상 유닛과 건물이 공격하지 못하게 하는 커세어 마법이다."
 slug = "disruption-web"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,9 +10,19 @@ name_en = "Disruption Web"
 caster = "corsair"
 energy = 125
 hp_cost = 0
+range = 9
+aoe = "120×80 px"
+duration = 24.0
+hotkey = "D"
+researched_at = "fleet-beacon"
+research_minerals = 200
+research_gas = 200
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Disruption_Web"]
+verified = "2026-10-11"
 +++
-디스럽션 웹은 지면에 에너지장을 투사하여 약 20초간 그 아래의 모든 지상 유닛과 건물의 공격을 완전히 차단한다. 영향받은 유닛은 범위 밖으로 이동할 수 있지만, 고정 방어 시설은 지속 시간 동안 사실상 무력화된다. 커세어에서 에너지 125를 소모하며 플릿 비콘에서 연구가 필요하다.
+디스럽션 웹은 지면에 120×80픽셀 크기의 장막을 360프레임(게임 시간 24초, 가장 빠름 속도에서는 실제로 약 15초) 동안 펼친다. 장막 아래의 지상 유닛과 건물은 시전자 쪽 것까지 포함해 모두 공격할 수 없다. 공중 유닛은 영향을 받지 않는다. 장막 안의 유닛은 밖으로 걸어 나갈 수 있고, 마법 유닛은 마법을 쓸 수 있으며, 스파이더 마인도 그대로 폭발한다.
 
-디스럽션 웹은 PvZ 커세어 기반 전략의 핵심 능력이다. 주된 용도는 저그 고정 방어 무력화이다 — 스포어 콜로니에 시전하면 커세어가 저그 기지 상공에서 자유롭게 활동하며 오버로드를 제거하고 일꾼을 견제할 수 있다. 테란 상대로는 시즈 탱크나 벙커에 디스럽션 웹을 시전하여 화력을 무력화하고 지상 공격을 가능하게 한다. 미사일 터렛에 시전하여 커세어나 스카우트가 대공 사격 없이 통과할 수도 있다.
+에너지 125가 들고 사거리는 9이며, [플릿 비콘](@/wiki/buildings/fleet-beacon.ko.md)에서 미네랄 200, 가스 200(1,200프레임, 80초)에 연구한다.
 
-프로 PvZ에서 커세어 오프닝은 디스럽션 웹의 공격적 활용을 중심으로 전개된다. 스포어 콜로니가 무력화되면 커세어가 제공권을 장악하여 오버로드 배치를 거부하고, 저그의 보급과 정찰을 제한한다. 효과적으로 사용하려면 개별 유닛보다 고정 방어 밀집 지역이나 시즈 탱크 대형을 대상으로 해야 한다. 이동 가능한 유닛은 웹에서 벗어날 수 있으므로 고정 건물과 시즈 모드 탱크에 가장 효과적이다. 푸시 중 넓은 지역을 커버하려면 여러 디스럽션 웹을 연쇄적으로 시전한다. 아군 지상 유닛이 전투해야 할 위치에는 시전하지 않아야 한다 — 아군에게도 영향을 미치기 때문이다.
+디스럽션 웹은 자주 보이는 기술이 아니다. 주로 프저전 커세어·리버 운영에서 히드라리스크나 스포어 콜로니에 걸어 리버와 커세어를 지킬 때 쓰고, 가끔 프테전에서 뭉친 시즈탱크에 건다. 아군 지상 유닛도 공격할 수 없게 되므로 적만 있는 지점에 거는 것이 좋다.

@@ -1,5 +1,6 @@
 +++
 title = "Templar Archives"
+description = "The Templar Archives enables High Templar and Dark Templar and researches Psionic Storm and other Templar spells."
 slug = "templar-archives"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,11 +14,14 @@ hp = 500
 shields = 500
 armor = 1
 build_time = 60
-hotkey = "B→T"
+hotkey = "V→T"
 size = "large"
 produces = []
 researches = ["psionic-storm", "hallucination", "maelstrom", "mind-control"]
-required_by = ["citadel-of-adun"]
+unlocks = ["arbiter-tribunal"]
+requires = ["citadel-of-adun"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Templar Archives is the key late-game Protoss tech building, enabling High Templar and Dark Templar production at the Gateway. It researches some of the most powerful abilities in Brood War: Psionic Storm (devastating AoE damage), Hallucination (creates illusory copies of units), Mind Control (permanently takes control of enemy units via Dark Archon), and Maelstrom (freezes biological units via Dark Archon).
 

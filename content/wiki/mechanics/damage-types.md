@@ -1,56 +1,35 @@
 +++
 title = "Damage Types"
-description = "How Normal, Concussive, and Explosive damage interact with unit sizes in Brood War."
+description = "How Normal, Concussive, Explosive and spell damage interact with unit sizes in Brood War."
 slug = "damage-types"
 template = "wiki/mechanic.html"
+[extra]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Damage"]
+verified = "2026-10-11"
 +++
 
 ## Overview
 
-Every weapon in StarCraft: Brood War has a **damage type** that determines how effective it is against different unit sizes. Understanding damage types is essential for building efficient army compositions and knowing which engagements to take or avoid.
+Every weapon in StarCraft: Brood War has a **damage type** that scales its damage against the target's [size](@/wiki/mechanics/armor-types.md). The multiplier is applied after armor and only to hit-point damage — Protoss shields always take the full amount.
 
-## The Three Damage Types
+## The multipliers
 
-### Normal Damage
+| Damage type | vs Small | vs Medium | vs Large |
+|-------------|----------|-----------|----------|
+| Normal      | 100%     | 100%      | 100%     |
+| Concussive  | 100%     | 50%       | 25%      |
+| Explosive   | 50%      | 75%       | 100%     |
 
-Normal damage deals **100% damage to all unit sizes** — Small, Medium, and Large. Units with Normal damage are universally effective, making them reliable in mixed engagements.
+Buildings are Large, so concussive weapons deal only 25% to them. Spells that deal damage — Psionic Storm, Irradiate — use an "ignore armor" type that skips both armor and the size multiplier, and Plague bypasses shields and armor entirely.
 
-Examples: Marine, Hydralisk, Dragoon, Mutalisk (bounce damage aside), Zealot.
+## Which units use which type
 
-### Concussive Damage
+- **Concussive**: only three units — the **Vulture**, **Firebat** and **Ghost**.
+- **Explosive**: Siege Tank (both modes), Hydralisk, Dragoon, Goliath (air attack), Wraith (air attack), Scout (air attack), Valkyrie, Corsair, Arbiter, Devourer, Missile Turret, Sunken Colony, Spider Mine, Infested Terran — and the Battlecruiser's Yamato Cannon.
+- **Normal**: everything else, including Marines, Zealots, Zerglings, Mutalisks, Ultralisks, Lurkers, Archons, Reavers, Guardians, workers, Battlecruisers and the ground attacks of Goliaths, Wraiths and Scouts.
 
-Concussive (also called "Small") damage is most effective against Small units and reduced against larger targets:
+## Examples
 
-- **100%** vs Small
-- **50%** vs Medium
-- **25%** vs Large
-
-Examples: Vulture, Ghost, Firebat. This is why Vultures are devastating against Zerglings (Small) but nearly useless against Ultralisks (Large) — they deal only a quarter of their listed damage.
-
-### Explosive Damage
-
-Explosive damage is most effective against Large units and reduced against smaller targets:
-
-- **100%** vs Large
-- **75%** vs Medium
-- **50%** vs Small
-
-Examples: Siege Tank (both modes), Scout, Goliath. Siege Tanks in siege mode deal 70 explosive damage — but against a Zergling (Small), that becomes just 35 effective damage per shot.
-
-## Damage Table Summary
-
-| Damage Type | vs Small | vs Medium | vs Large |
-|------------|----------|-----------|----------|
-| Normal     | 100%     | 100%      | 100%     |
-| Concussive | 100%     | 50%       | 25%      |
-| Explosive  | 50%      | 75%       | 100%     |
-
-## Strategic Impact
-
-Damage types drive many of the game's key strategic dynamics:
-
-- **Vulture/Zergling interaction**: Vultures shred Zerglings (concussive vs small = 100%), making them the backbone of Terran anti-Zerg ground control. But those same Vultures barely scratch a Dragoon (concussive vs large = 25%).
-- **Siege Tank vs swarms**: Tanks deal explosive damage, which is halved against small units. A cloud of Zerglings can overwhelm siege tanks not just through numbers but because each tank shot deals reduced damage per Zergling.
-- **Composition balance**: Effective armies mix damage types to handle any opposition. Pure Dragoon (normal) armies deal consistent damage but may lack burst. Adding Reavers (normal splash) or High Templar (spell damage, which ignores armor and size) covers weaknesses.
-
-Understanding these interactions is what separates beginners from intermediate players. When you see a professional player choose to engage or retreat, they are often calculating damage type matchups in real time.
+- A sieged tank (70 explosive) does 35 to a Zergling (small, 0 armor) but the full 70 to a Dragoon's hit points (minus 1 armor).
+- A Vulture (20 concussive) does full damage to Zerglings, Marines and Zealots' hit points, but only a quarter to Dragoons, Siege Tanks or buildings once shields are gone.
+- Hydralisks and Dragoons deal explosive damage, so they are less efficient against small units such as Zerglings and Marines than their listed damage suggests.

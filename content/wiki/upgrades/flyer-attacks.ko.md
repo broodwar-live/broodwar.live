@@ -1,6 +1,6 @@
 +++
 title = "비행 유닛 공격력"
-description = "Flyer Attacks — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "비행 유닛 공격력은 저그 스파이어에서 3단계까지 연구하는 업그레이드로, 뮤탈리스크·가디언·디바우러의 공격력을 올린다."
 slug = "flyer-attacks"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "spire"
-research_time = 80
+research_time = 266
 affects = ["mutalisk", "guardian", "devourer"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-비행 유닛 공격력 업그레이드는 각 레벨마다 뮤탈리스크, 가디언, 디바우러의 기본 공격력을 +1씩 증가시킵니다. 뮤탈리스크는 일꾼과 건물에 대한 견제 효율이 향상되고 글레이브 웜 바운스 피해도 소폭 증가합니다. 가디언은 발사당 추가 피해로 건물과 지상 군대에 대한 공성 공격이 더 파괴적입니다. 스파이어에서 연구하며, 상위 레벨은 그레이터 스파이어가 필요합니다.
+비행 유닛 공격력은 단계마다 뮤탈리스크 글레이브 웜의 피해를 1, 가디언과 디바우러 공격의 피해를 2 올린다. 스파이어 또는 그레이터 스파이어에서 연구하며, 2단계는 레어, 3단계는 하이브가 필요하다(그레이터 스파이어는 요구 조건이 아니다).
 
-경쟁전에서 비행 유닛 공격력은 저그가 상당수의 뮤탈리스크를 확보하거나 가디언 푸시로 전환할 때 중요합니다. ZvT에서 업그레이드된 뮤탈리스크는 마린과 SCV를 더 빨리 처치하여 견제 운영 효율이 높아집니다. ZvZ에서 뮤탈리스크 미러 전투는 누가 먼저 +1 공중 공격에 도달하느냐에 따라 결정되곤 합니다. 후반 ZvT 가디언 푸시는 공격 업그레이드의 혜택이 막대합니다.
+뮤탈리스크가 중심이 되는 경기, 특히 저저전 뮤탈리스크 싸움에서는 공중 공격력 1업 하나로 교전 결과가 뒤바뀌기도 한다.
 
-비행 유닛 공격력은 보통 뮤탈리스크 수가 임계치에 도달하면 스파이어에서 연구하며, 뮤탈리스크 중심 빌드에서 9-11분경입니다. 공중 유닛을 완전히 건너뛰는 빌드에서는 무관합니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 175 / 175 | 298초 | 레어 |
+| 3 | 250 / 250 | 330초 | 하이브 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

@@ -3,6 +3,9 @@ title = "Glossary"
 description = "StarCraft: Brood War terminology and competitive jargon."
 slug = "glossary"
 template = "page.html"
+[extra]
+sources = ["https://liquipedia.net/starcraft/Bunker_Rush", "https://liquipedia.net/starcraft/Bunker_Rush_(vs._Zerg)", "https://liquipedia.net/starcraft/Dark_Swarm", "https://liquipedia.net/starcraft/Plague", "https://liquipedia.net/starcraft/Consume", "https://liquipedia.net/starcraft/Psionic_Storm", "https://liquipedia.net/starcraft/Lift_off", "https://liquipedia.net/starcraft/Nydus_Canal", "https://liquipedia.net/starcraft/Sim-City", "https://liquipedia.net/starcraft/Bonjwa", "https://liquipedia.net/starcraft/Maps/Terrain_Features", "https://liquipedia.net/starcraft/Upgrades", "https://liquipedia.net/starcraft/Fish_Server", "https://liquipedia.net/starcraft/4/5_Pool", "https://github.com/OpenBW/openbw/blob/master/bwgame.h"]
+verified = "2026-10-11"
 +++
 
 A reference of common terms used in the StarCraft: Brood War competitive community. Whether you are new to watching pro BW or brushing up on jargon, this glossary covers the essentials.
@@ -15,7 +18,7 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 **All-in** — A strategy that commits all available resources to a single attack, with no fallback plan. If the attack fails, the player is almost certainly behind and likely to lose. Examples include proxy Barracks rushes and one-base Reaver pushes.
 
-**APM** — Actions Per Minute. A measure of how many commands a player issues per minute. Top Korean pros regularly exceed 300+ APM. Raw APM includes all inputs, including redundant or wasted actions.
+**APM** — Actions Per Minute. A measure of how many commands a player issues per minute. Raw APM includes all inputs, including redundant or repeated actions, so it is a rough measure of speed rather than of quality.
 
 ## B
 
@@ -25,7 +28,9 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 **Build Order** — The specific sequence and timing of structures, units, and upgrades a player follows in the early game. Build orders are often expressed as supply counts (e.g., "9 pool" means Spawning Pool at 9 supply). A good build order provides an efficient opening that transitions into a coherent mid-game strategy.
 
-**Bunker Rush** — A Terran cheese strategy where Barracks and Bunkers are built aggressively near the opponent's base to trap them with Marines early on. Often combined with an SCV pull.
+**Bonjwa** — From the Korean 본좌, originally a self-aggrandising first-person pronoun. In StarCraft it describes a player who dominates the scene for a long period; it is decided by community consensus rather than by any fixed statistic. Liquipedia's list includes Boxer, NaDa, iloveoov, sAviOr, Flash and Soulkey.
+
+**Bunker Rush** — An early Terran attack in which SCVs build a Bunker next to the opponent's base (usually at the natural expansion) and fill it with Marines, to delay the expansion or kill workers. Against Zerg it is most often done from an 8 Rax or BBS build.
 
 ## C
 
@@ -41,9 +46,9 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 ## D
 
-**Dark Swarm** — A Defiler spell that creates a cloud under which ranged attacks cannot hit ground units. One of the most impactful spells in the game, Dark Swarm enables Zerg ground armies to close distance against Terran bio or Protoss Dragoons.
+**Dark Swarm** — A Defiler spell that creates a cloud under which ground units take no damage from ordinary ranged attacks. Melee attacks, splash damage and spells such as Psionic Storm still work, and buildings are not protected. It lets Zerg ground armies fight Terran infantry or Protoss Dragoons on favourable terms.
 
-**Defiler** — A Tier 3 Zerg spellcaster with access to Dark Swarm, Plague, and Consume. Widely considered one of the most powerful and game-defining units in Brood War.
+**Defiler** — A Hive-tech Zerg spellcaster (requires a Defiler Mound) that casts Dark Swarm and, once researched, Plague and Consume. Widely considered one of the most game-defining units in Brood War.
 
 **DPS** — Damage Per Second. A measure of how much damage a unit or group of units can deal over time. Important for evaluating army compositions and cost-efficiency.
 
@@ -55,7 +60,7 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 **Economy** — A player's resource income, determined by the number of workers mining minerals and gas, and the number of active bases. A stronger economy allows producing more units and upgrades.
 
-**ELO** — A rating system originally designed for chess, adapted for competitive BW to rank players based on match results. Higher ELO indicates a stronger player.
+**Elo** — A rating system originally designed for chess, also used to rate BW players from their match results. A higher rating indicates a stronger record.
 
 **Expand** — To build an additional base (Command Center, Nexus, or Hatchery) at a new resource location. Expanding increases resource income but requires investment and is vulnerable to timing attacks.
 
@@ -71,27 +76,27 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 **Gateway** — The primary Protoss production building for ground units. "Gateway" can also refer to a Gateway-heavy army composition emphasizing Zealots and Dragoons.
 
-**Gas Steal** — Building an Assimilator or Extractor on the opponent's Vespene Geyser to deny them gas income. A common early-game harassment tactic, especially in PvP.
+**Gas Steal** — Building an Assimilator or Extractor on the opponent's Vespene Geyser to deny or delay their gas income. An early-game harassment tactic.
 
-**GG** — Good Game. Said by the losing player before surrendering. Leaving without saying GG is considered bad manners in competitive BW culture.
+**GG** — Good Game. Typed by the player who concedes, before leaving the game. Leaving without it is generally considered bad manners.
 
 ## H
 
 **Harass** — Attacking the opponent's economy, production, or expansions with a small force, forcing them to divert attention and units from their main strategy. Mutalisk harass and drop play are classic examples.
 
-**High Ground** — Elevated terrain that provides a defensive advantage. Units on high ground cannot be seen by units on low ground without detection, and ranged attacks from low ground to high ground have a chance to miss.
+**High Ground** — Elevated terrain that provides a defensive advantage. Ground units on low ground cannot see up onto higher ground, so attackers need vision (an air unit, a lifted building or a scan) to target units there — detection is not the issue. Even with vision, ranged attacks from lower ground miss about 47% of the time (120 of 256 random rolls in the engine).
 
-**Hive Tech** — The final tier of Zerg technology, unlocked by morphing a Lair into a Hive. Grants access to Defilers, Ultralisks, Greater Spire, and key upgrades like Adrenal Glands.
+**Hive Tech** — The final tier of Zerg technology, unlocked by morphing a Lair into a Hive. It enables the Defiler Mound, Ultralisk Cavern, Greater Spire and Nydus Canal, and upgrades such as Adrenal Glands.
 
 ## K
 
-**KR** — Abbreviation for Korean. Used to refer to the Korean BW scene, Korean servers (Fish Server), or Korean players. Korea has historically been the center of competitive Brood War.
+**KR** — Abbreviation for Korean. Used to refer to the Korean BW scene, Korean servers or Korean players. Korea has historically been the centre of competitive Brood War.
 
 ## L
 
 **Late Game** — The final phase of a match where both players are on multiple bases with maxed or near-maxed armies and full upgrades. Late-game BW often features the most complex engagements and spellcaster usage.
 
-**Lift-off** — The ability of Terran production buildings (Barracks, Factory, Starport) and Command Centers to lift off the ground and fly to a new location. Used for scouting, relocating, or escaping destruction.
+**Lift-off** — The ability of certain Terran buildings — Command Center, Barracks, Engineering Bay, Factory, Starport and Science Facility — to lift off and fly to a new location. Add-ons are left behind. Used for scouting, relocating or escaping destruction.
 
 **Lurker Contain** — A Zerg strategy where Lurkers are positioned outside the opponent's base (often at the natural ramp), burrowed to deny expansion and movement. Very effective against Protoss ground armies without Observers.
 
@@ -127,7 +132,7 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 **Proxy** — Building a production structure (usually Barracks, Gateway, or Hatchery) close to the opponent's base to reduce travel time for attacking units. Proxy builds are aggressive and rely on the element of surprise.
 
-**Psi Storm** — A High Templar spell that deals 112 damage over its area of effect. One of the most powerful area-damage abilities in the game. Multiple Psi Storms do not stack damage.
+**Psi Storm** — Psionic Storm, a High Templar spell (75 energy) that deals 112 damage over a short duration to units in a 3×3-matrix area, regardless of armour. It does not affect buildings, and overlapping Storms do not stack.
 
 **Push** — A concentrated military attack aimed at breaking through the opponent's defenses or taking map control. A push is more deliberate than harass but less committal than an all-in.
 
@@ -147,7 +152,7 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 
 **Siege** — The Siege Tank's deployed mode, which deals massive splash damage at long range but renders the tank immobile. "Sieging up" is a key part of Terran positional play.
 
-**Sim-city** — The art of placing buildings in optimal positions, especially at choke points or natural expansions, to create walls or maximize efficiency. Named after the city-building game. Protoss Forge-expands and Terran wall-offs both require good sim-city.
+**Sim-city** — The art of placing buildings in optimal positions, especially at choke points or natural expansions, to create walls or maximize efficiency. Protoss Forge-expands and Terran wall-offs both require good sim-city.
 
 **Splash** — Area-of-effect damage that hits multiple units at once. Siege Tanks, Reavers, Psi Storm, and Lurkers all deal splash damage. Splash is especially effective against tightly grouped armies.
 
@@ -174,5 +179,3 @@ A reference of common terms used in the StarCraft: Brood War competitive communi
 **Wall-off** — Using buildings to block a choke point or ramp, preventing enemy units from entering. Terran commonly walls off with Supply Depots and Barracks at their ramp. Protoss can wall with Gateways and Pylons.
 
 **Worker Rush** — Sending all workers to attack the opponent at the very start of the game. A desperation cheese that occasionally works if the opponent is not paying attention.
-
-**Wraparound** — A tactical maneuver where an army approaches from multiple angles simultaneously, surrounding the opponent's forces. Wraparounds negate choke point advantages and are especially effective with melee units like Zealots and Zerglings.

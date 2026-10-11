@@ -5,110 +5,186 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ config.base_url }}/tournaments"},
-    {"@type": "ListItem", "position": 2, "name": "{{ page.extra.series_name }}", "item": "{{ config.base_url }}/tournaments/{{ page.extra.series_slug }}"},
-    {"@type": "ListItem", "position": 3, "name": "{{ page.extra.season_label }}"}
+    {"@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/tournaments"},
+    {"@type": "ListItem", "position": 2, "name": {{ page.extra.series_name | json_encode | safe }}, "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/tournaments/{{ page.extra.series_slug | safe }}"},
+    {"@type": "ListItem", "position": 3, "name": {{ page.extra.season_label | json_encode | safe }}}
   ]
 },
 {
   "@type": "SportsEvent",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
-  "url": "{{ current_url }}",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
   "sport": "StarCraft: Brood War"
 }
 {% endblock %}
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+{% set series = get_page(path="tournaments/" ~ e.series_slug ~ ".md", lang=lang) %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="/tournaments" class="hover:text-base-content/60">{{ t.tournaments }}</a>
-    <span class="mx-1.5">/</span>
-    <a href="/tournaments/{{ e.series_slug }}" class="hover:text-base-content/60">{{ e.series_name }}</a>
-    <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ e.season_label }}</span>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/tournaments/" class="hover:text-primary">{{ t.tournaments }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <a href="{{ series.path }}" class="hover:text-primary">{{ e.series_name }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ e.season_label }}</span>
   </nav>
 
-  <div class="flex items-center gap-4 mb-2">
-    <h1 class="text-2xl font-display">{{ page.title }}</h1>
-    {% if e.status == "live" %}
-    <span class="text-[10px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
-    {% elif e.status == "completed" %}
-    <span class="text-[10px] px-2 py-0.5 rounded bg-success/10 text-success">{% if lang == "ko" %}완료{% else %}Completed{% endif %}</span>
-    {% endif %}
-  </div>
-  <p class="text-xs text-base-content/40 mb-8">{{ e.year }} · {{ e.prize_pool }}</p>
-
-  <div class="prose prose-invert max-w-3xl mb-10">
-    {{ page.content | safe }}
-  </div>
-
-  {# Results #}
-  {% if e.champion is defined and e.champion %}
-  <div class="glass-card rounded-box p-6 max-w-2xl mb-8">
-    <h2 class="text-sm font-semibold mb-4">{% if lang == "ko" %}결과{% else %}Results{% endif %}</h2>
-    <dl class="space-y-3 text-sm">
-      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}우승{% else %}Champion{% endif %}</dt><dd class="font-semibold"><a href="/players/{{ e.champion | lower }}" class="text-primary hover:text-primary/80 transition-colors">{{ e.champion }}</a></dd></div>
-      {% if e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd><a href="/players/{{ e.runner_up | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.runner_up }}</a></dd></div>{% endif %}
-      {% if e.semifinalists is defined and e.semifinalists | length > 0 %}
-      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}4강{% else %}Semi-finalists{% endif %}</dt><dd>{% for sf in e.semifinalists %}<a href="/players/{{ sf | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ sf }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
+  <header class="mb-6">
+    <div class="flex flex-wrap items-center gap-3">
+      <h1 class="text-2xl font-display">{{ page.title }}</h1>
+      {% if e.status == "live" %}
+      <span class="text-[11px] px-2 py-0.5 rounded bg-error/10 text-error font-semibold">LIVE</span>
+      {% elif e.status == "completed" %}
+      <span class="text-[11px] px-2 py-0.5 rounded bg-success/10 text-success font-semibold">{{ t.data_completed }}</span>
       {% endif %}
-    </dl>
-  </div>
-  {% endif %}
-
-  {# Notable Matches #}
-  {% if e.matches is defined and e.matches | length > 0 %}
-  <h2 class="text-sm font-semibold mb-4">{% if lang == "ko" %}주요 경기{% else %}Notable Matches{% endif %}</h2>
-  <div class="space-y-2 max-w-2xl mb-8">
-    {% for m in e.matches %}
-    <div class="glass-card rounded-box px-4 py-3 flex items-center gap-4">
-      <span class="text-[11px] text-primary/50 font-medium w-24 shrink-0">{{ m.round }}</span>
-      <div class="flex-1 flex items-center justify-center gap-3">
-        <a href="/players/{{ m.player_a | lower }}" class="font-semibold text-sm {% if m.score_a > m.score_b %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_a }}</a>
-        <span class="font-stats text-sm"><span class="{% if m.score_a > m.score_b %}text-primary{% else %}text-base-content/30{% endif %}">{{ m.score_a }}</span><span class="text-base-content/15"> : </span><span class="{% if m.score_b > m.score_a %}text-primary{% else %}text-base-content/30{% endif %}">{{ m.score_b }}</span></span>
-        <a href="/players/{{ m.player_b | lower }}" class="font-semibold text-sm {% if m.score_b > m.score_a %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_b }}</a>
-      </div>
     </div>
-    {% endfor %}
+    <p class="mt-1 text-sm text-base-content/70">{{ series.title }} &middot; {{ e.year }}</p>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 min-w-0">
+      <div class="prose prose-invert max-w-none [&_table]:block [&_table]:overflow-x-auto">
+        {{ page.content | safe }}
+      </div>
+
+      {# ── Playoffs: rounds -> matches ── #}
+      {% if e.bracket is defined and e.bracket | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-playoffs">
+        <h2 id="season-playoffs" class="text-lg font-semibold mb-4">{{ t.data_playoffs }}</h2>
+        <div class="relative" data-scroll-cue>
+          <div class="overflow-x-auto">
+            <ol class="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:min-w-max">
+              {% for rd in e.bracket %}
+              <li class="sm:w-56 flex flex-col">
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ rd.round }}{% if rd.best_of %} <span class="font-stats normal-case text-base-content/60">· Bo{{ rd.best_of }}</span>{% endif %}</h3>
+                <ul class="flex flex-col justify-around gap-3 flex-1">
+                  {% for m in rd.matches %}
+                  {% set a_won = m.score_a > m.score_b %}
+                  <li class="glass-card rounded-box overflow-hidden text-sm">
+                    {% for side in ["a", "b"] %}
+                    {% if side == "a" %}{% set pc_name = m.a %}{% set pc_slug = m.a_slug | default(value="") %}{% set sc = m.score_a %}{% set won = a_won %}
+                    {% else %}{% set pc_name = m.b %}{% set pc_slug = m.b_slug | default(value="") %}{% set sc = m.score_b %}{% set won = not a_won %}{% endif %}
+                    <div class="flex items-center justify-between gap-3 px-3 py-2 {% if side == 'b' %}border-t border-primary/10{% endif %} {% if won %}bg-primary/5 font-semibold{% else %}text-base-content/70{% endif %}">
+                      {% set pc_class = "" %}{% include "tournaments/player-chip.html" %}
+                      <span class="font-stats {% if won %}text-primary{% endif %}">{{ sc }}</span>
+                    </div>
+                    {% endfor %}
+                    {% if m.date %}<div class="px-3 py-1 border-t border-primary/10 text-[11px] text-base-content/60 font-stats"><time datetime="{{ m.date }}">{{ m.date }}</time></div>{% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              {% endfor %}
+            </ol>
+          </div>
+          <div data-scroll-hint hidden class="pointer-events-none absolute top-0 bottom-0 right-0 w-10 bg-linear-to-l from-base-100 to-transparent"></div>
+          <p data-scroll-hint hidden class="mt-1.5 text-right text-[11px] text-base-content/60">{{ t.data_scroll_hint }} &rarr;</p>
+        </div>
+      </section>
+      {% elif e.matches is defined and e.matches | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-matches">
+        <h2 id="season-matches" class="text-lg font-semibold mb-4">{{ t.data_notable_matches }}</h2>
+        <ul class="space-y-2 max-w-2xl">
+          {% for m in e.matches %}
+          <li class="glass-card rounded-box px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span class="text-xs text-base-content/70 font-medium w-24 shrink-0">{{ m.round }}</span>
+            <span class="flex-1 flex items-center justify-center gap-3">
+              <a href="{{ lp }}/players/{{ m.player_a | lower }}/" class="font-semibold text-sm {% if m.score_a > m.score_b %}hover:text-primary{% else %}text-base-content/70 hover:text-primary{% endif %}">{{ m.player_a }}</a>
+              <span class="font-stats text-sm"><span class="{% if m.score_a > m.score_b %}text-primary{% else %}text-base-content/60{% endif %}">{{ m.score_a }}</span><span class="text-base-content/60"> : </span><span class="{% if m.score_b > m.score_a %}text-primary{% else %}text-base-content/60{% endif %}">{{ m.score_b }}</span></span>
+              <a href="{{ lp }}/players/{{ m.player_b | lower }}/" class="font-semibold text-sm {% if m.score_b > m.score_a %}hover:text-primary{% else %}text-base-content/70 hover:text-primary{% endif %}">{{ m.player_b }}</a>
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {# ── Map pool ── #}
+      {% if e.maps is defined and e.maps | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-maps">
+        <h2 id="season-maps" class="text-lg font-semibold mb-4">{{ t.data_map_pool }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ e.maps | length }})</span></h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          {% for mp in e.maps %}
+          {% if mp.slug is defined and mp.slug %}
+          {% set map_page = get_page(path="wiki/maps/" ~ mp.slug ~ ".md", lang=lang) %}
+          <li><a href="{{ map_page.path }}" class="glass-card rounded-box px-3 py-2 flex items-center gap-2 text-sm text-primary hover:underline"><span aria-hidden="true">&#9638;</span>{{ map_page.title }}</a></li>
+          {% else %}
+          <li class="rounded-box border border-primary/10 px-3 py-2 flex items-center gap-2 text-sm text-base-content/80"><span aria-hidden="true" class="text-base-content/60">&#9638;</span>{{ mp.name }}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {# ── Participants ── #}
+      {% if e.participants is defined and e.participants | length > 0 %}
+      <section class="mt-10" aria-labelledby="season-participants">
+        <h2 id="season-participants" class="text-lg font-semibold mb-4">{{ t.data_participants }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ e.participants | length }})</span></h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-2 text-sm">
+          {% for pp in e.participants %}
+          {% set pc_name = pp.name %}{% set pc_slug = pp.slug | default(value="") %}{% set pc_class = "" %}
+          <li class="min-w-0">{% include "tournaments/player-chip.html" %}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    </div>
+
+    {#- Infobox -#}
+    {% set v_series %}<a href="{{ series.path }}" class="text-primary hover:underline">{{ series.extra.short_name }}</a>{% endset %}
+    {% set v_dates %}{% if e.start_date is defined and e.start_date %}<span class="font-stats"><time datetime="{{ e.start_date }}">{{ e.start_date }}</time> – {% if e.end_date is defined and e.end_date %}<time datetime="{{ e.end_date }}">{{ e.end_date }}</time>{% endif %}</span>{% endif %}{% endset %}
+    {% set v_champ %}{% if e.champion is defined and e.champion %}{% set pc_name = e.champion %}{% set pc_slug = e.champion_slug | default(value="") %}{% set pc_class = "font-semibold" %}<span class="text-warning" aria-hidden="true">&#9733;</span> {% include "tournaments/player-chip.html" %}{% endif %}{% endset %}
+    {% set v_runner %}{% if e.runner_up is defined and e.runner_up %}{% set pc_name = e.runner_up %}{% set pc_slug = e.runner_up_slug | default(value="") %}{% set pc_class = "" %}{% include "tournaments/player-chip.html" %}{% endif %}{% endset %}
+    {% set v_score %}{% if e.final_score is defined and e.final_score %}<span class="font-stats">{{ e.final_score }}</span>{% endif %}{% endset %}
+    {% set v_fdate %}{% if e.final_date is defined and e.final_date %}<time class="font-stats" datetime="{{ e.final_date }}">{{ e.final_date }}</time>{% endif %}{% endset %}
+    {% set v_semis %}{% if e.semifinalists is defined and e.semifinalists | length > 0 %}{% for sf in e.semifinalists %}{% set pc_name = sf.name | default(value=sf) %}{% set pc_slug = sf.slug | default(value="") %}{% set pc_class = "" %}<span class="block">{% include "tournaments/player-chip.html" %}</span>{% endfor %}{% endif %}{% endset %}
+    {% set v_counts %}{% if e.participants is defined and e.participants | length > 0 %}<a href="#season-participants" class="font-stats text-primary hover:underline">{{ e.participants | length }}</a>{% endif %}{% endset %}
+    {% set v_maps %}{% if e.maps is defined and e.maps | length > 0 %}<a href="#season-maps" class="font-stats text-primary hover:underline">{{ e.maps | length }}</a>{% endif %}{% endset %}
+    {% set ib_rows = [
+      [t.data_series, v_series],
+      [t.data_season, e.season_label],
+      [t.player_year, "<span class=\"font-stats\">" ~ e.year ~ "</span>"],
+      [t.data_dates, v_dates | trim],
+      [t.data_prize_pool, e.prize_pool | default(value="")],
+      [t.data_participants, v_counts | trim],
+      [t.data_map_pool, v_maps | trim]
+    ] %}
+    {% set ib_rows2 = [
+      [t.player_champion, v_champ | trim],
+      [t.player_runner_up, v_runner | trim],
+      [t.data_final_score, v_score | trim],
+      [t.data_final_date, v_fdate | trim],
+      [t.data_semifinalists, v_semis | trim]
+    ] %}
+    {% set ib_title = page.title %}
+    {% set ib_label = t.data_season_info %}
+    {% set ib_sections = [["", ib_rows], [t.data_results, ib_rows2]] %}
+    {% set ib_links = [[t.data_all_seasons, series.path ~ "#season-history"]] %}
+    {% include "partials/infobox.html" %}
   </div>
+
+  {# ── Navbox: every season of this series ── #}
+  {% if series.extra.seasons is defined and series.extra.seasons | length > 0 %}
+  <nav class="navbox mt-10" aria-label="{{ series.extra.short_name }} {{ t.data_all_seasons }}">
+    <div class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2"><a href="{{ series.path }}" class="hover:text-primary">{{ series.title }}</a></div>
+    <ul class="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+      {% for s in series.extra.seasons | reverse %}
+      {% set_global sp_url = "" %}
+      {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == e.series_slug and sp.extra.season == s.season %}{% set_global sp_url = sp.path %}{% endif %}{% endfor %}
+      {% set sid = "season-" ~ s.season %}{% set sid = sid | slugify %}
+      <li>{% if s.season == e.season %}<span class="navbox-current" aria-current="page">{{ s.season }}</span>{% elif sp_url %}<a href="{{ sp_url }}">{{ s.season }}</a>{% else %}<a href="{{ series.path }}#{{ sid }}" class="opacity-80">{{ s.season }}</a>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </nav>
   {% endif %}
 
-  {# Bracket Overview #}
-  {% if e.bracket is defined and e.bracket | length > 0 %}
-  <h2 class="text-sm font-semibold mb-4">{% if lang == "ko" %}대진표{% else %}Bracket{% endif %}</h2>
-  <div class="overflow-x-auto mb-8">
-    <table class="table table-zebra text-sm max-w-2xl">
-      <thead>
-        <tr class="text-xs text-base-content/40">
-          <th>{% if lang == "ko" %}라운드{% else %}Round{% endif %}</th>
-          <th>{% if lang == "ko" %}선수 A{% else %}Player A{% endif %}</th>
-          <th>{% if lang == "ko" %}스코어{% else %}Score{% endif %}</th>
-          <th>{% if lang == "ko" %}선수 B{% else %}Player B{% endif %}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for m in e.bracket %}
-        <tr>
-          <td class="text-base-content/40">{{ m.round }}</td>
-          <td class="{% if m.score_a > m.score_b %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="/players/{{ m.player_a | lower }}" class="hover:text-primary transition-colors">{{ m.player_a }}</a></td>
-          <td class="font-stats">{{ m.score_a }}-{{ m.score_b }}</td>
-          <td class="{% if m.score_b > m.score_a %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="/players/{{ m.player_b | lower }}" class="hover:text-primary transition-colors">{{ m.player_b }}</a></td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  {% endif %}
-
-  <div class="mt-12 pt-6 border-t border-primary/5">
-    <a href="{{ config.extra.github_content_base }}/{{ page.relative_path }}"
-       target="_blank" rel="noopener"
-       class="text-xs text-base-content/25 hover:text-base-content/50 transition-colors">
-      {{ t.edit_on_github }}
-    </a>
-  </div>
+  {% include "partials/provenance.html" %}
 </div>
 {% endblock %}
+
+{% block scripts %}<script src="/js/table-sort.js" defer></script>{% endblock %}

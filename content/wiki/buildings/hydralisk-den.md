@@ -1,5 +1,6 @@
 +++
 title = "Hydralisk Den"
+description = "The Hydralisk Den enables Hydralisks and researches their upgrades and Lurker Aspect."
 slug = "hydralisk-den"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,11 +14,13 @@ hp = 850
 shields = 0
 armor = 1
 build_time = 40
-hotkey = "B→H"
+hotkey = "B→D"
 size = "large"
 produces = []
 researches = ["muscular-augments", "grooved-spines", "lurker-aspect"]
-required_by = ["spawning-pool"]
+requires = ["spawning-pool"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Hydralisk Den is a core Zerg tech building that enables Hydralisk production from the Hatchery. It researches three important upgrades: Muscular Augments (Hydralisk movement speed), Grooved Spines (Hydralisk attack range +1), and Lurker Aspect (allowing Hydralisks to morph into Lurkers, requires a Lair). The Hydralisk Den transforms Zerg's army composition from light Zergling swarms to a more versatile force capable of attacking both ground and air.
 

@@ -1,21 +1,22 @@
 +++
-title = "근육 강화"
-description = "Muscular Augments — 스타크래프트: 브루드 워 Zerg 업그레이드."
+title = "머스큘러 오그먼트"
+description = "머스큘러 오그먼트는 저그 히드라리스크 덴 업그레이드로, 히드라리스크의 이동 속도를 높인다."
 slug = "muscular-augments"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+aliases = ["근육 강화", "히드라 발업"]
 race = "zerg"
 minerals = 150
 gas = 150
 levels = 1
 researched_at = "hydralisk-den"
-research_time = 50
+research_time = 100
 affects = ["hydralisk"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-근육 강화는 히드라리스크의 이동 속도를 크게 증가시켜 유닛의 가장 큰 약점인 느린 기본 속도를 해결합니다. 이 업그레이드 없이 히드라리스크는 효과적으로 교전하거나, 불리한 전투에서 후퇴하거나, 전투 중 재배치하기에 너무 느립니다. 업그레이드 후 히드라리스크는 핵심 군대 구성원으로 기능할 만큼 기동성이 확보되어, 느린 근접 유닛을 카이팅하고 위험에서 후퇴할 수 있습니다.
+머스큘러 오그먼트는 히드라리스크의 이동 속도를 올린다. 히드라리스크 덴에서 연구하며, 러커 변태와 달리 레어 없이도 연구할 수 있다. 흔히 '히드라 발업'이라고 부른다.
 
-경쟁전에서 근육 강화는 히드라리스크가 군대 조합의 상당 부분을 차지할 때 필수입니다. ZvP에서 속도 히드라리스크는 드라군-질럿 군대를 상대로 교전과 이탈을 선택하며 불리한 교전을 피할 수 있습니다. ZvT에서 빠른 히드라리스크는 러커 포지션을 더 효과적으로 지원하고 포위되기 전에 후퇴합니다. 이 업그레이드 없이 히드라리스크 기반 전략은 경쟁 레벨에서 성립하지 않습니다.
-
-근육 강화는 히드라리스크 덴에서 연구하며, 보통 홈 있는 가시(사거리 업그레이드)와 동시 또는 직후에 시작합니다. 히드라리스크 중심 빌드에서 덴 완성 즉시 7-9분경에 두 업그레이드를 시작합니다. 두 업그레이드는 패키지로 간주되어 하나만 연구하면 히드라리스크가 크게 약화됩니다.
+히드라리스크를 주력으로 쓸 때, 특히 저프전에서는 그루브드 스파인과 함께 기본으로 연구한다.

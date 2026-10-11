@@ -1,5 +1,6 @@
 +++
 title = "옵티컬 플레어"
+description = "옵티컬 플레어는 유닛의 시야를 줄이고 탐지 능력을 없애는 메딕 마법이다."
 slug = "optical-flare"
 template = "wiki/ability.html"
 [taxonomies]
@@ -9,9 +10,17 @@ name_en = "Optical Flare"
 caster = "medic"
 energy = 75
 hp_cost = 0
+range = 9
+hotkey = "F"
+researched_at = "academy"
+research_minerals = 100
+research_gas = 100
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Optical_Flare"]
+verified = "2026-10-11"
 +++
-옵티컬 플레어는 대상 유닛의 시야 범위를 영구적으로 1 매트릭스 셀로 줄여, 게임이 끝날 때까지 사실상 시야를 빼앗는다. 효과는 중첩되지 않으며 유닛이 죽을 때까지 지속된다. 메딕에서 에너지 75를 소모하며 아카데미에서 연구가 필요하다.
+옵티컬 플레어는 건물을 제외한 유닛 하나를 영구히 실명시킨다. 엔진상 실명된 유닛의 시야는 2타일로 줄고 탐지 능력도 잃는다. 이 효과는 유닛이 죽거나 메딕이 레스토레이션으로 해제할 때까지 유지된다. 환상 유닛에 쓰면 그 유닛은 파괴된다.
 
-옵티컬 플레어는 매우 상황적인 능력으로 프로 경기에서 드물게 등장하지만, 특정 상황에서는 큰 영향력을 발휘할 수 있다. 주된 용도는 탐지 유닛의 시야를 빼앗는 것이다 — 옵티컬 플레어에 맞은 오버로드는 탐지 능력은 유지하지만 시야가 1로 줄어 안전한 거리에서 버로우/클로킹 유닛을 발견하는 것이 거의 불가능해진다. 프로토스 상대로는 옵저버의 시야를 빼앗아 이동식 탐지 능력을 무력화할 수 있다. 드문 TvT 상황에서는 사이언스 베슬의 정찰 가치를 제한하는 데 사용될 수 있다.
+에너지 75가 들고 사거리는 9이며, [아카데미](@/wiki/buildings/academy.ko.md)에서 미네랄 100, 가스 100(1,800프레임, 120초)에 연구한다.
 
-옵티컬 플레어가 프로 경기에서 거의 사용되지 않는 주된 이유는 기회비용이다: 플레어에 사용된 75 에너지로 약 150HP의 마린 치료가 가능하다. 대부분의 경기에서 바이오 유닛을 살리는 것이 탐지기 하나를 무력화하는 것보다 훨씬 가치 있다. 탐지 거부가 전략적으로 중요한 경우에만 사용을 고려해야 한다 — 예를 들어 클로킹 레이스를 운용하는데 상대의 전방 오버로드가 적을 때. 최대 효과를 위해 전투 유닛보다 항상 탐지기를 대상으로 삼아야 한다.
+플레어는 거의 쓰이지 않는다. 주된 용도는 탐지를 무력화하는 것으로, 옵저버나 오버로드를 실명시켜 클로킹 레이스·고스트나 스파이더 마인이 활동할 수 있게 한다. 상대가 여러 유닛을 한꺼번에 선택하고 있으면 디텍터가 실명된 것을 알아채기 어렵다.

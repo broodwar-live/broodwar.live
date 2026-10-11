@@ -1,17 +1,23 @@
 +++
 title = "Cryoc"
-description = "Cryoc — Protoss player from France."
+description = "Cryoc (Robert Kostack) — German Terran of team iFU, a top foreign Terran around 2013 and a BSL competitor."
 slug = "cryoc"
 template = "players/player.html"
 [taxonomies]
-race = ["protoss"]
+race = ["terran"]
 [extra]
-image = "/images/players/cryoc.png"
-race = "protoss"
-country = "FR"
-country_name = "France"
-rating = 2380
-tier = "C"
-aliases = []
+race = "terran"
+country = "DE"
+country_name = "Germany"
+real_name = "Robert Kostack"
+team = "iFU"
+aliases = ["iFU.Cryoc"]
+liquipedia = "https://liquipedia.net/starcraft/Cryoc"
+sources = ["https://liquipedia.net/starcraft/Cryoc"]
+verified = "2026-10-11"
 +++
-Cryoc is a French Protoss competing in the European BW scene through BSL qualifying rounds and regional online tournaments. He represents the French BW community alongside Tempest, contributing to France's growing presence in international competition. His playstyle features standard Protoss fundamentals with a developing understanding of matchup dynamics, and his PvZ shows the most improvement in recent seasons. Cryoc's regular participation in European events demonstrates the passion of the French community for competitive Brood War and helps sustain the scene's diversity.
+Cryoc (Robert Kostack) is a German Terran player who plays for iFU and earlier played for dM. He appeared in the foreign scene in late 2011 and posted good results in Gambit's Cup 3.
+
+He represented Germany in Altitude Nation Wars and the Western Europe team in SBWI Nation Wars, and by 2013 he was counted among the best foreign Terrans. Across late 2013 and 2014 he played in the German King of the Hill series and defended the title in two consecutive matches. TvZ is considered his strongest matchup.
+
+In the Bombastic StarLeague he reached Lower Round 4 of the playoff bracket in [BSL Season 3](@/tournaments/bsl-s3.md), and he also played in [BSL Season 5](@/tournaments/bsl-s5.md), [BSL Season 7](@/tournaments/bsl-s7.md), [BSL Season 9](@/tournaments/bsl-s9.md) and [BSL Season 10](@/tournaments/bsl-s10.md).

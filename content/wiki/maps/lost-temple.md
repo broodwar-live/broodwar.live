@@ -1,17 +1,20 @@
 +++
 title = "Lost Temple"
+description = "Lost Temple is a 4-player Jungle World map by Blizzard Entertainment, the most famous map of early competitive StarCraft."
 slug = "lost-temple"
 template = "wiki/map.html"
 [extra]
-name_ko = "Lost Temple"
+name_ko = "로스트 템플"
 dimensions = "128x128"
 tileset = "Jungle World"
 players = 4
-spawn_positions = "12, 2, 6, 8"
-era = "1998-2008"
+spawn_positions = "2, 6, 8, 12"
+era = "1999-2004"
+sources = ["https://liquipedia.net/starcraft/Lost_Temple", "https://web.archive.org/web/2018/http://www.teamliquid.net/tlpd/korean/maps/82_Lost_Temple"]
+verified = "2026-10-11"
 +++
-The original competitive Brood War map and arguably the most famous map in real-time strategy history. Lost Temple shipped with StarCraft in 1998 and served as the default competitive map for the better part of a decade. The 4-player jungle map features spawn positions at 12, 2, 6, and 8 o'clock, each with a ramp-protected main base and a nearby natural expansion. An island expansion sits in one corner, accessible only by air transport, adding a unique economic dimension.
+**Lost Temple** is a 4-player map on the Jungle World tileset, made by Blizzard Entertainment and shipped with the game's original map pack. TLPD lists it as 128x128 with start locations at 2, 6, 8 and 12 o'clock.
 
-The center of the map features the eponymous temple area — an elevated plateau that serves as a key strategic control point. The simple, intuitive layout taught an entire generation of players the fundamentals of competitive StarCraft: ramp defense, expansion timing, and army positioning. However, the map suffered from significant positional imbalance — certain spawn positions had clear advantages over others, particularly in Protoss vs Zerg matchups.
+It was used in competition from 1999 to December 2004 and went through many third-party revisions, among them WCG Lost Temple, Neo Lost Temple KBK, Desert Lost Temple, Lost Temple 2 and Lost Temple KPGA. Maps such as Luna and later Python gradually replaced it.
 
-Lost Temple was used in the earliest Korean professional tournaments, including OnGameNet Starleague seasons. By the mid-2000s, it was gradually retired from competitive play as mapmaking evolved and more balanced designs emerged. Despite its retirement, Lost Temple remains the most recognizable and nostalgic map in StarCraft history, and it continues to be played casually on Battle.net and in the Remastered client.
+The terrain is cliff-heavy, encouraging drops and defensive play. The island expansions have no mineral block, so Terran can simply float a Command Center there. The original version had several positional imbalances: the 12 o'clock position and its eastern neighbour are very close, so a Terran at 12 can siege the neighbouring choke from inside the base, and the 6 o'clock main has a less efficient mineral layout and cannot be walled with a Barracks and two Depots.

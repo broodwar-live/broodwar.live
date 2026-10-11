@@ -1,5 +1,6 @@
 +++
 title = "Devourer"
+description = "The Devourer is a Zerg air-to-air unit, added in Brood War and morphed from a Mutalisk at a Greater Spire, whose attacks stack Acid Spores on its targets."
 slug = "devourer"
 template = "wiki/unit.html"
 [taxonomies]
@@ -12,61 +13,34 @@ minerals = 250
 gas = 150
 supply = 2
 hp = 250
+shields = 0
 armor = 2
 damage = 25
+damage_type = "explosive"
 build_time = 40
 attack_speed = 100
 range = 6
 speed = 5.0
-shields = 0
 size = "large"
 ground_attack = false
 air_attack = true
-damage_type = "explosive"
-dps = 2.28
+dps = 3.75
 sight = 10
-built_from = "mutalisk"
+morphs_from = "mutalisk"
 abilities = []
 upgrades = ["flyer-attacks", "flyer-carapace"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+verified = "2026-10-11"
 +++
-A heavy air-to-air unit evolved from the Mutalisk at a Greater Spire, the Devourer attacks with acid projectiles that apply stacking Acid Spore debuffs to targets. Each spore reduces the target's armor by 1 and increases the delay before it can attack, stacking up to 9 times. The Devourer's role is to soften enemy air units for other Zerg flyers — particularly supporting Guardians against enemy air escorts. Rarely seen in competitive play, but uniquely powerful in specific situations.
+The Devourer was introduced in Brood War. It morphs from a Mutalisk once a Greater Spire is built and attacks only air units. Each hit leaves Acid Spores on the target, which lower its armor and slow its attack rate; the effect stacks up to nine times.
 
-## Versus Terran
+## Role in Competitive Play
 
-Devourers occasionally appear in ZvT to weaken Wraiths or Valkyries with Acid Spore stacking. They can support Guardian pushes by debuffing Terran air escorts, making them more vulnerable to Scourge and Mutalisks. However, the high cost and slow attack speed limit their appeal compared to simply producing more Scourge.
-
-## Versus Protoss
-
-Devourers counter Corsairs in ZvP by reducing their armor and attack speed, making Corsairs less effective against Mutalisk flocks. Their primary role is supporting Guardians by debuffing enemy air units that would otherwise destroy the helpless Guardians. The Acid Spore stacking creates interesting armor reduction dynamics against Protoss air.
-
-## Versus Zerg
-
-Devourers are almost never used in ZvZ. Morphing a Mutalisk into a Devourer sacrifices harassment potential for slow anti-air, which is a poor trade in a matchup dominated by fast Mutalisk-on-Mutalisk engagements. The opportunity cost is too high when Mutalisk numbers determine air superiority.
+Devourers are uncommon. They are mostly seen in long games where Zerg needs to deal with large groups of air units, such as Corsairs, Carriers or Wraiths, often alongside Mutalisks or Scourge.
 
 ## Key Mechanics
 
-Each Devourer attack deals 25 Explosive damage and applies one Acid Spore to the target. Acid Spores stack up to 9 times, each reducing armor by 1 and adding attack delay. At maximum stacks, a target has -9 armor, making every subsequent hit from any source deal significantly more damage. The slow attack speed (100 frames) means Devourers deal damage infrequently. They have 250 HP and 2 base armor, making them among the most durable Zerg air units. They can only attack air.
-
-## Micro Techniques
-
-- **Debuff spreading**: Attacking multiple enemy air units to spread Acid Spores rather than stacking on one target
-- **Focus debuff**: Alternatively, stacking spores on a single high-value target to maximize vulnerability
-- **Guardian escort**: Keeping Devourers ahead of Guardians to engage enemy air before it reaches the vulnerable Guardians
-- **Tank role**: Using Devourers' high HP to absorb anti-air fire intended for more fragile Mutalisks
-
-## Counters
-
-Ground-based anti-air (Marines, Hydralisks, Goliaths) can attack Devourers while they cannot retaliate. Their slow attack speed means they deal low sustained DPS despite high per-hit damage. Massed Corsairs still overwhelm Devourers through sheer numbers. The opportunity cost of morphing a Mutalisk into a Devourer is significant — that Mutalisk can no longer harass.
-
-## Combat Data
-
-- **Cooldown**: 6.59s (100 frames) — extremely slow attack speed
-- 25 Explosive damage per hit; each hit applies Acid Spore debuff
-- Acid Spores reduce target armor by 1 per stack (max 9 stacks = -9 armor) and slow enemy air attack speed
-- Cannot attack ground units at all
-- 250 HP + 2 base armor — one of the most durable Zerg air units
-- **AI Note**: Devourers auto-attack nearest air target; spreading attacks across multiple enemies or focusing one target are both valid manual strategies
-
-## Historical Notes
-
-The Devourer is one of the least-used units in competitive Brood War, sharing this distinction with the Scout. Its Acid Spore mechanic is theoretically interesting — stacking armor reduction creates unique interactions — but the slow attack speed and inability to hit ground make it impractical in most game states. When Devourers do appear in professional matches, they generate excitement precisely because of their rarity, and the armor debuff can create surprisingly decisive air battles.
+- 25 explosive damage, 100-frame cooldown, range 6, air targets only
+- Acid Spores: each stack reduces the target's armor by 1 and increases its attack cooldown; up to 9 stacks
+- Total cost 250/150 (Mutalisk 100/100 plus 150/50 to morph), 2 supply
+- 250 HP, 2 base armor, large size

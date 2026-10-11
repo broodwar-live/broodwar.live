@@ -1,6 +1,6 @@
 +++
 title = "컨슘"
-description = "Consume — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "컨슘은 저그 디파일러 마운드에서 연구하는 기술로, 디파일러가 아군 저그 유닛을 희생시켜 에너지를 얻게 한다."
 slug = "consume"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 100
 gas = 100
 levels = 1
 researched_at = "defiler-mound"
-research_time = 67
+research_time = 100
 affects = ["defiler"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-컨슘은 디파일러의 능력으로, 아군 저그 유닛을 즉시 죽여 디파일러의 에너지를 50 회복합니다. 희생된 유닛은 남은 HP와 관계없이 즉시 파괴됩니다. 어떤 저그 유닛이든 소모할 수 있지만, 저글링이 한 쌍에 25미네랄밖에 안 되어 가장 저렴한 에너지 배터리이므로 가장 흔히 선택됩니다.
+컨슘을 연구하면 디파일러가 곁에 있는 아군 유닛(건물과 라바 제외) 하나를 잡아먹고 에너지 50을 얻는다. 디파일러 마운드에서 연구한다. 자세한 내용은 [컨슘](/ko/wiki/abilities/consume/) 문서에서 다룬다.
 
-컨슘은 후반 디파일러 스킬 사용을 유지하는 데 필수입니다. 이 능력 없이 디파일러는 에너지 부족으로 한두 번 스킬 시전에 그쳐 영향력이 심각하게 제한됩니다. 컨슘이 있으면 저글링 행렬을 동반한 디파일러가 다크 스웜과 플레이그를 반복 시전하며 지속적인 스킬 압박을 유지합니다. 이것이 다크 스웜 아래 전진하며 적 유닛에 플레이그를 시전하는 저그 후반 전략을 가능하게 합니다.
-
-컨슘은 디파일러 마운드에서 연구하며, 보통 완성 즉시 하이브 테크에 도달한 게임에서 14-16분경에 시작합니다. 항상 첫 디파일러 등장과 함께 또는 직전에 연구합니다. 이 업그레이드 없이 디파일러는 생산할 가치가 없습니다.
+다크 스웜은 에너지 100, 플레이그는 150이 들기 때문에 디파일러가 마법을 계속 쓰려면 값싼 저글링을 먹이로 삼는 컨슘이 사실상 필수다. 디파일러를 뽑는 경기라면 거의 항상 연구한다.

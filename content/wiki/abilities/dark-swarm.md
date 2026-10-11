@@ -1,5 +1,6 @@
 +++
 title = "Dark Swarm"
+description = "Dark Swarm is a Defiler spell that creates a cloud protecting ground units beneath it from ranged attacks."
 slug = "dark-swarm"
 template = "wiki/ability.html"
 [taxonomies]
@@ -10,12 +11,14 @@ caster = "defiler"
 energy = 100
 hp_cost = 0
 range = 9
-aoe = "192px diameter"
+aoe = "160×160 px"
 duration = 60.0
 hotkey = "W"
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Dark_Swarm", "https://liquipedia.net/starcraft/Splash_Damage"]
+verified = "2026-10-11"
 +++
-Dark Swarm creates a large cloud of particles at the target location that lasts approximately 60 seconds. All ranged attacks that pass through the cloud miss ground units beneath it — projectiles simply pass through without dealing damage. Units inside the swarm can still attack normally, and melee attacks are completely unaffected. Costs 100 energy from a Defiler with no research requirement.
+Dark Swarm creates a 160×160-pixel cloud at the target location that lasts 900 frames (60 game seconds, about 38 seconds of real time on Fastest). Any ground unit under the cloud — friend or foe — cannot be hit by ranged attacks: in the engine its chance to dodge such attacks becomes 100%. Buildings and air units are not protected.
 
-Dark Swarm is arguably the most important Zerg late-game ability and the centerpiece of Zerg's strategy against ranged-heavy compositions. Under the cover of Dark Swarm, Zerglings and Ultralisks can engage Marines and Siege Tanks without taking a single point of ranged damage, allowing cheap melee units to overwhelm expensive ranged ones. In ZvT, Dark Swarm combined with Consume-fueled Defilers is what enables Zerg to survive against entrenched mech armies. Without Dark Swarm, Zerg ground forces have no answer to a well-positioned Terran Siege Tank line. In ZvP, it negates Dragoon fire and allows Zerglings to close the distance for surround attacks.
+Melee attacks still work under the swarm, as do attacks without a projectile (Firebats, Reaver Scarabs, Spider Mines, Infested Terrans) and spells such as Psionic Storm, Plague, Irradiate, Ensnare and Yamato Cannon. Units under the cloud can still fire out of it normally.
 
-The primary counters to Dark Swarm are Firebats (melee splash damage works under the cloud), Psionic Storm (spell damage ignores the swarm), and pulling units out of the cloud to re-engage at range. When casting Dark Swarm, place it directly over the enemy's ranged units or between your army and their firing line. Use Consume on Zerglings to sustain energy for repeated casts. A common mistake is casting only one cloud — chain multiple Dark Swarms to maintain coverage as your army advances.
+It costs 100 energy, has a range of 9 and needs no research. Dark Swarm is the centrepiece of late-game Zerg against Terran: under it Zerglings, Ultralisks and Lurkers can engage Marines and Siege Tanks that would otherwise shred them. Terrans answer with Firebats, Irradiate and by pulling back out of the cloud. Defilers sustain repeated casts with Consume.

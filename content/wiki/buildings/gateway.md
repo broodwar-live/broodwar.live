@@ -1,5 +1,6 @@
 +++
 title = "Gateway"
+description = "The Gateway is the Protoss ground production building, warping in Zealots, Dragoons, High Templar and Dark Templar."
 slug = "gateway"
 template = "wiki/building.html"
 [taxonomies]
@@ -16,8 +17,10 @@ build_time = 60
 hotkey = "B→G"
 size = "large"
 produces = ["zealot", "dragoon", "high-templar", "dark-templar"]
-unlocks = ["cybernetics-core", "citadel-of-adun"]
-required_by = ["nexus"]
+unlocks = ["cybernetics-core", "shield-battery"]
+requires = ["nexus"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Gateway is the primary Protoss military production building, producing Zealots by default, Dragoons once a Cybernetics Core is built, and High Templar and Dark Templar once Templar Archives are completed. It is the first military structure available to Protoss and the most important production building throughout the game. Unlike Terran's Barracks, the Gateway has no add-ons.
 

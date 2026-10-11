@@ -1,28 +1,22 @@
 +++
 title = "Team Liquid"
-description = "Team Liquid — international StarCraft: Brood War community and team."
+description = "Team Liquid — international Brood War clan founded in 2000 by Nazgul and home of the TeamLiquid.net community."
 slug = "team-liquid"
 template = "wiki/team.html"
 [extra]
 status = "active"
 region = "International"
 founded = "2000"
-notable_players = ["NonY", "Ret", "Jinro"]
+notable_players = ["Nazgul", "NonY", "Jinro", "TheLittleOne"]
+sources = ["https://liquipedia.net/starcraft/Team_Liquid", "https://tl.net/forum/viewmessage.php?topic_id=1"]
+verified = "2026-10-11"
 +++
-Team Liquid occupies a singular position in the Brood War ecosystem — part competitive team, part community hub, and the most important English-language resource in the history of StarCraft esports. Founded in 2000 as a fan community by Victor "Nazgul" Goossens, TeamLiquid.net became the central gathering place for the international BW community before eventually fielding its own competitive roster.
+Team Liquid began as a Brood War clan founded around the end of 2000 by the Dutch player Liquid`Nazgul (Victor Goossens) after he left the clan [i'm]. It started with four members and grew to about eight within a year; members were hand-picked for manners as much as for skill, and clan wars were not its focus.
 
-## The Community First
+## The website
 
-Before Team Liquid was a team, it was a website — and what a website it was. TeamLiquid.net served as the primary English-language portal for Korean BW esports coverage, featuring live reporting, strategy articles, player interviews, and forum discussions that connected fans worldwide. The site's editorial standards and passionate community made it the go-to destination for anyone following professional StarCraft outside of Korea.
+Nazgul and Liquid`Meat (Joy Hoogeveen) launched the clan website on 1 May 2001 at teamliquid.cjb.net. On 22 September 2002 it moved to the address now known as TeamLiquid.net. The site became the main English-language hub for following Korean professional StarCraft.
 
-## Competitive Roster
+## Players
 
-Team Liquid's competitive roster represented the best of non-Korean StarCraft. Tyler "NonY" Wasieleski was an American Protoss known for creative play and a competitive fire that matched Korean pros. Liquid`Ret (Joseph de Kroon) brought European Zerg excellence. Jinro (Jonathan Walsh) made history by reaching the semifinals of a GSL season in StarCraft II, one of the greatest achievements by a non-Korean player. While the team could not match Korean organizations in raw results, their players competed with passion and represented the international community with pride.
-
-## Bridge Between Worlds
-
-Team Liquid's greatest contribution was bridging the gap between Korean and international Brood War. Through their coverage, translations, and community building, they made Korean professional StarCraft accessible to a global audience. Without TeamLiquid.net, the international BW community would be a fraction of its current size.
-
-## Modern Era
-
-Team Liquid has grown into one of the largest esports organizations in the world, competing across dozens of titles. But the Brood War community remains at the heart of the organization's identity and origin story. The legacy of those early forum posts and live reports continues to shape how the international community experiences StarCraft.
+Membership stayed small and fairly constant for years. Later additions included the American Protoss NonY (Tyler), who joined in October 2008 when he went to play for eSTRO in Korea, and — after the first TeamLiquid StarCraft II Invitational — long-time site moderator Jinro and TheLittleOne. Team Liquid later grew into a large multi-title esports organisation.

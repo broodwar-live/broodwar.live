@@ -7,36 +7,34 @@ template = "wiki/strategy.html"
 matchup = ["TvZ"]
 [extra]
 matchup = "TvZ"
+sources = ["https://liquipedia.net/starcraft/SK_Terran", "https://liquipedia.net/starcraft/3_Hatch_Muta_(vs._Terran)", "https://liquipedia.net/starcraft/3_Hatch_Lurker_(vs._Terran)", "https://liquipedia.net/starcraft/Irradiate", "https://liquipedia.net/starcraft/Mutalisk", "https://liquipedia.net/starcraft/Bunker"]
+verified = "2026-10-11"
 +++
+The TvZ mid game starts once both players are on two or more bases. Terran has committed to an infantry-based or a mech-based army; Zerg is harassing with Mutalisks, holding with Lurkers, or both, while working toward Hive tech.
 
-The TvZ mid game is the most volatile phase of the matchup. Terran has established a natural expansion and committed to bio or mech. The window from roughly six to twelve minutes is where most games are decided -- Terran must convert that commitment into map pressure before Zerg reaches hive technology and defilers.
+## Infantry Play
 
-## Bio Timing Attacks
+The infantry style (often called SK Terran) uses Marines and Medics with early weapon upgrades and a growing number of Science Vessels, without Siege Tanks. Liquipedia's advice for it:
 
-The marine/medic push with Stim Pack and +1 attack is the defining bio play. This timing hits at seven to eight minutes -- after Stim finishes but before Zerg has defilers or a critical mass of lurkers. The target is Zerg's third base. Denying the third puts Zerg behind on economy and unable to produce enough units to hold subsequent pushes.
+- Move out with at least two groups of Marines/Medics and at least one Science Vessel.
+- Spread Marines so a single Lurker spine cannot hit many of them.
+- Don't attack into burrowed Lurkers unless there are only a few; stay mobile, hit other targets and force Zerg to unburrow.
+- Patrol the centre of the map to deny extra gas expansions, and keep Vessels away from Scourge.
 
-Stim micro separates successful pushes from wasted armies. Stutter-stepping marines -- move, stop to fire, move again -- maximizes damage while minimizing exposure to lurker spines. Splitting against lurker splash is equally critical. Science Vessels provide detection for burrowed lurkers and Irradiate for eliminating key Zerg units.
+## Mech Play
 
-## Mech Transition
-
-Mech mid-game revolves around vulture map control and siege tank positioning. Vultures with spider mines deny expansion paths -- a mine field at a likely third base location can kill an entire drone transfer. Siege tanks provide the killing power but must be supported; unsupported tanks pushed too far get surrounded and die.
-
-The goal is establishing a containment: tanks at a forward position limiting Zerg to two or three bases while Terran secures expansions behind the line. The contain does not need to kill Zerg -- it prevents Zerg from taking the map while Terran builds an economic advantage.
+Mech uses Vultures, Spider Mines, Siege Tanks and Goliaths. Mines placed on expansion paths deny Drone transfers and warn of attacks; Siege Tanks (range 12 in Siege Mode) outrange burrowed Lurkers (range 6). Unsupported tanks are vulnerable, so the army advances in stages.
 
 ## Dealing with Mutalisks
 
-Mutalisk openings force a specific response. Every mineral line needs Missile Turrets -- two per expansion is standard. Marines defend alongside turrets, but chasing mutalisks across the map with marines loses; the mutalisks are faster and pick off stragglers. The real counter is Science Vessel Irradiate -- one cast on stacked mutalisks chain-kills multiple units because Irradiate splashes to nearby air units. Turrets at every expansion are mandatory once mutalisks are confirmed.
+Missile Turrets in mineral lines and Marines near them blunt Mutalisk harassment. Irradiate is especially effective because it damages all biological units within a small radius of the target, so stacked Mutalisks take heavy damage together.
 
 ## Dealing with Lurkers
 
-Lurkers burrow at choke points to block Terran pushes. Science Vessel scan reveals them, and siege tanks outrange them from safety. Comsat energy management is key -- wasting scans on scouting means no detection when the push needs it.
-
-In bio play, the technique is scan, stim, and push through before reinforcements arrive. Lurkers reposition slowly, so a committed bio army overwhelms an unreinforced lurker line. Hesitation is punished -- waiting lets more lurkers burrow in.
-
-## Expansion Timing
-
-Terran's third base goes up during mid game. In mech, it rises naturally behind the tank contain line. In bio, taking a third is riskier because the army needs to be on the map pressuring. Bio Terran typically expands behind a successful push or while Zerg rebuilds after a fight.
+Lurkers need to be detected before they can be attacked. Comsat Station scans and Science Vessels (which are detectors) both work; scan energy should be saved for engagements rather than spent on scouting when Lurkers are expected.
 
 ## Common Mistakes
 
-Pushing without detection against lurkers is the most common mid-game error -- the army walks into burrowed lurkers and dies. Letting mutalisks harass without turrets bleeds SCVs. Moving out with too few medics causes marines to melt under sustained fire. Not planning a transition beyond pure bio leaves Terran with no answer when defilers arrive.
+- Walking an army into burrowed Lurkers without detection.
+- Letting Mutalisks pick off SCVs in undefended mineral lines.
+- Having no plan for Defilers when Zerg reaches Hive.

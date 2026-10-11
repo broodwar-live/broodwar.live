@@ -1,21 +1,29 @@
 +++
 title = "함선 장갑"
-description = "Ship Plating — 스타크래프트: 브루드 워 Terran 업그레이드."
+description = "함선 장갑은 테란 아머리에서 3단계까지 연구하는 업그레이드로, 단계마다 테란 공중 유닛의 방어력을 1씩 올린다."
 slug = "ship-plating"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
 race = "terran"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "armory"
-research_time = 80
-affects = ["wraith", "valkyrie", "battlecruiser", "dropship", "science-vessel"]
+research_time = 266
+affects = ["wraith", "dropship", "science-vessel", "battlecruiser", "valkyrie"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-함선 장갑 업그레이드는 각 레벨마다 레이스, 발키리, 배틀크루저, 드랍십, 사이언스 베슬을 포함한 모든 테란 공중 유닛의 방어력을 +1씩 증가시킵니다. 방어력이 높을수록 피격당 받는 피해가 줄어들어 대공 화력에 대한 생존력이 향상됩니다. 아머리에서 연구하며, 상위 레벨은 사이언스 퍼실리티가 필요합니다.
+함선 장갑은 단계마다 레이스, 드랍십, 사이언스 베슬, 배틀크루저, 발키리의 방어력을 1씩 올린다. 2·3단계는 사이언스 퍼실리티가 필요하다.
 
-함선 장갑은 경쟁전 브루드 워에서 매우 드물게 연구됩니다. 표준 게임은 바이오나 메카닉 등 지상 조합 중심으로 진행되며, 공중 유닛은 보통 지원 역할이라 장갑의 가치가 미미합니다. 이 업그레이드는 배틀크루저 함대가 등장하는 극후반 상황이나 비정상적인 공중 전환 전략에서만 의미가 있습니다.
+대부분의 경기에서는 뒤로 미루며, 후반 배틀크루저 체제처럼 테란이 공중 병력에 크게 투자할 때 주로 연구한다.
 
-연구되는 경우에도 함선 장갑은 지상 업그레이드가 모두 완료되고 테란이 공중 유닛으로 대규모 전환한 극후반에만 나타납니다. 실제로 경쟁전 게임의 5% 미만에서 이 업그레이드가 연구됩니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 150 / 150 | 266초 | — |
+| 2 | 225 / 225 | 298초 | 사이언스 퍼실리티 |
+| 3 | 300 / 300 | 330초 | 사이언스 퍼실리티 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

@@ -1,17 +1,23 @@
 +++
 title = "Brain"
-description = "Brain — 한국의 프로토스 선수."
+description = "Brain(손경훈) — 대한민국의 아마추어 프로토스, 2020 아프리카TV 챌린저스 스타리그 시즌 1 우승자."
 slug = "brain"
 template = "players/player.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-image = "/images/players/brain.png"
 race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2450
-tier = "B+"
-aliases = ["이승원", "Lee Seung Won"]
+real_name = "손경훈"
+romanized_name = "Son Kyung Hoon"
+birth_date = "1993-03-03"
+aliases = ["Sea.KH", "Ever)P(Rich", "By_Brain", "브신"]
+liquipedia = "https://liquipedia.net/starcraft/Brain"
+soop = "youngskh"
+sources = ["https://liquipedia.net/starcraft/Brain"]
+verified = "2026-10-11"
 +++
-Brain은 탄탄한 기본기와 모든 매치업에서 균형 잡힌 접근으로 현대 씬에서 활동하는 한국 프로토스입니다. 정석 프로토스 전략의 안정적인 실행을 강조하며, 특히 미러 매치업 역학에 대한 이해로 PvP에서 우위를 보여줍니다. ASL 예선과 온라인 대회에서 괜찮은 성적을 거두며 경쟁 대화에서 벗어나지 않는 안정성을 보여줍니다. 게임 센스와 포지셔닝이 가장 큰 무기로, 약간 낮은 메카닉 스피드를 현명한 병력 배치와 효율적 매크로로 보완합니다.
+Brain(손경훈)은 1993년생 대한민국의 프로토스 선수로, 프로팀이 아닌 아마추어 리그에서 활동해 왔다. 빠른무한(Fastest) 맵에서는 세계 최강으로 꼽히며, 템플러 계열 유닛을 다루는 솜씨로도 알려져 있다.
+
+가장 큰 성과는 2020년 아프리카TV 챌린저스 스타리그 시즌 1 우승이다. 이 우승으로 ASL 예선 조에 시드를 받았고, 이후 [ASL 시즌 9](@/tournaments/asl-s9.ko.md)에 출전했다. Sea.KH, By_Brain 등의 아이디를 사용했다.

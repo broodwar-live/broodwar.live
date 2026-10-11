@@ -1,17 +1,27 @@
 +++
 title = "Britney"
-description = "Britney — 한국의 테란 선수."
+description = "Britney(김봉준) — 2009 KeSPA 드래프트로 하이트 스파키즈에 입단한 프로토스, 이후 피시 서버에서 활동."
 slug = "britney"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/britney.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2430
-tier = "B"
-aliases = ["김도훈", "Kim Do Hoon"]
+real_name = "김봉준"
+romanized_name = "Kim Bong Joon"
+birth_date = "1991-08-14"
+aliases = ["Dream.t)Britney", "Britney[gm]", "bOng[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/Britney"
+soop = "khm11903"
+sources = ["https://liquipedia.net/starcraft/Britney"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hite SPARKYZ"
+from = "2009-03-24"
+to = "2010"
 +++
-Britney는 공격적인 성향과 특히 강한 TvP로 현대 씬에서 경쟁하는 한국 테란입니다. 프로토스 매치업에서 초반 압박 빌드와 타이밍 공격으로 상대가 원하는 게임 계획을 세우기 전에 수세로 몰아넣습니다. 초반에 리스크를 감수하는 의지로 상위 랭킹 선수 상대로 이변의 가능성이 있지만, 공격이 정찰되면 빠른 패배로 이어질 수도 있습니다. ASL 예선과 온라인 대회에서 활발히 활동하며, 변동성 있지만 흥미진진한 플레이로 예측 불가능한 상대입니다. 초반 지배에 대한 헌신을 반영하듯 게임이 액션으로 가득하고 빠르게 결정되는 경향이 있습니다.
+Britney(김봉준)는 1991년생 대한민국의 프로토스 선수이다. 2009년 KeSPA 신인 드래프트에서 선발되어 같은 해 3월 하이트 스파키즈에 입단했으며, 2군에서 활동했지만 주요 리그에서 눈에 띄는 성적은 내지 못했다. 2010년 승부조작 사건 이후 계약이 끝났으며, 본인은 사건과 무관했다.
+
+KeSPA 팀들이 스타크래프트 II로 전환한 뒤에도 피시 서버에서 브루드 워를 계속했다. SOSPA 대회에 개인으로, 또 STX SouL 출신 선수들로 구성된 팀의 일원으로 꾸준히 출전했고, 이후 한국 아마추어 대회에서 활동했다.

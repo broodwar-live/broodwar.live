@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block jsonld_extra %}
+,{
+  "@type": "NewsArticle",
+  "headline": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  {% if page.date %}"datePublished": {{ page.date | json_encode | safe }},{% endif %}
+  {% if page.authors | length > 0 %}"author": [{% for a in page.authors %}{"@type": "Person", "name": {{ a | json_encode | safe }}}{% if not loop.last %},{% endif %}{% endfor %}],{% endif %}
+  "url": "{{ current_url | safe }}",
+  "inLanguage": "{{ lang | safe }}",
+  "publisher": {"@id": "{{ config.base_url | safe }}/#organization"}
+}
+{% endblock %}
+
+{% block content %}
+{% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <nav class="text-xs text-base-content/70 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/news/" class="hover:text-base-content">{{ t.news }}</a>
+    <span class="mx-1.5">/</span>
+    <span class="text-base-content/70">{{ page.title }}</span>
+  </nav>
+
+  <article>
+    <header class="mb-8">
+      <h1 class="text-2xl font-display">{{ page.title }}</h1>
+      <div class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-base-content/70">
+        {% if page.date %}<time datetime="{{ page.date }}">{{ page.date }}</time>{% endif %}
+        {% if page.authors | length > 0 %}<span>{{ t.news_by }} {{ page.authors | join(sep=", ") }}</span>{% endif %}
+      </div>
+      {% if page.taxonomies.tags is defined and page.taxonomies.tags | length > 0 %}
+      <div class="mt-3 flex flex-wrap gap-1.5">
+        {% for tag in page.taxonomies.tags %}
+        <span class="text-[11px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/70">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    <div class="prose prose-invert max-w-none">
+      {{ page.content | safe }}
+    </div>
+  </article>
+
+  {% include "partials/provenance.html" %}
+</div>
+{% endblock %}

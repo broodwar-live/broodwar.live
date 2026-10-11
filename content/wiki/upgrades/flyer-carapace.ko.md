@@ -1,21 +1,29 @@
 +++
 title = "비행 유닛 갑피"
-description = "Flyer Carapace — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "비행 유닛 갑피는 저그 스파이어에서 3단계까지 연구하는 업그레이드로, 단계마다 저그 공중 유닛의 방어력을 1씩 올린다."
 slug = "flyer-carapace"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
 race = "zerg"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "spire"
-research_time = 80
-affects = ["mutalisk", "scourge", "guardian", "devourer", "overlord"]
+research_time = 266
+affects = ["overlord", "mutalisk", "scourge", "guardian", "devourer", "queen"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-비행 유닛 갑피 업그레이드는 각 레벨마다 뮤탈리스크, 스커지, 가디언, 디바우러, 오버로드를 포함한 모든 저그 공중 유닛의 방어력을 +1씩 증가시킵니다. 방어력이 높을수록 피격당 받는 피해가 줄어들어 대공 화력에 대한 공중 유닛 생존력이 향상됩니다. 스파이어에서 연구하며, 상위 레벨은 그레이터 스파이어가 필요합니다.
+비행 유닛 갑피는 단계마다 오버로드, 뮤탈리스크, 스커지, 가디언, 디바우러, 퀸의 방어력을 1씩 올린다. 스파이어 또는 그레이터 스파이어에서 연구하며, 2단계는 레어, 3단계는 하이브가 필요하다.
 
-비행 유닛 갑피는 일반적으로 비행 유닛 공격력보다 우선순위가 낮지만 특정 상황에서 가치가 있습니다. 뮤탈리스크의 경우 방어력 업그레이드가 마린, 커세어, 히드라리스크 상대로 더 오래 생존하도록 도와 견제 수명을 연장합니다. 오버로드의 경우 서플라이 킬 시도에 대한 생존력이 향상됩니다. 방어력 강화 스커지는 때때로 목표에 도달하기 전 추가 타격을 버틸 수 있습니다.
+보통 비행 유닛 공격력 다음에 올리며, 타격당 피해가 낮은 마린이나 커세어를 상대로 공중 병력을 오래 굴릴 때 효과가 크다.
 
-비행 유닛 갑피는 보통 비행 유닛 공격력 1레벨 이후, 저그가 지속적인 공중 플레이를 확정하면 중반 11-13분경에 연구합니다. 많은 게임에서 스파이어가 공격력 연구에 점유되고 뮤탈리스크가 결국 페이즈 아웃되어 불필요해집니다. 그레이터 스파이어 가디언과 디바우러가 등장하는 후반에 더 관련성이 높아집니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 150 / 150 | 266초 | — |
+| 2 | 225 / 225 | 298초 | 레어 |
+| 3 | 300 / 300 | 330초 | 하이브 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

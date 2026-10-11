@@ -1,28 +1,19 @@
 +++
 title = "Afreeca Freecs"
-description = "Afreeca Freecs — StarCraft: Brood War professional team."
+description = "Afreeca Freecs — esports brand of the Korean streaming platform AfreecaTV (now SOOP), organiser of the ASL."
 slug = "afreeca-freecs"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "active"
 region = "South Korea"
-founded = "2016"
-notable_players = ["EffOrt", "Sharp", "Snow"]
+sources = ["https://liquipedia.net/starcraft/SOOP", "https://liquipedia.net/starcraft/ASL"]
 +++
-Afreeca Freecs represents the modern era of professional Brood War, formed in the wake of the game's revival through AfreecaTV's Afreeca StarCraft League (ASL). While the team's roots are in League of Legends esports, Afreeca's investment in the BW scene through the ASL has made them the most important organizational force in contemporary Brood War competition.
+Afreeca Freecs is the esports team brand of AfreecaTV, the South Korean streaming service that has since been renamed SOOP. It is not a Proleague-era Brood War team, and this wiki has no verified record of an Afreeca Freecs Brood War roster; the brand is listed here because of the platform's central role in post-Proleague Brood War.
 
-## The BW Revival
+## AfreecaTV / SOOP and Brood War
 
-When Blizzard released StarCraft: Remastered in 2017, AfreecaTV was already running the ASL — the spiritual successor to the OSL and MSL. Afreeca Freecs became closely associated with this revival, supporting players and providing the infrastructure needed to keep professional BW alive. The ASL gave veteran players a stage to compete and new fans a way to discover the game.
+- AfreecaTV organises and broadcasts the **AfreecaTV StarCraft League (ASL)**, the series of offline premier individual tournaments that has carried top-level Brood War since the end of the Proleague era.
+- Many former progamers stream Brood War on the platform (Liquipedia lists, among others, Bisu, Sea, Killer and hero), often playing fan-sponsored show matches funded by the platform's "Balloon" donations.
 
-## Modern Roster
-
-The Afreeca Freecs BW roster has featured a mix of veteran players from the golden era and newer talent. EffOrt (Kim Jung Woo) continued his legendary Zerg career under the Afreeca banner. Sharp (Lee Byung Ryul) brought veteran Terran experience. Snow (Lee Dong Yeon) provided strong Protoss representation. These players helped maintain the competitive standard that fans expect from professional BW.
-
-## Sustaining the Scene
-
-Afreeca Freecs' significance extends beyond wins and losses. By investing in BW infrastructure — tournament organization, streaming platforms, and player support — the organization has helped ensure that competitive Brood War continues to exist. In an era where most corporate sponsors have long since exited, Afreeca's sustained commitment to the scene is invaluable.
-
-## Legacy in Progress
-
-As an active organization, Afreeca Freecs' legacy is still being written. Their role in keeping professional BW alive during the post-Proleague era may ultimately be remembered as their most important contribution — ensuring that the greatest competitive RTS game ever made continues to thrive.
+See the [ASL](/tournaments/) and player pages for competitive results.

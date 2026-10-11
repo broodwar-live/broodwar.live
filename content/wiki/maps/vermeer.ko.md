@@ -1,17 +1,18 @@
 +++
 title = "Vermeer"
+description = "Vermeer는 주현서(LatiAs)가 Mini, Rush, herO와 함께 만든 4인용 정글 맵으로, ASL 시즌13부터 사용되었다."
 slug = "vermeer"
 template = "wiki/map.html"
 [extra]
-name_ko = "Vermeer"
+name_en = "Vermeer"
 dimensions = "128x128"
-tileset = "Twilight"
+tileset = "Jungle World"
 players = 4
-spawn_positions = ""
-era = "2024-present"
+spawn_positions = "1, 5, 7, 11"
+era = "2022-present"
+sources = ["https://liquipedia.net/starcraft/Vermeer"]
+verified = "2026-10-11"
 +++
-네덜란드 황금시대 화가 요하네스 페르메이르의 이름을 딴 현재 ASL 경쟁 맵풀의 트와일라잇 테마 4인용 맵이다. 2024년에 도입되었으며, 4개의 스폰 위치와 트와일라잇 타일셋 특유의 보라-파란 톤의 대기적 분위기를 가진 회전 대칭 구조이다. 각 본진은 적당한 초크 방어가 있는 언덕을 통해 앞마당과 연결된다.
+**Vermeer**는 주현서(LatiAs)가 Mini, Rush, herO 선수와 함께 제작한 정글(Jungle World) 타일셋의 4인용 맵이다. 크기는 128x128, 시작 위치는 1시, 5시, 7시, 11시이다. Radeon과 마찬가지로 AMD가 후원한 맵이다.
 
-페르메이르의 레이아웃은 개방 지형과 의미 있는 전략적 결정을 만드는 세심하게 배치된 지형 요소의 균형을 이룬다. 맵 중앙에는 공격적 맵 통제에 보상을 주는 경합 지역이 있고, 외곽은 매크로 지향 전략을 추구하는 선수에게 더 안전한 확장 기회를 제공한다. 트와일라잇 타일셋의 높낮이 지형은 군대 이동과 시야에 영향을 미치는 흥미로운 고지대 역학을 만든다.
-
-경쟁 로테이션의 신규 맵으로서 경쟁 역사를 쌓아가는 중이다. 초기 대회 결과는 모든 매치업에서 잘 진행됨을 보여주며, 어떤 종족도 지배적 우위를 갖지 않는다. 트와일라잇 타일셋의 미적 품질과 레이아웃의 전략적 깊이가 결합되어 ASL 방송에서 선수와 시청자 모두에게 인기 있는 맵이 되었다.
+2022년 2월 ASL 시즌13에 처음 채택되었다. 앞마당 입구는 건물로 완전히 막을 수 없다.

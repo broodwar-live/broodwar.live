@@ -1,6 +1,6 @@
 +++
 title = "원거리 공격력"
-description = "Missile Attacks — 스타크래프트: 브루드 워 Zerg 업그레이드."
+description = "원거리 공격력은 저그 에볼루션 챔버에서 3단계까지 연구하는 업그레이드로, 히드라리스크와 러커의 공격력을 올린다."
 slug = "missile-attacks"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "evolution-chamber"
-research_time = 80
+research_time = 266
 affects = ["hydralisk", "lurker"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-원거리 공격력 업그레이드는 각 레벨마다 히드라리스크와 러커의 기본 원거리 피해를 +1씩 증가시킵니다. 히드라리스크는 지상과 공중 대상 모두에 대한 직접 전투 화력이 향상됩니다. 러커의 경우 지하 가시 피해 증가로 매복 위치가 훨씬 치명적이 됩니다 — 공격 라인을 통과하는 유닛에 대한 각 가시 타격이 더 큰 피해를 줍니다. 에볼루션 챔버에서 연구하며, 상위 레벨은 레어와 하이브가 필요합니다.
+원거리 공격력은 단계마다 히드라리스크의 가시 공격 피해를 1, 러커의 땅속 가시 피해를 2 올린다. 2단계는 레어, 3단계는 하이브가 필요하다. 단계당 비용 증가는 미네랄·가스 50이다.
 
-경쟁전에서 원거리 공격력은 ZvP 히드라리스크 기반 빌드에서 핵심입니다. 업그레이드된 히드라리스크는 드라군과 훨씬 효율적으로 교전하고 커세어를 더 효과적으로 위협합니다. 미사일 업그레이드로 높아진 러커 피해는 진지 러커 위치를 점진적으로 돌파하기 어렵게 만들며, 특히 방어 진지를 돌파하려는 테란에게 그렇습니다. ZvT에서 업그레이드된 러커가 초크 포인트 뒤에 있으면 제거에 더 많은 시즈탱크나 사이언스 베슬 디텍션이 필요합니다.
+저프전 히드라리스크 운영이나 러커 위주 조합에서 주로 올리는 공격력 업그레이드다.
 
-원거리 공격력 타이밍은 조합에 따릅니다. 히드라리스크 중심 ZvP에서 에볼루션 챔버 완성 직후 7-8분경에 시작하며, 러커 플레이 ZvT에서 갑피 업그레이드와 함께 중반에 연구합니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 150 / 150 | 298초 | 레어 |
+| 3 | 200 / 200 | 330초 | 하이브 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

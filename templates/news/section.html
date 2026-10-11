@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }}{% endblock %}
+
+{% block content %}
+{% set t = config.extra.i18n[lang] %}
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <header class="mb-8">
+    <h1 class="text-2xl font-display">{{ section.title }}</h1>
+    {% if section.description %}
+    <p class="mt-2 text-sm text-base-content/70">{{ section.description }}</p>
+    {% endif %}
+  </header>
+
+  {% if section.pages | length > 0 %}
+  <div class="space-y-3">
+    {% for article in section.pages %}
+    <a href="{{ article.path }}" class="glass-card rounded-box p-5 glow-blue block no-underline">
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-base-content/70">
+        {% if article.date %}<time datetime="{{ article.date }}">{{ article.date }}</time>{% endif %}
+        {% if article.authors | length > 0 %}<span>{{ article.authors | join(sep=", ") }}</span>{% endif %}
+      </div>
+      <h2 class="mt-1.5 font-semibold">{{ article.title }}</h2>
+      {% if article.description %}
+      <p class="mt-1 text-sm text-base-content/70">{{ article.description }}</p>
+      {% endif %}
+      {% if article.taxonomies.tags is defined and article.taxonomies.tags | length > 0 %}
+      <div class="mt-3 flex flex-wrap gap-1.5">
+        {% for tag in article.taxonomies.tags %}
+        <span class="text-[11px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/70">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="glass-card rounded-box px-6 py-12 text-center">
+    <p class="text-sm text-base-content/70">{{ t.news_empty }}</p>
+    <a href="{{ config.extra.github_repo }}/tree/main/content/news" target="_blank" rel="noopener" class="btn btn-primary btn-soft btn-sm mt-6">{{ t.news_contribute }}</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

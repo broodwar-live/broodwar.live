@@ -1,17 +1,37 @@
 +++
 title = "Horang2"
-description = "Horang2 — Terran player from South Korea."
+description = "Horang2 (Lee Kyung Min) — Protoss player from South Korea."
 slug = "horang2"
 template = "players/player.html"
 [taxonomies]
-race = ["terran"]
+race = ["protoss"]
 [extra]
-image = "/images/players/horang2.png"
-race = "terran"
+race = "protoss"
 country = "KR"
 country_name = "South Korea"
-rating = 2440
-tier = "Legend"
-aliases = ["김정민", "Kim Jung Min"]
+real_name = "이경민"
+romanized_name = "Lee Kyung Min"
+birth_date = "1992-01-15"
+aliases = ["SaSin)Horang2", "Bingsu"]
+liquipedia = "https://liquipedia.net/starcraft/Horang2"
+soop = "rudals5467"
+sources = ["https://liquipedia.net/starcraft/Horang2"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hite SPARKYZ"
+from = "2008-03-05"
+to = "2010-10-12"
+[[extra.teams]]
+name = "Hite Entus"
+slug = "hite-entus"
+from = "2010-10-12"
+to = "2011-05-08"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2011-05-08"
+to = "2012-12-12"
 +++
-Horang2 carved out a reputation as one of the golden era's premier TvZ specialists, with a deep understanding of the matchup that allowed him to compete with the best Zerg players of his time. His mechanical skill was exceptional, featuring clean marine-medic control and precise siege tank positioning that made his army compositions punishing to engage into. He reached deep rounds in both OSL and MSL tournaments, and his consistent performances earned him respect as a reliable competitor even among flashier names. Horang2's fundamentally sound style of play served as a template for how Terran could methodically dismantle Zerg through superior positioning and timing. He remains a recognizable name from the golden era of professional Brood War.
+Horang2 (Lee Kyung Min) is a South Korean Protoss player, born in 1992. He played for Hite SPARKYZ from 2008, remained with the team as it became Hite Entus and then CJ Entus, and stayed until December 2012. He first drew attention by qualifying for the 2008 MSL with wins over Flash and GGPlay, and became a regular in Hite's Proleague lineup.
+
+Known for an unorthodox, cheese-oriented style, he was compared by Korean media to Nal_rA. He completed his military service in December 2014.

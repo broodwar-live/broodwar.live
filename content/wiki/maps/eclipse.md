@@ -1,17 +1,20 @@
 +++
 title = "Eclipse"
+description = "Eclipse is a 2-player Badlands map by LatiAs, used in ASL from Season 10 (2020)."
 slug = "eclipse"
 template = "wiki/map.html"
 [extra]
-name_ko = "Eclipse"
-dimensions = "128x128"
-tileset = "Twilight"
-players = 4
-spawn_positions = ""
-era = "2022-present"
+name_ko = "이클립스"
+dimensions = "128x112"
+tileset = "Badlands"
+players = 2
+spawn_positions = "1, 7"
+era = "2020-present"
+sources = ["https://liquipedia.net/starcraft/Eclipse", "https://web.archive.org/web/20220309025419/https://namu.wiki/w/%ED%8F%B4%EB%A6%AC%ED%8F%AC%EC%9D%B4%EB%93%9C"]
+verified = "2026-10-11"
 +++
-A well-regarded 4-player twilight map that has been part of the competitive pool since 2022, known for its remarkably balanced matchup statistics across all three races. Eclipse features the atmospheric purple-blue tones of the twilight tileset with four spawn positions in rotational symmetry. Each main base connects to a natural expansion through a ramp with solid chokepoint defense, while multiple pathways lead toward the center and adjacent quadrants.
+**Eclipse** is a 2-player map on the Badlands tileset, made by LatiAs (주현서). It is 128x112 with start locations at 1 and 7 o'clock.
 
-The map's layout reflects modern design principles — balanced distances between spawn positions, multiple viable attack routes, and expansion options that reward active map control. The center features a mix of open terrain and elevated twilight features that create dynamic engagement areas where high-ground control matters. The twilight terrain's raised and lowered sections add tactical depth, as armies moving through lowered passages can be ambushed from above.
+Eclipse entered use in May 2020. It was part of the map pools of ASL Seasons 10, 11 and 12 and of the StarCraft: Remastered ladder from 2020.
 
-Eclipse has earned its reputation through consistent competitive results showing near-equal win rates for all three races — a rare achievement in Brood War map design. The map rewards adaptable players who can read the game state and adjust their strategy, rather than favoring any single race or play style. Its balanced nature has made it a popular choice in ASL group stages and playoffs, where fairness in map selection is paramount. Eclipse represents the maturity of modern BW map design, where years of competitive data and design expertise combine to create near-perfect competitive balance.
+The map has 11 bases. Each natural has a neutral Lurker egg at its entrance that helps with walling. The third base has a single ramp and is easy to hold once established, but it is far from the main and natural. Several outlying bases are away from the usual attack paths, which makes hidden expansions viable, and the large mains allow proxies inside the opponent's base.

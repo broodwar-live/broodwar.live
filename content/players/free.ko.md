@@ -1,17 +1,34 @@
 +++
 title = "free"
-description = "free — 한국의 저그 선수."
+description = "free(윤용태) — 한국의 프로토스 선수."
 slug = "free"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/free.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2450
-tier = "Legend"
-aliases = ["이경민", "Lee Kyung Min"]
+real_name = "윤용태"
+romanized_name = "Yoon Yong Tae"
+birth_date = "1988-07-14"
+years_active = "2005–2013"
+aliases = ["free[gm]", "pretty[gm]", "freey"]
+liquipedia = "https://liquipedia.net/starcraft/Free"
+soop = "dbsdydx"
+sources = ["https://liquipedia.net/starcraft/Free"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Hanbit Stars"
+slug = "hanbit-stars"
+from = "2005-08-11"
+to = "2008-09"
+[[extra.teams]]
+name = "Woongjin Stars"
+slug = "woongjin-stars"
+from = "2008-09"
+to = "2013-10-01"
 +++
-free는 강한 ZvT 플레이와 꾸준한 대회 성적으로 인정받은 황금기의 전설적 저그입니다. 현명한 뮤탈리스크 견제, 효율적인 드론 관리, 가장 견고한 테란 진지도 넘어서는 인내심 있는 후반 플레이가 매치업 접근의 특징이었습니다. OSL과 MSL 대회에서 여러 차례 깊은 라운드에 진출하며 레전드 지위를 인정받는 안정성을 보여주었습니다. 매크로 중심 스타일은 화려한 공격보다 경제적 우위로 저그가 이기는 방법의 모범이었습니다. 현역에서 은퇴했지만, 황금기의 경쟁 기준을 정의하는 데 기여한 안정적인 저그 선수로 기억됩니다.
+free(윤용태)는 1988년생 대한민국의 프로토스 선수이다. 2005년 한빛 스타즈에 입단했고, 2008년 팀이 웅진 스타즈로 바뀐 뒤에도 2013년까지 프로리그 주축으로 활약했다.
+
+하나대투 MSL, 대한항공 OSL 시즌 2 등 개인리그 4강에 네 차례 올랐으나 매번 최종 우승자에게 패했다. KeSPA 시대 이후에는 아프리카TV 아마추어 리그에서 활동하며 제11회 SonicTV 스타리그 4위를 기록했고 ASL 시즌 2 본선에 진출했다.

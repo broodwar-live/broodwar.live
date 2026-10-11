@@ -1,17 +1,35 @@
 +++
-title = "FrOzEn"
-description = "FrOzEn — 한국의 저그 선수."
+title = "FrOzen"
+description = "FrOzen(김동건) — 삼성 칸과 STX 소울에서 활동한 은퇴 테란, 2008 박카스 스타리그 8강."
 slug = "frozen"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["terran"]
 [extra]
-image = "/images/players/frozen.png"
-race = "zerg"
+race = "terran"
 country = "KR"
 country_name = "한국"
-rating = 2430
-tier = "Legend"
-aliases = ["이정현", "Lee Jung Hyun"]
+real_name = "김동건"
+romanized_name = "Kim Dong Kun"
+birth_date = "1988-11-29"
+status = "retired"
+aliases = ["FrOzean", "FrOzen[Name]", "CuteAngeL[Name]", "FrOzean[Name]", "O.oc", "CuteAngel"]
+liquipedia = "https://liquipedia.net/starcraft/FrOzen"
+sources = ["https://liquipedia.net/starcraft/FrOzen"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Samsung KHAN"
+slug = "samsung-khan"
+from = ""
+to = "2009"
+[[extra.teams]]
+name = "STX SouL"
+slug = "stx-soul"
+from = "2009"
+to = ""
 +++
-FrOzEn은 혁신적인 전략과 창의적인 게임 접근으로 유명한 황금기의 전설적 저그입니다. 독특한 빌드와 유닛 조합 실험에 대한 의지로 예측 불가능하고 볼거리가 풍부했습니다. ZvP가 시그니처 매치업으로, 러커와 뮤탈리스크 견제의 창의적 활용으로 잘 준비된 프로토스도 흔들 수 있었습니다. 메이저 대회에서 깊은 라운드에 진출하며 저그가 전략적으로 할 수 있는 것의 한계를 넓힌 것으로 인정받았습니다. 황금기의 창의적 정신 중 한 명으로서의 유산은 게임 접근에서 혁신을 중시하는 선수들에게 계속 영감을 주고 있습니다.
+FrOzen(김동건)은 1988년 11월 29일생 대한민국의 은퇴한 테란 프로게이머로, FrOzean이라는 아이디로도 활동했다. [삼성 칸](@/wiki/teams/samsung-khan.ko.md)에서 데뷔했고 2009년 말 [STX 소울](@/wiki/teams/stx-soul.ko.md)로 트레이드되었다.
+
+개인리그 최고 성적은 [2008 박카스 스타리그](@/tournaments/2008-bacchus-osl.ko.md) 8강이다. [2008 클럽데이 온라인 MSL](@/tournaments/2008-club-day-online-msl.ko.md)과 [2009 로스트사가 MSL](@/tournaments/2009-lost-saga-msl.ko.md)에서는 16강에 올랐으나 각각 NaDa와 [JangBi](@/players/jangbi.ko.md)에게 패했다. 삼성이 르까프 OZ에 진 [2007 신한은행 프로리그 그랜드 파이널](@/tournaments/2007-shinhan-bank-proleague-grand-final.ko.md)에서는 1세트에서 [Jaedong](@/players/jaedong.ko.md)을 꺾었다.
+
+2008–09 프로리그를 0승 12패로 마쳐 리그 최하위 개인 성적을 기록했다. STX로 옮긴 뒤에는 2009–10 시즌 1·2라운드를 5승 5패로 마치며 성적을 끌어올렸다.

@@ -1,17 +1,27 @@
 +++
 title = "Motive"
-description = "Motive — 한국의 저그 선수."
+description = "Motive(원선재) — 2011년 KT 롤스터에 입단한 대한민국 프로토스, ASL 시즌 18 출전."
 slug = "motive"
 template = "players/player.html"
 [taxonomies]
-race = ["zerg"]
+race = ["protoss"]
 [extra]
-image = "/images/players/motive.png"
-race = "zerg"
+race = "protoss"
 country = "KR"
 country_name = "한국"
-rating = 2410
-tier = "B"
-aliases = ["이정현", "Lee Jung Hyun"]
+real_name = "원선재"
+romanized_name = "Won Seon Jae"
+birth_date = "1993-07-12"
+aliases = ["Lizzy", "WanGGoChi"]
+liquipedia = "https://liquipedia.net/starcraft/Motive"
+sources = ["https://liquipedia.net/starcraft/Motive"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "KT Rolster"
+slug = "kt-rolster"
+from = "2011-03-28"
+to = ""
 +++
-Motive는 탄탄한 기본기와 경제적 효율을 우선시하는 매크로 지향 플레이를 선호하며 현대 씬에서 활동하는 한국 저그입니다. ZvP가 가장 안정적인 매치업으로, 인내심 있는 경제 발전과 효과적인 러커 활용이 후반 병력의 강한 기반을 만듭니다. ASL 예선과 한국 온라인 대회에서 경쟁하며 모든 시리즈에 안정성을 가져옵니다. 깔끔한 매크로 관리와 탄탄한 방어 플레이로 초반 공격에 의존하여 이기려는 선수들에게 어려운 상대입니다.
+Motive(원선재)는 1993년 7월 12일생 대한민국의 프로토스 선수이다. KeSPA 브루드 워 리그 막바지인 2011년 3월 28일 [KT 롤스터](@/wiki/teams/kt-rolster.ko.md)에 입단했고, 팀이 스타크래프트 II로 전환한 뒤에도 남아 프로토스로 활동했다. Lizzy, WanGGoChi라는 아이디도 사용했다.
+
+KeSPA 시대가 끝나고 한참 뒤 아프리카TV 개인리그에 복귀해, 2024년 [ASL 시즌 18](@/tournaments/asl-s18.ko.md) 본선에 진출했다.

@@ -1,5 +1,6 @@
 +++
 title = "Command Center"
+description = "The Command Center is the Terran main building that trains SCVs and can carry a Comsat Station or Nuclear Silo add-on."
 slug = "command-center"
 template = "wiki/building.html"
 [taxonomies]
@@ -16,7 +17,9 @@ build_time = 120
 hotkey = "B→C"
 size = "large"
 produces = ["scv"]
-unlocks = ["barracks", "supply-depot", "engineering-bay", "refinery"]
+unlocks = ["barracks", "engineering-bay"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Command Center is Terran's main base structure, responsible for producing SCVs and serving as the economic heart of every base. It is the first building a Terran player starts with and the foundation upon which all Terran tech is built. The Command Center supports two mutually exclusive add-ons: the Comsat Station, which provides Scanner Sweep for instant detection and scouting anywhere on the map, and the Nuclear Silo, which manufactures nuclear missiles for Ghost strikes.
 

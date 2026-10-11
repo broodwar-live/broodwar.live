@@ -1,17 +1,32 @@
 +++
 title = "sAviOr"
-description = "sAviOr — Zerg player from South Korea."
+description = "sAviOr (Ma Jae Yoon) — Zerg player from South Korea."
 slug = "savior"
 template = "players/player.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-image = "/images/players/savior.png"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-rating = 2510
-tier = "Legend"
-aliases = ["마재윤", "Ma Jae Yoon"]
+real_name = "마재윤"
+romanized_name = "Ma Jae Yoon"
+birth_date = "1987-11-23"
+status = "retired"
+aliases = ["IPXZerg", "sAviOr[gm]"]
+liquipedia = "https://liquipedia.net/starcraft/SAviOr"
+sources = ["https://liquipedia.net/starcraft/SAviOr"]
+verified = "2026-10-11"
+[[extra.teams]]
+name = "Greatest One"
+from = ""
+to = "2006-04"
+[[extra.teams]]
+name = "CJ Entus"
+slug = "cj-entus"
+from = "2006-04"
+to = "2010-06-09"
 +++
-sAviOr, known as "The Maestro," was the most dominant Zerg player during his peak in the mid-2000s, winning four consecutive MSL titles in a stretch of dominance rarely seen in any esport. His strategic mastery of ZvT revolutionized the matchup, demonstrating that Zerg could control the tempo against even the strongest Terran players through superior macro and timing. sAviOr's game sense was extraordinary — he could read opponent strategies with uncanny accuracy and position his units for maximum efficiency. His rivalry with Bisu and other top Protoss and Terran players produced some of the golden era's greatest matches. Tragically, his career ended in disgrace due to involvement in the 2010 match-fixing scandal, which resulted in a lifetime ban. Despite this, his in-game legacy as one of the most strategically brilliant players ever remains significant.
+sAviOr (Ma Jae Yoon) is a former South Korean Zerg player born in 1987, nicknamed "The Maestro." He played for Greatest One and then CJ Entus until 2010.
+
+He won the UZOO MSL (2005), both Pringles MSL seasons (2006) and the Shinhan Bank Starleague Season 3 (2006), and was runner-up in two further MSL finals. He held the number one KeSPA ranking nine times and is credited with popularizing builds such as the three-hatch Mutalisk opening against Terran. His career ended with his involvement in the 2010 match-fixing scandal.

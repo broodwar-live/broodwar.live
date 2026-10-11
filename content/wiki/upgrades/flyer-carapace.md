@@ -1,21 +1,29 @@
 +++
 title = "Flyer Carapace"
-description = "Flyer Carapace — Zerg upgrade in StarCraft: Brood War."
+description = "Flyer Carapace is the Zerg Spire upgrade that gives Zerg air units +1 armor per level, up to three levels."
 slug = "flyer-carapace"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
 race = "zerg"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "spire"
-research_time = 80
-affects = ["mutalisk", "scourge", "guardian", "devourer", "overlord"]
+research_time = 266
+affects = ["overlord", "mutalisk", "scourge", "guardian", "devourer", "queen"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Each level of Flyer Carapace adds +1 armor to all Zerg air units, including Mutalisks, Scourge, Guardians, Devourers, and Overlords. Higher armor reduces incoming damage per hit, improving air unit survivability against anti-air fire. Researched at the Spire, with higher levels requiring a Greater Spire.
+Each level of Flyer Carapace adds 1 armor to the Overlord, Mutalisk, Scourge, Guardian, Devourer and Queen. It is researched at the Spire or Greater Spire; level 2 requires a Lair and level 3 a Hive.
 
-Flyer Carapace is generally lower priority than Flyer Attacks but has specific value in certain situations. For Mutalisks, armor upgrades help them survive longer against Marines, Corsairs, and Hydralisks, extending their harassment lifespan. For Overlords, increased armor provides better survivability against attempts to snipe them for supply kills. Armored Scourge can sometimes survive an extra hit before reaching their targets, though this is situational.
+It is usually researched after Flyer Attacks, when the Zerg air force is a long-term investment — for example against Marines or Corsairs, whose low per-hit damage is reduced noticeably by each point of armor.
 
-Flyer Carapace is typically researched after the first level of Flyer Attacks, starting in the mid-game around 11-13 minutes if the Zerg player is committing to sustained air play. In many games, the Spire is occupied with Flyer Attacks research and Mutalisks are eventually phased out, making Flyer Carapace unnecessary. It becomes more relevant in late-game scenarios with Greater Spire Guardians and Devourers.
+| Level | Minerals / Gas | Research time | Requires |
+|---|---|---|---|
+| 1 | 150 / 150 | 266 s | — |
+| 2 | 225 / 225 | 298 s | Lair |
+| 3 | 300 / 300 | 330 s | Hive |
+
+Research times are in game seconds at Normal speed (frames ÷ 15), the convention used across this wiki.

@@ -1,25 +1,32 @@
 +++
 title = "CJ Entus"
-description = "CJ Entus — StarCraft: Brood War professional team."
+description = "CJ Entus (formerly GO / SUMA GO) — Korean StarCraft: Brood War team, 2011–12 Proleague Season 2 champion."
 slug = "cj-entus"
 template = "wiki/team.html"
 [extra]
 status = "disbanded"
 region = "South Korea"
-founded = "1999"
-disbanded = "2016"
-notable_players = ["sAviOr", "EffOrt", "hero"]
+founded = "2001"
+notable_players = ["sAviOr", "EffOrt", "Leta", "XellOs", "sKyHigh"]
+sources = ["https://liquipedia.net/starcraft/CJ_Entus", "https://liquipedia.net/starcraft/Hite_Entus", "https://liquipedia.net/starcraft/List_of_Proleague_Seasons", "https://liquipedia.net/starcraft/Template:Proleague_Champions_Navbox"]
+verified = "2026-10-11"
 +++
-CJ Entus was one of the founding pillars of Korean professional Brood War, operating continuously from 1999 until 2016. The team was particularly known for producing exceptional Zerg players and maintaining competitive relevance across the entire professional era, from the early days of televised StarCraft through the final Proleague seasons.
+CJ Entus is one of the oldest Korean StarCraft teams. "Entus" comes from "entertain us", and the team was widely regarded as having one of the deepest line-ups across all three races.
 
-## The sAviOr Era
+## Name history
 
-Ma Jae Yoon (sAviOr), "The Maestro," defined CJ Entus during the mid-2000s. His revolutionary Zerg play dominated the MSL circuit, and he was considered the greatest Zerg player of his generation. sAviOr's strategic innovations in ZvT and ZvP influenced the metagame for years. His career ended in disgrace following the 2010 match-fixing scandal, but his impact on the game's tactical evolution remains undeniable.
+- January 2001 — founded as ProSuma
+- April 2002 — Greatest One (GO); September 2003 — SUMA GO; September 2004 — GO again
+- April 2006 — CJ Entus
+- October 2010 — merged with Hite SPARKYZ, which had been crippled by the match-fixing scandal, and played as [Hite Entus](/wiki/teams/hite-entus/)
+- May 2011 — back to CJ Entus after the Hite naming-rights deal expired
 
-## EffOrt and the Later Years
+## Players
 
-After sAviOr's fall, Kim Jung Woo (EffOrt) emerged as the team's new Zerg ace. EffOrt's exceptional defiler control and late-game mastery made him one of the most feared players in the modern era. His ability to turn seemingly lost games into victories through precise plague and dark swarm usage became his signature. hero (Kim Tae Yeong) anchored the Terran position with steady, reliable play.
+Former bonjwa sAviOr, Starleague champions XellOs and GGPlay, and contenders such as Iris and OversKy played for the team. sAviOr retired after the match-fixing scandal; the later core was led by captain Leta together with sKyHigh and EffOrt.
 
-## Legacy
+## Titles
 
-CJ Entus disbanded in 2016 as the CJ Group exited esports. The team's seventeen-year run makes it one of the longest-operating organizations in BW history. CJ Entus represents the full arc of Korean professional Brood War — from the wild early days through the golden age and into the twilight of the professional era.
+- As (SUMA) GO: 2003 Neowiz Pmang Cup, 2003 KeMongSa KPGA Tour Team League, 2003 LifeZone KPGA Team League, 2004–05 MBCMovies MBCGame Team League
+- 2009 Shinhan Bank Winners League — won the Grand Final 4–3 over Hwaseung OZ after sKyHigh's reverse all-kill
+- 2011–12 SK Planet Proleague Season 2 (BW/SC2 hybrid)

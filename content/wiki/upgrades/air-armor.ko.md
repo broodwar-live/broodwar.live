@@ -1,21 +1,29 @@
 +++
 title = "공중 방어력"
-description = "Air Armor — 스타크래프트: 브루드 워 Protoss 업그레이드."
+description = "공중 방어력은 프로토스 사이버네틱스 코어에서 3단계까지 연구하는 업그레이드로, 단계마다 프로토스 공중 유닛의 방어력을 1씩 올린다."
 slug = "air-armor"
 template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
 race = "protoss"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "cybernetics-core"
-research_time = 80
-affects = ["scout", "corsair", "carrier", "arbiter", "shuttle", "observer"]
+research_time = 266
+affects = ["corsair", "scout", "carrier", "arbiter", "shuttle", "observer"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-공중 방어력 업그레이드는 각 레벨마다 스카웃, 커세어, 캐리어, 아비터, 셔틀, 옵저버를 포함한 모든 프로토스 공중 유닛의 방어력을 +1씩 증가시킵니다. 방어력이 높을수록 피격당 받는 피해가 줄어들어 대공 화력에 대한 생존력이 향상됩니다. 사이버네틱스 코어에서 연구하며, 상위 레벨은 플릿 비콘이 필요합니다.
+공중 방어력은 단계마다 커세어, 스카웃, 캐리어(인터셉터 포함), 아비터, 셔틀, 옵저버의 방어력을 1씩 올린다. 지상 방어력과 마찬가지로 체력에 들어가는 피해에만 적용되고 실드에는 적용되지 않는다. 2·3단계는 플릿 비콘이 필요하다.
 
-공중 방어력은 프로토스가 공중 중심 조합을 확정할 때 주로 의미가 있습니다. 캐리어 플레이에서 방어력 업그레이드는 인터셉터와 캐리어 자체를 파괴하기 어렵게 만들어 전투 수명을 크게 연장합니다. 커세어 중심 전략에서 방어력은 스커지와 대공 공격에 더 오래 생존하도록 돕습니다. 지원 유닛에게도 이점을 주어 방어력 강화 셔틀은 리버 드랍 중 더 오래 버티고 옵저버는 저격당하기 어려워집니다.
+대체로 뒤로 미루는 업그레이드로, 캐리어나 커세어를 대량으로 모으는 장기전에서 연구한다.
 
-공중 방어력은 보통 공중 조합을 확정할 때 중후반에 연구합니다. 캐리어 빌드에서 공중 무기 1레벨 이후 12-15분경에 시작하는 것이 일반적입니다. 표준 지상 중심 프로토스 플레이에서는 거의 연구하지 않습니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 150 / 150 | 266초 | — |
+| 2 | 225 / 225 | 298초 | 플릿 비콘 |
+| 3 | 300 / 300 | 330초 | 플릿 비콘 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

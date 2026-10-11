@@ -1,17 +1,20 @@
 +++
 title = "Polypoid"
+description = "Polypoid is a 4-player Jungle World map by KM-, introduced for ASL Season 9 in 2020."
 slug = "polypoid"
 template = "wiki/map.html"
 [extra]
-name_ko = "Polypoid"
+name_ko = "폴리포이드"
 dimensions = "128x128"
 tileset = "Jungle World"
 players = 4
 spawn_positions = "2, 5, 7, 10"
-era = "2022-present"
+era = "2020-present"
+sources = ["https://liquipedia.net/starcraft/Polypoid", "https://web.archive.org/web/20220309025419/https://namu.wiki/w/%ED%8F%B4%EB%A6%AC%ED%8F%AC%EC%9D%B4%EB%93%9C"]
+verified = "2026-10-11"
 +++
-A modern 4-player jungle map that has become a centerpiece of the ASL competitive pool since its introduction. Polypoid features rotational symmetry with spawn positions at the 2, 5, 7, and 10 o'clock positions. Each main base connects to a semi-island natural expansion that requires careful defense, while mineral-only expansions sit closer to the center of the map, creating difficult decisions about when and where to expand.
+**Polypoid** is a 4-player map on the Jungle World tileset, made by 김재민 (KM-). It is 128x128 with start locations at 2, 5, 7 and 10 o'clock.
 
-The map's semi-island naturals are its defining feature — they can be accessed by ground but through narrow paths, making them easier to defend but also vulnerable to contain strategies. This design rewards patient, defensive play and late-game army compositions. Protoss players often thrive on Polypoid due to the ability to wall off and build toward a powerful late-game deathball, while Zerg must be creative with expansion timing and creep spread to avoid being boxed in.
+Polypoid placed second in a map contest and became one of the four new maps of ASL Season 9 in 2020. Revised versions were used in ASL Seasons 10, 11 and 12 and in the ASTL team league, and the map has been in the StarCraft: Remastered ladder pool.
 
-Polypoid has been featured regularly in ASL seasons from 2022 onward, producing many memorable macro games. The map is considered slightly Protoss-favored in PvZ due to the defensive natural layout, though skilled Zerg players have found ways to exploit the multiple paths to the center. In TvP, the map plays relatively evenly, with Terran mech builds finding good positioning on the central high ground.
+The map has 16 bases. Each main has a single ramp to a wallable natural, the third bases are open mineral-only expansions backed only by cliffs toward the main, and the fourth bases at 3, 6, 9 and 12 o'clock have two entrances. The open layout allows wide encirclements, the center is unbuildable, and the large mains are vulnerable to drops.

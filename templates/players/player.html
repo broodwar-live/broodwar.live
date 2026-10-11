@@ -5,80 +5,264 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Players", "item": "{{ config.base_url }}/players"},
-    {"@type": "ListItem", "position": 2, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 1, "name": "Players", "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/players"},
+    {"@type": "ListItem", "position": 2, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "Person",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
-  "url": "{{ current_url }}",
-  "nationality": "{{ page.extra.country_name }}"
+  "name": {{ page.title | json_encode | safe }},
+  {% if page.extra.real_name is defined %}"alternateName": {{ page.extra.real_name | json_encode | safe }},{% endif %}
+  {% if page.extra.birth_date is defined %}"birthDate": "{{ page.extra.birth_date }}",{% endif %}
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
+  {% if page.extra.liquipedia is defined %}"sameAs": [{{ page.extra.liquipedia | json_encode | safe }}],{% endif %}
+  "nationality": {{ page.extra.country_name | json_encode | safe }}
 }
 {% endblock %}
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
+{% set race_class = "text-base-content" %}{% set race_bg = "bg-base-content" %}{% set race_name = e.race | title %}{% set race_letter = "?" %}
+{% if e.race == "terran" %}{% set race_class = "text-race-terran" %}{% set race_bg = "bg-race-terran" %}{% set race_name = t.player_race_terran %}{% set race_letter = "T" %}
+{% elif e.race == "protoss" %}{% set race_class = "text-race-protoss" %}{% set race_bg = "bg-race-protoss" %}{% set race_name = t.player_race_protoss %}{% set race_letter = "P" %}
+{% elif e.race == "zerg" %}{% set race_class = "text-race-zerg" %}{% set race_bg = "bg-race-zerg" %}{% set race_name = t.player_race_zerg %}{% set race_letter = "Z" %}{% endif %}
+{% set status = "" %}{% if e.status is defined %}{% set status = e.status %}{% endif %}
+{% set cc = e.country %}
+
+{#- Titles come from the tournament series pages (single source of truth): every season whose
+    winner_slug / runner_up_slug equals this page's slug. -#}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+{% set_global n_titles = 0 %}{% set_global n_runner = 0 %}
+{% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}
+  {% if s.winner_slug is defined and s.winner_slug == page.slug %}{% set_global n_titles = n_titles + 1 %}{% endif %}
+  {% if s.runner_up_slug is defined and s.runner_up_slug == page.slug %}{% set_global n_runner = n_runner + 1 %}{% endif %}
+{% endfor %}{% endif %}{% endfor %}
+
+{#- Playoff record: every bracket match on a season page (tournaments/*.md with extra.bracket)
+    where a_slug or b_slug is this page's slug. Tera has no list append, so each match is
+    serialised as a JSON object and the list is parsed once with load_data(literal=...).
+    The final is the last bracket round when it holds a single match (language-neutral:
+    KO season pages translate round names). A match is a walkover when it sets
+    `walkover = "a" | "b" | true` or lacks a score; walkovers count as series results
+    (when the winner is known) but never as games. See templates/players/playoff-record.html. -#}
+{% set_global rec_json = "" %}{% set_global rec_seasons = 0 %}
+{% for sp in tsec.pages %}{% if sp.extra.bracket is defined and sp.extra.bracket | length > 0 %}
+{% set_global rec_seasons = rec_seasons + 1 %}
+{% set se = sp.extra %}
+{% set s_end = se.end_date | default(value=se.final_date | default(value=se.year ~ "")) %}
+{% for rd in se.bracket %}{% set ri = loop.index %}{% set rd_final = loop.last and rd.matches | length == 1 %}
+{% for m in rd.matches %}
+{% set ma = m.a_slug | default(value="") %}{% set mb = m.b_slug | default(value="") %}
+{% if ma == page.slug or mb == page.slug %}
+  {% if ma == page.slug %}{% set me = "a" %}{% set o_slug = mb %}{% set o_name = m.b %}{% else %}{% set me = "b" %}{% set o_slug = ma %}{% set o_name = m.a %}{% endif %}
+  {% set has_sc = m.score_a is defined and m.score_b is defined %}
+  {% set wo = (m.walkover is defined and m.walkover) or not has_sc %}
+  {% set win = "" %}
+  {% if m.walkover is defined and (m.walkover == "a" or m.walkover == "b") %}{% set win = m.walkover %}
+  {% elif has_sc and m.score_a > m.score_b %}{% set win = "a" %}
+  {% elif has_sc and m.score_b > m.score_a %}{% set win = "b" %}{% endif %}
+  {% set res = "" %}{% if win == me %}{% set res = "W" %}{% elif win %}{% set res = "L" %}{% endif %}
+  {% set my_g = 0 %}{% set op_g = 0 %}
+  {% if has_sc %}{% if me == "a" %}{% set my_g = m.score_a %}{% set op_g = m.score_b %}{% else %}{% set my_g = m.score_b %}{% set op_g = m.score_a %}{% endif %}{% endif %}
+  {% set o_race = "" %}{% set o_key = "~" ~ o_name %}
+  {% if o_slug %}{% set o_page = get_page(path="players/" ~ o_slug ~ ".md", lang=lang) %}{% set o_race = o_page.extra.race %}{% set o_name = o_page.title %}{% set o_key = o_slug %}{% endif %}
+  {% set d = m.date | default(value="") %}
+  {% set k = (d or s_end) ~ "-" ~ (ri < 10 and "0" or "") ~ ri ~ "-" ~ (loop.index < 10 and "0" or "") ~ loop.index %}
+  {% set_global rec_json = rec_json ~ "," ~ {"k": k, "d": d, "y": se.year, "p": sp.path, "s": sp.title, "l": se.series_name, "r": rd.round, "o": o_key, "os": o_slug, "on": o_name, "or": o_race, "mg": my_g, "og": op_g, "res": res, "f": rd_final, "st": rd_final and "final" or "", "wo": wo, "sc": has_sc} | json_encode | safe %}
+{% endif %}
+{% endfor %}{% endfor %}
+{% endif %}{% endfor %}
+{% set recs = load_data(literal="[" ~ (rec_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
+{#- Team-league playoff sets: every set on a team-league season page (extra.team_bracket, see
+    tournaments/team-season.html) in which this player played, as a JSON record like `recs`.
+    Kept apart from `recs` so the individual playoff record above is unchanged. Each record:
+    k sort key, d date, p/s link/title, l league, r round, f final (st "final" | ""), mt/mts
+    own team name/slug, ot/ots opposing team, fmt "1v1" | "2v2", o opponent key (1v1 only:
+    slug or "~name"), os/on/or opponent slug/name/race, pn partner (2v2), map/ms map name/slug,
+    ace, res "W" | "L". Walkover sets are skipped. See players/team-league-record.html. -#}
+{% set_global tl_json = "" %}{% set_global tl_seasons = 0 %}
+{% for sp in tsec.pages %}{% if sp.extra.team_bracket is defined and sp.extra.team_bracket | length > 0 %}
+{% set_global tl_seasons = tl_seasons + 1 %}
+{% set se = sp.extra %}
+{% for rd in se.team_bracket %}{% set ri = loop.index %}{% set rd_final = loop.last and rd.matches | length == 1 %}
+{% for m in rd.matches %}{% set mi = loop.index %}
+{% if m.legs is defined %}{% set games = m.legs %}{% elif m.sets is defined %}{% set games = [m] %}{% else %}{% set games = [] %}{% endif %}
+{% for g in games %}{% set gi = loop.index %}
+{% for st in g.sets %}
+  {% set sa1 = st.a_slug | default(value="") %}{% set sa2 = st.a2_slug | default(value="") %}
+  {% set sb1 = st.b_slug | default(value="") %}{% set sb2 = st.b2_slug | default(value="") %}
+  {% set me = "" %}
+  {% if sa1 == page.slug or sa2 == page.slug %}{% set me = "a" %}{% elif sb1 == page.slug or sb2 == page.slug %}{% set me = "b" %}{% endif %}
+  {% if me and not (st.walkover is defined and st.walkover) %}
+    {% set two = st.a2 is defined or st.b2 is defined %}
+    {% if me == "a" %}
+      {% set mt = m.a %}{% set mts = m.a_team | default(value="") %}{% set ot = m.b %}{% set ots = m.b_team | default(value="") %}
+      {% set on = st.b %}{% set os = sb1 %}{% set orc = st.b_race | default(value="") %}
+      {% if two %}{% if sa1 == page.slug %}{% set pn = st.a2 | default(value="") %}{% else %}{% set pn = st.a %}{% endif %}{% set on = st.b ~ " & " ~ st.b2 | default(value="") %}{% set os = "" %}{% set orc = "" %}{% else %}{% set pn = "" %}{% endif %}
+    {% else %}
+      {% set mt = m.b %}{% set mts = m.b_team | default(value="") %}{% set ot = m.a %}{% set ots = m.a_team | default(value="") %}
+      {% set on = st.a %}{% set os = sa1 %}{% set orc = st.a_race | default(value="") %}
+      {% if two %}{% if sb1 == page.slug %}{% set pn = st.b2 | default(value="") %}{% else %}{% set pn = st.b %}{% endif %}{% set on = st.a ~ " & " ~ st.a2 | default(value="") %}{% set os = "" %}{% set orc = "" %}{% else %}{% set pn = "" %}{% endif %}
+    {% endif %}
+    {% set ok = "" %}{% if not two %}{% if os %}{% set ok = os %}{% set o_page = get_page(path="players/" ~ os ~ ".md", lang=lang) %}{% set on = o_page.title %}{% else %}{% set ok = "~" ~ on %}{% endif %}{% endif %}
+    {% set d = g.date | default(value=m.date | default(value="")) %}
+    {% set k = d ~ "-" ~ (ri < 10 and "0" or "") ~ ri ~ "-" ~ (mi < 10 and "0" or "") ~ mi ~ "-" ~ gi ~ "-" ~ (loop.index < 10 and "0" or "") ~ loop.index %}
+    {% set_global tl_json = tl_json ~ "," ~ {"k": k, "d": d, "p": sp.path ~ "#tl-r" ~ ri ~ "-m" ~ mi, "s": sp.title, "l": se.series_name, "r": rd.round, "f": rd_final, "st": rd_final and "final" or "", "mt": mt, "mts": mts, "ot": ot, "ots": ots, "fmt": two and "2v2" or "1v1", "o": ok, "os": os, "on": on, "or": orc, "pn": pn, "map": st.map | default(value=""), "ms": st.map_slug | default(value=""), "ace": st.ace | default(value=false), "res": st.winner == me and "W" or "L"} | json_encode | safe %}
+  {% endif %}
+{% endfor %}
+{% endfor %}{% endfor %}{% endfor %}
+{% endif %}{% endfor %}
+{% set tls = load_data(literal="[" ~ (tl_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
+
+{#- Totals (finals and walkovers included) for the header, infobox and summary. -#}
+{% set_global r_sw = 0 %}{% set_global r_sl = 0 %}{% set_global r_fw = 0 %}{% set_global r_fl = 0 %}
+{% for r in recs %}
+  {% if r.res == "W" %}{% set_global r_sw = r_sw + 1 %}{% if r.f %}{% set_global r_fw = r_fw + 1 %}{% endif %}
+  {% elif r.res == "L" %}{% set_global r_sl = r_sl + 1 %}{% if r.f %}{% set_global r_fl = r_fl + 1 %}{% endif %}{% endif %}
+{% endfor %}
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="/players" class="hover:text-base-content/60">{{ t.players }}</a>
-    <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ page.title }}</span>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/players/" class="hover:text-primary">{{ t.players }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ page.title }}</span>
   </nav>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    <div class="lg:col-span-2">
-      <div class="flex items-center gap-4 mb-2">
-        <h1 class="text-2xl font-display">{{ page.title }}</h1>
-        <span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-semibold">{{ e.tier }}</span>
-      </div>
-      <div class="flex items-center gap-3 mt-1">
-        <span class="text-[10px] font-bold badge-race
-          {% if e.race == 'terran' %}text-race-terran
-          {% elif e.race == 'protoss' %}text-race-protoss
-          {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">
-          {{ e.race | title }}
-        </span>
-        <span class="text-xs text-base-content/40">{{ e.country_name }}</span>
-      </div>
+  <header class="mb-6">
+    <div class="flex flex-wrap items-center gap-3">
+      <h1 class="text-3xl font-display">{{ page.title }}</h1>
+      {% if status == "active" %}
+      <span class="text-[11px] px-2 py-0.5 rounded bg-success/10 text-success font-semibold uppercase tracking-wider">{{ t.player_status_active }}</span>
+      {% elif status == "retired" %}
+      <span class="text-[11px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/70 font-semibold uppercase tracking-wider">{{ t.player_status_retired }}</span>
+      {% endif %}
+    </div>
+    {% if e.real_name is defined %}
+    <p class="mt-1 text-sm text-base-content/70">{{ e.real_name }}{% if e.romanized_name is defined and e.romanized_name != e.real_name %} <span class="text-base-content/60">· {{ e.romanized_name }}</span>{% endif %}</p>
+    {% endif %}
+    <div class="flex flex-wrap items-center gap-3 mt-3 text-xs">
+      <span class="inline-flex items-center gap-1.5 font-semibold {{ race_class }}"><span class="{{ race_bg }} w-5 h-5 rounded flex items-center justify-center text-[11px] font-black text-base-100" aria-hidden="true">{{ race_letter }}</span>{{ race_name }}</span>
+      <span class="text-base-content/70"><span aria-hidden="true">{% include "players/flag.html" %}</span> {{ e.country_name }}</span>
+      {% if n_titles > 0 %}<a href="#player-titles" class="text-warning font-semibold hover:underline">{{ n_titles }}× {{ t.player_champion }}</a>{% endif %}
+    </div>
+  </header>
 
-      <div class="mt-6 prose prose-invert max-w-none">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 min-w-0">
+      <div class="prose prose-invert max-w-none [&_table]:block [&_table]:overflow-x-auto">
         {{ page.content | safe }}
       </div>
+
+      {% if n_titles > 0 or n_runner > 0 %}
+      <section class="mt-10" aria-labelledby="player-titles">
+        <h2 id="player-titles" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.player_titles }}</h2>
+        <p class="text-xs text-base-content/60 mb-4">{{ t.player_titles_note }}</p>
+        {#- Below sm the table collapses into one card per row (no horizontal scrolling, no 4-line cells). -#}
+        <table class="table table-sm w-full max-sm:block" data-sortable>
+          <thead class="max-sm:sr-only">
+            <tr class="text-xs text-base-content/70">
+              <th scope="col" data-sort="text">{{ t.player_result }}</th>
+              <th scope="col" data-sort="text">{{ t.tournaments }}</th>
+              <th scope="col" data-sort="num" aria-sort="descending">{{ t.player_year }}</th>
+              <th scope="col">{{ t.player_final }}</th>
+            </tr>
+          </thead>
+          <tbody class="max-sm:block max-sm:space-y-2">
+            {#- Gather rows newest first: years descending, champion rows before runner-up rows. -#}
+            {% for role in ["winner", "runner_up"] %}
+            {% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}
+            {% set_global hit = false %}{% set_global opp = "" %}{% set_global opp_slug = "" %}
+            {% if role == "winner" and s.winner_slug is defined and s.winner_slug == page.slug %}
+              {% set_global hit = true %}{% set_global opp = s.runner_up %}{% if s.runner_up_slug is defined %}{% set_global opp_slug = s.runner_up_slug %}{% endif %}
+            {% elif role == "runner_up" and s.runner_up_slug is defined and s.runner_up_slug == page.slug %}
+              {% set_global hit = true %}{% set_global opp = s.winner %}{% if s.winner_slug is defined %}{% set_global opp_slug = s.winner_slug %}{% endif %}
+            {% endif %}
+            {% if hit %}
+            {#- Link to the season's own page when one exists, else to that season's row on the series page. -#}
+            {% set sid = "season-" ~ s.season %}{% set sid = sid | slugify %}{% set_global season_url = tp.path ~ "#" ~ sid %}
+            {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == tp.slug and sp.extra.season == s.season %}{% set_global season_url = sp.path %}{% endif %}{% endfor %}
+            <tr class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3" data-year="{{ s.year }}">
+              <td class="whitespace-nowrap max-sm:p-0" data-sort-value="{% if role == 'winner' %}1{% else %}2{% endif %}">{% if role == "winner" %}<span class="text-warning font-semibold">&#9733; {{ t.player_champion }}</span>{% else %}<span class="text-base-content/70">{{ t.player_runner_up }}</span>{% endif %}</td>
+              <td class="text-sm font-medium max-sm:p-0"><a href="{{ season_url }}" class="text-primary hover:underline">{% if s.season is number %}{{ tp.extra.short_name }} {{ s.season }}{% else %}{{ s.season }}{% endif %}</a></td>
+              <td class="font-stats text-sm text-base-content/70 max-sm:p-0">{{ s.year }}</td>
+              <td class="text-sm text-base-content/70 max-sm:p-0 max-sm:basis-full">{% if opp %}{% if role == "winner" %}{{ t.player_vs }}{% else %}{{ t.player_lost_to }}{% endif %} {% if opp_slug %}<a href="{{ lp }}/players/{{ opp_slug }}/" class="text-primary hover:underline">{{ opp }}</a>{% else %}{{ opp }}{% endif %}{% if s.score is defined and s.score %} <span class="font-stats text-base-content/60">({{ s.score }})</span>{% endif %}{% endif %}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}{% endif %}{% endfor %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+      {% endif %}
+
+      {% if recs | length > 0 %}{% include "players/playoff-record.html" %}{% endif %}
+
+      {% if tls | length > 0 %}{% include "players/team-league-record.html" %}{% endif %}
+
+      {% if e.teams is defined and e.teams | length > 0 %}
+      <section class="mt-10" aria-labelledby="player-teams">
+        <h2 id="player-teams" class="text-lg font-semibold mb-4">{{ t.player_team_history }}</h2>
+        <ol class="space-y-2 text-sm">
+          {% for tm in e.teams %}
+          <li class="flex flex-wrap items-baseline gap-x-3">
+            <span class="font-stats text-xs text-base-content/60 w-40 shrink-0">{% if tm.from %}{{ tm.from }}{% else %}?{% endif %} – {% if tm.to == "present" %}{{ t.player_present }}{% elif tm.to %}{{ tm.to }}{% else %}?{% endif %}</span>
+            {% if tm.slug is defined %}<a href="{{ lp }}/wiki/teams/{{ tm.slug }}/" class="text-primary hover:underline">{{ tm.name }}</a>{% else %}<span>{{ tm.name }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endif %}
     </div>
 
-    <div class="glass-card rounded-box p-5">
-      {% if e.image %}
-      <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-square object-cover rounded-lg mb-4" loading="lazy" />
-      {% endif %}
-      <h3 class="text-xs font-semibold text-base-content/50 uppercase tracking-wider mb-4">{% if lang == "ko" %}정보{% else %}Info{% endif %}</h3>
-      <dl class="space-y-3 text-sm">
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}종족{% else %}Race{% endif %}</dt><dd class="font-semibold
-          {% if e.race == 'terran' %}text-race-terran
-          {% elif e.race == 'protoss' %}text-race-protoss
-          {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">{{ e.race | title }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}국가{% else %}Country{% endif %}</dt><dd>{{ e.country_name }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}레이팅{% else %}Rating{% endif %}</dt><dd class="font-stats">{{ e.rating }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}티어{% else %}Tier{% endif %}</dt><dd class="font-semibold">{{ e.tier }}</dd></div>
-      </dl>
-
-      {% if e.aliases | length > 0 %}
-      <div class="mt-5 pt-4 border-t border-primary/5">
-        <span class="text-xs text-base-content/30">{% if lang == "ko" %}별명{% else %}Also known as{% endif %}</span>
-        <p class="mt-1 text-sm text-base-content/50">{{ e.aliases | join(sep=", ") }}</p>
-      </div>
-      {% endif %}
-    </div>
+    {#- Infobox -#}
+    {% set ib_title = page.title %}
+    {% set ib_label = t.player_info %}
+    {% set ib_race = e.race %}
+    {% set ib_image = e.image | default(value="") %}
+    {% set ib_image_aspect = "square" %}
+    {% set ib_placeholder %}<div class="{{ race_bg }} w-full aspect-[4/3] flex flex-col items-center justify-center text-base-100" aria-hidden="true"><span class="text-6xl font-black">{{ race_letter }}</span><span class="mt-2 text-sm font-semibold opacity-80">{{ page.title }}</span></div>{% endset %}
+    {% set v_real %}{% if e.real_name is defined %}{{ e.real_name }}{% if e.romanized_name is defined and e.romanized_name != e.real_name %}<br><span class="text-xs text-base-content/60">{{ e.romanized_name }}</span>{% endif %}{% endif %}{% endset %}
+    {% set v_born %}{% if e.birth_date is defined %}<time class="font-stats" datetime="{{ e.birth_date }}">{{ e.birth_date }}</time>{% endif %}{% endset %}
+    {% set v_race %}<span class="font-semibold {{ race_class }}">{{ race_name }}</span>{% endset %}
+    {% set v_country %}<span aria-hidden="true">{% include "players/flag.html" %}</span> {{ e.country_name }}{% endset %}
+    {% set v_status %}{% if status == "active" %}{{ t.player_status_active }}{% elif status == "retired" %}{{ t.player_status_retired }}{% endif %}{% endset %}
+    {% set v_titles %}{% if n_titles > 0 or n_runner > 0 %}<a href="#player-titles" class="font-stats text-primary hover:underline" title="{{ t.player_champion }} / {{ t.player_runner_up }}">{{ n_titles }} / {{ n_runner }}</a>{% endif %}{% endset %}
+    {% set v_record %}{% if r_sw + r_sl > 0 %}<a href="#player-record" class="font-stats text-primary hover:underline">{{ r_sw }}–{{ r_sl }}</a>{% endif %}{% endset %}
+    {% set_global tl_w = 0 %}{% for r in tls %}{% if r.res == "W" %}{% set_global tl_w = tl_w + 1 %}{% endif %}{% endfor %}
+    {% set v_tl %}{% if tls | length > 0 %}<a href="#player-tl" class="font-stats text-primary hover:underline">{{ tl_w }}–{{ tls | length - tl_w }}</a>{% endif %}{% endset %}
+    {% set v_aliases %}{% if e.aliases is defined and e.aliases | length > 0 %}{{ e.aliases | join(sep=", ") }}{% endif %}{% endset %}
+    {% set ib_rows = [
+      [t.player_id, "<span class=\"font-semibold\">" ~ page.title ~ "</span>"],
+      [t.player_real_name, v_real | trim],
+      [t.player_born, v_born | trim],
+      [t.player_race, v_race],
+      [t.player_country, v_country],
+      [t.player_team, e.team | default(value="")],
+      [t.player_years_active, e.years_active | default(value="")],
+      [t.player_status, v_status | trim],
+      [t.player_titles, v_titles | trim],
+      [t.rec_infobox, v_record | trim],
+      [t.tl_infobox, v_tl | trim],
+      [t.player_alt_ids, v_aliases | trim]
+    ] %}
+    {% set ib_sections = [["", ib_rows]] %}
+    {% set ib_body %}<a href="{{ lp }}/compare/?a={{ page.slug }}" class="mt-4 flex items-center justify-center gap-2 rounded-box border border-primary/20 px-4 py-2 text-sm font-medium text-primary hover:bg-primary/5">{{ t.cmp_compare_with }}</a>{% endset %}
+    {% set ib_links = [] %}
+    {% if e.liquipedia is defined and e.soop is defined %}
+    {% set ib_links = [["Liquipedia", e.liquipedia], ["SOOP (" ~ e.soop ~ ")", "https://www.sooplive.co.kr/station/" ~ e.soop]] %}
+    {% elif e.liquipedia is defined %}
+    {% set ib_links = [["Liquipedia", e.liquipedia]] %}
+    {% elif e.soop is defined %}
+    {% set ib_links = [["SOOP (" ~ e.soop ~ ")", "https://www.sooplive.co.kr/station/" ~ e.soop]] %}
+    {% endif %}
+    {% include "partials/infobox.html" %}
   </div>
 
-  <div class="mt-12 pt-6 border-t border-primary/5">
-    <a href="{{ config.extra.github_content_base }}/{{ page.relative_path }}"
-       target="_blank" rel="noopener"
-       class="text-xs text-base-content/25 hover:text-base-content/50 transition-colors">
-      {{ t.edit_on_github }}
-    </a>
-  </div>
+  {% include "partials/provenance.html" %}
 </div>
 {% endblock %}
+
+{% block scripts %}<script src="/js/table-sort.js" defer></script>{% endblock %}

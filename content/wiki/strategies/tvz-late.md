@@ -7,34 +7,29 @@ template = "wiki/strategy.html"
 matchup = ["TvZ"]
 [extra]
 matchup = "TvZ"
+sources = ["https://liquipedia.net/starcraft/Dark_Swarm", "https://liquipedia.net/starcraft/Plague", "https://liquipedia.net/starcraft/Irradiate", "https://liquipedia.net/starcraft/EMP_Shockwave", "https://liquipedia.net/starcraft/Spider_Mine", "https://liquipedia.net/starcraft/Consume"]
+verified = "2026-10-11"
 +++
+Late-game TvZ begins when Zerg reaches Hive and fields Defilers. The matchup then revolves around Dark Swarm and Plague on one side and Science Vessels on the other.
 
-Late-game TvZ is the most strategically complex phase in all of Brood War. Once Zerg fields defilers, the entire matchup transforms. Strategies that dominated the mid game become insufficient without fundamental adaptation. The late game is defined by the Science Vessel versus Defiler duel -- a spellcaster chess match that determines whether Terran's ranged firepower stays relevant or is rendered useless under Dark Swarm.
+## Defiler Spells
 
-## The Defiler Problem
+- **Dark Swarm** (100 energy) creates a 6×6-matrix cloud. Ground units underneath take no damage from ordinary ranged attacks; melee attacks, splash damage and special weapons still work. Buildings are not protected, and the cloud protects all ground units under it — including Terran ones.
+- **Plague** (150 energy) deals roughly 300 damage over time to everything in the area, but stops when a unit is below 4 HP, so it cannot kill on its own. Missile Turrets and Bunkers can still burn down from it unless repaired.
+- **Consume** sacrifices a Zerg unit to give the Defiler 50 energy, so Defilers can re-cast quickly.
 
-Once Zerg completes Hive and Defiler Mound, the matchup changes at a fundamental level. Dark Swarm creates a cloud under which no ranged attack can hit -- Marines, Siege Tanks, and Goliaths all become unable to damage anything inside it. Plague reduces every unit in an area to near-zero hit points, making a full-health army die to any follow-up. Terran's answer is Science Vessel Irradiate, which deals heavy damage over time to biological units and splashes to nearby ones. Because Defilers are biological, a well-targeted Irradiate kills them before they cast. The entire late-game framework is built around this interaction.
+## Science Vessel Answers
 
-## Irradiate vs Dark Swarm
+**Irradiate** deals about 250 damage over time to biological units within 32 pixels of the target and is the main way to kill Defilers, Lurkers and stacked Mutalisks. Liquipedia notes that **EMP Shockwave** is rarely used against Zerg: it removes energy instantly, but Defilers can regain it with Consume.
 
-The Science Vessel and Defiler engage in positional chess. Terran positions Vessels near the front to Irradiate Defilers as they approach. Zerg sends Defilers forward, uses Consume on zerglings for energy, casts Dark Swarm, and retreats before Irradiate lands. If the Vessel Irradiates first, Terran's ranged units remain effective. If the Defiler casts first, Terran must retreat or fight at severe disadvantage. EMP drains Defiler energy but does not kill -- useful for preventing a second cast, but no substitute for Irradiate.
+## What Works Under Dark Swarm
 
-## Dealing with Cracklings and Ultras under Dark Swarm
+Liquipedia lists Firebats (against burrowed Lurkers too), Spider Mines, Irradiate, Yamato Cannon and Nukes as effective against units under the swarm. Siege Tanks and Marines can still hit units standing outside it, so the usual approach is to Irradiate the Defiler before it casts and to fight away from the cloud.
 
-Under Dark Swarm, ranged attacks miss but melee works normally. Zerg exploits this with Ultralisks and speed/adrenal zerglings (cracklings) under the cloud. Ultralisks absorb damage with high armor while cracklings deal devastating melee DPS. Terran counters with Firebats, whose attack works under swarm as melee-range splash, and Spider Mines that trigger regardless of swarm. Siege Tanks can still splash units outside the swarm area. The micro challenge: pull tanks back, Irradiate defilers, and avoid letting the whole army get caught in one swarm.
+## Ultralisks and Zerglings
 
-## Expansion Wars
+Zerg's typical late army is Ultralisks and upgraded Zerglings under Dark Swarm, supported by Defilers and sometimes Lurkers. Terran needs Vessels, mines and good positioning to avoid fighting inside the swarm.
 
-Late TvZ becomes a war of attrition over resource nodes. Spider mines deny Zerg expansions by killing drone transfers. Zerg retaliates with crackling run-bys targeting undefended Terran bases. Whoever exhausts the map first loses. Zerg remaxes faster, but Terran units are costlier to replace. Constant scanning to track expansion attempts and mine placement at likely locations are ongoing responsibilities until the game ends.
+## Expansions
 
-## Nuclear Strikes
-
-Nukes are niche but viable. A launch forces Zerg to evacuate, breaking defensive positions or denying key locations. Combined with a siege contain, nukes break stalemates that direct combat cannot. The Ghost must survive the full launch sequence, so protecting it with tanks is essential. Nukes punish static positions rather than serving as a primary strategy.
-
-## Air Transition
-
-Some late games see Terran transition to Battlecruiser and Science Vessel when Dark Swarm neutralizes the ground. Yamato Gun snipes Defilers from range. However, Zerg responds with massed Scourge and Devourers. The air transition is a last resort -- Terran stays on the ground unless swarm has made ground combat completely unviable.
-
-## Key Decision Points
-
-Three questions define late-game decisions. Push now or let Zerg accumulate Defilers? Almost always push immediately -- each additional Defiler makes the matchup harder. Expand or consolidate? Must expand -- Terran burns resources faster and falling behind on bases means slow death. Transition to air? Only when ground combat is completely neutralized and no amount of Irradiate micro can reclaim the battlefield.
+Late TvZ is usually a fight over bases. Spider Mines on expansion paths, scans to find new Hatcheries and drops on Zerg mineral lines all help; Zerg in turn uses Zergling run-bys against undefended Terran bases.

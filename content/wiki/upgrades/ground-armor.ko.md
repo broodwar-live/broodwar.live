@@ -1,6 +1,6 @@
 +++
 title = "지상 방어력"
-description = "Ground Armor — 스타크래프트: 브루드 워 Protoss 업그레이드."
+description = "지상 방어력은 프로토스 포지에서 3단계까지 연구하는 업그레이드로, 단계마다 프로토스 지상 유닛의 방어력을 1씩 올린다."
 slug = "ground-armor"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,19 @@ minerals = 100
 gas = 100
 levels = 3
 researched_at = "forge"
-research_time = 80
-affects = ["zealot", "dragoon", "dark-templar"]
+research_time = 266
+affects = ["probe", "zealot", "dragoon", "high-templar", "dark-templar", "archon", "dark-archon", "reaver"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-지상 방어력 업그레이드는 각 레벨마다 질럿, 드라군, 다크 템플러 등 프로토스 지상 유닛의 방어력을 +1씩 증가시킵니다. 방어력이 높을수록 피격당 받는 피해가 줄어들어, 근접 사거리까지 접근하며 집중 화력을 받는 질럿에게 특히 유용합니다. 포지에서 연구하며, 상위 레벨은 템플러 아카이브가 필요합니다.
+지상 방어력은 단계마다 프로브, 질럿, 드라군, 하이 템플러, 다크 템플러, 아칸, 다크 아칸, 리버의 방어력을 1씩 올린다. 방어력은 체력에 들어가는 피해에만 적용되고, 실드에 들어가는 피해는 플라즈마 실드가 줄인다. 2·3단계는 템플러 아카이브가 필요하다.
 
-지상 방어력은 모든 매치업에서 질럿 생존력에 중요합니다. 방어력이 강화된 질럿은 마린 일제 사격과 저글링 무리 같은 빠른 연사 공격에 더 적은 피해를 받아 더 많은 HP로 근접 사거리에 도달합니다. PvP에서 방어력 업그레이드는 초반 게이트웨이 전투에서 질럿을 훨씬 처치하기 어렵게 만듭니다. 플라즈마 실드와 결합하면 장기전에서 효과가 복합적으로 작용하는 피해 감소 레이어를 만듭니다.
+실드가 벗겨진 뒤 저글링이나 마린처럼 타격당 피해가 낮은 공격을 받아 내는 질럿에게 특히 유용하다.
 
-지상 방어력은 보통 지상 무기 1레벨 이후 중반 8-10분경에 연구합니다. 방어적 상황에서 방어력을 먼저 올리는 빌드도 있지만, 공격적 효과 때문에 무기가 일반적으로 우선입니다.
+| 단계 | 미네랄 / 가스 | 연구 시간 | 요구 조건 |
+|---|---|---|---|
+| 1 | 100 / 100 | 266초 | — |
+| 2 | 175 / 175 | 298초 | 템플러 아카이브 |
+| 3 | 250 / 250 | 330초 | 템플러 아카이브 |
+
+연구 시간은 이 위키의 다른 문서와 마찬가지로 노멀 속도 기준 게임 시간(초 = 프레임 ÷ 15)이다.

@@ -1,6 +1,6 @@
 +++
 title = "Stim Pack"
-description = "Stim Pack — Terran upgrade in StarCraft: Brood War."
+description = "Stim Pack is a Terran Academy research that lets Marines and Firebats trade hit points for faster attacks and movement."
 slug = "stim-pack"
 template = "wiki/upgrade.html"
 [taxonomies]
@@ -11,11 +11,11 @@ minerals = 100
 gas = 100
 levels = 1
 researched_at = "academy"
-research_time = 50
+research_time = 80
 affects = ["marine", "firebat"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
+verified = "2026-10-11"
 +++
-Stim Pack enables Marines and Firebats to temporarily boost their attack speed by 50% and movement speed by 50% for approximately 10 seconds, at the cost of 10 HP per use. This transforms sluggish bio units into fast, high-DPS fighters capable of kiting enemies and focusing fire with devastating efficiency. The HP cost is largely offset by Medic healing in combat.
+Once researched, Marines and Firebats can use Stim Pack. It costs a Marine 10 and a Firebat 20 hit points, and for a short time halves the unit's weapon cooldown and increases its movement speed; a unit too low on hit points cannot use it. Medics are commonly paired with stimmed infantry to heal the lost hit points. See the [Stim Pack ability](/wiki/abilities/stim-pack/) page for details.
 
-Stim Pack is the single most important Terran bio upgrade. Without it, Marine and Firebat armies are dramatically weaker in every engagement — slower to engage, slower to retreat, and dealing far less damage per second. Every competitive bio build researches Stim as early as possible. It is essential in all matchups: TvZ for fighting Zerglings and Mutalisks, TvP for engaging Zealots and Dragoons, and TvT bio mirrors for outmaneuvering the opponent.
-
-Stim Pack is typically researched at the Academy immediately after it completes, around the 5-6 minute mark in standard bio openings. Pros often time their first aggressive push to coincide with Stim completion, as the power spike it provides is enormous.
+Stim Pack is the defining research of Terran bio play and is researched in almost every Marine-based build.
