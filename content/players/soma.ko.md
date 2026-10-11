@@ -1,5 +1,5 @@
 +++
-title = "Soma"
+title = "soma"
 description = "Soma(박상현) — 소닉TV 무대 출신 저그, ASL 시즌 20·21 연속 우승."
 slug = "soma"
 template = "players/player.html"
