@@ -1,6 +1,6 @@
 +++
 title = "스타게이트"
-description = "스타게이트는 커세어, 스카우트, 캐리어, 아비터 등 프로토스 공중 유닛을 생산합니다."
+description = "스타게이트는 커세어, 스카웃, 캐리어, 아비터 등 프로토스 공중 유닛을 생산합니다."
 slug = "stargate"
 template = "wiki/building.html"
 [taxonomies]

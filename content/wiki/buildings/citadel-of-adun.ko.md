@@ -1,6 +1,6 @@
 +++
 title = "시타델 오브 아둔"
-description = "시타델 오브 아둔은 질럿 발업(레그 인핸스먼트)을 연구하고 템플러 아카이브로 이어지는 건물입니다."
+description = "시타델 오브 아둔은 질럿 발업(다리 강화)을 연구하고 템플러 아카이브로 이어지는 건물입니다."
 slug = "citadel-of-adun"
 template = "wiki/building.html"
 [taxonomies]

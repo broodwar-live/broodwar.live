@@ -32,7 +32,7 @@ upgrades = ["infantry-weapons", "infantry-armor"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-고스트는 아카데미와 사이언스 퍼실리티의 애드온 커버트 옵스가 필요한 배럭 보병이다. 진동형 공격은 평범하지만 클로킹, 락다운, 핵 공격이 진짜 가치다.
+고스트는 아카데미와 사이언스 퍼실리티의 애드온 코버트 옵스가 필요한 배럭 보병이다. 진동형 공격은 평범하지만 클로킹, 락다운, 핵 공격이 진짜 가치다.
 
 ## 저그전
 
@@ -49,6 +49,6 @@ verified = "2026-10-11"
 ## 주요 메커니즘
 
 - 진동형 피해 10, 쿨다운 22프레임, 사거리 7, 지상·공중 공격 가능
-- 락다운 (에너지 100, 커버트 옵스 연구): 기계 유닛을 일정 시간 무력화
+- 락다운 (에너지 100, 코버트 옵스 연구): 기계 유닛을 일정 시간 무력화
 - 클로킹 (사용 시 에너지 25, 이후 지속 소모): 디텍터가 없으면 보이지 않는다
 - 핵 공격은 커맨드 센터의 애드온 뉴클리어 사일로가 필요하며, 미사일이 떨어질 때까지 고스트가 살아서 자리를 지켜야 한다

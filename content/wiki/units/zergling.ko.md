@@ -33,7 +33,7 @@ upgrades = ["metabolic-boost", "adrenal-glands", "melee-attacks", "carapace"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-저글링은 저그의 첫 전투 유닛이다. 애벌레 하나로 50 미네랄, 인구수 1에 두 마리가 나온다. 한 마리는 약하지만 대사 촉진(발업) 연구 후에는 매우 빠르고, 하이브가 필요한 아드레날 글랜드를 연구하면 후반에 공격 속도가 크게 오른다.
+저글링은 저그의 첫 전투 유닛이다. 애벌레 하나로 50 미네랄, 인구수 1에 두 마리가 나온다. 한 마리는 약하지만 대사 촉진(발업) 연구 후에는 매우 빠르고, 하이브가 필요한 부신 분비선을 연구하면 후반에 공격 속도가 크게 오른다.
 
 ## 테란전
 
@@ -51,5 +51,5 @@ verified = "2026-10-11"
 
 - 일반형 피해 5, 쿨다운 8프레임, 근접
 - 대사 촉진 (스포닝 풀): 이동 속도 증가
-- 아드레날 글랜드 (스포닝 풀, 하이브 필요): 공격 속도 증가
+- 부신 분비선 (스포닝 풀, 하이브 필요): 공격 속도 증가
 - 체력 35, 방어력 0, 소형. 버로우 연구 후 버로우 가능
