@@ -38,10 +38,10 @@ date = "2003-11-04"
 score_a = 4
 score_b = 2
 sets = [
-  { map = "Enter the Dragon", a = "fOru", a_race = "p", b = "ArtOfTerran", b_race = "t", winner = "b" },
-  { map = "Detonation", a = "OversKy", a_race = "z", b = "ArtOfTerran", b_race = "t", winner = "a" },
-  { map = "Jim Raynor's Memory", a = "OversKy", a_race = "z", b = "GGon", b_race = "t", winner = "a" },
-  { map = "Parallel Lines", a = "OversKy", a_race = "z", b = "ShinyA", b_race = "p", winner = "b" },
+  { map = "Enter the Dragon", a = "fOru", a_slug = "foru", a_race = "p", b = "ArtOfTerran", b_race = "t", winner = "b" },
+  { map = "Detonation", a = "OversKy", a_slug = "oversky", a_race = "z", b = "ArtOfTerran", b_race = "t", winner = "a" },
+  { map = "Jim Raynor's Memory", a = "OversKy", a_slug = "oversky", a_race = "z", b = "GGon", b_race = "t", winner = "a" },
+  { map = "Parallel Lines", a = "OversKy", a_slug = "oversky", a_race = "z", b = "ShinyA", b_race = "p", winner = "b" },
   { map = "Enter the Dragon", a = "GoRush", a_slug = "gorush", a_race = "z", b = "ShinyA", b_race = "p", winner = "a" },
   { map = "Detonation", a = "GoRush", a_slug = "gorush", a_race = "z", b = "Siva", b_race = "z", winner = "a" },
 ]
@@ -69,7 +69,7 @@ date = "2003-11-18"
 score_a = 3
 score_b = 4
 sets = [
-  { map = "Enter the Dragon", a = "Control", a_race = "t", b = "RainBOw", b_race = "p", winner = "a" },
+  { map = "Enter the Dragon", a = "Control", a_race = "t", b = "RainBOw", b_slug = "rainbow", b_race = "p", winner = "a" },
   { map = "Detonation", a = "Control", a_race = "t", b = "sigamari", b_race = "z", winner = "b" },
   { map = "Jim Raynor's Memory", a = "Sunny", a_race = "t", b = "sigamari", b_race = "z", winner = "a" },
   { map = "Parallel Lines", a = "Sunny", a_race = "t", b = "BoxeR", b_slug = "boxer", b_race = "t", winner = "a" },
@@ -87,7 +87,7 @@ score_a = 2
 score_b = 4
 sets = [
   { map = "Enter the Dragon", a = "Pusan", a_slug = "pusan", a_race = "p", b = "ClouD", b_race = "t", winner = "a" },
-  { map = "Detonation", a = "Pusan", a_slug = "pusan", a_race = "p", b = "Side", b_race = "z", winner = "a" },
+  { map = "Detonation", a = "Pusan", a_slug = "pusan", a_race = "p", b = "Side", b_slug = "side", b_race = "z", winner = "a" },
   { map = "Jim Raynor's Memory", a = "Pusan", a_slug = "pusan", a_race = "p", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "b" },
   { map = "Parallel Lines", a = "Freshen", a_race = "t", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "b" },
   { map = "Enter the Dragon", a = "ELIZA", a_race = "z", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "b" },
@@ -109,7 +109,7 @@ sets = [
   { map = "Enter the Dragon", a = "ShinyA", a_race = "p", b = "JJu", b_slug = "jju", b_race = "z", winner = "b" },
   { map = "Detonation", a = "Siva", a_race = "z", b = "JJu", b_slug = "jju", b_race = "z", winner = "b" },
   { map = "Jim Raynor's Memory", a = "TT", a_race = "p", b = "JJu", b_slug = "jju", b_race = "z", winner = "b" },
-  { map = "Parallel Lines", a = "DoGGi", a_race = "t", b = "JJu", b_slug = "jju", b_race = "z", winner = "b" },
+  { map = "Parallel Lines", a = "DoGGi", a_slug = "doggi", a_race = "t", b = "JJu", b_slug = "jju", b_race = "z", winner = "b" },
 ]
 [[extra.team_bracket.matches]]
 a = "Hanbit Stars"
@@ -140,9 +140,9 @@ date = "2003-12-16"
 score_a = 3
 score_b = 4
 sets = [
-  { map = "Enter the Dragon", a = "fOru", a_race = "p", b = "TheMarine", b_slug = "themarine", b_race = "t", winner = "a" },
-  { map = "Detonation", a = "fOru", a_race = "p", b = "Lee", b_race = "t", winner = "a" },
-  { map = "Jim Raynor's Memory", a = "fOru", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "b" },
+  { map = "Enter the Dragon", a = "fOru", a_slug = "foru", a_race = "p", b = "TheMarine", b_slug = "themarine", b_race = "t", winner = "a" },
+  { map = "Detonation", a = "fOru", a_slug = "foru", a_race = "p", b = "Lee", b_slug = "lee", b_race = "t", winner = "a" },
+  { map = "Jim Raynor's Memory", a = "fOru", a_slug = "foru", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "b" },
   { map = "Parallel Lines", a = "XellOs", a_slug = "xellos", a_race = "t", b = "NaDa", b_slug = "nada", b_race = "t", winner = "b" },
   { map = "Enter the Dragon", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "a" },
   { map = "Detonation", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "YellOw", b_slug = "yellow", b_race = "z", winner = "b" },
@@ -158,10 +158,10 @@ score_a = 4
 score_b = 3
 sets = [
   { map = "Enter the Dragon", a = "BoxeR", a_slug = "boxer", a_race = "t", b = "EJi", b_race = "p", winner = "a" },
-  { map = "Detonation", a = "BoxeR", a_slug = "boxer", a_race = "t", b = "Side", b_race = "z", winner = "b" },
-  { map = "Jim Raynor's Memory", a = "kOs", a_race = "t", b = "Side", b_race = "z", winner = "b" },
-  { map = "Parallel Lines", a = "RainBOw", a_race = "p", b = "Side", b_race = "z", winner = "a" },
-  { map = "Enter the Dragon", a = "RainBOw", a_race = "p", b = "ClouD", b_race = "t", winner = "b" },
+  { map = "Detonation", a = "BoxeR", a_slug = "boxer", a_race = "t", b = "Side", b_slug = "side", b_race = "z", winner = "b" },
+  { map = "Jim Raynor's Memory", a = "kOs", a_slug = "kos", a_race = "t", b = "Side", b_slug = "side", b_race = "z", winner = "b" },
+  { map = "Parallel Lines", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "Side", b_slug = "side", b_race = "z", winner = "a" },
+  { map = "Enter the Dragon", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "ClouD", b_race = "t", winner = "b" },
   { map = "Detonation", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "ClouD", b_race = "t", winner = "a" },
   { map = "Jim Raynor's Memory", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "a" },
 ]
@@ -199,8 +199,8 @@ sets = [
   { map = "Jim Raynor's Memory", a = "EJi", a_race = "p", b = "Control", b_race = "t", winner = "b" },
   { map = "Parallel Lines", a = "ClouD", a_race = "t", b = "Control", b_race = "t", winner = "a" },
   { map = "Enter the Dragon", a = "ClouD", a_race = "t", b = "Cezanne", b_race = "t", winner = "b" },
-  { map = "Detonation", a = "Side", a_race = "z", b = "Cezanne", b_race = "t", winner = "a" },
-  { map = "Jim Raynor's Memory", a = "Side", a_race = "z", b = "Junwi", b_race = "z", winner = "b" },
+  { map = "Detonation", a = "Side", a_slug = "side", a_race = "z", b = "Cezanne", b_race = "t", winner = "a" },
+  { map = "Jim Raynor's Memory", a = "Side", a_slug = "side", a_race = "z", b = "Junwi", b_slug = "junwi", b_race = "z", winner = "b" },
 ]
 [[extra.team_bracket]]
 round = "패자조 준결승"
@@ -215,9 +215,9 @@ date = "2004-01-20"
 score_a = 4
 score_b = 3
 sets = [
-  { map = "Enter the Dragon", a = "fOru", a_race = "p", b = "(Oops)Autumn", b_race = "p", winner = "a" },
-  { map = "Detonation", a = "fOru", a_race = "p", b = "Junwi", b_race = "z", winner = "b" },
-  { map = "Jim Raynor's Memory", a = "SoNiC)BlacK", a_race = "z", b = "Junwi", b_race = "z", winner = "a" },
+  { map = "Enter the Dragon", a = "fOru", a_slug = "foru", a_race = "p", b = "(Oops)Autumn", b_race = "p", winner = "a" },
+  { map = "Detonation", a = "fOru", a_slug = "foru", a_race = "p", b = "Junwi", b_slug = "junwi", b_race = "z", winner = "b" },
+  { map = "Jim Raynor's Memory", a = "SoNiC)BlacK", a_race = "z", b = "Junwi", b_slug = "junwi", b_race = "z", winner = "a" },
   { map = "Parallel Lines", a = "SoNiC)BlacK", a_race = "z", b = "Control", b_race = "t", winner = "a" },
   { map = "Enter the Dragon", a = "SoNiC)BlacK", a_race = "z", b = "fOfy", b_race = "t", winner = "b" },
   { map = "Detonation", a = "Midas", a_slug = "midas", a_race = "t", b = "fOfy", b_race = "t", winner = "b" },
@@ -240,8 +240,8 @@ sets = [
   { map = "Detonation", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "a" },
   { map = "Jim Raynor's Memory", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "BoxeR", b_slug = "boxer", b_race = "t", winner = "a" },
   { map = "Parallel Lines", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "b" },
-  { map = "Enter the Dragon", a = "Oddysay", a_race = "t", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "a" },
-  { map = "Detonation", a = "Oddysay", a_race = "t", b = "kOs", b_race = "t", winner = "a" },
+  { map = "Enter the Dragon", a = "Oddysay", a_slug = "oddysay", a_race = "t", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "a" },
+  { map = "Detonation", a = "Oddysay", a_slug = "oddysay", a_race = "t", b = "kOs", b_slug = "kos", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket]]
 round = "패자조 결승"
@@ -256,12 +256,12 @@ date = "2004-02-03"
 score_a = 4
 score_b = 2
 sets = [
-  { map = "Enter the Dragon", a = "kOs", a_race = "t", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
-  { map = "Detonation", a = "RainBOw", a_race = "p", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
+  { map = "Enter the Dragon", a = "kOs", a_slug = "kos", a_race = "t", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
+  { map = "Detonation", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
   { map = "Jim Raynor's Memory", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "a" },
-  { map = "Parallel Lines", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "fOru", b_race = "p", winner = "a" },
+  { map = "Parallel Lines", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "fOru", b_slug = "foru", b_race = "p", winner = "a" },
   { map = "Enter the Dragon", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", winner = "a" },
-  { map = "Detonation", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "Rage", b_race = "p", winner = "a" },
+  { map = "Detonation", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "Rage", b_slug = "rage", b_race = "p", winner = "a" },
 ]
 [[extra.team_bracket]]
 round = "결승"
@@ -281,7 +281,7 @@ sets = [
   { map = "Jim Raynor's Memory", a = "ChoJJa", a_slug = "chojja", a_race = "z", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "b" },
   { map = "Parallel Lines", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "a" },
   { map = "Enter the Dragon", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "a" },
-  { map = "Detonation", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "RainBOw", b_race = "p", winner = "b" },
+  { map = "Detonation", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "RainBOw", b_slug = "rainbow", b_race = "p", winner = "b" },
 ]
 +++
 LG IBM MBC 팀리그는 8개 팀이 7전 4선승제 더블 엘리미네이션으로 치렀고, 승자조와 패자조 우승팀이 7전 4선승제 단판 결승에서 맞붙었습니다. 매치는 올킬 방식으로 치러져 각 세트의 승자가 남아 상대 팀의 다음 선수와 맞붙었습니다. 아래 세트 기록은 누가 누구를 차례로 꺾었는지를 순서대로 보여 줍니다.

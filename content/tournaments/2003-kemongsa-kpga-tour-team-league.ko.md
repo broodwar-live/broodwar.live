@@ -57,7 +57,7 @@ sets = [
   { map = "Dark Sauron", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "Yooi", b_race = "t", winner = "a" },
   { map = "Blade Storm", a = "SaferZerg", a_race = "z", b = "Jju", b_slug = "jju", b_race = "z", winner = "a" },
   { map = "Lost Temple", map_slug = "lost-temple", a = "XellOs", a_slug = "xellos", a_race = "t", b = "TheWinD", b_race = "z", winner = "b" },
-  { map = "Plains to Hill D", a = "ForU", a_race = "p", b = "Chojja", b_slug = "chojja", b_race = "z", winner = "a" },
+  { map = "Plains to Hill D", a = "ForU", a_slug = "foru", a_race = "p", b = "Chojja", b_slug = "chojja", b_race = "z", winner = "a" },
 ]
 +++
 KeMongSa KPGA 투어 팀리그는 MBC게임의 첫 팀리그였습니다. 예선을 거친 팀들이 조별리그를 치렀고, 1위 팀은 결승에 직행했으며 2·3위 팀이 플레이오프에서 나머지 결승 자리를 다퉜습니다.

@@ -83,7 +83,7 @@ sets = [
   { map = "Raid Assault", a = "sAviOr", a_slug = "savior", a_race = "z", b = "Silver", b_slug = "silver", b_race = "z", winner = "a" },
   { map = "Luna", a = "sAviOr", a_slug = "savior", a_race = "z", b = "Goodfriend", b_slug = "goodfriend", b_race = "t", winner = "a" },
   { map = "Arizona", a = "sAviOr", a_slug = "savior", a_race = "z", b = "NaDa", b_slug = "nada", b_race = "t", winner = "b" },
-  { map = "Into the Darkness 2", a = "fOru", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "a" },
+  { map = "Into the Darkness 2", a = "fOru", a_slug = "foru", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "a" },
 ]
 +++
 프로리그가 두 방송사 통합으로 바뀌기 전 마지막 MBC게임 팀리그였습니다. 8개 팀이 15주 동안 리그를 치른 뒤 상위 팀들이 7전 4선승제 올킬 계단식 플레이오프를 치렀습니다. 매치는 올킬 방식으로 치러져 각 세트의 승자가 남아 상대 팀의 다음 선수와 맞붙었습니다. 아래 세트 기록은 누가 누구를 차례로 꺾었는지를 순서대로 보여 줍니다.

@@ -57,7 +57,7 @@ sets = [
   { map = "Dark Sauron", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "Yooi", b_race = "t", winner = "a" },
   { map = "Blade Storm", a = "SaferZerg", a_race = "z", b = "Jju", b_slug = "jju", b_race = "z", winner = "a" },
   { map = "Lost Temple", map_slug = "lost-temple", a = "XellOs", a_slug = "xellos", a_race = "t", b = "TheWinD", b_race = "z", winner = "b" },
-  { map = "Plains to Hill D", a = "ForU", a_race = "p", b = "Chojja", b_slug = "chojja", b_race = "z", winner = "a" },
+  { map = "Plains to Hill D", a = "ForU", a_slug = "foru", a_race = "p", b = "Chojja", b_slug = "chojja", b_race = "z", winner = "a" },
 ]
 +++
 The KeMongSa KPGA Tour Team League was MBCGame's first team league. After a qualifier, the teams played a group stage; the group winner went straight to the final, and the second- and third-placed teams met in a playoff for the other place.

@@ -38,13 +38,13 @@ date = "2003-08-12"
 score_a = 4
 score_b = 3
 sets = [
-  { map = "Enter the Dragon", a = "fOru", a_race = "p", b = "ElkY", b_race = "t", winner = "a" },
-  { map = "Dark Sauron", a = "fOru", a_race = "p", b = "JinSu", b_race = "z", winner = "b" },
-  { map = "Jim Raynor's Memory", a = "XellOs", a_slug = "xellos", a_race = "t", b = "JinSu", b_race = "z", winner = "a" },
+  { map = "Enter the Dragon", a = "fOru", a_slug = "foru", a_race = "p", b = "ElkY", b_slug = "elky", b_race = "t", winner = "a" },
+  { map = "Dark Sauron", a = "fOru", a_slug = "foru", a_race = "p", b = "JinSu", b_slug = "jinsu", b_race = "z", winner = "b" },
+  { map = "Jim Raynor's Memory", a = "XellOs", a_slug = "xellos", a_race = "t", b = "JinSu", b_slug = "jinsu", b_race = "z", winner = "a" },
   { map = "Plains to Hill D", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Grrrr", b_race = "p", winner = "b" },
   { map = "Dark Sauron", a = "SaferZerg", a_race = "z", b = "Grrrr", b_race = "p", winner = "a" },
-  { map = "Jim Raynor's Memory", a = "SaferZerg", a_race = "z", b = "V-Gundam", b_race = "t", winner = "b" },
-  { map = "Plains to Hill D", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "V-Gundam", b_race = "t", winner = "a" },
+  { map = "Jim Raynor's Memory", a = "SaferZerg", a_race = "z", b = "V-Gundam", b_slug = "v-gundam", b_race = "t", winner = "b" },
+  { map = "Plains to Hill D", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "V-Gundam", b_slug = "v-gundam", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket.matches]]
 a = "KTF MagicNs"
@@ -70,7 +70,7 @@ date = "2003-08-19"
 score_a = 4
 score_b = 0
 sets = [
-  { map = "Enter the Dragon", a = "ChoJJa", a_slug = "chojja", a_race = "z", b = "Side", b_race = "z", winner = "a" },
+  { map = "Enter the Dragon", a = "ChoJJa", a_slug = "chojja", a_race = "z", b = "Side", b_slug = "side", b_race = "z", winner = "a" },
   { map = "Dark Sauron", a = "ChoJJa", a_slug = "chojja", a_race = "z", b = "EJi", b_race = "p", winner = "a" },
   { map = "Jim Raynor's Memory", a = "ChoJJa", a_slug = "chojja", a_race = "z", b = "[Oops]ClouD", b_race = "t", winner = "a" },
   { map = "Plains to Hill D", a = "ChoJJa", a_slug = "chojja", a_race = "z", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "a" },
@@ -85,10 +85,10 @@ score_a = 4
 score_b = 3
 sets = [
   { map = "Enter the Dragon", a = "H.O.T-Forever", a_slug = "hot-forever", a_race = "z", b = "Junitoss", b_race = "p", winner = "b" },
-  { map = "Dark Sauron", a = "Junwi", a_race = "z", b = "Junitoss", b_race = "p", winner = "a" },
-  { map = "Jim Raynor's Memory", a = "Junwi", a_race = "z", b = "July", b_slug = "july", b_race = "z", winner = "a" },
-  { map = "Plains to Hill D", a = "Junwi", a_race = "z", b = "Shark", b_race = "z", winner = "b" },
-  { map = "Dark Sauron", a = "Control", a_race = "t", b = "Shark", b_race = "z", winner = "a" },
+  { map = "Dark Sauron", a = "Junwi", a_slug = "junwi", a_race = "z", b = "Junitoss", b_race = "p", winner = "a" },
+  { map = "Jim Raynor's Memory", a = "Junwi", a_slug = "junwi", a_race = "z", b = "July", b_slug = "july", b_race = "z", winner = "a" },
+  { map = "Plains to Hill D", a = "Junwi", a_slug = "junwi", a_race = "z", b = "Shark", b_slug = "shark", b_race = "z", winner = "b" },
+  { map = "Dark Sauron", a = "Control", a_race = "t", b = "Shark", b_slug = "shark", b_race = "z", winner = "a" },
   { map = "Jim Raynor's Memory", a = "Control", a_race = "t", b = "TerAtO", b_race = "p", winner = "b" },
   { map = "Plains to Hill D", a = "Sync", a_slug = "sync", a_race = "t", b = "TerAtO", b_race = "p", winner = "a" },
 ]
@@ -108,9 +108,9 @@ sets = [
   { map = "Enter the Dragon", a = "SaferZerg", a_race = "z", b = "Freshen", b_race = "t", winner = "a" },
   { map = "Dark Sauron", a = "SaferZerg", a_race = "z", b = "MuMyung", b_slug = "mumyung", b_race = "z", winner = "b" },
   { map = "Jim Raynor's Memory", a = "ChRh", a_slug = "chrh", a_race = "t", b = "MuMyung", b_slug = "mumyung", b_race = "z", winner = "b" },
-  { map = "Plains to Hill D", a = "fOru", a_race = "p", b = "MuMyung", b_slug = "mumyung", b_race = "z", winner = "a" },
-  { map = "Dark Sauron", a = "fOru", a_race = "p", b = "SinDoki", b_race = "z", winner = "a" },
-  { map = "Jim Raynor's Memory", a = "fOru", a_race = "p", b = "Pusan", b_slug = "pusan", b_race = "p", winner = "b" },
+  { map = "Plains to Hill D", a = "fOru", a_slug = "foru", a_race = "p", b = "MuMyung", b_slug = "mumyung", b_race = "z", winner = "a" },
+  { map = "Dark Sauron", a = "fOru", a_slug = "foru", a_race = "p", b = "SinDoki", b_race = "z", winner = "a" },
+  { map = "Jim Raynor's Memory", a = "fOru", a_slug = "foru", a_race = "p", b = "Pusan", b_slug = "pusan", b_race = "p", winner = "b" },
   { map = "Plains to Hill D", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Pusan", b_slug = "pusan", b_race = "p", winner = "a" },
 ]
 [[extra.team_bracket.matches]]
@@ -166,7 +166,7 @@ sets = [
   { map = "Plains to Hill D", a = "SaferZerg", a_race = "z", b = "Sync", b_slug = "sync", b_race = "t", winner = "b" },
   { map = "Enter the Dragon", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Sync", b_slug = "sync", b_race = "t", winner = "a" },
   { map = "Jim Raynor's Memory", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Reach", b_slug = "reach", b_race = "p", winner = "a" },
-  { map = "Dark Sauron", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Junwi", b_race = "z", winner = "a" },
+  { map = "Dark Sauron", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Junwi", b_slug = "junwi", b_race = "z", winner = "a" },
 ]
 +++
 The LifeZone KPGA Team League introduced the all-kill format to MBCGame's team league. Eight teams played a single-elimination bracket of best-of-seven matches. Matches were played in the all-kill format: the winner of each set stayed on to face the next player of the losing team, so the set lists below show who knocked out whom in order.

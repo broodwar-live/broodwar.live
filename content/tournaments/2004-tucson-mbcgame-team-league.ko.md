@@ -59,7 +59,7 @@ sets = [
   { map = "Into the Darkness", a = "TheWinD", a_race = "z", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "a" },
   { map = "Luna MBCGame", a = "TheWinD", a_race = "z", b = "Casy", b_slug = "casy", b_race = "t", winner = "b" },
   { map = "Detonation F", a = "JJu", a_slug = "jju", a_race = "z", b = "Casy", b_slug = "casy", b_race = "t", winner = "a" },
-  { map = "Tucson", a = "JJu", a_slug = "jju", a_race = "z", b = "Side", b_race = "z", winner = "a" },
+  { map = "Tucson", a = "JJu", a_slug = "jju", a_race = "z", b = "Side", b_slug = "side", b_race = "z", winner = "a" },
   { map = "Into the Darkness", a = "JJu", a_slug = "jju", a_race = "z", b = "ClouD", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket.matches]]
@@ -111,7 +111,7 @@ sets = [
   { map = "Tucson", a = "Sunny", a_race = "t", b = "Casy", b_slug = "casy", b_race = "t", winner = "b" },
   { map = "Into the Darkness", a = "Control", a_race = "t", b = "Casy", b_slug = "casy", b_race = "t", winner = "a" },
   { map = "Luna MBCGame", a = "Control", a_race = "t", b = "EJi", b_race = "p", winner = "a" },
-  { map = "Detonation F", a = "Control", a_race = "t", b = "Side", b_race = "z", winner = "a" },
+  { map = "Detonation F", a = "Control", a_race = "t", b = "Side", b_slug = "side", b_race = "z", winner = "a" },
   { map = "Tucson", a = "Control", a_race = "t", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "a" },
 ]
 [[extra.team_bracket.matches]]
@@ -144,10 +144,10 @@ date = "2004-07-06"
 score_a = 4
 score_b = 0
 sets = [
-  { map = "Tucson", a = "RainBOw", a_race = "p", b = "TheWinD", b_race = "z", winner = "a" },
-  { map = "Into the Darkness", a = "RainBOw", a_race = "p", b = "JJu", b_slug = "jju", b_race = "z", winner = "a" },
-  { map = "Luna MBCGame", a = "RainBOw", a_race = "p", b = "SoO[S.SiR]", b_slug = "soo", b_race = "p", winner = "a" },
-  { map = "Detonation F", a = "RainBOw", a_race = "p", b = "Yooi", b_race = "t", winner = "a" },
+  { map = "Tucson", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "TheWinD", b_race = "z", winner = "a" },
+  { map = "Into the Darkness", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "JJu", b_slug = "jju", b_race = "z", winner = "a" },
+  { map = "Luna MBCGame", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "SoO[S.SiR]", b_slug = "soo", b_race = "p", winner = "a" },
+  { map = "Detonation F", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "Yooi", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket.matches]]
 a = "KTF MagicNs"
@@ -180,7 +180,7 @@ sets = [
   { map = "Into the Darkness", a = "TheWinD", a_race = "z", b = "Stay", b_race = "z", winner = "b" },
   { map = "Luna MBCGame", a = "Child", a_race = "z", b = "Stay", b_race = "z", winner = "b" },
   { map = "Detonation F", a = "JJu", a_slug = "jju", a_race = "z", b = "Stay", b_race = "z", winner = "a" },
-  { map = "Tucson", a = "JJu", a_slug = "jju", a_race = "z", b = "Junwi", b_race = "z", winner = "a" },
+  { map = "Tucson", a = "JJu", a_slug = "jju", a_race = "z", b = "Junwi", b_slug = "junwi", b_race = "z", winner = "a" },
   { map = "Into the Darkness", a = "JJu", a_slug = "jju", a_race = "z", b = "Sunny", b_race = "t", winner = "b" },
 ]
 [[extra.team_bracket.matches]]
@@ -196,8 +196,8 @@ sets = [
   { map = "Into the Darkness", a = "Reach", a_slug = "reach", a_race = "p", b = "ZergMaN", b_race = "z", winner = "a" },
   { map = "Luna MBCGame", a = "Reach", a_slug = "reach", a_race = "p", b = "Anytime", b_slug = "anytime", b_race = "p", winner = "a" },
   { map = "Detonation F", a = "Reach", a_slug = "reach", a_race = "p", b = "Dongrae", b_race = "t", winner = "b" },
-  { map = "Tucson", a = "Oddysay", a_race = "t", b = "Dongrae", b_race = "t", winner = "a" },
-  { map = "Into the Darkness", a = "Oddysay", a_race = "t", b = "Pusan", b_slug = "pusan", b_race = "p", winner = "a" },
+  { map = "Tucson", a = "Oddysay", a_slug = "oddysay", a_race = "t", b = "Dongrae", b_race = "t", winner = "a" },
+  { map = "Into the Darkness", a = "Oddysay", a_slug = "oddysay", a_race = "t", b = "Pusan", b_slug = "pusan", b_race = "p", winner = "a" },
 ]
 [[extra.team_bracket]]
 round = "패자조 준결승"
@@ -213,9 +213,9 @@ score_a = 2
 score_b = 4
 sets = [
   { map = "Tucson", a = "fOfy", a_race = "t", b = "Sync", b_slug = "sync", b_race = "t", winner = "b" },
-  { map = "Into the Darkness", a = "Junwi", a_race = "z", b = "Sync", b_slug = "sync", b_race = "t", winner = "a" },
-  { map = "Luna MBCGame", a = "Junwi", a_race = "z", b = "Oddysay", b_race = "t", winner = "a" },
-  { map = "Detonation F", a = "Junwi", a_race = "z", b = "ChoJJa", b_slug = "chojja", b_race = "z", winner = "b" },
+  { map = "Into the Darkness", a = "Junwi", a_slug = "junwi", a_race = "z", b = "Sync", b_slug = "sync", b_race = "t", winner = "a" },
+  { map = "Luna MBCGame", a = "Junwi", a_slug = "junwi", a_race = "z", b = "Oddysay", b_slug = "oddysay", b_race = "t", winner = "a" },
+  { map = "Detonation F", a = "Junwi", a_slug = "junwi", a_race = "z", b = "ChoJJa", b_slug = "chojja", b_race = "z", winner = "b" },
   { map = "Tucson", a = "Clon", a_race = "z", b = "ChoJJa", b_slug = "chojja", b_race = "z", winner = "b" },
   { map = "Into the Darkness", a = "Control", a_race = "t", b = "ChoJJa", b_slug = "chojja", b_race = "z", winner = "b" },
 ]
@@ -233,12 +233,12 @@ score_a = 3
 score_b = 4
 sets = [
   { map = "Tucson", a = "MuMyung", a_slug = "mumyung", a_race = "z", b = "sAviOr", b_slug = "savior", b_race = "z", winner = "a" },
-  { map = "Into the Darkness", a = "MuMyung", a_slug = "mumyung", a_race = "z", b = "fOru", b_race = "p", winner = "b" },
-  { map = "Luna MBCGame", a = "sigamari", a_race = "z", b = "fOru", b_race = "p", winner = "b" },
-  { map = "Detonation F", a = "TerAtO", a_race = "p", b = "fOru", b_race = "p", winner = "b" },
-  { map = "Tucson", a = "RainBOw", a_race = "p", b = "fOru", b_race = "p", winner = "a" },
-  { map = "Into the Darkness", a = "RainBOw", a_race = "p", b = "Midas", b_slug = "midas", b_race = "t", winner = "a" },
-  { map = "Luna MBCGame", a = "RainBOw", a_race = "p", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
+  { map = "Into the Darkness", a = "MuMyung", a_slug = "mumyung", a_race = "z", b = "fOru", b_slug = "foru", b_race = "p", winner = "b" },
+  { map = "Luna MBCGame", a = "sigamari", a_race = "z", b = "fOru", b_slug = "foru", b_race = "p", winner = "b" },
+  { map = "Detonation F", a = "TerAtO", a_race = "p", b = "fOru", b_slug = "foru", b_race = "p", winner = "b" },
+  { map = "Tucson", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "fOru", b_slug = "foru", b_race = "p", winner = "a" },
+  { map = "Into the Darkness", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "Midas", b_slug = "midas", b_race = "t", winner = "a" },
+  { map = "Luna MBCGame", a = "RainBOw", a_slug = "rainbow", a_race = "p", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
 ]
 [[extra.team_bracket]]
 round = "패자조 결승"
@@ -257,7 +257,7 @@ sets = [
   { map = "Into the Darkness", a = "BoxeR", a_slug = "boxer", a_race = "t", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", winner = "b" },
   { map = "Luna MBCGame", a = "Kingdom", a_slug = "kingdom", a_race = "p", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", winner = "a" },
   { map = "Detonation F", a = "Kingdom", a_slug = "kingdom", a_race = "p", b = "ChoJJa", b_slug = "chojja", b_race = "z", winner = "a" },
-  { map = "Tucson", a = "Kingdom", a_slug = "kingdom", a_race = "p", b = "Oddysay", b_race = "t", winner = "a" },
+  { map = "Tucson", a = "Kingdom", a_slug = "kingdom", a_race = "p", b = "Oddysay", b_slug = "oddysay", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket]]
 round = "결승"
@@ -273,12 +273,12 @@ score_a = 3
 score_b = 4
 sets = [
   { map = "Tucson", a = "Midas", a_slug = "midas", a_race = "t", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "a" },
-  { map = "Into the Darkness", a = "Midas", a_slug = "midas", a_race = "t", b = "RainBOw", b_race = "p", winner = "b" },
-  { map = "Luna MBCGame", a = "GoRush", a_slug = "gorush", a_race = "z", b = "RainBOw", b_race = "p", winner = "a" },
+  { map = "Into the Darkness", a = "Midas", a_slug = "midas", a_race = "t", b = "RainBOw", b_slug = "rainbow", b_race = "p", winner = "b" },
+  { map = "Luna MBCGame", a = "GoRush", a_slug = "gorush", a_race = "z", b = "RainBOw", b_slug = "rainbow", b_race = "p", winner = "a" },
   { map = "Detonation F", a = "GoRush", a_slug = "gorush", a_race = "z", b = "BoxeR", b_slug = "boxer", b_race = "t", winner = "b" },
   { map = "Tucson", a = "XellOs", a_slug = "xellos", a_race = "t", b = "BoxeR", b_slug = "boxer", b_race = "t", winner = "a" },
   { map = "Into the Darkness", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "b" },
-  { map = "Luna MBCGame", a = "fOru", a_race = "p", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "b" },
+  { map = "Luna MBCGame", a = "fOru", a_slug = "foru", a_race = "p", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "b" },
 ]
 +++
 전 시즌 상위 세 팀이 시드를 받고 다섯 팀이 예선을 통과했습니다. 8개 팀이 7전 4선승제 더블 엘리미네이션을 치렀고, 우승팀에는 현대 투싼 자동차가 주어졌습니다. 매치는 올킬 방식으로 치러져 각 세트의 승자가 남아 상대 팀의 다음 선수와 맞붙었습니다. 아래 세트 기록은 누가 누구를 차례로 꺾었는지를 순서대로 보여 줍니다.

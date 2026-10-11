@@ -83,7 +83,7 @@ sets = [
   { map = "Raid Assault", a = "sAviOr", a_slug = "savior", a_race = "z", b = "Silver", b_slug = "silver", b_race = "z", winner = "a" },
   { map = "Luna", a = "sAviOr", a_slug = "savior", a_race = "z", b = "Goodfriend", b_slug = "goodfriend", b_race = "t", winner = "a" },
   { map = "Arizona", a = "sAviOr", a_slug = "savior", a_race = "z", b = "NaDa", b_slug = "nada", b_race = "t", winner = "b" },
-  { map = "Into the Darkness 2", a = "fOru", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "a" },
+  { map = "Into the Darkness 2", a = "fOru", a_slug = "foru", a_race = "p", b = "NaDa", b_slug = "nada", b_race = "t", winner = "a" },
 ]
 +++
 The last MBCGame team league before the Proleague was merged across both channels. Eight teams played a fifteen-week league, after which the top teams met in a stepladder playoff of best-of-seven all-kill matches. Matches were played in the all-kill format: the winner of each set stayed on to face the next player of the losing team, so the set lists below show who knocked out whom in order.

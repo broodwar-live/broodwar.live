@@ -56,7 +56,7 @@ sets = [
   { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Flash", a_slug = "flash", a_race = "t", b = "Shuttle", b_slug = "shuttle", b_race = "p", winner = "b" },
   { map = "Fortress SE", map_slug = "fortress", a = "Action", a_slug = "action", a_race = "z", b = "Classic", b_race = "t", winner = "b" },
   { map = "Alternative", a = "Crazy-Hydra", a_race = "z", b = "Modesty", b_slug = "modesty", b_race = "z", winner = "b" },
-  { map = "New Bloody Ridge", a = "Stats", a_slug = "stats", a_race = "p", b = "hyvaa", b_race = "z", winner = "b" },
+  { map = "New Bloody Ridge", a = "Stats", a_slug = "stats", a_race = "p", b = "hyvaa", b_slug = "hyvaa", b_race = "z", winner = "b" },
 ]
 [[extra.team_bracket.matches.legs]]
 date = "2011-07-12"
@@ -65,7 +65,7 @@ score_b = 2
 sets = [
   { map = "New Bloody Ridge", a = "Action", a_slug = "action", a_race = "z", b = "Calm", b_slug = "calm", b_race = "z", winner = "b" },
   { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Flash", a_slug = "flash", a_race = "t", b = "Shuttle", b_slug = "shuttle", b_race = "p", winner = "a" },
-  { map = "La Mancha", map_slug = "la-mancha", a = "HoeJJa", a_slug = "hoejja", a_race = "z", b = "hyvaa", b_race = "z", winner = "a" },
+  { map = "La Mancha", map_slug = "la-mancha", a = "HoeJJa", a_slug = "hoejja", a_race = "z", b = "hyvaa", b_slug = "hyvaa", b_race = "z", winner = "a" },
   { map = "Fortress SE", map_slug = "fortress", a = "BarrackS", a_slug = "barracks-player", a_race = "t", b = "Classic", b_race = "t", winner = "a" },
   { map = "Icarus", map_slug = "icarus", a = "Stats", a_slug = "stats", a_race = "p", b = "Bogus", b_race = "t", winner = "b" },
   { map = "Alternative", a = "Crazy-Hydra", a_race = "z", b = "Kal", b_slug = "kal", b_race = "p", winner = "a" },
@@ -83,7 +83,7 @@ date = "2011-07-09"
 score_a = 2
 score_b = 4
 sets = [
-  { map = "Circuit Breaker", map_slug = "circuit-breaker", a = "Really", a_race = "t", b = "Grape", b_race = "p", winner = "b" },
+  { map = "Circuit Breaker", map_slug = "circuit-breaker", a = "Really", a_slug = "really", a_race = "t", b = "Grape", b_race = "p", winner = "b" },
   { map = "Neo Beltway", a = "Light", a_slug = "light", a_race = "t", b = "Reality", b_race = "t", winner = "b" },
   { map = "La Mancha", map_slug = "la-mancha", a = "Neo.G_Soulkey", a_slug = "soulkey", a_race = "z", b = "Jangbi", b_slug = "jangbi", b_race = "p", winner = "a" },
   { map = "Alternative", a = "Woon", a_race = "z", b = "Stork", b_slug = "stork", b_race = "p", winner = "b" },
@@ -100,7 +100,7 @@ sets = [
   { map = "New Bloody Ridge", a = "Flying", a_race = "p", b = "Brave", b_race = "p", winner = "b" },
   { map = "Alternative", a = "Neo.G_Soulkey", a_slug = "soulkey", a_race = "z", b = "Juni", b_race = "z", winner = "a" },
   { map = "Neo Beltway", a = "GuemChi", a_slug = "guemchi", a_race = "p", b = "Stork", b_slug = "stork", b_race = "p", winner = "b" },
-  { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Really", a_race = "t", b = "Reality", b_race = "t", winner = "a" },
+  { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Really", a_slug = "really", a_race = "t", b = "Reality", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket.matches.legs]]
 date = "2011-07-12"
@@ -135,7 +135,7 @@ sets = [
   { map = "Neo Aztec", map_slug = "aztec", a = "Crazy-Hydra", a_race = "z", b = "ZerO", b_slug = "zero", b_race = "z", winner = "a" },
   { map = "La Mancha", map_slug = "la-mancha", a = "HoeJJa", a_slug = "hoejja", a_race = "z", b = "Light", b_slug = "light", b_race = "t", winner = "b" },
   { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Stats", a_slug = "stats", a_race = "p", b = "hOn_sin", b_race = "t", winner = "a" },
-  { map = "Fortress SE", map_slug = "fortress", a = "BarrackS", a_slug = "barracks-player", a_race = "t", b = "Really", b_race = "t", winner = "b" },
+  { map = "Fortress SE", map_slug = "fortress", a = "BarrackS", a_slug = "barracks-player", a_race = "t", b = "Really", b_slug = "really", b_race = "t", winner = "b" },
   { map = "Circuit Breaker", map_slug = "circuit-breaker", a = "Flash", a_slug = "flash", a_race = "t", b = "Neo.G_Soulkey", b_slug = "soulkey", b_race = "z", winner = "a" },
   { map = "New Bloody Ridge", a = "Action", a_slug = "action", a_race = "z", b = "free", b_slug = "free", b_race = "p", winner = "b" },
   { map = "Icarus", map_slug = "icarus", a = "Flash", a_slug = "flash", a_race = "t", b = "ZerO", b_slug = "zero", b_race = "z", winner = "b", ace = true },
@@ -149,7 +149,7 @@ sets = [
   { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Stats", a_slug = "stats", a_race = "p", b = "hOn_sin", b_race = "t", winner = "a" },
   { map = "Icarus", map_slug = "icarus", a = "Crazy-Hydra", a_race = "z", b = "Light", b_slug = "light", b_race = "t", winner = "b" },
   { map = "New Bloody Ridge", a = "Action", a_slug = "action", a_race = "z", b = "ZerO", b_slug = "zero", b_race = "z", winner = "b" },
-  { map = "Fortress SE", map_slug = "fortress", a = "Flash", a_slug = "flash", a_race = "t", b = "Really", b_race = "t", winner = "a" },
+  { map = "Fortress SE", map_slug = "fortress", a = "Flash", a_slug = "flash", a_race = "t", b = "Really", b_slug = "really", b_race = "t", winner = "a" },
   { map = "La Mancha", map_slug = "la-mancha", a = "Perfective", a_race = "z", b = "Neo.G_Soulkey", b_slug = "soulkey", b_race = "z", winner = "a" },
 ]
 [[extra.team_bracket.matches.legs]]
@@ -159,7 +159,7 @@ score_b = 2
 sets = [
   { map = "Neo Aztec", map_slug = "aztec", a = "Crazy-Hydra", a_race = "z", b = "Neo.G_Soulkey", b_slug = "soulkey", b_race = "z", winner = "b" },
   { map = "New Bloody Ridge", a = "HoeJJa", a_slug = "hoejja", a_race = "z", b = "hOn_sin", b_race = "t", winner = "a" },
-  { map = "Circuit Breaker", map_slug = "circuit-breaker", a = "Flash", a_slug = "flash", a_race = "t", b = "Really", b_race = "t", winner = "a" },
+  { map = "Circuit Breaker", map_slug = "circuit-breaker", a = "Flash", a_slug = "flash", a_race = "t", b = "Really", b_slug = "really", b_race = "t", winner = "a" },
   { map = "La Mancha", map_slug = "la-mancha", a = "Action", a_slug = "action", a_race = "z", b = "Light", b_slug = "light", b_race = "t", winner = "b" },
   { map = "Icarus", map_slug = "icarus", a = "Stats", a_slug = "stats", a_race = "p", b = "ZerO", b_slug = "zero", b_race = "z", winner = "a" },
   { map = "New Empire of the Sun", map_slug = "empire-of-the-sun", a = "Perfective", a_race = "z", b = "free", b_slug = "free", b_race = "p", winner = "a" },

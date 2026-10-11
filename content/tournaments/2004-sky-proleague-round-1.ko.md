@@ -50,13 +50,13 @@ date = "2004-07-17"
 score_a = 4
 score_b = 3
 sets = [
-  { map = "Nostalgia", map_slug = "nostalgia", a = "Junwi", a_race = "z", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "a" },
+  { map = "Nostalgia", map_slug = "nostalgia", a = "Junwi", a_slug = "junwi", a_race = "z", b = "Kingdom", b_slug = "kingdom", b_race = "p", winner = "a" },
   { map = "Vertigo Plus", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Control", a2_race = "z", b = "Boxer", b_slug = "boxer", b_race = "t", b2 = "Zerglee", b2_race = "z", winner = "b" },
   { map = "Requiem", map_slug = "neo-requiem", a = "Autumn", a_race = "p", b = "iloveoov", b_slug = "iloveoov", b_race = "t", winner = "b" },
-  { map = "The Huntress", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Autumn", a2_race = "p", b = "IntoTheRainbow", b_race = "p", b2 = "Zerglee", b2_race = "z", winner = "b" },
+  { map = "The Huntress", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Autumn", a2_race = "p", b = "IntoTheRainbow", b_slug = "rainbow", b_race = "p", b2 = "Zerglee", b2_race = "z", winner = "b" },
   { map = "Neo Guillotine", a = "Sunny", a_race = "t", b = "Boxer", b_slug = "boxer", b_race = "t", winner = "a" },
-  { map = "Vertigo Plus", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Clon", a2_race = "z", b = "IntoTheRainbow", b_race = "p", b2 = "Zerglee", b2_race = "z", winner = "a" },
-  { map = "Xeno Sky", a = "Control", a_race = "t", b = "kOs", b_race = "t", winner = "a" },
+  { map = "Vertigo Plus", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Clon", a2_race = "z", b = "IntoTheRainbow", b_slug = "rainbow", b_race = "p", b2 = "Zerglee", b2_race = "z", winner = "a" },
+  { map = "Xeno Sky", a = "Control", a_race = "t", b = "kOs", b_slug = "kos", b_race = "t", winner = "a" },
 ]
 +++
 2004 SKY 프로리그 1라운드는 SKY가 후원한 첫 프로리그이자 온게임넷이 중계한 세 번째 프로리그였습니다. 11개 팀이 팀플, 개인전, 개인전 순서의 3전 2선승제로 풀리그를 치렀고, 매치 승수 상위 두 팀이 2004년 7월 17일 7전 4선승제 결승에서 맞붙었습니다.

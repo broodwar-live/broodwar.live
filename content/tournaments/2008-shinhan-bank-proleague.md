@@ -51,7 +51,7 @@ date = "2008-07-19"
 score_a = 4
 score_b = 1
 sets = [
-  { map = "Colosseum", map_slug = "colosseum", a = "Justin", a_race = "t", b = "Notice", b_race = "t", winner = "b" },
+  { map = "Colosseum", map_slug = "colosseum", a = "Justin", a_slug = "justin", a_race = "t", b = "Notice", b_race = "t", winner = "b" },
   { map = "Othello", map_slug = "othello", a = "Shine(Name)", a_race = "t", b = "Hwasin", b_slug = "hwasin", b_race = "t", winner = "a" },
   { map = "Hannibal", a = "YellOw(ArnC)", a_slug = "yellow-arnc", a_race = "z", a2 = "Zeus", a2_slug = "zeus", a2_race = "p", b = "July", b_slug = "july", b_race = "z", b2 = "BestGod", b2_race = "p", winner = "a" },
   { map = "Wuthering Heights", a = "go.go", a_slug = "go-go", a_race = "t", b = "YoonJoong", b_slug = "shuttle", b_race = "p", winner = "a" },
@@ -74,7 +74,7 @@ sets = [
   { map = "Hunters", a = "MuJuK", a_race = "p", a2 = "s2", a2_race = "z", b = "Flower", b_race = "z", b2 = "Spear", b2_race = "p", winner = "b" },
   { map = "Blue Storm", map_slug = "blue-storm", a = "Hyuk", a_slug = "hyuk", a_race = "z", b = "Shine(Name)", b_race = "t", winner = "a" },
   { map = "Katrina SE", map_slug = "katrina", a = "Bisu", a_slug = "bisu", a_race = "p", b = "Chalrenge", b_race = "p", winner = "b" },
-  { map = "Hannibal", a = "Bul_T", a_race = "p", a2 = "Rumble", a2_race = "z", b = "YellOw(ArnC)", b_slug = "yellow-arnc", b_race = "z", b2 = "Zeus", b2_slug = "zeus", b2_race = "p", winner = "a" },
+  { map = "Hannibal", a = "Bul_T", a_race = "p", a2 = "Rumble", a2_slug = "rumble", a2_race = "z", b = "YellOw(ArnC)", b_slug = "yellow-arnc", b_race = "z", b2 = "Zeus", b2_slug = "zeus", b2_race = "p", winner = "a" },
   { map = "Colosseum", map_slug = "colosseum", a = "Bisu", a_slug = "bisu", a_race = "p", b = "Luxury", b_slug = "luxury", b_race = "z", winner = "b", ace = true },
 ]
 [[extra.team_bracket]]
