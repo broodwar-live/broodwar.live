@@ -12,8 +12,12 @@
   <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
-  {% set page_title = page.title | default(value=section.title | default(value=config.title)) %}
-  {% set desc = page.description | default(value=section.description | default(value=config.description)) %}
+  {% set page_title = config.title %}{% set desc = config.description %}
+  {% if page is defined %}
+    {% set page_title = page.title | default(value=config.title) %}{% set desc = page.description | default(value=config.description) %}
+  {% elif section is defined %}
+    {% set page_title = section.title | default(value=config.title) %}{% set desc = section.description | default(value=config.description) %}
+  {% endif %}
   <title>{% block title %}{{ page_title }}{% endblock %} — broodwar.live</title>
   <meta name="description" content="{{ desc }}" />
   <link rel="canonical" href="{{ current_url }}" />
@@ -48,7 +52,7 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" as="style" />
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/app.css" />
+  <link rel="stylesheet" href="{{ get_url(path='css/app.css', cachebust=true) }}" />
   {# JSON-LD: Organization + WebSite #}
   <script type="application/ld+json">
   {
@@ -113,13 +117,10 @@
           </a>
 
           <div class="hidden lg:flex items-center gap-0.5">
-            {% macro nav_link(href, label) %}<a href="{{ href }}" {% if current_path is starting_with(href) %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if current_path is starting_with(href) %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ label }}</a>{% endmacro %}
-            {{ self::nav_link(href="/players", label=t.players) }}
-            {{ self::nav_link(href="/matches", label=t.matches) }}
-            {{ self::nav_link(href="/tournaments", label=t.tournaments) }}
-            {{ self::nav_link(href="/replays", label=t.replays) }}
-            {{ self::nav_link(href="/builds", label=t.builds) }}
-            {{ self::nav_link(href="/wiki", label=t.wiki) }}
+            {% for key in ["players", "matches", "tournaments", "replays", "builds", "wiki"] %}
+            {% set href = "/" ~ key %}{% set active = href in current_path %}
+            <a href="{% if lang == 'ko' %}/ko{% endif %}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if active %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}</a>
+            {% endfor %}
           </div>
 
           <div class="flex items-center gap-2.5">

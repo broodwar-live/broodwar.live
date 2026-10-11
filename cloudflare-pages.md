@@ -7,18 +7,28 @@ Configure in the Cloudflare Pages dashboard:
 | Setting | Value |
 |---------|-------|
 | **Framework preset** | None |
-| **Build command** | `npm install && npm run build:css && zola build` |
+| **Build command** | `npm ci && npm run build:css && zola build` |
 | **Build output directory** | `public` |
 | **Root directory** | `/` |
-| **Node.js version** | (not needed) |
+| **Node.js version** | `22` (set `NODE_VERSION`, needed for the Tailwind build) |
 
 ## Environment Variables
 
 | Variable | Value |
 |----------|-------|
-| `ZOLA_VERSION` | `0.20.0` (or latest) |
+| `ZOLA_VERSION` | `0.23.6` |
+| `NODE_VERSION` | `22` |
 
 Cloudflare Pages has native Zola support — set the `ZOLA_VERSION` env var and it installs Zola automatically.
+
+**Pin an exact version.** Zola 0.23 moved to Tera 2 (macros removed, stricter undefined-variable
+handling), so templates written for one minor version can break on another. The templates are
+deliberately written in the subset of Tera that works on both **0.23.6** (pinned, used locally and
+in CI) and **0.22.1** (verified fallback). Avoid Tera macros/components, `filter`/`map`/`concat`
+filters and positional test arguments unless you drop 0.22 support.
+
+If a Cloudflare build ever fails to install `0.23.6`, set `ZOLA_VERSION` to `0.22.1` — the site
+builds identically on it. Keep `.github/workflows/ci.yml` in sync with whatever is set here.
 
 ## Custom Domain
 
