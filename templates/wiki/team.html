@@ -132,7 +132,7 @@
       {% for tm in p.extra.teams %}{% if tm.slug is defined and tm.slug == page.slug %}{% set tfrom = tm.from | default(value="?") %}{% set tto = tm.to | default(value="?") %}{% if not tfrom %}{% set tfrom = "?" %}{% endif %}{% if not tto %}{% set tto = "?" %}{% elif tto == "present" %}{% set tto = t.player_present %}{% endif %}{% if span %}{% set_global span = span ~ ", " %}{% endif %}{% set_global span = span ~ tfrom ~ "–" ~ tto %}{% endif %}{% endfor %}
       {% if span %}
       {% set pc_name = p.title %}{% set pc_slug = p.slug %}{% set pc_class = "" %}
-      <li class="flex items-baseline justify-between gap-3 min-w-0">{% include "tournaments/player-chip.html" %}<span class="text-xs font-stats text-base-content/60 shrink-0">{{ span }}</span></li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-3 min-w-0">{% include "tournaments/player-chip.html" %}<span class="text-xs font-stats text-base-content/60 min-w-0 ml-auto text-right">{{ span }}</span></li>
       {% endif %}
       {% endif %}{% endfor %}
     </ul>
