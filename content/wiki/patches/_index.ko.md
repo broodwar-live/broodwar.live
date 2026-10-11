@@ -1,6 +1,6 @@
 +++
 title = "패치 노트"
-description = "1998년부터 현재까지 스타크래프트: 브루드 워 전체 패치 기록."
+description = "1998년 출시부터 리마스터 시대 업데이트까지, 검증된 변경 사항으로 정리한 브루드 워 패치 기록."
 template = "wiki/section.html"
 sort_by = "slug"
 +++
