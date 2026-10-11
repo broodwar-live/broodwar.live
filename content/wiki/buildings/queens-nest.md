@@ -1,5 +1,6 @@
 +++
 title = "Queen's Nest"
+description = "The Queen's Nest enables Queens and is required to morph a Lair into a Hive."
 slug = "queens-nest"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,10 +14,13 @@ hp = 850
 shields = 0
 armor = 1
 build_time = 60
-hotkey = "B→Q"
+hotkey = "V→Q"
 size = "large"
 produces = []
-required_by = ["hatchery"]
+unlocks = ["hive"]
+required_by = ["lair"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Queen's Nest is a Zerg tech building that enables Queen production from the Hatchery and, more importantly, is required to morph a Lair into a Hive. It researches Queen abilities: Spawn Broodling (instantly kills a non-robotic ground unit and spawns two Broodlings), Ensnare (slows enemy movement and attack speed in an area, also reveals cloaked units), and Parasite (places a permanent tracker on an enemy unit, sharing its vision).
 

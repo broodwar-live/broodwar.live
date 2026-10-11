@@ -1,5 +1,6 @@
 +++
 title = "퀸즈 네스트"
+description = "퀸즈 네스트는 퀸을 가능하게 하며 레어를 하이브로 변태시키는 데 필요합니다."
 slug = "queens-nest"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,10 +14,13 @@ hp = 850
 shields = 0
 armor = 1
 build_time = 60
-hotkey = "B→Q"
+hotkey = "V→Q"
 size = "large"
 produces = []
-required_by = ["hatchery"]
+unlocks = ["hive"]
+required_by = ["lair"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 퀸즈 네스트는 해처리에서 퀸 생산을 가능하게 하고, 더 중요하게는 레어를 하이브로 변태하는 데 필요한 저그 테크 건물이다. 퀸의 능력을 연구한다: 스폰 브루들링(비로봇 지상 유닛을 즉사시키고 브루들링 2마리 생성), 인스네어(영역 내 적의 이동 및 공격 속도를 늦추고 은폐 유닛도 드러냄), 패러사이트(적 유닛에 영구 추적기를 설치하여 시야 공유).
 

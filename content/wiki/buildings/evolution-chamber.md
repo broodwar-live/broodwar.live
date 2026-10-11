@@ -1,5 +1,6 @@
 +++
 title = "Evolution Chamber"
+description = "The Evolution Chamber researches Zerg ground upgrades and is required for Spore Colonies."
 slug = "evolution-chamber"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,11 +14,14 @@ hp = 750
 shields = 0
 armor = 1
 build_time = 40
-hotkey = "B→E"
+hotkey = "B→V"
 size = "large"
 produces = []
 researches = ["melee-attacks", "missile-attacks", "carapace"]
+unlocks = ["spore-colony"]
 required_by = ["hatchery"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Evolution Chamber is Zerg's primary ground upgrade building, researching Melee Attacks (for Zerglings, Ultralisks), Missile Attacks (for Hydralisks, Lurkers), and Carapace upgrades (for all ground units), each up to level 3. It is also required to morph Creep Colonies into Spore Colonies for anti-air defense and detection. The Evolution Chamber is the Zerg equivalent of Terran's Engineering Bay or Protoss's Forge.
 

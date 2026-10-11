@@ -1,5 +1,6 @@
 +++
 title = "Creep Colony"
+description = "The Creep Colony is a Zerg structure with no attack that morphs into a Sunken Colony or Spore Colony."
 slug = "creep-colony"
 template = "wiki/building.html"
 [taxonomies]
@@ -16,7 +17,10 @@ build_time = 20
 hotkey = "B→C"
 size = "large"
 produces = []
-required_by = ["hatchery"]
+unlocks = ["sunken-colony", "spore-colony"]
+required_by = []
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Creep Colony is Zerg's base defensive structure that serves as the foundation for both Sunken Colonies and Spore Colonies. On its own, the Creep Colony has no attack capability — it must morph into one of its two forms to become combat-ready. A Sunken Colony provides ground defense with 40 explosive damage and requires a Spawning Pool. A Spore Colony provides anti-air defense with 15 normal damage plus detection capability and requires an Evolution Chamber.
 

@@ -1,5 +1,6 @@
 +++
 title = "Citadel of Adun"
+description = "The Citadel of Adun researches Zealot speed (Leg Enhancements) and leads to the Templar Archives."
 slug = "citadel-of-adun"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,12 +14,14 @@ hp = 450
 shields = 450
 armor = 1
 build_time = 60
-hotkey = "B→C"
+hotkey = "V→C"
 size = "large"
 produces = []
 researches = ["leg-enhancements"]
 unlocks = ["templar-archives"]
-required_by = ["gateway"]
+required_by = ["cybernetics-core"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Citadel of Adun is a Protoss tech building that researches Leg Enhancements, giving Zealots a significant movement speed boost that transforms them from slow frontline units into fast, aggressive melee fighters. The Citadel is also the prerequisite for the Templar Archives, making it a mandatory step on the path to High Templar, Dark Templar, and Psionic Storm.
 

@@ -1,5 +1,6 @@
 +++
 title = "사이버네틱스 코어"
+description = "사이버네틱스 코어는 드라군과 프로토스 중반 테크를 해제하고 싱귤래리티 차지와 공중 업그레이드를 연구합니다."
 slug = "cybernetics-core"
 template = "wiki/building.html"
 [taxonomies]
@@ -17,8 +18,10 @@ hotkey = "B→Y"
 size = "large"
 produces = []
 researches = ["air-weapons", "air-armor"]
-unlocks = ["robotics-facility", "stargate"]
+unlocks = ["robotics-facility", "stargate", "citadel-of-adun"]
 required_by = ["gateway"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 사이버네틱스 코어는 게이트웨이에서 드라군 생산을 해제하고 모든 프로토스 고급 기술의 관문 역할을 하는 핵심 테크 건물이다. 드라군 공격 사거리를 늘리는 싱귤래리티 차지를 연구하며, 이는 모든 프로토스 빌드에서 가장 먼저 해야 하는 필수 업그레이드 중 하나이다. 사이버네틱스 코어는 또한 커세어, 스카웃, 캐리어 등 공중 유닛을 위한 공중 무기와 공중 방어구 업그레이드를 연구한다.
 

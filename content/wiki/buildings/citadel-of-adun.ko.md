@@ -1,5 +1,6 @@
 +++
 title = "시타델 오브 아둔"
+description = "시타델 오브 아둔은 질럿 발업(레그 인핸스먼트)을 연구하고 템플러 아카이브로 이어지는 건물입니다."
 slug = "citadel-of-adun"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,12 +14,14 @@ hp = 450
 shields = 450
 armor = 1
 build_time = 60
-hotkey = "B→C"
+hotkey = "V→C"
 size = "large"
 produces = []
 researches = ["leg-enhancements"]
 unlocks = ["templar-archives"]
-required_by = ["gateway"]
+required_by = ["cybernetics-core"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 시타델 오브 아둔은 질럿에게 상당한 이동 속도 향상을 부여하는 다리 강화를 연구하는 프로토스 테크 건물로, 느린 전선 유닛을 빠르고 공격적인 근접 전사로 변모시킨다. 시타델은 또한 템플러 아카이브의 선행 건물로, 하이 템플러, 다크 템플러, 사이오닉 스톰으로 가는 필수 단계이다.
 

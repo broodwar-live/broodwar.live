@@ -1,5 +1,6 @@
 +++
 title = "Academy"
+description = "The Academy is the Terran tech building that unlocks Firebats and Medics and researches Stim Pack and U-238 Shells."
 slug = "academy"
 template = "wiki/building.html"
 [taxonomies]
@@ -17,9 +18,12 @@ hotkey = "B→A"
 size = "large"
 produces = []
 researches = ["stim-pack", "u-238-shells"]
+unlocks = ["comsat-station"]
 required_by = ["barracks"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
-The Academy is a key Terran tech building that unlocks Firebat, Medic, and Ghost production at the Barracks. It researches two of the most important bio upgrades in the game: Stim Pack, which allows Marines and Firebats to sacrifice HP for increased attack and movement speed, and U-238 Shells, which extends Marine attack range by 1. The Academy also researches Medic abilities including Restoration and Optical Flare.
+The Academy is a key Terran tech building that unlocks Firebat and Medic production at the Barracks (Ghosts additionally need Covert Ops) and allows Command Centers to build a Comsat Station. It researches two of the most important bio upgrades in the game: Stim Pack, which allows Marines and Firebats to sacrifice HP for increased attack and movement speed, and U-238 Shells, which extends Marine attack range by 1. The Academy also researches Medic abilities including Restoration and Optical Flare.
 
 In competitive play, the Academy is one of the first tech buildings constructed in bio-focused strategies, particularly in TvZ. Getting an early Academy enables fast Stim Pack research, which is a critical timing — Marines with Stim Pack are dramatically more effective in combat. In TvP bio builds, the Academy is similarly essential for unlocking Medics, whose healing sustains Marine/Medic ball pushes. The Academy timing is a key scouting indicator for opponents; seeing an early Academy signals a bio-oriented strategy.
 

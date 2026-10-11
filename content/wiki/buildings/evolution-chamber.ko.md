@@ -1,5 +1,6 @@
 +++
 title = "에볼루션 챔버"
+description = "에볼루션 챔버는 저그 지상 업그레이드를 연구하며 스포어 콜로니에 필요합니다."
 slug = "evolution-chamber"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,11 +14,14 @@ hp = 750
 shields = 0
 armor = 1
 build_time = 40
-hotkey = "B→E"
+hotkey = "B→V"
 size = "large"
 produces = []
 researches = ["melee-attacks", "missile-attacks", "carapace"]
+unlocks = ["spore-colony"]
 required_by = ["hatchery"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 에볼루션 챔버는 저그의 주요 지상 업그레이드 건물로, 근접 공격(저글링, 울트라리스크용), 미사일 공격(히드라리스크, 러커용), 갑피 업그레이드(모든 지상 유닛용)를 연구한다(각각 최대 3단계). 대공 방어와 탐지를 위해 크립 콜로니를 스포어 콜로니로 변태하는 데도 필요하다. 에볼루션 챔버는 테란의 엔지니어링 베이나 프로토스의 포지에 해당하는 저그 건물이다.
 

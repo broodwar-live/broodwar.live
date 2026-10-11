@@ -1,5 +1,6 @@
 +++
 title = "포지"
+description = "포지는 프로토스 지상·실드 업그레이드를 연구하며 포톤 캐논 건설에 필요합니다."
 slug = "forge"
 template = "wiki/building.html"
 [taxonomies]
@@ -19,6 +20,8 @@ produces = []
 researches = ["ground-weapons", "ground-armor", "plasma-shields"]
 unlocks = ["photon-cannon"]
 required_by = ["nexus"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 포지는 프로토스의 지상 업그레이드 건물로, 지상 무기, 지상 방어구, 플라즈마 실드를 연구한다(각각 최대 3단계). 포톤 캐논 건설의 선행 건물이기도 하여, 공격적인 캐논 러시와 방어적인 기지 보호 모두에 연결된다. 포지는 유닛을 생산하지 않으며 애드온이 없다.
 

@@ -1,5 +1,6 @@
 +++
 title = "템플러 아카이브"
+description = "템플러 아카이브는 하이 템플러와 다크 템플러를 가능하게 하고 사이오닉 스톰 등 템플러 마법을 연구합니다."
 slug = "templar-archives"
 template = "wiki/building.html"
 [taxonomies]
@@ -13,11 +14,14 @@ hp = 500
 shields = 500
 armor = 1
 build_time = 60
-hotkey = "B→T"
+hotkey = "V→T"
 size = "large"
 produces = []
 researches = ["psionic-storm", "hallucination", "maelstrom", "mind-control"]
+unlocks = ["arbiter-tribunal"]
 required_by = ["citadel-of-adun"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 템플러 아카이브는 게이트웨이에서 하이 템플러와 다크 템플러 생산을 가능하게 하는 핵심 후반 프로토스 테크 건물이다. 브루드워에서 가장 강력한 능력들을 연구한다: 사이오닉 스톰(치명적인 범위 피해), 할루시네이션(유닛의 환영 복제 생성), 마인드 컨트롤(다크 아콘으로 적 유닛을 영구 장악), 메일스트롬(다크 아콘으로 생체 유닛 동결).
 

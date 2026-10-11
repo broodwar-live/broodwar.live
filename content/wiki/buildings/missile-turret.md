@@ -1,5 +1,6 @@
 +++
 title = "Missile Turret"
+description = "The Missile Turret is the Terran anti-air defense structure and a detector."
 slug = "missile-turret"
 template = "wiki/building.html"
 [taxonomies]
@@ -17,6 +18,8 @@ hotkey = "B→T"
 size = "large"
 produces = []
 required_by = ["engineering-bay"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 The Missile Turret is Terran's static anti-air defense structure and detector. It attacks air units with 20 explosive damage and reveals cloaked and burrowed units within its detection radius. Costing only 75 minerals with no gas requirement, the Missile Turret is an affordable solution for air defense and map detection coverage. An Engineering Bay must be built before Missile Turrets can be constructed.
 

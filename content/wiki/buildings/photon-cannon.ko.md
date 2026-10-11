@@ -1,5 +1,6 @@
 +++
 title = "포톤 캐논"
+description = "포톤 캐논은 지상과 공중을 공격하고 은폐 유닛을 탐지하는 프로토스 방어 건물입니다."
 slug = "photon-cannon"
 template = "wiki/building.html"
 [taxonomies]
@@ -17,6 +18,8 @@ hotkey = "B→C"
 size = "large"
 produces = []
 required_by = ["forge"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
+verified = "2026-10-11"
 +++
 포톤 캐논은 프로토스의 정적 방어 건물로, 지상과 공중 유닛 모두에 20 일반 피해를 입힌다. 탐지기 역할도 하여 탐지 범위 내의 은폐 및 버로우 유닛을 드러낸다. 포톤 캐논은 건설 전에 포지가 필요하며 파일런의 에너지장 안에 배치해야 한다. 포톤 캐논에 전력을 공급하는 파일런을 잃으면 완전히 비활성화된다.
 
