@@ -1,0 +1,52 @@
+{#- Client-side search index, rendered once per language as /search.json and
+    /ko/search.json (config.toml: feed_filenames). Consumed by static/js/search.js.
+
+    Each entry is a compact array: [type, title, path, alt names, description]
+      type        key for the result badge/grouping (player, unit, map, …)
+      alt names   "|"-separated: other-language titles, Korean/English names,
+                  real names, aliases, short names — so EN search finds KO
+                  names and vice versa
+      description truncated page description (low-weight matches only)
+-#}
+{%- set groups = [
+  ["players/_index.md", "player"],
+  ["wiki/units/_index.md", "unit"],
+  ["wiki/buildings/_index.md", "building"],
+  ["wiki/maps/_index.md", "map"],
+  ["wiki/strategies/_index.md", "strategy"],
+  ["wiki/abilities/_index.md", "ability"],
+  ["wiki/upgrades/_index.md", "upgrade"],
+  ["wiki/mechanics/_index.md", "mechanic"],
+  ["wiki/races/_index.md", "race"],
+  ["wiki/tech-trees/_index.md", "techtree"],
+  ["wiki/teams/_index.md", "team"],
+  ["wiki/patches/_index.md", "patch"],
+  ["wiki/_index.md", "wiki"],
+  ["tournaments/_index.md", "tournament"],
+  ["builds/_index.md", "build"],
+  ["news/_index.md", "news"]
+] -%}
+[
+{%- set_global first = true -%}
+{%- for g in groups -%}
+{%- set sec = get_section(path=g[0], lang=lang) -%}
+{#- The section landing page itself (e.g. "Units"), so section names are findable. -#}
+{%- set_global sec_alt = "" -%}
+{%- for tr in sec.translations -%}{%- if tr.lang != lang and tr.title -%}{%- set_global sec_alt = sec_alt ~ tr.title ~ "|" -%}{%- endif -%}{%- endfor -%}
+{%- if not first %},{% endif -%}{%- set_global first = false -%}
+["section",{{ sec.title | json_encode | safe }},{{ sec.path | json_encode | safe }},{{ sec_alt | json_encode | safe }},""]
+{%- for p in sec.pages -%}
+{%- set e = p.extra -%}
+{%- set kind = g[1] -%}
+{%- if kind == "tournament" -%}{%- if e.short_name is defined -%}{%- set kind = "league" -%}{%- else -%}{%- set kind = "season" -%}{%- endif -%}{%- endif -%}
+{%- set_global alt = "" -%}
+{%- for tr in p.translations -%}{%- if tr.lang != lang and tr.title and tr.title != p.title -%}{%- set_global alt = alt ~ tr.title ~ "|" -%}{%- endif -%}{%- endfor -%}
+{%- for k in ["name_ko", "name_en", "real_name", "romanized_name", "short_name", "matchup"] -%}
+{%- if e[k] is defined and e[k] -%}{%- set_global alt = alt ~ e[k] ~ "|" -%}{%- endif -%}
+{%- endfor -%}
+{%- if e.aliases is defined -%}{%- for a in e.aliases -%}{%- set_global alt = alt ~ a ~ "|" -%}{%- endfor -%}{%- endif -%}
+{%- if e.series_name is defined and e.season is defined -%}{%- set_global alt = alt ~ e.series_name ~ " " ~ e.season ~ "|" -%}{%- endif -%}
+,[{{ kind | json_encode | safe }},{{ p.title | json_encode | safe }},{{ p.path | json_encode | safe }},{{ alt | json_encode | safe }},{{ p.description | default(value="") | truncate(length=110) | json_encode | safe }}]
+{%- endfor -%}
+{%- endfor -%}
+]

@@ -1,58 +1,252 @@
 {% extends "base.html" %}
-{% block title %}broodwar.live — StarCraft: Brood War Community Hub{% endblock %}
+{% block title %}{% if lang == "ko" %}broodwar.live — 스타크래프트: 브루드 워 커뮤니티 허브{% else %}broodwar.live — StarCraft: Brood War Community Hub{% endif %}{% endblock %}
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 {% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
-<section class="asl-gradient-bg hero-streaks hero-glow relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
-    <div class="text-center max-w-2xl mx-auto">
-      <span class="brandmark text-2xl lg:text-4xl">
-        <span class="brandmark-word">BROODWAR</span>
-        <span class="brandmark-live-box"><span>LIVE</span></span>
-      </span>
-      <p class="mt-6 text-sm lg:text-base text-base-content/50 leading-relaxed max-w-lg mx-auto">
-        {{ t.the_home }}
-      </p>
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <a href="{{ lp }}/replays/" class="btn btn-primary">{{ t.replays }}</a>
-        <a href="{{ lp }}/players/" class="btn btn-primary btn-soft">{{ t.players }}</a>
+
+{#- ===== Data =====================================================================
+    Tera 2 has no array-building filters, so lists are accumulated as ";"-separated
+    strings of "|"-separated fields, then split/sorted.
+    finals:  final_date|series_slug|short_name|season|winner|winner_slug|runner_up|runner_up_slug|score
+    ongoing: series_slug|short_name|season|year|series_path
+    winners: winner_slug (one per completed season)
+================================================================================= -#}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+{% set_global finals = "" %}{% set_global ongoing = "" %}{% set_global winners = "" %}{% set_global n_finals = 0 %}
+{% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% set short = tp.extra.short_name | default(value=tp.title) %}
+{% for s in tp.extra.seasons %}
+  {% if s.status == "live" or s.status == "ongoing" %}
+    {% set_global ongoing = ongoing ~ tp.slug ~ "|" ~ short ~ "|" ~ s.season ~ "|" ~ s.year ~ "|" ~ tp.path ~ ";" %}
+  {% elif s.status == "completed" and s.winner %}
+    {% set_global n_finals = n_finals + 1 %}
+    {% if s.winner_slug is defined and s.winner_slug %}{% set_global winners = winners ~ s.winner_slug ~ ";" %}{% endif %}
+    {% if s.final_date is defined and s.final_date %}
+      {% set_global finals = finals ~ s.final_date ~ "|" ~ tp.slug ~ "|" ~ short ~ "|" ~ s.season ~ "|" ~ s.winner ~ "|" ~ s.winner_slug | default(value="") ~ "|" ~ s.runner_up ~ "|" ~ s.runner_up_slug | default(value="") ~ "|" ~ s.score ~ ";" %}
+    {% endif %}
+  {% endif %}
+{% endfor %}{% endif %}{% endfor %}
+
+{% set psec = get_section(path="players/_index.md", lang=lang) %}
+{% set bsec = get_section(path="builds/_index.md", lang=lang) %}
+{% set wiki_subs = ["units", "buildings", "maps", "strategies", "abilities", "upgrades", "mechanics", "races", "tech-trees", "teams", "patches"] %}
+{% set_global n_wiki = 0 %}{% set_global verified = "" %}
+{% for w in wiki_subs %}{% set ws = get_section(path="wiki/" ~ w ~ "/_index.md", lang=lang) %}
+  {% set_global n_wiki = n_wiki + ws.pages | length %}
+  {% for p in ws.pages %}{% set vd = "" %}
+    {% if p.updated %}{% set vd = p.updated | date(format="%Y-%m-%d") %}{% elif p.extra.verified is defined and p.extra.verified %}{% set vd = p.extra.verified %}{% endif %}
+    {#- Key "date|900-index": newest first; ties interleave sections. -#}
+    {% if vd and w != "patches" %}{% set_global verified = verified ~ vd ~ "|" ~ (900 - loop.index) ~ "|" ~ w ~ "|" ~ p.path ~ "|" ~ p.title ~ ";" %}{% endif %}
+  {% endfor %}
+{% endfor %}
+{% set doy = now() | date(format="%j") | int %}
+
+{#- ===== Hero ===== -#}
+<section class="border-b border-base-content/10 bg-base-100/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+    <div class="min-w-0">
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-base-content">{{ t.ui_home_h1 }}</h1>
+      <p class="mt-2 max-w-2xl text-sm sm:text-[15px] leading-relaxed text-base-content/75">{{ t.ui_home_lede }}</p>
+      <div class="mt-4 flex flex-col sm:flex-row gap-3 sm:items-center">
+        <button type="button" data-search-open class="flex items-center gap-2 w-full sm:w-80 px-3 py-2 rounded-lg border border-base-content/20 bg-base-100 text-sm text-base-content/70 hover:border-primary/60 transition-colors text-left">
+          <svg class="size-4 shrink-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+          <span class="flex-1 truncate">{{ t.ui_search_button }}</span>
+          <kbd class="hidden sm:inline text-[11px] border border-base-content/20 rounded px-1">/</kbd>
+        </button>
+        <nav aria-label="{{ t.main_navigation }}" class="flex flex-wrap gap-x-4 gap-y-1 text-sm font-medium">
+          <a href="{{ lp }}/players/" class="text-primary hover:underline underline-offset-2">{{ t.players }}</a>
+          <a href="{{ lp }}/tournaments/" class="text-primary hover:underline underline-offset-2">{{ t.tournaments }}</a>
+          <a href="{{ lp }}/builds/" class="text-primary hover:underline underline-offset-2">{{ t.builds }}</a>
+          <a href="{{ lp }}/wiki/" class="text-primary hover:underline underline-offset-2">{{ t.wiki }}</a>
+        </nav>
       </div>
     </div>
+    <dl class="grid grid-cols-4 gap-px overflow-hidden rounded-box border border-base-content/10 bg-base-content/10 text-center">
+      {% for st in [[psec.pages | length, t.ui_stat_players, "/players/"], [n_finals, t.ui_stat_finals, "/tournaments/"], [n_wiki, t.ui_stat_wiki, "/wiki/"], [bsec.pages | length, t.ui_stat_builds, "/builds/"]] %}
+      <div class="bg-base-100 px-3 py-2.5 sm:px-5">
+        <dt class="text-[11px] leading-tight text-base-content/70">{{ st[1] }}</dt>
+        <dd class="font-stats text-lg sm:text-xl font-semibold text-base-content"><a href="{{ lp }}{{ st[2] }}" class="hover:text-primary">{{ st[0] }}</a></dd>
+      </div>
+      {% endfor %}
+    </dl>
   </div>
 </section>
 
-{# Live streams widget — populated by JS #}
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <div class="flex items-center justify-between mb-6">
-    <h2 class="text-lg font-semibold">{{ t.live_streams }}</h2>
-    <a href="{{ lp }}/streams/" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
-  </div>
-  {% if config.extra.api_enabled %}
-  <div id="live-streams" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true">
-    <p class="text-sm text-base-content/30">Loading streams...</p>
-  </div>
-  {% else %}
-  {% set soon_compact = true %}{% include "partials/api-soon.html" %}
-  {% endif %}
-</section>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid gap-4 grid-cols-[minmax(0,1fr)] lg:grid-cols-3 lg:items-start">
+  <div class="lg:col-span-2 grid gap-4 grid-cols-[minmax(0,1fr)] min-w-0">
 
-<div class="section-divider max-w-7xl mx-auto"></div>
+    {#- Ongoing seasons -#}
+    {% for o in ongoing | split(pat=";") %}{% if o %}{% set f = o | split(pat="|") %}
+    <a href="{{ f[4] }}" class="dash-card flex items-center gap-3 px-4 py-3 hover:border-primary/50 transition-colors">
+      <span class="inline-flex items-center gap-1.5 rounded bg-error/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-error whitespace-nowrap">
+        <span class="size-1.5 rounded-full bg-error animate-live-pulse" aria-hidden="true"></span>{{ t.ui_ongoing }}
+      </span>
+      <span class="min-w-0">
+        <span class="block text-sm font-semibold text-base-content">{{ f[1] }} {% if lang == "ko" %}시즌 {{ f[2] }}{% else %}Season {{ f[2] }}{% endif %} <span class="font-normal text-base-content/70">({{ f[3] }})</span></span>
+        <span class="block text-xs text-base-content/70">{{ t.ui_ongoing_note }}</span>
+      </span>
+      <span class="ml-auto text-primary" aria-hidden="true">&rarr;</span>
+    </a>
+    {% endif %}{% endfor %}
 
-{# Recent matches — populated by JS #}
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <div class="flex items-center justify-between mb-6">
-    <h2 class="text-lg font-semibold">{{ t.matches }}</h2>
-    <a href="{{ lp }}/matches/" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
+    {% if config.extra.api_enabled %}
+    <section class="dash-card" aria-labelledby="h-streams">
+      <div class="dash-card-head"><h2 id="h-streams">{{ t.live_streams }}</h2><a href="{{ lp }}/streams/" class="dash-more">{{ t.view_all }} &rarr;</a></div>
+      <div id="live-streams" class="p-4" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true"></div>
+    </section>
+    <section class="dash-card" aria-labelledby="h-matches">
+      <div class="dash-card-head"><h2 id="h-matches">{{ t.matches }}</h2><a href="{{ lp }}/matches/" class="dash-more">{{ t.view_all }} &rarr;</a></div>
+      <div id="recent-matches" class="p-4" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true"></div>
+    </section>
+    {% endif %}
+
+    {#- Latest premier-league finals -#}
+    <section class="dash-card" aria-labelledby="h-finals">
+      <div class="dash-card-head">
+        <h2 id="h-finals">{{ t.ui_latest_results }}</h2>
+        <a href="{{ lp }}/tournaments/" class="dash-more">{{ t.ui_all_tournaments }} &rarr;</a>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="dash-table">
+          <thead><tr>
+            <th scope="col" class="hidden sm:table-cell">{{ t.ui_col_date }}</th>
+            <th scope="col">{{ t.ui_col_league }}</th>
+            <th scope="col">{{ t.ui_col_winner }}</th>
+            <th scope="col" class="text-center">{{ t.ui_col_score }}</th>
+            <th scope="col">{{ t.ui_col_runner_up }}</th>
+          </tr></thead>
+          <tbody>
+          {% set_global shown = 0 %}
+          {% for line in finals | split(pat=";") | sort | reverse %}{% if line and shown < 8 %}{% set_global shown = shown + 1 %}
+            {% set f = line | split(pat="|") %}
+            {% set_global season_url = lp ~ "/tournaments/" ~ f[1] ~ "/" %}{% set_global season_label = "" %}
+            {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == f[1] and sp.extra.season ~ "" == f[3] %}{% set_global season_url = sp.path %}{% set_global season_label = sp.title %}{% endif %}{% endfor %}
+            {% if not season_label %}{% if lang == "ko" %}{% set_global season_label = f[2] ~ " 시즌 " ~ f[3] %}{% else %}{% set_global season_label = f[2] ~ " Season " ~ f[3] %}{% endif %}{% endif %}
+            <tr>
+              <td class="hidden sm:table-cell font-stats text-xs text-base-content/75 whitespace-nowrap"><time datetime="{{ f[0] }}">{{ f[0] }}</time></td>
+              <td class="whitespace-nowrap"><a href="{{ season_url }}" title="{{ f[0] }}">{{ season_label }}</a></td>
+              <td class="whitespace-nowrap font-semibold">{% if f[5] %}{% set wp = get_page(path="players/" ~ f[5] ~ ".md", lang=lang) %}<span class="race-dot race-dot-{{ wp.extra.race | default(value='') }}" aria-hidden="true"></span><a href="{{ wp.path }}">{{ f[4] }}</a>{% else %}{{ f[4] }}{% endif %}</td>
+              <td class="text-center font-stats text-xs whitespace-nowrap">{{ f[8] }}</td>
+              <td class="whitespace-nowrap">{% if f[7] %}{% set rp = get_page(path="players/" ~ f[7] ~ ".md", lang=lang) %}<span class="race-dot race-dot-{{ rp.extra.race | default(value='') }}" aria-hidden="true"></span><a href="{{ rp.path }}">{{ f[6] }}</a>{% else %}{{ f[6] }}{% endif %}</td>
+            </tr>
+          {% endif %}{% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {#- Featured today: deterministic daily rotation by build day-of-year -#}
+    <section aria-labelledby="h-featured">
+      <h2 id="h-featured" class="text-[15px] font-bold mb-2">{{ t.ui_featured }}</h2>
+      <div class="grid gap-3 sm:grid-cols-3">
+        {% for ft in [["maps", t.ui_featured_map, 0], ["units", t.ui_featured_unit, 7], ["strategies", t.ui_featured_strategy, 3]] %}
+        {% set fs = get_section(path="wiki/" ~ ft[0] ~ "/_index.md", lang=lang) %}
+        {% set n = fs.pages | length %}
+        {#- Sorted by slug so EN and KO feature the same page on the same day. -#}
+        {% if n > 0 %}{% set fp = (fs.pages | sort(attribute="slug"))[(doy + ft[2]) % n] %}
+        <a href="{{ fp.path }}" class="dash-card group flex flex-col overflow-hidden hover:border-primary/50 transition-colors">
+          {% if fp.extra.image is defined and fp.extra.image %}
+          <img src="{{ fp.extra.image }}" alt="" loading="lazy" decoding="async" width="320" height="140" class="h-28 w-full object-cover bg-base-300">
+          {% endif %}
+          <span class="flex flex-col gap-1 p-3">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-base-content/70">{{ ft[1] }}</span>
+            <span class="text-sm font-semibold text-primary group-hover:underline underline-offset-2">{{ fp.title }}{% if lang == "en" and fp.extra.name_ko is defined %} <span lang="ko" class="font-normal text-base-content/70">{{ fp.extra.name_ko }}</span>{% elif lang == "ko" and fp.extra.name_en is defined and fp.extra.name_en != fp.title %} <span lang="en" class="font-normal text-base-content/70">{{ fp.extra.name_en }}</span>{% endif %}</span>
+            <span class="text-xs leading-relaxed text-base-content/75 line-clamp-3">{{ fp.description | default(value="") }}</span>
+          </span>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    {#- Latest news -#}
+    {% set nsec = get_section(path="news/_index.md", lang=lang) %}
+    <section class="dash-card" aria-labelledby="h-news">
+      <div class="dash-card-head">
+        <h2 id="h-news">{{ t.ui_latest_news }}</h2>
+        <a href="{{ lp }}/news/" class="dash-more">{{ t.ui_all_news }} &rarr;</a>
+      </div>
+      {% if nsec.pages | length > 0 %}
+      <ul class="divide-y divide-base-content/10">
+        {% for np in nsec.pages %}{% if loop.index <= 5 %}
+        <li class="px-4 py-2.5 flex gap-3 items-baseline">
+          {% if np.date %}<time datetime="{{ np.date }}" class="font-stats text-xs text-base-content/70 whitespace-nowrap">{{ np.date | date(format="%Y-%m-%d") }}</time>{% endif %}
+          <a href="{{ np.path }}" class="text-sm font-medium text-primary hover:underline underline-offset-2">{{ np.title }}</a>
+        </li>
+        {% endif %}{% endfor %}
+      </ul>
+      {% else %}
+      <p class="px-4 py-4 text-sm text-base-content/75">
+        {{ t.news_empty }}
+        <a href="{{ config.extra.github_repo }}/tree/main/content/news" target="_blank" rel="noopener" class="content-link">{{ t.news_contribute }}</a>
+      </p>
+      {% endif %}
+    </section>
   </div>
-  {% if config.extra.api_enabled %}
-  <div id="recent-matches" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true">
-    <p class="text-sm text-base-content/30">Loading matches...</p>
-  </div>
-  {% else %}
-  {% set soon_compact = true %}{% include "partials/api-soon.html" %}
-  {% endif %}
-</section>
+
+  <aside class="grid gap-4 grid-cols-[minmax(0,1fr)] min-w-0">
+    {#- Replay CTA -#}
+    <a href="{{ lp }}/replays/" class="dash-card group flex gap-3 p-4 border-primary/30 hover:border-primary/60 transition-colors">
+      <svg class="size-8 shrink-0 text-primary" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0 1 18 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0 1 18 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 0 1 6 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5" /></svg>
+      <span class="min-w-0">
+        <span class="block text-sm font-semibold text-base-content">{{ t.ui_replay_title }}</span>
+        <span class="block mt-0.5 text-xs leading-relaxed text-base-content/75">{{ t.ui_replay_body }}</span>
+        <span class="inline-block mt-2 text-xs font-semibold text-primary group-hover:underline underline-offset-2">{{ t.ui_replay_cta }} &rarr;</span>
+      </span>
+    </a>
+
+    {#- Title leaders: counted from every series page's completed seasons -#}
+    <section class="dash-card" aria-labelledby="h-leaders">
+      <div class="dash-card-head">
+        <h2 id="h-leaders">{{ t.ui_title_leaders }}</h2>
+        <a href="{{ lp }}/players/" class="dash-more">{{ t.ui_all_players }} &rarr;</a>
+      </div>
+      {% set wl = winners | split(pat=";") %}
+      {% set_global ranked = "" %}
+      {% for slug in wl | unique %}{% if slug %}
+        {% set_global c = 0 %}{% for w in wl %}{% if w == slug %}{% set_global c = c + 1 %}{% endif %}{% endfor %}
+        {% set inv = 100 - c %}{% set_global ranked = ranked ~ inv ~ "|" ~ slug ~ ";" %}
+      {% endif %}{% endfor %}
+      <ol class="text-sm">
+        {% set_global shown = 0 %}{% set_global prev = -1 %}{% set_global rank = 0 %}
+        {% for r in ranked | split(pat=";") | sort %}{% if r and shown < 10 %}{% set_global shown = shown + 1 %}
+          {% set f = r | split(pat="|") %}{% set cnt = 100 - (f[0] | int) %}
+          {% if cnt != prev %}{% set_global rank = shown %}{% set_global prev = cnt %}{% endif %}
+          {% set lpg = get_page(path="players/" ~ f[1] ~ ".md", lang=lang) %}
+          <li class="flex items-center gap-2 px-4 py-1.5 {% if shown > 1 %}border-t border-base-content/7{% endif %}">
+            <span class="w-5 text-right font-stats text-xs text-base-content/70">{{ rank }}</span>
+            <span class="race-dot race-dot-{{ lpg.extra.race | default(value='') }}" aria-hidden="true"></span>
+            <a href="{{ lpg.path }}" class="font-medium text-primary hover:underline underline-offset-2">{{ lpg.title }}</a>
+            {% if lpg.extra.real_name is defined and lpg.extra.real_name %}<span lang="ko" class="text-xs text-base-content/70 truncate">{{ lpg.extra.real_name }}</span>{% endif %}
+            <span class="ml-auto font-stats text-sm font-semibold text-base-content">{{ cnt }}<span class="sr-only"> {{ t.ui_titles }}</span></span>
+          </li>
+        {% endif %}{% endfor %}
+      </ol>
+      <p class="px-4 py-2 border-t border-base-content/10 text-[11px] leading-snug text-base-content/70">{{ t.ui_title_leaders_note }}</p>
+    </section>
+
+    {#- Recently verified wiki pages -#}
+    <section class="dash-card" aria-labelledby="h-verified">
+      <div class="dash-card-head">
+        <h2 id="h-verified">{{ t.ui_recently_verified }}</h2>
+        <a href="{{ lp }}/wiki/" class="dash-more">{{ t.ui_browse_wiki }} &rarr;</a>
+      </div>
+      <ul class="text-sm">
+        {% set_global shown = 0 %}
+        {% for v in verified | split(pat=";") | sort | reverse %}{% if v and shown < 8 %}{% set_global shown = shown + 1 %}
+          {% set f = v | split(pat="|") %}
+          {% set k = {"units": "unit", "buildings": "building", "maps": "map", "strategies": "strategy", "abilities": "ability", "upgrades": "upgrade", "mechanics": "mechanic", "races": "race", "tech-trees": "techtree", "teams": "team"}[f[2]] %}
+          <li class="flex items-baseline gap-2 px-4 py-1.5 {% if shown > 1 %}border-t border-base-content/7{% endif %}">
+            <a href="{{ f[3] }}" class="min-w-0 truncate font-medium text-primary hover:underline underline-offset-2">{{ f[4] }}</a>
+            <span class="text-[11px] text-base-content/70 whitespace-nowrap">{{ t["ui_type_" ~ k] | default(value="") }}</span>
+            <time datetime="{{ f[0] }}" class="ml-auto font-stats text-[11px] text-base-content/70 whitespace-nowrap">{{ f[0] }}</time>
+          </li>
+        {% endif %}{% endfor %}
+      </ul>
+      <p class="px-4 py-2 border-t border-base-content/10 text-[11px] leading-snug text-base-content/70">{{ t.ui_recently_verified_note }}</p>
+    </section>
+  </aside>
+</div>
 {% endblock %}
 
 {% block scripts %}

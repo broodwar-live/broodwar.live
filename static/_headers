@@ -23,8 +23,13 @@
   Cache-Control: public, max-age=86400
   Content-Type: application/wasm
 
-/search_index.en.js
+/search.json
   Cache-Control: public, max-age=3600
+  Content-Type: application/json; charset=utf-8
+
+/ko/search.json
+  Cache-Control: public, max-age=3600
+  Content-Type: application/json; charset=utf-8
 
 /sw.js
   Cache-Control: no-cache

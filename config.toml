@@ -3,22 +3,21 @@ title = "broodwar.live"
 description = "The community platform for StarCraft: Brood War competitive play."
 default_language = "en"
 compile_sass = false
-build_search_index = true
-generate_feeds = false
+# Search uses a custom JSON index (templates/search.json, rendered through the
+# feed mechanism as /search.json and /ko/search.json) instead of elasticlunr:
+# it carries types and cross-language names/aliases and stays small.
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["search.json"]
 minify_html = true
 
 [languages.ko]
 title = "broodwar.live"
 description = "스타크래프트: 브루드 워 경쟁 커뮤니티 플랫폼."
-build_search_index = true
-generate_feeds = false
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["search.json"]
 taxonomies = [{name = "race", feed = false}, {name = "matchup", feed = false}, {name = "tags", feed = false}]
-
-# KO search index: titles and descriptions only, like the default language.
-[languages.ko.search]
-include_title = true
-include_description = true
-include_content = false
 
 [[taxonomies]]
 name = "race"
@@ -31,13 +30,6 @@ feed = false
 [[taxonomies]]
 name = "tags"
 feed = false
-
-# Keep the client-side index small (~340 KB vs ~3.8 MB with full bodies):
-# index titles and descriptions only.
-[search]
-include_title = true
-include_description = true
-include_content = false
 
 [slugify]
 paths = "safe"
@@ -131,6 +123,71 @@ player_sort = "Sort"
 player_sort_name = "Name"
 player_sort_titles = "Titles"
 player_filter_empty = "No players match these filters."
+# --- Site shell, home dashboard and search (ui_*) ---
+ui_menu = "Menu"
+ui_open_menu = "Open menu"
+ui_close_menu = "Close menu"
+ui_close = "Close"
+ui_banner_title = "Under construction"
+ui_banner_body = "broodwar.live is in early development. Content and features are incomplete."
+ui_banner_short = "Early development — content is incomplete."
+ui_banner_cta = "Contribute on GitHub"
+ui_dismiss = "Dismiss"
+ui_home_h1 = "Competitive Brood War, in one place"
+ui_home_lede = "Player careers, premier-league finals, build orders and a verified unit, map and strategy wiki — sourced and editable on GitHub."
+ui_search_button = "Search players, units, maps…"
+ui_search_hint = "Type a player, unit, map, league or build. Korean and English names both work."
+ui_search_loading = "Loading index…"
+ui_search_error = "Failed to load search index."
+ui_search_results = "results"
+ui_search_keys = "to navigate · Enter to open · Esc to close"
+ui_stat_players = "Players"
+ui_stat_finals = "Finals recorded"
+ui_stat_wiki = "Wiki pages"
+ui_stat_builds = "Build orders"
+ui_ongoing = "In progress"
+ui_ongoing_note = "Season underway — results will be added after the final."
+ui_latest_results = "Latest premier-league finals"
+ui_col_date = "Date"
+ui_col_league = "League"
+ui_col_winner = "Winner"
+ui_col_score = "Score"
+ui_col_runner_up = "Runner-up"
+ui_all_tournaments = "All tournaments"
+ui_title_leaders = "Title leaders"
+ui_title_leaders_note = "Premier individual league titles recorded on this site (ASL, BSL, KSL, MSL, OSL, SOOP)."
+ui_titles = "titles"
+ui_all_players = "All players"
+ui_featured = "Featured today"
+ui_featured_map = "Map"
+ui_featured_unit = "Unit"
+ui_featured_strategy = "Strategy"
+ui_recently_verified = "Recently verified"
+ui_recently_verified_note = "Wiki pages checked against their sources."
+ui_latest_news = "Latest news"
+ui_all_news = "All news"
+ui_replay_title = "Analyze a replay in your browser"
+ui_replay_body = "Drop a .rep file to see build orders, APM and timings. Parsed locally — nothing is uploaded."
+ui_replay_cta = "Open replay analyzer"
+ui_browse_wiki = "Browse the wiki"
+ui_type_section = "Section"
+ui_type_player = "Player"
+ui_type_unit = "Unit"
+ui_type_building = "Building"
+ui_type_map = "Map"
+ui_type_strategy = "Strategy"
+ui_type_ability = "Ability"
+ui_type_upgrade = "Upgrade"
+ui_type_mechanic = "Mechanic"
+ui_type_race = "Race"
+ui_type_techtree = "Tech tree"
+ui_type_team = "Team"
+ui_type_patch = "Patch"
+ui_type_wiki = "Wiki"
+ui_type_league = "League"
+ui_type_season = "Season"
+ui_type_build = "Build"
+ui_type_news = "News"
 
 [extra.i18n.ko]
 skip_to_content = "본문으로 건너뛰기"
@@ -208,3 +265,68 @@ player_sort = "정렬"
 player_sort_name = "이름순"
 player_sort_titles = "우승 횟수순"
 player_filter_empty = "조건에 맞는 선수가 없습니다."
+# --- 사이트 셸, 홈 대시보드, 검색 (ui_*) ---
+ui_menu = "메뉴"
+ui_open_menu = "메뉴 열기"
+ui_close_menu = "메뉴 닫기"
+ui_close = "닫기"
+ui_banner_title = "공사 중"
+ui_banner_body = "broodwar.live는 초기 개발 단계입니다. 콘텐츠와 기능이 불완전합니다."
+ui_banner_short = "초기 개발 단계 — 콘텐츠가 불완전합니다."
+ui_banner_cta = "기여하기"
+ui_dismiss = "닫기"
+ui_home_h1 = "브루드 워 e스포츠의 모든 기록"
+ui_home_lede = "선수 경력, 개인리그 결승, 빌드 오더, 그리고 출처를 검증한 유닛·맵·전략 위키 — GitHub에서 누구나 수정할 수 있습니다."
+ui_search_button = "선수, 유닛, 맵 검색…"
+ui_search_hint = "선수, 유닛, 맵, 리그, 빌드를 입력하세요. 한글과 영문 이름 모두 검색됩니다."
+ui_search_loading = "색인을 불러오는 중…"
+ui_search_error = "검색 색인을 불러오지 못했습니다."
+ui_search_results = "개 결과"
+ui_search_keys = "이동 · Enter 열기 · Esc 닫기"
+ui_stat_players = "선수"
+ui_stat_finals = "기록된 결승"
+ui_stat_wiki = "위키 문서"
+ui_stat_builds = "빌드 오더"
+ui_ongoing = "진행 중"
+ui_ongoing_note = "시즌 진행 중 — 결승 이후 결과가 추가됩니다."
+ui_latest_results = "최근 개인리그 결승"
+ui_col_date = "날짜"
+ui_col_league = "리그"
+ui_col_winner = "우승"
+ui_col_score = "스코어"
+ui_col_runner_up = "준우승"
+ui_all_tournaments = "전체 토너먼트"
+ui_title_leaders = "최다 우승"
+ui_title_leaders_note = "이 사이트에 기록된 개인리그 우승 횟수입니다 (ASL, BSL, KSL, MSL, OSL, SOOP)."
+ui_titles = "회"
+ui_all_players = "전체 선수"
+ui_featured = "오늘의 문서"
+ui_featured_map = "맵"
+ui_featured_unit = "유닛"
+ui_featured_strategy = "전략"
+ui_recently_verified = "최근 검증된 문서"
+ui_recently_verified_note = "출처와 대조해 확인한 위키 문서입니다."
+ui_latest_news = "최신 뉴스"
+ui_all_news = "전체 뉴스"
+ui_replay_title = "브라우저에서 리플레이 분석"
+ui_replay_body = ".rep 파일을 놓으면 빌드 오더, APM, 타이밍을 보여줍니다. 파일은 업로드되지 않고 브라우저에서 분석됩니다."
+ui_replay_cta = "리플레이 분석기 열기"
+ui_browse_wiki = "위키 둘러보기"
+ui_type_section = "섹션"
+ui_type_player = "선수"
+ui_type_unit = "유닛"
+ui_type_building = "건물"
+ui_type_map = "맵"
+ui_type_strategy = "전략"
+ui_type_ability = "기술"
+ui_type_upgrade = "업그레이드"
+ui_type_mechanic = "메커니즘"
+ui_type_race = "종족"
+ui_type_techtree = "테크 트리"
+ui_type_team = "팀"
+ui_type_patch = "패치"
+ui_type_wiki = "위키"
+ui_type_league = "리그"
+ui_type_season = "시즌"
+ui_type_build = "빌드"
+ui_type_news = "뉴스"

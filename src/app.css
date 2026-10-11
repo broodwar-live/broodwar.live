@@ -179,7 +179,18 @@
 /* === Typography === */
 
 html {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, sans-serif;
+  /* Pretendard covers Latin + Hangul; the fallbacks are the native Korean UI
+     fonts on macOS/iOS, Windows and Android so Hangul never drops to a serif. */
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Noto Sans KR", system-ui, sans-serif;
+}
+
+/* Korean: break between words (eojeol), not between syllables, but never
+   overflow on long unbroken strings (URLs, IDs). break-word rather than
+   anywhere: "anywhere" also shrinks min-content widths, which made table
+   cells split ISO dates mid-string (2009-01-|31). */
+:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .brandmark {
@@ -460,14 +471,14 @@ html {
 
 .bracket { display: flex; gap: 0; overflow-x: auto; padding: 1rem 0; }
 .bracket-round { display: flex; flex-direction: column; justify-content: space-around; min-width: 200px; position: relative; }
-.bracket-round-title { text-align: center; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: oklch(60% 0.2 250 / 0.5); font-weight: 600; margin-bottom: 0.75rem; }
+.bracket-round-title { text-align: center; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.08em; color: oklch(68% 0.17 250); font-weight: 600; margin-bottom: 0.75rem; }
 .bracket-match { margin: 0.375rem 0; position: relative; }
 .bracket-player { display: flex; align-items: center; justify-content: space-between; padding: 0.375rem 0.75rem; font-size: 0.8rem; border: 1px solid oklch(60% 0.2 250 / 0.08); background: oklch(14% 0.03 255 / 0.5); min-width: 170px; }
 .bracket-player:first-child { border-radius: 0.375rem 0.375rem 0 0; border-bottom: none; }
 .bracket-player:last-child { border-radius: 0 0 0.375rem 0.375rem; }
 .bracket-player.winner { background: oklch(60% 0.2 250 / 0.08); border-color: oklch(60% 0.2 250 / 0.15); }
 .bracket-player.winner .bracket-name { font-weight: 600; color: var(--color-base-content); }
-.bracket-player .bracket-name { color: oklch(80% 0.01 250); opacity: 0.5; }
+.bracket-player .bracket-name { color: oklch(80% 0.01 250); }
 .bracket-player .bracket-score { font-family: "JetBrains Mono", monospace; font-size: 0.7rem; color: oklch(60% 0.2 250 / 0.7); font-weight: 600; }
 .bracket-connector { position: absolute; right: -16px; width: 16px; border-color: oklch(60% 0.2 250 / 0.15); pointer-events: none; }
 .bracket-connector-top { top: 25%; height: 50%; border-right: 1px solid; border-top: 1px solid; border-color: inherit; }
@@ -490,14 +501,14 @@ html {
 
 .infobox-label {
   display: block;
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: oklch(94% 0.006 250 / 0.3);
+  color: oklch(94% 0.006 250 / 0.7);
   margin-bottom: 0.5rem;
 }
-[data-theme=light] .infobox-label { color: oklch(18% 0.02 255 / 0.35); }
+[data-theme=light] .infobox-label { color: oklch(18% 0.02 255 / 0.7); }
 
 .infobox-dl {
   display: flex;
@@ -506,9 +517,9 @@ html {
   font-size: 0.875rem;
 }
 .infobox-dl > div { display: flex; justify-content: space-between; align-items: baseline; }
-.infobox-dl dt { color: oklch(94% 0.006 250 / 0.4); }
+.infobox-dl dt { color: oklch(94% 0.006 250 / 0.7); }
 .infobox-dl dd { font-family: "JetBrains Mono", "Fira Code", monospace; font-variant-numeric: tabular-nums; }
-[data-theme=light] .infobox-dl dt { color: oklch(18% 0.02 255 / 0.45); }
+[data-theme=light] .infobox-dl dt { color: oklch(18% 0.02 255 / 0.72); }
 
 /* Race-colored infobox accent */
 .infobox-accent-terran { background: oklch(62% 0.22 25 / 0.08); border-top: 2px solid oklch(62% 0.22 25 / 0.5); }
@@ -536,14 +547,14 @@ html {
 
 /* Damage type badge */
 .dmg-badge {
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
   padding: 0.1em 0.4em;
   border-radius: 0.25rem;
   background: oklch(94% 0.006 250 / 0.06);
-  color: oklch(94% 0.006 250 / 0.35);
+  color: oklch(94% 0.006 250 / 0.7);
   text-transform: capitalize;
 }
-[data-theme=light] .dmg-badge { background: oklch(18% 0.02 255 / 0.05); color: oklch(18% 0.02 255 / 0.4); }
+[data-theme=light] .dmg-badge { background: oklch(18% 0.02 255 / 0.05); color: oklch(18% 0.02 255 / 0.72); }
 
 /* Race navbox */
 .navbox {
@@ -552,10 +563,189 @@ html {
   border-radius: 0.5rem;
   padding: 0.875rem 1rem;
 }
-.navbox a { color: oklch(60% 0.2 250 / 0.55); transition: color 0.15s; }
-.navbox a:hover { color: oklch(60% 0.2 250); }
-.navbox .navbox-current { font-weight: 600; color: oklch(94% 0.006 250 / 0.7); }
+.navbox a { color: oklch(68% 0.17 250); transition: color 0.15s; }
+.navbox a:hover { text-decoration: underline; text-underline-offset: 2px; }
+.navbox .navbox-current { font-weight: 600; color: oklch(94% 0.006 250 / 0.85); }
 [data-theme=light] .navbox { background: oklch(98% 0.003 250 / 0.6); border-color: oklch(50% 0.18 250 / 0.08); }
-[data-theme=light] .navbox a { color: oklch(50% 0.18 250 / 0.6); }
-[data-theme=light] .navbox a:hover { color: oklch(50% 0.18 250); }
+[data-theme=light] .navbox a { color: oklch(47% 0.18 250); }
 [data-theme=light] .navbox .navbox-current { color: oklch(18% 0.02 255 / 0.75); }
+
+
+/* =====================================================================
+   Contrast & legibility rules (WCAG 2.2 AA)
+   ---------------------------------------------------------------------
+   base-content is ~94% L (dark) / ~18% L (light), so opacity modifiers map
+   to contrast roughly as: /70+ ≈ 7:1, /60 ≈ 4.5–5:1, /50 ≈ 3.5:1,
+   /40 ≈ 2.6:1, /30 and below fail even for large text.
+   - Meaningful text (labels, metadata, footer links, KO names, dates):
+     text-base-content/60 at minimum; prefer /70 for text under 14px.
+   - /40–/50 only for decorative glyphs (separators, icons with a label).
+   - Never use /15–/35 for text. Borders/backgrounds may use any opacity.
+   - Minimum font size for text is 11px (text-[11px]); no 8–10px badges.
+   - Accent-colored text (primary/warning/success) keeps full opacity —
+     "text-primary/60" and "text-warning/60" fail AA on base-100/200.
+   ===================================================================== */
+
+/* In-content links are visibly links by default: primary + underline in
+   prose, primary in tables. Utility classes on a link still win (these live
+   in the components layer), so opt out explicitly where a link is styled
+   as a card, button or nav item. */
+@layer components {
+  .prose :where(a):not(:where(.btn, .zola-anchor, .not-prose, .not-prose *)) {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-color: color-mix(in oklab, var(--color-primary) 45%, transparent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+  .prose :where(a):not(:where(.btn, .zola-anchor)):hover {
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+  }
+  main :where(table) :where(a):not(:where(.btn)) {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+  main :where(table) :where(a):not(:where(.btn)):hover {
+    text-decoration-line: underline;
+    text-underline-offset: 0.18em;
+  }
+  /* Opt-in class for links outside prose/tables (lists, infoboxes, cards). */
+  .content-link {
+    color: var(--color-primary);
+    text-decoration-line: underline;
+    text-decoration-color: color-mix(in oklab, var(--color-primary) 40%, transparent);
+    text-underline-offset: 0.18em;
+  }
+  .content-link:hover { text-decoration-color: currentColor; }
+
+  /* "Soon" pill: ≥11px, full-contrast text on a tinted background. */
+  .badge-soon {
+    display: inline-block;
+    font-size: 0.6875rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0 0.3em;
+    border-radius: 0.25rem;
+    background: color-mix(in oklab, var(--color-warning) 18%, transparent);
+    color: color-mix(in oklab, var(--color-warning) 55%, var(--color-base-content));
+    white-space: nowrap;
+  }
+  .nav-desktop .badge-soon { font-size: 0.625rem; vertical-align: 0.35em; padding: 0 0.25em; }
+
+  /* Footer link lists */
+  .footer-heading {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: color-mix(in oklab, var(--color-base-content) 80%, transparent);
+    margin-bottom: 0.875rem;
+  }
+  .footer-list { display: grid; gap: 0.5rem; }
+  .footer-list a {
+    font-size: 0.875rem;
+    color: color-mix(in oklab, var(--color-base-content) 72%, transparent);
+    transition: color 0.15s;
+  }
+  .footer-list a:hover { color: var(--color-base-content); text-decoration: underline; text-underline-offset: 0.18em; }
+
+  /* Theme buttons (header + mobile menu) */
+  .theme-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: color-mix(in oklab, var(--color-base-content) 70%, transparent);
+    transition: background-color 0.15s, color 0.15s;
+  }
+  .theme-btn:hover { color: var(--color-base-content); background: color-mix(in oklab, var(--color-primary) 10%, transparent); }
+  .theme-btn[aria-pressed="true"] { color: var(--color-primary); background: color-mix(in oklab, var(--color-primary) 15%, transparent); }
+  .theme-btn span { white-space: nowrap; }
+}
+
+/* Under-construction banner stays hidden once dismissed (set before paint). */
+[data-banner="off"] #early-access-banner { display: none; }
+
+/* Language switcher labels must never wrap per syllable. */
+[hreflang] { white-space: nowrap; }
+
+/* --- Mobile menu (native <dialog>) --- */
+.mobile-menu {
+  margin: 0 0 0 auto;
+  padding: 0;
+  height: 100dvh;
+  max-height: 100dvh;
+  width: min(22rem, 100vw);
+  max-width: 100vw;
+  border: 0;
+  border-left: 1px solid color-mix(in oklab, var(--color-base-content) 10%, transparent);
+  background: var(--color-base-100);
+  color: var(--color-base-content);
+}
+.mobile-menu::backdrop { background: oklch(0% 0 0 / 0.55); backdrop-filter: blur(2px); }
+.mobile-menu[open] { animation: menu-in 0.18s ease-out; }
+@keyframes menu-in { from { transform: translateX(1.5rem); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .mobile-menu[open] { animation: none; } }
+.mobile-menu-link {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: color-mix(in oklab, var(--color-base-content) 85%, transparent);
+}
+.mobile-menu-link:hover { background: color-mix(in oklab, var(--color-primary) 8%, transparent); color: var(--color-base-content); }
+.mobile-menu-link[aria-current="page"] { background: color-mix(in oklab, var(--color-primary) 14%, transparent); color: var(--color-primary); }
+
+/* --- Search dialog --- */
+.search-dialog {
+  margin: 4.5rem auto auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 40rem;
+  background: transparent;
+  border: 0;
+  overflow: visible;
+  color: var(--color-base-content);
+}
+@media (max-width: 639px) { .search-dialog { margin-top: 0.75rem; padding: 0 0.5rem; } }
+.search-dialog::backdrop { background: oklch(0% 0 0 / 0.55); backdrop-filter: blur(3px); }
+.search-dialog kbd { font-family: inherit; border: 1px solid color-mix(in oklab, var(--color-base-content) 20%, transparent); border-radius: 0.25rem; padding: 0 0.25rem; }
+.search-hit { transition: background-color 0.1s; }
+.search-hit[aria-selected="true"] { background: color-mix(in oklab, var(--color-primary) 12%, transparent); outline: 1px solid color-mix(in oklab, var(--color-primary) 35%, transparent); }
+
+/* --- Home dashboard --- */
+.dash-card {
+  background: var(--color-base-100);
+  border: 1px solid color-mix(in oklab, var(--color-base-content) 10%, transparent);
+  border-radius: var(--radius-box);
+}
+.dash-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-base-content) 10%, transparent);
+}
+.dash-card-head h2 { font-size: 0.9375rem; font-weight: 700; }
+.dash-more { font-size: 0.75rem; font-weight: 500; color: var(--color-primary); white-space: nowrap; }
+.dash-more:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+.dash-table { width: 100%; font-size: 0.8125rem; border-collapse: collapse; }
+.dash-table th { text-align: left; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: color-mix(in oklab, var(--color-base-content) 72%, transparent); padding: 0.5rem 0.75rem; white-space: nowrap; }
+.dash-table td { padding: 0.4rem 0.75rem; border-top: 1px solid color-mix(in oklab, var(--color-base-content) 7%, transparent); vertical-align: middle; }
+.dash-table tbody tr:nth-child(even) { background: color-mix(in oklab, var(--color-base-content) 2.5%, transparent); }
+.dash-table tbody tr:hover { background: color-mix(in oklab, var(--color-primary) 6%, transparent); }
+
+/* Race marker dot (home tables/lists) */
+.race-dot { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 9999px; margin-right: 0.375rem; vertical-align: 0.05em; background: color-mix(in oklab, var(--color-base-content) 30%, transparent); }
+.race-dot-terran { background: var(--color-race-terran); }
+.race-dot-protoss { background: var(--color-race-protoss); }
+.race-dot-zerg { background: var(--color-race-zerg); }

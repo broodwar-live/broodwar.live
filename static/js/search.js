@@ -1,160 +1,207 @@
-// Site search using Zola's elasticlunr index
-
-;(function() {
-  const overlay = document.getElementById("search-overlay")
-  const backdrop = document.getElementById("search-backdrop")
+// Site search over the custom JSON index (templates/search.json → /search.json,
+// /ko/search.json). Entries: [type, title, path, "alt|names|", description].
+//
+// Ranking (per entry, best name wins; "names" = title + alt names, which carry
+// the other language's title, Korean/English names, real names and aliases):
+//   exact name match > name prefix > every query word starts a word in a name
+//   > every query word appears in a name > every query word starts a word in
+//   the description. Ties: entity types (player/unit/map…) before reference
+//   pages, then shorter titles. Results are grouped by type.
+;(function () {
+  const dialog = document.getElementById("search-overlay")
   const input = document.getElementById("search-input")
   const results = document.getElementById("search-results")
-  const toggle = document.getElementById("search-toggle")
-  if (!overlay || !input || !results) return
+  const status = document.getElementById("search-status")
+  if (!dialog || !input || !results) return
 
-  let index = null
-  let loaded = false
-  // Each language has its own index (config.toml): KO pages search KO titles
-  // and link to /ko/ URLs.
   const lang = document.documentElement.lang === "ko" ? "ko" : "en"
+  let labels = {}
+  try { labels = JSON.parse(document.getElementById("search-labels").textContent) } catch (e) {}
+  const L = (k, fb) => labels[k] || fb
+
+  const TYPE_ORDER = ["section", "player", "unit", "building", "map", "league", "season", "strategy", "build",
+    "ability", "upgrade", "race", "techtree", "team", "mechanic", "patch", "news", "wiki"]
+  const typeRank = (t) => { const i = TYPE_ORDER.indexOf(t); return i < 0 ? 99 : i }
+
+  let entries = null
+  let loading = null
+  let active = -1
+  let flat = []
+
+  const norm = (s) => (s || "").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim()
+  const compact = (s) => s.replace(/ /g, "")
+
+  function load() {
+    if (loading) return loading
+    loading = fetch(lang === "ko" ? "/ko/search.json" : "/search.json")
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json() })
+      .then((data) => {
+        entries = data.map(([type, title, url, alt, desc]) => {
+          const raw = [title, ...(alt || "").split("|")].filter((n) => norm(n))
+          const names = raw.map(norm)
+          return { type, title, url, desc, raw, names, namesC: names.map(compact), nameText: " " + names.join(" "), descText: " " + norm(desc) }
+        })
+        if (input.value.trim()) run()
+      })
+      .catch(() => {
+        loading = null
+        setStatus(L("error", "Failed to load search index."), true)
+      })
+    return loading
+  }
+
+  function score(e, qn, qc, tokens) {
+    let best = 0
+    for (let i = 0; i < e.names.length; i++) {
+      const n = e.names[i], nc = e.namesC[i], titleBonus = i === 0 ? 50 : 0
+      if (n === qn || nc === qc) best = Math.max(best, 1000 + titleBonus)
+      else if (n.startsWith(qn) || nc.startsWith(qc)) best = Math.max(best, 600 + titleBonus)
+    }
+    if (best) return best
+    if (tokens.every((t) => e.nameText.includes(" " + t))) return 400
+    if (tokens.every((t) => e.nameText.includes(t))) return 250
+    if (tokens.every((t) => e.nameText.includes(" " + t) || e.descText.includes(" " + t))) return 80
+    return 0
+  }
+
+  function setStatus(msg, isError) {
+    results.innerHTML = msg
+      ? `<p class="px-3 py-4 text-sm text-center ${isError ? "text-error" : "text-base-content/70"}">${escapeHtml(msg)}</p>`
+      : ""
+    flat = []
+    active = -1
+    input.removeAttribute("aria-activedescendant")
+    input.setAttribute("aria-expanded", "false")
+  }
+
+  function run() {
+    const qn = norm(input.value)
+    if (!qn) { setStatus(L("hint", "")); announce(""); return }
+    if (!entries) { setStatus(L("loading", "Loading…")); load(); return }
+    const qc = compact(qn)
+    const tokens = qn.split(" ")
+    const hits = []
+    for (const e of entries) {
+      const s = score(e, qn, qc, tokens)
+      if (s) hits.push([s, e])
+    }
+    hits.sort((a, b) => b[0] - a[0] || typeRank(a[1].type) - typeRank(b[1].type) || a[1].title.length - b[1].title.length)
+    if (!hits.length) { setStatus(L("none", "No results found.")); announce(L("none", "")); return }
+
+    // Group by type, ordered by each group's best hit; cap per group and total.
+    const groups = new Map()
+    for (const [, e] of hits) {
+      if (!groups.has(e.type)) groups.set(e.type, [])
+      const g = groups.get(e.type)
+      if (g.length < 6) g.push(e)
+    }
+    flat = []
+    let html = ""
+    let shown = 0
+    for (const [type, list] of groups) {
+      if (shown >= 30) break
+      const label = L("type_" + type, type)
+      html += `<div role="group" aria-labelledby="sg-${type}" class="mb-2">`
+      html += `<div id="sg-${type}" class="px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">${escapeHtml(label)}</div>`
+      for (const e of list) {
+        const i = flat.length
+        flat.push(e)
+        shown++
+        const alt = e.names.length > 1 ? altLine(e) : ""
+        html += `<a id="sr-${i}" role="option" aria-selected="false" href="${escapeHtml(e.url)}" data-i="${i}"
+          class="search-hit flex items-start gap-3 px-3 py-2 rounded-lg">
+          <span class="mt-0.5 shrink-0 min-w-[4.5rem] text-center rounded border border-base-content/15 px-1.5 py-px text-[11px] font-medium text-base-content/75">${escapeHtml(label)}</span>
+          <span class="min-w-0">
+            <span class="block text-sm font-medium text-base-content">${escapeHtml(e.title)}${alt}</span>
+            ${e.desc ? `<span class="block text-xs text-base-content/70 truncate">${escapeHtml(e.desc)}</span>` : ""}
+          </span>
+        </a>`
+      }
+      html += `</div>`
+    }
+    results.innerHTML = html
+    input.setAttribute("aria-expanded", "true")
+    setActive(0)
+    announce(`${flat.length} ${L("results", "results")}`)
+  }
+
+  // Show the first alternate name that differs from the title (e.g. 이제동, Lurker).
+  function altLine(e) {
+    const i = e.names.findIndex((n, j) => j > 0 && n !== e.names[0])
+    return i > 0 ? ` <span class="font-normal text-base-content/70">· ${escapeHtml(e.raw[i])}</span>` : ""
+  }
+
+  function setActive(i) {
+    if (!flat.length) return
+    active = (i + flat.length) % flat.length
+    results.querySelectorAll("[role=option]").forEach((el) => {
+      const on = Number(el.dataset.i) === active
+      el.setAttribute("aria-selected", on ? "true" : "false")
+      if (on) el.scrollIntoView({ block: "nearest" })
+    })
+    input.setAttribute("aria-activedescendant", "sr-" + active)
+  }
+
+  function announce(msg) { if (status) status.textContent = msg }
 
   function open() {
-    overlay.classList.remove("hidden")
+    if (dialog.open) return
+    if (typeof dialog.showModal === "function") dialog.showModal()
+    else dialog.setAttribute("open", "")
     document.body.style.overflow = "hidden"
     input.focus()
-    if (!loaded) loadIndex()
+    load()
+    run()
   }
 
   function close() {
-    overlay.classList.add("hidden")
+    if (dialog.open && typeof dialog.close === "function") dialog.close()
+    else dialog.removeAttribute("open")
+  }
+
+  dialog.addEventListener("close", () => {
     document.body.style.overflow = ""
     input.value = ""
-    results.innerHTML = ""
-  }
+    setStatus("")
+  })
+  // Click on the dialog's own box (the backdrop area) closes it.
+  dialog.addEventListener("click", (e) => { if (e.target === dialog || e.target.hasAttribute("data-search-close")) close() })
+  results.addEventListener("mousemove", (e) => {
+    const a = e.target.closest("[role=option]")
+    if (a && Number(a.dataset.i) !== active) setActive(Number(a.dataset.i))
+  })
+  results.addEventListener("click", (e) => { if (e.target.closest("a")) close() })
 
-  // Toggle button
-  if (toggle) toggle.addEventListener("click", open)
+  document.querySelectorAll("[data-search-open]").forEach((b) => b.addEventListener("click", (e) => {
+    e.preventDefault()
+    const menu = document.getElementById("mobile-menu")
+    if (menu && menu.open) menu.close()
+    open()
+  }))
 
-  // Backdrop click closes
-  if (backdrop) backdrop.addEventListener("click", close)
-
-  // Keyboard shortcuts
   document.addEventListener("keydown", (e) => {
-    // Cmd/Ctrl+K to open
-    if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
       e.preventDefault()
-      if (overlay.classList.contains("hidden")) open()
-      else close()
-    }
-    // Escape to close
-    if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
-      close()
+      dialog.open ? close() : open()
+    } else if (e.key === "/" && !dialog.open && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) && !document.activeElement.isContentEditable) {
+      e.preventDefault()
+      open()
     }
   })
 
-  async function loadIndex() {
-    if (loaded) return
-    try {
-      // Load elasticlunr
-      const lunrScript = document.createElement("script")
-      lunrScript.src = "/elasticlunr.min.js"
-      document.head.appendChild(lunrScript)
-      await new Promise((resolve, reject) => {
-        lunrScript.onload = resolve
-        lunrScript.onerror = reject
-      })
-
-      // Load the search index
-      const indexScript = document.createElement("script")
-      indexScript.src = `/search_index.${lang}.js`
-      document.head.appendChild(indexScript)
-      await new Promise((resolve, reject) => {
-        indexScript.onload = resolve
-        indexScript.onerror = reject
-      })
-
-      // elasticlunr index is exposed as window.searchIndex
-      if (window.elasticlunr && window.searchIndex) {
-        // Zola's KO index names Korean pipeline functions that plain
-        // elasticlunr.js lacks; tokens are already whitespace-split words, so
-        // pass-through stand-ins (plus a light trimmer) are sufficient.
-        const P = window.elasticlunr.Pipeline
-        for (const name of window.searchIndex.pipeline || []) {
-          if (P.registeredFunctions[name]) continue
-          const fn = name.startsWith("trimmer")
-            ? (t) => t.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "")
-            : (t) => t
-          P.registerFunction(fn, name)
-        }
-        index = window.elasticlunr.Index.load(window.searchIndex)
-        loaded = true
-      }
-    } catch (e) {
-      results.innerHTML = `<p class="text-sm text-error/60">${lang === "ko" ? "검색 색인을 불러오지 못했습니다." : "Failed to load search index."}</p>`
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") { e.preventDefault(); setActive(active + 1) }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setActive(active - 1) }
+    else if (e.key === "Enter") {
+      const target = flat[active >= 0 ? active : 0]
+      if (target) { e.preventDefault(); window.location.href = target.url }
     }
-  }
+  })
 
-  // Debounced search
   let timer = null
-  input.addEventListener("input", () => {
-    clearTimeout(timer)
-    timer = setTimeout(doSearch, 150)
-  })
-
-  function doSearch() {
-    const query = input.value.trim()
-    if (!query || !index) {
-      results.innerHTML = ""
-      return
-    }
-
-    const hits = index.search(query, {
-      fields: { title: { boost: 3 }, description: { boost: 1 } },
-      bool: "OR",
-      expand: true,
-    })
-
-    if (hits.length === 0) {
-      results.innerHTML = `<p class="text-sm text-base-content/30 py-4 text-center">${lang === "ko" ? "검색 결과가 없습니다." : "No results found."}</p>`
-      return
-    }
-
-    const html = hits.slice(0, 15).map(hit => {
-      const doc = hit.doc
-      const title = doc.title || "Untitled"
-      // The index stores titles and descriptions only (see [search] in config.toml)
-      const body = doc.description || doc.body || ""
-      // Extract a snippet around the query
-      const snippet = getSnippet(body, query)
-      const url = doc.id // Zola uses the URL as the doc id
-
-      return `
-        <a href="${url}" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 transition-colors group" onclick="document.getElementById('search-overlay').classList.add('hidden'); document.body.style.overflow=''">
-          <div class="text-sm font-medium group-hover:text-primary transition-colors">${escapeHtml(title)}</div>
-          ${snippet ? `<div class="text-xs text-base-content/40 mt-0.5 line-clamp-2">${snippet}</div>` : ""}
-        </a>
-      `
-    }).join("")
-
-    results.innerHTML = html
-  }
-
-  function getSnippet(body, query) {
-    if (!body) return ""
-    const lower = body.toLowerCase()
-    const qLower = query.toLowerCase()
-    const pos = lower.indexOf(qLower)
-    if (pos === -1) return body.slice(0, 120) + (body.length > 120 ? "..." : "")
-    const start = Math.max(0, pos - 50)
-    const end = Math.min(body.length, pos + query.length + 80)
-    let snippet = (start > 0 ? "..." : "") + body.slice(start, end) + (end < body.length ? "..." : "")
-    // Bold the match
-    const regex = new RegExp(`(${escapeRegex(query)})`, "gi")
-    snippet = escapeHtml(snippet).replace(regex, '<span class="text-primary font-medium">$1</span>')
-    return snippet
-  }
+  input.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(run, 80) })
 
   function escapeHtml(str) {
-    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
-  }
-
-  function escapeRegex(str) {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+    return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
   }
 })()
