@@ -10,6 +10,50 @@ tags = ["standard", "mutalisk", "economic"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
+sources = ["https://liquipedia.net/starcraft/3_Hatch_Spire_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+note = "앞마당에 건설"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "13"
+item = "buildings/hatchery"
+note = "세 번째 해처리"
+[[extra.steps]]
+supply = "12"
+item = "units/zergling"
+note = "저글링 6기"
+[[extra.steps]]
+supply = "16"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "buildings/lair"
+timing = "가스 100 시"
+[[extra.steps]]
+supply = ""
+item = "buildings/spire"
+timing = "레어 완성 시"
+[[extra.steps]]
+supply = ""
+item = "buildings/hatchery"
+timing = "미네랄 300 시"
+[[extra.steps]]
+supply = "33"
+item = "units/overlord"
+note = "오버로드 2–4기"
+[[extra.steps]]
+supply = ""
+item = "units/mutalisk"
+timing = "스파이어 완성 시"
+note = "커세어에 따라 스커지"
 +++
 표준 ZvP 중반 전략입니다. 해처리 3개로 경제를 확보한 뒤 레어와 스파이어를 건설하여 뮤탈리스크를 생산합니다. 뮤탈리스크는 ZvP의 핵심 유닛입니다 — 빠른 속도로 프로브 라인을 견제하고, 하이 템플러를 저격하며, 프로토스가 모든 기지에 정적 방어를 투자하도록 강제합니다.
 

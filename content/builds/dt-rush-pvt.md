@@ -10,6 +10,45 @@ tags = ["aggressive", "tech", "dark-templar"]
 [extra]
 race = "protoss"
 matchup = "PvT"
+sources = ["https://liquipedia.net/starcraft/2_Gate_DT"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+note = "Probe scouts"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "12"
+item = "buildings/assimilator"
+[[extra.steps]]
+supply = "14"
+item = "buildings/cybernetics-core"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = ""
+item = "buildings/citadel-of-adun"
+[[extra.steps]]
+supply = ""
+item = "buildings/gateway"
+note = "2nd Gateway"
+[[extra.steps]]
+supply = ""
+item = "units/dragoon"
+[[extra.steps]]
+supply = ""
+item = "buildings/templar-archives"
+[[extra.steps]]
+supply = ""
+item = "buildings/pylon"
+[[extra.steps]]
+supply = ""
+item = "units/dark-templar"
+timing = "@100% Templar Archives"
+note = "2 Dark Templar"
 +++
 A tech rush that skips standard openings to reach dark templar archives as fast as possible in PvT. If Terran has not built an engineering bay for turrets and has no comsat station for scanner sweep, the invisible dark templar walk into the base and end the game outright. Even if Terran has detection, every scan used on DTs drains valuable comsat energy.
 

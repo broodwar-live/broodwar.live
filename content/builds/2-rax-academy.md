@@ -10,9 +10,38 @@ tags = ["bio", "pressure", "timing"]
 [extra]
 race = "terran"
 matchup = "TvP"
+sources = ["https://liquipedia.net/starcraft/2_Rax_Academy_(vs._Zerg)"]
+unverified = true
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "11/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "13/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "14/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "18/26"
+item = "buildings/refinery"
+[[extra.steps]]
+supply = "19/26"
+item = "buildings/academy"
+[[extra.steps]]
+supply = "24/26"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "26/34"
+item = "upgrades/stim-pack"
+[[extra.steps]]
+supply = "28/34"
+item = "buildings/comsat-station"
 +++
-A bio timing attack that opens with two barracks and an early academy for medic production. The goal is to hit Protoss with a Marine/Medic push with stim pack research around the 7-minute mark, before storm tech is available. This is one of the most aggressive standard TvP openings.
+A bio opening with two barracks and an early academy for stim pack, medics and a comsat station. Note that the documented origin of this build is TvZ, not TvP: Liquipedia credits it to [iloveoov](@/players/iloveoov.md) in 2003 as the original TvZ fast expand, and modern versions mostly fake a Marine/Medic push to force over-investment in defense before expanding.
 
-Execution centers on constant marine production from both barracks while researching stim pack. Once you have roughly 8 marines and 2 medics, push across the map. Stim micro against dragoons is essential — pull back wounded marines, stim forward to close range. Keep producing reinforcements at home.
+The build: depot at 9, barracks at 11 and 13, refinery and academy around 18–19 supply, then stim pack and a comsat station. Keep marine production constant from both barracks. Whether you push or expand depends on what you scout — hiding your base and army size makes the opponent assume an all-in and overcommit to static defense.
 
-Best used on maps with short rush distances or when you scout a greedy Protoss opening like fast expansion without range upgrade. Transition by adding factories for siege tanks if the initial push does not kill. Weak against fast reaver drops that hit your mineral line during the push, and against dark templar if you lack scan energy.
+Liquipedia does not document a TvP version of 2 Rax Academy, so treat its use here as situational: in TvP a Marine/Medic opening generally relies on scouting and on transitioning into factories if the early pressure does not pay off. Comsat scans are needed to deal with dark templar, and early bio is vulnerable to reaver drops.

@@ -10,6 +10,40 @@ tags = ["standard", "economic", "defensive"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
+sources = ["https://liquipedia.net/starcraft/Forge_FE_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+note = "앞마당에 건설"
+[[extra.steps]]
+supply = "8"
+action = "같은 프로브로 정찰"
+[[extra.steps]]
+supply = "11"
+item = "buildings/forge"
+[[extra.steps]]
+supply = "15"
+item = "buildings/nexus"
+note = "12앞마당 상대 기준; 9풀 상대는 13에 캐논 2개 먼저"
+[[extra.steps]]
+supply = "16"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "17"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "18"
+item = "buildings/photon-cannon"
+[[extra.steps]]
+supply = "19"
+item = "buildings/assimilator"
+[[extra.steps]]
+supply = "20"
+item = "buildings/cybernetics-core"
+[[extra.steps]]
+supply = "22"
+item = "units/zealot"
 +++
 표준 수비적 PvZ 오프닝입니다. 첫 게이트웨이 전에 포지를 건설하고, 앞마당에 포톤 캐논을 배치하여 초기 저글링과 히드라리스크 압박을 방어합니다. 넥서스는 캐논 보호 뒤에서 앞마당에 건설되어 안전한 2기지 경제를 확보합니다.
 

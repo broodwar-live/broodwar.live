@@ -10,6 +10,24 @@ tags = ["standard", "gateway", "safe"]
 [extra]
 race = "protoss"
 matchup = "PvP"
+sources = ["https://liquipedia.net/starcraft/2_Gate_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+note = "Probe scouts"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "12"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "13"
+item = "units/zealot"
+[[extra.steps]]
+supply = "16"
+item = "buildings/pylon"
 +++
 The safest and most standard PvP opening. Two gateways producing zealots and dragoons give you early map control and the ability to react to anything your opponent does. This build does not commit to a specific tech path early, instead relying on superior unit count and scouting to dictate the flow of the game.
 

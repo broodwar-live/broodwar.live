@@ -10,6 +10,57 @@ tags = ["economic", "lurker", "defensive"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
+sources = ["https://liquipedia.net/starcraft/3_Hatch_Lurker_(vs._Terran)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "units/overlord"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+note = "앞마당에 건설"
+[[extra.steps]]
+supply = "11-13"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "13"
+item = "buildings/hatchery"
+[[extra.steps]]
+supply = ""
+item = "units/zergling"
+timing = "스포닝 풀 완성 시"
+note = "저글링 2–6기"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = "16"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = ""
+item = "buildings/lair"
+timing = "가스 100 시"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "가스 100 시"
+[[extra.steps]]
+supply = ""
+item = "buildings/hydralisk-den"
+timing = "레어 60% 시"
+[[extra.steps]]
+supply = ""
+item = "upgrades/lurker-aspect"
+timing = "레어 완성 시"
+[[extra.steps]]
+supply = ""
+item = "units/hydralisk"
+timing = "러커 변태 연구 50% 시"
+note = "히드라리스크 6–9기"
+[[extra.steps]]
+supply = ""
+item = "units/lurker"
+timing = "러커 변태 연구 완료 시"
 +++
 표준 수비적 ZvT 오프닝입니다. 해처리 3개로 최대한 드론을 뽑은 뒤 러커 테크로 전환하여 테란 타이밍 어택을 방어합니다. 초크 포인트에서 버로우한 러커는 마린/메딕 푸시와 탱크 라인을 저지하여, 저그 경제가 테란을 추월할 시간을 벌어줍니다.
 

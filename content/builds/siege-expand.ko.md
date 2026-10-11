@@ -10,6 +10,46 @@ tags = ["standard", "mech", "safe"]
 [extra]
 race = "terran"
 matchup = "TvP"
+sources = ["https://liquipedia.net/starcraft/Siege_Expand_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+note = "심시티; SCV 정찰"
+[[extra.steps]]
+supply = "12/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "12/18"
+item = "buildings/refinery"
+[[extra.steps]]
+supply = "15/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "16/26"
+item = "buildings/factory"
+note = "가스 SCV 2기 제외"
+[[extra.steps]]
+supply = ""
+item = "buildings/machine-shop"
+timing = "팩토리 완성 시"
+[[extra.steps]]
+supply = ""
+item = "units/siege-tank"
+timing = "머신 샵 완성 시"
+[[extra.steps]]
+supply = "21/26"
+item = "buildings/command-center"
+[[extra.steps]]
+supply = "24/26"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "25/34"
+item = "upgrades/siege-tech"
+[[extra.steps]]
+supply = "28/34"
+item = "buildings/engineering-bay"
+note = "선택"
 +++
 표준 안전 TvP 메카닉 오프닝입니다. 확장 전에 팩토리를 먼저 건설하고, 시즈 탱크를 생산한 뒤 탱크의 방어 화력 뒤에서 앞마당을 확장합니다. 앞마당 초크에 배치된 시즈 탱크가 빠른 확장 빌드를 위협하는 질럿 돌진을 차단합니다.
 

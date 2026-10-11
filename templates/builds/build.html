@@ -21,38 +21,98 @@
 {% set t = config.extra.i18n[lang] %}
 {% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
+{% set race_name = e.race | title %}{% set race_bg = "bg-base-content" %}{% set race_class = "" %}{% set race_letter = "?" %}
+{% if e.race == "terran" %}{% set race_name = t.player_race_terran %}{% set race_bg = "bg-race-terran" %}{% set race_class = "text-race-terran" %}{% set race_letter = "T" %}
+{% elif e.race == "protoss" %}{% set race_name = t.player_race_protoss %}{% set race_bg = "bg-race-protoss" %}{% set race_class = "text-race-protoss" %}{% set race_letter = "P" %}
+{% elif e.race == "zerg" %}{% set race_name = t.player_race_zerg %}{% set race_bg = "bg-race-zerg" %}{% set race_class = "text-race-zerg" %}{% set race_letter = "Z" %}{% endif %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="{{ lp }}/builds/" class="hover:text-base-content/60">{{ t.builds }}</a>
-    <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ page.title }}</span>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/builds/" class="hover:text-primary">{{ t.builds }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ page.title }}</span>
   </nav>
 
-  <div class="max-w-2xl">
-    <div class="flex items-center justify-between mb-3">
-      <div class="flex items-center gap-3">
-        <h1 class="text-2xl font-display">{{ page.title }}</h1>
-        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-primary/10 text-primary/70">{{ e.matchup }}</span>
+  <header class="mb-6">
+    <div class="flex flex-wrap items-center gap-3">
+      <span class="{{ race_bg }} w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black text-base-100" aria-hidden="true">{{ race_letter }}</span>
+      <h1 class="text-2xl font-display">{{ page.title }}</h1>
+      <a href="{{ lp }}/builds/?matchup={{ e.matchup }}" class="px-2 py-0.5 rounded text-xs font-semibold bg-primary/10 text-primary hover:bg-primary/20">{{ e.matchup }}</a>
+    </div>
+    {% if page.description %}<p class="mt-2 text-sm text-base-content/70">{{ page.description }}</p>{% endif %}
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 min-w-0">
+      {% if e.steps is defined and e.steps | length > 0 %}
+      <section class="mb-10" aria-labelledby="build-order">
+        <h2 id="build-order" class="text-lg font-semibold mb-1">{{ t.data_build_order }}</h2>
+        <p class="text-xs text-base-content/60 mb-4">{{ t.data_build_order_note }}</p>
+        <div class="rounded-box border border-primary/10 overflow-hidden">
+          <table class="table table-sm w-full">
+            <thead>
+              <tr class="text-xs text-base-content/70">
+                <th scope="col" class="w-10 text-right">#</th>
+                <th scope="col" class="w-20">{{ t.data_supply }}</th>
+                <th scope="col">{{ t.data_action }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for st in e.steps %}
+              <tr class="align-top">
+                <td class="text-right font-stats text-base-content/60">{{ loop.index }}</td>
+                <td class="font-stats font-semibold whitespace-nowrap">{% if st.supply %}{{ st.supply }}{% else %}<span class="text-base-content/60" aria-label="—">&mdash;</span>{% endif %}</td>
+                <td>
+                  <div class="flex flex-wrap items-baseline gap-x-2">
+                    {% if st.item %}{% set ip = get_page(path="wiki/" ~ st.item ~ ".md", lang=lang) %}<a href="{{ ip.path }}" class="font-medium text-primary hover:underline">{{ ip.title }}</a>{% endif %}
+                    {% if st.action %}<span class="{% if not st.item %}font-medium{% else %}text-base-content/80{% endif %}">{{ st.action }}</span>{% endif %}
+                    {% if st.timing %}<span class="text-xs font-stats px-1.5 py-0.5 rounded bg-base-content/5 text-base-content/70">{{ st.timing }}</span>{% endif %}
+                  </div>
+                  {% if st.note %}<p class="mt-0.5 text-xs text-base-content/60">{{ st.note }}</p>{% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      {% endif %}
+
+      <div class="prose prose-invert max-w-none [&_table]:block [&_table]:overflow-x-auto">
+        {{ page.content | safe }}
       </div>
-    </div>
-    <span class="text-[10px] font-bold badge-race
-      {% if e.race == 'terran' %}text-race-terran
-      {% elif e.race == 'protoss' %}text-race-protoss
-      {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">
-      {{ e.race | title }}
-    </span>
 
-    <div class="mt-6 prose prose-invert max-w-none">
-      {{ page.content | safe }}
+      {#- Related builds: same matchup. -#}
+      {% set bsec = get_section(path="builds/_index.md", lang=lang) %}
+      <nav class="navbox mt-10" aria-label="{{ e.matchup }} {{ t.builds }}">
+        <div class="text-xs font-semibold uppercase tracking-wider mb-2 {{ race_class }}">{{ e.matchup }} {{ t.builds }}</div>
+        <ul class="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+          {% for b in bsec.pages %}{% if b.extra.matchup == e.matchup %}
+          <li>{% if b.path == page.path %}<span class="navbox-current" aria-current="page">{{ b.title }}</span>{% else %}<a href="{{ b.path }}">{{ b.title }}</a>{% endif %}</li>
+          {% endif %}{% endfor %}
+        </ul>
+      </nav>
     </div>
 
-    {% if page.taxonomies.tags is defined and page.taxonomies.tags | length > 0 %}
-    <div class="mt-4 flex flex-wrap gap-1.5">
-      {% for tag in page.taxonomies.tags %}
-      <span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/30">{{ tag }}</span>
-      {% endfor %}
-    </div>
-    {% endif %}
+    {#- Infobox -#}
+    {% set v_race %}<a href="{{ lp }}/builds/?race={{ e.race }}" class="font-semibold {{ race_class }} hover:underline">{{ race_name }}</a>{% endset %}
+    {% set v_mu %}<a href="{{ lp }}/builds/?matchup={{ e.matchup }}" class="font-stats text-primary hover:underline">{{ e.matchup }}</a>{% endset %}
+    {% set v_tags %}{% if page.taxonomies.tags is defined %}<span class="inline-flex flex-wrap justify-end gap-1">{% for tag in page.taxonomies.tags %}<a href="{{ lp }}/builds/?type={{ tag }}" class="text-xs px-1.5 py-0.5 rounded bg-base-content/5 text-base-content/80 hover:text-primary">{{ tag }}</a>{% endfor %}</span>{% endif %}{% endset %}
+    {% set v_steps %}{% if e.steps is defined and e.steps | length > 0 %}<a href="#build-order" class="font-stats text-primary hover:underline">{{ e.steps | length }}</a>{% endif %}{% endset %}
+    {% set v_ver %}{% if e.verified is defined and e.verified %}<span class="text-success font-semibold">&#10003; {{ t.verified }}</span>{% elif e.unverified is defined and e.unverified %}<span class="text-info">{{ t.unverified_notice }}</span>{% endif %}{% endset %}
+    {% set ib_rows = [
+      [t.data_race, v_race],
+      [t.data_matchup, v_mu],
+      [t.data_type, v_tags | trim],
+      [t.data_build_order, v_steps | trim],
+      [t.sources, v_ver | trim]
+    ] %}
+    {% set ib_title = page.title %}
+    {% set ib_label = t.data_build_info %}
+    {% set ib_race = e.race %}
+    {% set ib_sections = [["", ib_rows]] %}
+    {% set ib_links = [] %}
+    {% if e.sources is defined and e.sources | length > 0 and e.sources[0] is containing(pat="liquipedia.net") %}{% set ib_links = [["Liquipedia", e.sources[0]]] %}{% endif %}
+    {% include "partials/infobox.html" %}
   </div>
 
   {% include "partials/provenance.html" %}

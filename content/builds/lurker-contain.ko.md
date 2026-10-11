@@ -10,6 +10,50 @@ tags = ["aggressive", "contain", "lurker"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
+sources = ["https://liquipedia.net/starcraft/2_Hatch_Lurker_(vs._Terran)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "units/overlord"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "10"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "buildings/lair"
+timing = "가스 100 시"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "가스 100 시"
+[[extra.steps]]
+supply = "22"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "buildings/hydralisk-den"
+timing = "레어 50% 시"
+[[extra.steps]]
+supply = ""
+item = "upgrades/lurker-aspect"
+timing = "레어 완성 시"
+[[extra.steps]]
+supply = ""
+item = "units/hydralisk"
+timing = "러커 변태 연구 50% 시"
+[[extra.steps]]
+supply = ""
+item = "units/lurker"
+note = "러커 변태 시 세 번째 해처리"
 +++
 ZvT에서 러커를 빠르게 생산하여 테란의 앞마당 밖에 배치함으로써 탱크 푸시나 확장 시도를 저지하는 전략적 접근법입니다. 버로우한 러커가 통제 구역을 만들어 테란이 사이언스 베슬 탐지나 시즈 탱크 사거리 없이는 통과할 수 없게 하여, 저그가 드론을 뽑고 확장할 귀중한 시간을 벌어줍니다.
 

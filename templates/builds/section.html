@@ -4,36 +4,72 @@
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <h1 class="text-2xl font-display mb-6">{{ section.title }}</h1>
+  <h1 class="text-2xl font-display mb-2">{{ section.title }}</h1>
+  {% if section.description %}<p class="text-sm text-base-content/70 mb-6">{{ section.description }}</p>{% endif %}
 
   {% set builds = section.pages %}
 
   {% if builds | length > 0 %}
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  {#- Filters: hidden until builds.js enables them, so the full list works without JS. -#}
+  <form id="build-filters" class="flex flex-wrap items-end gap-3 mb-6" hidden>
+    <label class="form-control">
+      <span class="text-xs text-base-content/70 mb-1">{{ t.data_race }}</span>
+      <select name="race" class="select select-sm select-bordered">
+        <option value="">{{ t.data_filter_all }}</option>
+        <option value="terran">{{ t.player_race_terran }}</option>
+        <option value="protoss">{{ t.player_race_protoss }}</option>
+        <option value="zerg">{{ t.player_race_zerg }}</option>
+      </select>
+    </label>
+    <label class="form-control">
+      <span class="text-xs text-base-content/70 mb-1">{{ t.data_matchup }}</span>
+      <select name="matchup" class="select select-sm select-bordered">
+        <option value="">{{ t.data_filter_all }}</option>
+        {% for mu in ["TvT", "TvP", "TvZ", "PvT", "PvP", "PvZ", "ZvT", "ZvP", "ZvZ"] %}<option value="{{ mu }}">{{ mu }}</option>{% endfor %}
+      </select>
+    </label>
+    <label class="form-control">
+      <span class="text-xs text-base-content/70 mb-1">{{ t.data_type }}</span>
+      <select name="type" class="select select-sm select-bordered">
+        <option value="">{{ t.data_filter_all }}</option>
+        {#- Options are filled in by builds.js from the cards' data-tags values. -#}
+      </select>
+    </label>
+    <p class="text-xs text-base-content/70 ml-auto" aria-live="polite"><span data-build-count>{{ builds | length }}</span> / {{ builds | length }} {{ t.data_build_count }}</p>
+  </form>
+
+  <ul id="build-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {% for build in builds %}
     {% set e = build.extra %}
-    <a href="{{ build.path }}" class="glass-card rounded-box p-5 glow-blue no-underline">
-      <div class="flex items-center justify-between mb-3">
-        <div class="flex items-center gap-2.5">
-          <span class="{% if e.race == 'terran' %}bg-race-terran{% elif e.race == 'protoss' %}bg-race-protoss{% elif e.race == 'zerg' %}bg-race-zerg{% else %}bg-base-content{% endif %} w-7 h-7 rounded-lg flex items-center justify-center text-xs font-black text-base-100">
-            {% if e.race == "terran" %}T{% elif e.race == "protoss" %}P{% elif e.race == "zerg" %}Z{% endif %}
-          </span>
-          <span class="font-semibold text-sm">{{ build.title }}</span>
+    {% set tags = [] %}{% if build.taxonomies.tags is defined %}{% set tags = build.taxonomies.tags %}{% endif %}
+    <li data-race="{{ e.race }}" data-matchup="{{ e.matchup }}" data-tags="{{ tags | join(sep=' ') }}">
+      <a href="{{ build.path }}" class="glass-card rounded-box p-5 glow-blue no-underline h-full flex flex-col">
+        <div class="flex items-center justify-between gap-3 mb-3">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <span class="{% if e.race == 'terran' %}bg-race-terran{% elif e.race == 'protoss' %}bg-race-protoss{% elif e.race == 'zerg' %}bg-race-zerg{% else %}bg-base-content{% endif %} w-7 h-7 shrink-0 rounded-lg flex items-center justify-center text-xs font-black text-base-100" title="{% if e.race == 'terran' %}{{ t.player_race_terran }}{% elif e.race == 'protoss' %}{{ t.player_race_protoss }}{% elif e.race == 'zerg' %}{{ t.player_race_zerg }}{% endif %}">
+              <span aria-hidden="true">{% if e.race == "terran" %}T{% elif e.race == "protoss" %}P{% elif e.race == "zerg" %}Z{% endif %}</span>
+            </span>
+            <span class="font-semibold text-sm truncate">{{ build.title }}</span>
+          </div>
+          <span class="px-2 py-0.5 rounded text-xs font-semibold bg-primary/10 text-primary shrink-0">{{ e.matchup }}</span>
         </div>
-        <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-primary/10 text-primary/70">{{ e.matchup }}</span>
-      </div>
-      {% if build.taxonomies.tags is defined and build.taxonomies.tags | length > 0 %}
-      <div class="flex flex-wrap gap-1.5">
-        {% for tag in build.taxonomies.tags %}
-        <span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/40">{{ tag }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </a>
+        {% if tags | length > 0 %}
+        <div class="flex flex-wrap gap-1.5">
+          {% for tag in tags %}
+          <span class="text-[11px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/70">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if e.steps is defined and e.steps | length > 0 %}
+        <p class="mt-3 text-xs text-base-content/60 font-stats truncate">{% for st in e.steps %}{% if loop.index <= 4 %}{% if st.supply %}{{ st.supply }} {% endif %}{% if st.item %}{% set ip = get_page(path="wiki/" ~ st.item ~ ".md", lang=lang) %}{{ ip.title }}{% else %}{{ st.action }}{% endif %}{% if loop.index < 4 and not loop.last %} · {% endif %}{% endif %}{% endfor %}</p>
+        {% endif %}
+      </a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
+  <p id="build-empty" class="text-sm text-base-content/70 mt-6" hidden>{{ t.data_filter_empty }}</p>
   {% else %}
-  <p class="text-sm text-base-content/30">{% if lang == "ko" %}빌드가 없습니다.{% else %}No builds found.{% endif %}</p>
+  <p class="text-sm text-base-content/70">{% if lang == "ko" %}빌드가 없습니다.{% else %}No builds found.{% endif %}</p>
   {% endif %}
 
   <h2 class="text-xl font-display mt-12 mb-6">{% if lang == "ko" %}오프닝 통계{% else %}Opening Statistics{% endif %}</h2>
@@ -46,6 +82,7 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="/js/builds.js" defer></script>
 {% if config.extra.api_enabled %}
 <script src="/js/openings.js" defer></script>
 {% endif %}
