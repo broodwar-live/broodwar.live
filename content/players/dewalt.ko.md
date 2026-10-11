@@ -1,6 +1,6 @@
 +++
 title = "Dewalt"
-description = "Dewalt(Андрей Беляев) — 러시아의 프로토스 선수."
+description = "Dewalt(Андрей Беляев)는 러시아의 프로토스 선수다."
 slug = "dewalt"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,6 @@ name = "inte Riktigt kloka"
 from = "2025-01-01"
 to = "present"
 +++
-Dewalt(Андрей Беляев)는 1994년생 러시아 노보시비르스크 출신의 프로토스 선수이다. 2012년 Defiler Tour 40에서 우승했고, 2013년 ICCup으로부터 최우수 프로토스와 최고 유망주로 선정되었다.
+Dewalt(Андрей Беляев)는 1994년생 러시아 노보시비르스크 출신의 프로토스 선수다. 2012년 Defiler Tour 40에서 우승했고, 2013년에는 ICCup이 뽑은 최우수 프로토스와 최고 유망주에 선정되었다.
 
-2013년 잠시 은퇴를 선언했으나 같은 해 브루드워로 복귀했다. 2018년 BSL 4에서 4위, 2019년 BSL 6에서 4강에 올랐다. 2022년부터 2024년까지 Crazy Warriors Team 소속이었으며, 2025년 inte Riktigt kloka(iRk)에 합류했다.
+2013년 잠시 은퇴를 선언했으나 같은 해 브루드 워로 복귀했다. 2018년 BSL 4에서 4위, 2019년 BSL 6에서 4강에 올랐다. 2022년부터 2024년까지 Crazy Warriors Team 소속이었으며, 2025년 inte Riktigt kloka(iRk)에 합류했다.

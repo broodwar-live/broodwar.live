@@ -21,14 +21,14 @@ semifinalists = [{ name = "g0rynich", slug = "g0rynich" }, { name = "TerrOr", sl
 start_date = "2020-04-17"
 end_date = "2020-06-07"
 maps = [{ name = "Match Point", slug = "match-point" }, { name = "Monte Cristo" }, { name = "Neo Sylphid" }, { name = "Whiteout", slug = "whiteout" }, { name = "La Mancha", slug = "la-mancha" }, { name = "Escalade" }, { name = "Clay Fields" }]
-participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "Dandy", slug = "dandy" }, { name = "g0rynich", slug = "g0rynich" }, { name = "TT1", slug = "tt1" }, { name = "Favorit" }, { name = "Cryoc", slug = "cryoc" }, { name = "CadenZie", slug = "cadenzie" }, { name = "Kame" }, { name = "Dewalt", slug = "dewalt" }, { name = "MadiNho" }, { name = "trutaCz", slug = "trutacz" }, { name = "Gosudark", slug = "gosudark" }, { name = "kogeT", slug = "koget" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "OyA", slug = "oya" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Sziky", slug = "sziky" }, { name = "Models" }, { name = "UltrA", slug = "ultra" }, { name = "cRoSs", slug = "cross" }, { name = "DragOn", slug = "dragon" }, { name = "Casper" }, { name = "Jiren", slug = "jiren" }, { name = "LancerX" }, { name = "spx", slug = "spx" }, { name = "Avi-Love", slug = "avi" }, { name = "CheeTech" }, { name = "Kaido" }]
+participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "Dandy", slug = "dandy" }, { name = "g0rynich", slug = "g0rynich" }, { name = "TT1", slug = "tt1" }, { name = "Favorit", slug = "favorit" }, { name = "Cryoc", slug = "cryoc" }, { name = "CadenZie", slug = "cadenzie" }, { name = "Kame", slug = "kame" }, { name = "Dewalt", slug = "dewalt" }, { name = "MadiNho", slug = "madinho" }, { name = "trutaCz", slug = "trutacz" }, { name = "Gosudark", slug = "gosudark" }, { name = "kogeT", slug = "koget" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "OyA", slug = "oya" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Sziky", slug = "sziky" }, { name = "Models" }, { name = "UltrA", slug = "ultra" }, { name = "cRoSs", slug = "cross" }, { name = "DragOn", slug = "dragon" }, { name = "Casper", slug = "casper" }, { name = "Jiren", slug = "jiren" }, { name = "LancerX", slug = "lancerx" }, { name = "spx", slug = "spx" }, { name = "Avi-Love", slug = "avi" }, { name = "CheeTech" }, { name = "Kaido" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/9", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "8강"
 best_of = 5
 matches = [
-  { a = "MadiNho", score_a = 2, b = "g0rynich", b_slug = "g0rynich", score_b = 3, date = "2020-05-16" },
+  { a = "MadiNho", a_slug = "madinho", score_a = 2, b = "g0rynich", b_slug = "g0rynich", score_b = 3, date = "2020-05-16" },
   { a = "TT1", a_slug = "tt1", score_a = 0, b = "Bonyth", b_slug = "bonyth", score_b = 3, date = "2020-05-16" },
   { a = "TerrOr", a_slug = "terror-peru", score_a = 3, b = "OyA", b_slug = "oya", score_b = 1, date = "2020-05-23" },
   { a = "trutaCz", a_slug = "trutacz", score_a = 3, b = "Dewalt", b_slug = "dewalt", score_b = 1, date = "2020-05-23" },

@@ -1,6 +1,6 @@
 +++
 title = "Reach"
-description = "Reach(박정석) — 한국의 프로토스 선수."
+description = "Reach(박정석)는 한국의 프로토스 프로게이머다."
 slug = "reach"
 template = "players/player.html"
 [taxonomies]
@@ -40,6 +40,6 @@ slug = "kt-rolster"
 from = "2010"
 to = "2012"
 +++
-Reach(박정석)는 1983년생 대한민국의 은퇴한 프로토스 선수로, 'Man Toss'라는 별명으로 불렸다. 한빛 스타즈, KTF 매직엔스, 공군 ACE, KT 롤스터에서 활동했다.
+Reach(박정석)는 1983년생 대한민국의 은퇴한 프로토스 프로게이머로, 별명은 'Man Toss'다. 한빛 스타즈, KTF 매직엔스, 공군 ACE, KT 롤스터에서 활동했다.
 
 2002 SKY 온게임넷 스타리그 결승에서 BoxeR를 꺾고 우승했으며, 2002 KPGA 3차 투어, 2004 질레트 스타리그, 2005 UZOO MSL에서 준우승했다. 2012년 한국 e스포츠 명예의 전당에 헌액되었고, 이후 나진 e-mFire에서 리그 오브 레전드와 철권 코치를 맡았다.

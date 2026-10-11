@@ -21,7 +21,7 @@ semifinalists = [{ name = "FanTaSy", slug = "fantasy" }, { name = "Light", slug 
 start_date = "2010-07-01"
 end_date = "2010-08-28"
 maps = [{ name = "Fighting Spirit", slug = "fighting-spirit" }, { name = "Odd-Eye 3" }, { name = "Polaris Rhapsody" }, { name = "Triathlon" }]
-participants = [{ name = "free", slug = "free" }, { name = "Flash", slug = "flash" }, { name = "Jaedong", slug = "jaedong" }, { name = "MVP" }, { name = "Calm", slug = "calm" }, { name = "HiyA", slug = "hiya" }, { name = "great", slug = "great" }, { name = "Midas", slug = "midas" }, { name = "Violet" }, { name = "Classic" }, { name = "Action", slug = "action" }, { name = "Kal", slug = "kal" }, { name = "Sea", slug = "sea" }, { name = "Hyuk", slug = "hyuk" }, { name = "Stats", slug = "stats" }, { name = "FanTaSy", slug = "fantasy" }, { name = "HoGiL" }, { name = "Snow", slug = "snow" }, { name = "fOrGG", slug = "forgg" }, { name = "RorO" }, { name = "JangBi", slug = "jangbi" }, { name = "Really" }, { name = "s2" }, { name = "Bisu", slug = "bisu" }, { name = "Light", slug = "light" }, { name = "ZerO", slug = "zero" }, { name = "Han" }, { name = "sKyHigh", slug = "skyhigh" }, { name = "Hydra", slug = "hydra" }, { name = "Shuttle", slug = "shuttle" }, { name = "hero", slug = "hero" }, { name = "EffOrt", slug = "effort" }]
+participants = [{ name = "free", slug = "free" }, { name = "Flash", slug = "flash" }, { name = "Jaedong", slug = "jaedong" }, { name = "MVP" }, { name = "Calm", slug = "calm" }, { name = "HiyA", slug = "hiya" }, { name = "great", slug = "great" }, { name = "Midas", slug = "midas" }, { name = "Violet" }, { name = "Classic" }, { name = "Action", slug = "action" }, { name = "Kal", slug = "kal" }, { name = "Sea", slug = "sea" }, { name = "Hyuk", slug = "hyuk" }, { name = "Stats", slug = "stats" }, { name = "FanTaSy", slug = "fantasy" }, { name = "HoGiL", slug = "hogil" }, { name = "Snow", slug = "snow" }, { name = "fOrGG", slug = "forgg" }, { name = "RorO", slug = "roro" }, { name = "JangBi", slug = "jangbi" }, { name = "Really", slug = "really" }, { name = "s2" }, { name = "Bisu", slug = "bisu" }, { name = "Light", slug = "light" }, { name = "ZerO", slug = "zero" }, { name = "Tyson", slug = "tyson" }, { name = "sKyHigh", slug = "skyhigh" }, { name = "Hydra", slug = "hydra" }, { name = "Shuttle", slug = "shuttle" }, { name = "hero", slug = "hero" }, { name = "EffOrt", slug = "effort" }]
 sources = ["https://liquipedia.net/starcraft/2010_Bigfile_MSL", "https://liquipedia.net/starcraft/2010_Bigfile_MSL/Round_of_16"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -32,7 +32,7 @@ matches = [
   { a = "hero", a_slug = "hero", score_a = 1, b = "fOrGG", b_slug = "forgg", score_b = 2, date = "2010-07-29" },
   { a = "Stats", a_slug = "stats", score_a = 1, b = "Calm", b_slug = "calm", score_b = 2, date = "2010-07-29" },
   { a = "Hyuk", a_slug = "hyuk", score_a = 0, b = "FanTaSy", b_slug = "fantasy", score_b = 2, date = "2010-07-29" },
-  { a = "Light", a_slug = "light", score_a = 2, b = "RorO", score_b = 1, date = "2010-07-31" },
+  { a = "Light", a_slug = "light", score_a = 2, b = "RorO", b_slug = "roro", score_b = 1, date = "2010-07-31" },
   { a = "EffOrt", a_slug = "effort", score_a = 2, b = "Midas", b_slug = "midas", score_b = 0, date = "2010-07-31" },
   { a = "Bisu", a_slug = "bisu", score_a = 0, b = "Sea", b_slug = "sea", score_b = 2, date = "2010-07-29" },
   { a = "Jaedong", a_slug = "jaedong", score_a = 2, b = "Kal", b_slug = "kal", score_b = 1, date = "2010-07-29" },

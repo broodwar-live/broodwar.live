@@ -20,15 +20,15 @@ final_date = "2024-05-19"
 start_date = "2024-03-24"
 end_date = "2024-05-19"
 maps = [{ name = "Lobotomy" }, { name = "Neo Dark Origin" }, { name = "Apocalypse" }, { name = "Citadel" }, { name = "Radeon", slug = "radeon" }, { name = "Retro" }, { name = "Vermeer", slug = "vermeer" }]
-participants = [{ name = "Mihu", slug = "mihu" }, { name = "Dewalt", slug = "dewalt" }, { name = "Bonyth", slug = "bonyth" }, { name = "Sziky", slug = "sziky" }, { name = "MadiNho" }, { name = "Jaeyun" }, { name = "DoodleDoodle" }, { name = "Razz" }, { name = "MiStrZZZ" }, { name = "Tarson" }, { name = "TerrOr", slug = "terror-peru" }, { name = "DarK" }, { name = "Hawk", slug = "hawk" }, { name = "gypsy" }, { name = "Zhanhun", slug = "zhanhun" }, { name = "XiaoShuai" }, { name = "Jimin" }, { name = "BoA", slug = "boa" }, { name = "StRyKeR" }, { name = "Dienmax" }, { name = "cRoSs", slug = "cross" }, { name = "DragOn", slug = "dragon" }, { name = "JDConan" }, { name = "Radley" }, { name = "Nyoken", slug = "nyoken" }, { name = "WolFix" }, { name = "OyA", slug = "oya" }, { name = "XuanXuan" }]
+participants = [{ name = "Mihu", slug = "mihu" }, { name = "Dewalt", slug = "dewalt" }, { name = "Bonyth", slug = "bonyth" }, { name = "Sziky", slug = "sziky" }, { name = "MadiNho", slug = "madinho" }, { name = "Jaeyun", slug = "jaeyun" }, { name = "DoodleDoodle", slug = "doodledoodle" }, { name = "Razz", slug = "razz" }, { name = "MiStrZZZ" }, { name = "Tarson", slug = "tarson" }, { name = "TerrOr", slug = "terror-peru" }, { name = "DarK", slug = "dark" }, { name = "Hawk", slug = "hawk" }, { name = "gypsy", slug = "gypsy" }, { name = "Zhanhun", slug = "zhanhun" }, { name = "XiaoShuai", slug = "xiaoshuai" }, { name = "Jimin" }, { name = "BoA", slug = "boa" }, { name = "StRyKeR", slug = "stryker" }, { name = "Dienmax", slug = "dienmax" }, { name = "cRoSs", slug = "cross" }, { name = "DragOn", slug = "dragon" }, { name = "JDConan", slug = "jdconan" }, { name = "Radley", slug = "radley" }, { name = "Nyoken", slug = "nyoken" }, { name = "WolFix", slug = "wolfix" }, { name = "OyA", slug = "oya" }, { name = "XuanXuan", slug = "xuanxuan" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/18", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Upper Quarterfinals"
 best_of = 5
 matches = [
-  { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "gypsy", score_b = 2, date = "2024-04-28" },
-  { a = "Mihu", a_slug = "mihu", score_a = 3, b = "XiaoShuai", score_b = 0, date = "2024-04-28" },
+  { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "gypsy", b_slug = "gypsy", score_b = 2, date = "2024-04-28" },
+  { a = "Mihu", a_slug = "mihu", score_a = 3, b = "XiaoShuai", b_slug = "xiaoshuai", score_b = 0, date = "2024-04-28" },
   { a = "Zhanhun", a_slug = "zhanhun", score_a = 3, b = "DragOn", b_slug = "dragon", score_b = 0, date = "2024-04-27" },
   { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "Sziky", b_slug = "sziky", score_b = 0, date = "2024-04-27" },
 ]
@@ -49,14 +49,14 @@ matches = [
 round = "Lower Round 1"
 best_of = 3
 matches = [
-  { a = "gypsy", score_a = 0, b = "XiaoShuai", score_b = 2, date = "2024-04-28" },
+  { a = "gypsy", a_slug = "gypsy", score_a = 0, b = "XiaoShuai", b_slug = "xiaoshuai", score_b = 2, date = "2024-04-28" },
   { a = "DragOn", a_slug = "dragon", score_a = 0, b = "Sziky", b_slug = "sziky", score_b = 2, date = "2024-04-28" },
 ]
 [[extra.bracket]]
 round = "Lower Round 2"
 best_of = 5
 matches = [
-  { a = "Zhanhun", a_slug = "zhanhun", score_a = 3, b = "XiaoShuai", score_b = 2, date = "2024-05-05" },
+  { a = "Zhanhun", a_slug = "zhanhun", score_a = 3, b = "XiaoShuai", b_slug = "xiaoshuai", score_b = 2, date = "2024-05-05" },
   { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "Sziky", b_slug = "sziky", score_b = 0, date = "2024-05-04" },
 ]
 [[extra.bracket]]

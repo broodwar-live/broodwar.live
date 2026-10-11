@@ -21,16 +21,16 @@ semifinalists = [{ name = "ChoJJa", slug = "chojja" }, { name = "SoNiC)BlacK" }]
 start_date = "2002-04-18"
 end_date = "2002-06-22"
 maps = [{ name = "Old Plains to Hill" }, { name = "River of Flames" }, { name = "Blade Storm" }, { name = "Indian Lament" }, { name = "Lost Temple KPGA" }]
-participants = [{ name = "BoxeR", slug = "boxer" }, { name = "ChRh", slug = "chrh" }, { name = "NaDa", slug = "nada" }, { name = "LeadeR (Joo Han Jin)" }, { name = "Sync", slug = "sync" }, { name = "TheMarine", slug = "themarine" }, { name = "ChoJJa", slug = "chojja" }, { name = "JinSu" }, { name = "JunioR" }, { name = "KIMDONGWOO" }, { name = "SoNiC)BlacK" }, { name = "YellOw", slug = "yellow" }, { name = "Anippy" }, { name = "IntoTheRain" }, { name = "fOru" }, { name = "Reach", slug = "reach" }]
+participants = [{ name = "BoxeR", slug = "boxer" }, { name = "ChRh", slug = "chrh" }, { name = "NaDa", slug = "nada" }, { name = "LeadeR (Joo Han Jin)" }, { name = "Sync", slug = "sync" }, { name = "TheMarine", slug = "themarine" }, { name = "ChoJJa", slug = "chojja" }, { name = "JinSu", slug = "jinsu" }, { name = "JunioR" }, { name = "KIMDONGWOO" }, { name = "SoNiC)BlacK" }, { name = "YellOw", slug = "yellow" }, { name = "Anippy" }, { name = "IntoTheRain", slug = "intotherain" }, { name = "fOru", slug = "foru" }, { name = "Reach", slug = "reach" }]
 sources = ["https://liquipedia.net/starcraft/2002_Reebok_KPGA_2nd_Tour"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "8강"
 best_of = 3
 matches = [
-  { a = "JinSu", score_a = 1, b = "ChoJJa", b_slug = "chojja", score_b = 2, date = "2002-05-23" },
+  { a = "JinSu", a_slug = "jinsu", score_a = 1, b = "ChoJJa", b_slug = "chojja", score_b = 2, date = "2002-05-23" },
   { a = "YellOw", a_slug = "yellow", score_a = 2, b = "BoxeR", b_slug = "boxer", score_b = 1, date = "2002-05-23" },
-  { a = "NaDa", a_slug = "nada", score_a = 2, b = "fOru", score_b = 0, date = "2002-05-16" },
+  { a = "NaDa", a_slug = "nada", score_a = 2, b = "fOru", b_slug = "foru", score_b = 0, date = "2002-05-16" },
   { a = "SoNiC)BlacK", score_a = 2, b = "KIMDONGWOO", score_b = 1, date = "2002-05-16" },
 ]
 [[extra.bracket]]

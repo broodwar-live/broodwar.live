@@ -21,7 +21,7 @@ semifinalists = [{ name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "ca
 start_date = "2005-12-09"
 end_date = "2006-03-04"
 maps = [{ name = "Pioneer Period" }, { name = "Ride of Valkyries", slug = "ride-of-valkyries" }, { name = "Rush Hour 2" }, { name = "Sin 815" }]
-participants = [{ name = "Anytime", slug = "anytime" }, { name = "BoxeR", slug = "boxer" }, { name = "July", slug = "july" }, { name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "casy" }, { name = "SaferZerg" }, { name = "RainBOw" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "ZergMaN" }, { name = "Rock", slug = "rock" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "Iris", slug = "iris" }, { name = "Midas", slug = "midas" }, { name = "XellOs", slug = "xellos" }, { name = "(Oops)ClouD" }]
+participants = [{ name = "Anytime", slug = "anytime" }, { name = "BoxeR", slug = "boxer" }, { name = "July", slug = "july" }, { name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "casy" }, { name = "SaferZerg" }, { name = "RainBOw", slug = "rainbow" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "ZergMaN", slug = "zergman" }, { name = "Rock", slug = "rock" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "Iris", slug = "iris" }, { name = "Midas", slug = "midas" }, { name = "XellOs", slug = "xellos" }, { name = "(Oops)ClouD" }]
 sources = ["https://liquipedia.net/starcraft/2005-2006_Shinhan_Bank_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

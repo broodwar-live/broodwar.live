@@ -20,7 +20,7 @@ final_date = "2018-01-21"
 start_date = "2017-10-25"
 end_date = "2018-01-21"
 maps = [{ name = "Gold Rush", slug = "gold-rush" }, { name = "Crossing Field" }, { name = "Fighting Spirit", slug = "fighting-spirit" }, { name = "Circuit Breaker", slug = "circuit-breaker" }, { name = "Andromeda", slug = "andromeda" }, { name = "Blue Storm", slug = "blue-storm" }, { name = "Tau Cross", slug = "tau-cross" }]
-participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "Dandy", slug = "dandy" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Gargoyle" }, { name = "g0rynich", slug = "g0rynich" }, { name = "Hawk", slug = "hawk" }, { name = "Ty2" }, { name = "Michael" }, { name = "KenZy" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Cryoc", slug = "cryoc" }, { name = "Eriador" }, { name = "Dewalt", slug = "dewalt" }, { name = "DragOn", slug = "dragon" }, { name = "Favorit" }, { name = "Surgeon" }]
+participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "Dandy", slug = "dandy" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Gargoyle" }, { name = "g0rynich", slug = "g0rynich" }, { name = "Hawk", slug = "hawk" }, { name = "Ty2", slug = "ty2" }, { name = "Michael" }, { name = "KenZy" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Cryoc", slug = "cryoc" }, { name = "Eriador" }, { name = "Dewalt", slug = "dewalt" }, { name = "DragOn", slug = "dragon" }, { name = "Favorit", slug = "favorit" }, { name = "Surgeon" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/3", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -29,14 +29,14 @@ matches = [
   { a = "Cryoc", a_slug = "cryoc", score_a = 0, b = "Gargoyle", score_b = 2, date = "2018-01-13" },
   { a = "g0rynich", a_slug = "g0rynich", score_a = 0, b = "Dewalt", b_slug = "dewalt", score_b = 2, date = "2018-01-13" },
   { a = "Eriador", score_a = 2, b = "Surgeon", score_b = 0, date = "2018-01-13" },
-  { a = "Dandy", a_slug = "dandy", score_a = 2, b = "Favorit", score_b = 0, date = "2018-01-13" },
+  { a = "Dandy", a_slug = "dandy", score_a = 2, b = "Favorit", b_slug = "favorit", score_b = 0, date = "2018-01-13" },
   { a = "TerrOr", a_slug = "terror-peru", score_a = 2, b = "KenZy", score_b = 0, date = "2018-01-13" },
 ]
 [[extra.bracket]]
 round = "Upper Quarterfinals"
 best_of = 3
 matches = [
-  { a = "Ty2", score_a = 0, b = "eOnzErG", b_slug = "eonzerg", score_b = 2 },
+  { a = "Ty2", a_slug = "ty2", score_a = 0, b = "eOnzErG", b_slug = "eonzerg", score_b = 2 },
   { a = "Gargoyle", score_a = 0, b = "Dewalt", b_slug = "dewalt", score_b = 2 },
   { a = "Eriador", score_a = 1, b = "Dandy", b_slug = "dandy", score_b = 2 },
   { a = "TerrOr", a_slug = "terror-peru", score_a = 2, b = "DragOn", b_slug = "dragon", score_b = 1 },
@@ -58,20 +58,20 @@ matches = [
 round = "Lower Round 1"
 matches = [
   { a = "Cryoc", a_slug = "cryoc", score_a = 2, b = "g0rynich", b_slug = "g0rynich", score_b = 0 },
-  { a = "Surgeon", score_a = 0, b = "Favorit", score_b = 2, date = "2018-01-13" },
+  { a = "Surgeon", score_a = 0, b = "Favorit", b_slug = "favorit", score_b = 2, date = "2018-01-13" },
 ]
 [[extra.bracket]]
 round = "Lower Round 2"
 matches = [
   { a = "Gargoyle", score_a = 1, b = "Cryoc", b_slug = "cryoc", score_b = 2 },
-  { a = "Eriador", score_a = 0, b = "Favorit", score_b = 2 },
+  { a = "Eriador", score_a = 0, b = "Favorit", b_slug = "favorit", score_b = 2 },
   { a = "DragOn", a_slug = "dragon", score_a = 0, b = "KenZy", score_b = 2 },
 ]
 [[extra.bracket]]
 round = "Lower Round 3"
 matches = [
-  { a = "Ty2", score_a = 0, b = "Cryoc", b_slug = "cryoc", score_b = 2 },
-  { a = "Favorit", score_a = 0, b = "KenZy", score_b = 2 },
+  { a = "Ty2", a_slug = "ty2", score_a = 0, b = "Cryoc", b_slug = "cryoc", score_b = 2 },
+  { a = "Favorit", a_slug = "favorit", score_a = 0, b = "KenZy", score_b = 2 },
 ]
 [[extra.bracket]]
 round = "Lower Round 4"

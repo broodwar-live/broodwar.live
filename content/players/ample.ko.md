@@ -12,6 +12,7 @@ country_name = "한국"
 real_name = "김태영"
 romanized_name = "Kim Tae Young"
 birth_date = "1992-07-16"
+status = "active"
 aliases = ["[ErOs]~Lovedambi", "ErOs_Ample", "Sasin", "4s.사테"]
 liquipedia = "https://liquipedia.net/starcraft/Ample"
 soop = "hoonykkk"

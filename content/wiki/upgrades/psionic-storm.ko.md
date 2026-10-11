@@ -16,6 +16,6 @@ affects = ["high-templar"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
 verified = "2026-10-11"
 +++
-사이오닉 스톰은 에너지 75로 일정 지역에 폭풍을 일으켜, 몇 초 동안 안에 있는 적과 아군 유닛 모두에게 피해를 준다. 건물에는 피해가 없고, 스톰을 겹쳐도 피해가 중첩되지 않는다. 템플러 아카이브에서 연구한다. 자세한 내용은 [사이오닉 스톰 능력](/ko/wiki/abilities/psionic-storm/) 문서를 참고하라.
+사이오닉 스톰은 에너지 75를 써서 일정 지역에 폭풍을 일으키고, 몇 초 동안 그 안의 적과 아군 유닛 모두에게 피해를 준다. 건물은 피해를 받지 않고, 스톰을 겹쳐 써도 피해는 중첩되지 않는다. 템플러 아카이브에서 연구한다. 자세한 내용은 [사이오닉 스톰](/ko/wiki/abilities/psionic-storm/) 문서에서 다룬다.
 
-하이 템플러를 쓰는 거의 모든 경기에서 연구하며, 저그전의 히드라리스크·뮤탈리스크와 테란전 바이오를 상대로 쓰인다.
+하이 템플러를 쓰는 경기라면 거의 항상 연구하며, 프저전의 히드라리스크·뮤탈리스크와 프테전의 바이오 병력을 상대로 쓴다.

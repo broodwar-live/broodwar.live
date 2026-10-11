@@ -1,6 +1,6 @@
 +++
 title = "GARIMTO"
-description = "GARIMTO(김동수) — 한국의 프로토스 선수."
+description = "GARIMTO(김동수)는 한국의 프로토스 프로게이머다."
 slug = "garimto"
 template = "players/player.html"
 [taxonomies]
@@ -30,6 +30,6 @@ slug = "kt-rolster"
 from = "2007-01"
 to = "2007"
 +++
-GARIMTO(김동수)는 1981년생 한국의 프로토스 선수로, 한빛 스타즈, KTF 매직엔스에서 활동했다. 한빛 스타즈 소속으로 프로토스 대 저그 경기와 숨겨 짓는 건물 전략으로 이름을 알렸다. 은퇴 후 온게임넷 해설자로 활동했다. 2012년 한국 e스포츠 명예의 전당에 헌액되었다.
+GARIMTO(김동수)는 1981년생 대한민국의 프로토스 프로게이머로, 한빛 스타즈와 KTF 매직엔스에서 활동했다. 한빛 스타즈 시절 프저전과 건물을 숨겨 짓는 전략으로 이름을 알렸다. 은퇴한 뒤 온게임넷 해설자로 활동했다. 2012년 한국 e스포츠 명예의 전당에 헌액되었다.
 
 broodwar.live에 수록된 시즌 가운데 [2000 Freechal OSL](/ko/tournaments/2000-freechal-osl/), [2001 SKY OSL](/ko/tournaments/2001-sky-osl/)에서 우승했다.

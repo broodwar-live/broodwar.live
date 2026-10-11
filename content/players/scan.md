@@ -14,6 +14,7 @@ real_name = "유승곤"
 romanized_name = "Ryoo Seung Kohn"
 birth_date = "1993-10-14"
 status = "active"
+years_active = "2003–2005, 2008–present"
 team = "StarCastTV Stars"
 aliases = ["LaStScan", "TattOO<!--", "Minus)tmzos", "Minus)Scan", "S.C_Scan", "FoR.._", "ArtTerran", "SouL)T(esagito", "SouL)T(Scan-->"]
 liquipedia = "https://liquipedia.net/starcraft/Scan"

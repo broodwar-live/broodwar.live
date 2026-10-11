@@ -13,7 +13,6 @@ country_name = "러시아"
 real_name = "Александр Давыдов"
 romanized_name = "Alexander Davydov"
 birth_date = "1986-03-05"
-status = "active"
 team = "SouLGaming"
 aliases = ["3D.Notforu", "SouL)Z(g0rynich"]
 liquipedia = "https://liquipedia.net/starcraft/G0rynich"

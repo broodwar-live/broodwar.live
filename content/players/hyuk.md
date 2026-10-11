@@ -12,7 +12,6 @@ country_name = "South Korea"
 real_name = "박재혁"
 romanized_name = "Park Jae Hyuk"
 birth_date = "1987-04-11"
-status = "retired"
 years_active = "2006–2014, 2019–2021"
 aliases = ["KT.MGW)Hyuk", "qawaearat", "PSM"]
 liquipedia = "https://liquipedia.net/starcraft/Hyuk"

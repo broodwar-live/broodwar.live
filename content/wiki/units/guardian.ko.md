@@ -1,6 +1,6 @@
 +++
 title = "가디언"
-description = "가디언은 그레이터 스파이어가 있을 때 뮤탈리스크에서 변태하는 느린 저그 비행 유닛으로, 먼 거리에서 지상 대상을 공격한다."
+description = "가디언은 그레이터 스파이어를 지으면 뮤탈리스크에서 변태할 수 있는 느린 저그 비행 유닛으로, 먼 거리에서 지상만 공격한다."
 slug = "guardian"
 template = "wiki/unit.html"
 [taxonomies]
@@ -32,11 +32,11 @@ upgrades = ["flyer-attacks", "flyer-carapace"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-가디언은 그레이터 스파이어 완성 후 뮤탈리스크에서 변태한다. 지상 대상만 공격할 수 있지만 사거리 8로 미사일 터렛, 포톤 캐논, 성큰 콜로니 같은 방어 건물보다 길며, 매우 느리다.
+가디언은 그레이터 스파이어 완성 후 뮤탈리스크에서 변태한다. 지상만 공격할 수 있지만 사거리가 8이라 미사일 터렛, 포톤 캐논, 성큰 콜로니 같은 방어 건물보다 길다. 대신 매우 느리다.
 
 ## 테란전
 
-후반에 방어가 두터운 테란 진지, 특히 메카닉을 상대로 가끔 쓰인다. 차론 부스터를 연구한 골리앗, 발키리, 레이스, 이래디에이트가 주된 대응책이다.
+후반에 방어가 두터운 테란 진지, 특히 메카닉을 상대로 가끔 쓰인다. 카론 부스터를 연구한 골리앗, 발키리, 레이스, 이래디에이트가 주된 대응책이다.
 
 ## 프로토스전
 

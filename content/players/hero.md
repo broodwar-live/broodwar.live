@@ -14,6 +14,7 @@ real_name = "조일장"
 romanized_name = "Jo Il Jang"
 birth_date = "1990-06-20"
 status = "active"
+years_active = "2007–2012, 2016–present"
 aliases = ["By.herO", "[NeOx]1102", "chobodari", "GOMSUJANG", "firepunchcolor", "GOM[WHITE]"]
 liquipedia = "https://liquipedia.net/starcraft/Hero"
 soop = "byhero"

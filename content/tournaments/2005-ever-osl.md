@@ -21,7 +21,7 @@ semifinalists = [{ name = "XellOs", slug = "xellos" }, { name = "GoRush", slug =
 start_date = "2005-04-08"
 end_date = "2005-07-02"
 maps = [{ name = "Forte" }, { name = "Neo Requiem", slug = "neo-requiem" }, { name = "Luna the Final" }, { name = "Ride of Valkyries", slug = "ride-of-valkyries" }]
-participants = [{ name = "HoOny" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "GGPlay", slug = "ggplay" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "GoRush", slug = "gorush" }, { name = "Reach", slug = "reach" }, { name = "Iris", slug = "iris" }, { name = "JJu", slug = "jju" }, { name = "Stork", slug = "stork" }, { name = "Midas", slug = "midas" }, { name = "July", slug = "july" }, { name = "NaDa", slug = "nada" }, { name = "OversKy" }, { name = "XellOs", slug = "xellos" }, { name = "YellOw", slug = "yellow" }]
+participants = [{ name = "HoOny" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "GGPlay", slug = "ggplay" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "GoRush", slug = "gorush" }, { name = "Reach", slug = "reach" }, { name = "Iris", slug = "iris" }, { name = "JJu", slug = "jju" }, { name = "Stork", slug = "stork" }, { name = "Midas", slug = "midas" }, { name = "July", slug = "july" }, { name = "NaDa", slug = "nada" }, { name = "OversKy", slug = "oversky" }, { name = "XellOs", slug = "xellos" }, { name = "YellOw", slug = "yellow" }]
 sources = ["https://liquipedia.net/starcraft/2005_EVER_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

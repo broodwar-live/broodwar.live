@@ -20,16 +20,16 @@ final_date = "2026-01-04"
 start_date = "2025-11-08"
 end_date = "2026-01-04"
 maps = [{ name = "Radeon", slug = "radeon" }, { name = "Dominator SE" }, { name = "Roaring Currents" }, { name = "Litmus" }, { name = "Pole Star" }, { name = "Metropolis" }, { name = "KnockOut" }]
-participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "Dewalt", slug = "dewalt" }, { name = "Hawk", slug = "hawk" }, { name = "Sziky", slug = "sziky" }, { name = "Semih" }, { name = "Aeternum" }, { name = "Kyrie" }, { name = "ZZZero", slug = "zzzero" }, { name = "Tarson" }, { name = "HBO" }, { name = "UltrA", slug = "ultra" }, { name = "Gosudark", slug = "gosudark" }, { name = "gypsy" }, { name = "DragOn", slug = "dragon" }, { name = "dxtr13" }, { name = "spx", slug = "spx" }, { name = "Dienmax" }, { name = "OyA", slug = "oya" }, { name = "Ptak" }, { name = "DoodleDoodle" }, { name = "Julian", slug = "julian" }, { name = "Tech" }, { name = "TerrOr", slug = "terror-peru" }, { name = "WolFix" }, { name = "Dandy", slug = "dandy" }, { name = "OLDboy" }, { name = "NewOcean" }, { name = "rasowy" }, { name = "Razz" }, { name = "StRyKeR" }, { name = "JDConan" }, { name = "cRoSs", slug = "cross" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Artosis" }, { name = "Radley" }, { name = "Kame" }]
+participants = [{ name = "Bonyth", slug = "bonyth" }, { name = "Dewalt", slug = "dewalt" }, { name = "Hawk", slug = "hawk" }, { name = "Sziky", slug = "sziky" }, { name = "Semih" }, { name = "Aeternum" }, { name = "Kyrie" }, { name = "ZZZero", slug = "zzzero" }, { name = "Tarson", slug = "tarson" }, { name = "HBO" }, { name = "UltrA", slug = "ultra" }, { name = "Gosudark", slug = "gosudark" }, { name = "gypsy", slug = "gypsy" }, { name = "DragOn", slug = "dragon" }, { name = "dxtr13" }, { name = "spx", slug = "spx" }, { name = "Dienmax", slug = "dienmax" }, { name = "OyA", slug = "oya" }, { name = "Ptak", slug = "ptak" }, { name = "DoodleDoodle", slug = "doodledoodle" }, { name = "Julian", slug = "julian" }, { name = "Tech", slug = "tech" }, { name = "TerrOr", slug = "terror-peru" }, { name = "WolFix", slug = "wolfix" }, { name = "Dandy", slug = "dandy" }, { name = "OLDboy" }, { name = "NewOcean" }, { name = "rasowy" }, { name = "Razz", slug = "razz" }, { name = "StRyKeR", slug = "stryker" }, { name = "JDConan", slug = "jdconan" }, { name = "cRoSs", slug = "cross" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "Artosis" }, { name = "Radley", slug = "radley" }, { name = "Kame", slug = "kame" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/21", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "승자조 8강"
 best_of = 5
 matches = [
-  { a = "Sziky", a_slug = "sziky", score_a = 3, b = "StRyKeR", score_b = 0, date = "2025-12-13" },
+  { a = "Sziky", a_slug = "sziky", score_a = 3, b = "StRyKeR", b_slug = "stryker", score_b = 0, date = "2025-12-13" },
   { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "Hawk", b_slug = "hawk", score_b = 0, date = "2025-12-13" },
-  { a = "cRoSs", a_slug = "cross", score_a = 3, b = "Tech", score_b = 0, date = "2025-12-14" },
+  { a = "cRoSs", a_slug = "cross", score_a = 3, b = "Tech", b_slug = "tech", score_b = 0, date = "2025-12-14" },
   { a = "Bonyth", a_slug = "bonyth", score_a = 1, b = "eOnzErG", b_slug = "eonzerg", score_b = 3, date = "2025-12-14" },
 ]
 [[extra.bracket]]
@@ -49,14 +49,14 @@ matches = [
 round = "패자조 1라운드"
 best_of = 3
 matches = [
-  { a = "StRyKeR", score_a = 2, b = "Hawk", b_slug = "hawk", score_b = 1, date = "2025-12-13" },
-  { a = "Tech", score_a = 0, b = "Bonyth", b_slug = "bonyth", score_b = 2, date = "2025-12-14" },
+  { a = "StRyKeR", a_slug = "stryker", score_a = 2, b = "Hawk", b_slug = "hawk", score_b = 1, date = "2025-12-13" },
+  { a = "Tech", a_slug = "tech", score_a = 0, b = "Bonyth", b_slug = "bonyth", score_b = 2, date = "2025-12-14" },
 ]
 [[extra.bracket]]
 round = "패자조 2라운드"
 best_of = 5
 matches = [
-  { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "StRyKeR", score_b = 1, date = "2025-12-21" },
+  { a = "eOnzErG", a_slug = "eonzerg", score_a = 3, b = "StRyKeR", b_slug = "stryker", score_b = 1, date = "2025-12-21" },
   { a = "Sziky", a_slug = "sziky", score_a = 3, b = "Bonyth", b_slug = "bonyth", score_b = 1, date = "2025-12-21" },
 ]
 [[extra.bracket]]

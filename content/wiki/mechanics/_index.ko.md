@@ -1,6 +1,6 @@
 +++
-title = "게임 메카닉"
-description = "스타크래프트: 브루드 워 핵심 게임 메카닉과 시스템."
+title = "게임 메커니즘"
+description = "브루드 워의 게임 규칙 정리: 피해 계산, 시야, 자원, 인구수, 지형 등."
 template = "wiki/section.html"
 sort_by = "title"
 +++

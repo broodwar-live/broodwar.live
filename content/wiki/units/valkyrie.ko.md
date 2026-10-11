@@ -1,6 +1,6 @@
 +++
 title = "발키리"
-description = "발키리는 브루드 워에서 추가된 테란 스타포트 대공 프리깃으로, 공중 유닛에 범위 피해를 주는 로켓을 연사한다."
+description = "발키리는 브루드 워에서 추가된 테란 스타포트의 대공 유닛으로, 공중 유닛에 범위 피해를 주는 로켓을 연달아 쏜다."
 slug = "valkyrie"
 template = "wiki/unit.html"
 [taxonomies]

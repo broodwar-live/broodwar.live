@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "변형태"
 romanized_name = "Byun Hyung Tae"
 birth_date = "1987-02-05"
+status = "retired"
 aliases = ["Iris[gm]", "OTL[gm]", "Berserker"]
 liquipedia = "https://liquipedia.net/starcraft/Iris"
 soop = "bht0205"
