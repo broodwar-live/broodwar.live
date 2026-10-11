@@ -1,36 +1,39 @@
 +++
 title = "Zerg"
-description = "Overview of the Zerg, the swarm race whose units all hatch from larvae produced by Hatcheries."
+description = "Overview of the Zerg, the swarm race whose units hatch from larvae produced by Hatcheries."
 slug = "zerg"
 template = "wiki/race.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 letter = "Z"
-tagline = "Relentless swarm that overwhelms through numbers and adaptation"
-playstyle = "Zerg is the macro race — fast expansion, high larva production, and swarming the opponent with waves of units. Zerg players must constantly scout to react appropriately: morphing the right units at the right time is key, since larvae are a shared resource between workers and army. The best Zerg players combine relentless aggression with greedy economic play."
-strengths = ["Fastest expansion rate — each Hatchery provides both economy and production", "All units produced from larvae, allowing rapid tech switches", "Burrowing allows ambushes and hidden unit positioning", "Cheapest units enable cost-efficient trades", "Overlords provide supply and mobile detection"]
-weaknesses = ["Units are individually weak compared to other races", "Must sacrifice a Drone to build each structure", "Dependent on creep for building placement", "Limited anti-air options in the early game", "Overlords are slow and vulnerable, losing them costs supply"]
+tagline = "A swarm that grows from larvae and spreads across the map on creep"
+playstyle = "Zerg produces from larvae: each Hatchery, Lair or Hive holds up to three, and every larva can become a Drone or a combat unit, so Zerg balances economy and army from the same pool. Extra Hatcheries add both a mining base and production. Zerglings, Mutalisks, Lurkers and Hydralisks dominate the mid game, and Defilers with Dark Swarm and Plague anchor the late game."
+strengths = ["Larvae from every Hatchery allow several units to be produced at once", "Each new Hatchery adds both a base and production capacity", "Cheap, fast Zerglings and mobile Mutalisks give early map presence", "Burrow allows hidden units and protects Drones", "Dark Swarm and Plague are powerful late-game spells"]
+weaknesses = ["Each building consumes the Drone that makes it", "Most buildings must be placed on creep", "Overlords provide supply but are slow and can be killed, costing supply", "Larvae are shared between workers and army"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Larva_(Unit)", "https://liquipedia.net/starcraft/Hatchery", "https://liquipedia.net/starcraft/Overlord", "https://liquipedia.net/starcraft/Jaedong", "https://liquipedia.net/starcraft/SAviOr", "https://liquipedia.net/starcraft/July", "https://liquipedia.net/starcraft/EffOrt", "https://liquipedia.net/starcraft/Soulkey"]
+verified = "2026-10-11"
 +++
-The Zerg are a ravenous insectoid swarm driven by the Overmind to achieve genetic perfection by assimilating other species. In competitive Brood War, Zerg is the swarm economy race — built around rapid expansion, larva-based production, and overwhelming adaptability. All Zerg units are biological, morphed from larvae at Hatcheries. Each Hatchery produces larvae, so expanding gives both resources and production capacity simultaneously. Creep spreads from Hatcheries and Creep Colonies, and most Zerg buildings must be placed on creep.
+The Zerg are an insectoid swarm. In Brood War every Zerg unit is biological, which makes them vulnerable to spells like Irradiate and Maelstrom, and the race is built around larva-based production and creep.
 
-## Strengths
+## Building and economy
 
-Zerg has the fastest economy in the game thanks to the unique larva mechanic. Every Hatchery generates larvae that can become either workers or army units, meaning each expansion directly increases both income and production capacity. This enables Zerg to outproduce both other races in the long run. Zerg is also the most adaptable race — because all units come from the same larvae pool, a Zerg player can rapidly switch from producing Zerglings to Mutalisks to Hydralisks depending on what the opponent is building. Map control is a natural Zerg strength, with fast Zerglings and mobile Overlords providing vision across the map early. In the late game, the Defiler's Dark Swarm and Plague give Zerg the strongest spellcasting suite for sustained combat, enabling cheap melee units to engage expensive ranged armies.
+Each Hatchery, Lair and Hive holds up to three larvae and spawns a new one about every 342 frames. Larvae morph into most Zerg units; Lurkers, Guardians and Devourers are morphed from Hydralisks and Mutalisks instead. A Drone becomes the building it creates, and every building except the Hatchery and Extractor must be placed on creep. Overlords provide 8 supply each (the Hatchery 1), detect cloaked units, and with Ventral Sacs can carry units.
 
-## Weaknesses
+## Key units
 
-Zerg units are individually the weakest in the game — a single Zergling, Hydralisk, or Mutalisk loses to its cost-equivalent from either other race in a straight fight. Supply depends on Overlords, which are slow, expensive, and killable — losing Overlords both reveals your tech and supply-blocks your production. Each Zerg building requires sacrificing a Drone, meaning infrastructure investment directly reduces your economy. Zerg must expand aggressively to survive, which creates windows of vulnerability when defenses are spread thin. Early-game anti-air is limited to Hydralisks and Spore Colonies, making air harassment a persistent threat.
+- **Zergling** — 50 minerals for a pair, fast melee unit; Adrenal Glands raises its attack rate.
+- **Hydralisk** — ranged unit with explosive damage; can morph into a Lurker.
+- **Mutalisk** — flier whose Glave Wurm bounces to extra targets; used for harassment.
+- **Lurker** — attacks only while burrowed, with 20-damage spines that hit everything in a line.
+- **Ultralisk** — heavy melee unit with the Chitinous Plating armor upgrade.
+- **Defiler** — casts Dark Swarm and Plague, refilling energy with Consume.
+- **Overlord** — supply, detection and (with Ventral Sacs) transport.
 
-## Key Units
+## In competitive play
 
-The **Zergling** is the fundamental Zerg unit — dirt cheap at 25 minerals per pair, fast, and deadly in large numbers with surround tactics. The **Mutalisk** provides unmatched mid-game harassment and map control, with its bouncing glaive attack and high mobility punishing undefended bases. The **Lurker** is the premier defensive unit, burrowing to fire invisible spine attacks through lines of ground units, requiring detection to counter. The **Defiler** is the late-game lynchpin — its Dark Swarm negates all ranged fire, and Plague reduces entire armies to 1 HP, making it arguably the most important spellcaster in the game.
+Zerg usually expands early and adds Hatcheries for larvae. ZvT commonly moves from Mutalisks into Lurkers and Defilers, protected by Dark Swarm against Marines and Siege Tanks. ZvP features Hydralisks, Lurkers and later Defilers against Zealot/Dragoon/Templar armies. ZvZ is dominated by Zerglings and Mutalisks and rarely reaches the late game.
 
-## Competitive Meta
+## Notable players
 
-Modern Zerg play revolves around aggressive economic openings followed by reactive unit production. In ZvT, Zerg typically opens with fast expansions, uses Mutalisk harassment in the mid-game, and transitions to Lurker/Defiler compositions for the late game. ZvP features early Zergling pressure followed by Hydralisk or Lurker-based army compositions, with the late game revolving around Defiler spells against Protoss deathballs. ZvZ is the most volatile mirror matchup, often decided in the first few minutes by Zergling micro and Mutalisk control, with games rarely reaching the late game.
-
-## Famous Players
-
-**Jaedong** (Lee Jae Dong) is the greatest Zerg player of all time, known as "The Tyrant" for his relentless aggression and flawless Mutalisk micro. **sAviOr** (Ma Jae Yoon) dominated the mid-2000s era and was the first Zerg to consistently beat top Terrans in an era of Terran dominance, earning the title "The Maestro." **Soulkey** (Kim Min Chul) is one of the strongest modern Zerg players, excelling in all three matchups with precise control. **July** (Park Sung Joon) was famous for his ultra-aggressive style and creative strategies that pushed the boundaries of what was thought possible for Zerg. **EffOrt** (Kim Jung Woo) is a fearsome modern-era Zerg known for his powerful late-game play and Defiler mastery.
+[Jaedong](@/players/jaedong.md) (Lee Jae Dong, "The Tyrant"), [sAviOr](@/players/savior.md) (Ma Jae Yoon, "The Maestro"), [July](@/players/july.md) (Park Sung Joon, "God of War"), [EffOrt](@/players/effort.md) (Kim Jung Woo) and [Soulkey](@/players/soulkey.md) (Kim Min Chul).
