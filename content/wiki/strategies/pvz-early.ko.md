@@ -1,11 +1,12 @@
 +++
-title = "PvZ 초반전"
+title = "프저전 초반"
 description = "프로토스 vs 저그 초반전 전략 가이드."
 slug = "pvz-early"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["PvZ"]
 [extra]
+aliases = ["PvZ 초반"]
 matchup = "PvZ"
 sources = ["https://liquipedia.net/starcraft/Forge_FE_(vs._Zerg)", "https://liquipedia.net/starcraft/Cannon_Rush_(vs._Zerg)", "https://liquipedia.net/starcraft/9_Pool_(vs._Zerg)", "https://liquipedia.net/starcraft/12_Hatch_(vs._Terran)", "https://liquipedia.net/starcraft/3_Base_Spire_into_5_Hatch_Hydra_(vs._Protoss)"]
 verified = "2026-10-11"
@@ -14,7 +15,7 @@ verified = "2026-10-11"
 
 ## 포지 더블
 
-대표적인 시작: 8 서플라이에 앞마당 파일런(그 프로브가 그대로 정찰), 11 포지, 이후 정찰한 저그 빌드에 따라 순서가 달라진다. 리퀴피디아의 예:
+대표적인 시작: 인구수 8에 앞마당 파일런(그 프로브가 그대로 정찰), 11 포지, 이후 정찰한 저그 빌드에 따라 순서가 달라진다. 리퀴피디아의 예:
 
 - **9풀** 상대: 13에 포톤 캐논 2개, 이후 넥서스, 게이트웨이, 파일런, 어시밀레이터, 사이버네틱스 코어.
 - **12풀** 상대: 15 넥서스, 포톤 캐논 1개와 게이트웨이.

@@ -1,9 +1,10 @@
 +++
-title = "컨트롤 그룹 & 단축키"
+title = "부대 지정과 단축키"
 description = "브루드워의 선택 제한, 컨트롤 그룹, APM."
 slug = "control-groups"
 template = "wiki/mechanic.html"
 [extra]
+aliases = ["컨트롤 그룹"]
 sources = ["https://liquipedia.net/starcraft/Micromanagement", "https://liquipedia.net/starcraft/Shortcuts", "https://liquipedia.net/starcraft/Actions_per_Minute", "https://liquipedia.net/starcraft/Lift_off"]
 verified = "2026-10-11"
 +++

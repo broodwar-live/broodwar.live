@@ -1,11 +1,12 @@
 +++
-title = "프로토스 vs 저그 전략 가이드"
+title = "프저전(PvZ) 전략 가이드"
 description = "스타크래프트: 브루드 워 PvZ 전략 가이드."
 slug = "pvz"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["PvZ"]
 [extra]
+aliases = ["프로토스 vs 저그", "저프전"]
 matchup = "PvZ"
 sources = ["https://liquipedia.net/starcraft/Forge_FE_(vs._Zerg)", "https://liquipedia.net/starcraft/Bisu_Build", "https://liquipedia.net/starcraft/Corsair/Dark_Templar_(vs._Zerg)", "https://liquipedia.net/starcraft/Corsair/Reaver_(vs._Zerg)", "https://liquipedia.net/starcraft/3_Base_Spire_into_5_Hatch_Hydra_(vs._Protoss)", "https://liquipedia.net/starcraft/2_Hatch_Lurker_(vs._Protoss)", "https://liquipedia.net/starcraft/Dark_Swarm", "https://liquipedia.net/starcraft/Psionic_Storm"]
 verified = "2026-10-11"
@@ -34,7 +35,7 @@ PvZ에서 프로토스는 거의 항상 빠르게 확장하며 — 보통 포지
 
 ## 후반전
 
-- **사이오닉 스톰, 아콘, 질럿** — 스톰은 다크 스웜 아래 유닛에게도 피해를 주며, 질럿과 아콘(근접·스플래시)도 스웜 아래에서 통한다.
+- **사이오닉 스톰, 아칸, 질럿** — 스톰은 다크 스웜 아래 유닛에게도 피해를 주며, 질럿과 아칸(근접·스플래시)도 스웜 아래에서 통한다.
 - **디파일러** — 다크 스웜은 드라군과 포톤 캐논을 무력화하고, 플레이그는 실드가 아닌 체력을 깎는다.
 - **확장 장악** — 장기전은 대개 기지 수로 결정된다.
 

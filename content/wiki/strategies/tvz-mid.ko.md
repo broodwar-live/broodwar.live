@@ -1,11 +1,12 @@
 +++
-title = "TvZ 중반전"
+title = "테저전 중반"
 description = "스타크래프트: 브루드 워 테란 vs 저그 중반전 전략 가이드."
 slug = "tvz-mid"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["TvZ"]
 [extra]
+aliases = ["TvZ 중반"]
 matchup = "TvZ"
 sources = ["https://liquipedia.net/starcraft/SK_Terran", "https://liquipedia.net/starcraft/3_Hatch_Muta_(vs._Terran)", "https://liquipedia.net/starcraft/3_Hatch_Lurker_(vs._Terran)", "https://liquipedia.net/starcraft/Irradiate", "https://liquipedia.net/starcraft/Mutalisk", "https://liquipedia.net/starcraft/Bunker"]
 verified = "2026-10-11"
@@ -14,7 +15,7 @@ TvZ 중반은 양쪽이 두 기지 이상을 가진 시점부터 시작된다. �
 
 ## 보병 운영
 
-보병 운영(흔히 SK 테란)은 빠른 공격력 업그레이드를 한 마린·메딕과 점점 늘어나는 사이언스 베슬로, 시즈 탱크 없이 운영한다. 리퀴피디아의 조언:
+보병 운영(흔히 SK 테란)은 빠른 공격력 업그레이드를 한 마린·메딕과 점점 늘어나는 사이언스 베슬로, 시즈탱크 없이 운영한다. 리퀴피디아의 조언:
 
 - 최소 두 부대의 마린/메딕과 최소 한 기의 사이언스 베슬을 데리고 나간다.
 - 러커 가시 한 번에 여러 마린이 맞지 않도록 산개한다.
@@ -23,7 +24,7 @@ TvZ 중반은 양쪽이 두 기지 이상을 가진 시점부터 시작된다. �
 
 ## 메카닉 운영
 
-메카닉은 벌처, 스파이더 마인, 시즈 탱크, 골리앗을 쓴다. 확장 경로에 깐 마인은 드론 이동을 막고 공격을 미리 알려준다. 시즈 모드의 시즈 탱크(사거리 12)는 버로우한 러커(사거리 6)보다 사거리가 길다. 지원 없는 탱크는 취약하므로 병력은 단계적으로 전진한다.
+메카닉은 벌처, 스파이더 마인, 시즈탱크, 골리앗을 쓴다. 확장 경로에 깐 마인은 드론 이동을 막고 공격을 미리 알려준다. 시즈 모드의 시즈탱크(사거리 12)는 버로우한 러커(사거리 6)보다 사거리가 길다. 지원 없는 탱크는 취약하므로 병력은 단계적으로 전진한다.
 
 ## 뮤탈리스크 대처
 
@@ -36,5 +37,5 @@ TvZ 중반은 양쪽이 두 기지 이상을 가진 시점부터 시작된다. �
 ## 흔한 실수
 
 - 탐지 없이 버로우한 러커 위로 병력을 진입시키는 것.
-- 방어가 없는 광물 라인에서 뮤탈리스크에게 건설로봇을 잃는 것.
+- 방어가 없는 광물 라인에서 뮤탈리스크에게 SCV를 잃는 것.
 - 저그가 하이브에 도달했을 때 디파일러에 대한 대책이 없는 것.

@@ -1,11 +1,12 @@
 +++
-title = "PvZ 중반전"
+title = "프저전 중반"
 description = "프로토스 vs 저그 중반전 전략 가이드."
 slug = "pvz-mid"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["PvZ"]
 [extra]
+aliases = ["PvZ 중반"]
 matchup = "PvZ"
 sources = ["https://liquipedia.net/starcraft/Bisu_Build", "https://liquipedia.net/starcraft/Corsair/Dark_Templar_(vs._Zerg)", "https://liquipedia.net/starcraft/Corsair/Reaver_(vs._Zerg)", "https://liquipedia.net/starcraft/Disruption_Web", "https://liquipedia.net/starcraft/Psionic_Storm", "https://liquipedia.net/starcraft/3_Base_Spire_into_5_Hatch_Hydra_(vs._Protoss)", "https://liquipedia.net/starcraft/Scourge"]
 verified = "2026-10-11"

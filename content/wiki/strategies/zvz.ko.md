@@ -1,11 +1,12 @@
 +++
-title = "저그 vs 저그 전략 가이드"
+title = "저저전(ZvZ) 전략 가이드"
 description = "스타크래프트: 브루드 워 ZvZ 전략 가이드."
 slug = "zvz"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["ZvZ"]
 [extra]
+aliases = ["저그 vs 저그"]
 matchup = "ZvZ"
 sources = ["https://liquipedia.net/starcraft/Overpool_(vs._Zerg)", "https://liquipedia.net/starcraft/9_Pool_(vs._Zerg)", "https://liquipedia.net/starcraft/12_Pool_(vs._Zerg)", "https://liquipedia.net/starcraft/4/5_Pool", "https://liquipedia.net/starcraft/Mutalisk", "https://liquipedia.net/starcraft/Scourge"]
 verified = "2026-10-11"
@@ -24,7 +25,7 @@ ZvZ는 가장 빠르고 변동성이 큰 매치업이다. 스포닝 풀 타이�
 ## 주요 오프닝
 
 - **오버풀(Overpool)** — 9 오버로드, 9 스포닝 풀, 9 익스트랙터, 이후 저글링 6기. 리퀴피디아는 더 빠른 풀을 막을 저글링과 올인을 막을 뮤탈리스크를 모두 제때 확보하는 "완벽한" 표준 ZvZ 빌드로 소개한다.
-- **9풀** — 9 서플라이에 스포닝 풀, 이후 익스트랙터와 오버로드. 보통 저글링 발업(대사 촉진)과 레어로 이어진다. 저글링이 상대의 풀 완성보다 훨씬 먼저 도착하므로 12앞마당에 강하다.
+- **9풀** — 인구수 9에 스포닝 풀, 이후 익스트랙터와 오버로드. 보통 저글링 발업(메타볼릭 부스트)과 레어로 이어진다. 저글링이 상대의 풀 완성보다 훨씬 먼저 도착하므로 12앞마당에 강하다.
 - **12풀** — 더 경제적인 풀로, 흔히 해처리가 뒤따른다.
 - **4/5풀** — 극단적인 올인. 리퀴피디아는 풀을 먼저 짓는 상대가 막을 수 있어 저그전에서 가장 덜 쓰인다고 설명한다.
 

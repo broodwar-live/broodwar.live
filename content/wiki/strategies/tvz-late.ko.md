@@ -1,11 +1,12 @@
 +++
-title = "TvZ 후반전"
+title = "테저전 후반"
 description = "스타크래프트: 브루드 워 테란 vs 저그 후반전 전략 가이드."
 slug = "tvz-late"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["TvZ"]
 [extra]
+aliases = ["TvZ 후반"]
 matchup = "TvZ"
 sources = ["https://liquipedia.net/starcraft/Dark_Swarm", "https://liquipedia.net/starcraft/Plague", "https://liquipedia.net/starcraft/Irradiate", "https://liquipedia.net/starcraft/EMP_Shockwave", "https://liquipedia.net/starcraft/Spider_Mine", "https://liquipedia.net/starcraft/Consume"]
 verified = "2026-10-11"
@@ -20,11 +21,11 @@ TvZ 후반은 저그가 하이브를 올리고 디파일러를 운용하면서 �
 
 ## 사이언스 베슬의 대응
 
-**이래디에이트**는 대상 충돌 범위 32픽셀 이내의 생체 유닛에게 시간에 걸쳐 약 250의 피해를 주며, 디파일러·러커·뭉친 뮤탈리스크를 잡는 주된 수단이다. 리퀴피디아에 따르면 **EMP 충격파**는 저그전에서 거의 쓰이지 않는다. 에너지를 즉시 없애지만 디파일러가 컨슘으로 금방 회복하기 때문이다.
+**이래디에이트**는 대상 충돌 범위 32픽셀 이내의 생체 유닛에게 시간에 걸쳐 약 250의 피해를 주며, 디파일러·러커·뭉친 뮤탈리스크를 잡는 주된 수단이다. 리퀴피디아에 따르면 **EMP 쇼크웨이브**는 저그전에서 거의 쓰이지 않는다. 에너지를 즉시 없애지만 디파일러가 컨슘으로 금방 회복하기 때문이다.
 
 ## 다크 스웜 아래에서 통하는 것
 
-리퀴피디아는 파이어뱃(버로우한 러커 포함), 스파이더 마인, 이래디에이트, 야마토 캐논, 핵 공격을 스웜 아래 유닛에게 효과적인 수단으로 꼽는다. 시즈 탱크와 마린은 스웜 밖에 있는 유닛은 공격할 수 있으므로, 디파일러가 시전하기 전에 이래디에이트로 잡고 구름에서 떨어진 곳에서 싸우는 것이 일반적이다.
+리퀴피디아는 파이어뱃(버로우한 러커 포함), 스파이더 마인, 이래디에이트, 야마토 캐논, 핵 공격을 스웜 아래 유닛에게 효과적인 수단으로 꼽는다. 시즈탱크와 마린은 스웜 밖에 있는 유닛은 공격할 수 있으므로, 디파일러가 시전하기 전에 이래디에이트로 잡고 구름에서 떨어진 곳에서 싸우는 것이 일반적이다.
 
 ## 울트라리스크와 저글링
 

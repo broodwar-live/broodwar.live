@@ -1,11 +1,12 @@
 +++
-title = "시즈 탱크"
-description = "시즈 탱크는 시즈 모드로 전환해 장거리 폭발형 범위 공격을 하는 테란 팩토리의 포격 유닛이다."
+title = "시즈탱크"
+description = "시즈탱크는 시즈 모드로 전환해 장거리 폭발형 범위 공격을 하는 테란 팩토리의 포격 유닛이다."
 slug = "siege-tank"
 template = "wiki/unit.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+aliases = ["시즈 탱크", "탱크"]
 image = "/images/wiki/units/siege-tank.jpg"
 name_en = "Siege Tank"
 type = "ground"
@@ -32,7 +33,7 @@ upgrades = ["siege-tech", "vehicle-weapons", "vehicle-plating"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-시즈 탱크는 팩토리에 머신 샵 애드온이 있어야 생산할 수 있다. 탱크 모드에서는 이동하며 싸우고, 시즈 모드 연구 후에는 고정 포대로 전환해 훨씬 긴 사거리와 높은 공격력을 얻는다. 시즈 탱크는 모든 종족전에서 테란이 공간을 장악하는 방식을 결정한다.
+시즈탱크는 팩토리에 머신 샵 애드온이 있어야 생산할 수 있다. 탱크 모드에서는 이동하며 싸우고, 시즈 모드 연구 후에는 고정 포대로 전환해 훨씬 긴 사거리와 높은 공격력을 얻는다. 시즈탱크는 모든 종족전에서 테란이 공간을 장악하는 방식을 결정한다.
 
 ## 저그전
 

@@ -1,11 +1,12 @@
 +++
-title = "감염된 테란"
-description = "감염된 테란은 감염된 커맨드 센터에서 생산하는 저그 자폭 유닛으로, 폭발하며 범위에 500의 피해를 준다."
+title = "인페스티드 테란"
+description = "인페스티드 테란은 인페스티드 커맨드 센터에서 생산하는 저그 자폭 유닛으로, 폭발하며 범위에 500의 피해를 준다."
 slug = "infested-terran"
 template = "wiki/unit.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+aliases = ["감염된 테란"]
 image = "/images/wiki/units/infested-terran.jpg"
 name_en = "Infested Terran"
 type = "ground"
@@ -31,7 +32,7 @@ upgrades = ["carapace"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-감염된 테란은 감염된 커맨드 센터에서만 생산할 수 있다. 감염된 커맨드 센터는 퀸이 체력이 절반 이하인 테란 커맨드 센터를 감염시켜 얻는다. 대상에게 달려가 폭발해 강력한 범위 피해를 준다.
+인페스티드 테란은 인페스티드 커맨드 센터에서만 생산할 수 있다. 인페스티드 커맨드 센터는 퀸이 체력이 절반 이하인 테란 커맨드 센터를 감염시켜 얻는다. 대상에게 달려가 폭발해 강력한 범위 피해를 준다.
 
 ## 경쟁전에서의 역할
 

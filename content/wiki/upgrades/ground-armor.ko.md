@@ -16,7 +16,7 @@ affects = ["probe", "zealot", "dragoon", "high-templar", "dark-templar", "archon
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UpgradeType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
 verified = "2026-10-11"
 +++
-지상 방어력은 단계마다 프로브, 질럿, 드라군, 하이 템플러, 다크 템플러, 아콘, 다크 아콘, 리버의 방어력을 1씩 올린다. 방어력은 체력에 들어가는 피해에만 적용되고, 실드에 들어가는 피해는 플라즈마 실드가 줄인다. 2·3단계는 템플러 아카이브가 필요하다.
+지상 방어력은 단계마다 프로브, 질럿, 드라군, 하이 템플러, 다크 템플러, 아칸, 다크 아아칸, 리버의 방어력을 1씩 올린다. 방어력은 체력에 들어가는 피해에만 적용되고, 실드에 들어가는 피해는 플라즈마 실드가 줄인다. 2·3단계는 템플러 아카이브가 필요하다.
 
 실드가 깎인 뒤 저글링이나 마린처럼 타격당 피해가 낮은 공격을 받는 질럿에게 특히 유용하다.
 

@@ -31,7 +31,7 @@ upgrades = ["ship-plating"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-드랍십은 컨트롤 타워가 붙은 스타포트에서 생산한다. 공격 능력은 없고 지상 유닛을 최대 8칸까지 수송한다. 시즈 탱크, 벌처, 보병을 언덕 위나 적 병력 뒤, 비어 있는 확장 기지에 내리는 드랍 플레이의 핵심이다.
+드랍십은 컨트롤 타워가 붙은 스타포트에서 생산한다. 공격 능력은 없고 지상 유닛을 최대 8칸까지 수송한다. 시즈탱크, 벌처, 보병을 언덕 위나 적 병력 뒤, 비어 있는 확장 기지에 내리는 드랍 플레이의 핵심이다.
 
 ## 저그전
 
@@ -47,6 +47,6 @@ verified = "2026-10-11"
 
 ## 주요 메커니즘
 
-- 수송량 8칸: 마린·파이어뱃·메딕·고스트·SCV는 1칸, 벌처·골리앗은 2칸, 시즈 탱크는 4칸
+- 수송량 8칸: 마린·파이어뱃·메딕·고스트·SCV는 1칸, 벌처·골리앗은 2칸, 시즈탱크는 4칸
 - 대형, 체력 150, 기본 방어력 1
 - 유닛을 태운 채 격추되면 안에 있던 유닛도 모두 죽는다

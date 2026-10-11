@@ -32,7 +32,7 @@ upgrades = ["yamato-gun", "ship-weapons", "ship-plating"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-배틀크루저는 테란에서 가장 비싼 유닛이다. 컨트롤 타워가 붙은 스타포트와 피직스 랩이 붙은 사이언스 퍼실리티가 필요하다. 체력 500, 기본 방어력 3을 갖추고 지상과 공중을 모두 공격하며, 피직스 랩에서 야마토 포를 연구하면 야마토 캐논을 쏠 수 있다.
+배틀크루저는 테란에서 가장 비싼 유닛이다. 컨트롤 타워가 붙은 스타포트와 피직스 랩이 붙은 사이언스 퍼실리티가 필요하다. 체력 500, 기본 방어력 3을 갖추고 지상과 공중을 모두 공격하며, 피직스 랩에서 야마토 캐논을 연구하면 야마토 캐논을 쏠 수 있다.
 
 ## 저그전
 
@@ -44,7 +44,7 @@ verified = "2026-10-11"
 
 ## 프로토스전
 
-프로토스전에서는 드물다. 등장하면 프로토스는 보통 드라군, 커세어, 스카웃, 다크 아콘 마법으로 대응한다.
+프로토스전에서는 드물다. 등장하면 프로토스는 보통 드라군, 커세어, 스카웃, 다크 아칸 마법으로 대응한다.
 
 ## 주요 메커니즘
 

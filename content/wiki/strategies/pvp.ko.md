@@ -1,11 +1,12 @@
 +++
-title = "프로토스 vs 프로토스 전략 가이드"
+title = "프프전(PvP) 전략 가이드"
 description = "스타크래프트: 브루드 워 PvP 전략 가이드."
 slug = "pvp"
 template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["PvP"]
 [extra]
+aliases = ["프로토스 vs 프로토스"]
 matchup = "PvP"
 sources = ["https://liquipedia.net/starcraft/2_Gate_Reaver_(vs._Protoss)", "https://liquipedia.net/starcraft/Reaver", "https://liquipedia.net/starcraft/Reaver_Drop", "https://liquipedia.net/starcraft/Psionic_Storm", "https://liquipedia.net/starcraft/Arbiter", "https://liquipedia.net/starcraft/Carrier"]
 verified = "2026-10-11"
@@ -35,7 +36,7 @@ PvP는 드라군, 리버, 그리고 초반 테크 선택을 중심으로 돌아�
 
 ## 후반전
 
-PvP가 길어지는 경우는 드물지만, 긴 경기에서는 스톰, 아콘, 가끔 아비터가 나온다. 셔틀과 리버 모두 스톰에 큰 피해를 입으므로 스톰은 셔틀/리버 운영에 대한 좋은 대응이다.
+PvP가 길어지는 경우는 드물지만, 긴 경기에서는 스톰, 아칸, 가끔 아비터가 나온다. 셔틀과 리버 모두 스톰에 큰 피해를 입으므로 스톰은 셔틀/리버 운영에 대한 좋은 대응이다.
 
 ## 관련 선수
 

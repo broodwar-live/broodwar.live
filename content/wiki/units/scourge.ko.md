@@ -1,6 +1,6 @@
 +++
 title = "스커지"
-description = "스커지는 스파이어 이후 애벌레 하나에서 두 마리씩 나오는 저그 자폭 비행 유닛으로, 적 공중 유닛에 부딪혀 폭발한다."
+description = "스커지는 스파이어 이후 라바 하나에서 두 마리씩 나오는 저그 자폭 비행 유닛으로, 적 공중 유닛에 부딪혀 폭발한다."
 slug = "scourge"
 template = "wiki/unit.html"
 [taxonomies]
@@ -31,7 +31,7 @@ upgrades = ["flyer-carapace"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-스커지는 스파이어 완성 후 애벌레 하나에서 두 마리씩 생산된다. 공중 유닛만 공격할 수 있으며, 대상에 날아가 부딪혀 피해 110을 주고 자신은 소멸한다.
+스커지는 스파이어 완성 후 라바 하나에서 두 마리씩 생산된다. 공중 유닛만 공격할 수 있으며, 대상에 날아가 부딪혀 피해 110을 주고 자신은 소멸한다.
 
 ## 테란전
 

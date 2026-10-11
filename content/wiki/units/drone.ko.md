@@ -1,6 +1,6 @@
 +++
 title = "드론"
-description = "드론은 애벌레에서 변태하는 저그 일꾼으로, 자원을 채취하며 건물로 변태하면 소모된다."
+description = "드론은 라바에서 변태하는 저그 일꾼으로, 자원을 채취하며 건물로 변태하면 소모된다."
 slug = "drone"
 template = "wiki/unit.html"
 [taxonomies]
