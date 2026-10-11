@@ -1,6 +1,6 @@
 +++
 title = "Stats"
-description = "Stats (Kim Dae Yeob) — Protoss player from South Korea."
+description = "Stats (Kim Dae Yeob) — KT Rolster Protoss who beat Bisu in the 2009–10 Proleague final and won two Proleagues with KT."
 slug = "stats"
 template = "players/player.html"
 [taxonomies]
@@ -24,4 +24,6 @@ slug = "kt-rolster"
 from = "2009-07-02"
 to = "2016-10-18"
 +++
-Stats (Kim Dae Yeob) is a South Korean Protoss player, born in 1992, who played for KT Rolster from 2009 to 2016. He became KT's main Protoss during the 2009–10 Proleague and beat Bisu in the Grand Finals as KT defeated SK Telecom T1. In individual leagues he reached the round of 16 of the 2009 NATE MSL and the Bigfile MSL. He later continued his career in StarCraft II.
+Stats (Kim Dae Yeob) is a retired South Korean Protoss player, born in 1992, who spent his whole career with [KT Rolster](@/wiki/teams/kt-rolster.md), from 2009 to 2016. He took up the game seriously after watching [Reach](@/players/reach.md) on television and chose Protoss because of him.
+
+In his first individual league, the [2009-2010 NATE MSL](@/tournaments/2009-2010-nate-msl.md), he beat [July](@/players/july.md) twice to escape his group, eliminated [JangBi](@/players/jangbi.md) and reached the quarterfinals, where [Jaedong](@/players/jaedong.md) stopped him. By the end of that Proleague season he had become KT's main Protoss, and he defeated [Bisu](@/players/bisu.md) in the final as KT won the [2009–10 Shinhan Bank Proleague](@/tournaments/2009-2010-shinhan-bank-proleague.md). He was a key player again as KT won the [2010–11 Shinhan Bank Proleague](@/tournaments/2010-2011-shinhan-bank-proleague.md), a season in which he recorded three all-kills, and KT were runners-up in the [2011–12 SK Planet Proleague Season 1](@/tournaments/2011-2012-sk-planet-proleague-season-1.md). He later continued in StarCraft II.

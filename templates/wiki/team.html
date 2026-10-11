@@ -74,6 +74,50 @@
     {% endif %}
   </div>
 
+  {#- Team-league titles and finals: every season row of a team-league series page
+      (tournaments/*.md, extra.seasons[].winner_team / runner_up_team) naming this team.
+      Rows keep the team name used at the time. See templates/tournaments/series.html. -#}
+  {% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
+  {% set_global tt_json = "" %}
+  {% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}
+    {% set role = "" %}
+    {% if s.winner_team is defined and s.winner_team == page.slug %}{% set role = "W" %}{% set as_name = s.winner %}{% set opp = s.runner_up | default(value="") %}{% set opp_slug = s.runner_up_team | default(value="") %}
+    {% elif s.runner_up_team is defined and s.runner_up_team == page.slug %}{% set role = "R" %}{% set as_name = s.runner_up %}{% set opp = s.winner | default(value="") %}{% set opp_slug = s.winner_team | default(value="") %}{% endif %}
+    {% if role %}
+      {% set sid = "season-" ~ s.season %}{% set sid = sid | slugify %}{% set_global tt_url = tp.path ~ "#" ~ sid %}
+      {% for sp in tsec.pages %}{% if sp.extra.series_slug is defined and sp.extra.series_slug == tp.slug and sp.extra.season == s.season %}{% set_global tt_url = sp.path %}{% endif %}{% endfor %}
+      {% set_global tt_json = tt_json ~ "," ~ {"k": s.final_date | default(value=s.year ~ ""), "role": role, "u": tt_url, "s": s.season, "lg": tp.extra.short_name, "y": s.year, "as": as_name, "o": opp, "os": opp_slug, "sc": s.score | default(value=""), "sd": s.score_detail | default(value="")} | json_encode | safe %}
+    {% endif %}
+  {% endfor %}{% endif %}{% endfor %}
+  {% set tts = load_data(literal="[" ~ (tt_json | trim_start(pat=",")) ~ "]", format="json") | sort(attribute="k") | reverse %}
+  {% if tts | length > 0 %}
+  {% set_global tt_w = 0 %}{% for r in tts %}{% if r.role == "W" %}{% set_global tt_w = tt_w + 1 %}{% endif %}{% endfor %}
+  <section class="mt-10 max-w-3xl" aria-labelledby="team-league-titles" data-tl-team-finals="{{ tt_w }}-{{ tts | length - tt_w }}">
+    <h2 id="team-league-titles" class="text-lg font-semibold mb-1 scroll-mt-24">{{ t.tl_team_titles }} <span class="text-sm font-normal text-base-content/60 font-stats">({{ tt_w }} / {{ tts | length - tt_w }})</span></h2>
+    <p class="text-xs text-base-content/70 mb-4">{{ t.tl_team_titles_note }}</p>
+    <table class="table table-sm w-full max-sm:block" data-sortable>
+      <thead class="max-sm:sr-only">
+        <tr class="text-xs text-base-content/70">
+          <th scope="col" data-sort="text">{{ t.player_result }}</th>
+          <th scope="col" data-sort="text">{{ t.tournaments }}</th>
+          <th scope="col" data-sort="text" aria-sort="descending">{{ t.data_final_date }}</th>
+          <th scope="col">{{ t.player_final }}</th>
+        </tr>
+      </thead>
+      <tbody class="max-sm:block max-sm:space-y-2">
+        {% for r in tts %}
+        <tr class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3">
+          <td class="whitespace-nowrap max-sm:p-0" data-sort-value="{{ r.role }}">{% if r.role == "W" %}<span class="text-warning font-semibold">&#9733; {{ t.player_champion }}</span>{% else %}<span class="text-base-content/70">{{ t.player_runner_up }}</span>{% endif %}</td>
+          <td class="text-sm font-medium max-sm:p-0"><a href="{{ r.u }}" class="text-primary hover:underline">{{ r.s }}</a>{% if r.as != page.title %} <span class="text-xs font-normal text-base-content/70">({{ t.tl_as | replace(from="{name}", to=r.as) }})</span>{% endif %}</td>
+          <td class="font-stats text-sm text-base-content/70 whitespace-nowrap max-sm:p-0" data-sort-value="{{ r.k }}">{% if "-" in r.k %}<time datetime="{{ r.k }}">{{ r.k }}</time>{% else %}{{ r.y }}{% endif %}</td>
+          <td class="text-sm text-base-content/70 max-sm:p-0 max-sm:basis-full">{% if r.o %}{% if r.role == "W" %}{{ t.player_vs }}{% else %}{{ t.player_lost_to }}{% endif %} {% set tc_name = r.o %}{% set tc_slug = r.os %}{% set tc_class = "text-primary" %}{% include "tournaments/team-chip.html" %}{% if r.sc %} <span class="font-stats text-base-content/60">({{ r.sc }}{% if r.sd %}: {{ r.sd }}{% endif %})</span>{% endif %}{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+
   {#- Roster navbox: every player whose team history (extra.teams[].slug) lists this team. -#}
   {% set psec = get_section(path="players/_index.md", lang=lang) %}
   {% set_global roster_n = 0 %}
@@ -88,7 +132,7 @@
       {% for tm in p.extra.teams %}{% if tm.slug is defined and tm.slug == page.slug %}{% set tfrom = tm.from | default(value="?") %}{% set tto = tm.to | default(value="?") %}{% if not tfrom %}{% set tfrom = "?" %}{% endif %}{% if not tto %}{% set tto = "?" %}{% elif tto == "present" %}{% set tto = t.player_present %}{% endif %}{% if span %}{% set_global span = span ~ ", " %}{% endif %}{% set_global span = span ~ tfrom ~ "–" ~ tto %}{% endif %}{% endfor %}
       {% if span %}
       {% set pc_name = p.title %}{% set pc_slug = p.slug %}{% set pc_class = "" %}
-      <li class="flex items-baseline justify-between gap-3 min-w-0">{% include "tournaments/player-chip.html" %}<span class="text-xs font-stats text-base-content/60 shrink-0">{{ span }}</span></li>
+      <li class="flex flex-wrap items-baseline justify-between gap-x-3 min-w-0">{% include "tournaments/player-chip.html" %}<span class="text-xs font-stats text-base-content/60 min-w-0 ml-auto text-right">{{ span }}</span></li>
       {% endif %}
       {% endif %}{% endfor %}
     </ul>

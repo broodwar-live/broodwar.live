@@ -1,6 +1,6 @@
 +++
 title = "GGPlay"
-description = "GGPlay(김준영) — 한국의 저그 선수."
+description = "GGPlay(김준영) — 한빛 스타즈의 저그, 2007 다음 스타리그 우승·2008 인크루트 스타리그 4강."
 slug = "ggplay"
 template = "players/player.html"
 [taxonomies]
@@ -35,6 +35,6 @@ slug = "woongjin-stars"
 from = "2008-10-29"
 to = "2009-08"
 +++
-GGPlay(김준영)는 1985년생 대한민국의 은퇴한 저그 선수이다. 한빛 스타즈에서 활동했고, 2008년 잠시 CJ 엔투스를 거쳐 2009년까지 웅진 스타즈에서 뛰었다.
+GGPlay(김준영)는 1985년생 대한민국의 은퇴한 저그 프로게이머이다. 2004년부터 [한빛 스타즈](@/wiki/teams/hanbit-stars.ko.md)에서 뛰었고, 2008년 한동안 [CJ 엔투스](@/wiki/teams/cj-entus.ko.md)에 몸담은 뒤 2009년 [웅진 스타즈](@/wiki/teams/woongjin-stars.ko.md)에서 선수 생활을 마쳤다.
 
-최고 성적은 2007년 다음 스타리그(OSL) 우승으로, 결승에서 Iris를 상대로 0:2에서 3:2 역전승을 거뒀다. 이후 2008 인크루트 OSL 4강에 올랐다. 손목터널증후군으로 인해 은퇴한 것으로 알려져 있다.
+대표 성적은 [2007 다음 스타리그](@/tournaments/2007-daum-osl.ko.md) 우승이다. 결승에서 [Iris](@/players/iris.ko.md)에게 0–2로 끌려가다 내리 세 세트를 따내 3–2로 우승했으며, 마지막 세트는 파이썬에서 열렸다. 그 전에는 신한은행 스타리그 두 시즌에서 16강에 올랐다. [2008 인크루트 스타리그](@/tournaments/2008-incruit-osl.ko.md)에서는 8강에서 [Flash](@/players/flash.ko.md)를 꺾었으나, 4강에서 저그전 메카닉을 들고 나온 [Fantasy](@/players/fantasy.ko.md)에게 1–3으로 졌다. 이후 예전 기량을 되찾지 못하고 은퇴했으며, 손목 터널 증후군이 은퇴 이유로 알려져 있다.

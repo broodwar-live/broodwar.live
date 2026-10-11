@@ -1,0 +1,90 @@
++++
+title = "2004 SKY Proleague Grand Final"
+description = "2004 SKY Proleague Grand Final: Hanbit Stars beat Pantech & Curitel Curriors 4–2 in the final; full playoff set lists."
+slug = "2004-sky-proleague-grand-final"
+template = "tournaments/team-season.html"
+[extra]
+season_label = "SKY Proleague 2004 Grand Final"
+series_name = "Proleague"
+series_slug = "proleague"
+season = "2004 SKY Proleague Grand Final"
+year = 2005
+status = "completed"
+start_date = "2005-02-16"
+end_date = "2005-02-26"
+prize_pool = "₩40,000,000"
+champion = "Hanbit Stars"
+champion_team = "hanbit-stars"
+runner_up = "Pantech & Curitel Curriors"
+runner_up_team = "wemade-fox"
+final_score = "4–2"
+final_date = "2005-02-26"
+format = "Bo7 stepladder"
+teams = [{ name = "Hanbit Stars", slug = "hanbit-stars" }, { name = "Pantech & Curitel Curriors", slug = "wemade-fox" }, { name = "KOR", slug = "hite-entus" }, { name = "KTF MagicNs", slug = "kt-rolster" }]
+maps = [{ name = "Requiem", slug = "neo-requiem" }, { name = "Neo Guillotine" }, { name = "Xeno Sky" }, { name = "Vertigo Plus" }, { name = "Odin" }]
+awards = [{ award = "Finals MVP", name = "DaezanG" }]
+sources = ["https://liquipedia.net/starcraft/2004_SKY_Proleague_Grand_Final"]
+verified = "2026-10-11"
+[[extra.team_bracket]]
+round = "First round"
+best_of = 7
+[[extra.team_bracket.matches]]
+a = "KOR"
+a_team = "hite-entus"
+b = "KTF MagicNs"
+b_team = "kt-rolster"
+date = "2005-02-16"
+score_a = 4
+score_b = 2
+sets = [
+  { map = "Neo Guillotine", a = "Zeus", a_slug = "zeus", a_race = "p", b = "Sync", b_slug = "sync", b_race = "t", winner = "a" },
+  { map = "Vertigo Plus", a = "Side", a_slug = "side", a_race = "z", a2 = "Max", a2_race = "t", b = "Chojja", b_slug = "chojja", b_race = "z", b2 = "Reach", b2_slug = "reach", b2_race = "p", winner = "b" },
+  { map = "Xeno Sky", a = "Yellow", a_race = "z", b = "Yarnac", b_race = "z", winner = "a" },
+  { map = "Odin", a = "Side", a_slug = "side", a_race = "z", a2 = "Max", a2_race = "z", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "Yellow", b2_slug = "yellow", b2_race = "z", winner = "a" },
+  { map = "Requiem", map_slug = "neo-requiem", a = "Cloud", a_race = "t", b = "TheMarine", b_slug = "themarine", b_race = "t", winner = "b" },
+  { map = "Neo Guillotine", a = "Side", a_slug = "side", a_race = "z", a2 = "Max", a2_race = "p", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "Chojja", b2_slug = "chojja", b2_race = "z", winner = "a" },
+]
+[[extra.team_bracket]]
+round = "Semifinal"
+best_of = 7
+[[extra.team_bracket.matches]]
+a = "Hanbit Stars"
+a_team = "hanbit-stars"
+b = "KOR"
+b_team = "hite-entus"
+date = "2005-02-18"
+score_a = 4
+score_b = 2
+sets = [
+  { map = "Guillotine", a = "Sunny", a_race = "t", b = "Zeus", b_slug = "zeus", b_race = "z", winner = "a" },
+  { map = "Vertigo Plus", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Autumn", a2_race = "p", b = "Max", b_race = "p", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "b" },
+  { map = "Requiem", map_slug = "neo-requiem", a = "Daezang", a_race = "p", b = "Casy", b_slug = "casy", b_race = "t", winner = "b" },
+  { map = "Odin", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Junwi", a2_slug = "junwi", a2_race = "p", b = "Max", b_race = "t", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
+  { map = "Xeno Sky", a = "Clon", a_race = "z", b = "Yellow", b_race = "t", winner = "a" },
+  { map = "Guillotine", a = "Sunny", a_race = "z", a2 = "Clon", a2_race = "t", b = "Max", b_race = "p", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
+]
+[[extra.team_bracket]]
+round = "Final"
+best_of = 7
+[[extra.team_bracket.matches]]
+a = "Pantech & Curitel Curriors"
+a_team = "wemade-fox"
+b = "Hanbit Stars"
+b_team = "hanbit-stars"
+date = "2005-02-26"
+score_a = 2
+score_b = 4
+sets = [
+  { map = "Guillotine", a = "Nal_Rock", a_slug = "rock", a_race = "p", b = "Daezang", b_race = "p", winner = "b" },
+  { a = "GoodFriend", a_slug = "goodfriend", a_race = "t", a2 = "Silver", a2_slug = "silver", a2_race = "z", b = "Sunny", b_race = "t", b2 = "HOT", b2_slug = "hot-forever", b2_race = "z", winner = "a" },
+  { a = "NaDa", a_slug = "nada", a_race = "t", b = "Clon", b_race = "t", winner = "b" },
+  { a = "Silver", a_slug = "silver", a_race = "z", a2 = "NaDa", a2_slug = "nada", a2_race = "t", b = "Daezang", b_race = "p", b2 = "HOT", b2_slug = "hot-forever", b2_race = "z", winner = "b" },
+  { a = "Sir@soni", a_race = "z", b = "Control", b_race = "t", winner = "a" },
+  { a = "Silver", a_slug = "silver", a_race = "z", a2 = "GGoMa", a2_race = "t", b = "Sunny", b_race = "t", b2 = "Clon", b2_race = "z", winner = "b" },
+]
++++
+The 2004 Grand Final brought together the three round winners — Hanbit Stars, Pantech & Curitel Curriors and KOR — and KTF MagicNs, the best team that had not won a round. They played a best-of-seven stepladder in which the lowest seeds met first and the top seed waited in the final.
+
+First round: KOR beat KTF MagicNs 4–2. Semifinal: Hanbit Stars beat KOR 4–2. In the final on 26 February 2005, Hanbit Stars beat Pantech & Curitel Curriors 4–2 to win the title. DaezanG was named Finals MVP.
+
+Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

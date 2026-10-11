@@ -1,6 +1,6 @@
 +++
 title = "SKELTON"
-description = "SKELTON (Bong Joon Goo) — Zerg player from South Korea."
+description = "SKELTON (Bong Joon Goo) — first-generation Zerg progamer, runner-up of the 2000 Freechal OSL."
 slug = "skelton"
 template = "players/player.html"
 [taxonomies]
@@ -19,6 +19,6 @@ liquipedia = "https://liquipedia.net/starcraft/SKELTON"
 sources = ["https://liquipedia.net/starcraft/SKELTON"]
 verified = "2026-10-11"
 +++
-SKELTON (Bong Joon Goo) is a South Korean Zerg player, born in 1982. One of the earliest progamers, he played in the first broadcast professional Brood War match at the 1999 Tooniverse Progamer Korea Open and was the runner-up of the 2000 Freechal OSL.
+SKELTON (Bong Joon Goo) is a retired South Korean Zerg born in 1982 and one of the very first professional Brood War players. He took part in the first professional Brood War match ever broadcast, at the 1999 Tooniverse Progamer Korea Open.
 
-Among the seasons covered on broodwar.live, he finished runner-up in the [2000 Freechal OSL](/tournaments/2000-freechal-osl/).
+His best result came in the [2000 Freechal OSL](@/tournaments/2000-freechal-osl.md), one of the earliest OnGameNet Starleagues, where he reached the final and finished runner-up after [GARIMTO](@/players/garimto.md) swept him 3–0. He did not play on into the team-league era, and 2000 is his only recorded year of activity.

@@ -48,7 +48,7 @@ item = "buildings/science-facility"
 supply = ""
 item = "units/science-vessel"
 +++
-SK Terran is best described as tank-less TvZ: a mid/late-game style built on large, mobile squads of Marines and Medics with an ever-increasing number of Science Vessels for Irradiate and Defensive Matrix. The name comes from the player [SoulKey](@/players/soulkey.md), one of the first to use it regularly, and players such as [NaDa](@/players/nada.md) helped popularize it.
+SK Terran is best described as tank-less TvZ: a mid/late-game style built on large, mobile squads of Marines and Medics with an ever-increasing number of Science Vessels for Irradiate and Defensive Matrix. The name comes from an early Terran player known as SoulKey (not the later Zerg pro of the same ID), one of the first to use it regularly, and players such as [NaDa](@/players/nada.md) helped popularize it.
 
 SK Terran usually follows a fast expansion — 1 Rax FE is preferable, while 2 Rax FE is a slower, safer option. Add Engineering Bays for quick infantry upgrades, a second Starport early for vessels, and extra Barracks to spend your income. Move out with at least two groups of Marines and Medics plus a Science Vessel, keep units hotkeyed and spread, and irradiate key units like Defilers, Ultralisks and Lurkers.
 

@@ -16,6 +16,6 @@ affects = ["corsair"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
 verified = "2026-10-11"
 +++
-디스럽션 웹은 에너지 125로 지면에 장막을 만들어, 그 안의 지상 유닛과 건물이 공격하지 못하게 한다. 안에 있는 유닛도 이동은 가능하며, 공중 유닛에는 영향이 없다. 플릿 비콘에서 연구한다. 자세한 내용은 [디스럽션 웹 능력](/ko/wiki/abilities/disruption-web/) 문서를 참고하라.
+디스럽션 웹은 에너지 125를 써서 지면에 장막을 펼치고, 그 아래의 지상 유닛과 건물이 공격하지 못하게 한다. 장막 안의 유닛도 이동은 할 수 있으며, 공중 유닛은 영향을 받지 않는다. 플릿 비콘에서 연구한다. 자세한 내용은 [디스럽션 웹](/ko/wiki/abilities/disruption-web/) 문서에서 다룬다.
 
-주로 저그전 커세어 운영에서 스포어·성큰 콜로니나 히드라리스크를 무력화하는 데 쓰인다.
+주로 저그전 커세어 운영에서 스포어·성큰 콜로니나 히드라리스크를 묶어 두는 데 쓴다.

@@ -1,6 +1,6 @@
 +++
 title = "Rock"
-description = "Rock (Ahn Jun Ho) — Protoss player from South Korea."
+description = "Rock (Ahn Jun Ho) — Protoss of Toona SG/Pantech and WeMade FOX, three-time OSL quarterfinalist, later Air Force ACE."
 slug = "rock"
 template = "players/player.html"
 [taxonomies]
@@ -45,6 +45,6 @@ slug = "air-force-ace"
 from = "2010-06-28"
 to = "2013"
 +++
-Rock (Ahn Jun Ho) is a South Korean Protoss player, born in 1986, who played for Toona SG, Pantech & Curitel Curriors, Pantech EX, WeMade FOX and Air Force ACE. His televised debut came in 2003 with Toona SG, the team that later became WeMade FOX, and he qualified for several OSLs. He later served with Air Force ACE and now streams Brood War.
+Rock (Ahn Jun Ho) is a retired South Korean Protoss player, born in 1986. He debuted on television in 2003 with Toona SG and stayed as the team became Pantech & Curitel Curriors, Pantech EX and finally [WeMade FOX](@/wiki/teams/wemade-fox.md), before serving with [Air Force ACE](@/wiki/teams/air-force-ace.md) from 2010. Known for his daring ceremonies, he led WeMade FOX's morning exercises and even commentated in-house games.
 
-He appears in 10 seasons covered on broodwar.live, between 2004 and 2008.
+He qualified for many OSLs and reached the quarterfinals of the [2005-2006 Shinhan Bank OSL](@/tournaments/2005-2006-shinhan-bank-osl.md), the [2006 Shinhan Bank OSL Season 2](@/tournaments/2006-shinhan-bank-osl-season-2.md) and the [2008 EVER OSL](@/tournaments/2008-ever-osl.md), with [July](@/players/july.md) a recurring obstacle. In team play he won a set for the Curriors side that took the [2004 SKY Proleague Round 2](@/tournaments/2004-sky-proleague-round-2.md). He played in the finals of the [2003 Neowiz Pmang Cup Proleague](@/tournaments/2003-neowiz-pmang-cup.md) and the [2004 SKY Proleague Grand Final](@/tournaments/2004-sky-proleague-grand-final.md), both lost. He later played StarCraft II as a Terran and now streams Brood War on Afreeca.

@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "정윤종"
 romanized_name = "Jung Yoon Jong"
 birth_date = "1992-08-14"
+status = "active"
 years_active = "2009–2014, 2016–present"
 aliases = ["By.Sun", "By.Rain"]
 liquipedia = "https://liquipedia.net/starcraft/Rain"

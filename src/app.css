@@ -2,6 +2,7 @@
 @source "../templates";
 @source "../content";
 @source "../static/js/replay-analyzer.js";
+@source "../static/js/compare.js";
 
 @plugin "@tailwindcss/typography";
 

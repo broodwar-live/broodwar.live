@@ -1,6 +1,6 @@
 +++
 title = "BackHo"
-description = "BackHo (Son Chan Woong) — Protoss player from South Korea."
+description = "BackHo (Son Chan Woong) — Lecaf/Hwaseung OZ Protoss, 2008 EVER OSL semifinalist."
 slug = "backho"
 template = "players/player.html"
 [taxonomies]
@@ -29,4 +29,8 @@ slug = "hwaseung-oz"
 from = "2009-01-31"
 to = "2011-07-03"
 +++
-BackHo (Son Chan Woong) is a former South Korean Protoss progamer who played for Lecaf OZ, later renamed Hwaseung OZ, from 2006 to 2011. His best individual run came in the 2008 EVER OSL, where he reached the semifinals before falling to July; he also made the semifinals of GSL Season 1 that year. He was part of the OZ lineup that finished runner-up in the 08–09 Proleague. He has since competed in amateur leagues.
+BackHo (Son Chan Woong) is a retired South Korean Protoss progamer who spent his whole career, from 2006 to 2011, with the OZ franchise: first under the Lecaf OZ name and, from 2009, as [Hwaseung OZ](@/wiki/teams/hwaseung-oz.md).
+
+After going out in the round of 16 on his Starleague debut in the [2008 Bacchus OSL](@/tournaments/2008-bacchus-osl.md), he made his breakthrough later that year. In the [2008 EVER OSL](@/tournaments/2008-ever-osl.md) he eliminated teammate [Jaedong](@/players/jaedong.md) in the round of 32 and beat [Bisu](@/players/bisu.md), [Much](@/players/much.md) and [JangBi](@/players/jangbi.md) to reach the semifinals, where eventual champion [July](@/players/july.md) stopped him 3–1.
+
+A back injury kept him out from January to April 2009. He became OZ's leading Protoss in Proleague and played in the final of the [2008–09 Shinhan Bank Proleague](@/tournaments/2008-2009-shinhan-bank-proleague.md), winning his set on the second day, but OZ finished as runners-up. After leaving the team in 2011 he has played in amateur leagues.

@@ -1,6 +1,6 @@
 +++
 title = "Speed"
-description = "Speed(이영웅) — 한국의 테란 선수."
+description = "Speed(이영웅) — 위메이드 폭스·화승 OZ 출신 테란, StarCastTV Stars 소속, ASL 꾸준한 본선 진출자."
 slug = "speed"
 template = "players/player.html"
 [taxonomies]
@@ -35,4 +35,6 @@ name = "StarCastTV Stars"
 from = "2021-10-04"
 to = "present"
 +++
-Speed(이영웅)는 10minFlash, Sexy라는 아이디로도 활동한 대한민국의 테란 선수로, 위메이드 FOX와 화승 OZ에 소속되었다. 포스트 KeSPA 시대에는 SOSPA 랭킹 토너먼트에서 두 차례 결승에 올라 각각 Mong과 Killer에게 패해 준우승했다. 2021년부터 StarCastTV Stars 소속으로 활동하고 있다.
+Speed(이영웅)는 1994년생 대한민국의 테란 선수로, 10minFlash, Sexy라는 아이디로도 활동했다. KeSPA 시절에는 [위메이드 폭스](@/wiki/teams/wemade-fox.ko.md)와, 2010년 3월부터는 [화승 OZ](@/wiki/teams/hwaseung-oz.ko.md) 선수단에 이름을 올렸다.
+
+개인 방송 시대에는 SOSPA 랭킹전 결승에 두 차례 올라 [Mong](@/players/mong.ko.md)과 [Killer](@/players/killer.ko.md)에게 각각 졌다. 2021년 10월부터 StarCastTV Stars 소속이다. ASL 본선에는 [ASL 시즌 11](@/tournaments/asl-s11.ko.md)을 시작으로 [ASL 시즌 17](@/tournaments/asl-s17.ko.md)부터 [ASL 시즌 21](@/tournaments/asl-s21.ko.md)까지 매 시즌 진출해 모두 여섯 차례 출전했다.

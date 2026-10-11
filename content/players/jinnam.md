@@ -1,6 +1,6 @@
 +++
 title = "JinNam"
-description = "JinNam (Jang Jin Nam) — Zerg player from South Korea."
+description = "JinNam (Jang Jin Nam) — AMD Dream Team Zerg, runner-up of the 2001 Hanbitsoft OSL."
 slug = "jinnam"
 template = "players/player.html"
 [taxonomies]
@@ -27,6 +27,6 @@ name = "Hexatron Dream Team"
 from = "2004-02"
 to = ""
 +++
-JinNam (Jang Jin Nam) is a South Korean Zerg player, born in 1981, who played for AMD Dream Team and Hexatron Dream Team. He was the runner-up of the 2001 Hanbitsoft OSL, losing the final to [BoxeR](/players/boxer/), and later played for the AMD Dream Team.
+JinNam (Jang Jin Nam) is a retired South Korean Zerg player born in 1981, nicknamed the "Devil Zerg" and "Zergling Commander". He played for AMD Dream Team from 2002, continuing when it became Hexatron Dream Team in 2004.
 
-Among the seasons covered on broodwar.live, he finished runner-up in the [2001 Hanbitsoft OSL](/tournaments/2001-hanbitsoft-osl/) and reached the semifinals of the [2002-2003 Stout & Baskin Robbins KPGA 4th Tour](/tournaments/2002-2003-stout-baskin-robbins-kpga-4th-tour/).
+He reached the final of the [2001 Hanbitsoft OSL](@/tournaments/2001-hanbitsoft-osl.md), where [BoxeR](@/players/boxer.md) beat him 3–0, leaving him runner-up. His other best result was a semifinal in the [2002-2003 Stout & Baskin Robbins KPGA 4th Tour](@/tournaments/2002-2003-stout-baskin-robbins-kpga-4th-tour.md). He also qualified for the [2001 Coca-Cola OSL](@/tournaments/2001-coca-cola-osl.md), the [2002 SKY OSL](@/tournaments/2002-sky-osl.md), the [2002-2003 Panasonic OSL](@/tournaments/2002-2003-panasonic-osl.md) and the [2003 MyCube OSL](@/tournaments/2003-mycube-osl.md).

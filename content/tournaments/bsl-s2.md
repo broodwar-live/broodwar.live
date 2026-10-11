@@ -19,7 +19,7 @@ final_score = "4–2"
 start_date = "2013-07-26"
 end_date = "2013-10-06"
 maps = [{ name = "Fighting Spirit", slug = "fighting-spirit" }, { name = "Python", slug = "python" }, { name = "Lost Temple", slug = "lost-temple" }, { name = "Gorky Island" }, { name = "Tau Cross", slug = "tau-cross" }, { name = "Luna the Final" }, { name = "Monty Hall" }, { name = "Blue Storm", slug = "blue-storm" }, { name = "Peaks of Baekdu" }]
-participants = [{ name = "trutaCz", slug = "trutacz" }, { name = "ZZZero", slug = "zzzero" }, { name = "Julian", slug = "julian" }, { name = "SouthPark" }, { name = "Positive" }, { name = "Pajonk" }, { name = "Yeti" }, { name = "GaMeZoOnE" }, { name = "Radley" }, { name = "Emsi" }, { name = "Sky" }, { name = "BigPio" }, { name = "TraFFka" }, { name = "Bonus" }, { name = "mayyaS" }, { name = "lusis" }]
+participants = [{ name = "trutaCz", slug = "trutacz" }, { name = "ZZZero", slug = "zzzero" }, { name = "Julian", slug = "julian" }, { name = "SouthPark" }, { name = "Positive" }, { name = "Pajonk" }, { name = "Yeti" }, { name = "GaMeZoOnE" }, { name = "Radley", slug = "radley" }, { name = "Emsi" }, { name = "Sky" }, { name = "BigPio" }, { name = "TraFFka" }, { name = "Bonus" }, { name = "mayyaS" }, { name = "lusis" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/2", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]

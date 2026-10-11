@@ -1,6 +1,6 @@
 +++
 title = "H.O.T-Forever"
-description = "H.O.T-Forever(강도경) — 한국의 저그 선수."
+description = "H.O.T-Forever(강도경) — 한빛 스타즈 주장 출신 저그, 스타리그 2회 준우승."
 slug = "hot-forever"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,8 @@ slug = "air-force-ace"
 from = "2006"
 to = "2008"
 +++
-H.O.T-Forever(강도경)는 1981년생 한국의 저그 선수로, 한빛 스타즈, 공군 ACE에서 활동했다. 초창기 프로게이머 중 한 명으로 2001년부터 2005년까지 한빛 스타즈의 주장을 맡았고, [박정석(Reach)](/ko/players/reach/)과 짝을 이룬 2:2 경기로 특히 유명했다. 공군 ACE 복무 후 2016년까지 KTF 매직엔스와 KT 롤스터의 코치를 지냈다.
+H.O.T-Forever(강도경)는 1981년생 대한민국의 전 저그 프로게이머로, 1세대 프로게이머 가운데 한 명이다. 2001년부터 2005년까지 [한빛 스타즈](@/wiki/teams/hanbit-stars.ko.md)의 주장을 맡았고, [Reach](@/players/reach.ko.md)와 짝을 이룬 2:2 경기로 특히 유명했다.
 
-broodwar.live에 수록된 시즌 가운데 [2000 Hanaro OSL](/ko/tournaments/2000-hanaro-osl/), [2002 NATE OSL](/ko/tournaments/2002-nate-osl/)에서 준우승했다.
+개인리그에서는 [2000 하나로통신 스타리그](@/tournaments/2000-hanaro-osl.ko.md)에서 [Grrrr...](@/players/grrrr.ko.md)에게 2:3으로 져 준우승했고, [2002 NATE 스타리그](@/tournaments/2002-nate-osl.ko.md)에서도 [Sync](@/players/sync.ko.md)에게 1:3으로 져 준우승했다. 팀 단위로는 [2004 SKY 프로리그 1라운드](@/tournaments/2004-sky-proleague-round-1.ko.md)와 [2004 SKY 프로리그 그랜드 파이널](@/tournaments/2004-sky-proleague-grand-final.ko.md) 결승에 출전해 한빛의 우승을 함께했다. [2003 KTF EVER배 프로리그](@/tournaments/2003-ktf-ever-cup.ko.md)에서는 한빛이 준우승했다.
+
+2006년 초창기 [공군 ACE](@/wiki/teams/air-force-ace.ko.md) 선수로 입대해 2:2 전문 선수이자 코치 역할을 맡았고, 2008년 전역한 뒤 KT 롤스터의 코치가 되었다.

@@ -1,6 +1,6 @@
 +++
 title = "GARIMTO"
-description = "GARIMTO (Kim Dong Soo) — Protoss player from South Korea."
+description = "GARIMTO (Kim Dong Soo) — Hanbit Stars Protoss, two-time OSL champion (2000 Freechal, 2001 SKY), Hall of Fame 2012."
 slug = "garimto"
 template = "players/player.html"
 [taxonomies]
@@ -30,6 +30,8 @@ slug = "kt-rolster"
 from = "2007-01"
 to = "2007"
 +++
-GARIMTO (Kim Dong Soo) is a South Korean Protoss player, born in 1981, who played for Hanbit Stars and KTF MagicNs. Playing for Hanbit Stars, he was noted for his Protoss-versus-Zerg play and his use of hidden buildings. After retiring he became an OnGameNet commentator. He was inducted into the Korean esports Hall of Fame in 2012.
+GARIMTO (Kim Dong Soo) is a retired South Korean Protoss, born in 1981, and one of the first stars of professional StarCraft. Playing for [Hanbit Stars](@/wiki/teams/hanbit-stars.md), he became known for his PvZ and for hiding buildings around the map.
 
-Among the seasons covered on broodwar.live, he won the [2000 Freechal OSL](/tournaments/2000-freechal-osl/) and [2001 SKY OSL](/tournaments/2001-sky-osl/).
+He won two OnGameNet Starleagues: the [2000 Freechal OSL](@/tournaments/2000-freechal-osl.md), sweeping [SKELTON](@/players/skelton.md) 3–0 in the final, and the [2001 SKY OSL](@/tournaments/2001-sky-osl.md), where he beat [BoxeR](@/players/boxer.md) 3–2. Already semi-retired, he made a last strong showing in the [2002-2003 Panasonic OSL](@/tournaments/2002-2003-panasonic-osl.md) before leaving for military service.
+
+He then commentated Proleague for OnGameNet, and in 2007 signed with KTF MagicNs, acting mainly as a mentor; his only match for them was a loss to [Free](@/players/free.md) in Proleague. He coined the phrase "Sense of Star", and was inducted into the Korean esports Hall of Fame in 2012.

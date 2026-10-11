@@ -1,6 +1,6 @@
 +++
 title = "fOrGG"
-description = "fOrGG (Park Ji Soo) — Terran player from South Korea."
+description = "fOrGG (Park Ji Soo) — Lecaf OZ and KT Rolster Terran, champion of the 2008 Arena MSL."
 slug = "forgg"
 template = "players/player.html"
 [taxonomies]
@@ -30,6 +30,6 @@ slug = "kt-rolster"
 from = "2009"
 to = "2010-12-28"
 +++
-fOrGG (Park Ji Soo) is a South Korean Terran player, born in 1990, who played for Lecaf OZ and KT Rolster. Known for his strong macro play, he won the 2008 Arena MSL after beating [Flash](/players/flash/) 3–1 in the semifinals and [Jaedong](/players/jaedong/) 3–0 in the final. He announced his retirement in December 2010 and later moved to StarCraft II.
+fOrGG (Park Ji Soo) is a South Korean Terran player born in 1990, known for his strong macro. He joined Lecaf OZ in 2006 and was part of the team that won the [2007 Shinhan Bank Proleague Round 2](@/tournaments/2007-shinhan-bank-proleague-round-2.md) and the [2007 Shinhan Bank Proleague Grand Final](@/tournaments/2007-shinhan-bank-proleague-grand-final.md), taking a set in each final.
 
-Among the seasons covered on broodwar.live, he won the [2008 Arena MSL](/tournaments/2008-arena-msl/).
+He won the [2008 Arena MSL](@/tournaments/2008-arena-msl.md), beating [Flash](@/players/flash.md) 3–1 in the semifinals and [Jaedong](@/players/jaedong.md) 3–0 in the final; the run earned him the nickname "Genghis Park". He never matched it again, though he reached the quarterfinals of the [2009 Lost Saga MSL](@/tournaments/2009-lost-saga-msl.md), the [2010 Korean Air OSL Season 1](@/tournaments/2010-korean-air-osl-season-1.md) and the [2010 Bigfile MSL](@/tournaments/2010-bigfile-msl.md). Traded to KTF (later [KT Rolster](@/wiki/teams/kt-rolster.md)) in 2009, he played in the finals of the [2009–10 Shinhan Bank Proleague](@/tournaments/2009-2010-shinhan-bank-proleague.md) and [2010 Shinhan Bank Winners League](@/tournaments/2010-shinhan-bank-winners-league.md), both won by KT. He retired in December 2010 and moved to StarCraft II.

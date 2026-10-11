@@ -21,7 +21,7 @@ semifinalists = [{ name = "Grrrr...", slug = "grrrr" }, { name = "Kingdom", slug
 start_date = "2001-02-16"
 end_date = "2001-05-05"
 maps = [{ name = "Hall of Valhalla" }, { name = "Legacy of Char" }, { name = "Neo Blaze" }, { name = "Neo Jungle Story" }]
-participants = [{ name = "Grrrr...", slug = "grrrr" }, { name = "BoxeR", slug = "boxer" }, { name = "Diviner)KS" }, { name = "IntoTheRain" }, { name = "Lee" }, { name = "GameR" }, { name = "Kingdom", slug = "kingdom" }, { name = "nO.1" }, { name = "JinNam", slug = "jinnam" }, { name = "SUGOGIO" }, { name = "Oddysay" }, { name = "JJUB" }, { name = "Love" }, { name = "Star)_Boy" }, { name = "TheBOy" }, { name = "YellOw", slug = "yellow" }]
+participants = [{ name = "Grrrr...", slug = "grrrr" }, { name = "BoxeR", slug = "boxer" }, { name = "Diviner)KS" }, { name = "IntoTheRain", slug = "intotherain" }, { name = "Lee", slug = "lee" }, { name = "GameR" }, { name = "Kingdom", slug = "kingdom" }, { name = "nO.1" }, { name = "JinNam", slug = "jinnam" }, { name = "SUGOGIO" }, { name = "Oddysay", slug = "oddysay" }, { name = "JJUB" }, { name = "Love" }, { name = "Star)_Boy" }, { name = "TheBOy" }, { name = "YellOw", slug = "yellow" }]
 sources = ["https://liquipedia.net/starcraft/2001_Hanbitsoft_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

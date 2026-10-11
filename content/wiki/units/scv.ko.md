@@ -1,11 +1,12 @@
 +++
-title = "건설로봇"
+title = "SCV"
 description = "SCV는 커맨드 센터에서 생산하는 테란 일꾼으로, 자원을 채취하고 건물을 지으며 기계 유닛과 건물을 수리한다."
 slug = "scv"
 template = "wiki/unit.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+aliases = ["건설로봇"]
 image = "/images/wiki/units/scv.jpg"
 name_en = "SCV"
 type = "ground"
@@ -32,11 +33,11 @@ upgrades = ["infantry-armor"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-SCV는 테란의 일꾼이다. 미네랄과 가스를 캐고, 모든 테란 건물을 지으며, 기계 유닛과 건물을 자원을 들여 수리할 수 있다. 드론과 달리 건물을 지어도 사라지지 않고, 건물이 완성될 때까지 건설에 묶인다.
+SCV는 테란의 일꾼이다. 미네랄과 가스를 캐고, 모든 테란 건물을 지으며, 자원을 들여 기계 유닛과 건물을 수리할 수 있다. 드론과 달리 건물을 지어도 사라지지 않고, 건물이 완성될 때까지 건설에 묶인다.
 
 ## 모든 종족전
 
-SCV는 테란 경제의 기반이다. 채취 외에도 벙커·시즈 탱크·배틀크루저 수리, 저그전 입구 막기에 쓰이며, 세 종족 일꾼 중 가장 높은 체력(60) 덕분에 초반 위기 상황에서 직접 싸우기도 한다.
+SCV는 테란 경제의 기반이다. 채취 외에도 벙커·시즈탱크·배틀크루저 수리, 저그전 입구 막기에 쓰이며, 세 종족 일꾼 중 가장 높은 체력(60) 덕분에 초반 위기 상황에서 직접 싸우기도 한다.
 
 ## 주요 메커니즘
 

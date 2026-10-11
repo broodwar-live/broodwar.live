@@ -16,6 +16,6 @@ affects = ["defiler"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Upgrades"]
 verified = "2026-10-11"
 +++
-컨슘 연구 후 디파일러는 근처에 있는 자신의 유닛(건물과 라바 제외) 하나를 죽여 에너지 50을 얻는다. 디파일러 마운드에서 연구한다. 자세한 내용은 [컨슘 능력](/ko/wiki/abilities/consume/) 문서를 참고하라.
+컨슘을 연구하면 디파일러가 곁에 있는 아군 유닛(건물과 라바 제외) 하나를 잡아먹고 에너지 50을 얻는다. 디파일러 마운드에서 연구한다. 자세한 내용은 [컨슘](/ko/wiki/abilities/consume/) 문서에서 다룬다.
 
-다크 스웜은 에너지 100, 플레이그는 150이 들기 때문에, 보통 값싼 저글링을 소모하는 컨슘이 있어야 디파일러가 마법을 계속 쓸 수 있다. 디파일러를 쓰는 경기에서는 거의 항상 연구한다.
+다크 스웜은 에너지 100, 플레이그는 150이 들기 때문에 디파일러가 마법을 계속 쓰려면 값싼 저글링을 먹이로 삼는 컨슘이 사실상 필수다. 디파일러를 뽑는 경기라면 거의 항상 연구한다.

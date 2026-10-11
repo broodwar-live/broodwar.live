@@ -21,7 +21,7 @@ semifinalists = [{ name = "Zhanhun", slug = "zhanhun" }, { name = "Sziky", slug 
 start_date = "2022-01-28"
 end_date = "2022-04-10"
 maps = [{ name = "Eclipse", slug = "eclipse" }, { name = "Butter", slug = "butter" }, { name = "Ascension" }, { name = "Monopoly" }, { name = "Turbine" }, { name = "GOOD NIGHT" }, { name = "Metaverse" }]
-participants = [{ name = "Mihu", slug = "mihu" }, { name = "Sziky", slug = "sziky" }, { name = "BoA", slug = "boa" }, { name = "Dandy", slug = "dandy" }, { name = "Dewalt", slug = "dewalt" }, { name = "gypsy" }, { name = "CadenZie", slug = "cadenzie" }, { name = "Bonyth", slug = "bonyth" }, { name = "OyA", slug = "oya" }, { name = "trutaCz", slug = "trutacz" }, { name = "cRoSs", slug = "cross" }, { name = "Jiren", slug = "jiren" }, { name = "Gosudark", slug = "gosudark" }, { name = "UltrA", slug = "ultra" }, { name = "JayStar" }, { name = "Zhanhun", slug = "zhanhun" }, { name = "MadiNho" }, { name = "SquaLL" }, { name = "Hawk", slug = "hawk" }, { name = "Avi-Love", slug = "avi" }, { name = "KwarK", slug = "kwark" }, { name = "Jaeyun" }, { name = "duck" }, { name = "Kid" }, { name = "Xin." }, { name = "GoKu" }, { name = "XuanXuan" }, { name = "NbA" }]
+participants = [{ name = "Mihu", slug = "mihu" }, { name = "Sziky", slug = "sziky" }, { name = "BoA", slug = "boa" }, { name = "Dandy", slug = "dandy" }, { name = "Dewalt", slug = "dewalt" }, { name = "gypsy", slug = "gypsy" }, { name = "CadenZie", slug = "cadenzie" }, { name = "Bonyth", slug = "bonyth" }, { name = "OyA", slug = "oya" }, { name = "trutaCz", slug = "trutacz" }, { name = "cRoSs", slug = "cross" }, { name = "Jiren", slug = "jiren" }, { name = "Gosudark", slug = "gosudark" }, { name = "UltrA", slug = "ultra" }, { name = "JayStar" }, { name = "Zhanhun", slug = "zhanhun" }, { name = "MadiNho", slug = "madinho" }, { name = "SquaLL" }, { name = "Hawk", slug = "hawk" }, { name = "Avi-Love", slug = "avi" }, { name = "KwarK", slug = "kwark" }, { name = "Jaeyun", slug = "jaeyun" }, { name = "duck" }, { name = "Kid" }, { name = "Xin." }, { name = "GoKu" }, { name = "XuanXuan", slug = "xuanxuan" }, { name = "NbA", slug = "nba" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/14", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -29,8 +29,8 @@ round = "Quarterfinals"
 best_of = 5
 matches = [
   { a = "Dandy", a_slug = "dandy", score_a = 0, b = "Dewalt", b_slug = "dewalt", score_b = 3, date = "2022-04-02" },
-  { a = "gypsy", score_a = 0, b = "Zhanhun", b_slug = "zhanhun", score_b = 3, date = "2022-04-02" },
-  { a = "Sziky", a_slug = "sziky", score_a = 3, b = "XuanXuan", score_b = 1, date = "2022-04-03" },
+  { a = "gypsy", a_slug = "gypsy", score_a = 0, b = "Zhanhun", b_slug = "zhanhun", score_b = 3, date = "2022-04-02" },
+  { a = "Sziky", a_slug = "sziky", score_a = 3, b = "XuanXuan", b_slug = "xuanxuan", score_b = 1, date = "2022-04-03" },
   { a = "Mihu", a_slug = "mihu", score_a = 3, b = "BoA", b_slug = "boa", score_b = 1, date = "2022-04-03" },
 ]
 [[extra.bracket]]

@@ -1,6 +1,6 @@
 +++
 title = "Silver"
-description = "Silver (Shim So Myung) — Zerg player from South Korea."
+description = "Silver (Shim So Myung) — Toona SG/Pantech Zerg (2003–2008), runner-up of the 2006 Pringles MSL Season 2."
 slug = "silver"
 template = "players/player.html"
 [taxonomies]
@@ -39,6 +39,6 @@ slug = "wemade-fox"
 from = "2007-08"
 to = "2008-02-15"
 +++
-Silver (Shim So Myung) is a South Korean Zerg player, born in 1984, who played for Toona SG, Pantech & Curitel Curriors, Pantech EX and WeMade FOX. He played for the Toona SG / Pantech lineage that later became WeMade FOX, and was the runner-up of the 2006 Pringles MSL Season 2.
+Silver (Shim So Myung) is a retired South Korean Zerg player, born in 1984. He spent his whole career, from 2003 to February 2008, with one franchise as it changed names from Toona SG to Pantech & Curitel Curriors, Pantech EX and finally [WeMade FOX](@/wiki/teams/wemade-fox.md). He was known for his Hydralisk-heavy play.
 
-Among the seasons covered on broodwar.live, he finished runner-up in the [2006 Pringles MSL Season 2](/tournaments/2006-pringles-msl-season-2/).
+His best individual result came in the [2006 Pringles MSL Season 2](@/tournaments/2006-pringles-msl-season-2.md), where he reached the final and lost 3–1 to [sAviOr](@/players/savior.md). In team play he took part in the final of the [2004 SKY Proleague Round 2](@/tournaments/2004-sky-proleague-round-2.md), which Pantech & Curitel won, and he was named MVP of the [2006 SKY Proleague Round 1](@/tournaments/2006-sky-proleague-round-1.md). He also played in the [2004 SKY Proleague Grand Final](@/tournaments/2004-sky-proleague-grand-final.md), where Pantech finished runner-up.

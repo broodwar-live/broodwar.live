@@ -21,7 +21,7 @@ semifinalists = [{ name = "BaNulDoDuk" }, { name = "S.E.S" }]
 start_date = "2000-07-24"
 end_date = "2000-11-01"
 maps = [{ name = "Avant Garde" }, { name = "Blaze" }, { name = "Dark Stone" }, { name = "Jungle Story" }, { name = "Space Odyssey" }]
-participants = [{ name = "GARIMTO", slug = "garimto" }, { name = "Aozora" }, { name = "BaNulDoDuk" }, { name = "Grrrr...", slug = "grrrr" }, { name = "Zeus", slug = "zeus" }, { name = "DoGGi" }, { name = "Bassy" }, { name = "ShinSsC" }, { name = "(Oops)Season" }, { name = "JoyO" }, { name = "ComBi" }, { name = "ChRh", slug = "chrh" }, { name = "Lim" }, { name = "FlyToTheSky" }, { name = "Rookie" }, { name = "GGMAN" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Han.G)FlyinG" }, { name = "KIMWANCHUL" }, { name = "October" }, { name = "RedRock" }, { name = "S.E.S" }, { name = "SKELTON", slug = "skelton" }, { name = "(z-zone)Byun" }]
+participants = [{ name = "GARIMTO", slug = "garimto" }, { name = "Aozora" }, { name = "BaNulDoDuk" }, { name = "Grrrr...", slug = "grrrr" }, { name = "Zeus", slug = "zeus" }, { name = "DoGGi", slug = "doggi" }, { name = "Bassy" }, { name = "ShinSsC" }, { name = "(Oops)Season" }, { name = "JoyO" }, { name = "ComBi" }, { name = "ChRh", slug = "chrh" }, { name = "Lim" }, { name = "FlyToTheSky" }, { name = "Rookie" }, { name = "GGMAN" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Han.G)FlyinG" }, { name = "KIMWANCHUL" }, { name = "October" }, { name = "RedRock" }, { name = "S.E.S" }, { name = "SKELTON", slug = "skelton" }, { name = "(z-zone)Byun" }]
 sources = ["https://liquipedia.net/starcraft/2000_Freechal_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

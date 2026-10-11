@@ -21,7 +21,7 @@ semifinalists = [{ name = "ChRh", slug = "chrh" }, { name = "Byun" }]
 start_date = "2000-02-16"
 end_date = "2000-05-16"
 maps = [{ name = "Blaze" }, { name = "Dark Stone" }, { name = "Deep Purple" }, { name = "Glacial Epoch" }, { name = "Space Odyssey" }]
-participants = [{ name = "Feel_LOVE" }, { name = "NPGL_SoulKey" }, { name = "(z-zone)Byun" }, { name = "ChRh", slug = "chrh" }, { name = "SSamJang" }, { name = "TheMarine", slug = "themarine" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Aozora" }, { name = "Pillars" }, { name = "JoyO" }, { name = "Sinji_NT" }, { name = "Grrr..." }, { name = "solarSUN" }, { name = "Kill" }, { name = "TheBOy" }, { name = "Freemura" }]
+participants = [{ name = "Feel_LOVE" }, { name = "NPGL_SoulKey" }, { name = "(z-zone)Byun" }, { name = "ChRh", slug = "chrh" }, { name = "SSamJang" }, { name = "TheMarine", slug = "themarine" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Aozora" }, { name = "Pillars" }, { name = "JoyO" }, { name = "Sinji_NT" }, { name = "Grrrr...", slug = "grrrr" }, { name = "solarSUN" }, { name = "Kill" }, { name = "TheBOy" }, { name = "Freemura" }]
 sources = ["https://liquipedia.net/starcraft/2000_Hanaro_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

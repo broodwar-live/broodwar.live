@@ -1,6 +1,6 @@
 +++
 title = "Luxury"
-description = "Luxury (Park Chan Soo) — Zerg player from South Korea."
+description = "Luxury (Park Chan Soo) — Zerg, twin brother of YellOw[ArnC]; 2009 Lost Saga MSL champion and two-time OSL semifinalist in 2008."
 slug = "luxury"
 template = "players/player.html"
 [taxonomies]
@@ -36,4 +36,8 @@ slug = "kt-rolster"
 from = "2009-08"
 to = "2010-06-09"
 +++
-Luxury (Park Chan Soo) is a South Korean former Zerg player, born in 1987, and the twin brother of YellOw. He played for KOR (later OnGameNet SPARKYZ) from 2005, moved to KTF MagicNs in 2008, and left KT Rolster in 2010. In 2008 he reached consecutive OSL semifinals in the Bacchus and EVER Starleagues, and in 2009 he won the Lost Saga MSL, defeating JangBi 3–1 in the final.
+Luxury (Park Chan Soo) is a retired South Korean Zerg player born on 7 December 1987 and the twin brother of [YellOw[ArnC]](@/players/yellow-arnc.md). He broke through in 2005 on team KOR, which became OnGameNet SPARKYZ, moved to KTF MagicNs in September 2008 and left [KT Rolster](@/wiki/teams/kt-rolster.md) in 2010.
+
+In 2008 he reached two OSL semifinals in a row, losing to [Stork](@/players/stork.md) in the [2008 Bacchus OSL](@/tournaments/2008-bacchus-osl.md) and to [Best](@/players/best.md) in the [2008 EVER OSL](@/tournaments/2008-ever-osl.md) after knocking out favourite [Flash](@/players/flash.md). He played in the final of the [2008 Shinhan Bank Proleague](@/tournaments/2008-shinhan-bank-proleague.md), which SPARKYZ lost to Samsung KHAN.
+
+At KT he reached the quarterfinals of the [2008-2009 Batoo OSL](@/tournaments/2008-2009-batoo-osl.md) and then won the [2009 Lost Saga MSL](@/tournaments/2009-lost-saga-msl.md), beating [Hwasin](@/players/hwasin.md), [Leta](@/players/leta.md) and [ZerO](@/players/zero.md) before defeating [JangBi](@/players/jangbi.md) 3–1 in the final.

@@ -21,14 +21,14 @@ semifinalists = [{ name = "firebathero", slug = "firebathero" }, { name = "GoRus
 start_date = "2007-05-03"
 end_date = "2007-07-14"
 maps = [{ name = "Desperado" }, { name = "Loki" }, { name = "Monty Hall" }, { name = "Python", slug = "python" }]
-participants = [{ name = "OversKy" }, { name = "TT" }, { name = "XellOs", slug = "xellos" }, { name = "910" }, { name = "firebathero", slug = "firebathero" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "sAviOr", slug = "savior" }, { name = "Light", slug = "light" }, { name = "Bisu", slug = "bisu" }, { name = "Hwasin", slug = "hwasin" }, { name = "Sheis" }, { name = "July", slug = "july" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "GoRush", slug = "gorush" }, { name = "Sea", slug = "sea" }]
+participants = [{ name = "OversKy", slug = "oversky" }, { name = "TT" }, { name = "XellOs", slug = "xellos" }, { name = "910" }, { name = "firebathero", slug = "firebathero" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Stork", slug = "stork" }, { name = "sAviOr", slug = "savior" }, { name = "Light", slug = "light" }, { name = "Bisu", slug = "bisu" }, { name = "Hwasin", slug = "hwasin" }, { name = "Sheis" }, { name = "July", slug = "july" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "GoRush", slug = "gorush" }, { name = "Sea", slug = "sea" }]
 sources = ["https://liquipedia.net/starcraft/2007_GOMTV_MSL_Season_2", "https://liquipedia.net/starcraft/2007_GOMTV_MSL_Season_2/Round_of_16"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Round of 16"
 best_of = 3
 matches = [
-  { a = "OversKy", score_a = 2, b = "TT", score_b = 0, date = "2007-06-07" },
+  { a = "OversKy", a_slug = "oversky", score_a = 2, b = "TT", score_b = 0, date = "2007-06-07" },
   { a = "XellOs", a_slug = "xellos", score_a = 0, b = "910", score_b = 2, date = "2007-06-10" },
   { a = "firebathero", a_slug = "firebathero", score_a = 2, b = "iloveoov", b_slug = "iloveoov", score_b = 1, date = "2007-06-07" },
   { a = "Stork", a_slug = "stork", score_a = 0, b = "sAviOr", b_slug = "savior", score_b = 2, date = "2007-06-07" },

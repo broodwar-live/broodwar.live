@@ -21,7 +21,7 @@ semifinalists = [{ name = "ChoJJa", slug = "chojja" }, { name = "iloveoov", slug
 start_date = "2005-04-21"
 end_date = "2005-08-06"
 maps = [{ name = "Luna the Final" }, { name = "Neo Requiem", slug = "neo-requiem" }, { name = "Raid Assault 2" }, { name = "Rush Hour" }]
-participants = [{ name = "fOru" }, { name = "BoxeR", slug = "boxer" }, { name = "JJu", slug = "jju" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "July", slug = "july" }, { name = "Reach", slug = "reach" }, { name = "TheMarine", slug = "themarine" }, { name = "sAviOr", slug = "savior" }, { name = "Zeus", slug = "zeus" }, { name = "YellOw", slug = "yellow" }, { name = ")(Min)(Gu)(" }, { name = "NaDa", slug = "nada" }, { name = "ChoJJa", slug = "chojja" }, { name = "XellOs", slug = "xellos" }, { name = "GoRush", slug = "gorush" }]
+participants = [{ name = "fOru", slug = "foru" }, { name = "BoxeR", slug = "boxer" }, { name = "JJu", slug = "jju" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "July", slug = "july" }, { name = "Reach", slug = "reach" }, { name = "TheMarine", slug = "themarine" }, { name = "sAviOr", slug = "savior" }, { name = "Zeus", slug = "zeus" }, { name = "YellOw", slug = "yellow" }, { name = ")(Min)(Gu)(" }, { name = "NaDa", slug = "nada" }, { name = "ChoJJa", slug = "chojja" }, { name = "XellOs", slug = "xellos" }, { name = "GoRush", slug = "gorush" }]
 sources = ["https://liquipedia.net/starcraft/2005_UZOO_MSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -30,7 +30,7 @@ best_of = 1
 matches = [
   { a = "GoRush", a_slug = "gorush", score_a = 0, b = "JJu", b_slug = "jju", score_b = 1, date = "2005-04-21" },
   { a = "Kingdom", a_slug = "kingdom", score_a = 0, b = "iloveoov", b_slug = "iloveoov", score_b = 1, date = "2005-04-21" },
-  { a = "ChoJJa", a_slug = "chojja", score_a = 1, b = "fOru", score_b = 0, date = "2005-04-28" },
+  { a = "ChoJJa", a_slug = "chojja", score_a = 1, b = "fOru", b_slug = "foru", score_b = 0, date = "2005-04-28" },
   { a = "July", a_slug = "july", score_a = 0, b = "BoxeR", b_slug = "boxer", score_b = 1, date = "2005-04-21" },
   { a = "NaDa", a_slug = "nada", score_a = 0, b = "sAviOr", b_slug = "savior", score_b = 1, date = "2005-04-28" },
   { a = "Zeus", a_slug = "zeus", score_a = 1, b = "YellOw", b_slug = "yellow", score_b = 0, date = "2005-04-28" },
@@ -64,7 +64,7 @@ round = "Lower Round 1"
 best_of = 3
 matches = [
   { a = "GoRush", a_slug = "gorush", score_a = 0, b = "Kingdom", b_slug = "kingdom", score_b = 2, date = "2005-05-05" },
-  { a = "fOru", score_a = 2, b = "July", b_slug = "july", score_b = 0, date = "2005-05-05" },
+  { a = "fOru", a_slug = "foru", score_a = 2, b = "July", b_slug = "july", score_b = 0, date = "2005-05-05" },
   { a = "NaDa", a_slug = "nada", score_a = 1, b = "YellOw", b_slug = "yellow", score_b = 2, date = "2005-05-12" },
   { a = "XellOs", a_slug = "xellos", score_a = 2, b = "TheMarine", b_slug = "themarine", score_b = 1, date = "2005-05-12" },
 ]
@@ -73,7 +73,7 @@ round = "Lower Round 2"
 best_of = 3
 matches = [
   { a = "iloveoov", a_slug = "iloveoov", score_a = 2, b = "Kingdom", b_slug = "kingdom", score_b = 1, date = "2005-06-02" },
-  { a = "Boxer", a_slug = "boxer", score_a = 0, b = "fOru", score_b = 2, date = "2005-06-02" },
+  { a = "Boxer", a_slug = "boxer", score_a = 0, b = "fOru", b_slug = "foru", score_b = 2, date = "2005-06-02" },
   { a = "Zeus", a_slug = "zeus", score_a = 2, b = "YellOw", b_slug = "yellow", score_b = 1, date = "2005-06-09" },
   { a = ")(Min)(Gu)(", score_a = 1, b = "XellOs", b_slug = "xellos", score_b = 2, date = "2005-06-09" },
 ]
@@ -81,7 +81,7 @@ matches = [
 round = "Lower Round 3"
 best_of = 3
 matches = [
-  { a = "iloveoov", a_slug = "iloveoov", score_a = 2, b = "fOru", score_b = 1, date = "2005-06-16" },
+  { a = "iloveoov", a_slug = "iloveoov", score_a = 2, b = "fOru", b_slug = "foru", score_b = 1, date = "2005-06-16" },
   { a = "Zeus", a_slug = "zeus", score_a = 1, b = "XellOs", b_slug = "xellos", score_b = 2, date = "2005-06-16" },
 ]
 [[extra.bracket]]

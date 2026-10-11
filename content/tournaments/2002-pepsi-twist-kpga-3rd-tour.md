@@ -21,7 +21,7 @@ semifinalists = [{ name = "ChRh", slug = "chrh" }, { name = "BoxeR", slug = "box
 start_date = "2002-07-04"
 end_date = "2002-10-05"
 maps = [{ name = "Plains to Hill" }, { name = "River of Flames" }, { name = "Blade Storm" }, { name = "Indian Lament 2" }, { name = "Lost Temple KPGA" }]
-participants = [{ name = "EJi" }, { name = "BoxeR", slug = "boxer" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "GARIMTO", slug = "garimto" }, { name = "ChRh", slug = "chrh" }, { name = "JinSu" }, { name = "RainBOw" }, { name = "Lee" }, { name = "Side" }, { name = "Reach", slug = "reach" }, { name = "NaDa", slug = "nada" }, { name = "sigamari" }, { name = "SONJJANG" }, { name = "Sync", slug = "sync" }, { name = "YellOw", slug = "yellow" }, { name = "Zeus", slug = "zeus" }]
+participants = [{ name = "EJi" }, { name = "BoxeR", slug = "boxer" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "GARIMTO", slug = "garimto" }, { name = "ChRh", slug = "chrh" }, { name = "JinSu", slug = "jinsu" }, { name = "RainBOw", slug = "rainbow" }, { name = "Lee", slug = "lee" }, { name = "Side", slug = "side" }, { name = "Reach", slug = "reach" }, { name = "NaDa", slug = "nada" }, { name = "sigamari" }, { name = "SONJJANG" }, { name = "Sync", slug = "sync" }, { name = "YellOw", slug = "yellow" }, { name = "Zeus", slug = "zeus" }]
 sources = ["https://liquipedia.net/starcraft/2002_Pepsi_Twist_KPGA_3rd_Tour"]
 verified = "2026-10-11"
 [[extra.bracket]]

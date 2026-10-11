@@ -1,6 +1,6 @@
 +++
 title = "Gosudark"
-description = "Gosudark (José Luis Miramira Condori) — Protoss player from Peru."
+description = "Gosudark (José Luis Miramira Condori) — Peruvian Protoss and long-time Bombastic StarLeague competitor."
 slug = "gosudark"
 template = "players/player.html"
 [taxonomies]
@@ -30,6 +30,6 @@ name = "fkc"
 from = "2022-01-01"
 to = "2023-01-01"
 +++
-Gosudark (José Luis Miramira Condori) is a Peruvian Protoss player, born in 1988, who has played for Ayac Gamers, Eternal Friends and fkc. He competes in the Bombastic StarLeague and other StarCraft: Remastered events.
+Gosudark (José Luis Miramira Condori) is a Peruvian Protoss player born in 1988, active in competition since 2018 and also known as Osodark. He played for Ayac Gamers in 2020, Eternal Friends in 2021 and fkc from 2022 into 2023.
 
-He appears in 12 seasons covered on broodwar.live, between 2018 and 2026.
+He is one of the most regular entrants in the Bombastic StarLeague, the main league for players outside Korea. This site lists him in thirteen seasons, starting with [BSL Season 5](@/tournaments/bsl-s5.md) in 2018 and running without a break through [BSL Season 14](@/tournaments/bsl-s14.md), with later appearances in [BSL Season 17](@/tournaments/bsl-s17.md), [BSL Season 21](@/tournaments/bsl-s21.md) and [BSL Season 22](@/tournaments/bsl-s22.md).

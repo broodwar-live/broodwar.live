@@ -1,6 +1,6 @@
 +++
 title = "XellOs"
-description = "XellOs (Seo Ji Hoon) — Terran player from South Korea."
+description = "XellOs (Seo Ji Hoon) — GO/CJ Entus Terran, 2003 Olympus OSL and WCG 2004 champion, Hall of Fame inductee."
 slug = "xellos"
 template = "players/player.html"
 [taxonomies]
@@ -38,6 +38,6 @@ slug = "cj-entus"
 from = "2011"
 to = "2011"
 +++
-XellOs (Seo Ji Hoon) is a retired South Korean Terran player born in 1985. He played for Greatest One and CJ Entus, with a stint at Air Force ACE from 2008 to 2011.
+XellOs (Seo Ji Hoon) is a retired South Korean Terran player, born in 1985. He played for Greatest One (GO), which became [CJ Entus](@/wiki/teams/cj-entus.md), served with [Air Force ACE](@/wiki/teams/air-force-ace.md) from 2008, and returned briefly to CJ before retiring in 2011.
 
-He won the 2003 Olympus OnGameNet Starleague, defeating BoxeR 3–0 in the semifinals and YellOw in a five-game final, and was nicknamed "Perfect Terran." He was inducted into the Korean esports Hall of Fame in 2012.
+He broke through in the [2003 Olympus OSL](@/tournaments/2003-olympus-osl.md), sweeping [BoxeR](@/players/boxer.md) 3–0 in the semifinals and beating [YellOw](@/players/yellow.md) 3–2 in the final, earning the nickname "Perfect Terran". He took the WCG 2004 crown as well. Later he reached the semifinals of the [2004-2005 You Are the Golf King MSL](@/tournaments/2004-2005-you-are-the-golf-king-msl.md), the [2005 EVER OSL](@/tournaments/2005-ever-osl.md) and the [2007 GOMTV MSL Season 3](@/tournaments/2007-gomtv-msl-season-3.md). He was a pillar of GO's team-league sides, playing in the finals as GO won the [2003 LifeZone KPGA Team League](@/tournaments/2003-lifezone-kpga-team-league.md), the [2003 Neowiz Pmang Cup Proleague](@/tournaments/2003-neowiz-pmang-cup.md) and the [2003 KeMongSa KPGA Tour Team League](@/tournaments/2003-kemongsa-kpga-tour-team-league.md). He was inducted into the Korean esports Hall of Fame in 2012.

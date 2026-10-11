@@ -1,6 +1,6 @@
 +++
 title = "ZZZero"
-description = "ZZZero (Dawid Paździor) — Zerg player from Poland."
+description = "ZZZero (Dawid Paździor) — Polish Zerg, founder of the Bombastic StarLeague and runner-up of its first two seasons."
 slug = "zzzero"
 template = "players/player.html"
 [taxonomies]
@@ -34,6 +34,6 @@ name = "NetWars"
 from = "2021-01-07"
 to = "present"
 +++
-ZZZero (Dawid Paździor) is a Polish Zerg player, born in 1991, who has played for ZZZ, LRM, Nb and NetWars. He founded and organises the Bombastic StarLeague (BSL), which began in 2013 as a tournament for Polish players and opened to other countries from Season 3. He is a member of NetWars.
+ZZZero (Dawid Paździor) is a Polish Zerg born in 1991 and the founder and organizer of the Bombastic StarLeague (BSL). He started playing Brood War in 2004–05, spent most of his career in team ZZZ, represented Poland in several Nation Wars and qualified for WCG Poland in 2008 and 2009. He now plays for NetWars.
 
-Among the seasons covered on broodwar.live, he finished runner-up in the [BSL Season 2](/tournaments/bsl-s2/) and [BSL Season 1](/tournaments/bsl-s1/).
+BSL began in 2013 as a league for Polish players and opened to other countries from its third season. ZZZero reached the final of both of the first two seasons and lost each time to [trutaCz](@/players/trutacz.md): 4–1 in [BSL Season 1](@/tournaments/bsl-s1.md) and 4–2 in [BSL Season 2](@/tournaments/bsl-s2.md). Since then he has mostly run the league, though he returned as a player in [BSL Season 20](@/tournaments/bsl-s20.md), [BSL Season 21](@/tournaments/bsl-s21.md) and [BSL Season 22](@/tournaments/bsl-s22.md).

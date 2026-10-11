@@ -1,6 +1,6 @@
 +++
 title = "커세어"
-description = "커세어는 브루드 워에서 추가된 빠른 프로토스 스타게이트 대공 전투기로, 범위 피해와 디스럽션 웹을 갖췄다."
+description = "커세어는 브루드 워에서 추가된 프로토스 스타게이트의 빠른 대공 전투기로, 범위 공격과 디스럽션 웹을 갖췄다."
 slug = "corsair"
 template = "wiki/unit.html"
 [taxonomies]
@@ -32,7 +32,7 @@ upgrades = ["disruption-web", "air-weapons", "air-armor", "plasma-shields"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
 verified = "2026-10-11"
 +++
-커세어는 브루드 워에서 추가된 스타게이트 유닛으로, 공중 유닛만 공격한다. 공격 쿨다운이 매우 짧고 범위 피해를 주어 뭉친 경장 비행 유닛에 효과적이다. 플릿 비콘에서 연구하는 디스럽션 웹은 그 아래의 지상 유닛과 건물이 공격하지 못하게 한다.
+커세어는 브루드 워에서 추가된 스타게이트 유닛으로, 공중 유닛만 공격한다. 공격 쿨다운이 매우 짧고 범위 피해를 주어 뭉쳐 있는 가벼운 비행 유닛에 효과적이다. 플릿 비콘에서 연구하는 디스럽션 웹은 그 아래의 지상 유닛과 건물이 공격하지 못하게 한다.
 
 ## 저그전
 
@@ -50,4 +50,4 @@ verified = "2026-10-11"
 
 - 폭발형 범위 피해 5, 쿨다운 8프레임, 사거리 5, 공중 전용
 - 디스럽션 웹 (에너지 125): 웹 아래의 지상 유닛과 건물은 공격할 수 없다
-- 체력 100, 보호막 80, 기본 방어력 1, 중형
+- 체력 100, 실드 80, 기본 방어력 1, 중형

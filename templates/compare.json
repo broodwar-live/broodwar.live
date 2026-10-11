@@ -1,0 +1,127 @@
+{#- Player comparison data, rendered once (default language only) as /compare.json through
+    the feed mechanism (config.toml: feed_filenames). Consumed by static/js/compare.js and
+    checked by scripts/check-compare-data.py. Language-neutral: paths have no /ko prefix and
+    the strings KO pages translate (season titles, round names) carry both languages.
+
+    It is built from the same season data as the player pages (templates/players/player.html):
+    the individual playoff record (extra.bracket) and team-league playoff sets
+    (extra.team_bracket), with the same rules for walkovers, finals and skipped sets.
+
+    {
+      "p": players   [slug, ID, real name, race t|p|z|"", aliases "a|b", titles, runner-ups,
+                      years active, romanized name]
+      "r": rounds    [EN name, KO name (left out when the same)], each distinct pair once
+      "s": seasons   [slug (page /tournaments/<slug>/), title, KO title (0 = same), league,
+                      year, sort date (end_date / final_date / year), round indexes into "r"]
+      "m": matches   [season, round, match, date, a, b, score a, score b, winner "a"|"b"|"",
+                      flags (1 walkover or no score: no games counted, 2 final)]
+      "t": team-league games (a team match, or one leg of a multi-match tie)
+                     [season, round, match, leg, date, team a, team b, flags (2 final), sets]
+           set       [a, b, winner, map, map slug, ace 0|1, races "tz" ("-" unknown), a2, b2]
+                     (a2 / b2 only on 2v2 sets; walkover sets are left out)
+    }
+    Indexes (season, round, match, leg) are 0-based except match and leg, which are the
+    1-based positions used by the season pages' #tl-r<round>-m<match> anchors and the
+    player pages' sort keys. A player is a slug, or "~Name" without a profile page. -#}
+{%- set tsec = get_section(path="tournaments/_index.md", lang=lang) -%}
+{%- set psec = get_section(path="players/_index.md", lang=lang) -%}
+{"p":[
+{%- for pg in psec.pages -%}
+{%- set e = pg.extra -%}
+{%- set_global n_t = 0 -%}{%- set_global n_r = 0 -%}
+{%- for tp in tsec.pages -%}{%- if tp.extra.seasons is defined -%}{%- for s in tp.extra.seasons -%}
+{%- if s.winner_slug is defined and s.winner_slug == pg.slug -%}{%- set_global n_t = n_t + 1 -%}{%- endif -%}
+{%- if s.runner_up_slug is defined and s.runner_up_slug == pg.slug -%}{%- set_global n_r = n_r + 1 -%}{%- endif -%}
+{%- endfor -%}{%- endif -%}{%- endfor -%}
+{%- set rc = "" -%}{%- if e.race == "terran" -%}{%- set rc = "t" -%}{%- elif e.race == "protoss" -%}{%- set rc = "p" -%}{%- elif e.race == "zerg" -%}{%- set rc = "z" -%}{%- endif -%}
+{%- if e.aliases is defined -%}{%- set al = e.aliases | join(sep="|") -%}{%- else -%}{%- set al = "" -%}{%- endif -%}
+{%- if not loop.first %},{% endif -%}
+[{{ pg.slug | json_encode | safe }},{{ pg.title | json_encode | safe }},{{ e.real_name | default(value="") | json_encode | safe }},"{{ rc }}",{{ al | json_encode | safe }},{{ n_t }},{{ n_r }},{{ e.years_active | default(value="") | json_encode | safe }},{{ e.romanized_name | default(value="") | json_encode | safe }}]
+{%- endfor -%}
+],"r":[
+{#- Round-name table: each distinct (EN, KO) round-name pair once. -#}
+{%- set_global all_rn = "" -%}
+{%- for sp in tsec.pages -%}{%- set se = sp.extra -%}
+{%- if (se.bracket is defined and se.bracket | length > 0) or (se.team_bracket is defined and se.team_bracket | length > 0) -%}
+{%- set ko = get_page(path=sp.relative_path, lang="ko") -%}
+{%- if se.bracket is defined and se.bracket | length > 0 -%}{%- set rds = se.bracket -%}{%- set ko_rds = ko.extra.bracket -%}{%- else -%}{%- set rds = se.team_bracket -%}{%- set ko_rds = ko.extra.team_bracket -%}{%- endif -%}
+{%- for rd in rds -%}{%- set_global all_rn = all_rn ~ rd.round ~ "	" ~ ko_rds[loop.index0].round ~ "
+" -%}{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{%- set rn_list = all_rn | trim_end(pat="
+") | split(pat="
+") | unique -%}
+{%- for pair in rn_list -%}{%- set pr = pair | split(pat="	") -%}
+{%- if not loop.first %},{% endif -%}[{{ pr[0] | json_encode | safe }}{% if pr[1] != pr[0] %},{{ pr[1] | json_encode | safe }}{% endif %}]
+{%- endfor -%}
+],"s":[
+{#- Season table: every page with a bracket or a team bracket, in section order. The match
+    lists below reference seasons by their position here, so all loops use the same filter. -#}
+{%- set_global first = true -%}
+{%- for sp in tsec.pages -%}{%- set se = sp.extra -%}
+{%- if (se.bracket is defined and se.bracket | length > 0) or (se.team_bracket is defined and se.team_bracket | length > 0) -%}
+{%- set ko = get_page(path=sp.relative_path, lang="ko") -%}
+{%- if se.bracket is defined and se.bracket | length > 0 -%}{%- set rds = se.bracket -%}{%- set ko_rds = ko.extra.bracket -%}{%- else -%}{%- set rds = se.team_bracket -%}{%- set ko_rds = ko.extra.team_bracket -%}{%- endif -%}
+{%- set_global rix = "" -%}
+{%- for rd in rds -%}{%- set key = rd.round ~ "	" ~ ko_rds[loop.index0].round -%}
+{%- for pair in rn_list -%}{%- if pair == key -%}{%- set_global rix = rix ~ "," ~ loop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- endfor -%}
+{%- set s_end = se.end_date | default(value=se.final_date | default(value=se.year ~ "")) -%}
+{%- if not first %},{% endif -%}{%- set_global first = false -%}
+[{{ sp.slug | json_encode | safe }},{{ sp.title | json_encode | safe }},{% if ko.title != sp.title %}{{ ko.title | json_encode | safe }}{% else %}0{% endif %},{{ se.series_name | json_encode | safe }},{{ se.year | default(value=0) }},{{ s_end | json_encode | safe }},[{{ rix | trim_start(pat=",") }}]]
+{%- endif -%}
+{%- endfor -%}
+],"m":[
+{%- set_global si = -1 -%}{%- set_global first = true -%}
+{%- for sp in tsec.pages -%}{%- set se = sp.extra -%}
+{%- if (se.bracket is defined and se.bracket | length > 0) or (se.team_bracket is defined and se.team_bracket | length > 0) -%}
+{%- set_global si = si + 1 -%}
+{%- if se.bracket is defined -%}
+{%- for rd in se.bracket -%}{%- set ri = loop.index0 -%}{%- set rd_final = loop.last and rd.matches | length == 1 -%}
+{%- for m in rd.matches -%}
+{%- set has_sc = m.score_a is defined and m.score_b is defined -%}
+{%- set wo = (m.walkover is defined and m.walkover) or not has_sc -%}
+{%- set win = "" -%}
+{%- if m.walkover is defined and (m.walkover == "a" or m.walkover == "b") -%}{%- set win = m.walkover -%}
+{%- elif has_sc and m.score_a > m.score_b -%}{%- set win = "a" -%}
+{%- elif has_sc and m.score_b > m.score_a -%}{%- set win = "b" -%}{%- endif -%}
+{%- if m.a_slug is defined and m.a_slug -%}{%- set pa = m.a_slug -%}{%- else -%}{%- set pa = "~" ~ m.a -%}{%- endif -%}
+{%- if m.b_slug is defined and m.b_slug -%}{%- set pb = m.b_slug -%}{%- else -%}{%- set pb = "~" ~ m.b -%}{%- endif -%}
+{%- if not first %},{% endif -%}{%- set_global first = false -%}
+[{{ si }},{{ ri }},{{ loop.index }},{{ m.date | default(value="") | json_encode | safe }},{{ pa | json_encode | safe }},{{ pb | json_encode | safe }},{% if has_sc %}{{ m.score_a }},{{ m.score_b }}{% else %}null,null{% endif %},"{{ win }}",{{ (wo and 1 or 0) + (rd_final and 2 or 0) }}]
+{%- endfor -%}{%- endfor -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+],"t":[
+{%- set_global si = -1 -%}{%- set_global first = true -%}
+{%- for sp in tsec.pages -%}{%- set se = sp.extra -%}
+{%- if (se.bracket is defined and se.bracket | length > 0) or (se.team_bracket is defined and se.team_bracket | length > 0) -%}
+{%- set_global si = si + 1 -%}
+{%- if se.team_bracket is defined -%}
+{%- for rd in se.team_bracket -%}{%- set ri = loop.index0 -%}{%- set rd_final = loop.last and rd.matches | length == 1 -%}
+{%- for m in rd.matches -%}{%- set mi = loop.index -%}
+{%- if m.legs is defined -%}{%- set games = m.legs -%}{%- elif m.sets is defined -%}{%- set games = [m] -%}{%- else -%}{%- set games = [] -%}{%- endif -%}
+{%- for g in games -%}
+{%- set_global sets_json = "" -%}
+{%- for st in g.sets -%}{%- if not (st.walkover is defined and st.walkover) -%}
+{%- if st.a_slug is defined and st.a_slug -%}{%- set pa = st.a_slug -%}{%- else -%}{%- set pa = "~" ~ st.a -%}{%- endif -%}
+{%- if st.b_slug is defined and st.b_slug -%}{%- set pb = st.b_slug -%}{%- else -%}{%- set pb = "~" ~ st.b -%}{%- endif -%}
+{%- set races = (st.a_race | default(value="-")) ~ (st.b_race | default(value="-")) -%}
+{%- set row = "[" ~ (pa | json_encode) ~ "," ~ (pb | json_encode) ~ ",\"" ~ st.winner ~ "\"," ~ (st.map | default(value="") | json_encode) ~ "," ~ (st.map_slug | default(value="") | json_encode) ~ "," ~ ((st.ace | default(value=false)) and "1" or "0") ~ ",\"" ~ races ~ "\"" -%}
+{%- if st.a2 is defined or st.b2 is defined -%}
+{%- if st.a2_slug is defined and st.a2_slug -%}{%- set pa2 = st.a2_slug -%}{%- else -%}{%- set pa2 = "~" ~ (st.a2 | default(value="")) -%}{%- endif -%}
+{%- if st.b2_slug is defined and st.b2_slug -%}{%- set pb2 = st.b2_slug -%}{%- else -%}{%- set pb2 = "~" ~ (st.b2 | default(value="")) -%}{%- endif -%}
+{%- set row = row ~ "," ~ (pa2 | json_encode) ~ "," ~ (pb2 | json_encode) -%}
+{%- endif -%}
+{%- set_global sets_json = sets_json ~ "," ~ row ~ "]" -%}
+{%- endif -%}{%- endfor -%}
+{%- if not first %},{% endif -%}{%- set_global first = false -%}
+[{{ si }},{{ ri }},{{ mi }},{{ loop.index }},{{ g.date | default(value=m.date | default(value="")) | json_encode | safe }},{{ m.a | json_encode | safe }},{{ m.b | json_encode | safe }},{{ rd_final and 2 or 0 }},[{{ sets_json | trim_start(pat=",") | safe }}]]
+{%- endfor -%}
+{%- endfor -%}{%- endfor -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+]}

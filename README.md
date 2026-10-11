@@ -50,7 +50,7 @@ history, replay analysis, live streams, balance stats) call a separate JSON API,
 |---------|--------|-------------|
 | **Players** | Live | Profiles for 150 pro players, in English and Korean |
 | **Build Orders** | Live | Build order guides for every matchup |
-| **Tournaments** | Live | ASL, BSL, KSL, OSL, MSL and season pages |
+| **Tournaments** | Live | ASL, BSL, KSL, OSL, MSL, the Proleague (team league) and season pages |
 | **Wiki** | Live | Units, buildings, upgrades, abilities, maps, mechanics, patches, teams, strategies |
 | **News** | Live | Project and scene announcements |
 | **Search** | Live | Site-wide search (<kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>K</kbd>) |
@@ -109,6 +109,32 @@ Every page has an **Edit on GitHub** link. To add or fix content:
 3. Run `zola serve` to preview, then open a pull request. CI builds the site and checks links.
 
 News posts go in `content/news/` with `date`, `authors` and optional `tags` in the front matter.
+
+### Team leagues
+
+Team leagues (the Proleague so far) use the same series/season layout as the individual
+leagues, with team-specific keys; the full schema is documented at the top of
+`templates/tournaments/team-season.html`.
+
+- **Series page** (`content/tournaments/proleague.md`, `template = "tournaments/series.html"`,
+  `format = "Team"`): one `[[extra.seasons]]` row per season, round final or grand final with
+  `season`, `year`, `winner` / `winner_team`, `runner_up` / `runner_up_team` (team name used at
+  the time + slug of `content/wiki/teams/<slug>.md`), `score` (`"4–3"`, en dash; for a final
+  decided over several team matches, the matches won, with the match scores in
+  `score_detail`), `final_date` and `prize_pool`. Team pages list their titles and finals from
+  these rows.
+- **Season page** (`template = "tournaments/team-season.html"`, `series_slug` + `season`
+  matching a series row): `teams`, `maps`, `awards`, optional `standings`, and
+  `[[extra.team_bracket]]` rounds of team matches. Each match has `a` / `a_team`, `b` /
+  `b_team`, `score_a`, `score_b`, `date` and a `sets` list
+  (`{ map, map_slug, a, a_slug, a_race, b, b_slug, b_race, winner = "a" | "b", ace = true }`,
+  plus `a2` / `b2` fields for 2v2 sets); ties played over several team matches use
+  `[[extra.team_bracket.matches.legs]]`. Only playoffs are recorded, not every regular-season
+  match.
+- Team-league sets appear on player pages as a separate "Team league playoff sets" section and
+  a column in the head-to-head table; the individual playoff record is not affected.
+  `scripts/check-team-leagues.py` (run in CI) checks that set winners add up to every score,
+  that finals match the series rows, and that every team, player and map slug resolves.
 
 ## Deployment
 

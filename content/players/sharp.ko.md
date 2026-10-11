@@ -1,6 +1,6 @@
 +++
 title = "Sharp"
-description = "Sharp(조기석) — 한국의 테란 선수."
+description = "Sharp(조기석) — KT 롤스터·삼성 칸의 테란, ASL 시즌 1·KSL 시즌 2·ASL 시즌 18 준우승."
 slug = "sharp"
 template = "players/player.html"
 [taxonomies]
@@ -35,6 +35,6 @@ name = "Team Sonic BBARAS"
 from = "2015-05"
 to = ""
 +++
-Sharp(조기석)는 2009년 KT 롤스터에서 데뷔해 삼성전자 KHAN에서 활동하다 2012년 10월 은퇴를 발표한 대한민국의 테란 프로게이머이다. 이후 아프리카TV에서 방송하며 온라인 대회에 참가했고, 2014년 8월 첫 대회 우승을 거두었다.
+Sharp(조기석)는 1992년생 대한민국의 테란 프로게이머이다. 2009년 [KT 롤스터](@/wiki/teams/kt-rolster.ko.md)에 입단했고 이후 [삼성 칸](@/wiki/teams/samsung-khan.ko.md)으로 옮겨 [2010–11 신한은행 프로리그](@/tournaments/2010-2011-shinhan-bank-proleague.ko.md) 포스트시즌에 출전했다. 2012년 10월 군 입대를 이유로 은퇴를 발표했지만, 실제로는 아프리카TV 방송과 온라인 대회 활동을 시작했고 2014년 8월 결승에서 [Free](@/players/free.ko.md)를 꺾고 첫 대회 우승을 거뒀다.
 
-포스트 KeSPA 시대에는 ASL 시즌 1(2016), KSL 시즌 2(2018), ASL 시즌 18(2024)에서 준우승했다.
+아프리카TV 시대에 가장 꾸준한 선수 가운데 한 명이다. 첫 대회인 [ASL 시즌 1](@/tournaments/asl-s1.ko.md)에서 [Shuttle](@/players/shuttle.ko.md)에게 0:3으로 져 준우승했고, 2018년 [KSL 시즌 2](@/tournaments/ksl-s2.ko.md)와 2024년 [ASL 시즌 18](@/tournaments/asl-s18.ko.md)에서도 [Soulkey](@/players/soulkey.ko.md)에게 1:4로 져 준우승했다. [ASL 시즌 17](@/tournaments/asl-s17.ko.md)에서는 4강에 올랐다. [ASL 시즌 6](@/tournaments/asl-s6.ko.md)·[ASL 시즌 7](@/tournaments/asl-s7.ko.md)·[ASL 시즌 8](@/tournaments/asl-s8.ko.md)·[ASL 시즌 16](@/tournaments/asl-s16.ko.md)·[KSL 시즌 1](@/tournaments/ksl-s1.ko.md)·[KSL 시즌 3](@/tournaments/ksl-s3.ko.md)에서는 8강에 진출했다.
