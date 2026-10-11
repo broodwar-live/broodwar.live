@@ -6,6 +6,7 @@ template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 race = "protoss"
 minerals = 200
 gas = 200

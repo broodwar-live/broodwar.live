@@ -1,10 +1,12 @@
 +++
 title = "Ensnare"
+description = "Ensnare is a Queen spell that slows enemy units in an area and reveals cloaked units."
 slug = "ensnare"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+unverified = true
 name_ko = "인스네어"
 caster = "queen"
 energy = 75

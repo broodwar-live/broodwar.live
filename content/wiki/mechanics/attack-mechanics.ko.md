@@ -3,6 +3,8 @@ title = "공격 메카닉"
 description = "무기 쿨다운, 공격 사거리, 타겟 우선순위, 브루드 워의 전투 수정자."
 slug = "attack-mechanics"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

@@ -1,8 +1,10 @@
 +++
 title = "Circuit Breaker"
+description = "Overview of Circuit Breaker, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "circuit-breaker"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Circuit Breaker"
 dimensions = "128x128"
 tileset = "Space Platform"

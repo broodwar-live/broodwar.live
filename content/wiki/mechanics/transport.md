@@ -3,6 +3,8 @@ title = "Transport & Drop Play"
 description = "Transport units, cargo capacity, and drop play strategies in Brood War."
 slug = "transport"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

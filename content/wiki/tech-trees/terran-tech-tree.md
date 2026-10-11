@@ -5,6 +5,8 @@ slug = "terran"
 template = "wiki/tech-tree.html"
 [taxonomies]
 race = ["terran"]
+[extra]
+unverified = true
 +++
 
 The Terran tech tree is built around addons — specialized attachments that extend a building's capabilities. Terran is the only race whose production buildings can lift off and relocate, and the only race that requires specific addon buildings (rather than just prerequisite structures) to unlock advanced units and research.

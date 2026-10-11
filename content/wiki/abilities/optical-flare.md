@@ -1,10 +1,12 @@
 +++
 title = "Optical Flare"
+description = "Optical Flare is a Medic spell that permanently reduces a target unit's sight range."
 slug = "optical-flare"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "옵티컬 플레어"
 caster = "medic"
 energy = 75

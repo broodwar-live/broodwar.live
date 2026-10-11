@@ -1,10 +1,12 @@
 +++
 title = "Recall"
+description = "Recall is an Arbiter spell that teleports friendly units in an area to the Arbiter's location."
 slug = "recall"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "리콜"
 caster = "arbiter"
 energy = 150

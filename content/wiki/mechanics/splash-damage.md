@@ -3,6 +3,8 @@ title = "Splash & Area Damage"
 description = "Area-of-effect damage mechanics, splash zones, and friendly fire in Brood War."
 slug = "splash-damage"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

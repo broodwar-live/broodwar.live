@@ -3,6 +3,8 @@ title = "Control Groups & Hotkeys"
 description = "Unit control groups, building hotkeys, and APM mechanics in Brood War."
 slug = "control-groups"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

@@ -1,10 +1,12 @@
 +++
 title = "핵 공격"
+description = "핵 공격은 고스트가 유도하는 핵미사일로, 잠시 후 넓은 범위에 막대한 피해를 준다."
 slug = "nuclear-strike"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_en = "Nuclear Strike"
 caster = "ghost"
 energy = 0

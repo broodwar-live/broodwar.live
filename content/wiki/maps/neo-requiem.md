@@ -1,8 +1,10 @@
 +++
 title = "Neo Requiem"
+description = "Overview of Neo Requiem, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "neo-requiem"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Neo Requiem"
 dimensions = "128x128"
 tileset = "Twilight"

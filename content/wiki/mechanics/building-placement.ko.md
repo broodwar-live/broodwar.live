@@ -3,6 +3,8 @@ title = "건물 배치"
 description = "종족별 건물 규칙, 벽막기, 프록시 건물, 브루드 워의 심시티."
 slug = "building-placement"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

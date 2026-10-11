@@ -3,6 +3,8 @@ title = "Terrain & High Ground"
 description = "High ground advantage, choke points, cliffs, and terrain features in Brood War."
 slug = "terrain"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

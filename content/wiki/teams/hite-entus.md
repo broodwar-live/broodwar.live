@@ -4,6 +4,7 @@ description = "Hite Entus — StarCraft: Brood War professional team."
 slug = "hite-entus"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2005"

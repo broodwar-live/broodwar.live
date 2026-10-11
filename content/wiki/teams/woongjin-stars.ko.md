@@ -4,6 +4,7 @@ description = "웅진 스타즈 — 스타크래프트: 브루드 워 프로게�
 slug = "woongjin-stars"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2007"

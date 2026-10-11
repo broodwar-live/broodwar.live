@@ -4,6 +4,7 @@ description = "eSTRO — StarCraft: Brood War professional team."
 slug = "estro"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2005"

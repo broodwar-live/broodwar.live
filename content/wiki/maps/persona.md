@@ -1,8 +1,10 @@
 +++
 title = "Persona"
+description = "Overview of Persona, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "persona"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Persona"
 dimensions = "128x128"
 tileset = "Twilight"

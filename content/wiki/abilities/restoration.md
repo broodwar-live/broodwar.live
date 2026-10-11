@@ -1,10 +1,12 @@
 +++
 title = "Restoration"
+description = "Restoration is a Medic spell that removes negative status effects from a single unit."
 slug = "restoration"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "레스토레이션"
 caster = "medic"
 energy = 50

@@ -1,8 +1,10 @@
 +++
 title = "Empire of the Sun"
+description = "Empire of the Sun 맵의 지형 구성과 종족별 특징을 정리한 스타크래프트: 브루드 워 경기용 맵 개요."
 slug = "empire-of-the-sun"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_en = "Empire of the Sun"
 dimensions = "128x128"
 tileset = "Desert"

@@ -1,10 +1,12 @@
 +++
 title = "Dark Swarm"
+description = "Dark Swarm is a Defiler spell that creates a cloud protecting ground units beneath it from most ranged attacks."
 slug = "dark-swarm"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+unverified = true
 name_ko = "다크 스웜"
 caster = "defiler"
 energy = 100

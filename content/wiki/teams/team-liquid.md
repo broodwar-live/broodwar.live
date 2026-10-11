@@ -4,6 +4,7 @@ description = "Team Liquid — international StarCraft: Brood War community and 
 slug = "team-liquid"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "active"
 region = "International"
 founded = "2000"

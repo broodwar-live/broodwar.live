@@ -4,6 +4,7 @@ description = "아프리카 프릭스 — 스타크래프트: 브루드 워 프�
 slug = "afreeca-freecs"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "active"
 region = "South Korea"
 founded = "2016"

@@ -3,6 +3,8 @@ title = "Game Speed"
 description = "How game speed settings affect timing, frame rate, and real-time conversion in Brood War."
 slug = "game-speed"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

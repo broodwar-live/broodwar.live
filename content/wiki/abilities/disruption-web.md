@@ -1,10 +1,12 @@
 +++
 title = "Disruption Web"
+description = "Disruption Web is a Corsair spell that stops ground units and buildings beneath it from attacking."
 slug = "disruption-web"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "디스럽션 웹"
 caster = "corsair"
 energy = 125
@@ -13,7 +15,7 @@ range = 9
 aoe = "64px radius"
 duration = 20.0
 hotkey = "W"
-researched_at = "stargate"
+researched_at = "fleet-beacon"
 research_minerals = 200
 research_gas = 200
 research_time = 80

@@ -1,8 +1,10 @@
 +++
 title = "Destination"
+description = "Overview of Destination, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "destination"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Destination"
 dimensions = "128x96"
 tileset = "Badlands"

@@ -1,8 +1,10 @@
 +++
 title = "Fortress"
+description = "Overview of Fortress, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "fortress"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Fortress"
 dimensions = "128x128"
 tileset = "Jungle World"

@@ -4,6 +4,7 @@ description = "Hanbit Stars — StarCraft: Brood War professional team."
 slug = "hanbit-stars"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2002"

@@ -3,6 +3,8 @@ title = "Glossary"
 description = "StarCraft: Brood War terminology and competitive jargon."
 slug = "glossary"
 template = "page.html"
+[extra]
+unverified = true
 +++
 
 A reference of common terms used in the StarCraft: Brood War competitive community. Whether you are new to watching pro BW or brushing up on jargon, this glossary covers the essentials.

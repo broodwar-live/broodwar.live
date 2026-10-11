@@ -1,8 +1,10 @@
 +++
 title = "Roadkill"
+description = "Overview of Roadkill, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "roadkill"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Roadkill"
 dimensions = "128x128"
 tileset = "Badlands"

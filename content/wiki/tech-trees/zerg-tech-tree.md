@@ -5,6 +5,8 @@ slug = "zerg"
 template = "wiki/tech-tree.html"
 [taxonomies]
 race = ["zerg"]
+[extra]
+unverified = true
 +++
 
 The Zerg tech tree is unique in StarCraft. All Zerg units are produced from a single building type — the Hatchery — and buildings are created by morphing (sacrificing) a Drone. The Hatchery itself morphs through three tiers: Hatchery → Lair → Hive, with each tier unlocking access to more advanced structures and units. Zerg is the only race where all ground units can burrow (with the Burrow research) and the only race that shares a single production queue across all unit types.

@@ -3,6 +3,8 @@ title = "용어 사전"
 description = "스타크래프트: 브루드 워 용어 및 경쟁 관련 은어 사전."
 slug = "glossary"
 template = "page.html"
+[extra]
+unverified = true
 +++
 
 스타크래프트: 브루드 워 경쟁 커뮤니티에서 사용하는 일반적인 용어 모음입니다. 프로 경기를 처음 보시는 분이든 용어를 복습하시는 분이든, 이 사전이 기본적인 내용을 다룹니다.

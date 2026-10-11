@@ -1,10 +1,12 @@
 +++
 title = "EMP Shockwave"
+description = "EMP Shockwave is a Science Vessel spell that drains shields and energy from units in an area."
 slug = "emp-shockwave"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "EMP 충격파"
 caster = "science-vessel"
 energy = 100

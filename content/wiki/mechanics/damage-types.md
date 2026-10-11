@@ -3,6 +3,8 @@ title = "Damage Types"
 description = "How Normal, Concussive, and Explosive damage interact with unit sizes in Brood War."
 slug = "damage-types"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

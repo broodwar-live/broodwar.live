@@ -3,6 +3,8 @@ title = "공격 유형"
 description = "보통, 진동, 폭발 공격이 유닛 크기와 상호작용하는 방식."
 slug = "damage-types"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

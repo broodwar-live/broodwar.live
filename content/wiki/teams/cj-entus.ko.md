@@ -4,6 +4,7 @@ description = "CJ 엔투스 — 스타크래프트: 브루드 워 프로게임�
 slug = "cj-entus"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "1999"

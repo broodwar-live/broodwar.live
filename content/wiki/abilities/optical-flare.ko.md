@@ -1,10 +1,12 @@
 +++
 title = "옵티컬 플레어"
+description = "옵티컬 플레어는 대상 유닛의 시야를 영구히 줄이는 메딕 마법이다."
 slug = "optical-flare"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_en = "Optical Flare"
 caster = "medic"
 energy = 75

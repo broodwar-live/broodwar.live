@@ -1,8 +1,10 @@
 +++
 title = "Plasma"
+description = "Overview of Plasma, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "plasma"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Plasma"
 dimensions = "128x128"
 tileset = "Space Platform"

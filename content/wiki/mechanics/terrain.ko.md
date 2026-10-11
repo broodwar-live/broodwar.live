@@ -3,6 +3,8 @@ title = "지형 & 고지대"
 description = "고지대 이점, 초크 포인트, 절벽, 브루드 워의 지형 특성."
 slug = "terrain"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

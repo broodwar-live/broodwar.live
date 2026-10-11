@@ -1,10 +1,12 @@
 +++
 title = "Lockdown"
+description = "Lockdown is a Ghost spell that temporarily disables a single mechanical unit."
 slug = "lockdown"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "락다운"
 caster = "ghost"
 energy = 100
@@ -19,6 +21,6 @@ research_time = 60
 +++
 Lockdown disables a single mechanical unit for approximately 130 frames (~8.5 seconds at fastest game speed), completely preventing it from moving, attacking, or using abilities. Costs 100 energy and requires research at the Covert Ops facility. Only affects mechanical and robotic units — it has no effect on biological units or buildings.
 
-In competitive play, Lockdown is a niche but devastating tool in specific matchups. It sees the most use in TvP against Carriers, where locking down a Carrier prevents it from launching or recalling Interceptors, and in TvT against enemy Battlecruisers or Siege Tanks. Flash has famously used Ghost Lockdown on Carriers to swing otherwise hopeless late-game PvT scenarios. The ability also shuts down Arbiters, preventing Recall and Stasis Field, which can neutralize Protoss late-game strategies entirely.
+In competitive play, Lockdown is a niche but devastating tool in specific matchups. It sees the most use in TvP against Carriers, where locking down a Carrier prevents it from launching or recalling Interceptors, and in TvT against enemy Battlecruisers or Siege Tanks. The ability also shuts down Arbiters, preventing Recall and Stasis Field, which can neutralize Protoss late-game strategies entirely.
 
 To use Lockdown effectively, prioritize the highest-value mechanical target — a locked Carrier or Arbiter is far more impactful than a locked Goliath. Keep Ghosts cloaked to ensure they survive long enough to cast. Be aware that Restoration from a Medic can remove Lockdown, and Protoss players can pre-emptively target Ghosts to prevent it.

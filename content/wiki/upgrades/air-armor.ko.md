@@ -6,9 +6,10 @@ template = "wiki/upgrade.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 race = "protoss"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "cybernetics-core"
 research_time = 80

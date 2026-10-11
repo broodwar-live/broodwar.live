@@ -5,6 +5,8 @@ slug = "protoss"
 template = "wiki/tech-tree.html"
 [taxonomies]
 race = ["protoss"]
+[extra]
+unverified = true
 +++
 
 The Protoss tech tree branches outward from the Cybernetics Core into three distinct paths: Gateway (ground army), Robotics (utility and siege), and Stargate (air power). All Protoss buildings except the Nexus and Pylon require Pylon power to function — if the nearby Pylon is destroyed, the building powers down and stops working. Protoss units regenerate shields passively over time.

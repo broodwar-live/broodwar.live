@@ -6,9 +6,10 @@ template = "wiki/upgrade.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+unverified = true
 race = "zerg"
-minerals = 100
-gas = 100
+minerals = 150
+gas = 150
 levels = 3
 researched_at = "spire"
 research_time = 80

@@ -4,6 +4,7 @@ description = "STX 소울 — 스타크래프트: 브루드 워 프로게임단.
 slug = "stx-soul"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2002"

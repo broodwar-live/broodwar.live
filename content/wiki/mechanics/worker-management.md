@@ -3,6 +3,8 @@ title = "Worker Management"
 description = "Optimal worker saturation, mineral gathering, and worker micro techniques in Brood War."
 slug = "worker-management"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

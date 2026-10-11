@@ -3,6 +3,8 @@ title = "수송 & 드롭 플레이"
 description = "수송 유닛, 적재 용량, 브루드 워의 드롭 플레이 전략."
 slug = "transport"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

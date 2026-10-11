@@ -1,8 +1,10 @@
 +++
 title = "Blue Storm"
+description = "Overview of Blue Storm, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "blue-storm"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Blue Storm"
 dimensions = "128x96"
 tileset = "Twilight"

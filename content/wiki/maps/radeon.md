@@ -1,8 +1,10 @@
 +++
 title = "Radeon"
+description = "Overview of Radeon, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "radeon"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Radeon"
 dimensions = "128x128"
 tileset = "Badlands"

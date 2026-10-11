@@ -3,6 +3,8 @@ title = "스플래시 & 광역 피해"
 description = "광역 피해 메카닉, 스플래시 범위, 브루드 워의 아군 피해."
 slug = "splash-damage"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

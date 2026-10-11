@@ -1,10 +1,12 @@
 +++
 title = "프로토스"
+description = "재생되는 보호막을 지닌 강력하고 비싼 유닛의 사이오닉 종족, 프로토스 개요."
 slug = "protoss"
 template = "wiki/race.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 letter = "P"
 tagline = "강력하지만 비용이 높은 기술을 지닌 고대 사이오닉 전사들"
 playstyle = "프로토스 유닛은 비싸지만 강력하다 — 양보다 질의 종족이다. 질럿과 드라군 같은 게이트웨이 유닛이 주력을 이루고, 하이 템플러(사이오닉 스톰)와 리버(스캐럽 드랍) 같은 테크 유닛이 판을 뒤집는 범위 피해를 제공한다. 프로토스는 타이밍 공격과 유닛 질의 우위로 상대를 압도하는 결정적 교전에 뛰어나다."

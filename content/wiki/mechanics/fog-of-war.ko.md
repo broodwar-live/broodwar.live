@@ -3,6 +3,8 @@ title = "전장의 안개"
 description = "시야, 안개 상태, 브루드 워에서 정보의 핵심적 역할."
 slug = "fog-of-war"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

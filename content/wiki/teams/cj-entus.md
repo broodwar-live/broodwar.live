@@ -4,6 +4,7 @@ description = "CJ Entus — StarCraft: Brood War professional team."
 slug = "cj-entus"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "1999"

@@ -1,10 +1,12 @@
 +++
 title = "Maelstrom"
+description = "Maelstrom is a Dark Archon spell that briefly freezes biological units in an area."
 slug = "maelstrom"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "메일스트롬"
 caster = "dark-archon"
 energy = 100

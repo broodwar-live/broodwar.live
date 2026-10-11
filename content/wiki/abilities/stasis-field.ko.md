@@ -1,10 +1,12 @@
 +++
 title = "스테이시스 필드"
+description = "스테이시스 필드는 범위 내 모든 유닛을 얼려 지속 시간 동안 공격할 수 없게 만드는 아비터 마법이다."
 slug = "stasis-field"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_en = "Stasis Field"
 caster = "arbiter"
 energy = 100

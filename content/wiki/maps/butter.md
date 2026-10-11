@@ -1,8 +1,10 @@
 +++
 title = "Butter"
+description = "Overview of Butter, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "butter"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Butter"
 dimensions = "112x128"
 tileset = "Desert"

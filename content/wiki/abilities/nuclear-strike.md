@@ -1,10 +1,12 @@
 +++
 title = "Nuclear Strike"
+description = "Nuclear Strike lets a Ghost call down a nuclear missile that devastates a large area after a delay."
 slug = "nuclear-strike"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "핵 공격"
 caster = "ghost"
 energy = 0

@@ -1,10 +1,12 @@
 +++
 title = "스파이더 마인"
+description = "스파이더 마인은 벌처가 매설하는 지뢰로, 가까이 온 적 지상 유닛을 쫓아가 폭발한다."
 slug = "spider-mines"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_en = "Spider Mines"
 caster = "vulture"
 energy = 0

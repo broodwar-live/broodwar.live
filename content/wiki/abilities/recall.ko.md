@@ -1,10 +1,12 @@
 +++
 title = "리콜"
+description = "리콜은 지정 범위의 아군 유닛을 아비터 위치로 순간 이동시키는 아비터 마법이다."
 slug = "recall"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_en = "Recall"
 caster = "arbiter"
 energy = 150

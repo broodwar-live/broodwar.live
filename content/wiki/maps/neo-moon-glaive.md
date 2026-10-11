@@ -1,8 +1,10 @@
 +++
 title = "Neo Moon Glaive"
+description = "Overview of Neo Moon Glaive, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "neo-moon-glaive"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Neo Moon Glaive"
 dimensions = "128x128"
 tileset = "Jungle World"

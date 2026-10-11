@@ -1,8 +1,10 @@
 +++
 title = "Aztec"
+description = "Overview of Aztec, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "aztec"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Aztec"
 dimensions = "128x128"
 tileset = "Jungle World"

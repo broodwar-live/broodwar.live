@@ -4,6 +4,7 @@ description = "팀 리퀴드 — 스타크래프트: 브루드 워 국제 커뮤
 slug = "team-liquid"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "active"
 region = "International"
 founded = "2000"

@@ -4,6 +4,7 @@ description = "위메이드 폭스 — 스타크래프트: 브루드 워 프로�
 slug = "wemade-fox"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2004"

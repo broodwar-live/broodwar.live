@@ -3,6 +3,8 @@ title = "서플라이"
 description = "군대 규모를 제한하고 생산을 조절하는 브루드 워의 서플라이 시스템."
 slug = "supply"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

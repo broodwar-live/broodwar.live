@@ -3,6 +3,8 @@ title = "Attack Mechanics"
 description = "Weapon cooldowns, attack range, targeting priority, and combat modifiers in Brood War."
 slug = "attack-mechanics"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

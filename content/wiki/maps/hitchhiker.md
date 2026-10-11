@@ -1,8 +1,10 @@
 +++
 title = "Hitchhiker"
+description = "Overview of Hitchhiker, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "hitchhiker"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Hitchhiker"
 dimensions = "128x128"
 tileset = "Desert World"

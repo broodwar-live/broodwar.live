@@ -1,10 +1,12 @@
 +++
 title = "레스토레이션"
+description = "레스토레이션은 단일 유닛의 해로운 상태 효과를 제거하는 메딕 마법이다."
 slug = "restoration"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_en = "Restoration"
 caster = "medic"
 energy = 50

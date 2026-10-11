@@ -1,8 +1,10 @@
 +++
 title = "Camelot"
+description = "Overview of Camelot, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "camelot"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Camelot"
 dimensions = "128x128"
 tileset = "Jungle World"

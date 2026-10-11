@@ -4,6 +4,7 @@ description = "Air Force ACE — StarCraft: Brood War professional team."
 slug = "air-force-ace"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2007"

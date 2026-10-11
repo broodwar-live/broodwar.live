@@ -1,8 +1,10 @@
 +++
 title = "Optimizer"
+description = "Overview of Optimizer, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "optimizer"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Optimizer"
 dimensions = "128x128"
 tileset = "Badlands"

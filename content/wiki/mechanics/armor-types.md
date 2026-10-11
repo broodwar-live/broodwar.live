@@ -3,6 +3,8 @@ title = "Armor & Unit Size"
 description = "How armor, unit size, and upgrade levels affect damage calculations in Brood War."
 slug = "armor-types"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

@@ -1,8 +1,10 @@
 +++
 title = "Othello"
+description = "Overview of Othello, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "othello"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Othello"
 dimensions = "128x128"
 tileset = "Space Platform"

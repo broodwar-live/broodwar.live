@@ -1,10 +1,12 @@
 +++
 title = "할루시네이션"
+description = "할루시네이션은 아군 유닛의 공격력 없는 환영 두 기를 만드는 하이 템플러 마법이다."
 slug = "hallucination"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_en = "Hallucination"
 caster = "high-templar"
 energy = 100

@@ -1,8 +1,10 @@
 +++
 title = "Ride of Valkyries"
+description = "Overview of Ride of Valkyries, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "ride-of-valkyries"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Ride of Valkyries"
 dimensions = "128x128"
 tileset = "Twilight"

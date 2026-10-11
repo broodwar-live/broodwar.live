@@ -3,6 +3,8 @@ title = "방어력 & 유닛 크기"
 description = "방어력, 유닛 크기, 업그레이드 레벨이 피해 계산에 미치는 영향."
 slug = "armor-types"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

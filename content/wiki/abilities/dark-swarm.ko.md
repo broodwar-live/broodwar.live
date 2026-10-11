@@ -1,10 +1,12 @@
 +++
 title = "다크 스웜"
+description = "다크 스웜은 그 아래의 지상 유닛을 대부분의 원거리 공격으로부터 보호하는 구름을 만드는 디파일러 마법이다."
 slug = "dark-swarm"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+unverified = true
 name_en = "Dark Swarm"
 caster = "defiler"
 energy = 100

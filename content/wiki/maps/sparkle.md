@@ -1,8 +1,10 @@
 +++
 title = "Sparkle"
+description = "Overview of Sparkle, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "sparkle"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Sparkle"
 dimensions = "128x128"
 tileset = "Twilight"

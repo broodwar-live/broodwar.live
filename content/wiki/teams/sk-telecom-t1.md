@@ -4,6 +4,7 @@ description = "SK Telecom T1 — StarCraft: Brood War professional team."
 slug = "sk-telecom-t1"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "active"
 region = "South Korea"
 founded = "2002"

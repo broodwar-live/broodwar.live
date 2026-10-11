@@ -1,8 +1,10 @@
 +++
 title = "Colosseum"
+description = "Overview of Colosseum, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "colosseum"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Colosseum"
 dimensions = "128x128"
 tileset = "Jungle World"

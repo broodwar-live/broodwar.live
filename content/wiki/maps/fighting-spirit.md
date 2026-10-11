@@ -1,8 +1,10 @@
 +++
 title = "Fighting Spirit"
+description = "Overview of Fighting Spirit, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "fighting-spirit"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Fighting Spirit"
 dimensions = "128x128"
 tileset = "Jungle World"

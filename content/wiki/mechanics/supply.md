@@ -3,6 +3,8 @@ title = "Supply"
 description = "The supply system that limits army size and gates production in Brood War."
 slug = "supply"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

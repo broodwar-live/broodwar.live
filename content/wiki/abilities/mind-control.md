@@ -1,10 +1,12 @@
 +++
 title = "Mind Control"
+description = "Mind Control is a Dark Archon spell that permanently takes control of an enemy unit."
 slug = "mind-control"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "마인드 컨트롤"
 caster = "dark-archon"
 energy = 150
@@ -16,7 +18,7 @@ research_minerals = 200
 research_gas = 200
 research_time = 100
 +++
-Mind Control permanently takes ownership of a single enemy unit, transferring it to the casting player's control. The stolen unit retains all of its upgrades and abilities. Upon casting, the Dark Archon's shields are reduced to 0, and the ability costs all remaining energy (minimum 150 required). Requires research at the Templar Archives.
+Mind Control permanently takes ownership of a single enemy unit, transferring it to the casting player's control. The stolen unit retains all of its upgrades and abilities. It costs 150 energy, and upon casting the Dark Archon's shields are reduced to 0. Requires research at the Templar Archives.
 
 Mind Control is one of the most iconic and dramatic abilities in Brood War history. Stealing a Drone and building Zerg structures as Protoss — or taking an SCV to produce Terran buildings — enables multi-race production, which is one of the game's most legendary moments when it occurs in competitive matches. Beyond the spectacle, Mind Control has practical applications: stealing a detector (Observer, Science Vessel, Overlord) gives the caster's team free detection, and taking a high-value unit like a Siege Tank or Carrier immediately swings the unit count in a fight.
 

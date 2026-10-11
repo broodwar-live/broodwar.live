@@ -3,6 +3,8 @@ title = "Building Placement"
 description = "Race-specific building rules, wall-offs, proxy buildings, and sim-city in Brood War."
 slug = "building-placement"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

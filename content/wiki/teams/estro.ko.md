@@ -4,6 +4,7 @@ description = "eSTRO — 스타크래프트: 브루드 워 프로게임단."
 slug = "estro"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2005"

@@ -4,6 +4,7 @@ description = "하이트 엔투스 — 스타크래프트: 브루드 워 프로�
 slug = "hite-entus"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2005"

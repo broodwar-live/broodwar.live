@@ -1,8 +1,10 @@
 +++
 title = "Tau Cross"
+description = "Overview of Tau Cross, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "tau-cross"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Tau Cross"
 dimensions = "128x128"
 tileset = "Ice"

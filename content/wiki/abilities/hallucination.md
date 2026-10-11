@@ -1,10 +1,12 @@
 +++
 title = "Hallucination"
+description = "Hallucination is a High Templar spell that creates two harmless illusory copies of a friendly unit."
 slug = "hallucination"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "할루시네이션"
 caster = "high-templar"
 energy = 100

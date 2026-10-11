@@ -1,8 +1,10 @@
 +++
 title = "Andromeda"
+description = "Overview of Andromeda, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "andromeda"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Andromeda"
 dimensions = "128x128"
 tileset = "Space Platform"

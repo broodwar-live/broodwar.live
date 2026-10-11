@@ -3,6 +3,8 @@ title = "컨트롤 그룹 & 단축키"
 description = "유닛 컨트롤 그룹, 건물 단축키, 브루드 워의 APM 메카닉."
 slug = "control-groups"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

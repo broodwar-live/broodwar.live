@@ -1,8 +1,10 @@
 +++
 title = "Match Point"
+description = "Overview of Match Point, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "match-point"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Match Point"
 dimensions = "112x128"
 tileset = "Space Platform"

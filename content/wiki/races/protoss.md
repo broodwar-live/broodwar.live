@@ -1,10 +1,12 @@
 +++
 title = "Protoss"
+description = "Overview of the Protoss, the psionic race of powerful, expensive units protected by regenerating shields."
 slug = "protoss"
 template = "wiki/race.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 letter = "P"
 tagline = "Ancient psionic warriors with powerful but costly technology"
 playstyle = "Protoss units are expensive but powerful — quality over quantity. Gateway units like Zealots and Dragoons form the backbone, while tech units like High Templar (Psionic Storm) and Reavers (Scarab drops) provide game-ending splash damage. Protoss excels at timing attacks and decisive engagements where superior unit quality overwhelms opponents."

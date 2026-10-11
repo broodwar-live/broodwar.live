@@ -3,6 +3,8 @@ title = "Economy & Expansion"
 description = "Economic strategy, expansion timing, and the macro vs micro balance in Brood War."
 slug = "economy"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

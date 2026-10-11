@@ -4,6 +4,7 @@ description = "Woongjin Stars — StarCraft: Brood War professional team."
 slug = "woongjin-stars"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2007"

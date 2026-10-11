@@ -3,6 +3,8 @@ title = "게임 속도"
 description = "게임 속도 설정이 타이밍, 프레임 레이트, 실시간 변환에 미치는 영향."
 slug = "game-speed"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

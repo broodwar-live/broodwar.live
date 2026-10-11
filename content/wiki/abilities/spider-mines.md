@@ -1,10 +1,12 @@
 +++
 title = "Spider Mines"
+description = "Spider Mines are burrowing explosives laid by Vultures that chase and damage nearby enemy ground units."
 slug = "spider-mines"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "스파이더 마인"
 caster = "vulture"
 energy = 0

@@ -3,6 +3,8 @@ title = "Cloaking & Detection"
 description = "Cloaked units, burrowing, and detection mechanics for all three races in Brood War."
 slug = "cloaking-detection"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview
@@ -43,7 +45,7 @@ Each race has access to mobile and static detection:
 - **Comsat Station** (Scanner Sweep): Temporarily reveals a large area anywhere on the map, including cloaked and burrowed units. Costs 50 energy. The fastest detection response available — no travel time required.
 
 ### Zerg
-- **Overlord**: Flying unit that provides supply AND detection (once the Pneumatized Carapace upgrade is researched for speed, Overlords become effective mobile detectors even without the speed upgrade, all Overlords detect by default).
+- **Overlord**: Flying unit that provides supply AND detection (all Overlords detect by default; the Pneumatized Carapace speed upgrade makes them far more practical as mobile detectors).
 - **Spore Colony**: Static anti-air defense with detection.
 
 ## Detection Gaps

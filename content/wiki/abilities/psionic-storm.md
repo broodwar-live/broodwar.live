@@ -1,10 +1,12 @@
 +++
 title = "Psionic Storm"
+description = "Psionic Storm is a High Templar spell that deals heavy damage to all units in an area over a few seconds."
 slug = "psionic-storm"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "사이오닉 스톰"
 caster = "high-templar"
 energy = 75
@@ -21,7 +23,7 @@ research_minerals = 200
 research_gas = 200
 research_time = 75
 +++
-Psionic Storm unleashes a devastating energy storm in the target area, dealing 112 total damage over approximately 3 seconds to all ground and air units caught within it. The damage ignores armor upgrades entirely. Multiple storms cast on the same area do not stack — units can only take damage from one storm at a time (since Patch 1.08). Costs 75 energy from a High Templar and requires research at the Templar Archives.
+Psionic Storm unleashes a devastating energy storm in the target area, dealing 112 total damage over approximately 3 seconds to all ground and air units caught within it. The damage ignores armor upgrades entirely. Multiple storms cast on the same area do not stack — units can only take damage from one storm at a time. Costs 75 energy from a High Templar and requires research at the Templar Archives.
 
 Psionic Storm is widely considered the most powerful area damage spell in Brood War. It is the backbone of Protoss mid-to-late game in every matchup. In PvT, Storm drops via Shuttle are a core strategy — loading High Templar into a Shuttle, flying over a Marine/Medic army, and dropping storms can annihilate an entire bio force in seconds. In PvZ, storms zone out Hydralisk armies and punish Mutalisk stacking. Even in PvP, well-placed storms on Dragoon clusters can swing fights decisively.
 

@@ -1,8 +1,10 @@
 +++
 title = "Grand Line"
+description = "Overview of Grand Line, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "grand-line"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Grand Line"
 dimensions = "128x128"
 tileset = "Twilight"

@@ -1,8 +1,10 @@
 +++
 title = "Transistor"
+description = "Overview of Transistor, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "transistor"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Transistor"
 dimensions = "128x128"
 tileset = "Twilight"

@@ -3,6 +3,8 @@ title = "Fog of War"
 description = "Vision, fog states, and the critical role of information in Brood War."
 slug = "fog-of-war"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

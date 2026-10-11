@@ -1,10 +1,12 @@
 +++
 title = "Terran"
+description = "Overview of the Terrans, the human race built around versatile production, add-ons and positional play."
 slug = "terran"
 template = "wiki/race.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 letter = "T"
 tagline = "Adaptable human forces with strong defensive capabilities"
 playstyle = "Terran is the most mechanically flexible race. Players can wall off with supply depots, siege up behind tanks, harass with vulture speed, or go for bio pushes with marine/medic. Strong macro play and multi-pronged attacks are hallmarks of top Terran players."

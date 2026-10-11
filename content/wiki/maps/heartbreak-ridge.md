@@ -1,8 +1,10 @@
 +++
 title = "Heartbreak Ridge"
+description = "Overview of Heartbreak Ridge, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "heartbreak-ridge"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Heartbreak Ridge"
 dimensions = "128x96"
 tileset = "Jungle World"

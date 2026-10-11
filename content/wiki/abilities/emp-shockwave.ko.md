@@ -1,10 +1,12 @@
 +++
 title = "EMP 충격파"
+description = "EMP 충격파는 범위 내 유닛의 보호막과 에너지를 없애는 사이언스 베슬 마법이다."
 slug = "emp-shockwave"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_en = "EMP Shockwave"
 caster = "science-vessel"
 energy = 100

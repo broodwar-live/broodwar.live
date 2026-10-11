@@ -1,10 +1,12 @@
 +++
 title = "인스네어"
+description = "인스네어는 범위 내 적 유닛을 느리게 하고 클로킹 유닛을 드러내는 퀸 마법이다."
 slug = "ensnare"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
+unverified = true
 name_en = "Ensnare"
 caster = "queen"
 energy = 75

@@ -3,6 +3,8 @@ title = "Resources"
 description = "Minerals and vespene gas — the two resources that drive every decision in Brood War."
 slug = "resources"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## Overview

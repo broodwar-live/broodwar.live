@@ -1,8 +1,10 @@
 +++
 title = "Revolver"
+description = "Overview of Revolver, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "revolver"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Revolver"
 dimensions = "128x128"
 tileset = "Desert"

@@ -1,10 +1,12 @@
 +++
 title = "메일스트롬"
+description = "메일스트롬은 범위 내 생체 유닛을 잠시 얼려 버리는 다크 아콘 마법이다."
 slug = "maelstrom"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_en = "Maelstrom"
 caster = "dark-archon"
 energy = 100

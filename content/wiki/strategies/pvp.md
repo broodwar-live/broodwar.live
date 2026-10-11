@@ -6,6 +6,7 @@ template = "wiki/strategy.html"
 [taxonomies]
 matchup = ["PvP"]
 [extra]
+unverified = true
 matchup = "PvP"
 +++
 

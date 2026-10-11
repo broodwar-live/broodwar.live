@@ -1,8 +1,10 @@
 +++
 title = "Outsider"
+description = "Overview of Outsider, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "outsider"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Outsider"
 dimensions = "128x128"
 tileset = "Badlands"

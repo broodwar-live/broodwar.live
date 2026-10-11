@@ -1,8 +1,10 @@
 +++
 title = "Neo Jade"
+description = "Overview of Neo Jade, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "neo-jade"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Neo Jade"
 dimensions = "128x128"
 tileset = "Jungle World"

@@ -4,6 +4,7 @@ description = "WeMade FOX — StarCraft: Brood War professional team."
 slug = "wemade-fox"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2004"

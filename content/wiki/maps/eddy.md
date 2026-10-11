@@ -1,8 +1,10 @@
 +++
 title = "Eddy"
+description = "Overview of Eddy, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "eddy"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Eddy"
 dimensions = "128x128"
 tileset = "Badlands"

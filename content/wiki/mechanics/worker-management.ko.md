@@ -3,6 +3,8 @@ title = "일꾼 관리"
 description = "최적 일꾼 포화, 미네랄 채취, 브루드 워의 일꾼 마이크로 기술."
 slug = "worker-management"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

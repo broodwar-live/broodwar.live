@@ -1,10 +1,12 @@
 +++
 title = "Irradiate"
+description = "Irradiate is a Science Vessel spell that deals damage over time to biological units around its target."
 slug = "irradiate"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "이래디에이트"
 caster = "science-vessel"
 energy = 75
@@ -23,4 +25,4 @@ Irradiate exposes a target unit to lethal radiation, dealing 250 damage over app
 
 Irradiate is one of the most important abilities in TvZ and a defining part of the matchup. A single cast on a Mutalisk flock can chain-kill multiple Mutalisks as they tend to stack together, and irradiating an Overlord near a group of Hydralisks forces the Zerg to either move the Overlord away or watch their army melt. In competitive play, Science Vessel Irradiate timings are a key inflection point in TvZ — once Vessels arrive, the Zerg must transition away from massed Mutalisks or risk catastrophic losses.
 
-Target stacked air units like Mutalisk flocks for maximum splash value. When Irradiating ground units, aim for a unit in the middle of a cluster rather than one on the edge. Remember that the irradiated unit itself takes full damage regardless of whether it is biological or mechanical — irradiating an enemy Science Vessel or Shuttle is also effective.
+Target stacked air units like Mutalisk flocks for maximum splash value. When Irradiating ground units, aim for a unit in the middle of a cluster rather than one on the edge. Remember that Irradiate only damages biological units — casting it on a mechanical unit such as a Science Vessel or Shuttle harms only the biological units around it.

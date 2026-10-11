@@ -4,6 +4,7 @@ description = "Hwaseung OZ — StarCraft: Brood War professional team."
 slug = "hwaseung-oz"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2002"

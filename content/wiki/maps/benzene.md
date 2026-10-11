@@ -1,8 +1,10 @@
 +++
 title = "Benzene"
+description = "Overview of Benzene, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "benzene"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Benzene"
 dimensions = "128x112"
 tileset = "Space Platform"

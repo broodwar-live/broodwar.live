@@ -1,8 +1,10 @@
 +++
 title = "Eclipse"
+description = "Overview of Eclipse, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "eclipse"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Eclipse"
 dimensions = "128x128"
 tileset = "Twilight"

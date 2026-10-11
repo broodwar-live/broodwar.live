@@ -5,6 +5,8 @@ slug = "terran"
 template = "wiki/tech-tree.html"
 [taxonomies]
 race = ["terran"]
+[extra]
+unverified = true
 +++
 
 테란의 테크 트리는 애드온(부속 건물) 시스템을 중심으로 구성됩니다. 테란은 생산 건물을 띄워서 이동할 수 있는 유일한 종족이며, 고급 유닛과 연구를 해금하기 위해 특정 애드온 건물이 필요한 유일한 종족입니다.

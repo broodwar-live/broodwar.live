@@ -1,8 +1,10 @@
 +++
 title = "Gold Rush"
+description = "Overview of Gold Rush, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "gold-rush"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Gold Rush"
 dimensions = "128x128"
 tileset = "Badlands"

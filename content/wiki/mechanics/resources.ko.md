@@ -3,6 +3,8 @@ title = "자원"
 description = "미네랄과 베스핀 가스 — 브루드 워의 모든 결정을 이끄는 두 가지 자원."
 slug = "resources"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

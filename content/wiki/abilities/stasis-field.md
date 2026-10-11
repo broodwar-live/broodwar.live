@@ -1,10 +1,12 @@
 +++
 title = "Stasis Field"
+description = "Stasis Field is an Arbiter spell that freezes all units in an area, making them untargetable for its duration."
 slug = "stasis-field"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_ko = "스테이시스 필드"
 caster = "arbiter"
 energy = 100

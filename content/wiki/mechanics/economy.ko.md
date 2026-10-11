@@ -3,6 +3,8 @@ title = "경제 & 확장"
 description = "경제 전략, 확장 타이밍, 브루드 워의 매크로 vs 마이크로 균형."
 slug = "economy"
 template = "wiki/mechanic.html"
+[extra]
+unverified = true
 +++
 
 ## 개요

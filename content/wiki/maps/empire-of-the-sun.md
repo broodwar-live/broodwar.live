@@ -1,8 +1,10 @@
 +++
 title = "Empire of the Sun"
+description = "Overview of Empire of the Sun, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "empire-of-the-sun"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Empire of the Sun"
 dimensions = "128x128"
 tileset = "Desert"

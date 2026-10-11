@@ -6,6 +6,7 @@ template = "wiki/upgrade.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 race = "terran"
 minerals = 200
 gas = 200

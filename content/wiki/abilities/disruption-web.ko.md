@@ -1,10 +1,12 @@
 +++
 title = "디스럽션 웹"
+description = "디스럽션 웹은 그 아래의 지상 유닛과 건물이 공격하지 못하게 하는 커세어 마법이다."
 slug = "disruption-web"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
+unverified = true
 name_en = "Disruption Web"
 caster = "corsair"
 energy = 125

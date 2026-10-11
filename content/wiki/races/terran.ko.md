@@ -1,10 +1,12 @@
 +++
 title = "테란"
+description = "다양한 생산 건물, 애드온, 진지전을 중심으로 하는 인간 종족, 테란 개요."
 slug = "terran"
 template = "wiki/race.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 letter = "T"
 tagline = "강력한 방어력을 갖춘 적응력 높은 인류 세력"
 playstyle = "테란은 가장 전술적으로 유연한 종족이다. 서플라이 디팟으로 입구를 막거나, 시즈 탱크 뒤에서 진지를 구축하거나, 벌처의 속도를 이용해 견제하거나, 마린/메딕 바이오 푸시를 할 수 있다. 뛰어난 매크로 운영과 다방면 동시 공격이 정상급 테란 선수들의 특징이다."

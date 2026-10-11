@@ -1,8 +1,10 @@
 +++
 title = "Sniper Ridge"
+description = "Overview of Sniper Ridge, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "sniper-ridge"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "Sniper Ridge"
 dimensions = "128x128"
 tileset = "Badlands"

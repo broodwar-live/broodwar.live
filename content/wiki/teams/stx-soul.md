@@ -4,6 +4,7 @@ description = "STX Soul — StarCraft: Brood War professional team."
 slug = "stx-soul"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2002"

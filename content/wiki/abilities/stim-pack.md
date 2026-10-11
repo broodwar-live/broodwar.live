@@ -1,10 +1,12 @@
 +++
 title = "Stim Pack"
+description = "Stim Pack trades HP for a temporary boost to Marine and Firebat movement and attack speed."
 slug = "stim-pack"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
+unverified = true
 name_ko = "스팀팩"
 caster = "marine"
 energy = 0
@@ -16,7 +18,7 @@ research_minerals = 100
 research_gas = 100
 research_time = 50
 +++
-Stim Pack grants Marines and Firebats a 50% increase to both attack speed and movement speed for approximately 10 seconds, at the cost of 10 HP per use. The effect is immediate and can be activated repeatedly, though each activation drains another 10 HP. Researched at the Academy for 100/100.
+Stim Pack grants Marines and Firebats a 50% increase to both attack speed and movement speed for approximately 10 seconds, at the cost of 10 HP per use for Marines (20 HP for Firebats). The effect is immediate and can be activated repeatedly, though each activation drains HP again. Researched at the Academy for 100/100.
 
 Stim Pack is the defining ability of Terran bio play. Without it, Marine/Medic armies are dramatically less effective in combat, lacking the DPS to trade efficiently against Dragoons or Zerglings. In competitive play, Stim is researched as early as possible in bio builds and is activated before virtually every engagement. Medics heal back the 10 HP cost quickly, making the trade-off negligible when Medic support is present. The timing of the first Stim push — when the upgrade completes and the Terran moves out with their initial Marine/Medic force — is one of the most critical moments in TvP and TvZ.
 

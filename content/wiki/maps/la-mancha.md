@@ -1,8 +1,10 @@
 +++
 title = "La Mancha"
+description = "Overview of La Mancha, a map used in competitive StarCraft: Brood War, covering its layout and matchup considerations."
 slug = "la-mancha"
 template = "wiki/map.html"
 [extra]
+unverified = true
 name_ko = "La Mancha"
 dimensions = "128x128"
 tileset = "Desert"

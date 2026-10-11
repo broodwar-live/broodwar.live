@@ -4,6 +4,7 @@ description = "KT Rolster — StarCraft: Brood War professional team."
 slug = "kt-rolster"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "active"
 region = "South Korea"
 founded = "1999"

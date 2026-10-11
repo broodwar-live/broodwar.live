@@ -4,6 +4,7 @@ description = "Samsung Khan — StarCraft: Brood War professional team."
 slug = "samsung-khan"
 template = "wiki/team.html"
 [extra]
+unverified = true
 status = "disbanded"
 region = "South Korea"
 founded = "2000"
