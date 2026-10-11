@@ -1,19 +1,22 @@
 +++
 title = "피드백"
-description = "피드백은 대상의 에너지를 모두 없애고 그만큼 피해를 주는 다크 아콘 마법이다."
+description = "피드백은 대상의 에너지를 모두 빼앗고 그만큼의 피해를 주는 다크 아콘 마법이다."
 slug = "feedback"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 name_en = "Feedback"
 caster = "dark-archon"
 energy = 50
 hp_cost = 0
+range = 10
+hotkey = "F"
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Feedback"]
+verified = "2026-10-11"
 +++
-피드백은 대상 유닛의 남은 에너지를 모두 소진시키고 소진된 에너지만큼 피해를 입힌다. 에너지가 가득 찬 사이언스 베슬(에너지 200)은 200 피해를 받아 즉사할 수 있다. 다크 아콘에서 에너지 50을 소모하며 연구가 필요 없다 — 다크 템플러 두 기를 합체하여 다크 아콘이 생성되면 바로 사용 가능하다.
+피드백은 대상 유닛의 에너지를 모두 없애고, 없앤 양만큼 방어력을 무시하는 피해를 준다(실드가 먼저 깎인다). 사이언스 베슬은 기본 최대 에너지 200에 체력도 200이므로, 에너지가 가득 찬 베슬은 즉사한다. 건물, 에너지가 없는 유닛, 환상 유닛, 스테이시스 필드에 걸린 유닛에는 쓸 수 없다. 디펜시브 매트릭스는 이 피해를 흡수한다.
 
-피드백은 핵심 지원 유닛을 즉사시키거나 심각한 피해를 입힐 수 있는 강력한 대시전 유닛 도구이다. 최적의 대상은 최대 에너지가 높은 유닛이다: 사이언스 베슬(체력 200, 기본 최대 에너지 200 — 풀에너지 베슬은 즉사), 디파일러(에너지 200), 퀸, 하이 템플러, 메딕. PvT에서 사이언스 베슬에 피드백을 시전하면 EMP와 이래디에이트를 차단하면서 치명적 피해를 입힌다. PvZ에서는 풀에너지 디파일러를 다크 스웜이나 플레이그 시전 전에 저격할 수 있다.
+에너지 50이 들고 사거리는 10이며 연구가 필요 없어, 모든 다크 아콘이 바로 쓸 수 있다.
 
-그 효과에도 불구하고, 다크 아콘 자체가 비싸고 생산이 어렵기 때문에 프로 경기에서 피드백은 드물게 보인다 — 다크 템플러 두 기를 합체해야 한다. 다크 템플러 테크 투자와 합체 시간의 기회비용으로 인해 대부분의 빌드에서 비실용적이다. 다크 아콘을 보유한 경우, 마인드 컨트롤이나 메일스트롬보다 먼저 가장 에너지가 높은 적 시전 유닛에 피드백을 사용해야 한다 — 위협을 제거하면서 동시에 큰 피해를 입히기 때문이다.
+피드백은 상대의 마법 유닛 — 사이언스 베슬, 디파일러, 하이 템플러 — 이 많아졌을 때 이를 저격하는 데 가끔 쓰인다. 다크 아콘은 다크 템플러 두 기가 필요한 비싼 유닛이라 프로 경기에서는 드물다.

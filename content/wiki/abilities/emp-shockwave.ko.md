@@ -1,19 +1,27 @@
 +++
 title = "EMP 충격파"
-description = "EMP 충격파는 범위 내 유닛의 보호막과 에너지를 없애는 사이언스 베슬 마법이다."
+description = "EMP 충격파는 범위 안 유닛의 실드와 에너지를 모두 없애는 사이언스 베슬 마법이다."
 slug = "emp-shockwave"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_en = "EMP Shockwave"
 caster = "science-vessel"
 energy = 100
 hp_cost = 0
+range = 8
+aoe = "128×128 px"
+hotkey = "E"
+researched_at = "science-facility"
+research_minerals = 200
+research_gas = 200
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/EMP_Shockwave"]
+verified = "2026-10-11"
 +++
-EMP 충격파는 전자기 펄스를 방출하여 대상 범위 내 모든 유닛의 에너지와 프로토스 플라즈마 보호막을 즉시 소진시킨다. 효과는 즉각적이며 시전 후에는 회피할 수 없다. 사이언스 베슬에서 에너지 100을 소모하며 사이언스 퍼실리티에서 연구가 필요하다.
+EMP 충격파는 목표 지점으로 미사일을 쏜다. 착탄 시 그 지점을 중심으로 한 128×128픽셀 정사각형(사방 64픽셀, 대략 4×4타일)에 걸치는 모든 유닛과 건물의 플라즈마 실드와 에너지가 0이 된다. 스테이시스 필드 안의 유닛은 영향을 받지 않고, 시전한 베슬 자신도 제외되며, 범위 안의 환상 유닛은 파괴된다. 아군과 자기 유닛도 적과 똑같이 맞는다.
 
-EMP는 프로 브루드워에서 가장 결정적인 능력 중 하나이며, 특히 TvP에서 그러하다. 프로토스 군대에 정확히 시전된 EMP는 모든 보호막을 제거하여 군대 총 체력의 상당 부분을 순식간에 삭제한다. 보호막 80, 체력 100인 드라군의 경우, 한 번의 EMP로 총 체력의 44%가 전투 시작 전에 사라진다. EMP는 아비터의 에너지도 소진시켜 리콜과 스테이시스 필드를 차단하고, 하이 템플러의 에너지를 제거하여 사이오닉 스톰을 무력화한다. TvP 후반전에서 사이언스 베슬 대결 — 템플러에 EMP를 맞추는 테란과 바이오 군대에 스톰을 날리려는 프로토스의 싸움 — 이 종종 전체 경기의 승패를 결정한다.
+에너지 100이 들고 사거리는 8이며, [사이언스 퍼실리티](@/wiki/buildings/science-facility.ko.md)에서 미네랄 200, 가스 200(1,800프레임, 120초)에 연구한다.
 
-EMP의 효과를 극대화하려면 개별 대상보다 밀집한 유닛 무리를 노려야 한다. 가능하면 드라군보다 아비터와 하이 템플러에 EMP를 우선 시전하는 것이 좋다 — 시전 능력을 제거하는 것이 보호막 제거보다 가치가 높은 경우가 많다. 사이언스 베슬을 주력 군대 뒤에 배치하여 시전 전에 저격당하지 않도록 보호해야 한다.
+EMP는 주로 TvP에서 쓰인다. 아비터와 하이 템플러의 에너지를 없애 리콜·스테이시스 필드·사이오닉 스톰을 막고, 아콘(체력 10, 실드 350)이나 캐리어처럼 실드 비중이 큰 유닛에 특히 효과적이다. 드라군(실드 80, 체력 100)은 한 번에 전체 내구도의 44%를 잃는다. TvT에서는 배틀크루저의 에너지를 빼 야마토 캐논을 막는 데 쓸 수 있다.

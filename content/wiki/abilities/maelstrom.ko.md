@@ -1,19 +1,28 @@
 +++
 title = "메일스트롬"
-description = "메일스트롬은 범위 내 생체 유닛을 잠시 얼려 버리는 다크 아콘 마법이다."
+description = "메일스트롬은 범위 안의 생체 유닛을 잠시 얼려 버리는 다크 아콘 마법이다."
 slug = "maelstrom"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 name_en = "Maelstrom"
 caster = "dark-archon"
 energy = 100
 hp_cost = 0
+range = 10
+aoe = "96×96 px"
+duration = 11.7
+hotkey = "E"
+researched_at = "templar-archives"
+research_minerals = 100
+research_gas = 100
+research_time = 100
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Maelstrom"]
+verified = "2026-10-11"
 +++
-메일스트롬은 대상 범위 내 모든 생체 유닛을 약 5초간 완전히 동결시켜 이동, 공격, 능력 사용을 차단한다. 기계 또는 로봇 유닛에는 영향을 미치지 않으며 건물도 면역이다. 다크 아콘에서 에너지 100을 소모하며 템플러 아카이브에서 연구가 필요하다.
+메일스트롬은 목표 지점 주변 96×96픽셀 정사각형에 걸치는, 건물이 아니고 버로우하지 않은 모든 생체 유닛(공중·지상, 아군·적군 모두)을 22 상태 틱(약 176프레임: 약 12 게임 초, 가장 빠름 기준 실제 약 7.4초) 동안 기절시킨다. 기절한 유닛은 이동·공격·마법 사용을 할 수 없다. 기계 유닛은 영향을 받지 않고, 범위 안의 환상 유닛은 파괴되며, 기절한 은폐 유닛은 적에게 보인다. 레스토레이션으로 해제된다.
 
-메일스트롬은 밀집한 생체 군대, 특히 저그에 대해 치명적이다. 저글링 무리나 히드라리스크 군대에 정확히 시전하면 질럿 돌격, 사이오닉 스톰, 리버 스캐럽에 완전히 무방비 상태가 된다. PvZ에서 메일스트롬 후 사이오닉 스톰의 조합은 게임 내 가장 파괴적인 주문 콤보 중 하나이다 — 동결된 유닛이 스톰의 범위에서 도망칠 수 없기 때문이다. 테란 바이오(마린/메딕) 상대로 메일스트롬은 전체 보병을 동결시켜 질럿과 아콘이 거리를 좁히고 유리한 조건에서 교전할 수 있게 한다.
+에너지 100이 들고 사거리는 10이며, [템플러 아카이브](@/wiki/buildings/templar-archives.ko.md)에서 미네랄 100, 가스 100(1,500프레임, 100초)에 연구한다.
 
-메일스트롬의 주된 한계는 다크 아콘이 필요하다는 것으로, 다크 템플러 테크에 큰 투자가 요구된다. 다크 아콘은 다크 템플러 두 기(각각 125/100)를 합체하여 생성하므로 비용이 크다. 실전에서 메일스트롬은 프로토스가 다크 아콘 테크로 전환하는 장기 PvZ에서 가장 많이 사용된다. 생체 유닛이 가장 밀집한 곳을 대상으로 하고, 동결 시간이 만료되기 전에 즉시 스톰이나 지상 공격으로 후속 타격을 가해야 한다.
+저그 유닛은 모두 생체이므로 메일스트롬은 저프전에서 가장 강력하다. 뮤탈리스크 무리나 히드라리스크 부대를 얼려 아콘, 리버, 사이오닉 스톰으로 응징할 수 있다. 테란 상대로는 보병(과 건설로봇)에만, 프로토스 상대로는 질럿과 템플러에만 통한다. 다크 아콘의 비용 때문에 드물게 쓰인다.

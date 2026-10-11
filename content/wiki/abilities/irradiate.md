@@ -1,28 +1,29 @@
 +++
 title = "Irradiate"
-description = "Irradiate is a Science Vessel spell that deals damage over time to biological units around its target."
+description = "Irradiate is a Science Vessel spell that deals 250 damage over time to biological units around its target."
 slug = "irradiate"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "이래디에이트"
 caster = "science-vessel"
 energy = 75
 hp_cost = 0
 damage = 250
 range = 9
-aoe = "32px splash"
-duration = 30.0
+aoe = "32 px around target"
+duration = 40.0
 hotkey = "I"
 researched_at = "science-facility"
 research_minerals = 200
 research_gas = 200
 research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Irradiate"]
+verified = "2026-10-11"
 +++
-Irradiate exposes a target unit to lethal radiation, dealing 250 damage over approximately 30 seconds to the targeted unit and all nearby biological units within its splash radius. The damage is applied continuously and affects any biological unit that moves near the irradiated target. Mechanical units take no damage from the splash. Costs 75 energy from a Science Vessel and requires research at the Science Facility.
+Irradiate can be cast on any non-building unit. For 75 status ticks (600 frames — 40 game seconds, about 25 seconds of real time on Fastest) the irradiated unit emits radiation that deals 250 damage in total, ignoring armor, to every biological unit within 32 pixels of it — including the target itself if it is biological. The damage does not fall off with distance, so two irradiated units standing together hurt each other twice. Mechanical units take no damage; casting it on your own tank or Vessel near enemy biological units is known as the "Eraser" trick. Burrowed units only take damage if they are the irradiated unit, and larvae, eggs and buildings are immune.
 
-Irradiate is one of the most important abilities in TvZ and a defining part of the matchup. A single cast on a Mutalisk flock can chain-kill multiple Mutalisks as they tend to stack together, and irradiating an Overlord near a group of Hydralisks forces the Zerg to either move the Overlord away or watch their army melt. In competitive play, Science Vessel Irradiate timings are a key inflection point in TvZ — once Vessels arrive, the Zerg must transition away from massed Mutalisks or risk catastrophic losses.
+It costs 75 energy, has a range of 9 and is researched at the [Science Facility](@/wiki/buildings/science-facility.md) for 200 minerals and 200 gas (1,200 frames, 80 s).
 
-Target stacked air units like Mutalisk flocks for maximum splash value. When Irradiating ground units, aim for a unit in the middle of a cluster rather than one on the edge. Remember that Irradiate only damages biological units — casting it on a mechanical unit such as a Science Vessel or Shuttle harms only the biological units around it.
+Irradiate is a cornerstone of TvZ. Stacked Mutalisks take heavy losses from one cast, and Defilers, Lurkers and Ultralisks are prime single targets. Since every Zerg unit is biological, the spell is far more useful against Zerg than against Protoss or Terran.

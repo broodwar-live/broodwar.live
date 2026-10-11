@@ -1,19 +1,28 @@
 +++
 title = "시즈 모드"
-description = "시즈 모드는 시즈 탱크를 범위 피해를 주는 고정식 장거리 포대로 바꾸는 능력이다."
+description = "시즈 모드는 시즈 탱크를 움직일 수 없는 대신 사거리가 길고 스플래시 피해를 주는 포대로 바꾼다."
 slug = "siege-mode"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_en = "Siege Mode"
 caster = "siege-tank"
 energy = 0
 hp_cost = 0
+damage = 70
+range = 12
+aoe = "10 / 25 / 40 px"
+hotkey = "O"
+researched_at = "machine-shop"
+research_minerals = 150
+research_gas = 150
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Siege_Tank"]
+verified = "2026-10-11"
 +++
-시즈 모드는 시즈 탱크를 이동 유닛에서 고정 포병 플랫폼으로 변환한다. 시즈 모드에서 공격이 사거리 7의 30 폭발형 피해에서 사거리 12의 70 폭발형 범위 피해로 변경되지만, 이동이 불가능하며 최소 사거리가 있어 바로 인접한 유닛은 공격할 수 없다. 변환에는 약 2초가 소요되며 양방향 모두 동일하다. 머신 샵에서 150/150으로 연구한다.
+시즈 모드는 시즈 탱크를 고정 포대로 바꾼다. 탱크 모드의 아크라이트 캐논은 사거리 7, 쿨다운 37프레임으로 폭발형 30의 피해를 준다. 시즈 모드의 아크라이트 쇼크 캐논은 사거리 12, 쿨다운 75프레임으로 폭발형 70의 피해를 주며, 착탄점에서 10픽셀까지 100%, 25픽셀까지 50%, 40픽셀까지 25%의 방사형 스플래시가 있다. 이 스플래시는 자기 유닛에게도 피해를 준다. 시즈한 탱크는 움직일 수 없고 최소 사거리가 64픽셀(2타일)이라 바로 옆의 유닛은 공격할 수 없다.
 
-시즈 모드는 테란 진지전의 초석이며 브루드워 전체에서 가장 핵심적인 능력 중 하나이다. 시즈된 탱크는 다른 어떤 유닛보다 강력하게 공간을 지배한다 — 막대한 사거리와 범위 피해로 인해 계획 없이 사격 범위에 진입하는 것은 자살 행위이다. TvZ에서 시즈 탱크 푸시는 테란의 주된 공격 전략으로, 탱크를 교대로 전진 배치하며 맵 영역을 확보한다. TvT에서 시즈 탱크 포지셔닝은 승패를 결정하는 가장 중요한 요소이다 — 더 나은 탱크 배치를 가진 선수가 거의 항상 교전에서 승리한다. TvP에서 바이오 벽 뒤의 시즈된 탱크는 프로토스가 라인을 돌파하기 위해 스톰 드랍이나 리버를 사용하도록 강제한다.
+연구(시즈 테크)는 [머신 샵](@/wiki/buildings/machine-shop.ko.md)에서 미네랄 150, 가스 150(1,200프레임, 80초)에 진행한다.
 
-가능하면 항상 고지대에 탱크를 시즈해야 한다 — 저지대의 유닛은 위를 볼 수 없어 대상 지정이 불가능하다. 탱크를 너무 밀집시키면 안 된다 — 범위 피해가 아군에게 아군 사격을 가할 수 있다. 탱크 라인 앞에 이동 유닛(벌처, 마린)을 배치하여 적이 최소 사거리 사각지대로 돌입하는 것을 방지해야 한다. 후퇴를 위해 시즈를 해제하는 순간은 테란 군대의 가장 위험한 순간 중 하나이다 — 2초의 변환 동안 탱크가 완전히 무방비 상태가 된다.
+시즈 모드는 테란 진지전의 기반이다. 시즈 탱크 덕분에 테란은 TvZ와 TvP에서 지역을 지킬 수 있고, TvT는 대부분 탱크 배치로 승부가 갈린다. 시즈 사거리(12)가 탱크의 시야(10)보다 길어서 최대 사거리를 쓰려면 띄운 건물, 사이언스 베슬, 전방 유닛 같은 시야 확보 수단이 필요하며, 이동을 위해 시즈를 푸는 동안 탱크는 취약하다.

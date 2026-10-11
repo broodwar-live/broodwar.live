@@ -6,21 +6,22 @@ template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "락다운"
 caster = "ghost"
 energy = 100
 hp_cost = 0
 range = 8
-duration = 8.57
-hotkey = "O"
+duration = 69.9
+hotkey = "L"
 researched_at = "covert-ops"
 research_minerals = 200
 research_gas = 200
-research_time = 60
+research_time = 100
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Lockdown"]
+verified = "2026-10-11"
 +++
-Lockdown disables a single mechanical unit for approximately 130 frames (~8.5 seconds at fastest game speed), completely preventing it from moving, attacking, or using abilities. Costs 100 energy and requires research at the Covert Ops facility. Only affects mechanical and robotic units — it has no effect on biological units or buildings.
+Lockdown disables one mechanical, non-building unit: it cannot move, attack or use abilities, and a locked-down Carrier recalls its Interceptors. The effect lasts 131 status ticks — about 1,048 frames, roughly 70 game seconds or about 44 seconds of real time on Fastest — the same duration as Stasis Field. Unlike Stasis, the target can still be attacked, and a locked-down cloaked unit is visible to the enemy. A Medic's Restoration removes it.
 
-In competitive play, Lockdown is a niche but devastating tool in specific matchups. It sees the most use in TvP against Carriers, where locking down a Carrier prevents it from launching or recalling Interceptors, and in TvT against enemy Battlecruisers or Siege Tanks. The ability also shuts down Arbiters, preventing Recall and Stasis Field, which can neutralize Protoss late-game strategies entirely.
+It costs 100 energy, has a range of 8 and is researched at the [Covert Ops](@/wiki/buildings/covert-ops.md) for 200 minerals and 200 gas (1,500 frames, 100 s). It has no effect on Zerg, since no Zerg unit is mechanical.
 
-To use Lockdown effectively, prioritize the highest-value mechanical target — a locked Carrier or Arbiter is far more impactful than a locked Goliath. Keep Ghosts cloaked to ensure they survive long enough to cast. Be aware that Restoration from a Medic can remove Lockdown, and Protoss players can pre-emptively target Ghosts to prevent it.
+Lockdown is rare in professional play. When it appears it is aimed at high-value mechanical targets: Carriers, Arbiters (stopping Recall and Stasis), Battlecruisers or Siege Tanks. Keeping the Ghost cloaked helps it get close enough to cast.

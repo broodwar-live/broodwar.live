@@ -1,12 +1,11 @@
 +++
 title = "Optical Flare"
-description = "Optical Flare is a Medic spell that permanently reduces a target unit's sight range."
+description = "Optical Flare is a Medic spell that blinds a unit, cutting its sight range and removing its detection."
 slug = "optical-flare"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "옵티컬 플레어"
 caster = "medic"
 energy = 75
@@ -16,10 +15,12 @@ hotkey = "F"
 researched_at = "academy"
 research_minerals = 100
 research_gas = 100
-research_time = 50
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Optical_Flare"]
+verified = "2026-10-11"
 +++
-Optical Flare permanently reduces a target unit's sight range to 1 matrix cell, effectively blinding it for the rest of the game. The effect cannot be stacked and persists until the unit dies. Costs 75 energy from a Medic and requires research at the Academy.
+Optical Flare permanently blinds a single non-building unit. In the engine a blinded unit's sight range drops to 2 tiles and it can no longer act as a detector. The effect lasts until the unit dies or a Medic removes it with Restoration. Flaring a hallucination destroys it.
 
-Optical Flare is a highly situational ability that rarely appears in competitive play, but it can be impactful in specific scenarios. Its primary use is blinding detector units — an Overlord hit by Optical Flare retains its detection ability but can only detect within a sight range of 1, rendering it nearly useless for spotting burrowed or cloaked units from a safe distance. Against Protoss, blinding an Observer similarly cripples their mobile detection. In rare TvT scenarios, it can be used on Science Vessels to limit their scouting value.
+It costs 75 energy, has a range of 9 and is researched at the [Academy](@/wiki/buildings/academy.md) for 100 minerals and 100 gas (1,800 frames, 120 s).
 
-The main reason Optical Flare sees so little competitive use is opportunity cost: the 75 energy spent on a Flare could instead heal roughly 150 HP worth of Marines. In most games, keeping bio units alive is far more valuable than blinding a single detector. Consider using it only when detection denial is strategically critical — for example, when running cloaked Wraiths and the opponent has limited Overlords forward. Always target detectors over combat units for maximum impact.
+Flare is rarely used. Its main purpose is to take away detection — blinding an Observer or Overlord so that cloaked Wraiths, Ghosts or Spider Mines can operate — and a blinded detector does not stand out when the opponent has several units selected.

@@ -1,26 +1,27 @@
 +++
 title = "Hallucination"
-description = "Hallucination is a High Templar spell that creates two harmless illusory copies of a friendly unit."
+description = "Hallucination is a High Templar spell that creates two harmless illusory copies of a unit."
 slug = "hallucination"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 name_ko = "할루시네이션"
 caster = "high-templar"
 energy = 100
 hp_cost = 0
 range = 7
-duration = 180.0
-hotkey = "H"
+duration = 90.0
+hotkey = "L"
 researched_at = "templar-archives"
 research_minerals = 150
 research_gas = 150
-research_time = 50
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Hallucination"]
+verified = "2026-10-11"
 +++
-Hallucination creates two illusory copies of a target friendly unit that appear identical to the original. Hallucinated units deal no damage and take double damage from all sources. They last approximately 180 seconds before expiring. Costs 100 energy from a High Templar and requires research at the Templar Archives.
+Hallucination creates two illusory copies of a target non-building unit — friendly or enemy. To the opponent they look like real units. Hallucinations deal no damage, take double damage, and disappear after 1,350 frames (90 game seconds, about 57 seconds of real time on Fastest). Most spells destroy them outright (for example EMP Shockwave, Maelstrom, Restoration, Optical Flare and Psionic Storm), and they cannot be Recalled or Feedbacked.
 
-In competitive play, Hallucination is rarely used because the 100 energy cost is extremely steep — a High Templar starts with 50 energy and gains 200 at full charge, meaning each Hallucination represents the majority of a Templar's usefulness. Since Psionic Storm costs only 75 energy and deals actual damage, Storm is almost always the better use of energy. However, Hallucination does have niche applications: hallucinating an Arbiter or Carrier can bait the opponent into overreacting, and hallucinated Scouts or Observers can serve as disposable scouts to check expansions and army positions.
+It costs 100 energy, has a range of 7 (the High Templar's sight range) and is researched at the [Templar Archives](@/wiki/buildings/templar-archives.md) for 150 minerals and 150 gas (1,200 frames, 80 s).
 
-The main competitive use case is scouting in PvT when Observers are not yet available — hallucinate a Zealot and send it across the map. Some creative players have used hallucinated units to bait Spider Mines or Siege Tank fire, clearing a path for real units. Avoid hallucinating in the middle of a fight, as the 100 energy is almost always better spent on Storm.
+Hallucination is a mind-game spell and is rarely worth its energy compared with Psionic Storm. Typical uses are scouting, faking a Shuttle drop or an Arbiter Recall, making a Carrier fleet look larger, or sending illusory units into Spider Mines and Siege Tank fire.

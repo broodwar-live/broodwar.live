@@ -6,14 +6,23 @@ template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "시즈 모드"
 caster = "siege-tank"
 energy = 0
 hp_cost = 0
+damage = 70
+range = 12
+aoe = "10 / 25 / 40 px"
+hotkey = "O"
+researched_at = "machine-shop"
+research_minerals = 150
+research_gas = 150
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Siege_Tank"]
+verified = "2026-10-11"
 +++
-Siege Mode transforms the Siege Tank from a mobile unit into a stationary artillery platform. In Siege Mode, the tank's attack changes from 30 explosive damage at range 7 to 70 explosive splash damage at range 12, but it cannot move and has a minimum attack range — units directly adjacent to a sieged tank cannot be targeted. The transformation takes approximately 2 seconds in each direction. Researched at the Machine Shop for 150/150.
+Siege Mode converts a Siege Tank into a stationary artillery piece. In Tank Mode its Arclite Cannon deals 30 explosive damage at range 7 with a 37-frame cooldown. In Siege Mode the Arclite Shock Cannon deals 70 explosive damage at range 12 with a 75-frame cooldown, plus radial splash: full damage within 10 pixels of the impact, 50% within 25 pixels and 25% within 40 pixels. The splash hurts the tank owner's own units as well. A sieged tank cannot move and has a minimum range of 64 pixels (2 tiles), so units right next to it cannot be targeted.
 
-Siege Mode is the cornerstone of Terran positional play and one of the most defining abilities in all of Brood War. Sieged tanks control space like no other unit — their massive range and splash damage make it suicidal for ground armies to walk into their firing zone without a plan. In TvZ, Siege Tank pushes are the primary Terran offensive strategy, slowly leapfrogging tanks forward to claim map territory. In TvT, Siege Tank positioning is the single most important factor in determining who wins — the player with better tank placement almost always wins the engagement. In TvP, sieged tanks behind a wall of bio units force the Protoss to use Storm drops or Reavers to break the line.
+The research, Siege Tech, is done at the [Machine Shop](@/wiki/buildings/machine-shop.md) for 150 minerals and 150 gas (1,200 frames, 80 s).
 
-Always siege tanks on high ground when possible, as units on low ground cannot see uphill to target them. Avoid clumping tanks too tightly — their splash damage can friendly-fire your own units. Keep mobile units (Vultures, Marines) in front of your tank line to prevent enemies from rushing into the minimum range dead zone. Unsieging to retreat is one of the most dangerous moments for a Terran army, as the 2-second transformation leaves tanks completely vulnerable.
+Siege Mode is the basis of Terran positional play. Sieged tanks let Terran hold ground in TvZ and TvP, and TvT is largely decided by tank positioning. Because the sieged range (12) exceeds the tank's sight (10), spotters such as floating buildings, Science Vessels or forward units are needed to use the full range, and the tank is vulnerable while it packs up to move.

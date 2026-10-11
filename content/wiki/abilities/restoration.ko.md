@@ -1,19 +1,26 @@
 +++
 title = "레스토레이션"
-description = "레스토레이션은 단일 유닛의 해로운 상태 효과를 제거하는 메딕 마법이다."
+description = "레스토레이션은 유닛 하나에 걸린 해로운 상태 효과를 제거하는 메딕 마법이다."
 slug = "restoration"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_en = "Restoration"
 caster = "medic"
 energy = 50
 hp_cost = 0
+range = 6
+hotkey = "R"
+researched_at = "academy"
+research_minerals = 100
+research_gas = 100
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Restoration"]
+verified = "2026-10-11"
 +++
-레스토레이션은 단일 대상 유닛의 모든 부정적 상태 효과를 즉시 제거한다: 플레이그, 인스네어, 이래디에이트, 락다운, 옵티컬 플레어, 패러사이트, 산성 포자 등. 메딕에서 에너지 50을 소모하며 아카데미에서 연구가 필요하다.
+레스토레이션은 건물이 아닌 유닛 하나를 정화한다. 엔진상 패러사이트, 옵티컬 플레어 실명, 인스네어, 플레이그, 이래디에이트, 락다운, 메일스트롬, 애시드 스포어를 제거한다. 스테이시스 필드는 **해제하지 못한다**. 환상 유닛에 쓰면 그 유닛은 파괴된다.
 
-레스토레이션은 약화 주문에 대한 테란의 범용적 방어 능력이다. TvZ에서는 시즈 탱크 무리에서 플레이그를 제거하거나 아군 유닛의 이래디에이트를 해제할 수 있으며, 인스네어를 정화하여 후퇴 시 이동 속도를 회복할 수 있다. TvT에서는 무력화된 배틀크루저나 시즈 탱크에서 락다운을 제거한다. 프로토스 상대로는 대부분의 프로토스 능력(스톰, 스테이시스)이 정화 가능한 상태 효과가 아니므로 용도가 제한적이다.
+에너지 50이 들고 사거리는 6이며, [아카데미](@/wiki/buildings/academy.ko.md)에서 미네랄 100, 가스 100(1,200프레임, 80초)에 연구한다.
 
-그 범용성에도 불구하고, 필요한 상황이 비교적 드물고 50 에너지가 메딕의 주된 역할인 치료와 경쟁하기 때문에 프로 경기에서 우선 연구 대상이 되는 경우는 드물다. 레스토레이션을 잘 사용하는 핵심은 최소 한 메딕의 에너지를 정화용으로 예비해 두는 것이다. 흔한 실수는 모든 메딕의 에너지를 치료에 소진시켜 결정적인 락다운이나 플레이그가 들어왔을 때 사용할 에너지가 없는 것이다. TvZ에서 디파일러 운영이 예상되거나 TvT에서 고스트 운영이 예상될 때 연구해야 한다.
+레스토레이션은 프로 경기에서 거의 연구되지 않는다. 주로 플레이그나 락다운에 걸린 배틀크루저·시즈 탱크 같은 비싼 유닛을 살리거나, 상대에게 시야를 주는 패러사이트를 없앨 때 쓰인다. 에너지를 메딕의 치료와 나눠 써야 한다.

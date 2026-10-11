@@ -1,26 +1,27 @@
 +++
 title = "EMP Shockwave"
-description = "EMP Shockwave is a Science Vessel spell that drains shields and energy from units in an area."
+description = "EMP Shockwave is a Science Vessel spell that removes all shields and energy from units in an area."
 slug = "emp-shockwave"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "EMP 충격파"
 caster = "science-vessel"
 energy = 100
 hp_cost = 0
 range = 8
-aoe = "64px radius"
+aoe = "128×128 px"
 hotkey = "E"
 researched_at = "science-facility"
 research_minerals = 200
 research_gas = 200
-research_time = 100
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/EMP_Shockwave"]
+verified = "2026-10-11"
 +++
-EMP Shockwave releases an electromagnetic pulse that instantly drains all energy and all Protoss plasma shields from every unit in the target area. The effect is instantaneous and cannot be dodged once cast. Costs 100 energy from a Science Vessel and requires research at the Science Facility.
+EMP Shockwave fires a missile at a target point. On impact every unit and building whose footprint touches a 128×128-pixel square centred on that point (64 pixels in each direction, roughly a 4×4-tile area) has its plasma shields and its energy set to zero. Units in Stasis Field are unaffected, the casting Vessel is spared, hallucinations in the area are destroyed, and allied and own units are hit just like enemies.
 
-EMP is one of the most decisive abilities in competitive Brood War, particularly in TvP. A well-placed EMP on a Protoss army removes all shields — effectively deleting a massive chunk of the army's total HP in an instant. Against a typical Dragoon with 80 shields and 100 HP, a single EMP removes 44% of its total health before the fight even begins. EMP also drains energy from Arbiters, preventing Recall and Stasis Field, and from High Templar, neutralizing Psionic Storm. In late-game TvP, the Science Vessel duel — landing EMP on Templar while the Protoss tries to Storm the bio army — often determines the outcome of the entire game.
+It costs 100 energy, has a range of 8 and is researched at the [Science Facility](@/wiki/buildings/science-facility.md) for 200 minerals and 200 gas (1,800 frames, 120 s).
 
-To maximize EMP effectiveness, aim for clusters of units rather than individual targets. Prioritize EMPing Arbiters and High Templar over Dragoons when possible, as removing their spellcasting ability is often more valuable than removing shields. Keep Science Vessels behind the main army to protect them from being sniped before they can cast.
+EMP is chiefly a TvP spell. Draining the energy of Arbiters and High Templar prevents Recall, Stasis Field and Psionic Storm, and stripping shields matters most against shield-heavy units such as Archons (10 HP, 350 shields) and Carriers. Against a Dragoon (80 shields, 100 HP) a hit removes 44% of its total durability. In TvT it can deny Yamato Cannon by draining Battlecruisers.

@@ -1,19 +1,26 @@
 +++
 title = "마인드 컨트롤"
-description = "마인드 컨트롤은 적 유닛 하나의 통제권을 영구히 빼앗는 다크 아콘 마법이다."
+description = "마인드 컨트롤은 적 유닛 하나의 소유권을 영구히 빼앗는 다크 아콘 마법이다."
 slug = "mind-control"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 name_en = "Mind Control"
 caster = "dark-archon"
 energy = 150
 hp_cost = 0
+range = 8
+hotkey = "C"
+researched_at = "templar-archives"
+research_minerals = 200
+research_gas = 200
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Mind_Control"]
+verified = "2026-10-11"
 +++
-마인드 컨트롤은 단일 적 유닛의 소유권을 영구적으로 빼앗아 시전자의 통제 하에 둔다. 빼앗은 유닛은 모든 업그레이드와 능력을 유지한다. 에너지 150을 소모하며, 시전 시 다크 아콘의 보호막이 0으로 감소한다. 템플러 아카이브에서 연구가 필요하다.
+마인드 컨트롤은 건물이 아닌 적 유닛 하나를 영구히 시전자의 소유로 바꾼다. 라바, 알, 스파이더 마인, 인터셉터, 스캐럽, 스테이시스 필드에 걸린 유닛은 빼앗을 수 없다. 시전하면 다크 아콘의 실드가 0이 된다. 빼앗은 유닛은 해당 유닛 고유의 연구(예: 빼앗은 하이 템플러가 가진 연구된 마법)는 가져오지만, 이전 주인의 공격력·방어력·실드 업그레이드 단계는 가져오지 않는다. 수송 유닛을 빼앗으면 안에 탄 유닛도 함께 넘어온다.
 
-마인드 컨트롤은 브루드워 역사상 가장 상징적이고 극적인 능력 중 하나이다. 드론을 빼앗아 프로토스로서 저그 건물을 짓거나, SCV를 빼앗아 테란 건물을 생산하는 다중 종족 생산은 대회에서 발생할 때 게임 역사상 가장 전설적인 순간 중 하나가 된다. 화려함을 넘어 실용적인 활용도 있다: 탐지기(옵저버, 사이언스 베슬, 오버로드)를 빼앗으면 무료 탐지를 얻고, 시즈 탱크나 캐리어 같은 고가 유닛을 빼앗으면 즉시 유닛 수 우위를 만들 수 있다.
+에너지 150이 들고 사거리는 8이며, [템플러 아카이브](@/wiki/buildings/templar-archives.ko.md)에서 미네랄 200, 가스 200(1,800프레임, 120초)에 연구한다.
 
-프로 경기에서 마인드 컨트롤은 매우 드물다 — 다크 아콘은 다크 템플러 두 기(총 250/200)가 필요하며, 시전 시 보호막 손실로 다크 아콘이 매우 취약해지기 때문이다. 이 능력은 자원이 풍부하고 게임이 교착 상태에 빠진 초후반 시나리오에서 가장 많이 보인다. 마인드 컨트롤 사용 시 게임이 허락한다면 다중 종족 생산을 위해 일꾼 빼앗기를 우선시하거나, 접근 가능한 가장 비싼 적 유닛을 빼앗아야 한다. 시전 후 보호막이 0이 되므로 다크 아콘을 즉시 보호해야 한다.
+마인드 컨트롤은 프로 경기에서 드물다. 가장 잘 알려진 사용법은 건설로봇이나 드론 같은 일꾼을 빼앗아 다른 종족의 테크를 올리는 것이며, 캐리어·시즈 탱크·디파일러 같은 고가 유닛을 빼앗을 수도 있다. 빼앗은 유닛은 별도 종족의 서플라이 한도에 포함된다. 시전 후 다크 아콘은 실드가 없으므로 보호해야 한다.

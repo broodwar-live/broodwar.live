@@ -1,19 +1,27 @@
 +++
 title = "Spider Mines"
-description = "Spider Mines are burrowing explosives laid by Vultures that chase and damage nearby enemy ground units."
+description = "Spider Mines are burrowing explosives laid by Vultures that leap at nearby enemy ground units."
 slug = "spider-mines"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "스파이더 마인"
 caster = "vulture"
 energy = 0
 hp_cost = 0
+damage = 125
+aoe = "50 / 75 / 100 px"
+hotkey = "I"
+researched_at = "machine-shop"
+research_minerals = 100
+research_gas = 100
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Spider_Mine"]
+verified = "2026-10-11"
 +++
-Each Vulture carries 3 Spider Mines that can be planted on the ground. Once placed, a Spider Mine burrows and becomes invisible, activating after a brief arming delay. When an enemy ground unit moves within its trigger radius, the mine unburrows and chases the target, detonating on contact for 125 explosive splash damage. Spider Mines are destroyed by detection followed by attack, and they do not trigger against hovering or flying units. Researched at the Machine Shop for 100/100.
+Once Spider Mines are researched, each Vulture carries three mines it can plant on the ground. A planted mine burrows and stays hidden until a hostile non-hovering ground unit comes near; it then unburrows, chases the target and explodes for 125 explosive damage with radial splash — full damage within 50 pixels, 50% within 75 pixels and 25% within 100 pixels. The splash also damages the mine owner's own units. Mines are triggered by cloaked units even when those units are not detected, and they ignore air and hovering units. Burrowed mines can only be attacked once detected.
 
-Spider Mines are one of Terran's most versatile tools for map control and area denial. In TvZ, planting mines at expansion locations forces the Zerg to bring an Overlord for detection before taking a new base, delaying their economy. In TvT, mine fields at choke points create deadly no-go zones that require careful sweeping. Vulture mine drops in the opponent's mineral line can devastate worker counts. In TvP, mines threaten Zealots and Dragoons, forcing the Protoss to bring Observers to detect and trigger them safely.
+The research is done at the [Machine Shop](@/wiki/buildings/machine-shop.md) for 100 minerals and 100 gas (1,200 frames, 80 s). Planting mines costs no energy; a Vulture simply runs out after three.
 
-For maximum effectiveness, plant mines in locations where the enemy must path through — ramps, bridges, and narrow passages between bases. Spreading mines across multiple locations provides broader map awareness since they reveal enemies when triggered. Avoid planting all 3 mines in one spot, as the splash from the first detonation often clears the others. Instead, space them apart to cover a wider area. Remember that each Vulture only gets 3 mines total for the game — use them strategically rather than dumping them all immediately.
+Mines are a staple of Terran mech. They protect tank lines, watch expansions and attack paths, and punish clumped ground armies. Players clear them with detection plus ranged fire, or by deliberately triggering them with a cheap unit.

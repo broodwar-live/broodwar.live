@@ -1,19 +1,29 @@
 +++
 title = "사이오닉 스톰"
-description = "사이오닉 스톰은 몇 초 동안 범위 내 모든 유닛에 큰 피해를 주는 하이 템플러 마법이다."
+description = "사이오닉 스톰은 짧은 시간 동안 범위 안 모든 유닛에 112의 피해를 주는 하이 템플러 마법이다."
 slug = "psionic-storm"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["protoss"]
 [extra]
-unverified = true
 name_en = "Psionic Storm"
 caster = "high-templar"
 energy = 75
 hp_cost = 0
+damage = 112
+damage_ticks = 8
+range = 9
+aoe = "48 px radius"
+hotkey = "T"
+researched_at = "templar-archives"
+research_minerals = 200
+research_gas = 200
+research_time = 120
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Psionic_Storm"]
+verified = "2026-10-11"
 +++
-사이오닉 스톰은 대상 지역에 파괴적인 에너지 폭풍을 일으켜, 범위 내 모든 지상 및 공중 유닛에 약 3초간 총 112의 피해를 입힌다. 이 피해는 방어력 업그레이드를 완전히 무시한다. 같은 지역에 여러 스톰을 겹쳐도 중첩되지 않는다 — 유닛은 한 번에 하나의 스톰에서만 피해를 받는다. 하이 템플러에서 에너지 75를 소모하며 템플러 아카이브에서 연구가 필요하다.
+사이오닉 스톰은 목표 지점 반경 48픽셀 안의 모든 유닛 — 공중·지상, 적·아군, 시전한 템플러 자신까지 — 에 14씩 8번, 총 112의 피해를 준다. 이 피해는 방어력과 유닛 크기를 무시하지만 실드가 먼저 깎인다. 스톰은 중첩되지 않아 한 유닛은 한 번에 하나의 스톰에서만 피해를 받는다. 건물과 스테이시스 필드에 걸린 유닛은 면역이며, 환상 유닛은 파괴된다.
 
-사이오닉 스톰은 브루드워 최강의 범위 피해 주문으로 널리 인정받는다. 모든 매치업에서 프로토스 중후반의 핵심이다. PvT에서 셔틀을 이용한 스톰 드랍은 핵심 전략이다 — 하이 템플러를 셔틀에 태우고 마린/메딕 군대 위로 날아가 스톰을 뿌리면 순식간에 바이오 병력을 전멸시킬 수 있다. PvZ에서는 히드라리스크 군대를 견제하고 뮤탈리스크 뭉침을 처벌한다. PvP에서도 드라군 밀집에 정확한 스톰을 떨어뜨리면 교전을 결정적으로 뒤집을 수 있다.
+에너지 75가 들고 사거리는 9이며, [템플러 아카이브](@/wiki/buildings/templar-archives.ko.md)에서 미네랄 200, 가스 200(1,800프레임, 120초)에 연구한다.
 
-효과적인 스톰 사용의 핵심은 밀집해 있고 쉽게 후퇴할 수 없는 유닛에 시전하는 것이다. 스톰은 중첩되지 않으므로, 한 지역에 겹치는 것보다 적군 전체에 걸쳐 여러 스톰을 분산 시전해야 한다. 스톰 드랍은 정밀한 셔틀 마이크로가 필요하다 — 템플러를 내리고, 즉시 시전하고, 죽기 전에 다시 태워야 한다. 스톰에 대응하려면 유닛을 산개하여 범위 피해를 최소화하고, 시전 전에 하이 템플러나 셔틀을 우선 처치해야 한다.
+스톰은 모든 매치업에서 프로토스의 핵심 광역 마법이다. 저프전에서는 뭉친 히드라리스크·뮤탈리스크·저글링을, 프테전에서는 마린·메딕을, 프프전에서는 드라군이나 리버·셔틀을 응징한다. 피해가 짧은 시간에 걸쳐 들어오므로 즉시 빠져나가면 일부를 피할 수 있다. 테란의 주된 대응은 템플러에 EMP 충격파를 거는 것이다.

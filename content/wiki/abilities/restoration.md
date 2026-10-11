@@ -1,25 +1,26 @@
 +++
 title = "Restoration"
-description = "Restoration is a Medic spell that removes negative status effects from a single unit."
+description = "Restoration is a Medic spell that removes harmful status effects from a single unit."
 slug = "restoration"
 template = "wiki/ability.html"
 [taxonomies]
 race = ["terran"]
 [extra]
-unverified = true
 name_ko = "레스토레이션"
 caster = "medic"
 energy = 50
 hp_cost = 0
 range = 6
-hotkey = "E"
+hotkey = "R"
 researched_at = "academy"
 research_minerals = 100
 research_gas = 100
-research_time = 50
+research_time = 80
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Restoration"]
+verified = "2026-10-11"
 +++
-Restoration instantly removes all negative status effects from a single target unit, including Plague, Ensnare, Irradiate, Lockdown, Optical Flare, Parasite, and Acid Spores. Costs 50 energy from a Medic and requires research at the Academy.
+Restoration cleanses one non-building unit. In the engine it removes Parasite, Optical Flare blindness, Ensnare, Plague, Irradiate, Lockdown, Maelstrom and Acid Spores. It does **not** end Stasis Field. Casting it on a hallucination destroys the hallucination.
 
-Restoration is a defensive utility ability that serves as Terran's universal answer to debilitating spells. In TvZ, it can remove Plague from a group of Siege Tanks or Irradiate from a friendly unit, and it cleanses Ensnare to restore movement speed during retreats. In TvT, Restoration removes Lockdown from a disabled Battlecruiser or Siege Tank. Against Protoss, its uses are limited since most Protoss abilities (Storm, Stasis) are not status effects that can be cleansed.
+It costs 50 energy, has a range of 6 and is researched at the [Academy](@/wiki/buildings/academy.md) for 100 minerals and 100 gas (1,200 frames, 80 s).
 
-Despite its versatility, Restoration is rarely a high-priority research in competitive play because the situations where it is needed are somewhat uncommon, and the 50 energy cost competes with the Medic's primary role of healing. The key to using Restoration well is keeping at least one Medic with enough energy reserved specifically for cleansing. A common mistake is allowing all Medics to drain their energy on healing, leaving none available when a critical Lockdown or Plague lands. Research it when you expect Defiler play in TvZ or Ghost play in TvT.
+Restoration is seldom researched in professional games. Its typical uses are saving an expensive unit — a Battlecruiser or Siege Tank under Plague or Lockdown — or removing a Parasite from a unit that is feeding the opponent vision. Its energy competes with the Medic's healing.

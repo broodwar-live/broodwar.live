@@ -6,16 +6,17 @@ template = "wiki/ability.html"
 [taxonomies]
 race = ["zerg"]
 [extra]
-unverified = true
 name_ko = "패러사이트"
 caster = "queen"
 energy = 75
 hp_cost = 0
 range = 12
 hotkey = "R"
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/TechType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://github.com/OpenBW/openbw/blob/master/bwgame.h", "https://liquipedia.net/starcraft/Parasite"]
+verified = "2026-10-11"
 +++
-Parasite attaches an invisible parasitic organism to a target unit, permanently granting the Zerg player full vision of everything the parasited unit sees. The effect lasts until the unit dies and cannot be removed except by a Medic's Restoration ability. The parasited unit's owner receives no notification that their unit has been infected. Costs 75 energy from a Queen with no research requirement.
+Parasite attaches to a single non-building unit and lets the Zerg player see everything that unit sees for as long as it lives. If the host is a detector, the Zerg player also sees the cloaked and burrowed units it detects. The parasite stays through morphing and merging; only death of the host or a Medic's Restoration removes it. The host's owner can notice it: the unit's wireframe turns green and a "Parasite Detected" note appears when it is selected alone.
 
-Parasite is a niche intelligence-gathering tool that provides continuous, free scouting. Casting it on an SCV, Probe, or Drone gives permanent vision of the opponent's base, revealing tech choices, army composition, and expansion timings. Parasiting a mobile unit like a Vulture or Zealot on patrol provides ongoing vision of the enemy's map movements. In ZvT, parasiting a Dropship or Science Vessel reveals Terran drop paths and push timings. Against Protoss, a parasited Observer shows exactly where the Protoss is scouting.
+It costs 75 energy, has a range of 12 — the longest of any Queen spell — and needs no research.
 
-In practice, Parasite is very rare in competitive play because Queens are seldom produced, and the other Queen abilities (Spawn Broodling, Ensnare) tend to provide more immediate tactical value. However, Parasite is tied with Ensnare as the cheapest Queen spell (75 energy) and can be cast from range without putting the Queen at risk. The best targets are units that move around the map — parasiting a stationary building-unit gives limited value. If the opponent notices the Parasite, they may kill their own unit to remove it, which is itself a small advantage.
+Parasite is rarely seen in professional play because Queens themselves are uncommon. Good hosts are units that travel with the opponent's army or tour the map, such as a Shuttle, Dropship or Science Vessel, since they reveal drops and army movement.
