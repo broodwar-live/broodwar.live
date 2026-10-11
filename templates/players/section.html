@@ -3,28 +3,76 @@
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set tsec = get_section(path="tournaments/_index.md", lang=lang) %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <h1 class="text-2xl font-display mb-6">{{ section.title }}</h1>
+  <h1 class="text-2xl font-display mb-2">{{ section.title }}</h1>
+  {% if section.description %}<p class="text-sm text-base-content/40 mb-6">{{ section.description }}</p>{% endif %}
 
-  {% set players = section.pages | sort(attribute="title") %}
+  {#- Pages arrive sorted by title (section sort_by = "title", case-insensitive). -#}
+  {% set players = section.pages %}
 
   {% if players | length > 0 %}
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+  {#- Filters: hidden until players.js enables them, so the full list works without JS. -#}
+  <form id="player-filters" class="flex flex-wrap items-end gap-3 mb-6" hidden>
+    <label class="form-control">
+      <span class="text-[11px] text-base-content/40 mb-1">{{ t.player_race }}</span>
+      <select name="race" class="select select-sm select-bordered">
+        <option value="">{{ t.player_filter_all }}</option>
+        <option value="terran">{{ t.player_race_terran }}</option>
+        <option value="protoss">{{ t.player_race_protoss }}</option>
+        <option value="zerg">{{ t.player_race_zerg }}</option>
+      </select>
+    </label>
+    <label class="form-control">
+      <span class="text-[11px] text-base-content/40 mb-1">{{ t.player_status }}</span>
+      <select name="status" class="select select-sm select-bordered">
+        <option value="">{{ t.player_filter_all }}</option>
+        <option value="active">{{ t.player_status_active }}</option>
+        <option value="retired">{{ t.player_status_retired }}</option>
+      </select>
+    </label>
+    <label class="form-control">
+      <span class="text-[11px] text-base-content/40 mb-1">{{ t.player_country }}</span>
+      <select name="country" class="select select-sm select-bordered">
+        <option value="">{{ t.player_filter_all }}</option>
+        {#- Country options are filled in by players.js from the cards' data-country values. -#}
+      </select>
+    </label>
+    <label class="form-control">
+      <span class="text-[11px] text-base-content/40 mb-1">{{ t.player_sort }}</span>
+      <select name="sort" class="select select-sm select-bordered">
+        <option value="name">{{ t.player_sort_name }}</option>
+        <option value="titles">{{ t.player_sort_titles }}</option>
+      </select>
+    </label>
+    <p class="text-xs text-base-content/40 ml-auto" aria-live="polite"><span data-player-count>{{ players | length }}</span> / {{ players | length }}</p>
+  </form>
+
+  <ul id="player-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
     {% for player in players %}
     {% set e = player.extra %}
-    <a href="{{ player.path }}" class="glass-card rounded-box p-4 glow-blue flex items-center gap-4 no-underline">
-      <span class="{% if e.race == 'terran' %}bg-race-terran{% elif e.race == 'protoss' %}bg-race-protoss{% elif e.race == 'zerg' %}bg-race-zerg{% else %}bg-base-content{% endif %} w-8 h-8 rounded-lg flex items-center justify-center text-xs font-black text-base-100">
-        {% if e.race == "terran" %}T{% elif e.race == "protoss" %}P{% elif e.race == "zerg" %}Z{% endif %}
-      </span>
-      <div class="flex-1 min-w-0">
-        <div class="font-semibold text-sm truncate">{{ player.title }}</div>
-        <div class="text-[11px] text-base-content/30">{{ e.country_name }}</div>
-      </div>
-    </a>
+    {% set_global n_titles = 0 %}
+    {% for tp in tsec.pages %}{% if tp.extra.seasons is defined %}{% for s in tp.extra.seasons %}{% if s.winner_slug is defined and s.winner_slug == player.slug %}{% set_global n_titles = n_titles + 1 %}{% endif %}{% endfor %}{% endif %}{% endfor %}
+    {% set status = "" %}{% if e.status is defined %}{% set status = e.status %}{% endif %}
+    <li data-race="{{ e.race }}" data-status="{{ status }}" data-country="{{ e.country_name }}" data-titles="{{ n_titles }}" data-name="{{ player.title | lower }}">
+      <a href="{{ player.path }}" class="glass-card rounded-box p-4 glow-blue flex items-center gap-4 no-underline h-full">
+        <span class="{% if e.race == 'terran' %}bg-race-terran{% elif e.race == 'protoss' %}bg-race-protoss{% elif e.race == 'zerg' %}bg-race-zerg{% else %}bg-base-content{% endif %} w-8 h-8 shrink-0 rounded-lg flex items-center justify-center text-xs font-black text-base-100" title="{% if e.race == 'terran' %}{{ t.player_race_terran }}{% elif e.race == 'protoss' %}{{ t.player_race_protoss }}{% elif e.race == 'zerg' %}{{ t.player_race_zerg }}{% endif %}">
+          {% if e.race == "terran" %}T{% elif e.race == "protoss" %}P{% elif e.race == "zerg" %}Z{% endif %}
+        </span>
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-sm truncate">{{ player.title }}{% if e.real_name is defined %} <span class="font-normal text-base-content/35">{{ e.real_name }}</span>{% endif %}</div>
+          <div class="text-[11px] text-base-content/30">{% set cc = e.country %}<span aria-hidden="true">{% include "players/flag.html" %}</span> {{ e.country_name }}{% if status == "active" %} · <span class="text-success/70">{{ t.player_status_active }}</span>{% elif status == "retired" %} · {{ t.player_status_retired }}{% endif %}</div>
+        </div>
+        {% if n_titles > 0 %}<span class="text-xs font-semibold text-warning/80 whitespace-nowrap" title="{{ t.player_titles }}">&#9733; {{ n_titles }}</span>{% endif %}
+      </a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
+  <p id="player-empty" class="text-sm text-base-content/30 mt-6" hidden>{{ t.player_filter_empty }}</p>
   {% else %}
-  <p class="text-sm text-base-content/30">{% if lang == "ko" %}선수가 없습니다.{% else %}No players found.{% endif %}</p>
+  <p class="text-sm text-base-content/30">{{ t.player_filter_empty }}</p>
   {% endif %}
 </div>
 {% endblock %}
+
+{% block scripts %}<script src="/js/players.js" defer></script>{% endblock %}
