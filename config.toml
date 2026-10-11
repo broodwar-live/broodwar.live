@@ -35,6 +35,9 @@ anchors = "safe"
 insert_anchor_links = "heading"
 
 [extra]
+# The JSON API (api.broodwar.live) is not deployed yet. While this is false,
+# API-backed pages and widgets render a "coming soon" state and load no JS.
+api_enabled = false
 api_base_url = "https://api.broodwar.live"
 github_repo = "https://github.com/broodwar-live/broodwar.live"
 github_content_base = "https://github.com/broodwar-live/broodwar.live/edit/main/content"
@@ -68,6 +71,10 @@ view_all = "View all"
 search = "Search"
 search_placeholder = "Search players, units, builds..."
 search_no_results = "No results found."
+soon = "Soon"
+api_soon_title = "Coming soon"
+api_soon_body = "This feature needs our API, which is still in development."
+api_soon_cta = "Follow progress on GitHub"
 
 [extra.i18n.ko]
 skip_to_content = "본문으로 건너뛰기"
@@ -98,3 +105,7 @@ view_all = "모두 보기"
 search = "검색"
 search_placeholder = "선수, 유닛, 빌드 검색..."
 search_no_results = "결과가 없습니다."
+soon = "준비 중"
+api_soon_title = "준비 중입니다"
+api_soon_body = "이 기능은 현재 개발 중인 API가 필요합니다."
+api_soon_cta = "GitHub에서 진행 상황 보기"

@@ -119,7 +119,7 @@
           <div class="hidden lg:flex items-center gap-0.5">
             {% for key in ["players", "matches", "tournaments", "replays", "builds", "wiki"] %}
             {% set href = "/" ~ key %}{% set active = href in current_path %}
-            <a href="{% if lang == 'ko' %}/ko{% endif %}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if active %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}</a>
+            <a href="{% if lang == 'ko' %}/ko{% endif %}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if active %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}{% if not config.extra.api_enabled and key in ["matches", "replays"] %}<span class="ml-1 align-super text-[8px] font-semibold uppercase tracking-wider text-warning/60">{{ t.soon }}</span>{% endif %}</a>
             {% endfor %}
           </div>
 
@@ -128,10 +128,18 @@
               <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
             </button>
 
-            <a href="/streams" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error/10 text-error text-xs font-semibold hover:bg-error/15 transition-colors">
+            {% if config.extra.api_enabled %}
+            <a href="{% if lang == 'ko' %}/ko{% endif %}/streams/" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error/10 text-error text-xs font-semibold hover:bg-error/15 transition-colors">
               <span class="w-1.5 h-1.5 rounded-full bg-error animate-live-pulse" aria-hidden="true"></span>
               {{ t.live }}
             </a>
+            {% else %}
+            <a href="{% if lang == 'ko' %}/ko{% endif %}/streams/" title="{{ t.api_soon_body }}" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-base-content/5 text-base-content/40 text-xs font-semibold hover:text-base-content/60 transition-colors">
+              <span class="w-1.5 h-1.5 rounded-full bg-base-content/30" aria-hidden="true"></span>
+              {{ t.live }}
+              <span class="text-[8px] uppercase tracking-wider text-warning/60">{{ t.soon }}</span>
+            </a>
+            {% endif %}
 
             {# Language toggle #}
             <div role="group" aria-label="{{ t.language }}" class="flex items-center border border-primary/10 bg-base-300/60 rounded-lg p-0.5 gap-0.5">
@@ -207,10 +215,10 @@
             <h4 class="text-xs font-semibold text-base-content/50 uppercase tracking-wider mb-4">{{ t.platform }}</h4>
             <ul class="space-y-2.5">
               <li><a href="/players" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.players }}</a></li>
-              <li><a href="/matches" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.matches }}</a></li>
-              <li><a href="/replays" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.replays }}</a></li>
+              <li><a href="/matches" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.matches }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
+              <li><a href="/replays" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.replays }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
               <li><a href="/builds" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.builds }}</a></li>
-              <li><a href="/streams" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.live_streams }}</a></li>
+              <li><a href="/streams" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.live_streams }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
             </ul>
           </nav>
 
@@ -230,7 +238,7 @@
             <ul class="space-y-2.5">
               <li><a href="/tournaments/asl" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">ASL</a></li>
               <li><a href="/tournaments/bsl" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">BSL</a></li>
-              <li><a href="/balance" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.balance }}</a></li>
+              <li><a href="/balance" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.balance }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
               <li><a href="/tournaments" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.rankings }}</a></li>
             </ul>
           </nav>

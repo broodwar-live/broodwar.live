@@ -34,7 +34,16 @@
   {% endif %}
 
   <h2 class="text-xl font-display mt-12 mb-6">{% if lang == "ko" %}오프닝 통계{% else %}Opening Statistics{% endif %}</h2>
+  {% if config.extra.api_enabled %}
   <div id="openings-app" data-api="{{ config.extra.api_base_url }}" aria-busy="true"></div>
+  {% else %}
+  {% set soon_compact = true %}{% include "partials/api-soon.html" %}
+  {% endif %}
 </div>
+{% endblock %}
+
+{% block scripts %}
+{% if config.extra.api_enabled %}
 <script src="/js/openings.js" defer></script>
+{% endif %}
 {% endblock %}
