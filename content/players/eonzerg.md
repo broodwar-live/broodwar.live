@@ -12,6 +12,7 @@ country = "BE"
 country_name = "Belgium"
 real_name = "Jose Luis Mora Diaz"
 birth_date = "1991-07-04"
+status = "active"
 years_active = "2008–2019"
 team = "NaS"
 aliases = ["iFU.eOnzErG", "Innovacion", "fake.RoX"]

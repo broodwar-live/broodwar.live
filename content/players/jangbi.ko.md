@@ -12,6 +12,7 @@ country_name = "한국"
 real_name = "허영무"
 romanized_name = "Heo Yeong Moo"
 birth_date = "1989-05-03"
+status = "retired"
 years_active = "2006–2013"
 team = "Samsung KHAN"
 aliases = ["Dream.t)JangBi"]

@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "이예준"
 romanized_name = "Lee Ye Joon"
 birth_date = "1989-10-19"
+status = "retired"
 aliases = ["Terror[fou]", "1a2a3a[fOu]", "이철민", "철구형2↑"]
 liquipedia = "https://liquipedia.net/starcraft/Terror"
 soop = "y1026"

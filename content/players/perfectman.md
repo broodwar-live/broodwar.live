@@ -12,6 +12,7 @@ country_name = "South Korea"
 real_name = "김태균"
 romanized_name = "Kim Tae Gyoon"
 birth_date = "1991-03-18"
+status = "retired"
 years_active = "2008–2014"
 aliases = ["PerfectMan[kal]", "Future"]
 liquipedia = "https://liquipedia.net/starcraft/PerfectMan"

@@ -13,7 +13,6 @@ country_name = "China"
 real_name = "庞伟铸"
 romanized_name = "Pang Weizhu"
 birth_date = "1992-09-26"
-status = "active"
 team = "SvS"
 aliases = ["Zhanhun，ZhanHun"]
 liquipedia = "https://liquipedia.net/starcraft/Zhanhun"

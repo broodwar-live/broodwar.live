@@ -13,6 +13,7 @@ country_name = "한국"
 real_name = "변현제"
 romanized_name = "Byun Hyun Je"
 birth_date = "1994-01-28"
+status = "active"
 aliases = ["Ever)P(mini", "WGM.Sapa", "Moo.Sapa", "Mini1", "bye0128"]
 liquipedia = "https://liquipedia.net/starcraft/Mini"
 soop = "bye1013"

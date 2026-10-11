@@ -12,6 +12,7 @@ country_name = "한국"
 real_name = "임홍규"
 romanized_name = "Lim Hong Gyu"
 birth_date = "1994-07-19"
+status = "active"
 aliases = ["Larva[S.G]", "jat.honggu", "Jat.Hong9", "[NeOx]Hong9"]
 liquipedia = "https://liquipedia.net/starcraft/Larva_(Player)"
 soop = "dpfgc3"

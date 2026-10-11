@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "최호선"
 romanized_name = "Choi Ho Seon"
 birth_date = "1989-02-14"
+status = "active"
 years_active = "2008–2013"
 aliases = ["Ssak[kaL]", "Mong_Lt", "`byebye`"]
 liquipedia = "https://liquipedia.net/starcraft/SSak"

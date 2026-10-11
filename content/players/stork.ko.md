@@ -13,6 +13,7 @@ country_name = "한국"
 real_name = "송병구"
 romanized_name = "Song Byung Goo"
 birth_date = "1988-08-04"
+status = "active"
 aliases = ["Stork[gm]", "mansa[ok]", "sbg[gm]"]
 liquipedia = "https://liquipedia.net/starcraft/Stork"
 soop = "koreasbg"

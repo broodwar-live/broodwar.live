@@ -13,6 +13,7 @@ real_name = "임진묵"
 romanized_name = "Lim Jin Mook"
 birth_date = "1988-01-29"
 team = "Woongjin Stars"
+status = "active"
 aliases = ["Organ", "Ever)T(PianO", "PianO[3.33]", "Organ[3.33]"]
 liquipedia = "https://liquipedia.net/starcraft/PianO"
 soop = "organ333"

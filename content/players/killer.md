@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "박준오"
 romanized_name = "Park Joon Oh"
 birth_date = "1992-06-24"
+status = "active"
 years_active = "2007–2015"
 aliases = ["BaxteR", "Sea.Baxter", "Ever)Z(Killer", "ggamssi", "Killer[White]", "Zerg"]
 liquipedia = "https://liquipedia.net/starcraft/Killer"

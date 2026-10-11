@@ -13,6 +13,7 @@ country_name = "한국"
 real_name = "이윤열"
 romanized_name = "Lee Yoon Yeol"
 birth_date = "1984-11-20"
+status = "retired"
 years_active = "2001–2010"
 aliases = ["[Red]NaDa", "Sea.s2"]
 liquipedia = "https://liquipedia.net/starcraft/NaDa"

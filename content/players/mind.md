@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "박성균"
 romanized_name = "Park Sung Gyoon"
 birth_date = "1991-10-03"
+status = "active"
 years_active = "2006–2023"
 aliases = ["Mindd[WHITE]", "InteR.Mind"]
 liquipedia = "https://liquipedia.net/starcraft/Mind"

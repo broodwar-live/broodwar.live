@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "김택용"
 romanized_name = "Kim Taek Yong"
 birth_date = "1989-11-03"
+status = "active"
 years_active = "2005–2013"
 aliases = ["Bisu[Shield]"]
 liquipedia = "https://liquipedia.net/starcraft/Bisu"

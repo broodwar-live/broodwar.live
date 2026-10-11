@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "이재호"
 romanized_name = "Lee Jae Ho"
 birth_date = "1990-03-28"
+status = "active"
 years_active = "2006–2022"
 aliases = ["Light[aLive]", "NoN.ge"]
 liquipedia = "https://liquipedia.net/starcraft/Light"

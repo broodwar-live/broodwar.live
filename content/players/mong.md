@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "윤찬희"
 romanized_name = "Yoon Chan Hee"
 birth_date = "1992-05-17"
+status = "active"
 years_active = "2010–2014"
 aliases = ["Mong[Name]", "Monster[WHITE]", "Ever)T(Gowoon", "Buffalo", "mstzmstz"]
 liquipedia = "https://liquipedia.net/starcraft/Mong"

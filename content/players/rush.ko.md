@@ -13,6 +13,7 @@ country_name = "한국"
 real_name = "유영진"
 romanized_name = "Yoo Young Jin"
 birth_date = "1991-11-30"
+status = "active"
 aliases = ["Rush[WHITE]", "Rush[kaL]"]
 liquipedia = "https://liquipedia.net/starcraft/Rush"
 soop = "yoo376"

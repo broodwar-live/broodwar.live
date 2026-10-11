@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "김명운"
 romanized_name = "Kim Myung Woon"
 birth_date = "1990-02-18"
+status = "active"
 aliases = ["ZerO", "MenSol[ZerO]"]
 liquipedia = "https://liquipedia.net/starcraft/ZerO"
 soop = "kimmyungwun"

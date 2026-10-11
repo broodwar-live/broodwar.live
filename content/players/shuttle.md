@@ -12,6 +12,7 @@ country_name = "South Korea"
 real_name = "김윤중"
 romanized_name = "Kim Yoon Joong"
 birth_date = "1990-07-04"
+status = "active"
 aliases = ["By.BorAdori", "InTrO)BorAdori", "YoonJoong", "eyewater[white]", "Jum", "jumbot", "TaechoJum"]
 liquipedia = "https://liquipedia.net/starcraft/Shuttle_(Player)"
 soop = "jk890202"

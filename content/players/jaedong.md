@@ -13,6 +13,7 @@ country_name = "South Korea"
 real_name = "이제동"
 romanized_name = "Lee Jae Dong"
 birth_date = "1990-01-09"
+status = "active"
 aliases = ["JD", "n.Die_Jaedong", "n.Die_yOngKIN"]
 liquipedia = "https://liquipedia.net/starcraft/Jaedong"
 soop = "jaedong23"

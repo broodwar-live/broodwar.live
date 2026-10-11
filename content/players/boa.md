@@ -12,7 +12,6 @@ country = "CA"
 country_name = "Canada"
 real_name = "John Dong"
 birth_date = "1993-10-25"
-status = "active"
 team = "Crazy Warriors Team"
 aliases = []
 liquipedia = "https://liquipedia.net/starcraft/BoA"

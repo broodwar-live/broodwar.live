@@ -13,6 +13,7 @@ country_name = "한국"
 real_name = "김지성"
 romanized_name = "Kim Ji Sung"
 birth_date = "1995-08-10"
+status = "active"
 aliases = ["sOrry", "Neo.G_hudadak", "ErOs_sOrry"]
 liquipedia = "https://liquipedia.net/starcraft/RoyaL"
 sources = ["https://liquipedia.net/starcraft/RoyaL"]

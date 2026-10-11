@@ -11,6 +11,7 @@ country = "CA"
 country_name = "Canada"
 real_name = "Payam Toghyan"
 birth_date = "1988-03-18"
+status = "active"
 aliases = ["KabaL", "fnatic.KabaL", "Probe"]
 liquipedia = "https://liquipedia.net/starcraft/TT1"
 sources = ["https://liquipedia.net/starcraft/TT1"]

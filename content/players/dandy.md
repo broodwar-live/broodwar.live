@@ -13,6 +13,7 @@ country_name = "Peru"
 real_name = "Luis Enrique Cutipa Orco"
 birth_date = "1991-12-07"
 team = "SouLGaming"
+status = "active"
 aliases = ["SouL)T(Dandy", "Daishinkai", "LG)LUiS", "El_Cheroka", "Amenhotep"]
 liquipedia = "https://liquipedia.net/starcraft/Dandy"
 sources = ["https://liquipedia.net/starcraft/Dandy"]

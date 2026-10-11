@@ -13,6 +13,7 @@ country_name = "한국"
 real_name = "이영한"
 romanized_name = "Lee Young Han"
 birth_date = "1991-08-24"
+status = "active"
 years_active = "2008–2017"
 team = "SouLGaming"
 aliases = ["Shine[kaL]", "Shine[KQL]"]
