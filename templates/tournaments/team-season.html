@@ -16,6 +16,9 @@
       [[extra.team_bracket]]      playoff rounds, in order; the last round with a single match
         round, best_of            is the final. best_of = sets per team match.
         series_best_of            optional: ties decided over several team matches ("legs")
+        all_kill = true           optional: all-kill / Winners League format -- the sets are
+                                  sequential games in which the winner stays on, so the winner of
+                                  set n is the same side's player in set n+1 (validated)
         [[extra.team_bracket.matches]]
           a, a_team, b, b_team    team names at the time + wiki/teams slugs
           score_a, score_b, date  sets won (legs won when the tie has `legs`); date of the last game
@@ -25,7 +28,10 @@
                      winner = "a" | "b", ace = true, walkover = true } ]
           [[extra.team_bracket.matches.legs]]   only for multi-match ties:
             date, score_a, score_b, sets = [...] (oriented like the tie: a = the tie's team a)
-      Races are "t" | "p" | "z" | "r" per set. The key is `team_bracket`, not `bracket`, so
+            super_ace = true      a single-game tiebreaker leg (one set, score 1–0)
+          sc2_a, sc2_b            hybrid matches (2011–12 Season 2): StarCraft II sets won, counted
+                                  in score_a/score_b but not listed (match or leg level)
+      Races are "t" | "p" | "z" | "r" per set (omitted when the source has none). The key is `team_bracket`, not `bracket`, so
       team-league sets never enter the individual playoff record (players/player.html).
       scripts/check-team-leagues.py validates the sums, the series rows and every slug. -#}
 {% extends "base.html" %}
@@ -91,7 +97,7 @@
             <ol class="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:min-w-max">
               {% for rd in e.team_bracket %}{% set ri = loop.index %}
               <li class="sm:w-60 flex flex-col">
-                <h3 class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ rd.round }}{% if rd.best_of %} <span class="font-stats normal-case text-base-content/60">· {% if rd.series_best_of is defined %}{{ t.tl_series_of | replace(from="{n}", to=rd.series_best_of ~ "") }} · {% endif %}Bo{{ rd.best_of }}</span>{% endif %}</h3>
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ rd.round }}{% if rd.best_of %} <span class="font-stats normal-case text-base-content/60">· {% if rd.series_best_of is defined %}{{ t.tl_series_of | replace(from="{n}", to=rd.series_best_of ~ "") }} · {% endif %}Bo{{ rd.best_of }}</span>{% endif %}{% if rd.all_kill is defined and rd.all_kill %} <abbr title="{{ t.tl_all_kill_title }}" class="no-underline ml-1 inline-block rounded bg-info/10 px-1.5 py-0.5 text-[11px] font-semibold normal-case tracking-normal text-info">{{ t.tl_all_kill }}</abbr>{% endif %}</h3>
                 <ul class="flex flex-col justify-around gap-3 flex-1">
                   {% for m in rd.matches %}
                   {% set a_won = m.score_a > m.score_b %}{% if m.walkover is defined and m.walkover %}{% set a_won = m.walkover == "a" %}{% endif %}
@@ -137,18 +143,20 @@
             </summary>
             <div class="border-t border-primary/10">
               <div class="grid grid-cols-[minmax(0,1fr)_3.25rem_minmax(0,1fr)] gap-x-2 px-3 pt-2 text-[11px] font-semibold uppercase tracking-wider text-base-content/70">
-                <span class="text-right truncate">{{ m.a }}</span><span class="text-center">{{ t.tl_set }}</span><span class="truncate">{{ m.b }}</span>
+                <span class="text-right truncate">{{ m.a }}</span><span class="text-center">{% if rd.all_kill is defined and rd.all_kill %}<abbr title="{{ t.tl_all_kill_title }}" class="no-underline text-info">{{ t.tl_all_kill }}</abbr>{% else %}{{ t.tl_set }}{% endif %}</span><span class="truncate">{{ m.b }}</span>
               </div>
               {% if m.legs is defined %}
               {% for lg in m.legs %}
               <h3 class="mt-2 px-3 py-1.5 bg-base-content/5 text-xs font-semibold flex flex-wrap justify-between gap-2">
-                <span>{{ t.tl_leg | replace(from="{n}", to=loop.index ~ "") }} <span class="font-stats text-base-content/70">{{ lg.score_a }}–{{ lg.score_b }}</span></span>
+                <span>{% if lg.super_ace is defined and lg.super_ace %}{{ t.tl_super_ace }}{% else %}{{ t.tl_leg | replace(from="{n}", to=loop.index ~ "") }} <span class="font-stats text-base-content/70">{{ lg.score_a }}–{{ lg.score_b }}</span>{% endif %}</span>
                 {% if lg.date %}<time class="font-stats font-normal text-base-content/70" datetime="{{ lg.date }}">{{ lg.date }}</time>{% endif %}
               </h3>
               {% set sl_sets = lg.sets %}{% include "tournaments/set-list.html" %}
+              {% if lg.sc2_a is defined %}<p class="px-3 pb-2 text-center text-[11px] text-base-content/70">{{ t.tl_sc2_note | replace(from="{a}", to=lg.sc2_a ~ "") | replace(from="{b}", to=lg.sc2_b ~ "") }}</p>{% endif %}
               {% endfor %}
               {% else %}
               {% set sl_sets = m.sets %}{% include "tournaments/set-list.html" %}
+              {% if m.sc2_a is defined %}<p class="px-3 pb-2 text-center text-[11px] text-base-content/70">{{ t.tl_sc2_note | replace(from="{a}", to=m.sc2_a ~ "") | replace(from="{b}", to=m.sc2_b ~ "") }}</p>{% endif %}
               {% endif %}
             </div>
           </details>

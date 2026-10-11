@@ -279,6 +279,10 @@ tl_h2h_note = "The team-league column counts 1v1 sets from team-league playoffs;
 tl_set_list = "Sets"
 tl_format = "Format"
 tl_infobox = "Team league sets"
+tl_all_kill = "All-kill"
+tl_all_kill_title = "All-kill format: the winner of each set stays on to play the next set"
+tl_super_ace = "Super ace match"
+tl_sc2_note = "Plus StarCraft II sets {a}–{b} (not listed)"
 # Replay analyzer (templates/replays.html, static/js/replay-analyzer.js)
 replay_intro = "Drop one or more .rep files to see build orders, APM over time, openings and tech paths."
 replay_privacy_title = "Your replay never leaves your browser"
@@ -635,6 +639,10 @@ tl_h2h_note = "팀리그 열은 팀리그 플레이오프 개인전 세트만 �
 tl_set_list = "세트"
 tl_format = "방식"
 tl_infobox = "팀리그 세트"
+tl_all_kill = "올킬"
+tl_all_kill_title = "올킬 방식: 각 세트의 승자가 다음 세트에도 출전"
+tl_super_ace = "슈퍼 에이스결정전"
+tl_sc2_note = "스타크래프트 II 세트 {a}:{b} 별도(목록 생략)"
 # Replay analyzer (templates/replays.html, static/js/replay-analyzer.js)
 replay_intro = ".rep 파일을 하나 이상 놓으면 빌드 오더, 시간대별 APM, 오프닝, 테크 트리를 보여 줍니다."
 replay_privacy_title = "리플레이는 브라우저 밖으로 나가지 않습니다"

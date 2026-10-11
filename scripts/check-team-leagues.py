@@ -7,12 +7,15 @@ Team-league season pages (content/tournaments/*.md with extra.team_bracket, sche
 templates/tournaments/team-season.html) and team-league series rows (extra.seasons[] with
 winner_team / runner_up_team, templates/tournaments/series.html) are checked for:
 
-  * set winners summing to each team match's score, leg winners to each tie's score, and
-    the winner reaching the majority of best_of (series_best_of for ties);
+  * set winners (plus sc2_a / sc2_b, StarCraft II sets of hybrid matches) summing to each
+    team match's score, leg winners to each tie's score, and the winner reaching the
+    majority of best_of (series_best_of for ties; a super_ace leg is a single set);
+  * all_kill rounds: the winner of each set plays the next set for the same side;
   * the final (last round, single match) agreeing with the page's champion / runner-up /
     final_score / final_date and with the season's row on the series page;
-  * every team, player and map slug resolving to a page (EN and KO), races being t/p/z/r,
-    and the teams of every bracket match appearing in the season's `teams` list;
+  * every team, player and map slug resolving to a page (EN and KO), races (when given)
+    being t/p/z/r, and the teams of every bracket match appearing in the season's `teams`
+    list (by slug, or by name for teams without a page);
   * standings: match wins equal match losses (set totals that do not balance are a note);
   * KO pages carrying the same data as EN (round names, format and award labels may differ);
   * built pages: data-tl-sets / data-tl-1v1 / data-tl-finals on every player page and
@@ -105,6 +108,7 @@ def main():
         if row is None:
             errors.append(f"{where}: no row for season '{e.get('season')}' on tournaments/{e.get('series_slug')}")
         team_names = {t["name"] for t in e.get("teams", [])}
+        team_slugs = {t["slug"] for t in e.get("teams", []) if t.get("slug")}
         for t in e.get("teams", []):
             if t.get("slug"):
                 exists("team", t["slug"], where)
@@ -133,7 +137,8 @@ def main():
                 for side in ("a", "b"):
                     if m.get(side + "_team"):
                         exists("team", m[side + "_team"], mw)
-                    if team_names and m.get(side) not in team_names:
+                    ts = m.get(side + "_team")
+                    if (ts and ts not in team_slugs) or (not ts and m.get(side) not in team_names):
                         errors.append(f"{mw}: team '{m.get(side)}' is not in the season's teams list")
                 sa, sb = m.get("score_a"), m.get("score_b")
                 if m.get("walkover"):
@@ -159,17 +164,27 @@ def main():
                     c = Counter(s.get("winner") for s in sets)
                     if set(c) - {"a", "b"}:
                         errors.append(f"{gw}: set winner must be 'a' or 'b'")
-                    if (c["a"], c["b"]) != (g["score_a"], g["score_b"]):
-                        errors.append(f"{gw}: set winners {c['a']}–{c['b']} != score {g['score_a']}–{g['score_b']}")
-                    if bo and max(g["score_a"], g["score_b"]) != (bo + 1) // 2:
+                    sc2 = (g.get("sc2_a", 0), g.get("sc2_b", 0))
+                    if (c["a"] + sc2[0], c["b"] + sc2[1]) != (g["score_a"], g["score_b"]):
+                        errors.append(f"{gw}: set winners {c['a']}–{c['b']}" + (f" + StarCraft II {sc2[0]}–{sc2[1]}" if any(sc2) else "")
+                                      + f" != score {g['score_a']}–{g['score_b']}")
+                    if g.get("super_ace"):
+                        if len(sets) != 1:
+                            errors.append(f"{gw}: a super_ace leg must have exactly one set")
+                    elif bo and max(g["score_a"], g["score_b"]) != (bo + 1) // 2:
                         errors.append(f"{gw}: winner has {max(g['score_a'], g['score_b'])} sets, Bo{bo} needs {(bo + 1) // 2}")
+                    if rd.get("all_kill"):
+                        for si in range(len(sets) - 1):
+                            w = sets[si].get("winner")
+                            if w in ("a", "b") and sets[si + 1].get(w) != sets[si].get(w):
+                                errors.append(f"{gw} set {si + 2}: all-kill winner {sets[si].get(w)} of set {si + 1} does not play on")
                     for si, s in enumerate(sets, 1):
                         for f in ("a", "a2", "b", "b2"):
                             if f not in s:
                                 continue
                             if s.get(f + "_slug"):
                                 exists("player", s[f + "_slug"], f"{gw} set {si}")
-                            if s.get(f + "_race", "") not in RACES:
+                            if f + "_race" in s and s[f + "_race"] not in RACES:
                                 errors.append(f"{gw} set {si}: {s[f]} race '{s.get(f + '_race', '')}' not in t/p/z/r")
                         if s.get("map_slug"):
                             exists("map", s["map_slug"], f"{gw} set {si}")
