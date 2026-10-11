@@ -18,12 +18,12 @@
 {% set e = page.extra %}
 {% set race = e.race | default(value=page.taxonomies.race | default(value=[]) | first | default(value="")) %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
     <a href="{{ lp }}/wiki/" class="hover:text-base-content/60">{{ t.wiki }}</a>
     <span class="mx-1.5">/</span>
     <a href="{{ lp }}/wiki/upgrades/" class="hover:text-base-content/60">{% if lang == "ko" %}업그레이드{% else %}Upgrades{% endif %}</a>
     <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ page.title }}</span>
+    <span class="text-base-content/60">{{ page.title }}</span>
   </nav>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -32,7 +32,7 @@
       <h1 class="text-2xl font-display">{{ page.title }}</h1>
       <div class="flex items-center gap-3 mt-2">
         {% if race %}
-        <span class="text-[10px] font-bold badge-race
+        <span class="text-[11px] font-bold badge-race
           {% if race == 'terran' %}text-race-terran
           {% elif race == 'protoss' %}text-race-protoss
           {% elif race == 'zerg' %}text-race-zerg{% endif %}">
@@ -40,7 +40,7 @@
         </span>
         {% endif %}
         {% if e.researched_at is defined %}
-        {% set link_page = get_page(path="wiki/buildings/" ~ e.researched_at ~ ".md", lang=lang) | default(value=false) %}<a href="{{ lp }}/wiki/buildings/{{ e.researched_at }}/" class="text-xs text-primary/50 hover:text-primary/80 transition-colors">{% if link_page %}{{ link_page.title }}{% else %}{{ e.researched_at | replace(from="-", to=" ") | title }}{% endif %}</a>
+        {% set link_page = get_page(path="wiki/buildings/" ~ e.researched_at ~ ".md", lang=lang) | default(value=false) %}<a href="{{ lp }}/wiki/buildings/{{ e.researched_at }}/" class="text-xs text-primary hover:text-primary/80 transition-colors">{% if link_page %}{{ link_page.title }}{% else %}{{ e.researched_at | replace(from="-", to=" ") | title }}{% endif %}</a>
         {% endif %}
       </div>
 
@@ -52,10 +52,10 @@
       {% if race %}
       {% set upgrades_section = get_section(path="wiki/upgrades/_index.md") %}
       <div class="navbox mt-8">
-        <div class="text-[10px] font-semibold uppercase tracking-wider mb-2
-          {% if race == 'terran' %}text-race-terran/50
-          {% elif race == 'protoss' %}text-race-protoss/50
-          {% elif race == 'zerg' %}text-race-zerg/50{% endif %}">
+        <div class="text-[11px] font-semibold uppercase tracking-wider mb-2
+          {% if race == 'terran' %}text-race-terran
+          {% elif race == 'protoss' %}text-race-protoss
+          {% elif race == 'zerg' %}text-race-zerg{% endif %}">
           {{ race | title }} {% if lang == "ko" %}업그레이드{% else %}Upgrades{% endif %}
         </div>
         <div class="flex flex-wrap gap-x-1 text-xs leading-relaxed">
@@ -66,7 +66,7 @@
             {% else %}
             <a href="{{ u.path }}">{{ u.title }}</a>
             {% endif %}
-            <span class="text-base-content/15 last:hidden">&middot;</span>
+            <span class="text-base-content/60 last:hidden">&middot;</span>
           {% endif %}
           {% endfor %}
         </div>
@@ -84,7 +84,7 @@
         <div class="bg-primary/5 px-5 py-3 border-b border-primary/10">
         {% endif %}
           <div class="font-display text-lg">{{ page.title }}</div>
-          {% if e.name_ko is defined %}<div class="text-xs text-base-content/30 mt-0.5">{{ e.name_ko }}</div>{% endif %}
+          {% if e.name_ko is defined %}<div class="text-xs text-base-content/60 mt-0.5">{{ e.name_ko }}</div>{% endif %}
         </div>
 
         <div class="p-5">
@@ -92,13 +92,13 @@
           <div class="infobox-section">
             <span class="infobox-label">{% if lang == "ko" %}비용{% else %}Cost{% endif %}</span>
             <dl class="infobox-dl">
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd>{{ e.minerals }}</dd></div>
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</dt><dd>{{ e.gas }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd>{{ e.minerals }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</dt><dd>{{ e.gas }}</dd></div>
               {% if e.levels is defined and e.levels > 1 %}
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}레벨{% else %}Levels{% endif %}</dt><dd>{{ e.levels }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}레벨{% else %}Levels{% endif %}</dt><dd>{{ e.levels }}</dd></div>
               {% endif %}
               {% if e.research_time is defined %}
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}연구시간{% else %}Research Time{% endif %}</dt><dd>{{ e.research_time }}s</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}연구시간{% else %}Research Time{% endif %}</dt><dd>{{ e.research_time }}s</dd></div>
               {% endif %}
             </dl>
           </div>

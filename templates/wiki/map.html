@@ -23,30 +23,50 @@
 {% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="{{ lp }}/wiki/" class="hover:text-base-content/60">{{ t.wiki }}</a>
-    <span class="mx-1.5">/</span>
-    <a href="{{ lp }}/wiki/maps/" class="hover:text-base-content/60">{% if lang == "ko" %}맵{% else %}Maps{% endif %}</a>
-    <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ page.title }}</span>
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/wiki/" class="hover:text-primary">{{ t.wiki }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <a href="{{ lp }}/wiki/maps/" class="hover:text-primary">{% if lang == "ko" %}맵{% else %}Maps{% endif %}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ page.title }}</span>
   </nav>
 
+  <h1 class="text-2xl font-display mb-6">{{ page.title }}</h1>
+
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    <div class="lg:col-span-2">
-      <h1 class="text-2xl font-display">{{ page.title }}</h1>
-      <div class="mt-6 prose prose-invert max-w-none">{{ page.content | safe }}</div>
+    <div class="lg:col-span-2 min-w-0">
+      <div class="prose prose-invert max-w-none [&_table]:block [&_table]:overflow-x-auto">{{ page.content | safe }}</div>
     </div>
 
-    <div class="glass-card rounded-box p-5">
-      <h3 class="text-xs font-semibold text-base-content/50 uppercase tracking-wider mb-4">{% if lang == "ko" %}맵 상세 정보{% else %}Map Details{% endif %}</h3>
-      <dl class="space-y-3 text-sm">
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}크기{% else %}Dimensions{% endif %}</dt><dd class="font-stats">{{ e.dimensions }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}타일셋{% else %}Tileset{% endif %}</dt><dd>{{ e.tileset }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}시작점{% else %}Spawns{% endif %}</dt><dd class="font-stats">{{ e.players }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}시대{% else %}Era{% endif %}</dt><dd>{{ e.era }}</dd></div>
-      </dl>
-    </div>
+    {#- Infobox. A minimap image is shown only when static/images/wiki/maps/<slug>.jpg exists. -#}
+    {% set img_meta = get_image_metadata(path="images/wiki/maps/" ~ page.slug ~ ".jpg", allow_missing=true) %}
+    {% set ib_image = "" %}{% if img_meta %}{% set ib_image = "/images/wiki/maps/" ~ page.slug ~ ".jpg" %}{% endif %}
+    {% set ib_image_aspect = "square" %}{% set ib_image_fit = "contain" %}
+    {% set ib_title = page.title %}
+    {% set ib_subtitle = e.name_ko | default(value="") %}{% if lang == "ko" %}{% set ib_subtitle = "" %}{% endif %}
+    {% set ib_label = t.data_map_details %}
+    {% set v_tileset %}<a href="#map-navbox" class="hover:text-primary hover:underline">{{ e.tileset }}</a>{% endset %}
+    {% set ib_rows = [
+      [t.data_dimensions, "<span class=\"font-stats\">" ~ e.dimensions ~ "</span>"],
+      [t.data_tileset, v_tileset],
+      [t.data_spawns, "<span class=\"font-stats\">" ~ e.players ~ "</span>"],
+      [lang == "ko" and "시작 위치" or "Start positions", e.spawn_positions | default(value="")],
+      [t.data_era, e.era]
+    ] %}
+    {% set ib_sections = [["", ib_rows]] %}
+    {% include "partials/infobox.html" %}
   </div>
+
+  {#- Navbox: other maps on the same tileset. -#}
+  {% set msec = get_section(path="wiki/maps/_index.md", lang=lang) %}
+  <nav id="map-navbox" class="navbox mt-10 scroll-mt-24" aria-label="{{ e.tileset }}">
+    <div class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ e.tileset }} &middot; {{ t.data_maps_same_tileset }}</div>
+    <ul class="flex flex-wrap gap-x-3 gap-y-1 text-sm">
+      {% for m in msec.pages | sort(attribute="title") %}{% if m.extra.tileset == e.tileset %}
+      <li>{% if m.path == page.path %}<span class="navbox-current" aria-current="page">{{ m.title }}</span>{% else %}<a href="{{ m.path }}">{{ m.title }}</a> <span class="text-xs text-base-content/60 font-stats">{{ m.extra.era }}</span>{% endif %}</li>
+      {% endif %}{% endfor %}
+    </ul>
+  </nav>
 
   {% include "partials/provenance.html" %}
 </div>
