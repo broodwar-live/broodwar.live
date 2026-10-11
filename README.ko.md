@@ -62,7 +62,7 @@ Tailwind CSS + daisyUI로 스타일링하며, Cloudflare Pages에서 서비스�
 ## 빠른 시작
 
 준비물: [Zola](https://www.getzola.org/documentation/getting-started/installation/) **0.23.6**
-(0.22.1도 동작) 및 Node.js 22 이상.
+(0.22 이하는 동작하지 않음) 및 Node.js 22 이상.
 
 ```bash
 npm ci                # Tailwind CSS + daisyUI 설치
@@ -114,7 +114,7 @@ config.toml            사이트 설정, 다국어 문자열, 기능 플래그
 ## 배포
 
 Cloudflare Pages가 `main`에 푸시될 때마다 빌드합니다 (PR마다 미리보기 배포). Zola 버전은
-`ZOLA_VERSION`으로 고정합니다. [cloudflare-pages.md](cloudflare-pages.md)를 참고하세요.
+빌드 명령에 고정되어 있습니다. [cloudflare-pages.md](cloudflare-pages.md)를 참고하세요.
 
 ## 관련 프로젝트
 

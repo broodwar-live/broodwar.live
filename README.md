@@ -62,7 +62,7 @@ history, replay analysis, live streams, balance stats) call a separate JSON API,
 ## Quick Start
 
 Prerequisites: [Zola](https://www.getzola.org/documentation/getting-started/installation/) **0.23.6**
-(0.22.1 also works) and Node.js 22+.
+(0.22 and older don't work) and Node.js 22+.
 
 ```bash
 npm ci                # Tailwind CSS + daisyUI
@@ -112,8 +112,8 @@ News posts go in `content/news/` with `date`, `authors` and optional `tags` in t
 
 ## Deployment
 
-Cloudflare Pages builds every push to `main` (preview deployments for PRs) with Zola pinned via
-`ZOLA_VERSION`. See [cloudflare-pages.md](cloudflare-pages.md).
+Cloudflare Pages builds every push to `main` (preview deployments for PRs) with Zola pinned in
+the build command. See [cloudflare-pages.md](cloudflare-pages.md).
 
 ## Related Projects
 

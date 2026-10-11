@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 env:
-  # Keep in sync with ZOLA_VERSION in cloudflare-pages.md
+  # Keep in sync with the Zola version in the Cloudflare Pages build command (cloudflare-pages.md)
   ZOLA_VERSION: "0.23.6"
 
 jobs:
