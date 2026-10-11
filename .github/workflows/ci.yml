@@ -51,3 +51,6 @@ jobs:
 
       - name: Check team-league data (set sums, finals, slugs) and the pages built from it
         run: python3 scripts/check-team-leagues.py public
+
+      - name: Check the player-comparison data (/compare.json) against the player pages
+        run: python3 scripts/check-compare-data.py public

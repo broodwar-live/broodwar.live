@@ -1,7 +1,8 @@
 {#- Team-league playoff sets of a player page. Included from players/player.html, which builds
     `tls` (newest first; record fields documented there) and `tl_seasons`. Separate from the
     individual playoff record: nothing here feeds data-rec-*. The data-tl-* attributes are
-    read by scripts/check-team-leagues.py. -#}
+    read by scripts/check-team-leagues.py; data-opp / data-tl-res on the set rows by
+    scripts/check-compare-data.py. -#}
 {% set_global tw = 0 %}{% set_global tl1w = 0 %}{% set_global tl1l = 0 %}{% set_global tl2w = 0 %}{% set_global tl2l = 0 %}
 {% set_global tfw = 0 %}{% set_global tfl = 0 %}{% set_global taw = 0 %}{% set_global tal = 0 %}
 {% for r in tls %}
@@ -72,7 +73,7 @@
       </thead>
       <tbody class="max-sm:block max-sm:space-y-2">
         {% for r in tls %}
-        <tr{% if r.o %} data-opp="{{ r.o }}"{% endif %} class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3">
+        <tr{% if r.o %} data-opp="{{ r.o }}"{% endif %} data-tl-res="{{ r.res }}" class="max-sm:flex max-sm:flex-wrap max-sm:items-baseline max-sm:gap-x-3 max-sm:gap-y-1 max-sm:rounded-box max-sm:border max-sm:border-primary/10 max-sm:p-3">
           <td class="font-stats text-xs text-base-content/70 whitespace-nowrap max-sm:p-0 max-sm:order-2" data-sort-value="{{ r.k }}">{% if r.d %}<time datetime="{{ r.d }}">{{ r.d }}</time>{% endif %}</td>
           <td class="text-sm max-sm:p-0 max-sm:order-4 max-sm:basis-full"><a href="{{ r.p }}" class="text-primary hover:underline">{{ r.s }}</a> <span class="text-xs whitespace-nowrap {% if r.f %}font-semibold text-warning{% else %}text-base-content/70{% endif %}">&middot; {{ r.r }}</span></td>
           <td class="text-xs text-base-content/70 max-sm:p-0 max-sm:order-5 max-sm:basis-full">{{ r.mt }} <span aria-hidden="true">&middot;</span> {{ t.player_vs }} {{ r.ot }}</td>

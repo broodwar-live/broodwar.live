@@ -1,0 +1,95 @@
+{#- Player comparison (content/compare/_index.md, _index.ko.md). Everything below the pickers is
+    built by static/js/compare.js from /compare.json (templates/compare.json), which it loads
+    after the page. URL state: ?a=<slug>&b=<slug>. Without JS the pickers stay hidden and the
+    page offers the static fallbacks: the featured rivalries with links to both profiles, and
+    the players list (every profile has a static head-to-head table). -#}
+{% extends "base.html" %}
+{% block title %}{{ section.title }}{% endblock %}
+
+{% block jsonld_extra %}
+{%- set psec = get_section(path="players/_index.md", lang=lang, metadata_only=true) -%}
+,{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": {{ psec.title | json_encode | safe }}, "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/players"},
+    {"@type": "ListItem", "position": 2, "name": {{ section.title | json_encode | safe }}}
+  ]
+}
+{% endblock %}
+
+{% block content %}
+{% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
+{#- Featured rivalries: among the most frequent pairings in the recorded playoffs. -#}
+{% set featured = [["flash", "jaedong"], ["bisu", "flash"], ["boxer", "yellow"], ["iloveoov", "july"], ["jaedong", "light"], ["bonyth", "dewalt"]] %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
+    <a href="{{ lp }}/players/" class="hover:text-primary">{{ t.players }}</a>
+    <span class="mx-1.5" aria-hidden="true">/</span>
+    <span class="text-base-content/70">{{ section.title }}</span>
+  </nav>
+
+  <h1 class="text-2xl sm:text-3xl font-display mb-2">{{ section.title }}</h1>
+  <p class="text-sm text-base-content/70 max-w-3xl leading-relaxed">{{ t.cmp_intro }}</p>
+
+  <div id="cmp" class="mt-8" data-lp="{{ lp }}" data-src="/compare.json">
+    {#- Pickers: shown by compare.js. The two inputs are comboboxes over the player index. -#}
+    <form id="cmp-form" class="glass-card rounded-box p-4 sm:p-5 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-end gap-3 md:gap-4" role="search" hidden>
+      {% for side in ["a", "b"] %}
+      {% if side == "a" %}{% set side_label = t.cmp_player_a %}{% else %}{% set side_label = t.cmp_player_b %}{% endif %}
+      <div class="cmp-picker relative min-w-0" data-side="{{ side }}">
+        <label for="cmp-{{ side }}" class="block text-[11px] font-semibold uppercase tracking-wider text-base-content/70 mb-1.5">{{ side_label }}</label>
+        <div class="relative">
+          <span data-race-tile class="absolute z-10 left-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded flex items-center justify-center text-[11px] font-black text-base-100 bg-base-content/10" aria-hidden="true"></span>
+          <input id="cmp-{{ side }}" name="{{ side }}" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="cmp-{{ side }}-list" autocomplete="off" spellcheck="false" placeholder="{{ t.cmp_placeholder }}" class="input input-bordered w-full pl-11 pr-10 text-base sm:text-sm" />
+          <button type="button" data-clear hidden class="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg flex items-center justify-center text-lg text-base-content/70 hover:text-base-content hover:bg-primary/10" aria-label="{{ t.cmp_clear | replace(from='{name}', to=side_label) }}">&times;</button>
+        </div>
+        <ul id="cmp-{{ side }}-list" role="listbox" aria-label="{{ side_label }}" hidden class="absolute left-0 right-0 top-full mt-1 z-30 max-h-80 overflow-y-auto overscroll-contain rounded-box border border-base-content/15 bg-base-100 p-1 shadow-xl"></ul>
+      </div>
+      {% if side == "a" %}
+      <button type="button" id="cmp-swap" class="btn btn-sm btn-ghost border-base-content/15 justify-self-center md:mb-1" aria-label="{{ t.cmp_swap }}" title="{{ t.cmp_swap }}">
+        <svg class="size-4 rotate-90 md:rotate-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /></svg>
+        <span class="md:sr-only">{{ t.cmp_swap }}</span>
+      </button>
+      {% endif %}
+      {% endfor %}
+    </form>
+
+    <noscript>
+      <div class="glass-card rounded-box p-5 text-sm leading-relaxed">
+        <p>{{ t.cmp_noscript }}</p>
+        <p class="mt-2"><a href="{{ lp }}/players/" class="text-primary hover:underline font-medium">{{ t.cmp_all_players }} &rarr;</a></p>
+      </div>
+    </noscript>
+
+    <p id="cmp-status" class="sr-only" role="status" aria-live="polite"></p>
+    <div id="cmp-result" class="mt-8"></div>
+
+    {#- Static, so it also works without JS: compare link plus both profiles. compare.js hides
+        it while a comparison is shown. -#}
+    <section id="cmp-featured" class="mt-10" aria-labelledby="cmp-featured-h">
+      <h2 id="cmp-featured-h" class="text-lg font-semibold mb-3">{{ t.cmp_featured }}</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {% for pair in featured %}
+        {% set fa = get_page(path="players/" ~ pair[0] ~ ".md", lang=lang) %}{% set fb = get_page(path="players/" ~ pair[1] ~ ".md", lang=lang) %}
+        <li class="glass-card rounded-box px-4 py-3 flex items-center justify-between gap-3 min-w-0">
+          <span class="flex items-center gap-2 min-w-0 text-sm">
+            {% set pc_name = fa.title %}{% set pc_slug = pair[0] %}{% set pc_class = "font-medium" %}{% include "tournaments/player-chip.html" %}
+            <span class="text-xs text-base-content/60 shrink-0">{{ t.cmp_vs }}</span>
+            {% set pc_name = fb.title %}{% set pc_slug = pair[1] %}{% set pc_class = "font-medium" %}{% include "tournaments/player-chip.html" %}
+          </span>
+          <a href="{{ lp }}/compare/?a={{ pair[0] }}&amp;b={{ pair[1] }}" class="shrink-0 text-xs font-semibold text-primary hover:underline" aria-label="{{ t.cmp_compare_title | replace(from='{a}', to=fa.title) | replace(from='{b}', to=fb.title) }}">{{ t.cmp_compare_link }} &rarr;</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>
+{#- Strings for compare.js: the cmp_* block plus shared labels. -#}
+{% set_global cmp_i18n = "" %}
+{% for k, v in t %}{% if k is starting_with(pat="cmp_") %}{% set_global cmp_i18n = cmp_i18n ~ "," ~ (k | json_encode) ~ ":" ~ (v | json_encode) %}{% endif %}{% endfor %}
+{% for k in ["player_race", "player_race_terran", "player_race_protoss", "player_race_zerg", "player_years_active", "player_titles", "player_present", "rec_col_date", "rec_col_tournament", "rec_col_round", "rec_col_result", "rec_walkover", "rec_walkover_short", "rec_win_pct", "tl_ace", "tl_ace_short"] %}{% set_global cmp_i18n = cmp_i18n ~ "," ~ (k | json_encode) ~ ":" ~ (t[k] | json_encode) %}{% endfor %}
+<script type="application/json" id="cmp-i18n">{{ ("{" ~ (cmp_i18n | trim_start(pat=",")) ~ "}") | safe }}</script>
+{% endblock %}
+
+{% block scripts %}<script src="/js/compare.js" defer></script>{% endblock %}
