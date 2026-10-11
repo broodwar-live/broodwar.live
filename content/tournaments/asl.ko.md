@@ -9,7 +9,7 @@ organizer = "AfreecaTV / SOOP"
 status = "active"
 format = "Individual"
 region = "South Korea"
-sources = ["https://liquipedia.net/starcraft/ASL", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/9", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/14", "https://liquipedia.net/starcraft/SOOP/StarCraft_League/2024/AUTUMN", "https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://inews24.com/view/2011561"]
+sources = ["https://liquipedia.net/starcraft/ASL", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/9", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/14", "https://liquipedia.net/starcraft/SOOP/StarCraft_League/2024/AUTUMN", "https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://inews24.com/view/2011561", "https://liquipedia.net/starcraft/ASL/19", "https://liquipedia.net/starcraft/ASL/20", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/17"]
 verified = "2026-10-11"
 [[extra.seasons]]
 season = 22
@@ -30,7 +30,7 @@ runner_up = "Flash"
 runner_up_slug = "flash"
 score = "4–3"
 final_date = "2026-05-24"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 20
 year = 2025
@@ -41,7 +41,7 @@ runner_up = "Snow"
 runner_up_slug = "snow"
 score = "4–2"
 final_date = "2025-10-26"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 19
 year = 2025
@@ -52,7 +52,7 @@ runner_up = "Best"
 runner_up_slug = "best"
 score = "4–3"
 final_date = "2025-05-25"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 18
 year = 2024
@@ -63,7 +63,7 @@ runner_up = "Sharp"
 runner_up_slug = "sharp"
 score = "4–1"
 final_date = "2024-11-02"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 17
 year = 2024
@@ -74,7 +74,7 @@ runner_up = "Hero"
 runner_up_slug = "hero"
 score = "4–3"
 final_date = "2024-04-27"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 16
 year = 2023

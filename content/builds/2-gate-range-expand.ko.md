@@ -10,6 +10,52 @@ tags = ["standard", "flexible", "dragoon"]
 [extra]
 race = "protoss"
 matchup = "PvT"
+sources = ["https://liquipedia.net/starcraft/2_Gate_Range_Expand"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+note = "프로브 정찰"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "12"
+item = "buildings/assimilator"
+[[extra.steps]]
+supply = "13"
+item = "buildings/cybernetics-core"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "17"
+action = "싱귤래리티 차지 (드라군 사거리)"
+note = "가스 프로브 1기 제외 (2기 채취)"
+[[extra.steps]]
+supply = "18"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "20"
+item = "buildings/nexus"
+note = "앞마당; 프로브 생산 일시 중단"
+[[extra.steps]]
+supply = "20"
+item = "units/dragoon"
+[[extra.steps]]
+supply = "22"
+item = "units/dragoon"
+[[extra.steps]]
+supply = "24"
+item = "buildings/pylon"
+note = "프로브 생산 재개, 가스 3기"
+[[extra.steps]]
+supply = "25"
+item = "units/dragoon"
+note = "드라군 2기"
+[[extra.steps]]
+supply = "31"
+item = "buildings/robotics-facility"
 +++
 게이트웨이 2개와 초기 드라군 사거리 업그레이드 후 앞마당을 확장하는 유연한 PvT 오프닝입니다. 1 Gate FE보다 공격적이며, 사거리 드라군으로 맵 컨트롤을 다투면서도 2기지 경제를 확보합니다. 사거리 업그레이드가 핵심입니다 — 드라군이 마린을 카이팅하고 시야 밖에서 시즈 탱크를 공격할 수 있게 합니다.
 

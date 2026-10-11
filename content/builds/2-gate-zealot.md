@@ -10,6 +10,33 @@ tags = ["aggressive", "pressure", "timing"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
+sources = ["https://liquipedia.net/starcraft/2_Gateway_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+note = "Probe scouts"
+[[extra.steps]]
+supply = "12"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "13"
+item = "units/zealot"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "17"
+item = "units/zealot"
+[[extra.steps]]
+supply = "19"
+item = "units/zealot"
+[[extra.steps]]
+supply = "21"
+item = "buildings/pylon"
 +++
 An aggressive PvZ opening with two gateways producing zealots continuously to pressure Zerg before they can establish a third base. The goal is not necessarily to kill the opponent but to force zerglings to stay home defending, delaying Zerg's drone production and expansion timing.
 

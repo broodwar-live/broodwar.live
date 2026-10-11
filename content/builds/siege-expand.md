@@ -10,6 +10,46 @@ tags = ["standard", "mech", "safe"]
 [extra]
 race = "terran"
 matchup = "TvP"
+sources = ["https://liquipedia.net/starcraft/Siege_Expand_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+note = "Wall-in; SCV scouts"
+[[extra.steps]]
+supply = "12/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "12/18"
+item = "buildings/refinery"
+[[extra.steps]]
+supply = "15/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "16/26"
+item = "buildings/factory"
+note = "Take 2 SCVs off gas"
+[[extra.steps]]
+supply = ""
+item = "buildings/machine-shop"
+timing = "@100% Factory"
+[[extra.steps]]
+supply = ""
+item = "units/siege-tank"
+timing = "@100% Machine Shop"
+[[extra.steps]]
+supply = "21/26"
+item = "buildings/command-center"
+[[extra.steps]]
+supply = "24/26"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "25/34"
+item = "upgrades/siege-tech"
+[[extra.steps]]
+supply = "28/34"
+item = "buildings/engineering-bay"
+note = "Optional"
 +++
 The standard safe TvP mech opening. Build a factory before expanding, produce a siege tank, then take your natural expansion behind the tank's defensive cover. The siege tank at your natural choke eliminates the risk of zealot run-bys that punish faster expand builds.
 

@@ -10,9 +10,38 @@ tags = ["bio", "pressure", "timing"]
 [extra]
 race = "terran"
 matchup = "TvP"
+sources = ["https://liquipedia.net/starcraft/2_Rax_Academy_(vs._Zerg)"]
+unverified = true
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "11/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "13/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "14/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "18/26"
+item = "buildings/refinery"
+[[extra.steps]]
+supply = "19/26"
+item = "buildings/academy"
+[[extra.steps]]
+supply = "24/26"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "26/34"
+item = "upgrades/stim-pack"
+[[extra.steps]]
+supply = "28/34"
+item = "buildings/comsat-station"
 +++
-배럭 2개와 초기 아카데미를 건설하여 메딕을 빠르게 생산하는 바이오 타이밍 어택입니다. 스톰 테크가 나오기 전인 7분 전후에 스팀팩이 연구된 마린/메딕으로 프로토스를 공격하는 것이 목표입니다. 가장 공격적인 표준 TvP 오프닝 중 하나입니다.
+배럭 2개와 빠른 아카데미로 스팀팩, 메딕, 컴샛 스테이션을 확보하는 바이오 오프닝입니다. 이 빌드의 문서화된 기원은 TvP가 아니라 TvZ라는 점에 유의하세요: 리퀴피디아는 2003년 [iloveoov](@/players/iloveoov.ko.md)가 만든 최초의 TvZ 빠른 확장으로 소개하며, 현대에는 주로 마린/메딕 푸시를 페이크로 보여 상대가 방어에 과투자하게 만든 뒤 확장하는 데 쓰입니다.
 
-두 배럭에서 마린을 꾸준히 뽑으면서 스팀팩을 연구합니다. 마린 8기와 메딕 2기 정도가 모이면 전진합니다. 드라군 상대로 스팀 컨트롤이 필수적입니다 — 체력 낮은 마린은 뒤로 빼고, 스팀을 써서 거리를 좁히세요. 본진에서 증원 생산을 계속합니다.
+빌드: 9에 서플라이 디팟, 11과 13에 배럭, 18~19서플라이 무렵 리파이너리와 아카데미, 이후 스팀팩과 컴샛 스테이션. 두 배럭에서 마린을 꾸준히 생산합니다. 공격할지 확장할지는 정찰 결과에 따라 결정합니다 — 본진과 병력 규모를 숨기면 상대는 올인을 의심해 정적 방어에 과투자하게 됩니다.
 
-짧은 러시 거리 맵이나 빠른 확장 같은 욕심 많은 프로토스 오프닝을 정찰했을 때 효과적입니다. 초기 푸시로 킬에 실패하면 팩토리를 추가하여 시즈 탱크로 전환합니다. 푸시 중 미네랄 라인을 공격하는 빠른 리버 드롭과, 스캔 에너지가 부족할 때 다크 템플러에 약합니다.
+리퀴피디아에는 TvP용 2배럭 아카데미 문서가 없으므로 여기서의 사용은 상황에 따른 선택으로 보아야 합니다: TvP에서 마린/메딕 오프닝은 대체로 정찰에 의존하며, 초반 압박이 성과를 내지 못하면 팩토리로 전환합니다. 다크 템플러에 대비해 컴샛 스캔이 필요하고, 초반 바이오는 리버 드롭에 취약합니다.

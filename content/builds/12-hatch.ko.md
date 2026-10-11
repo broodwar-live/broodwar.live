@@ -10,6 +10,18 @@ tags = ["economic", "greedy", "macro"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
+sources = ["https://liquipedia.net/starcraft/12_Hatch_(vs._Protoss)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "units/overlord"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+note = "앞마당에 건설"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
 +++
 가장 욕심 많은 표준 ZvP 오프닝으로, 스포닝 풀이 시작되기도 전에 12서플라이에 앞마당에 해처리를 건설합니다. 가장 빠른 2기지 경제를 제공하여, 빠른 드론 생산으로 일꾼 수에서 앞서고 물량을 통한 맵 컨트롤을 확보합니다.
 

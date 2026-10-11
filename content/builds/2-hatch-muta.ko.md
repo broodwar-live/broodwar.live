@@ -10,6 +10,49 @@ tags = ["aggressive", "mutalisk", "timing"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
+sources = ["https://liquipedia.net/starcraft/2_Hatch_Muta_(vs._Terran)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "units/overlord"
+[[extra.steps]]
+supply = "12"
+item = "buildings/hatchery"
+[[extra.steps]]
+supply = "11"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "10"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = ""
+item = "units/zergling"
+timing = "스포닝 풀 완성 시"
+[[extra.steps]]
+supply = ""
+item = "buildings/lair"
+timing = "미네랄 150 / 가스 100 시"
+[[extra.steps]]
+supply = "16"
+item = "units/overlord"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "미네랄 100 / 가스 100 시"
+[[extra.steps]]
+supply = ""
+item = "buildings/spire"
+timing = "레어 완성 시"
+[[extra.steps]]
+supply = ""
+item = "units/overlord"
+timing = "스파이어 33% 시"
+note = "오버로드 2기, 앞마당 가스"
+[[extra.steps]]
+supply = ""
+item = "units/mutalisk"
+timing = "스파이어 완성 시"
+note = "라바를 모아 11기까지"
 +++
 ZvT에서 표준 3해처리 뮤탈리스크 빌드의 더 공격적인 대안입니다. 세 번째 해처리를 건너뛰어 뮤탈리스크를 더 빨리 맵에 올립니다 — 종종 테란이 모든 미네랄 라인을 보호할 만큼 미사일 터렛을 짓기 전에 도착합니다. 약한 경제를 감수하므로, 이를 정당화하려면 반드시 피해를 줘야 합니다.
 

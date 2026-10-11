@@ -10,6 +10,46 @@ tags = ["standard", "economic", "safe"]
 [extra]
 race = "protoss"
 matchup = "PvT"
+sources = ["https://liquipedia.net/starcraft/21_Nexus"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+note = "프로브 정찰"
+[[extra.steps]]
+supply = "12"
+item = "buildings/assimilator"
+[[extra.steps]]
+supply = "13"
+item = "buildings/cybernetics-core"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "16"
+action = "싱귤래리티 차지 (드라군 사거리)"
+note = "가스 프로브 1기 제외 (2기 채취)"
+[[extra.steps]]
+supply = "19"
+item = "units/dragoon"
+note = "프로브 생산 일시 중단"
+[[extra.steps]]
+supply = "21"
+item = "buildings/nexus"
+note = "앞마당에 건설"
+[[extra.steps]]
+supply = "21"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "21"
+item = "units/dragoon"
+[[extra.steps]]
+supply = "23"
+item = "buildings/pylon"
+note = "프로브 생산 재개"
 +++
 표준 안전 PvT 오프닝입니다. 게이트웨이 하나를 건설하고, 질럿 1기와 드라군을 생산하며, 초기 유닛이 방어를 담당하는 동안 앞마당을 확장합니다. 초반 공격보다 경제를 우선시하여, 중반에 테란을 경제력으로 압도하는 것을 목표로 합니다.
 

@@ -10,9 +10,26 @@ tags = ["cheese", "rush", "all-in"]
 [extra]
 race = "zerg"
 matchup = "ZvZ"
+sources = ["https://liquipedia.net/starcraft/5_Pool_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "4"
+item = "units/drone"
+[[extra.steps]]
+supply = "5"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "5"
+item = "units/drone"
+note = "Drone up to 6 supply"
+[[extra.steps]]
+supply = ""
+item = "units/zergling"
+timing = "@100% Spawning Pool"
+note = "Use saved larvae: 6 Zerglings"
 +++
-The earliest possible spawning pool in ZvZ — built at 5 supply, before any additional drones. Six zerglings are produced as soon as the pool finishes and sent directly to the opponent's base. If the opponent has gone for a later pool like 9 pool or 12 hatch, your zerglings arrive before they have any meaningful defense.
+The earliest practical spawning pool in ZvZ — built at 5 supply after a single drone. Six zerglings are produced from saved larvae as soon as the pool finishes and sent directly to the opponent's base. It hard-counters 12 Hatch, whose pool comes too late to stop the zerglings, and can beat 12 Pool on small maps.
 
-Execution is straightforward: build pool at 5 supply, then three pairs of zerglings. Rally them to the enemy base and target drones. Pull your own drones to help fight if the opponent's zerglings meet yours. This is a pure all-in — you have no economy behind it.
+Execution: build the pool at 5, drone to 6, then make zerglings with the larvae you saved. On maps with more than two spawns, send a scouting drone shortly before the pool finishes; many players use that drone for an offensive sunken colony instead. Target the enemy spawning pool first — if it is cancelled, keep producing zerglings and deny a rebuild. Avoid losing zerglings in trades with drones.
 
-Best on close spawn positions on two-player maps where rush distance is minimal. It is also effective on four-player maps if you scout your opponent's location early. Transition is nearly impossible if the rush fails — you are too far behind in economy to recover. Weak against opponents who also go early pool and defend with drones, or against 9 pool speed builds where the speed upgrade gives their zerglings a micro advantage.
+Best on small maps and maps where the opponent does not expect a rush; weak on large maps with many spawn locations. If you fail to kill the pool and the opponent has more zerglings or a sunken with 7–8 drones, the game is likely lost. 9 Pool and Overpool are hard counters — they have zerglings and enough drones in time to defend.

@@ -10,6 +10,33 @@ tags = ["aggressive", "pressure", "timing"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
+sources = ["https://liquipedia.net/starcraft/2_Gateway_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+note = "프로브 정찰"
+[[extra.steps]]
+supply = "12"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "13"
+item = "units/zealot"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = "17"
+item = "units/zealot"
+[[extra.steps]]
+supply = "19"
+item = "units/zealot"
+[[extra.steps]]
+supply = "21"
+item = "buildings/pylon"
 +++
 게이트웨이 2개에서 질럿을 연속 생산하여 저그가 세 번째 기지를 짓기 전에 압박하는 공격적 PvZ 오프닝입니다. 목표는 반드시 상대를 죽이는 것이 아니라, 저글링을 방어에 묶어두어 저그의 드론 생산과 확장 타이밍을 지연시키는 것입니다.
 

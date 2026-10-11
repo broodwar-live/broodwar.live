@@ -32,33 +32,33 @@
 {% set parent_title = parent_slug | replace(from="-", to=" ") | title %}
 {% if parent_slug %}{% set parent_page = get_page(path="wiki/buildings/" ~ parent_slug ~ ".md", lang=lang) | default(value=false) %}{% if parent_page %}{% set parent_title = parent_page.title %}{% endif %}{% endif %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
+  <nav class="text-xs text-base-content/60 mb-6" aria-label="Breadcrumb">
     <a href="{{ lp }}/wiki/" class="hover:text-base-content/60">{{ t.wiki }}</a>
     <span class="mx-1.5">/</span>
     <a href="{{ lp }}/wiki/buildings/" class="hover:text-base-content/60">{% if lang == "ko" %}건물{% else %}Buildings{% endif %}</a>
     <span class="mx-1.5">/</span>
-    <span class="text-base-content/50">{{ page.title }}</span>
+    <span class="text-base-content/60">{{ page.title }}</span>
   </nav>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <h1 class="text-2xl font-display">{{ page.title }}</h1>
+  <span class="text-[11px] font-bold badge-race mt-2 inline-block
+    {% if race == 'terran' %}text-race-terran
+    {% elif race == 'protoss' %}text-race-protoss
+    {% elif race == 'zerg' %}text-race-zerg{% endif %}">
+    {{ race | title }}
+  </span>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
     {# ── Main content ── #}
-    <div class="lg:col-span-2">
-      <h1 class="text-2xl font-display">{{ page.title }}</h1>
-      <span class="text-[10px] font-bold badge-race mt-2 inline-block
-        {% if race == 'terran' %}text-race-terran
-        {% elif race == 'protoss' %}text-race-protoss
-        {% elif race == 'zerg' %}text-race-zerg{% endif %}">
-        {{ race | title }}
-      </span>
-      <div class="mt-6 prose prose-invert max-w-none">{{ page.content | safe }}</div>
+    <div class="lg:col-span-2 min-w-0">
+      <div class="prose prose-invert max-w-none">{{ page.content | safe }}</div>
 
       {# ── Race Navbox ── #}
       {% set buildings_section = get_section(path="wiki/buildings/_index.md") %}
       <div class="navbox mt-8">
-        <div class="text-[10px] font-semibold uppercase tracking-wider mb-2
-          {% if race == 'terran' %}text-race-terran/50
-          {% elif race == 'protoss' %}text-race-protoss/50
-          {% elif race == 'zerg' %}text-race-zerg/50{% endif %}">
+        <div class="text-[11px] font-semibold uppercase tracking-wider mb-2
+          {% if race == 'terran' %}text-race-terran
+          {% elif race == 'protoss' %}text-race-protoss
+          {% elif race == 'zerg' %}text-race-zerg{% endif %}">
           {{ race | title }} {% if lang == "ko" %}건물{% else %}Buildings{% endif %}
         </div>
         <div class="flex flex-wrap gap-x-1 text-xs leading-relaxed">
@@ -69,43 +69,31 @@
             {% else %}
             <a href="{{ b.path }}">{{ b.title }}</a>
             {% endif %}
-            <span class="text-base-content/15 last:hidden">&middot;</span>
+            <span class="text-base-content/60 last:hidden">&middot;</span>
           {% endif %}
           {% endfor %}
         </div>
       </div>
     </div>
 
-    {# ── Infobox Sidebar ── #}
-    <div>
-      <div class="glass-card rounded-box overflow-hidden lg:sticky lg:top-24">
-        {# Race-accent header #}
-        <div class="infobox-accent-{{ race }} px-5 py-3 border-b border-primary/10">
-          <div class="font-display text-lg">{{ page.title }}</div>
-          {% if e.name_ko is defined %}<div class="text-xs text-base-content/30 mt-0.5">{{ e.name_ko }}</div>{% endif %}
-        </div>
-
-        {% if e.image is defined and e.image %}
-        <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-video object-contain rounded-lg bg-base-300/50" loading="lazy" />
-        {% endif %}
-
-        <div class="p-5">
+    {#- Infobox (shared shell; the stat sections below are unit/building specific). -#}
+    {% set ib_body %}
           {# ─ Cost ─ #}
           <div class="infobox-section">
             <span class="infobox-label">{% if lang == "ko" %}비용{% else %}Cost{% endif %}</span>
             <dl class="infobox-dl">
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd>{{ e.minerals }}</dd></div>
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</dt><dd>{{ e.gas }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd>{{ e.minerals }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</dt><dd>{{ e.gas }}</dd></div>
               {% if e.build_time is defined %}
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}건설시간{% else %}Build Time{% endif %}</dt><dd>{{ e.build_time }}s</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}건설시간{% else %}Build Time{% endif %}</dt><dd>{{ e.build_time }}s</dd></div>
               {% endif %}
               {% if parent_slug %}
-              <div class="flex justify-between gap-3"><dt class="text-base-content/40">{% if parent_kind == "addon" %}{% if lang == "ko" %}부착 건물{% else %}Add-on of{% endif %}{% elif parent_kind == "morph" %}{% if lang == "ko" %}변태 전 건물{% else %}Morphs from{% endif %}{% else %}{% if lang == "ko" %}감염 전 건물{% else %}Infested from{% endif %}{% endif %}</dt><dd class="text-right"><a href="{{ lp }}/wiki/buildings/{{ parent_slug }}/" class="text-primary/70 hover:text-primary transition-colors">{{ parent_title }}</a></dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-base-content/60">{% if parent_kind == "addon" %}{% if lang == "ko" %}부착 건물{% else %}Add-on of{% endif %}{% elif parent_kind == "morph" %}{% if lang == "ko" %}변태 전 건물{% else %}Morphs from{% endif %}{% else %}{% if lang == "ko" %}감염 전 건물{% else %}Infested from{% endif %}{% endif %}</dt><dd class="text-right"><a href="{{ lp }}/wiki/buildings/{{ parent_slug }}/" class="text-primary/70 hover:text-primary transition-colors">{{ parent_title }}</a></dd></div>
               {% endif %}
               {% if e.hotkey is defined and e.hotkey %}
-              <div class="flex justify-between gap-3"><dt class="text-base-content/40">{% if lang == "ko" %}단축키{% else %}Hotkey{% endif %}</dt><dd class="text-right"><span class="font-mono text-primary/60">{{ e.hotkey }}</span>{% if parent_slug and parent_kind != "infested" %}<span class="block text-[10px] text-base-content/30">{% if lang == "ko" %}{{ parent_title }} 선택 후{% else %}with {{ parent_title }} selected{% endif %}</span>{% endif %}</dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-base-content/60">{% if lang == "ko" %}단축키{% else %}Hotkey{% endif %}</dt><dd class="text-right"><span class="font-mono text-primary">{{ e.hotkey }}</span>{% if parent_slug and parent_kind != "infested" %}<span class="block text-[11px] text-base-content/60">{% if lang == "ko" %}{{ parent_title }} 선택 후{% else %}with {{ parent_title }} selected{% endif %}</span>{% endif %}</dd></div>
               {% elif parent_kind == "infested" %}
-              <div class="flex justify-between gap-3"><dt class="text-base-content/40">{% if lang == "ko" %}획득{% else %}Obtained{% endif %}</dt><dd class="text-right text-xs text-base-content/60">{% if lang == "ko" %}퀸의 감염{% else %}Queen infestation{% endif %}</dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-base-content/60">{% if lang == "ko" %}획득{% else %}Obtained{% endif %}</dt><dd class="text-right text-xs text-base-content/60">{% if lang == "ko" %}퀸의 감염{% else %}Queen infestation{% endif %}</dd></div>
               {% endif %}
             </dl>
           </div>
@@ -114,12 +102,12 @@
           <div class="infobox-section">
             <span class="infobox-label">{% if lang == "ko" %}스탯{% else %}Stats{% endif %}</span>
             <dl class="infobox-dl">
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}체력{% else %}HP{% endif %}</dt><dd>{{ e.hp }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}체력{% else %}HP{% endif %}</dt><dd>{{ e.hp }}</dd></div>
               {% if e.shields is defined and e.shields > 0 %}
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}쉴드{% else %}Shields{% endif %}</dt><dd>{{ e.shields }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}쉴드{% else %}Shields{% endif %}</dt><dd>{{ e.shields }}</dd></div>
               {% endif %}
               {% if e.armor is defined %}
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}방어력{% else %}Armor{% endif %}</dt><dd>{{ e.armor }}</dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/60">{% if lang == "ko" %}방어력{% else %}Armor{% endif %}</dt><dd>{{ e.armor }}</dd></div>
               {% endif %}
             </dl>
           </div>
@@ -130,7 +118,7 @@
             <span class="infobox-label">{% if lang == "ko" %}생산 유닛{% else %}Produces{% endif %}</span>
             <table class="w-full text-xs mt-1">
               <thead>
-                <tr class="text-base-content/25">
+                <tr class="text-base-content/60">
                   <th class="text-left font-normal pb-1">{% if lang == "ko" %}유닛{% else %}Unit{% endif %}</th>
                   <th class="text-right font-normal pb-1">{% if lang == "ko" %}미네랄{% else %}Min{% endif %}</th>
                   <th class="text-right font-normal pb-1">{% if lang == "ko" %}가스{% else %}Gas{% endif %}</th>
@@ -186,9 +174,13 @@
             </ul>
           </div>
           {% endif %}
-        </div>
-      </div>
-    </div>
+{% endset %}
+    {% set ib_title = page.title %}
+    {% set ib_subtitle = "" %}{% if e.name_ko is defined and lang != "ko" %}{% set ib_subtitle = e.name_ko %}{% endif %}
+    {% set ib_race = race %}
+    {% set ib_image = e.image | default(value="") %}{% set ib_image_fit = "contain" %}{% set ib_image_aspect = "video" %}
+    {% set ib_sticky = true %}
+    {% include "partials/infobox.html" %}
   </div>
 
   {% include "partials/provenance.html" %}

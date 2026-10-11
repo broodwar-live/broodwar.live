@@ -10,6 +10,45 @@ tags = ["aggressive", "tech", "dark-templar"]
 [extra]
 race = "protoss"
 matchup = "PvT"
+sources = ["https://liquipedia.net/starcraft/2_Gate_DT"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8"
+item = "buildings/pylon"
+note = "프로브 정찰"
+[[extra.steps]]
+supply = "10"
+item = "buildings/gateway"
+[[extra.steps]]
+supply = "12"
+item = "buildings/assimilator"
+[[extra.steps]]
+supply = "14"
+item = "buildings/cybernetics-core"
+[[extra.steps]]
+supply = "15"
+item = "buildings/pylon"
+[[extra.steps]]
+supply = ""
+item = "buildings/citadel-of-adun"
+[[extra.steps]]
+supply = ""
+item = "buildings/gateway"
+note = "두 번째 게이트웨이"
+[[extra.steps]]
+supply = ""
+item = "units/dragoon"
+[[extra.steps]]
+supply = ""
+item = "buildings/templar-archives"
+[[extra.steps]]
+supply = ""
+item = "buildings/pylon"
+[[extra.steps]]
+supply = ""
+item = "units/dark-templar"
+timing = "템플러 아카이브 완성 시"
+note = "다크 템플러 2기"
 +++
 표준 오프닝을 건너뛰고 PvT에서 다크 템플러 아카이브에 최대한 빨리 도달하는 테크 러시입니다. 테란이 터렛을 위한 엔지니어링 베이를 짓지 않았고 스캐너 스윕을 위한 컴샛 스테이션이 없다면, 투명한 다크 템플러가 기지에 걸어 들어가 게임을 즉시 끝냅니다. 테란이 탐지가 있더라도 DT에 사용하는 스캔마다 귀중한 컴샛 에너지가 소모됩니다.
 

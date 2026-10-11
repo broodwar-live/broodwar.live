@@ -10,6 +10,32 @@ tags = ["standard", "safe", "zergling"]
 [extra]
 race = "zerg"
 matchup = "ZvZ"
+sources = ["https://liquipedia.net/starcraft/9_Pool_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9"
+item = "buildings/spawning-pool"
+[[extra.steps]]
+supply = "8"
+item = "units/drone"
+[[extra.steps]]
+supply = "9"
+item = "buildings/extractor"
+[[extra.steps]]
+supply = "8"
+item = "units/overlord"
+[[extra.steps]]
+supply = "8"
+item = "units/drone"
+[[extra.steps]]
+supply = ""
+item = "units/zergling"
+timing = "스포닝 풀 완성 시"
+note = "보통 6기, 정찰에 따라"
+[[extra.steps]]
+supply = ""
+item = "upgrades/metabolic-boost"
+timing = "가스 100 시"
 +++
 표준 안전 ZvZ 오프닝입니다. 9서플라이에 스포닝 풀을 건설하고 풀이 완성되는 즉시 대사 촉진(저글링 스피드)을 연구합니다. 경제를 위한 추가 드론을 뽑기에 충분히 늦으면서도, 치즈나 초반 공격을 방어할 저글링이 준비되기에 충분히 이른 타이밍입니다.
 

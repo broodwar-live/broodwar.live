@@ -10,6 +10,30 @@ tags = ["aggressive", "rush", "cheese"]
 [extra]
 race = "terran"
 matchup = "TvZ"
+sources = ["https://liquipedia.net/starcraft/Bunker_Rush_(vs._Zerg)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "8/10"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "10/18"
+action = "SCV 정찰"
+note = "4인용 맵: 본진 2곳 동시 정찰"
+[[extra.steps]]
+supply = ""
+item = "units/marine"
+timing = "배럭 완성 시"
+note = "저그 앞마당으로 랠리"
+[[extra.steps]]
+supply = "15/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = ""
+item = "buildings/bunker"
+note = "저그 앞마당에; 마린 4기 + SCV와 함께"
 +++
 SCV를 일찍 상대 기지로 보내 저그의 앞마당 해처리 근처에 벙커를 건설하는 치즈 전략입니다. 마린을 넣으면 해처리를 완전히 차단하거나, 저그가 저글링과 선큰 콜로니에 대량 투자하게 만들어 경제를 크게 지연시킬 수 있습니다.
 

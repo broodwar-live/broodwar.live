@@ -10,9 +10,45 @@ tags = ["air", "aggressive", "tech"]
 [extra]
 race = "terran"
 matchup = "TvT"
+sources = ["https://liquipedia.net/starcraft/2_Port_Wraith_(vs._Terran)"]
+verified = "2026-10-11"
+[[extra.steps]]
+supply = "9/10"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "11/18"
+item = "buildings/barracks"
+[[extra.steps]]
+supply = "12/18"
+item = "buildings/refinery"
+[[extra.steps]]
+supply = "13/18"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "16/26"
+item = "buildings/factory"
+[[extra.steps]]
+supply = "22/26"
+item = "buildings/starport"
+note = "스타포트 2개"
+[[extra.steps]]
+supply = "22/26"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = "30/34"
+item = "buildings/supply-depot"
+[[extra.steps]]
+supply = ""
+item = "units/wraith"
+[[extra.steps]]
+supply = ""
+item = "buildings/control-tower"
+[[extra.steps]]
+supply = ""
+item = "upgrades/cloaking-field"
 +++
-스타포트 2개에서 레이스를 지속 생산하는 제공권 장악 전략입니다. 클로킹 레이스로 시즈 탱크를 저격하고, SCV를 견제하며, 확장을 저지하는 것이 목표입니다 — 적절한 대공 없이 순수 지상 메카닉에 올인한 상대를 압도합니다.
+스타포트 2개에서 레이스를 생산하는 제공권 전략으로, TvT에서 Flash가 대중화했습니다. 레이스로 — 가능한 빨리 클로킹을 갖춰 — SCV를 잡고, 노출된 유닛과 띄운 건물을 처리하면서 상대가 탐지 수단을 마련하느라 허둥대게 만드는 것이 목표입니다.
 
-초기 팩토리 이후 가능한 빨리 스타포트 2개를 건설합니다. 한 스타포트에서 클로킹 필드를 연구하면서 양쪽에서 레이스를 생산합니다. 첫 레이스 쌍이 터렛이 올라오기 전에 상대 기지에 도착해야 합니다. 시즈 탱크와 수리 중인 SCV를 집중 공격하세요.
+배럭과 팩토리 이후 22서플라이 무렵 스타포트 2개를 건설합니다. 초반 마린이 적어 2팩토리 벌처에 약하므로 입구를 막아야 할 수도 있습니다. 첫 레이스가 나오면 한 스타포트에 컨트롤 타워 애드온을 달아 클로킹 필드를 연구하고, 다른 스타포트에서는 생산을 계속합니다. 마린 몇 기와 벌처로 먼저 나가 상대 마린을 정리하면 레이스가 공격받지 않습니다. 가능하면 터렛이 완성되지 못하게 하세요.
 
-상대가 초기 터렛이나 골리앗 없이 중메카닉을 가는 것을 정찰했을 때 가장 효과적입니다. 지상군의 이동 시간이 긴 맵에서 레이스가 견제할 시간을 벌 수 있습니다. 상대가 더블 스타포트를 정찰하고 초기 골리앗과 터렛으로 대응하면 약합니다 — 에어 테크에 큰 투자를 했지만 성과가 없게 됩니다. 레이스 수가 맵 컨트롤에 충분해지면 지상 메카닉으로 전환합니다.
+레이스는 게임을 끝내는 유닛이 아닙니다 — 견제 후 팩토리를 추가하고, 탱크를 모으는 동안 레이스는 정찰과 띄운 건물 처리에 씁니다. 네오 메두사처럼 미네랄 뒤에 절벽이 있는 맵은 견제에 유리하고, 파이썬처럼 미네랄 주변이 트인 맵은 견제가 어렵습니다. 상대 테란은 보통 골리앗과 탐지용 터렛으로 대응하며, 너무 일찍 정찰당하면 매우 위험합니다.
