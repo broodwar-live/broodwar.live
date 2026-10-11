@@ -26,6 +26,13 @@ feed = false
 name = "tags"
 feed = false
 
+# Keep the client-side index small (~340 KB vs ~3.8 MB with full bodies):
+# index titles and descriptions only.
+[search]
+include_title = true
+include_description = true
+include_content = false
+
 [slugify]
 paths = "safe"
 taxonomies = "safe"

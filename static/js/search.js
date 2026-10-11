@@ -91,7 +91,7 @@
     }
 
     const hits = index.search(query, {
-      fields: { title: { boost: 3 }, body: { boost: 1 } },
+      fields: { title: { boost: 3 }, description: { boost: 1 } },
       bool: "OR",
       expand: true,
     })
@@ -104,7 +104,8 @@
     const html = hits.slice(0, 15).map(hit => {
       const doc = hit.doc
       const title = doc.title || "Untitled"
-      const body = doc.body || ""
+      // The index stores titles and descriptions only (see [search] in config.toml)
+      const body = doc.description || doc.body || ""
       // Extract a snippet around the query
       const snippet = getSnippet(body, query)
       const url = doc.id // Zola uses the URL as the doc id
