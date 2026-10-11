@@ -9,7 +9,7 @@ organizer = "AfreecaTV / SOOP"
 status = "active"
 format = "Individual"
 region = "South Korea"
-sources = ["https://liquipedia.net/starcraft/ASL", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/9", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/14", "https://liquipedia.net/starcraft/SOOP/StarCraft_League/2024/AUTUMN", "https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://inews24.com/view/2011561", "https://liquipedia.net/starcraft/ASL/19", "https://liquipedia.net/starcraft/ASL/20", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/17"]
+sources = ["https://liquipedia.net/starcraft/ASL", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/9", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/14", "https://liquipedia.net/starcraft/SOOP/StarCraft_League/2024/AUTUMN", "https://en.wikipedia.org/wiki/ASL_(StarCraft)", "https://www.smarttoday.co.kr/ko-kr/articles/81606", "https://en.fnnews.com/news/202510270914320237", "https://liquipedia.net/starcraft/ASL/21", "https://liquipedia.net/starcraft/ASL/22", "https://inews24.com/view/2011561", "https://liquipedia.net/starcraft/ASL/19", "https://liquipedia.net/starcraft/ASL/20", "https://liquipedia.net/starcraft/AfreecaTV/StarCraft_League_Remastered/17"]
 verified = "2026-10-11"
 [[extra.seasons]]
 season = 22
@@ -19,7 +19,7 @@ winner = ""
 runner_up = ""
 score = ""
 final_date = ""
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 21
 year = 2026
