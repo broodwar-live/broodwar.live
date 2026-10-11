@@ -1,10 +1,8 @@
 // broodwar.live — minimal client-side JS
 // No framework. Just fetch() and DOM.
 
-// Service worker registration
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js")
-}
+// No service worker: /sw.js is a self-unregistering stub that cleans up
+// installs left over from the Phoenix version of the site.
 
 // Theme toggle (exposed globally for onclick handlers in base.html)
 window.setTheme = function(theme) {
