@@ -91,7 +91,7 @@ sets = [
   { map = "Polaris Rhapsody", a = "Jaehoon", a_slug = "jaehoon", a_race = "p", b = "Mind", b_slug = "mind", b_race = "t", winner = "a" },
   { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Tyson", a_slug = "tyson", a_race = "p", b = "Shine", b_slug = "shine", b_race = "z", winner = "b" },
   { map = "New Heartbreak Ridge", map_slug = "heartbreak-ridge", a = "Pusan", a_slug = "pusan", a_race = "p", b = "Pure", b_slug = "pure", b_race = "p", winner = "b" },
-  { map = "Grand Line SE", map_slug = "grand-line", a = "Sea", a_slug = "sea", a_race = "t", b = "RorO", winner = "a" },
+  { map = "Grand Line SE", map_slug = "grand-line", a = "Sea", a_slug = "sea", a_race = "t", b = "RorO", b_slug = "roro", b_race = "z", winner = "a" },
   { map = "Judgment Day", a = "Saint", b = "Midas", b_slug = "midas", b_race = "t", winner = "b" },
   { map = "Roadrunner", a = "Light", a_slug = "light", a_race = "t", b = "BaBy", winner = "a" },
   { map = "Match Point", map_slug = "match-point", a = "HyuN", a_slug = "hyun", a_race = "z", b = "BaBy", winner = "a", ace = true },
@@ -106,7 +106,7 @@ sets = [
   { map = "Polaris Rhapsody", a = "Jaehoon", a_slug = "jaehoon", a_race = "p", b = "Mind", b_slug = "mind", b_race = "t", winner = "b" },
   { map = "Match Point", map_slug = "match-point", a = "Sea", a_slug = "sea", a_race = "t", b = "Pure", b_slug = "pure", b_race = "p", winner = "b" },
   { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Tyson", a_slug = "tyson", a_race = "p", b = "Midas", b_slug = "midas", b_race = "t", winner = "a" },
-  { map = "Grand Line SE", map_slug = "grand-line", a = "HyuN", a_slug = "hyun", a_race = "z", b = "RorO", winner = "b" },
+  { map = "Grand Line SE", map_slug = "grand-line", a = "HyuN", a_slug = "hyun", a_race = "z", b = "RorO", b_slug = "roro", b_race = "z", winner = "b" },
 ]
 [[extra.team_bracket.matches.legs]]
 date = "2010-07-20"
@@ -114,7 +114,7 @@ score_a = 3
 score_b = 4
 sets = [
   { map = "Judgment Day", a = "Jaehoon", a_slug = "jaehoon", a_race = "p", b = "Shine", b_slug = "shine", b_race = "z", winner = "a" },
-  { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Sea", a_slug = "sea", a_race = "t", b = "RorO", winner = "b" },
+  { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Sea", a_slug = "sea", a_race = "t", b = "RorO", b_slug = "roro", b_race = "z", winner = "b" },
   { map = "Polaris Rhapsody", a = "Tyson", a_slug = "tyson", a_race = "p", b = "Mind", b_slug = "mind", b_race = "t", winner = "a" },
   { map = "Grand Line SE", map_slug = "grand-line", a = "HyuN", a_slug = "hyun", a_race = "z", b = "Midas", b_slug = "midas", b_race = "t", winner = "b" },
   { map = "Roadrunner", a = "Light", a_slug = "light", a_race = "t", b = "BaBy", winner = "b" },
@@ -141,7 +141,7 @@ sets = [
   { map = "Roadrunner", a = "s2", b = "Sacsri", b_slug = "sacsri", b_race = "z", winner = "a" },
   { map = "Polaris Rhapsody", a = "Bisu", a_slug = "bisu", a_race = "p", b = "Pure", b_slug = "pure", b_race = "p", winner = "a" },
   { map = "Match Point", map_slug = "match-point", a = "n.Die_soO", b = "BaBy", winner = "a" },
-  { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Canata", a_slug = "canata", a_race = "t", b = "RorO", winner = "b" },
+  { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Canata", a_slug = "canata", a_race = "t", b = "RorO", b_slug = "roro", b_race = "z", winner = "b" },
   { map = "Grand Line SE", map_slug = "grand-line", a = "BeSt", a_slug = "best", a_race = "p", b = "Midas", b_slug = "midas", b_race = "t", winner = "a" },
 ]
 [[extra.team_bracket.matches.legs]]
@@ -153,7 +153,7 @@ sets = [
   { map = "Grand Line SE", map_slug = "grand-line", a = "BeSt", a_slug = "best", a_race = "p", b = "Mind", b_slug = "mind", b_race = "t", winner = "a" },
   { map = "Match Point", map_slug = "match-point", a = "FanTaSy", a_slug = "fantasy", a_race = "t", b = "BaBy", winner = "a" },
   { map = "New Heartbreak Ridge", map_slug = "heartbreak-ridge", a = "Hyuk", a_slug = "hyuk", a_race = "z", b = "Pure", b_slug = "pure", b_race = "p", winner = "a" },
-  { map = "Roadrunner", a = "n.Die_soO", b = "RorO", winner = "b" },
+  { map = "Roadrunner", a = "n.Die_soO", b = "RorO", b_slug = "roro", b_race = "z", winner = "b" },
   { map = "Fighting Spirit", map_slug = "fighting-spirit", a = "Bisu", a_slug = "bisu", a_race = "p", b = "Midas", b_slug = "midas", b_race = "t", winner = "b" },
   { map = "Polaris Rhapsody", a = "Bisu", a_slug = "bisu", a_race = "p", b = "Pure", b_slug = "pure", b_race = "p", winner = "a", ace = true },
 ]

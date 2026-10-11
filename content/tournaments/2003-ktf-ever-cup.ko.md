@@ -38,7 +38,7 @@ score_a = 3
 score_b = 0
 sets = [
   { map = "Sin Gaema Gowon", a = "Enough", a_race = "z", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "a" },
-  { map = "The Huntress", a = "Autumn", a_race = "p", a2 = "YellOw", a2_slug = "yellow", a2_race = "r", b = "fOru", b_race = "z", b2 = "Nal_rA", b2_slug = "nal-ra", b2_race = "p", winner = "a" },
+  { map = "The Huntress", a = "Autumn", a_race = "p", a2 = "YellOw", a2_slug = "yellow", a2_race = "r", b = "fOru", b_slug = "foru", b_race = "z", b2 = "Nal_rA", b2_slug = "nal-ra", b2_race = "p", winner = "a" },
   { map = "Guillotine", a = "YellOw", a_slug = "yellow", a_race = "z", b = "SaferZerg", b_race = "z", winner = "a" },
 ]
 [[extra.team_bracket]]

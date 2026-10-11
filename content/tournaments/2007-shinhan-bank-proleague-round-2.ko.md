@@ -37,12 +37,12 @@ date = "2008-01-12"
 score_a = 4
 score_b = 3
 sets = [
-  { map = "Katrina", map_slug = "katrina", a = "DarkElf", a_race = "t", b = "HoGiL", b_race = "z", winner = "a" },
+  { map = "Katrina", map_slug = "katrina", a = "DarkElf", a_race = "t", b = "HoGiL", b_slug = "hogil", b_race = "z", winner = "a" },
   { map = "Blue Storm", map_slug = "blue-storm", a = "Iris", a_slug = "iris", a_race = "t", b = "go.go", b_slug = "go-go", b_race = "t", winner = "a" },
-  { map = "Seongangil", a = "Orion", a_race = "z", a2 = "XellOs", a2_slug = "xellos", a2_race = "t", b = "Flower", b_race = "z", b2 = "Justin", b2_race = "t", winner = "b" },
+  { map = "Seongangil", a = "Orion", a_race = "z", a2 = "XellOs", a2_slug = "xellos", a2_race = "t", b = "Flower", b_race = "z", b2 = "Justin", b2_slug = "justin", b2_race = "t", winner = "b" },
   { map = "Python", map_slug = "python", a = "Much", a_slug = "much", a_race = "p", b = "Luxury", b_slug = "luxury", b_race = "z", winner = "b" },
   { map = "Baekmagoji", a = "sAviOr", a_slug = "savior", a_race = "z", b = "Chalrenge", b_race = "p", winner = "b" },
-  { map = "Hwangsanbul", a = "Jy", a_race = "z", a2 = "Memory", a2_race = "t", b = "besga", b_race = "z", b2 = "Kal", b2_race = "p", winner = "a" },
+  { map = "Hwangsanbul", a = "Jy", a_race = "z", a2 = "Memory", a2_slug = "memory", a2_race = "t", b = "besga", b_race = "z", b2 = "Kal", b2_race = "p", winner = "a" },
   { map = "Un'Goro Crater", a = "sAviOr", a_slug = "savior", a_race = "z", b = "YellOw", b_race = "z", winner = "a" },
 ]
 [[extra.team_bracket]]
@@ -62,7 +62,7 @@ sets = [
   { map = "Hwangsanbul", a = "Saint", a_race = "z", a2 = "Light", a2_slug = "light", a2_race = "t", b = "sAviOr", b_slug = "savior", b_race = "z", b2 = "Nbs", b2_race = "p", winner = "a" },
   { map = "Katrina", map_slug = "katrina", a = "Bisu", a_slug = "bisu", a_race = "p", b = "Iris", b_slug = "iris", b_race = "t", winner = "a" },
   { map = "Blue Storm", map_slug = "blue-storm", a = "HyuN", a_slug = "hyun", a_race = "z", b = "Much", b_slug = "much", b_race = "p", winner = "b" },
-  { map = "Seongangil", a = "910", a_race = "t", a2 = "TheZerg", a2_race = "z", b = "Jy", b_race = "z", b2 = "Memory", b2_race = "t", winner = "b" },
+  { map = "Seongangil", a = "910", a_race = "t", a2 = "TheZerg", a2_race = "z", b = "Jy", b_race = "z", b2 = "Memory", b2_slug = "memory", b2_race = "t", winner = "b" },
   { map = "Python", map_slug = "python", a = "Sea", a_slug = "sea", a_race = "t", b = "DarkElf", b_race = "t", winner = "b" },
 ]
 [[extra.team_bracket]]
@@ -82,7 +82,7 @@ sets = [
   { map = "Seongangil", a = "Bright", a_race = "z", a2 = "Dongrae", a2_race = "t", b = "sAviOr", b_slug = "savior", b_race = "z", b2 = "XellOs", b2_slug = "xellos", b2_race = "t", winner = "b" },
   { map = "Monty Hall SE", a = "Anytime", a_slug = "anytime", a_race = "p", b = "DarkElf", b_race = "t", winner = "a" },
   { map = "Un'Goro Crater", a = "fOrGG", a_slug = "forgg", a_race = "t", b = "Kwanro", b_slug = "kwanro", b_race = "z", winner = "a" },
-  { map = "Hwangsanbul", a = "Lomo", a_race = "t", a2 = "ShinHwA", a2_race = "z", b = "Jy", b_race = "z", b2 = "Memory", b2_race = "t", winner = "a" },
+  { map = "Hwangsanbul", a = "Lomo", a_slug = "lomo", a_race = "t", a2 = "ShinHwA", a2_race = "z", b = "Jy", b_race = "z", b2 = "Memory", b2_slug = "memory", b2_race = "t", winner = "a" },
 ]
 +++
 2007 신한은행 프로리그 2라운드도 12개 팀 풀리그 뒤 상위 네 팀이 7전 4선승제 계단식 플레이오프를 치렀고, 우승팀은 2007 그랜드 파이널에서 1라운드 우승팀과 맞붙었습니다.

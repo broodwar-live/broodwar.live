@@ -38,11 +38,11 @@ score_a = 4
 score_b = 2
 sets = [
   { map = "Neo Guillotine", a = "Zeus", a_slug = "zeus", a_race = "p", b = "Sync", b_slug = "sync", b_race = "t", winner = "a" },
-  { map = "Vertigo Plus", a = "Side", a_race = "z", a2 = "Max", a2_race = "t", b = "Chojja", b_slug = "chojja", b_race = "z", b2 = "Reach", b2_slug = "reach", b2_race = "p", winner = "b" },
+  { map = "Vertigo Plus", a = "Side", a_slug = "side", a_race = "z", a2 = "Max", a2_race = "t", b = "Chojja", b_slug = "chojja", b_race = "z", b2 = "Reach", b2_slug = "reach", b2_race = "p", winner = "b" },
   { map = "Xeno Sky", a = "Yellow", a_race = "z", b = "Yarnac", b_race = "z", winner = "a" },
-  { map = "Odin", a = "Side", a_race = "z", a2 = "Max", a2_race = "z", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "Yellow", b2_slug = "yellow", b2_race = "z", winner = "a" },
+  { map = "Odin", a = "Side", a_slug = "side", a_race = "z", a2 = "Max", a2_race = "z", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "Yellow", b2_slug = "yellow", b2_race = "z", winner = "a" },
   { map = "Requiem", map_slug = "neo-requiem", a = "Cloud", a_race = "t", b = "TheMarine", b_slug = "themarine", b_race = "t", winner = "b" },
-  { map = "Neo Guillotine", a = "Side", a_race = "z", a2 = "Max", a2_race = "p", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "Chojja", b2_slug = "chojja", b2_race = "z", winner = "a" },
+  { map = "Neo Guillotine", a = "Side", a_slug = "side", a_race = "z", a2 = "Max", a2_race = "p", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "Chojja", b2_slug = "chojja", b2_race = "z", winner = "a" },
 ]
 [[extra.team_bracket]]
 round = "Semifinal"
@@ -57,11 +57,11 @@ score_a = 4
 score_b = 2
 sets = [
   { map = "Guillotine", a = "Sunny", a_race = "t", b = "Zeus", b_slug = "zeus", b_race = "z", winner = "a" },
-  { map = "Vertigo Plus", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Autumn", a2_race = "p", b = "Max", b_race = "p", b2 = "Side", b2_race = "z", winner = "b" },
+  { map = "Vertigo Plus", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Autumn", a2_race = "p", b = "Max", b_race = "p", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "b" },
   { map = "Requiem", map_slug = "neo-requiem", a = "Daezang", a_race = "p", b = "Casy", b_slug = "casy", b_race = "t", winner = "b" },
-  { map = "Odin", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Junwi", a2_race = "p", b = "Max", b_race = "t", b2 = "Side", b2_race = "z", winner = "a" },
+  { map = "Odin", a = "HOT", a_slug = "hot-forever", a_race = "z", a2 = "Junwi", a2_slug = "junwi", a2_race = "p", b = "Max", b_race = "t", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
   { map = "Xeno Sky", a = "Clon", a_race = "z", b = "Yellow", b_race = "t", winner = "a" },
-  { map = "Guillotine", a = "Sunny", a_race = "z", a2 = "Clon", a2_race = "t", b = "Max", b_race = "p", b2 = "Side", b2_race = "z", winner = "a" },
+  { map = "Guillotine", a = "Sunny", a_race = "z", a2 = "Clon", a2_race = "t", b = "Max", b_race = "p", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
 ]
 [[extra.team_bracket]]
 round = "Final"

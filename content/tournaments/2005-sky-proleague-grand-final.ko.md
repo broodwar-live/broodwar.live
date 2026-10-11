@@ -40,7 +40,7 @@ sets = [
   { map = "Neo Forte", a = "Stork", a_slug = "stork", a_race = "p", b = "Iris", b_slug = "iris", b_race = "t", winner = "b" },
   { map = "Luna", a = "Zerglee", a_race = "z", a2 = "GGon", a2_race = "r", b = "Savior", b_slug = "savior", b_race = "z", b2 = "Oversky", b2_race = "r", winner = "b" },
   { map = "Rush Hour", a = "Jju", a_slug = "jju", a_race = "z", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
-  { map = "Usan Nation", a = "CuteBOy", a_race = "t", a2 = "JiHyun", a2_race = "z", b = "Rage", b_race = "p", b2 = "Savior", b2_slug = "savior", b2_race = "z", winner = "b" },
+  { map = "Usan Nation", a = "CuteBOy", a_race = "t", a2 = "JiHyun", a2_race = "z", b = "Rage", b_slug = "rage", b_race = "p", b2 = "Savior", b2_slug = "savior", b2_race = "z", winner = "b" },
 ]
 [[extra.team_bracket]]
 round = "플레이오프"
@@ -74,9 +74,9 @@ score_a = 4
 score_b = 2
 sets = [
   { map = "R-Point", a = "Boxer", a_slug = "boxer", a_race = "t", b = "Goodfriend", b_slug = "goodfriend", b_race = "t", winner = "b" },
-  { map = "Usan Nation", a = "Canata", a_slug = "canata", a_race = "t", a2 = "Rumble", a2_race = "z", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "YellOw", b2_slug = "yellow", b2_race = "z", winner = "a" },
+  { map = "Usan Nation", a = "Canata", a_slug = "canata", a_race = "t", a2 = "Rumble", a2_slug = "rumble", a2_race = "z", b = "Nal_rA", b_slug = "nal-ra", b_race = "p", b2 = "YellOw", b2_slug = "yellow", b2_race = "z", winner = "a" },
   { map = "Rush Hour", a = "iloveoov", a_slug = "iloveoov", a_race = "t", b = "Chojja", b_slug = "chojja", b_race = "z", winner = "a" },
-  { map = "Luna", a = "Rumble", a_race = "z", a2 = "IntoTheRainbow", a2_race = "t", b = "Goodfriend", b_slug = "goodfriend", b_race = "t", b2 = "Chojja", b2_slug = "chojja", b2_race = "z", winner = "b" },
+  { map = "Luna", a = "Rumble", a_slug = "rumble", a_race = "z", a2 = "IntoTheRainbow", a2_race = "t", b = "Goodfriend", b_slug = "goodfriend", b_race = "t", b2 = "Chojja", b2_slug = "chojja", b2_race = "z", winner = "b" },
   { map = "Neo Requiem", map_slug = "neo-requiem", a = "Kingdom", a_slug = "kingdom", a_race = "p", b = "Sync", b_slug = "sync", b_race = "t", winner = "a" },
   { map = "Iron Curtain", a = "MuMyung", a_slug = "mumyung", a_race = "z", a2 = "Midas", a2_slug = "midas", a2_race = "t", b = "Reach", b_slug = "reach", b_race = "p", b2 = "YellOw", b2_slug = "yellow", b2_race = "z", winner = "a" },
 ]

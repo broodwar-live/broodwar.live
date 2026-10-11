@@ -77,12 +77,12 @@ date = "2007-01-07"
 score_a = 2
 score_b = 4
 sets = [
-  { map = "Arkanoid", a = "Savior", a_slug = "savior", a_race = "z", b = "Shark", b_race = "z", winner = "a" },
+  { map = "Arkanoid", a = "Savior", a_slug = "savior", a_race = "z", b = "Shark", b_slug = "shark", b_race = "z", winner = "a" },
   { map = "Tau Cross", map_slug = "tau-cross", a = "Much", a_slug = "much", a_race = "p", b = "Pusan", b_slug = "pusan", b_race = "p", winner = "b" },
-  { map = "Full Moon", a = "Rage", a_race = "p", a2 = "Oversky", a2_race = "z", b = "Light", b_slug = "light", b_race = "t", b2 = "Saint", b2_race = "z", winner = "b" },
+  { map = "Full Moon", a = "Rage", a_slug = "rage", a_race = "p", a2 = "Oversky", a2_slug = "oversky", a2_race = "z", b = "Light", b_slug = "light", b_race = "t", b2 = "Saint", b2_race = "z", winner = "b" },
   { map = "Longinus", map_slug = "longinus", a = "Iris", a_slug = "iris", a_race = "t", b = "Bisu", b_slug = "bisu", b_race = "p", winner = "a" },
   { map = "Arcadia", map_slug = "arcadia", a = "XellOs", a_slug = "xellos", a_race = "t", b = "July", b_slug = "july", b_race = "z", winner = "b" },
-  { map = "Vampire", a = "Mingu", a_race = "z", a2 = "Memory", a2_race = "t", b = "TheZerg", b_race = "z", b2 = "Jaehoon", b2_slug = "jaehoon", b2_race = "p", winner = "b" },
+  { map = "Vampire", a = "Mingu", a_race = "z", a2 = "Memory", a2_slug = "memory", a2_race = "t", b = "TheZerg", b_race = "z", b2 = "Jaehoon", b2_slug = "jaehoon", b2_race = "p", winner = "b" },
 ]
 +++
 2006 SKY 프로리그 2라운드는 1라운드와 같은 방식(11개 팀, 5전 3선승제 풀리그, 상위 네 팀의 7전 4선승제 계단식 플레이오프)으로 열렸고, 우승팀은 2006 그랜드 파이널에서 1라운드 우승팀과 맞붙었습니다.

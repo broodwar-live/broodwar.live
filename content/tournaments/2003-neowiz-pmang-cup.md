@@ -39,7 +39,7 @@ score_b = 3
 sets = [
   { map = "Sin Gaema Gowon", a = "fOfy", a_race = "t", b = "XellOs", b_slug = "xellos", b_race = "t", winner = "b" },
   { map = "Vertigo Plus", a = "[Oops]Autumn", a_race = "p", a2 = "H.O.T-Forever", a2_slug = "hot-forever", a2_race = "z", b = "GoRush", b_slug = "gorush", b_race = "z", b2 = "Nal_rA", b2_slug = "nal-ra", b2_race = "p", winner = "b" },
-  { map = "Another Day", a = "Junwi", a_race = "z", b = "Midas", b_slug = "midas", b_race = "t", winner = "b" },
+  { map = "Another Day", a = "Junwi", a_slug = "junwi", a_race = "z", b = "Midas", b_slug = "midas", b_race = "t", winner = "b" },
 ]
 [[extra.team_bracket]]
 round = "Final"

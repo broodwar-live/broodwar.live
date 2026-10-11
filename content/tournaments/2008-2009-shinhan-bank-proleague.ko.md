@@ -85,9 +85,9 @@ sets = [
   { map = "Neo Harmony", a = "go.go", a_slug = "go-go", a_race = "t", b = "Iris", b_slug = "iris", b_race = "t", winner = "b" },
   { map = "Destination", map_slug = "destination", a = "Horang2", a_slug = "horang2", a_race = "p", b = "Movie", b_slug = "movie", b_race = "p", winner = "a" },
   { map = "Heartbreak Ridge", map_slug = "heartbreak-ridge", a = "YellOw(ArnC)", a_slug = "yellow-arnc", a_race = "z", b = "EffOrt", b_slug = "effort", b_race = "z", winner = "a" },
-  { map = "Andromeda", map_slug = "andromeda", a = "Justin", a_race = "t", b = "Kwanro", b_slug = "kwanro", b_race = "z", winner = "b" },
+  { map = "Andromeda", map_slug = "andromeda", a = "Justin", a_slug = "justin", a_race = "t", b = "Kwanro", b_slug = "kwanro", b_race = "z", winner = "b" },
   { map = "Shades of Twilight", a = "Leta", a_slug = "leta", a_race = "t", b = "sKyHigh", b_slug = "skyhigh", b_race = "t", winner = "b" },
-  { map = "Neo Medusa", a = "type-b", a_race = "z", b = "sAviOr", b_slug = "savior", b_race = "z", winner = "a" },
+  { map = "Neo Medusa", a = "type-b", a_slug = "type-b", a_race = "z", b = "sAviOr", b_slug = "savior", b_race = "z", winner = "a" },
   { map = "Colosseum II", map_slug = "colosseum", a = "Leta", a_slug = "leta", a_race = "t", b = "Movie", b_slug = "movie", b_race = "p", winner = "b", ace = true },
 ]
 [[extra.team_bracket.matches.legs]]
@@ -95,12 +95,12 @@ date = "2009-07-19"
 score_a = 4
 score_b = 2
 sets = [
-  { map = "Neo Medusa", a = "type-b", a_race = "z", b = "EffOrt", b_slug = "effort", b_race = "z", winner = "b" },
+  { map = "Neo Medusa", a = "type-b", a_slug = "type-b", a_race = "z", b = "EffOrt", b_slug = "effort", b_race = "z", winner = "b" },
   { map = "Colosseum II", map_slug = "colosseum", a = "Horang2", a_slug = "horang2", a_race = "p", b = "Nbs", b_race = "p", winner = "a" },
   { map = "Neo Harmony", a = "go.go", a_slug = "go-go", a_race = "t", b = "Iris", b_slug = "iris", b_race = "t", winner = "a" },
   { map = "Shades of Twilight", a = "Leta", a_slug = "leta", a_race = "t", b = "sKyHigh", b_slug = "skyhigh", b_race = "t", winner = "b" },
   { map = "Destination", map_slug = "destination", a = "Yellow(ArnC)", a_slug = "yellow-arnc", a_race = "z", b = "Kwanro", b_slug = "kwanro", b_race = "z", winner = "a" },
-  { map = "Heartbreak Ridge", map_slug = "heartbreak-ridge", a = "Justin", a_race = "t", b = "Movie", b_slug = "movie", b_race = "p", winner = "a" },
+  { map = "Heartbreak Ridge", map_slug = "heartbreak-ridge", a = "Justin", a_slug = "justin", a_race = "t", b = "Movie", b_slug = "movie", b_race = "p", winner = "a" },
 ]
 [[extra.team_bracket.matches.legs]]
 date = "2009-07-19"
@@ -172,7 +172,7 @@ date = "2009-08-01"
 score_a = 4
 score_b = 1
 sets = [
-  { map = "Destination", map_slug = "destination", a = "Lomo", a_race = "t", b = "sKyHigh", b_slug = "skyhigh", b_race = "t", winner = "b" },
+  { map = "Destination", map_slug = "destination", a = "Lomo", a_slug = "lomo", a_race = "t", b = "sKyHigh", b_slug = "skyhigh", b_race = "t", winner = "b" },
   { map = "Neo Medusa", a = "Jaedong", a_slug = "jaedong", a_race = "z", b = "EffOrt", b_slug = "effort", b_race = "z", winner = "a" },
   { map = "Colosseum II", map_slug = "colosseum", a = "HiyA", a_slug = "hiya", a_race = "t", b = "Movie", b_slug = "movie", b_race = "p", winner = "a" },
   { map = "Shades of Twilight", a = "PerfectMan", a_slug = "perfectman", a_race = "p", b = "Iris", b_slug = "iris", b_race = "t", winner = "a" },
@@ -185,7 +185,7 @@ score_b = 4
 sets = [
   { map = "Destination", map_slug = "destination", a = "HiyA", a_slug = "hiya", a_race = "t", b = "sKyHigh", b_slug = "skyhigh", b_race = "t", winner = "b" },
   { map = "Colosseum II", map_slug = "colosseum", a = "Young", a_race = "p", b = "Movie", b_slug = "movie", b_race = "p", winner = "b" },
-  { map = "Shades of Twilight", a = "Lomo", a_race = "t", b = "Iris", b_slug = "iris", b_race = "t", winner = "b" },
+  { map = "Shades of Twilight", a = "Lomo", a_slug = "lomo", a_race = "t", b = "Iris", b_slug = "iris", b_race = "t", winner = "b" },
   { map = "God's Garden", a = "Jaedong", a_slug = "jaedong", a_race = "z", b = "Orion", b_race = "z", winner = "b" },
 ]
 [[extra.team_bracket.matches.legs]]
@@ -214,7 +214,7 @@ score_a = 4
 score_b = 0
 sets = [
   { map = "Outsider", map_slug = "outsider", a = "fantasy", a_slug = "fantasy", a_race = "t", b = "Jaedong", b_slug = "jaedong", b_race = "z", winner = "a" },
-  { map = "Shades of Twilight", a = "Canata", a_slug = "canata", a_race = "t", b = "Lomo", b_race = "t", winner = "a" },
+  { map = "Shades of Twilight", a = "Canata", a_slug = "canata", a_race = "t", b = "Lomo", b_slug = "lomo", b_race = "t", winner = "a" },
   { map = "Neo Medusa", a = "Hyuk", a_slug = "hyuk", a_race = "z", b = "ggaemo", b_slug = "ggaemo", b_race = "z", winner = "a" },
   { map = "Colosseum II", map_slug = "colosseum", a = "BeSt", a_slug = "best", a_race = "p", b = "BackHo", b_slug = "backho", b_race = "p", winner = "a" },
 ]
@@ -228,7 +228,7 @@ sets = [
   { map = "Destination", map_slug = "destination", a = "Canata", a_slug = "canata", a_race = "t", b = "BackHo", b_slug = "backho", b_race = "p", winner = "b" },
   { map = "God's Garden", a = "Thezerg", a_race = "z", b = "Killer", b_slug = "killer", b_race = "z", winner = "b" },
   { map = "Neo Harmony", a = "fantasy", a_slug = "fantasy", a_race = "t", b = "HiyA", b_slug = "hiya", b_race = "t", winner = "a" },
-  { map = "Shades of Twilight", a = "BeSt", a_slug = "best", a_race = "p", b = "Lomo", b_race = "t", winner = "b" },
+  { map = "Shades of Twilight", a = "BeSt", a_slug = "best", a_race = "p", b = "Lomo", b_slug = "lomo", b_race = "t", winner = "b" },
   { map = "Neo Medusa", a = "fantasy", a_slug = "fantasy", a_race = "t", b = "Jaedong", b_slug = "jaedong", b_race = "z", winner = "a", ace = true },
 ]
 +++

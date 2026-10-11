@@ -38,9 +38,9 @@ score_a = 3
 score_b = 1
 sets = [
   { map = "Requiem", map_slug = "neo-requiem", a = "Nal_Rock", a_slug = "rock", a_race = "p", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "a" },
-  { map = "Mercury Zero", a = "NaDa", a_slug = "nada", a_race = "t", a2 = "Silver", a2_slug = "silver", a2_race = "z", b = "Max", b_race = "t", b2 = "Side", b2_race = "z", winner = "a" },
+  { map = "Mercury Zero", a = "NaDa", a_slug = "nada", a_race = "t", a2 = "Silver", a2_slug = "silver", a2_race = "z", b = "Max", b_race = "t", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
   { map = "Xeno Sky", a = "Sir@soni", a_race = "z", b = "Cloud", b_race = "t", winner = "b" },
-  { map = "Odin_(Map)", a = "Silver", a_slug = "silver", a_race = "z", a2 = "Goodfriend", a2_slug = "goodfriend", a2_race = "t", b = "Max", b_race = "p", b2 = "Side", b2_race = "z", winner = "a" },
+  { map = "Odin_(Map)", a = "Silver", a_slug = "silver", a_race = "z", a2 = "Goodfriend", a2_slug = "goodfriend", a2_race = "t", b = "Max", b_race = "p", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
 ]
 [[extra.team_bracket.matches]]
 a = "STX SouL"
@@ -51,7 +51,7 @@ date = "2004-10-20"
 score_a = 3
 score_b = 2
 sets = [
-  { map = "Xeno Sky", a = "Jju", a_slug = "jju", a_race = "z", b = "Junwi", b_race = "z", winner = "a" },
+  { map = "Xeno Sky", a = "Jju", a_slug = "jju", a_race = "z", b = "Junwi", b_slug = "junwi", b_race = "z", winner = "a" },
   { map = "Odin_(Map)", a = "Ccoma", a_race = "z", a2 = "TheWinD", a2_race = "t", b = "HOT", b_slug = "hot-forever", b_race = "z", b2 = "Control", b2_race = "t", winner = "a" },
   { map = "Requiem", map_slug = "neo-requiem", a = "Hwasin", a_slug = "hwasin", a_race = "t", b = "Sunny", b_race = "t", winner = "b" },
   { map = "Mercury Zero", a = "Ccoma", a_race = "z", a2 = "TheWinD", a2_race = "t", b = "Sunny", b_race = "t", b2 = "Clon", b2_race = "z", winner = "b" },

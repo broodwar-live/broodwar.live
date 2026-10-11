@@ -37,7 +37,7 @@ score_b = 4
 sets = [
   { map = "Un'Goro Crater", a = "FrOzean", a_slug = "frozen", a_race = "t", b = "Jaedong", b_slug = "jaedong", b_race = "z", winner = "a" },
   { map = "Nemesis", a = "JangBi", a_slug = "jangbi", a_race = "p", b = "fOrGG", b_slug = "forgg", b_race = "t", winner = "b" },
-  { map = "Hwangsanbul", a = "JiHyun", a_race = "z", a2 = "CuteBOy", a2_race = "t", b = "Lomo", b_race = "t", b2 = "ShinHwA", b2_race = "z", winner = "b" },
+  { map = "Hwangsanbul", a = "JiHyun", a_race = "z", a2 = "CuteBOy", a2_race = "t", b = "Lomo", b_slug = "lomo", b_race = "t", b2 = "ShinHwA", b2_race = "z", winner = "b" },
   { map = "Katrina", map_slug = "katrina", a = "Stork", a_slug = "stork", a_race = "p", b = "Anytime", b_slug = "anytime", b_race = "p", winner = "b" },
   { map = "Python", map_slug = "python", a = "Firebathero", a_slug = "firebathero", a_race = "t", b = "HiyA", b_slug = "hiya", b_race = "t", winner = "b" },
 ]

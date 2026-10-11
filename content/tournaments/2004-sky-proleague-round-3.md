@@ -52,9 +52,9 @@ score_a = 2
 score_b = 3
 sets = [
   { map = "Alchemist", a = "IPXZerg", a_race = "p", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "a" },
-  { map = "Eye in the Sky", a = "ForU", a_race = "r", a2 = "oversKy", a2_race = "z", b = "Max", b_race = "r", b2 = "Side", b2_race = "z", winner = "a" },
+  { map = "Eye in the Sky", a = "ForU", a_race = "r", a2 = "oversKy", a2_slug = "oversky", a2_race = "z", b = "Max", b_race = "r", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "a" },
   { map = "Incubus 2004", a = "XellOs", a_slug = "xellos", a_race = "t", b = "Casy", b_slug = "casy", b_race = "t", winner = "b" },
-  { map = "Neo Guillotine", a = "XellOs", a_slug = "xellos", a_race = "t", a2 = "oversKy", a2_race = "z", b = "Max", b_race = "t", b2 = "Side", b2_race = "z", winner = "b" },
+  { map = "Neo Guillotine", a = "XellOs", a_slug = "xellos", a_race = "t", a2 = "oversKy", a2_slug = "oversky", a2_race = "z", b = "Max", b_race = "t", b2 = "Side", b2_slug = "side", b2_race = "z", winner = "b" },
   { map = "Requiem", map_slug = "neo-requiem", a = "GoRush", a_slug = "gorush", a_race = "z", b = "ClouD", b_race = "t", winner = "b" },
 ]
 [[extra.team_bracket]]
@@ -70,11 +70,11 @@ score_a = 3
 score_b = 4
 sets = [
   { map = "Neo Forbidden Zone", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", b = "Zeus", b_slug = "zeus", b_race = "p", winner = "b" },
-  { map = "Eye in the Sky", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", a2 = "Yellow", a2_slug = "yellow", a2_race = "z", b = "Side", b_race = "r", b2 = "YellOw(ArnC)", b2_slug = "yellow-arnc", b2_race = "z", winner = "a" },
+  { map = "Eye in the Sky", a = "Nal_rA", a_slug = "nal-ra", a_race = "p", a2 = "Yellow", a2_slug = "yellow", a2_race = "z", b = "Side", b_slug = "side", b_race = "r", b2 = "YellOw(ArnC)", b2_slug = "yellow-arnc", b2_race = "z", winner = "a" },
   { map = "Requiem", map_slug = "neo-requiem", a = "Reach", a_slug = "reach", a_race = "p", b = "Casy", b_slug = "casy", b_race = "t", winner = "b" },
-  { map = "Neo Guillotine", a = "Chojja", a_slug = "chojja", a_race = "z", a2 = "Nal_rA", a2_slug = "nal-ra", a2_race = "p", b = "Side", b_race = "z", b2 = "Max", b2_race = "p", winner = "a" },
+  { map = "Neo Guillotine", a = "Chojja", a_slug = "chojja", a_race = "z", a2 = "Nal_rA", a2_slug = "nal-ra", a2_race = "p", b = "Side", b_slug = "side", b_race = "z", b2 = "Max", b2_race = "p", winner = "a" },
   { map = "Alchemist", a = "TheMarine", a_slug = "themarine", a_race = "t", b = "Max", b_race = "z", winner = "a" },
-  { map = "Neo Guillotine", a = "Yellow", a_slug = "yellow", a_race = "z", a2 = "Sync", a2_slug = "sync", a2_race = "t", b = "Side", b_race = "z", b2 = "Max", b2_race = "p", winner = "b" },
+  { map = "Neo Guillotine", a = "Yellow", a_slug = "yellow", a_race = "z", a2 = "Sync", a2_slug = "sync", a2_race = "t", b = "Side", b_slug = "side", b_race = "z", b2 = "Max", b2_race = "p", winner = "b" },
   { map = "Incubus 2004", a = "Chojja", a_slug = "chojja", a_race = "z", b = "Cloud", b_race = "t", winner = "b" },
 ]
 +++

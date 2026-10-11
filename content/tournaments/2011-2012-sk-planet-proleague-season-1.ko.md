@@ -87,7 +87,7 @@ score_a = 3
 score_b = 4
 sets = [
   { map = "Neo Outlier", a = "Stork", a_slug = "stork", a_race = "p", b = "Wooki", b_race = "p", winner = "a" },
-  { map = "Sniper Ridge", map_slug = "sniper-ridge", a = "Roro", a_race = "z", b = "HoeJJa", b_slug = "hoejja", b_race = "z", winner = "b" },
+  { map = "Sniper Ridge", map_slug = "sniper-ridge", a = "Roro", a_slug = "roro", a_race = "z", b = "HoeJJa", b_slug = "hoejja", b_race = "z", winner = "b" },
   { map = "Neo Chain Reaction", a = "Shine", a_slug = "shine", a_race = "z", b = "Action", b_slug = "action", b_race = "z", winner = "a" },
   { map = "Ground Zero", map_slug = "ground-zero", a = "JangBi", a_slug = "jangbi", a_race = "p", b = "Flash", b_slug = "flash", b_race = "t", winner = "b" },
   { map = "Jade", a = "Reality", a_race = "t", b = "Stats", b_slug = "stats", b_race = "p", winner = "b" },
@@ -103,7 +103,7 @@ sets = [
   { map = "Neo Outlier", a = "Stork", a_slug = "stork", a_race = "p", b = "Stats", b_slug = "stats", b_race = "p", winner = "a" },
   { map = "Neo Chain Reaction", a = "Brave", a_race = "p", b = "Crazy-Hydra", b_race = "z", winner = "b" },
   { map = "Jade", a = "JangBi", a_slug = "jangbi", a_race = "p", b = "Flash", b_slug = "flash", b_race = "t", winner = "b" },
-  { map = "Sniper Ridge", map_slug = "sniper-ridge", a = "Roro", a_race = "z", b = "Wooki", b_race = "p", winner = "a" },
+  { map = "Sniper Ridge", map_slug = "sniper-ridge", a = "Roro", a_slug = "roro", a_race = "z", b = "Wooki", b_race = "p", winner = "a" },
   { map = "Neo Electric Circuit", a = "Shine", a_slug = "shine", a_race = "z", b = "HoeJJa", b_slug = "hoejja", b_race = "z", winner = "b" },
 ]
 [[extra.team_bracket]]
