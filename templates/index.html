@@ -3,6 +3,7 @@
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 <section class="asl-gradient-bg hero-streaks hero-glow relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
     <div class="text-center max-w-2xl mx-auto">
@@ -14,8 +15,8 @@
         {{ t.the_home }}
       </p>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <a href="/replays" class="btn btn-primary">{{ t.replays }}</a>
-        <a href="/players" class="btn btn-primary btn-soft">{{ t.players }}</a>
+        <a href="{{ lp }}/replays/" class="btn btn-primary">{{ t.replays }}</a>
+        <a href="{{ lp }}/players/" class="btn btn-primary btn-soft">{{ t.players }}</a>
       </div>
     </div>
   </div>
@@ -25,7 +26,7 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
   <div class="flex items-center justify-between mb-6">
     <h2 class="text-lg font-semibold">{{ t.live_streams }}</h2>
-    <a href="/streams" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
+    <a href="{{ lp }}/streams/" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
   </div>
   {% if config.extra.api_enabled %}
   <div id="live-streams" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true">
@@ -42,7 +43,7 @@
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
   <div class="flex items-center justify-between mb-6">
     <h2 class="text-lg font-semibold">{{ t.matches }}</h2>
-    <a href="/matches" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
+    <a href="{{ lp }}/matches/" class="text-xs text-primary/60 hover:text-primary transition-colors">{{ t.view_all }} &rarr;</a>
   </div>
   {% if config.extra.api_enabled %}
   <div id="recent-matches" data-api="{{ config.extra.api_base_url }}" aria-live="polite" aria-busy="true">

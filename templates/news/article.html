@@ -16,9 +16,10 @@
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="{% if lang == 'ko' %}/ko{% endif %}/news/" class="hover:text-base-content/60">{{ t.news }}</a>
+    <a href="{{ lp }}/news/" class="hover:text-base-content/60">{{ t.news }}</a>
     <span class="mx-1.5">/</span>
     <span class="text-base-content/50">{{ page.title }}</span>
   </nav>

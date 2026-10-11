@@ -5,8 +5,8 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ config.base_url | safe }}/tournaments"},
-    {"@type": "ListItem", "position": 2, "name": {{ page.extra.series_name | json_encode | safe }}, "item": "{{ config.base_url | safe }}/tournaments/{{ page.extra.series_slug | safe }}"},
+    {"@type": "ListItem", "position": 1, "name": "Tournaments", "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/tournaments"},
+    {"@type": "ListItem", "position": 2, "name": {{ page.extra.series_name | json_encode | safe }}, "item": "{{ config.base_url | safe }}{% if lang != config.default_language %}/{{ lang }}{% endif %}/tournaments/{{ page.extra.series_slug | safe }}"},
     {"@type": "ListItem", "position": 3, "name": {{ page.extra.season_label | json_encode | safe }}}
   ]
 },
@@ -21,12 +21,13 @@
 
 {% block content %}
 {% set t = config.extra.i18n[lang] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 {% set e = page.extra %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="/tournaments" class="hover:text-base-content/60">{{ t.tournaments }}</a>
+    <a href="{{ lp }}/tournaments/" class="hover:text-base-content/60">{{ t.tournaments }}</a>
     <span class="mx-1.5">/</span>
-    <a href="/tournaments/{{ e.series_slug }}" class="hover:text-base-content/60">{{ e.series_name }}</a>
+    <a href="{{ lp }}/tournaments/{{ e.series_slug }}/" class="hover:text-base-content/60">{{ e.series_name }}</a>
     <span class="mx-1.5">/</span>
     <span class="text-base-content/50">{{ e.season_label }}</span>
   </nav>
@@ -50,13 +51,13 @@
   <div class="glass-card rounded-box p-6 max-w-2xl mb-8">
     <h2 class="text-sm font-semibold mb-4">{% if lang == "ko" %}결과{% else %}Results{% endif %}</h2>
     <dl class="space-y-3 text-sm">
-      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}우승{% else %}Champion{% endif %}</dt><dd class="font-semibold"><a href="/players/{{ e.champion | lower }}" class="text-primary hover:text-primary/80 transition-colors">{{ e.champion }}</a></dd></div>
-      {% if e.runner_up is defined and e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd><a href="/players/{{ e.runner_up | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.runner_up }}</a></dd></div>{% endif %}
+      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}우승{% else %}Champion{% endif %}</dt><dd class="font-semibold"><a href="{{ lp }}/players/{{ e.champion | lower }}/" class="text-primary hover:text-primary/80 transition-colors">{{ e.champion }}</a></dd></div>
+      {% if e.runner_up is defined and e.runner_up %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}준우승{% else %}Runner-up{% endif %}</dt><dd><a href="{{ lp }}/players/{{ e.runner_up | lower }}/" class="text-primary/70 hover:text-primary transition-colors">{{ e.runner_up }}</a></dd></div>{% endif %}
       {% if e.final_score is defined and e.final_score %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}결승 스코어{% else %}Final Score{% endif %}</dt><dd class="font-stats">{{ e.final_score }}</dd></div>{% endif %}
       {% if e.final_date is defined and e.final_date %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}결승일{% else %}Final Date{% endif %}</dt><dd class="font-stats"><time datetime="{{ e.final_date }}">{{ e.final_date }}</time></dd></div>{% endif %}
       {% if e.prize_pool is defined and e.prize_pool %}<div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}상금{% else %}Prize Pool{% endif %}</dt><dd>{{ e.prize_pool }}</dd></div>{% endif %}
       {% if e.semifinalists is defined and e.semifinalists | length > 0 %}
-      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}4강{% else %}Semi-finalists{% endif %}</dt><dd>{% for sf in e.semifinalists %}<a href="/players/{{ sf | lower }}" class="text-primary/70 hover:text-primary transition-colors">{{ sf }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
+      <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}4강{% else %}Semi-finalists{% endif %}</dt><dd>{% for sf in e.semifinalists %}<a href="{{ lp }}/players/{{ sf | lower }}/" class="text-primary/70 hover:text-primary transition-colors">{{ sf }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
       {% endif %}
     </dl>
   </div>
@@ -70,9 +71,9 @@
     <div class="glass-card rounded-box px-4 py-3 flex items-center gap-4">
       <span class="text-[11px] text-primary/50 font-medium w-24 shrink-0">{{ m.round }}</span>
       <div class="flex-1 flex items-center justify-center gap-3">
-        <a href="/players/{{ m.player_a | lower }}" class="font-semibold text-sm {% if m.score_a > m.score_b %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_a }}</a>
+        <a href="{{ lp }}/players/{{ m.player_a | lower }}/" class="font-semibold text-sm {% if m.score_a > m.score_b %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_a }}</a>
         <span class="font-stats text-sm"><span class="{% if m.score_a > m.score_b %}text-primary{% else %}text-base-content/30{% endif %}">{{ m.score_a }}</span><span class="text-base-content/15"> : </span><span class="{% if m.score_b > m.score_a %}text-primary{% else %}text-base-content/30{% endif %}">{{ m.score_b }}</span></span>
-        <a href="/players/{{ m.player_b | lower }}" class="font-semibold text-sm {% if m.score_b > m.score_a %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_b }}</a>
+        <a href="{{ lp }}/players/{{ m.player_b | lower }}/" class="font-semibold text-sm {% if m.score_b > m.score_a %}text-base-content hover:text-primary{% else %}text-base-content/40 hover:text-base-content/60{% endif %} transition-colors">{{ m.player_b }}</a>
       </div>
     </div>
     {% endfor %}
@@ -96,9 +97,9 @@
         {% for m in e.bracket %}
         <tr>
           <td class="text-base-content/40">{{ m.round }}</td>
-          <td class="{% if m.score_a > m.score_b %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="/players/{{ m.player_a | lower }}" class="hover:text-primary transition-colors">{{ m.player_a }}</a></td>
+          <td class="{% if m.score_a > m.score_b %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="{{ lp }}/players/{{ m.player_a | lower }}/" class="hover:text-primary transition-colors">{{ m.player_a }}</a></td>
           <td class="font-stats">{{ m.score_a }}-{{ m.score_b }}</td>
-          <td class="{% if m.score_b > m.score_a %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="/players/{{ m.player_b | lower }}" class="hover:text-primary transition-colors">{{ m.player_b }}</a></td>
+          <td class="{% if m.score_b > m.score_a %}font-semibold{% else %}text-base-content/40{% endif %}"><a href="{{ lp }}/players/{{ m.player_b | lower }}/" class="hover:text-primary transition-colors">{{ m.player_b }}</a></td>
         </tr>
         {% endfor %}
       </tbody>
