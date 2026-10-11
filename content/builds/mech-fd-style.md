@@ -10,8 +10,6 @@ tags = ["mech", "contain", "late-game"]
 [extra]
 race = "terran"
 matchup = "TvP"
-games = 289
-winrate = 55
 +++
 Flash's signature TvP mech approach, emphasizing vulture map control combined with precise siege tank positioning. The core idea is to contain Protoss on fewer bases while you take the map, using vulture speed to deny expansions and spider mines to create safe zones for your tank lines.
 

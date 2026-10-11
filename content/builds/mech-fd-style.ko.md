@@ -10,8 +10,6 @@ tags = ["mech", "contain", "late-game"]
 [extra]
 race = "terran"
 matchup = "TvP"
-games = 289
-winrate = 55
 +++
 Flash의 시그니처 TvP 메카닉 접근법으로, 벌처 맵 컨트롤과 정밀한 시즈탱크 포지셔닝을 강조합니다. 핵심 아이디어는 프로토스를 적은 수의 기지에 가두면서 맵을 장악하는 것으로, 벌처 속도로 확장을 저지하고 스파이더 마인으로 탱크 라인의 안전 지대를 만듭니다.
 

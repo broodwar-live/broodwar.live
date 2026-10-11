@@ -5,16 +5,16 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Players", "item": "{{ config.base_url }}/players"},
-    {"@type": "ListItem", "position": 2, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 1, "name": "Players", "item": "{{ config.base_url | safe }}/players"},
+    {"@type": "ListItem", "position": 2, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "Person",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
-  "url": "{{ current_url }}",
-  "nationality": "{{ page.extra.country_name }}"
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
+  "nationality": {{ page.extra.country_name | json_encode | safe }}
 }
 {% endblock %}
 
@@ -32,7 +32,6 @@
     <div class="lg:col-span-2">
       <div class="flex items-center gap-4 mb-2">
         <h1 class="text-2xl font-display">{{ page.title }}</h1>
-        <span class="text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary font-semibold">{{ e.tier }}</span>
       </div>
       <div class="flex items-center gap-3 mt-1">
         <span class="text-[10px] font-bold badge-race
@@ -60,8 +59,6 @@
           {% elif e.race == 'protoss' %}text-race-protoss
           {% elif e.race == 'zerg' %}text-race-zerg{% endif %}">{{ e.race | title }}</dd></div>
         <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}국가{% else %}Country{% endif %}</dt><dd>{{ e.country_name }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}레이팅{% else %}Rating{% endif %}</dt><dd class="font-stats">{{ e.rating }}</dd></div>
-        <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}티어{% else %}Tier{% endif %}</dt><dd class="font-semibold">{{ e.tier }}</dd></div>
       </dl>
 
       {% if e.aliases | length > 0 %}

@@ -10,8 +10,6 @@ tags = ["aggressive", "timing", "hydralisk"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
-games = 189
-winrate = 52
 +++
 An aggressive two-base hydralisk timing attack in ZvP. The idea is to mass hydralisks from two hatcheries and push across the map before Protoss has access to psionic storm, which devastates clumped hydra groups. This is an all-in build — if the push fails, Zerg is behind on economy with no third base.
 

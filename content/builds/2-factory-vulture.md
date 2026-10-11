@@ -10,8 +10,6 @@ tags = ["mech", "harass", "economic"]
 [extra]
 race = "terran"
 matchup = "TvZ"
-games = 342
-winrate = 56
 +++
 A mech-oriented TvZ build that opens with a fast expansion into two factories, each with a machine shop. The core idea is to use vultures for aggressive map control — planting spider mines at expansion paths and harassing drone lines. Research spider mines first, then ion thrusters for vulture speed.
 

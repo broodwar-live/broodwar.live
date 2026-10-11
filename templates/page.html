@@ -4,11 +4,11 @@
 {% block jsonld_extra %}
 ,{
   "@type": "Article",
-  "headline": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
-  "url": "{{ current_url }}",
-  "inLanguage": "{{ lang }}",
-  "publisher": {"@id": "{{ config.base_url }}/#organization"}
+  "headline": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
+  "inLanguage": {{ lang | json_encode | safe }},
+  "publisher": {"@id": "{{ config.base_url | safe }}/#organization"}
 }
 {% endblock %}
 

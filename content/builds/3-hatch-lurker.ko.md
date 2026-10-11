@@ -10,8 +10,6 @@ tags = ["economic", "lurker", "defensive"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
-games = 256
-winrate = 51
 +++
 표준 수비적 ZvT 오프닝입니다. 해처리 3개로 최대한 드론을 뽑은 뒤 러커 테크로 전환하여 테란 타이밍 어택을 방어합니다. 초크 포인트에서 버로우한 러커는 마린/메딕 푸시와 탱크 라인을 저지하여, 저그 경제가 테란을 추월할 시간을 벌어줍니다.
 

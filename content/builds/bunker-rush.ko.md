@@ -10,8 +10,6 @@ tags = ["aggressive", "rush", "cheese"]
 [extra]
 race = "terran"
 matchup = "TvZ"
-games = 187
-winrate = 47
 +++
 SCV를 일찍 상대 기지로 보내 저그의 앞마당 해처리 근처에 벙커를 건설하는 치즈 전략입니다. 마린을 넣으면 해처리를 완전히 차단하거나, 저그가 저글링과 선큰 콜로니에 대량 투자하게 만들어 경제를 크게 지연시킬 수 있습니다.
 

@@ -10,8 +10,6 @@ tags = ["air", "aggressive", "tech"]
 [extra]
 race = "terran"
 matchup = "TvT"
-games = 145
-winrate = 53
 +++
 An air-control strategy that opens with two starports producing wraiths continuously. The goal is to establish air superiority and use cloaked wraiths to snipe siege tanks, harass SCVs, and deny expansions — dominating opponents who commit to pure ground mech without adequate anti-air.
 

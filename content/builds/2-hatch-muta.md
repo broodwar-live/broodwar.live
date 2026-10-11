@@ -10,8 +10,6 @@ tags = ["aggressive", "mutalisk", "timing"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
-games = 267
-winrate = 51
 +++
 A more aggressive alternative to the standard three hatch mutalisk build in ZvT. By skipping the third hatchery, you get mutalisks on the map faster — often before Terran has built enough missile turrets to protect all mineral lines. The trade-off is a weaker economy, making this a build that needs to do damage to justify itself.
 

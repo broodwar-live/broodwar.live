@@ -10,8 +10,6 @@ tags = ["aggressive", "tech", "dark-templar"]
 [extra]
 race = "protoss"
 matchup = "PvT"
-games = 167
-winrate = 52
 +++
 A tech rush that skips standard openings to reach dark templar archives as fast as possible in PvT. If Terran has not built an engineering bay for turrets and has no comsat station for scanner sweep, the invisible dark templar walk into the base and end the game outright. Even if Terran has detection, every scan used on DTs drains valuable comsat energy.
 

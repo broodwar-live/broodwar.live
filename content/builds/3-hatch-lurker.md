@@ -10,8 +10,6 @@ tags = ["economic", "lurker", "defensive"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
-games = 256
-winrate = 51
 +++
 The standard defensive ZvT opening. Take three hatcheries for maximum drone production, then tech into lurkers to defend Terran timing attacks. Lurkers burrowed at chokepoints can hold marine/medic pushes and tank lines, buying time for your economy to overtake Terran's.
 

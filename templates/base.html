@@ -1,4 +1,8 @@
 {% set t = config.extra.i18n[lang] %}
+{#- 404.html is rendered without current_path/current_url. -#}
+{% if current_path is defined %}{% set cur_path = current_path %}{% set cur_url = current_url %}{% set has_url = true %}{% else %}{% set cur_path = "/" %}{% set cur_url = config.base_url ~ "/" %}{% set has_url = false %}{% endif %}
+{#- Path of the English version of this page: strip only the leading "/ko/" language prefix. -#}
+{% if lang == "ko" %}{% set en_tail = cur_path | split(pat="/ko/") | last %}{% set en_path = "/" ~ en_tail %}{% else %}{% set en_path = cur_path %}{% endif %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
@@ -12,25 +16,31 @@
   <link rel="icon" href="/favicon.ico" sizes="48x48 32x32 16x16" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
-  {% set page_title = page.title | default(value=section.title | default(value=config.title)) %}
-  {% set desc = page.description | default(value=section.description | default(value=config.description)) %}
+  {% set page_title = config.title %}{% set desc = config.description %}
+  {% if page is defined %}
+    {% set page_title = page.title | default(value=config.title) %}{% set desc = page.description | default(value=config.description) %}
+  {% elif section is defined %}
+    {% set page_title = section.title | default(value=config.title) %}{% set desc = section.description | default(value=config.description) %}
+  {% endif %}
   <title>{% block title %}{{ page_title }}{% endblock %} — broodwar.live</title>
   <meta name="description" content="{{ desc }}" />
-  <link rel="canonical" href="{{ current_url }}" />
+  {% if has_url %}
+  <link rel="canonical" href="{{ cur_url }}" />
   {# Hreflang alternates for multilingual SEO #}
   {% if lang == "en" %}
-  <link rel="alternate" hreflang="en" href="{{ current_url }}" />
-  <link rel="alternate" hreflang="ko" href="{{ config.base_url }}/ko{{ current_path }}" />
+  <link rel="alternate" hreflang="en" href="{{ cur_url }}" />
+  <link rel="alternate" hreflang="ko" href="{{ config.base_url }}/ko{{ cur_path }}" />
   {% else %}
-  <link rel="alternate" hreflang="ko" href="{{ current_url }}" />
-  <link rel="alternate" hreflang="en" href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}" />
+  <link rel="alternate" hreflang="ko" href="{{ cur_url }}" />
+  <link rel="alternate" hreflang="en" href="{{ config.base_url }}{{ en_path }}" />
   {% endif %}
-  <link rel="alternate" hreflang="x-default" href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ config.base_url }}{{ en_path }}" />
+  {% endif %}
   {# Open Graph #}
   <meta property="og:title" content="{{ page_title }}{% if page_title != config.title %} — broodwar.live{% endif %}" />
   <meta property="og:description" content="{{ desc }}" />
   <meta property="og:image" content="{{ get_url(path='images/og-default.png') }}" />
-  <meta property="og:url" content="{{ current_url }}" />
+  <meta property="og:url" content="{{ cur_url }}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="broodwar.live" />
   <meta property="og:locale" content="{% if lang == 'ko' %}ko_KR{% else %}en_US{% endif %}" />
@@ -48,7 +58,7 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" as="style" />
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/app.css" />
+  <link rel="stylesheet" href="{{ get_url(path='css/app.css', cachebust=true) }}" />
   {# JSON-LD: Organization + WebSite #}
   <script type="application/ld+json">
   {
@@ -56,11 +66,11 @@
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "{{ config.base_url }}/#organization",
+        "@id": "{{ config.base_url | safe }}/#organization",
         "name": "broodwar.live",
-        "url": "{{ config.base_url }}",
-        "logo": "{{ get_url(path='images/og-default.png') }}",
-        "description": "{{ config.description }}",
+        "url": "{{ config.base_url | safe }}",
+        "logo": "{{ get_url(path='images/og-default.png') | safe }}",
+        "description": {{ config.description | json_encode | safe }},
         "sameAs": [
           "https://github.com/broodwar-live",
           "https://discord.gg/broodwar"
@@ -68,10 +78,10 @@
       },
       {
         "@type": "WebSite",
-        "@id": "{{ config.base_url }}/#website",
+        "@id": "{{ config.base_url | safe }}/#website",
         "name": "broodwar.live",
-        "url": "{{ config.base_url }}",
-        "publisher": { "@id": "{{ config.base_url }}/#organization" },
+        "url": "{{ config.base_url | safe }}",
+        "publisher": { "@id": "{{ config.base_url | safe }}/#organization" },
         "inLanguage": ["en", "ko"]
       }{% block jsonld_extra %}{% endblock %}
     ]
@@ -113,13 +123,10 @@
           </a>
 
           <div class="hidden lg:flex items-center gap-0.5">
-            {% macro nav_link(href, label) %}<a href="{{ href }}" {% if current_path is starting_with(href) %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if current_path is starting_with(href) %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ label }}</a>{% endmacro %}
-            {{ self::nav_link(href="/players", label=t.players) }}
-            {{ self::nav_link(href="/matches", label=t.matches) }}
-            {{ self::nav_link(href="/tournaments", label=t.tournaments) }}
-            {{ self::nav_link(href="/replays", label=t.replays) }}
-            {{ self::nav_link(href="/builds", label=t.builds) }}
-            {{ self::nav_link(href="/wiki", label=t.wiki) }}
+            {% for key in ["news", "players", "matches", "tournaments", "replays", "builds", "wiki"] %}
+            {% set href = "/" ~ key %}{% set active = href in cur_path %}
+            <a href="{% if lang == 'ko' %}/ko{% endif %}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all duration-150 {% if active %}text-base-content bg-primary/5{% else %}text-base-content/50 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}{% if not config.extra.api_enabled and key in ["matches", "replays"] %}<span class="ml-1 align-super text-[8px] font-semibold uppercase tracking-wider text-warning/60">{{ t.soon }}</span>{% endif %}</a>
+            {% endfor %}
           </div>
 
           <div class="flex items-center gap-2.5">
@@ -127,19 +134,27 @@
               <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
             </button>
 
-            <a href="/streams" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error/10 text-error text-xs font-semibold hover:bg-error/15 transition-colors">
+            {% if config.extra.api_enabled %}
+            <a href="{% if lang == 'ko' %}/ko{% endif %}/streams/" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error/10 text-error text-xs font-semibold hover:bg-error/15 transition-colors">
               <span class="w-1.5 h-1.5 rounded-full bg-error animate-live-pulse" aria-hidden="true"></span>
               {{ t.live }}
             </a>
+            {% else %}
+            <a href="{% if lang == 'ko' %}/ko{% endif %}/streams/" title="{{ t.api_soon_body }}" class="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-base-content/5 text-base-content/40 text-xs font-semibold hover:text-base-content/60 transition-colors">
+              <span class="w-1.5 h-1.5 rounded-full bg-base-content/30" aria-hidden="true"></span>
+              {{ t.live }}
+              <span class="text-[8px] uppercase tracking-wider text-warning/60">{{ t.soon }}</span>
+            </a>
+            {% endif %}
 
             {# Language toggle #}
             <div role="group" aria-label="{{ t.language }}" class="flex items-center border border-primary/10 bg-base-300/60 rounded-lg p-0.5 gap-0.5">
-              <a href="{{ current_url | replace(from='/ko/', to='/') | replace(from='/ko', to='/') }}"
+              <a href="{{ en_path }}"
                 {% if lang == "en" %}aria-current="true"{% endif %}
                 class="relative px-2.5 py-1 text-xs font-medium rounded-md transition-all duration-150 {% if lang == 'en' %}bg-primary/15 text-primary shadow-sm{% else %}text-base-content/35 hover:text-base-content/60{% endif %}">
                 English
               </a>
-              <a href="{% if lang == 'en' %}/ko{{ current_path }}{% else %}{{ current_url }}{% endif %}"
+              <a href="{% if lang == 'en' %}/ko{{ cur_path }}{% else %}{{ cur_url }}{% endif %}"
                 {% if lang == "ko" %}aria-current="true"{% endif %}
                 class="relative px-2.5 py-1 text-xs font-medium rounded-md transition-all duration-150 {% if lang == 'ko' %}bg-primary/15 text-primary shadow-sm{% else %}text-base-content/35 hover:text-base-content/60{% endif %}">
                 한국어
@@ -205,11 +220,12 @@
           <nav aria-label="{{ t.platform }}">
             <h4 class="text-xs font-semibold text-base-content/50 uppercase tracking-wider mb-4">{{ t.platform }}</h4>
             <ul class="space-y-2.5">
+              <li><a href="{% if lang == 'ko' %}/ko{% endif %}/news/" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.news }}</a></li>
               <li><a href="/players" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.players }}</a></li>
-              <li><a href="/matches" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.matches }}</a></li>
-              <li><a href="/replays" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.replays }}</a></li>
+              <li><a href="/matches" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.matches }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
+              <li><a href="/replays" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.replays }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
               <li><a href="/builds" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.builds }}</a></li>
-              <li><a href="/streams" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.live_streams }}</a></li>
+              <li><a href="/streams" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.live_streams }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
             </ul>
           </nav>
 
@@ -229,7 +245,7 @@
             <ul class="space-y-2.5">
               <li><a href="/tournaments/asl" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">ASL</a></li>
               <li><a href="/tournaments/bsl" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">BSL</a></li>
-              <li><a href="/balance" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.balance }}</a></li>
+              <li><a href="/balance" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.balance }}{% if not config.extra.api_enabled %} <span class="text-[9px] uppercase tracking-wider text-warning/50">{{ t.soon }}</span>{% endif %}</a></li>
               <li><a href="/tournaments" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.rankings }}</a></li>
             </ul>
           </nav>
@@ -240,6 +256,7 @@
               <li><a href="https://github.com/broodwar-live" target="_blank" rel="noopener" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">GitHub</a></li>
               <li><a href="https://discord.gg/broodwar" target="_blank" rel="noopener" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">Discord</a></li>
               <li><a href="https://github.com/broodwar-live/broodwar.live/issues" target="_blank" rel="noopener" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.report_a_bug }}</a></li>
+              <li><a href="{% if lang == 'ko' %}/ko{% endif %}/credits/" class="text-sm text-base-content/30 hover:text-base-content/60 transition-colors">{{ t.credits }}</a></li>
             </ul>
           </nav>
         </div>
@@ -248,10 +265,12 @@
       <div class="border-t border-primary/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-4 text-[11px] text-base-content/20">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1 text-[11px] text-base-content/20">
               <span>&copy; 2026 broodwar.live</span>
               <span>&middot;</span>
               <span>{{ t.open_source }}</span>
+              <span>&middot;</span>
+              <a href="{% if lang == 'ko' %}/ko{% endif %}/credits/" class="hover:text-base-content/50 transition-colors">{{ t.license_note }}</a>
             </div>
             <p class="text-[11px] text-base-content/15 text-center sm:text-right max-w-lg leading-relaxed">
               {{ t.disclaimer }}

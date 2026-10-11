@@ -10,8 +10,6 @@ tags = ["cheese", "rush", "all-in"]
 [extra]
 race = "zerg"
 matchup = "ZvZ"
-games = 134
-winrate = 48
 +++
 The earliest possible spawning pool in ZvZ — built at 5 supply, before any additional drones. Six zerglings are produced as soon as the pool finishes and sent directly to the opponent's base. If the opponent has gone for a later pool like 9 pool or 12 hatch, your zerglings arrive before they have any meaningful defense.
 

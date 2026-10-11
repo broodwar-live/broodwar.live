@@ -10,8 +10,6 @@ tags = ["aggressive", "tech", "dark-templar"]
 [extra]
 race = "protoss"
 matchup = "PvP"
-games = 178
-winrate = 51
 +++
 A high-variance PvP build that rushes to dark templar archives, betting that the opponent has not built a robotics facility for an observer. In the mirror matchup, detection depends entirely on observers — there are no other Protoss detection options on the ground. If the opponent went double gateway or fast expand without robotics, DTs are invisible and lethal.
 

@@ -10,8 +10,6 @@ tags = ["standard", "safe", "zergling"]
 [extra]
 race = "zerg"
 matchup = "ZvZ"
-games = 312
-winrate = 50
 +++
 The standard safe ZvZ opening. Build a spawning pool at 9 supply and research metabolic boost (zergling speed) as soon as the pool finishes. This timing is late enough to get a few extra drones for economy but early enough to have zerglings ready to defend any cheese or early aggression.
 

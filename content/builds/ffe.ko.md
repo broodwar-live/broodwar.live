@@ -10,8 +10,6 @@ tags = ["standard", "economic", "defensive"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
-games = 523
-winrate = 50
 +++
 표준 수비적 PvZ 오프닝입니다. 첫 게이트웨이 전에 포지를 건설하고, 앞마당에 포톤 캐논을 배치하여 초기 저글링과 히드라리스크 압박을 방어합니다. 넥서스는 캐논 보호 뒤에서 앞마당에 건설되어 안전한 2기지 경제를 확보합니다.
 

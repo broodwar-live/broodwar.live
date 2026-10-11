@@ -10,8 +10,6 @@ tags = ["aggressive", "contain", "lurker"]
 [extra]
 race = "zerg"
 matchup = "ZvT"
-games = 198
-winrate = 50
 +++
 A strategic approach in ZvT where lurkers are rushed and positioned outside Terran's natural expansion to prevent tank pushes or deny expansion attempts. The burrowed lurkers create a zone of control that Terran cannot cross without science vessel detection or siege tank range, buying Zerg valuable time to drone and expand.
 

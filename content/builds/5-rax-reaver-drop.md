@@ -10,8 +10,6 @@ tags = ["aggressive", "timing", "all-in"]
 [extra]
 race = "protoss"
 matchup = "PvT"
-games = 156
-winrate = 54
 +++
 A one-base all-in that rushes robotics facility into shuttle and reaver, then drops the reaver directly into Terran's main mineral line. A single reaver scarab on clustered SCVs can kill four or five workers instantly, crippling Terran's economy. This is one of the highest-damage timing attacks in PvT.
 

@@ -10,8 +10,6 @@ tags = ["air", "aggressive", "tech"]
 [extra]
 race = "terran"
 matchup = "TvT"
-games = 145
-winrate = 53
 +++
 스타포트 2개에서 레이스를 지속 생산하는 제공권 장악 전략입니다. 클로킹 레이스로 시즈탱크를 저격하고, SCV를 견제하며, 확장을 저지하는 것이 목표입니다 — 적절한 대공 없이 순수 지상 메카닉에 올인한 상대를 압도합니다.
 

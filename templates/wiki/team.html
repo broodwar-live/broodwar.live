@@ -5,16 +5,16 @@
 ,{
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url }}/wiki"},
-    {"@type": "ListItem", "position": 2, "name": "Teams", "item": "{{ config.base_url }}/wiki/teams"},
-    {"@type": "ListItem", "position": 3, "name": "{{ page.title }}"}
+    {"@type": "ListItem", "position": 1, "name": "Wiki", "item": "{{ config.base_url | safe }}/wiki"},
+    {"@type": "ListItem", "position": 2, "name": "Teams", "item": "{{ config.base_url | safe }}/wiki/teams"},
+    {"@type": "ListItem", "position": 3, "name": {{ page.title | json_encode | safe }}}
   ]
 },
 {
   "@type": "SportsTeam",
-  "name": "{{ page.title }}",
-  "description": "{{ page.description | default(value='') }}",
-  "url": "{{ current_url }}",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
+  "url": "{{ current_url | safe }}",
   "sport": "StarCraft: Brood War"
 }
 {% endblock %}
@@ -50,8 +50,19 @@
     <div class="mt-8">
       <h2 class="text-sm font-semibold mb-3">{% if lang == "ko" %}주요 선수{% else %}Notable Players{% endif %}</h2>
       <div class="flex flex-wrap gap-2">
+        {#- Link only players that have a profile page; match on slug or title (case-insensitive). -#}
+        {% set players_section = get_section(path="players/_index.md", lang=lang) %}
         {% for player in e.notable_players %}
-        <a href="/players/{{ player | lower }}" class="glass-card rounded-lg px-3 py-1.5 text-sm text-primary/70 hover:text-primary transition-colors">{{ player }}</a>
+          {% set key = player | lower | replace(from="_", to="-") %}
+          {% set_global player_url = "" %}
+          {% for p in players_section.pages %}
+            {% if p.slug == key or p.title | lower == player | lower %}{% set_global player_url = p.path %}{% break %}{% endif %}
+          {% endfor %}
+          {% if player_url %}
+        <a href="{{ player_url }}" class="glass-card rounded-lg px-3 py-1.5 text-sm text-primary/70 hover:text-primary transition-colors">{{ player }}</a>
+          {% else %}
+        <span class="glass-card rounded-lg px-3 py-1.5 text-sm text-base-content/50">{{ player }}</span>
+          {% endif %}
         {% endfor %}
       </div>
     </div>

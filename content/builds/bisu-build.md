@@ -10,8 +10,6 @@ tags = ["aggressive", "tech", "corsair"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
-games = 287
-winrate = 53
 +++
 Named after Bisu, who perfected this strategy in his legendary 2007 OSL championship run against sAviOr, fundamentally shifting PvZ from Zerg-favored to balanced. The build opens with stargate into corsairs, which clear overlords across the map to remove Zerg's mobile detection. Dark templar then walk into unprotected bases for devastating kills.
 

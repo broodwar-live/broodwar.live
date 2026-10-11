@@ -10,8 +10,6 @@ tags = ["economic", "greedy", "macro"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
-games = 367
-winrate = 49
 +++
 The greediest standard ZvP opening — a hatchery at the natural expansion at 12 supply, before the spawning pool is even started. This gives Zerg the fastest possible two-base economy, allowing rapid drone production to pull ahead in workers and establish map control through sheer numbers.
 

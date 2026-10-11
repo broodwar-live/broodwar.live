@@ -10,8 +10,6 @@ image = "/images/players/iris.jpg"
 race = "zerg"
 country = "KR"
 country_name = "South Korea"
-rating = 2440
-tier = "B"
 aliases = ["서경민"]
 +++
 Iris is a Korean Zerg competing in the modern scene with improving skills and regular tournament participation that demonstrates commitment. His playstyle features standard Zerg strategies with a developing focus on macro efficiency and army management across all three matchups. Iris's ZvP shows the most growth, with better lurker positioning and improving engagement decision-making that suggests a continued upward trajectory. He competes in ASL qualifiers and online Korean tournaments, gaining valuable experience against the deep and challenging field of Korean competition.

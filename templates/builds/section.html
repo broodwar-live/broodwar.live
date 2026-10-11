@@ -22,10 +22,13 @@
         </div>
         <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-primary/10 text-primary/70">{{ e.matchup }}</span>
       </div>
-      <div class="flex items-center gap-4 text-[11px] text-base-content/30">
-        <span class="font-medium">{{ e.games }} {% if lang == "ko" %}게임{% else %}games{% endif %}</span>
-        <span class="font-semibold {% if e.winrate >= 55 %}text-success{% elif e.winrate >= 50 %}text-base-content/50{% else %}text-error{% endif %}">{{ e.winrate }}%</span>
+      {% if build.taxonomies.tags is defined and build.taxonomies.tags | length > 0 %}
+      <div class="flex flex-wrap gap-1.5">
+        {% for tag in build.taxonomies.tags %}
+        <span class="text-[10px] px-2 py-0.5 rounded bg-base-content/5 text-base-content/40">{{ tag }}</span>
+        {% endfor %}
       </div>
+      {% endif %}
     </a>
     {% endfor %}
   </div>
@@ -34,7 +37,16 @@
   {% endif %}
 
   <h2 class="text-xl font-display mt-12 mb-6">{% if lang == "ko" %}오프닝 통계{% else %}Opening Statistics{% endif %}</h2>
+  {% if config.extra.api_enabled %}
   <div id="openings-app" data-api="{{ config.extra.api_base_url }}" aria-busy="true"></div>
+  {% else %}
+  {% set soon_compact = true %}{% include "partials/api-soon.html" %}
+  {% endif %}
 </div>
+{% endblock %}
+
+{% block scripts %}
+{% if config.extra.api_enabled %}
 <script src="/js/openings.js" defer></script>
+{% endif %}
 {% endblock %}

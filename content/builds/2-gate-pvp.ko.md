@@ -10,8 +10,6 @@ tags = ["standard", "gateway", "safe"]
 [extra]
 race = "protoss"
 matchup = "PvP"
-games = 289
-winrate = 50
 +++
 가장 안전하고 표준적인 PvP 오프닝입니다. 게이트웨이 2개에서 질럿과 드라군을 생산하여 초반 맵 컨트롤을 확보하고 상대의 어떤 빌드에도 대응할 수 있습니다. 특정 테크 경로에 조기 투자하지 않고, 우월한 유닛 수와 정찰로 게임 흐름을 주도합니다.
 
