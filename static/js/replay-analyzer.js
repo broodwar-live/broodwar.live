@@ -172,17 +172,19 @@ function wikiRef(kind, id) {
 }
 
 function refHtml(ref) {
+  const title = ref.raw ? ` title="${esc(ref.raw)}"` : ""
   return ref.href
-    ? `<a href="${esc(ref.href)}" class="hover:text-primary hover:underline underline-offset-2">${esc(ref.name)}</a>`
-    : esc(ref.name)
+    ? `<a href="${esc(ref.href)}"${title} class="hover:text-primary hover:underline underline-offset-2">${esc(ref.name)}</a>`
+    : ref.raw ? `<span${title}>${esc(ref.name)}</span>` : esc(ref.name)
 }
 
 // `normalized` is replay-core's map name without league tags and versions
-// ("| iCCup | Python 1.3" -> "Python"); the raw name is displayed.
+// ("| iCCup | Python 1.3" -> "Python"); it is displayed, with the raw name as a tooltip.
 function mapRef(rawName, normalized) {
-  const name = clean(rawName)
-  const key = "maps/" + slugify(normalized || name)
-  return WIKI[key] ? {name, href: `${lp}/wiki/${key}/`} : {name, href: null}
+  const raw = clean(rawName)
+  const name = clean(normalized || "") || raw
+  const key = "maps/" + slugify(name)
+  return {name, raw: raw !== name ? raw : null, href: WIKI[key] ? `${lp}/wiki/${key}/` : null}
 }
 
 function colorOf(player) {
@@ -376,7 +378,7 @@ function swatch(color, extra = "") {
 
 function fact(label, value) {
   if (!value) return ""
-  return `<div><dt class="text-[10px] uppercase tracking-wider text-base-content/40">${esc(label)}</dt><dd class="text-sm mt-0.5">${value}</dd></div>`
+  return `<div><dt class="text-[11px] uppercase tracking-wider text-base-content/60">${esc(label)}</dt><dd class="text-sm mt-0.5">${value}</dd></div>`
 }
 
 function renderPlayer(p) {
@@ -387,14 +389,14 @@ function renderPlayer(p) {
         ${swatch(p.color)}
         <span class="font-semibold truncate">${esc(p.name)}</span>
         <span class="sr-only">${esc(t("color"))}: ${esc(p.color.name)}</span>
-        ${p.winner ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-success/15 text-success font-semibold" title="${esc(t("winner_hint"))}">${esc(t("likely_winner"))}</span>` : ""}
-        ${!hum ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-base-content/10 text-base-content/60">${esc(t("computer"))}</span>` : ""}
+        ${p.winner ? `<span class="text-[11px] px-1.5 py-0.5 rounded bg-success/15 text-success font-semibold" title="${esc(t("winner_hint"))}">${esc(t("likely_winner"))}</span>` : ""}
+        ${!hum ? `<span class="text-[11px] px-1.5 py-0.5 rounded bg-base-content/10 text-base-content/60">${esc(t("computer"))}</span>` : ""}
       </div>
       <span class="text-xs font-bold ${RACE_TEXT[p.race] || ""}">${esc(raceName(p.race))}</span>
       ${p.opening ? `<span class="text-xs text-base-content/60" title="${esc(t("opening_hint", {pct: Math.round(p.opening.confidence * 100)}))}">${esc(t("opening"))}: <span class="text-primary font-medium">${esc(p.opening.name)}</span></span>` : ""}
       ${p.apm != null ? `<span class="ml-auto flex gap-4 font-stats text-xs text-base-content/70">
-        <span><abbr title="${esc(t("apm_hint"))}" class="no-underline text-base-content/40">APM</abbr> ${Math.round(p.apm)}</span>
-        <span><abbr title="${esc(t("eapm_hint"))}" class="no-underline text-base-content/40">EAPM</abbr> ${Math.round(p.eapm)}</span>
+        <span><abbr title="${esc(t("apm_hint"))}" class="no-underline text-base-content/60">APM</abbr> ${Math.round(p.apm)}</span>
+        <span><abbr title="${esc(t("eapm_hint"))}" class="no-underline text-base-content/60">EAPM</abbr> ${Math.round(p.eapm)}</span>
       </span>` : ""}
     </li>`
 }
@@ -421,9 +423,9 @@ function renderBuildOrder(p, idx) {
 function boRowsHtml(rows) {
   return rows.map((e) => `
     <tr${e.dropped ? ` class="opacity-40" title="${esc(t("dropped_hint"))}"` : ""}>
-      <td class="font-stats text-base-content/50">${clock(e.secs)}</td>
+      <td class="font-stats text-base-content/60">${clock(e.secs)}</td>
       <td class="font-stats">${e.supply}</td>
-      <td><span class="text-base-content/40 mr-1">${esc(t(ACTION_LABEL[e.kind]))}</span>${refHtml(e.ref)}${e.count > 1 ? ` <span class="font-stats text-base-content/50">×${e.count}</span>` : ""}</td>
+      <td><span class="text-base-content/60 mr-1">${esc(t(ACTION_LABEL[e.kind]))}</span>${refHtml(e.ref)}${e.count > 1 ? ` <span class="font-stats text-base-content/60">×${e.count}</span>` : ""}</td>
     </tr>`).join("")
 }
 
@@ -442,17 +444,17 @@ function renderTech(p) {
     <div class="min-w-0">
       <h4 class="text-sm font-semibold mb-2 flex items-center gap-2">${swatch(p.color)}<span class="truncate">${esc(p.name)}</span></h4>
       <ol class="flex flex-wrap gap-1.5">
-        ${p.tech.map((e) => `<li class="text-xs rounded-md bg-base-content/5 px-2 py-1"><span class="font-stats text-base-content/50">${clock(e.secs)}</span> ${refHtml(e.ref)}${e.note ? ` <span class="text-primary/80">(${esc(e.note)})</span>` : ""}</li>`).join("")}
+        ${p.tech.map((e) => `<li class="text-xs rounded-md bg-base-content/5 px-2 py-1"><span class="font-stats text-base-content/60">${clock(e.secs)}</span> ${refHtml(e.ref)}${e.note ? ` <span class="text-primary/80">(${esc(e.note)})</span>` : ""}</li>`).join("")}
       </ol>
-      ${p.units.length ? `<p class="mt-3 text-xs text-base-content/50">${esc(t("units_ordered"))}:</p>
+      ${p.units.length ? `<p class="mt-3 text-xs text-base-content/60">${esc(t("units_ordered"))}:</p>
       <ul class="flex flex-wrap gap-1.5 mt-1">${p.units.map(([id, n]) => `<li class="text-xs rounded-md border border-base-content/10 px-2 py-0.5">${refHtml(wikiRef("unit", id))} <span class="font-stats text-base-content/60">×${n}</span></li>`).join("")}</ul>` : ""}
-      ${p.hotkeys.length ? `<p class="mt-3 text-xs text-base-content/50">${esc(t("hotkeys"))}: <span class="font-stats text-base-content/70">${p.hotkeys.map((g) => esc(g)).join(" ")}</span></p>` : ""}
+      ${p.hotkeys.length ? `<p class="mt-3 text-xs text-base-content/60">${esc(t("hotkeys"))}: <span class="font-stats text-base-content/70">${p.hotkeys.map((g) => esc(g)).join(" ")}</span></p>` : ""}
     </div>`
 }
 
 function renderReplay(model) {
   const humans = model.players.filter((p) => p.isHuman)
-  const title = model.is1v1 && humans.length === 2 ? `${esc(humans[0].name)} <span class="text-base-content/30 font-normal">vs</span> ${esc(humans[1].name)}` : refHtml(model.map)
+  const title = model.is1v1 && humans.length === 2 ? `${esc(humans[0].name)} <span class="text-base-content/60 font-normal">vs</span> ${esc(humans[1].name)}` : refHtml(model.map)
   const date = model.startTime
     ? `<time datetime="${model.startTime.toISOString()}">${esc(model.startTime.toLocaleString(locale, {dateStyle: "medium", timeStyle: "short"}))}</time>`
     : ""
@@ -464,7 +466,7 @@ function renderReplay(model) {
   card.innerHTML = `
     <header class="flex items-start gap-3">
       <div class="min-w-0 flex-1">
-        <p class="text-xs text-base-content/40 truncate">${esc(model.file.name)}</p>
+        <p class="text-xs text-base-content/60 truncate">${esc(model.file.name)}</p>
         <h2 class="text-lg sm:text-xl font-semibold mt-1 flex flex-wrap items-center gap-2">
           ${model.matchup ? `<span class="text-sm font-bold text-primary">${esc(model.matchup)}</span>` : ""}
           <span>${title}</span>
@@ -474,7 +476,7 @@ function renderReplay(model) {
     </header>
 
     <dl class="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-      ${fact(t("map"), refHtml(model.map) + (model.mapSize ? ` <span class="text-base-content/40 text-xs">${esc(model.mapSize)}</span>` : ""))}
+      ${fact(t("map"), refHtml(model.map) + (model.mapSize ? ` <span class="text-base-content/60 text-xs">${esc(model.mapSize)}</span>` : ""))}
       ${fact(t("duration"), `<span class="font-stats">${clock(model.durationSecs)}</span>`)}
       ${fact(t("date"), date)}
       ${fact(t("game_type"), esc(gameTypeName(model.gameType)) + (model.speed && model.speed !== "Fastest" ? ` <span class="text-warning text-xs">(${esc(model.speed)})</span>` : ""))}
@@ -484,7 +486,7 @@ function renderReplay(model) {
 
     <h3 class="text-sm font-semibold mt-6 mb-2">${esc(t("players"))}</h3>
     <ul class="flex flex-col gap-2">${model.players.map(renderPlayer).join("")}</ul>
-    ${model.players.some((p) => p.winner) ? `<p class="mt-2 text-[11px] text-base-content/40">${esc(t("winner_hint"))}</p>` : ""}
+    ${model.players.some((p) => p.winner) ? `<p class="mt-2 text-[11px] text-base-content/60">${esc(t("winner_hint"))}</p>` : ""}
 
     ${charted.length ? `
     <section class="mt-8" data-chart>
@@ -500,7 +502,7 @@ function renderReplay(model) {
       </div>
       <div class="relative" data-plot></div>
       <details class="mt-2 text-xs">
-        <summary class="cursor-pointer text-base-content/50 hover:text-base-content/80">${esc(t("show_table"))}</summary>
+        <summary class="cursor-pointer text-base-content/60 hover:text-base-content/80">${esc(t("show_table"))}</summary>
         <div class="overflow-x-auto max-h-72 mt-2" data-table></div>
       </details>
     </section>` : ""}
@@ -514,21 +516,21 @@ function renderReplay(model) {
         </label>
       </div>
       <div class="grid gap-6 lg:grid-cols-2">${boPlayers.map((p) => renderBuildOrder(p, model.players.indexOf(p))).join("")}</div>
-      <p class="mt-3 text-[11px] text-base-content/40">${esc(t("bo_note"))}</p>
+      <p class="mt-3 text-[11px] text-base-content/60">${esc(t("bo_note"))}</p>
     </section>
 
     <section class="mt-8">
       <h3 class="text-sm font-semibold mb-3">${esc(t("tech_path"))}</h3>
       <div class="grid gap-6 lg:grid-cols-2">${boPlayers.map(renderTech).join("")}</div>
-    </section>` : `<p class="mt-8 text-sm text-base-content/50">${esc(t("no_build"))}</p>`}
+    </section>` : `<p class="mt-8 text-sm text-base-content/60">${esc(t("no_build"))}</p>`}
 
     ${model.chat.length ? `
     <details class="mt-8">
-      <summary class="cursor-pointer text-sm font-semibold">${esc(t("chat"))} <span class="text-base-content/40 font-normal">(${model.chat.length})</span></summary>
-      <ul class="mt-2 flex flex-col gap-1 text-xs">${model.chat.map((c) => `<li><span class="font-stats text-base-content/40">${clock(c.secs)}</span> <span class="font-semibold">${esc(c.who)}:</span> ${esc(c.msg)}</li>`).join("")}</ul>
+      <summary class="cursor-pointer text-sm font-semibold">${esc(t("chat"))} <span class="text-base-content/60 font-normal">(${model.chat.length})</span></summary>
+      <ul class="mt-2 flex flex-col gap-1 text-xs">${model.chat.map((c) => `<li><span class="font-stats text-base-content/60">${clock(c.secs)}</span> <span class="font-semibold">${esc(c.who)}:</span> ${esc(c.msg)}</li>`).join("")}</ul>
     </details>` : ""}
 
-    <footer class="mt-8 pt-4 border-t border-base-content/5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] text-base-content/40">
+    <footer class="mt-8 pt-4 border-t border-base-content/5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] text-base-content/60">
       <span>${esc(t("parsed_locally", {ms: Math.max(1, Math.round(model.parseMs))}))}</span>
       <span aria-hidden="true">·</span>
       <span>${esc(t("commands_n", {n: nf.format(model.commandCount)}))}</span>
@@ -765,7 +767,7 @@ function renderError(fileName, message, detail) {
       <div class="min-w-0 flex-1">
         <p class="text-sm font-semibold break-all">${esc(fileName)}</p>
         <p class="text-sm text-base-content/70 mt-1">${esc(message)}</p>
-        ${detail ? `<details class="mt-2 text-xs text-base-content/50"><summary class="cursor-pointer">${esc(t("error_details"))}</summary><code class="block mt-1 break-all">${esc(detail)}</code></details>` : ""}
+        ${detail ? `<details class="mt-2 text-xs text-base-content/60"><summary class="cursor-pointer">${esc(t("error_details"))}</summary><code class="block mt-1 break-all">${esc(detail)}</code></details>` : ""}
       </div>
       <button type="button" class="btn btn-ghost btn-sm btn-square" data-close aria-label="${esc(t("close"))}">&times;</button>
     </div>`
