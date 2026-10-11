@@ -95,8 +95,8 @@ static/                Built CSS, vanilla JS widgets, images, _headers, _redirec
 config.toml            Site config, i18n strings, feature flags
 ```
 
-Templates must build on both Zola 0.22 and 0.23 (Tera 1 and Tera 2): avoid macros/components,
-the `filter`/`map`/`concat` filters and positional test arguments. See
+Templates target Zola 0.23 (Tera 2), pinned in CI and in the Cloudflare build command. Tera 2 has
+no macros, so shared markup lives in `templates/partials/` and is pulled in with `include`. See
 [cloudflare-pages.md](cloudflare-pages.md).
 
 ## Contributing Content

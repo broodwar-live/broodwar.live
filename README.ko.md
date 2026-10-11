@@ -96,8 +96,8 @@ static/                빌드된 CSS, 바닐라 JS 위젯, 이미지, _headers, 
 config.toml            사이트 설정, 다국어 문자열, 기능 플래그
 ```
 
-템플릿은 Zola 0.22와 0.23(Tera 1과 Tera 2) 모두에서 빌드되어야 합니다. 매크로/컴포넌트,
-`filter`/`map`/`concat` 필터, 위치 기반 테스트 인자는 사용하지 마세요.
+템플릿은 CI와 Cloudflare 빌드 명령에 고정된 Zola 0.23(Tera 2)을 기준으로 합니다. Tera 2에는
+매크로가 없으므로 공통 마크업은 `templates/partials/`에 두고 `include`로 불러옵니다.
 [cloudflare-pages.md](cloudflare-pages.md)를 참고하세요.
 
 ## 콘텐츠 기여
