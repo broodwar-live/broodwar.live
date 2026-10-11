@@ -1,0 +1,70 @@
+{#- Shared infobox (player, unit, building, map, season, build).
+
+    Set these before `{% include "partials/infobox.html" %}` (all optional except ib_title):
+      ib_title        header title
+      ib_subtitle     small line under the title (e.g. Korean name)
+      ib_label        aria-label of the <aside> (defaults to ib_title)
+      ib_race         "terran" | "protoss" | "zerg" -> race-coloured header accent
+      ib_image        image URL; ib_image_alt; ib_image_fit "cover" (default) | "contain";
+                      ib_image_aspect "square" | "video" (default)
+      ib_placeholder  HTML shown in place of the image when ib_image is empty
+      ib_sections     [[heading, [[label, value_html], ...]], ...]
+                      heading may be ""; rows whose value is empty are skipped;
+                      a row with an empty label spans the full width.
+      ib_body         extra HTML (captured with {% set ib_body %}...{% endset %}) after the sections
+      ib_links        [[label, url], ...]  (http(s) URLs open in a new tab)
+      ib_sticky       true -> sticks below the header on large screens
+
+    Layout contract: the parent is a grid/flex container. The infobox is ordered first on
+    small screens (so it is not pushed below the article) and keeps DOM order on lg+. -#}
+<aside class="order-first lg:order-none self-start min-w-0 {% if ib_sticky %}lg:sticky lg:top-24{% endif %}" aria-label="{{ ib_label | default(value=ib_title) }}">
+  <div class="glass-card rounded-box overflow-hidden">
+    <div class="{% if ib_race == 'terran' or ib_race == 'protoss' or ib_race == 'zerg' %}infobox-accent-{{ ib_race }}{% else %}border-t-2 border-primary/40 bg-primary/5{% endif %} px-5 py-3 border-b border-primary/10">
+      <div class="font-display text-lg leading-tight">{{ ib_title }}</div>
+      {% if ib_subtitle %}<div class="text-xs text-base-content/60 mt-0.5">{{ ib_subtitle | safe }}</div>{% endif %}
+    </div>
+
+    {% if ib_image %}
+    <img src="{{ ib_image }}" alt="{{ ib_image_alt | default(value=ib_title) }}" loading="lazy"
+         class="w-full {% if ib_image_aspect == 'square' %}aspect-square{% else %}aspect-video{% endif %} {% if ib_image_fit == 'contain' %}object-contain bg-base-300/50{% else %}object-cover object-top{% endif %}" />
+    {% elif ib_placeholder %}
+    {{ ib_placeholder | safe }}
+    {% endif %}
+
+    {% if ib_sections or ib_body %}
+    <div class="p-5">
+      {% for sec in ib_sections | default(value=[]) %}
+      {% set_global ib_has_rows = false %}
+      {% for row in sec[1] %}{% if row[1] %}{% set_global ib_has_rows = true %}{% endif %}{% endfor %}
+      {% if ib_has_rows %}
+      <div class="infobox-section">
+        {% if sec[0] %}<span class="infobox-label">{{ sec[0] }}</span>{% endif %}
+        <dl class="space-y-2 text-sm">
+          {% for row in sec[1] %}{% if row[1] %}
+          {% if row[0] %}
+          <div class="flex justify-between items-baseline gap-4"><dt class="text-base-content/60 shrink-0">{{ row[0] }}</dt><dd class="text-right min-w-0 break-words">{{ row[1] | safe }}</dd></div>
+          {% else %}
+          <div><dd class="min-w-0 break-words">{{ row[1] | safe }}</dd></div>
+          {% endif %}
+          {% endif %}{% endfor %}
+        </dl>
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% if ib_body %}{{ ib_body | safe }}{% endif %}
+    </div>
+    {% endif %}
+
+    {% if ib_links %}
+    <ul class="px-5 py-3 border-t border-primary/10 flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
+      {% for l in ib_links %}
+      {% if l[1] is starting_with(pat="http") %}
+      <li><a href="{{ l[1] }}" target="_blank" rel="noopener" class="text-primary hover:underline">{{ l[0] }} <span aria-hidden="true">&#8599;</span></a></li>
+      {% else %}
+      <li><a href="{{ l[1] }}" class="text-primary hover:underline">{{ l[0] }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</aside>
