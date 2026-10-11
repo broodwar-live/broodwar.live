@@ -3,14 +3,14 @@
 {% set t_soon = config.extra.i18n[lang] %}
 {% if soon_compact is defined and soon_compact %}
 <div class="glass-card rounded-box px-5 py-4 flex items-center gap-3 text-sm">
-  <span class="text-[10px] px-2 py-0.5 rounded bg-warning/10 text-warning/80 font-semibold uppercase tracking-wider shrink-0">{{ t_soon.soon }}</span>
-  <span class="text-base-content/40">{{ t_soon.api_soon_body }}</span>
+  <span class="text-[11px] px-2 py-0.5 rounded bg-warning/10 text-warning font-semibold uppercase tracking-wider shrink-0">{{ t_soon.soon }}</span>
+  <span class="text-base-content/70">{{ t_soon.api_soon_body }}</span>
 </div>
 {% else %}
 <div class="glass-card rounded-box px-6 py-12 text-center max-w-xl mx-auto">
-  <span class="inline-block text-[10px] px-2 py-0.5 rounded bg-warning/10 text-warning/80 font-semibold uppercase tracking-wider">{{ t_soon.soon }}</span>
+  <span class="inline-block text-[11px] px-2 py-0.5 rounded bg-warning/10 text-warning font-semibold uppercase tracking-wider">{{ t_soon.soon }}</span>
   <h2 class="mt-4 text-lg font-semibold">{{ t_soon.api_soon_title }}</h2>
-  <p class="mt-2 text-sm text-base-content/50 leading-relaxed">{{ t_soon.api_soon_body }}</p>
+  <p class="mt-2 text-sm text-base-content/70 leading-relaxed">{{ t_soon.api_soon_body }}</p>
   <a href="https://github.com/broodwar-live/api.broodwar.live" target="_blank" rel="noopener" class="btn btn-primary btn-soft btn-sm mt-6">{{ t_soon.api_soon_cta }}</a>
 </div>
 {% endif %}

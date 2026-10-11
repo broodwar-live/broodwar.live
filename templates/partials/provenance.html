@@ -7,8 +7,8 @@
 <footer class="mt-12 pt-6 border-t border-primary/5 not-prose">
   {% if prov_extra.sources is defined and prov_extra.sources | length > 0 %}
   <section class="mb-6" aria-labelledby="page-sources">
-    <h2 id="page-sources" class="text-xs font-semibold uppercase tracking-wider text-base-content/40 mb-2">{{ t_prov.sources }}</h2>
-    <ol class="list-decimal list-inside space-y-1 text-xs text-base-content/45">
+    <h2 id="page-sources" class="text-xs font-semibold uppercase tracking-wider text-base-content/70 mb-2">{{ t_prov.sources }}</h2>
+    <ol class="list-decimal list-inside space-y-1 text-xs text-base-content/70">
       {% for src in prov_extra.sources %}
       <li class="break-all"><a href="{{ src }}" target="_blank" rel="noopener nofollow" class="hover:text-primary transition-colors">{{ src | replace(from="https://", to="") | replace(from="http://", to="") }}</a></li>
       {% endfor %}
@@ -25,8 +25,8 @@
 
   <div class="flex flex-wrap items-center gap-3">
     {% if prov_extra.verified is defined and prov_extra.verified %}
-    <span class="inline-flex items-center gap-1 rounded bg-success/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-success/80" title="{{ t_prov.verified_title }}">&#10003; {{ t_prov.verified }} <time datetime="{{ prov_extra.verified }}">{{ prov_extra.verified }}</time></span>
+    <span class="inline-flex items-center gap-1 rounded bg-success/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-success" title="{{ t_prov.verified_title }}">&#10003; {{ t_prov.verified }} <time datetime="{{ prov_extra.verified }}">{{ prov_extra.verified }}</time></span>
     {% endif %}
-    <a href="{{ prov_edit_url }}" target="_blank" rel="noopener" class="text-xs text-base-content/25 hover:text-base-content/50 transition-colors">{{ t_prov.edit_on_github }}</a>
+    <a href="{{ prov_edit_url }}" target="_blank" rel="noopener" class="text-xs text-base-content/70 hover:text-base-content transition-colors">{{ t_prov.edit_on_github }}</a>
   </div>
 </footer>
