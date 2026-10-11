@@ -1,6 +1,6 @@
 +++
 title = "Tarson"
-description = "Tarson(Tomasz Boroń) — 폴란드의 테란 선수."
+description = "Tarson(Tomasz Boroń) — RAGE.eSports 소속 폴란드 테란, 2009 TSL 16강 진출, BSL 시즌 18부터 출전."
 slug = "tarson"
 template = "players/player.html"
 [taxonomies]
@@ -18,6 +18,6 @@ liquipedia = "https://liquipedia.net/starcraft/Tarson"
 sources = ["https://liquipedia.net/starcraft/Tarson"]
 verified = "2026-10-11"
 +++
-Tarson(Tomasz Boroń)는 1986년생 폴란드의 테란 선수이다. RAGE.eSports 소속으로, 2009 TSL에서 16강에 올랐고 2010년 인텔 익스트림 마스터즈 스타크래프트 II 초청전에서 4위를 차지했다.
+Tarson(Tomasz Boroń)은 1986년생 폴란드의 테란 선수로 RAGE.eSports 소속이며, infernal Gamers, ieS Virtual Gaming, Betsson Voodoo Gaming에서도 뛰었다. 2009년 Pokerstrategy.com TSL에서 [Sziky](@/players/sziky.ko.md)와 접전 끝에 3–2로 이겨 16강에 올랐다. 스타크래프트 II에도 도전해 2010년 8월 쾰른에서 열린 인텔 익스트림 마스터즈 글로벌 챌린지 초청전에서 4위를 했다.
 
-broodwar.live에 수록된 시즌 중 2024년부터 2025년까지 4개 시즌에 출전했다.
+리마스터 시대에는 BSL(Bombastic StarLeague)에 꾸준히 출전해 [BSL 시즌 18](@/tournaments/bsl-s18.ko.md), [BSL 시즌 19](@/tournaments/bsl-s19.ko.md), [BSL 시즌 20](@/tournaments/bsl-s20.ko.md), [BSL 시즌 21](@/tournaments/bsl-s21.ko.md) 본선에 올랐다.

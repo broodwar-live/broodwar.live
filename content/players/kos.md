@@ -1,6 +1,6 @@
 +++
 title = "kOs"
-description = "kOs (Kim Hyun Jin) — Terran player from South Korea."
+description = "kOs (Kim Hyun Jin) — Terran of Orion/SK Telecom T1 and eSTRO, KPGA 4th Tour semifinalist, later eSTRO head coach."
 slug = "kos"
 template = "players/player.html"
 [taxonomies]
@@ -41,6 +41,6 @@ slug = "estro"
 from = "2006-10"
 to = ""
 +++
-kOs (Kim Hyun Jin) is a South Korean Terran player, born in 1984, who played for Ideal Space, Orion, SK Telecom T1, e-Nature Top Team and eSTRO. After his playing career he became head coach of eSTRO.
+kOs (Kim Hyun Jin) is a retired South Korean Terran player, born in 1984, known as the "Cinderella Terran". He played for Ideal Space and Orion, stayed on as Orion became [SK Telecom T1](@/wiki/teams/sk-telecom-t1.md) in 2004, and later joined e-Nature Top Team and [eSTRO](@/wiki/teams/estro.md).
 
-Among the seasons covered on broodwar.live, he reached the semifinals of the [2002-2003 Stout & Baskin Robbins KPGA 4th Tour](/tournaments/2002-2003-stout-baskin-robbins-kpga-4th-tour/).
+His best individual run was a semifinal in the [2002-2003 Stout & Baskin Robbins KPGA 4th Tour](@/tournaments/2002-2003-stout-baskin-robbins-kpga-4th-tour.md). He also qualified for the [2002-2003 Panasonic OSL](@/tournaments/2002-2003-panasonic-osl.md), the [2003 MyCube OSL](@/tournaments/2003-mycube-osl.md) and the [2003 Olympus OSL](@/tournaments/2003-olympus-osl.md), and played in three MSL seasons. He was on the Orion squad, playing as 4 Union, that won the [2003–04 LG IBM MBC Team League](@/tournaments/2003-2004-lg-ibm-mbc-team-league.md), and played in the final of the [2004 SKY Proleague Round 1](@/tournaments/2004-sky-proleague-round-1.md), where SK Telecom T1 finished second. After his playing days he succeeded Daniel Lee as eSTRO's head coach.

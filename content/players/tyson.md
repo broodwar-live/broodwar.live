@@ -1,6 +1,6 @@
 +++
 title = "Tyson"
-description = "Tyson (Park Ji-Hoon) — Protoss player from South Korea."
+description = "Tyson (Park Ji-Hoon) — MBCGame HERO and Team 8 Protoss of 2007–12, later an Afreeca streamer and ASL qualifier."
 slug = "tyson"
 template = "players/player.html"
 [taxonomies]
@@ -28,4 +28,6 @@ name = "Team 8"
 from = "2011-11"
 to = "2012"
 +++
-Tyson (Park Ji-Hoon) is a South Korean Protoss and former progamer. Drafted by MBCGame HERO in 2007, he played in Proleague for the team, posting a 13–7 record in 2009–10, and moved to Team 8 after MBCGame HERO disbanded. He retired once Proleague completed its move to StarCraft II and went on to stream on Afreeca, competing in events such as the SOSPA Ranking Tournament and SonicTV BJ Starleague.
+Tyson (Park Ji-Hoon) is a South Korean Protoss player, born in 1990. He was drafted by [MBCGame HERO](@/wiki/teams/mbcgame-hero.md) in March 2007 and became a Proleague regular for the team, going 13–7 in the 2009–10 season. In the individual leagues he qualified for the [2008 Incruit OSL](@/tournaments/2008-incruit-osl.md), the [2010 Bigfile MSL](@/tournaments/2010-bigfile-msl.md), the [2010-2011 Bacchus OSL](@/tournaments/2010-2011-bacchus-osl.md) and the [2011 ABC Mart MSL](@/tournaments/2011-abc-mart-msl.md).
+
+When MBCGame HERO disbanded in 2011 he moved to Team 8 and stayed through the Proleague's switch to StarCraft II, retiring once it was complete. He then began streaming on Afreeca and played in events such as the SOSPA Ranking Tournament and the SonicTV BJ Starleague. Returning to competition in 2022, he qualified for [ASL Season 13](@/tournaments/asl-s13.md) and [ASL Season 19](@/tournaments/asl-s19.md).

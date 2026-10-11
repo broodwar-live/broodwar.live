@@ -1,6 +1,6 @@
 +++
 title = "Ty2"
-description = "Ty2 (Tyler Byron) — Zerg player from the United States."
+description = "Ty2 (Tyler Byron) — aggressive American Zerg, three-time North American LAN winner in 2019, BSL Season 7 quarterfinalist."
 slug = "ty2"
 template = "players/player.html"
 [taxonomies]
@@ -17,6 +17,6 @@ liquipedia = "https://liquipedia.net/starcraft/Ty2"
 sources = ["https://liquipedia.net/starcraft/Ty2"]
 verified = "2026-10-11"
 +++
-Ty2 (Tyler Byron) is an American Zerg player, born in 1998. Known for his unorthodox and aggressive style, he entered the competitive scene around 2014, won three North American LAN events in 2019 and reached the quarterfinals of BSL Season 7.
+Ty2 (Tyler Byron) is a Korean-American Zerg born in 1998, known for unorthodox, highly aggressive play. He took up StarCraft late, in 2010, appeared on the competitive scene around 2014, and played for a long list of North American clans before joining SouLGaming.
 
-He appears in 5 seasons covered on broodwar.live, between 2017 and 2020.
+His peak came in autumn 2019, when he won three LAN events in a row in Montreal, Los Angeles and New York. In the Bombastic StarLeague he reached the quarterfinals of [BSL Season 7](@/tournaments/bsl-s7.md), where [Bonyth](@/players/bonyth.md) eliminated him. He had earlier made the playoffs of [BSL Season 3](@/tournaments/bsl-s3.md), reaching round three of the lower bracket, and also played in [BSL Season 5](@/tournaments/bsl-s5.md), [BSL Season 8](@/tournaments/bsl-s8.md) and [BSL Season 10](@/tournaments/bsl-s10.md).

@@ -1,6 +1,6 @@
 +++
 title = "ZZZero"
-description = "ZZZero(Dawid Paździor) — 폴란드의 저그 선수."
+description = "ZZZero(Dawid Paździor) — BSL을 창설한 폴란드 저그, BSL 시즌 1·2 준우승."
 slug = "zzzero"
 template = "players/player.html"
 [taxonomies]
@@ -34,6 +34,6 @@ name = "NetWars"
 from = "2021-01-07"
 to = "present"
 +++
-ZZZero(Dawid Paździor)는 1991년생 폴란드의 저그 선수로, ZZZ, LRM, Nb, NetWars에서 활동했다. 2013년 폴란드 선수 대상 대회로 시작해 시즌 3부터 다른 나라 선수에게도 문을 연 Bombastic StarLeague(BSL)를 창설하고 운영하고 있다. NetWars 소속이다.
+ZZZero(Dawid Paździor)는 1991년생 폴란드의 저그 선수이자 Bombastic StarLeague(BSL)의 창설자 겸 운영자이다. 2004~2005년 무렵 브루드 워를 시작했고, 선수 생활 대부분을 ZZZ 팀에서 보냈으며, 여러 차례 네이션 워즈에 폴란드 대표로 나섰고 2008년과 2009년 WCG 폴란드 본선에 진출했다. 현재 NetWars 소속이다.
 
-broodwar.live에 수록된 시즌 가운데 [BSL 시즌 2](/ko/tournaments/bsl-s2/), [BSL 시즌 1](/ko/tournaments/bsl-s1/)에서 준우승했다.
+BSL은 2013년 폴란드 선수를 위한 리그로 시작해 시즌 3부터 다른 나라 선수에게도 문을 열었다. ZZZero는 첫 두 시즌 모두 결승에 올랐으나 [trutaCz](@/players/trutacz.ko.md)에게 [BSL 시즌 1](@/tournaments/bsl-s1.ko.md)에서 1:4로, [BSL 시즌 2](@/tournaments/bsl-s2.ko.md)에서 2:4로 져 두 번 모두 준우승했다. 이후에는 주로 리그 운영을 맡았지만 [BSL 시즌 20](@/tournaments/bsl-s20.ko.md)·[BSL 시즌 21](@/tournaments/bsl-s21.ko.md)·[BSL 시즌 22](@/tournaments/bsl-s22.ko.md)에는 선수로 다시 출전했다.

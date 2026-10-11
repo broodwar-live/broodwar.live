@@ -1,6 +1,6 @@
 +++
 title = "GuemChi"
-description = "GuemChi (Kim Seung Hyun) — Protoss player from South Korea."
+description = "GuemChi (Kim Seung Hyun) — Hanbit and Woongjin Stars Protoss; 2009–10 NATE MSL round of 16 and ASL Season 2 quarterfinalist."
 slug = "guemchi"
 template = "players/player.html"
 [taxonomies]
@@ -35,6 +35,8 @@ slug = "air-force-ace"
 from = ""
 to = ""
 +++
-GuemChi (Kim Seung Hyun) is a South Korean Protoss player born in 1989. He played for Hanbit Stars and Woongjin Stars and later for Air Force ACE.
+GuemChi (Kim Seung Hyun) is a South Korean Protoss player born on 8 November 1989. He played for [Hanbit Stars](@/wiki/teams/hanbit-stars.md) from 2007 to 2008 and joined [Woongjin Stars](@/wiki/teams/woongjin-stars.md) in 2009, and later served with [Air Force ACE](@/wiki/teams/air-force-ace.md).
 
-He reached the round of 16 of the 2009 Nate MSL after defeating Bisu and Bogus in his group, and recorded an all-kill against CJ Entus in the 2010 Winner's League. He has since streamed on Afreeca.
+In the [2009–2010 NATE MSL](@/tournaments/2009-2010-nate-msl.md) he surprised fans by beating [Bisu](@/players/bisu.md) and Bogus to top his group, before [Hwasin](@/players/hwasin.md) eliminated him 2–0 in the round of 16. During the 2010 Winners League he recorded the season's first all-kill, beating [Iris](@/players/iris.md), [EffOrt](@/players/effort.md), [Snow](@/players/snow.md) and [Movie](@/players/movie.md) of CJ Entus.
+
+He now streams on AfreecaTV and reached the quarterfinals of [ASL Season 2](@/tournaments/asl-s2.md).

@@ -1,6 +1,6 @@
 +++
 title = "DragOn"
-description = "DragOn(Alex Empey) — 캐나다의 프로토스 선수."
+description = "DragOn(Alex Empey) — 캐나다의 프로토스 선수, North American Squad 창립자이자 캐나다 대표팀 리더, BSL 시즌 6 4강."
 slug = "dragon"
 template = "players/player.html"
 [taxonomies]
@@ -39,4 +39,6 @@ name = "North American Squad"
 from = "2018-01-01"
 to = "present"
 +++
-DragOn(Alex Empey)은 캐나다의 프로토스 플레이어로, 오랫동안 상대에 따라 종족을 바꿔 플레이하다가 2023년부터 프로토스에 전념하고 있다. North American Squad를 창단해 이끌고 있으며, 2012년부터 캐나다 대표팀의 리더를 맡았다. AoV iCCup StarLeague 16강, TeamLiquid Legacy Starleague 3 4위 등의 성적을 냈고, 코치 퓨필 리그에서는 코치로 시즌 1과 2에서 우승했다.
+DragOn(Alex Empey)은 1989년생 캐나다의 선수로, 프로토스로 등록되어 있다. 경력 대부분 동안 상대 종족에 따라 종족을 골라 테란·저그를 상대로는 프로토스, 프로토스를 상대로는 저그를 했다. 2012년 말 잠시, 그리고 2023년부터는 프로토스만 플레이한다. 클랜 North American Squad를 창립해 이끌고 있으며, 2012년부터 캐나다 대표팀의 리더를 맡고 있다.
+
+해외 대회에서는 AoV iCCup StarLeague 16강으로 처음 이름을 알렸고, TeamLiquid Legacy Starleague 3에서 4위를 기록했다. [봄바스틱 스타리그](@/tournaments/bsl.ko.md)에서는 [BSL 시즌 6](@/tournaments/bsl-s6.ko.md)에서 4강에 올랐으며 10개 이상의 시즌에 출전했다. Coach Pupil League에서는 코치로 참가해 시즌 1과 2에서 1위를 차지했다.

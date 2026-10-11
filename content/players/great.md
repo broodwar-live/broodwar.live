@@ -1,6 +1,6 @@
 +++
 title = "great"
-description = "great (Cha Myung Hwan) — Zerg player from South Korea."
+description = "great (Cha Myung Hwan) — Samsung KHAN's Zerg ace and 2011 PDPop MSL runner-up; later Air Force ACE."
 slug = "great"
 template = "players/player.html"
 [taxonomies]
@@ -30,4 +30,6 @@ slug = "air-force-ace"
 from = "2011-10"
 to = "2012"
 +++
-great (Cha Myung Hwan) is a South Korean Zerg player who served as Samsung KHAN's Zerg ace before joining Air Force ACE in October 2011. He was runner-up in the 2010 PDPop MSL. He was known for steering ZvZ games past the usual Mutalisk phase into late-game Hive tech.
+great (Cha Myung Hwan) is a South Korean Zerg player born in 1989. He joined [Samsung KHAN](@/wiki/teams/samsung-khan.md) in March 2007 and grew into the team's leading Zerg. He was part of the Samsung side that won the [2008 Shinhan Bank Proleague](@/tournaments/2008-shinhan-bank-proleague.md); in that final he opened against [Leta](@/players/leta.md) and lost, Samsung's only defeat of the match.
+
+His best individual run was the [2011 PDPop MSL](@/tournaments/2011-pdpop-msl.md), where he lost the final 3–1 to [Hydra](@/players/hydra.md). He had earlier reached the quarterfinals of the [2010 Hana Daetoo Securities MSL](@/tournaments/2010-hana-daetoo-securities-msl.md). He was the first to use a proxy-Hatchery contain against Protoss on the original Neo Medusa, taking upsets over [Bisu](@/players/bisu.md) and [Free](@/players/free.md) with it, and was known for dragging ZvZ past the Mutalisk stage into Hive tech. In October 2011 he joined [Air Force ACE](@/wiki/teams/air-force-ace.md) for his military service.

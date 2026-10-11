@@ -1,6 +1,6 @@
 +++
 title = "Brain"
-description = "Brain (Son Kyung Hoon) — Protoss player from South Korea."
+description = "Brain (Son Kyung Hoon) — South Korean amateur Protoss, 2020 AfreecaTV Challengers Starleague Season 1 winner."
 slug = "brain"
 template = "players/player.html"
 [taxonomies]
@@ -18,4 +18,6 @@ soop = "youngskh"
 sources = ["https://liquipedia.net/starcraft/Brain"]
 verified = "2026-10-11"
 +++
-Brain (Son Kyung Hoon) is a South Korean Protoss player born in 1993 who competes in amateur leagues. In 2020 he won the AfreecaTV Challengers Starleague Season 1, which earned him a place in the qualifier groups for ASL Season 9.
+Brain (Son Kyung Hoon) is a South Korean Protoss player born in 1993 who has competed in amateur leagues rather than as a KeSPA professional. He is best known on the Fastest map, where he is widely regarded as the strongest player in the world, and for his skilled handling of templar units.
+
+His biggest result came in 2020, when he won the first season of the AfreecaTV Challengers Starleague. It came with a seed into the qualifier groups of the Afreeca Starleague. He subsequently appeared in [ASL Season 9](@/tournaments/asl-s9.md). Over the years he has used IDs such as Sea.KH and By_Brain.

@@ -1,6 +1,6 @@
 +++
 title = "ziGGy"
-description = "ziGGy (Szymon Filipek) — Terran player from Poland."
+description = "ziGGy (Szymon Filipek) — Polish Terran, StarCraft community writer and Bombastic StarLeague participant."
 slug = "ziggy"
 template = "players/player.html"
 [taxonomies]
@@ -16,6 +16,6 @@ liquipedia = "https://liquipedia.net/starcraft/Ziggy"
 sources = ["https://liquipedia.net/starcraft/Ziggy"]
 verified = "2026-10-11"
 +++
-ziGGy (Szymon Filipek) is a Polish Terran player, born in 1996. He also plays StarCraft II and has written for StarCraft community sites.
+ziGGy (Szymon Filipek) is a Polish Terran player, born in 1996. Besides Brood War he often plays StarCraft II, and he has written for the community sites GosuGamers and TL.net.
 
-He appears in 4 seasons covered on broodwar.live, between 2020 and 2021.
+He competed in the [Bombastic StarLeague](@/tournaments/bsl.md), the international league for players outside Korea, in four seasons between 2020 and 2021: [BSL Season 8](@/tournaments/bsl-s8.md), [BSL Season 10](@/tournaments/bsl-s10.md), [BSL Season 11](@/tournaments/bsl-s11.md) and [BSL Season 13](@/tournaments/bsl-s13.md).

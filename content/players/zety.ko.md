@@ -1,6 +1,6 @@
 +++
 title = "ZeTy"
-description = "ZeTy(Erick Maraví Baca) — 페루의 저그 선수."
+description = "ZeTy(Erick Maraví Baca) — FKC·disturbed Mind 소속의 페루 저그이자 스트리머, BSL 12 하수리그 우승."
 slug = "zety"
 template = "players/player.html"
 [taxonomies]
@@ -26,6 +26,6 @@ name = "disturbed Mind"
 from = "2022-01-01"
 to = "present"
 +++
-ZeTy(Erick Maraví Baca)는 1990년생 페루의 저그 선수로, FKC, disturbed Mind에서 활동했다. 2009년부터 대회에 출전해 온 선수이자 스트리머로, BSL 12 HasuLeague에서 우승했고 disturbed Mind 소속으로 활동하고 있다.
+ZeTy(Erick Maraví Baca)는 1990년생 페루의 저그 선수이자 스트리머로, 2009년부터 대회에 출전했다. 2021년 말까지 FKC에서 뛰었고 2022년 1월 disturbed Mind에 합류했다. Team LaGFree 소속으로 SBWI 팀리그 2위를 차지했다.
 
-broodwar.live에 수록된 시즌 중 2018년부터 2025년까지 4개 시즌에 출전했다.
+BSL(Bombastic StarLeague)에서는 BSL 12 하수리그에서 우승했고, BSL 13 고수리그에도 참가했다. 본선은 [BSL 시즌 5](@/tournaments/bsl-s5.ko.md), [BSL 시즌 15](@/tournaments/bsl-s15.ko.md), [BSL 시즌 16](@/tournaments/bsl-s16.ko.md), [BSL 시즌 20](@/tournaments/bsl-s20.ko.md)에 출전했다.

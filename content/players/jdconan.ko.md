@@ -1,6 +1,6 @@
 +++
 title = "JDConan"
-description = "JDConan(Adalid Bismar Apala Ayaviri) — 볼리비아의 저그 선수."
+description = "JDConan(Adalid Bismar Apala Ayaviri) — disturbed Mind 소속 볼리비아 저그, 2023년부터 BSL 출전."
 slug = "jdconan"
 template = "players/player.html"
 [taxonomies]
@@ -22,6 +22,6 @@ name = "disturbed Mind"
 from = "2022-01-01"
 to = "present"
 +++
-JDConan(Adalid Bismar Apala Ayaviri)는 1999년생 볼리비아의 저그 선수로, disturbed Mind에서 활동했다. 중남미의 신세대 선수로 disturbed Mind 소속이며, 2023년부터 매 시즌 Bombastic StarLeague에 출전하고 있다.
+JDConan(Adalid Bismar Apala Ayaviri)는 1999년생 볼리비아의 저그 선수로, Conan이라는 아이디로도 알려져 있다. 2022년부터 중남미 팀 disturbed Mind 소속으로 스타크래프트: 리마스터 대회에 출전하고 있으며, 이 지역의 신세대 선수로 꼽힌다.
 
-broodwar.live에 수록된 시즌 중 2023년부터 2026년까지 7개 시즌에 출전했다.
+2023년 [BSL 시즌 16](@/tournaments/bsl-s16.ko.md)부터 Bombastic StarLeague(BSL)에 한 시즌도 빠짐없이 출전해, 이 사이트 기록으로 일곱 시즌 연속 참가했다. [BSL 시즌 20](@/tournaments/bsl-s20.ko.md)에서는 더블 엘리미네이션 플레이오프에 올라 패자조 3라운드까지 진출했고, [BSL 시즌 22](@/tournaments/bsl-s22.ko.md)에서도 플레이오프에 올랐다. 그 밖에 [BSL 시즌 17](@/tournaments/bsl-s17.ko.md)·[BSL 시즌 18](@/tournaments/bsl-s18.ko.md)·[BSL 시즌 19](@/tournaments/bsl-s19.ko.md)·[BSL 시즌 21](@/tournaments/bsl-s21.ko.md)에 출전했다.

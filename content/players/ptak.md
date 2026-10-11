@@ -1,6 +1,6 @@
 +++
 title = "Ptak"
-description = "Ptak (Matija Vragovićis) — Zerg player from Croatia."
+description = "Ptak (Matija Vragovićis) — Croatian Zerg, long Croatia's top player, six-time national WCG qualifier winner."
 slug = "ptak"
 template = "players/player.html"
 [taxonomies]
@@ -22,6 +22,6 @@ name = "Crazy Warriors Team"
 from = "2022-02-13"
 to = "present"
 +++
-Ptak (Matija Vragovićis) is a Croatian Zerg player, born in 1984, who has played for Crazy Warriors Team. Long regarded as Croatia's best StarCraft player, he started in LAN cafés in the late 1990s and was a long-time member of the European clan MicroGamerZ.
+Ptak (Matija Vragovićis) is a Croatian Zerg player, born in 1984, who was considered the best StarCraft player in Croatia for many years. He started out playing over LAN in local PC cafés in the late 1990s before moving to Battle.net, and became best known as a long-time member of the European clan MicroGamerZ. He later played for NaW-, PRØ KiNgz and SouLGaming, and has been with Crazy Warriors Team since February 2022.
 
-He appears in 5 seasons covered on broodwar.live, between 2021 and 2025.
+He won the Croatian national World Cyber Games qualifiers every year from 2005 to 2010, and in 2009 he also won two GosuGamers GosuCups. In the [Bombastic StarLeague](@/tournaments/bsl.md) he has played in five seasons, from [BSL Season 12](@/tournaments/bsl-s12.md) to [BSL Season 21](@/tournaments/bsl-s21.md).

@@ -1,6 +1,6 @@
 +++
 title = "Memory"
-description = "Memory (Ju Hyun Jun) — Terran player from South Korea."
+description = "Memory (Ju Hyun Jun) — CJ Entus Terran, 2007 GOMTV MSL Season 3 quarterfinalist."
 slug = "memory"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,8 @@ slug = "cj-entus"
 from = "2006-04"
 to = ""
 +++
-Memory (Ju Hyun Jun) is a South Korean Terran player, born in 1989, who played for Greatest One and CJ Entus. He qualified for several MSL seasons in 2007–2008.
+Memory (Ju Hyun Jun) is a retired South Korean Terran born in 1989. He debuted in March 2006 with Greatest One, the team that became [CJ Entus](@/wiki/teams/cj-entus.md) the following month, and played for CJ until he left the scene in 2008.
 
-He appears in 4 seasons covered on broodwar.live, between 2007 and 2008.
+His best individual result was a quarterfinal in the [2007 GOMTV MSL Season 3](@/tournaments/2007-gomtv-msl-season-3.md). He also reached the round of 16 of the [2008 Club Day Online MSL](@/tournaments/2008-club-day-online-msl.md) and qualified for the [2008 Arena MSL](@/tournaments/2008-arena-msl.md) and the [2008 GOMTV MSL Season 4](@/tournaments/2008-gomtv-msl-season-4.md).
+
+In Proleague he played in two finals that CJ lost: the [2006 SKY Proleague Round 2](@/tournaments/2006-sky-proleague-round-2.md) and the [2007 Shinhan Bank Proleague Round 2](@/tournaments/2007-shinhan-bank-proleague-round-2.md), where he won two of his three playoff sets.

@@ -1,6 +1,6 @@
 +++
 title = "FireFist"
-description = "FireFist(김재춘) — 한국의 저그 선수."
+description = "FireFist(김재춘) — 팬택·위메이드 폭스와 KT 롤스터의 저그, KT 주장."
 slug = "firefist"
 template = "players/player.html"
 [taxonomies]
@@ -39,6 +39,8 @@ slug = "kt-rolster"
 from = ""
 to = "2010-10-13"
 +++
-FireFist(김재춘)는 1987년생 한국의 저그 선수로, 팬택앤큐리텔 큐리어스, 팬택 EX, 위메이드 폭스, KT 롤스터에서 활동했다. 2008-09 프로리그 개막을 앞두고 위메이드 폭스에서 KTF로 이적해 이후 KT 롤스터의 주장을 맡았고, 2009 NATE MSL에서 16강에 올랐다.
+FireFist(김재춘)는 1987년생 대한민국의 전 저그 프로게이머이다. 2006년 팬택앤큐리텔 큐리어스에서 데뷔해 팀명이 팬택 EX, [위메이드 폭스](@/wiki/teams/wemade-fox.ko.md)로 바뀌는 동안 팀에 남았고, 08–09 프로리그 개막을 앞두고 KTF로 트레이드되었다. 이후 ZergBong의 뒤를 이어 [KT 롤스터](@/wiki/teams/kt-rolster.ko.md)의 주장을 맡았다.
 
-broodwar.live에 수록된 시즌 중 2008년부터 2010년까지 4개 시즌에 출전했다.
+개인리그 최고 성적은 [2009–2010 NATE MSL](@/tournaments/2009-2010-nate-msl.ko.md)의 16강이다. 조별 리그에서 [effOrt](@/players/effort.ko.md)와 [Ruby](@/players/ruby.ko.md)를 이기고 16강에 올랐으나 [Jaedong](@/players/jaedong.ko.md)에게 0:2로 졌다. 이 밖에 [2008-2009 바투 스타리그](@/tournaments/2008-2009-batoo-osl.ko.md)·[2010 하나대투증권 MSL](@/tournaments/2010-hana-daetoo-securities-msl.ko.md)·[2010 대한항공 스타리그 시즌 1](@/tournaments/2010-korean-air-osl-season-1.ko.md)에 출전했다. 2009 STX 마스터즈에서 CJ 엔투스를 상대로 올킬을 기록한 것이 팀리그에서 가장 돋보인 활약이다.
+
+2010년 9월 공군 ACE 입대를 지원했으나 결국 은퇴를 택했다.

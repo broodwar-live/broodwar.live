@@ -1,6 +1,6 @@
 +++
 title = "SKELTON"
-description = "SKELTON(봉준구) — 한국의 저그 선수."
+description = "SKELTON(봉준구) — 1세대 저그 프로게이머, 2000 프리챌 스타리그 준우승."
 slug = "skelton"
 template = "players/player.html"
 [taxonomies]
@@ -19,6 +19,6 @@ liquipedia = "https://liquipedia.net/starcraft/SKELTON"
 sources = ["https://liquipedia.net/starcraft/SKELTON"]
 verified = "2026-10-11"
 +++
-SKELTON(봉준구)는 1982년생 한국의 저그 선수이다. 최초의 프로게이머 세대 중 한 명으로, 1999년 투니버스 프로게이머 코리아 오픈에서 처음으로 방송된 브루드워 경기에 출전했고 2000 프리챌 스타리그에서 준우승했다.
+SKELTON(봉준구)은 1982년생 대한민국의 전 저그 프로게이머로, 가장 이른 시기의 프로 브루드 워 선수 가운데 한 명이다. 1999년 투니버스 프로게이머 코리아 오픈에서 처음으로 방송된 프로 브루드 워 경기에 출전했다.
 
-broodwar.live에 수록된 시즌 가운데 [2000 Freechal OSL](/ko/tournaments/2000-freechal-osl/)에서 준우승했다.
+초창기 온게임넷 스타리그인 [2000 프리챌 스타리그](@/tournaments/2000-freechal-osl.ko.md)에서 결승에 올랐으나 [GARIMTO](@/players/garimto.ko.md)에게 0:3으로 져 준우승했다. 팀리그 시대까지 활동을 이어 가지는 않았으며, 기록상 활동 연도는 2000년뿐이다.

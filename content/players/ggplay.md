@@ -1,6 +1,6 @@
 +++
 title = "GGPlay"
-description = "GGPlay (Kim Joon Yung) — Zerg player from South Korea."
+description = "GGPlay (Kim Joon Yung) — Hanbit Stars Zerg who won the 2007 Daum OSL and reached the 2008 Incruit OSL semifinals."
 slug = "ggplay"
 template = "players/player.html"
 [taxonomies]
@@ -35,6 +35,6 @@ slug = "woongjin-stars"
 from = "2008-10-29"
 to = "2009-08"
 +++
-GGPlay (Kim Joon Yung) is a retired South Korean Zerg player born in 1985. He played for Hanbit Stars, briefly for CJ Entus in 2008, and then Woongjin Stars until 2009.
+GGPlay (Kim Joon Yung) is a retired South Korean Zerg player, born in 1985. He played for [Hanbit Stars](@/wiki/teams/hanbit-stars.md) from 2004, spent part of 2008 with [CJ Entus](@/wiki/teams/cj-entus.md), and finished his career with [Woongjin Stars](@/wiki/teams/woongjin-stars.md) in 2009.
 
-His biggest result was the 2007 Daum OSL title, won 3–2 over Iris after trailing 0–2. He later reached the semifinals of the 2008 Incruit OSL. His retirement has been attributed to carpal tunnel problems.
+His defining result was the [2007 Daum OSL](@/tournaments/2007-daum-osl.md): down 0–2 in the final against [Iris](@/players/iris.md), he won three straight games to take the title 3–2, the decider on Python. He had earlier reached the round of 16 in two Shinhan Bank OSL seasons. In the [2008 Incruit OSL](@/tournaments/2008-incruit-osl.md) he beat [Flash](@/players/flash.md) in the quarterfinals before losing his semifinal 1–3 to [Fantasy](@/players/fantasy.md), whose mech play against Zerg was then new. He did not regain that form and retired, a decision attributed to carpal tunnel problems.

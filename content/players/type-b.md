@@ -1,6 +1,6 @@
 +++
 title = "type-b"
-description = "type-b (Moon Sung Jin) — Zerg player from South Korea."
+description = "type-b (Moon Sung Jin) — OGN/Hite SPARKYZ Zerg and 2009 Bacchus OSL semifinalist, banned for match-fixing in 2010."
 slug = "type-b"
 template = "players/player.html"
 [taxonomies]
@@ -27,6 +27,6 @@ name = "Hite SPARKYZ"
 from = "2009-04"
 to = "2010-06-09"
 +++
-type-b (Moon Sung Jin) is a South Korean Zerg player, born in 1988, who played for OnGameNet SPARKYZ and Hite SPARKYZ. A Zerg of the SPARKYZ team, he broke through in the 2008 Club Day Online MSL, where he was one of only three Zergs to reach the round of 16.
+type-b (Moon Sung Jin) is a South Korean Zerg player born in 1988 who played for OnGameNet SPARKYZ, later Hite SPARKYZ, from 2007 to 2010. Often overshadowed by teammates [YellOw[ArnC]](@/players/yellow-arnc.md) and [HoGiL](@/players/hogil.md), he stood out early for a strong ZvT record at a time when Zergs struggled against mech Terran.
 
-Among the seasons covered on broodwar.live, he reached the semifinals of the [2009 Bacchus OSL](/tournaments/2009-bacchus-osl/).
+His breakout came in the [2008 Club Day Online MSL](@/tournaments/2008-club-day-online-msl.md), where he was one of three Zergs in the round of 16 and lost the league's only ZvZ series to YellOw[ArnC]. In the [2009 Bacchus OSL](@/tournaments/2009-bacchus-osl.md) he beat a run of strong Protoss players and teammate [Leta](@/players/leta.md) to reach the semifinals, where YellOw[ArnC] swept him 3–0. He went 4–2 in the first round of the 2009–10 Proleague and qualified for the [2009-2010 NATE MSL](@/tournaments/2009-2010-nate-msl.md) and [2009-2010 EVER OSL](@/tournaments/2009-2010-ever-osl.md), going out early in both. In 2010 he was found to be involved in the match-fixing scandal and was banned from progaming for life by KeSPA.

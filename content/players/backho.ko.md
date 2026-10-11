@@ -1,6 +1,6 @@
 +++
 title = "BackHo"
-description = "BackHo(손찬웅) — 한국의 프로토스 선수."
+description = "BackHo(손찬웅) — 르까프·화승 OZ의 프로토스, 2008 EVER 스타리그 4강."
 slug = "backho"
 template = "players/player.html"
 [taxonomies]
@@ -29,4 +29,8 @@ slug = "hwaseung-oz"
 from = "2009-01-31"
 to = "2011-07-03"
 +++
-BackHo(손찬웅)는 2006년부터 2011년까지 르까프 OZ(이후 화승 OZ)에서 활동한 대한민국의 전 프로토스 프로게이머이다. 개인리그 최고 성적은 2008 EVER 스타리그 4강으로, 준결승에서 July에게 패했다. 같은 해 GSL 시즌 1에서도 4강에 올랐다. 08–09 프로리그에서 준우승한 OZ 라인업의 일원이었으며, 이후 아마추어 리그에서 활동했다.
+BackHo(손찬웅)는 2006년부터 2011년까지 OZ 한 팀에서만 활동한 대한민국의 전 프로토스 프로게이머이다. 팀명은 르까프 OZ였다가 2009년 [화승 OZ](@/wiki/teams/hwaseung-oz.ko.md)로 바뀌었다.
+
+첫 스타리그 출전인 [2008 박카스 스타리그](@/tournaments/2008-bacchus-osl.ko.md)에서는 16강에서 탈락했다. 같은 해 [2008 EVER 스타리그](@/tournaments/2008-ever-osl.ko.md)에서는 32강에서 팀 동료 [Jaedong](@/players/jaedong.ko.md)을 꺾고 [Bisu](@/players/bisu.ko.md)·[Much](@/players/much.ko.md)·[JangBi](@/players/jangbi.ko.md)를 차례로 이겨 4강에 올랐으나, 이 대회를 제패한 [July](@/players/july.ko.md)에게 1:3으로 졌다.
+
+2009년 1월 허리 부상으로 4월까지 경기에 나서지 못했다. 이후 OZ 프로토스 라인의 중심으로 활약했고, 결승 이틀째 경기에서 승리를 거뒀지만 OZ는 [2008–09 신한은행 프로리그](@/tournaments/2008-2009-shinhan-bank-proleague.ko.md)를 준우승으로 마쳤다. 2011년 팀을 떠난 뒤에는 아마추어 리그에서 활동했다.

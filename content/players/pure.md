@@ -1,6 +1,6 @@
 +++
 title = "Pure"
-description = "Pure (Park Sae Jung) — Protoss player from South Korea."
+description = "Pure (Park Sae Jung) — Pantech EX/WeMade FOX Protoss, 2010 Korean Air OSL Season 1 semifinalist."
 slug = "pure"
 template = "players/player.html"
 [taxonomies]
@@ -34,6 +34,8 @@ name = "Team 8"
 from = "2013-08-23"
 to = "2013-10-06"
 +++
-Pure (Park Sae Jung) is a South Korean Protoss player, born in 1990, who played for Pantech EX, WeMade FOX and Team 8. He joined Pantech EX in 2006 and played for WeMade FOX until 2011, reaching the semifinals of the 2010 Korean Air OSL Season 1. He began streaming Brood War in October 2013.
+Pure (Park Sae Jung) is a South Korean Protoss born in 1990. He earned his progamer licence in February 2006, joined Pantech EX that August and stayed with the team as it became [WeMade FOX](@/wiki/teams/wemade-fox.md), until 2011; he was regularly WeMade's ace in Proleague playoff matches.
 
-Among the seasons covered on broodwar.live, he reached the semifinals of the [2010 Korean Air OSL Season 1](/tournaments/2010-korean-air-osl-season-1/).
+In the [2009-2010 EVER OSL](@/tournaments/2009-2010-ever-osl.md) he came through the round of 36 and a tiebreaker-decided round of 16, then lost 2–0 to [Calm](@/players/calm.md) in the quarterfinals. His best run followed in the [2010 Korean Air OSL Season 1](@/tournaments/2010-korean-air-osl-season-1.md): he beat Calm, [Movie](@/players/movie.md) and [FanTaSy](@/players/fantasy.md) to reach the semifinals, where [Flash](@/players/flash.md) swept him 3–0 despite three straight Nexus-first openings. At WCG 2010 he beat [Stork](@/players/stork.md) and [Free](@/players/free.md) before falling to [effOrt](@/players/effort.md).
+
+After military service from November 2011 to August 2013 and a brief stint with Team 8, he began streaming Brood War on Afreeca in October 2013.

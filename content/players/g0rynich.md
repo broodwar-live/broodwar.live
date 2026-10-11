@@ -1,6 +1,6 @@
 +++
 title = "g0rynich"
-description = "g0rynich (Alexander Davydov) — Zerg player from Russia."
+description = "g0rynich (Alexander Davydov) — long-time top Russian Zerg, 3D Clan and SouLGaming, BSL Season 8 runner-up."
 slug = "g0rynich"
 template = "players/player.html"
 [taxonomies]
@@ -31,4 +31,6 @@ name = "SouLGaming"
 from = "2017-11-02"
 to = "present"
 +++
-g0rynich (Alexander Davydov) is a Russian Zerg player who was long considered the top Zerg in Russia, particularly in 2006–07. He played for Shock Squadron and 3D Clan before joining SouLGaming in 2017. His results include third place at WCG Russia 2006 and podium finishes in the Asus Spring 2006, Summer 2006 and Autumn 2007 tournaments.
+g0rynich (Alexander Davydov) is a Russian Zerg player, born in 1986, who was regarded as the best Zerg in Russia for a long stretch, above all in 2006–07. He played for Shock Squadron from 2005, for 3D Clan from 2007 to 2017, and has been with SouLGaming since November 2017. He tried StarCraft II briefly after its release without making a major impact.
+
+In the mid-2000s he placed third at WCG Russia 2006 and finished in the top four of several Asus tournaments, including second place at Asus Spring 2006. In the [Bombastic StarLeague](@/tournaments/bsl.md) he was runner-up in [BSL Season 8](@/tournaments/bsl-s8.md), losing the final 4–2 to [Bonyth](@/players/bonyth.md). A season later he reached the semifinals of [BSL Season 9](@/tournaments/bsl-s9.md).

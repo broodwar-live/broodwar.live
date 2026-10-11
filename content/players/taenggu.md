@@ -1,6 +1,6 @@
 +++
 title = "TaeNgGu"
-description = "TaeNgGu (Yoon Jong-hyun) — Terran player from South Korea."
+description = "TaeNgGu (Yoon Jong-hyun) — South Korean amateur Terran who qualified for ASL Season 17."
 slug = "taenggu"
 template = "players/player.html"
 [taxonomies]
@@ -18,4 +18,6 @@ liquipedia = "https://liquipedia.net/starcraft/TaeNgGu"
 sources = ["https://liquipedia.net/starcraft/TaeNgGu"]
 verified = "2026-10-11"
 +++
-TaeNgGu (Yoon Jong-hyun) is a South Korean amateur Terran player born in 1994.
+TaeNgGu (Yoon Jong-hyun) is a South Korean Terran player born in 1994. He is an amateur of the post-KeSPA streaming scene rather than a former team-league professional, and has also used the ID TaeNgGu11; Chinese-speaking fans know him by the nickname 塘沽.
+
+His appearance on the main stage of the Afreeca Starleague came in 2024, when he qualified for [ASL Season 17](@/tournaments/asl-s17.md).

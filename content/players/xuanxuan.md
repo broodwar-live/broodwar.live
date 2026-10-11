@@ -1,6 +1,6 @@
 +++
 title = "XuanXuan"
-description = "XuanXuan (Zhao Haoxuan) — Terran player from China."
+description = "XuanXuan (Zhao Haoxuan) — Chinese Terran from Jurong, one of China's youngest players, BSL Season 14 quarterfinalist."
 slug = "xuanxuan"
 template = "players/player.html"
 [taxonomies]
@@ -22,6 +22,6 @@ name = "SunF"
 from = "2020-03-07"
 to = "2022-07-25"
 +++
-XuanXuan (Zhao Haoxuan) is a Chinese Terran player, born in 1998, who has played for SunF. One of the youngest Chinese players on the international scene, he has competed in several Bombastic StarLeague seasons.
+XuanXuan (Zhao Haoxuan) is a Chinese Terran player, born in 1998, from Jurong in Jiangsu province, and one of the youngest Chinese players on the international scene. He played for SunF from March 2020 to July 2022 and then joined the team The. Chinese fans also call him 轩皇, "Xuan Emperor".
 
-He appears in 4 seasons covered on broodwar.live, between 2022 and 2024.
+In the [Bombastic StarLeague](@/tournaments/bsl.md) he reached the quarterfinals of [BSL Season 14](@/tournaments/bsl-s14.md) and has also played in [BSL Season 17](@/tournaments/bsl-s17.md), [BSL Season 18](@/tournaments/bsl-s18.md) and [BSL Season 19](@/tournaments/bsl-s19.md).

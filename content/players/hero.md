@@ -1,6 +1,6 @@
 +++
 title = "herO"
-description = "herO (Jo Il Jang) — Zerg player from South Korea."
+description = "herO (Jo Il Jang) — STX SouL Zerg, 2008–09 Batoo OSL semifinalist and two-time ASL runner-up (Seasons 4 and 17)."
 slug = "hero"
 template = "players/player.html"
 [taxonomies]
@@ -30,4 +30,6 @@ name = "Team 8"
 from = "2012-05-16"
 to = "2012"
 +++
-herO (Jo Il Jang) is a South Korean Zerg who played for STX SouL from 2007 and moved to Team 8 in 2012. He first drew wide attention in the 2008–09 Batoo OSL, where he beat then top-ranked Bisu and reached the semifinals before losing to Jaedong. In the post-KeSPA era he reached the finals of AfreecaTV StarCraft League 4 in 2017 and ASL 17 in 2024, finishing as runner-up both times.
+herO (Jo Il Jang) is a South Korean Zerg player born in 1990. He joined [STX SouL](@/wiki/teams/stx-soul.md) in 2007, made his televised debut in the 2007 Proleague against [fOrGG](@/players/forgg.md), and broke through after a strong 2008 minor league. In the [2008-2009 Batoo OSL](@/tournaments/2008-2009-batoo-osl.md) he knocked out top-ranked [Bisu](@/players/bisu.md) and made the semifinals, where [Jaedong](@/players/jaedong.md) stopped him. He moved to Team 8 in May 2012.
+
+He has been one of the most consistent players of the Afreeca era. He reached the final of [ASL Season 4](@/tournaments/asl-s4.md), losing 3–1 to [Flash](@/players/flash.md), and again of [ASL Season 17](@/tournaments/asl-s17.md), losing 4–3 to [Soulkey](@/players/soulkey.md). He was also a semifinalist in [ASL Season 5](@/tournaments/asl-s5.md), [ASL Season 11](@/tournaments/asl-s11.md), [ASL Season 12](@/tournaments/asl-s12.md), [ASL Season 14](@/tournaments/asl-s14.md) and [ASL Season 15](@/tournaments/asl-s15.md).

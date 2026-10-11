@@ -1,6 +1,6 @@
 +++
 title = "Lomo"
-description = "Lomo (Son Ju Heung) — Terran player from South Korea."
+description = "Lomo (Son Ju Heung) — Lecaf/Hwaseung OZ Terran known for wraith control, part of OZ's 2007 Proleague title."
 slug = "lomo"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,6 @@ slug = "hwaseung-oz"
 from = "2009-01-31"
 to = ""
 +++
-Lomo (Son Ju Heung) is a South Korean Terran player, born in 1990, who played for Lecaf OZ and Hwaseung OZ. Nicknamed the "Bubble Gum" Terran, he was known for his Wraith control in TvT and TvZ while playing for the OZ team. After retiring he trained to become a police officer.
+Lomo (Son Ju Heung) is a retired South Korean Terran player, born in 1990, who played for Lecaf OZ from 2006, staying as the team became [Hwaseung OZ](@/wiki/teams/hwaseung-oz.md) in 2009. Nicknamed the "Bubble Gum" Terran for chewing gum during games, he stood out for his wraith control in both TvT and TvZ, though his form was uneven.
 
-He appears in 5 seasons covered on broodwar.live, between 2007 and 2010.
+He won 2v2 sets in the finals as Lecaf OZ took the [2007 Shinhan Bank Proleague Round 2](@/tournaments/2007-shinhan-bank-proleague-round-2.md) and then the [2007 Shinhan Bank Proleague Grand Final](@/tournaments/2007-shinhan-bank-proleague-grand-final.md), and he played in the final of the [2008–09 Shinhan Bank Proleague](@/tournaments/2008-2009-shinhan-bank-proleague.md), where OZ finished second. His best individual run was a quarterfinal in the [2008 Arena MSL](@/tournaments/2008-arena-msl.md); he also reached the round of 16 of the [2007 GOMTV MSL Season 3](@/tournaments/2007-gomtv-msl-season-3.md) and qualified for the [2009 Bacchus OSL](@/tournaments/2009-bacchus-osl.md). After retiring he trained to become a police officer.

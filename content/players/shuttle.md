@@ -1,6 +1,6 @@
 +++
 title = "Shuttle"
-description = "Shuttle (Kim Yoon Joong) — Protoss player from South Korea."
+description = "Shuttle (Kim Yoon Joong) — former STX SouL Protoss and Afreeca streamer who won ASL Season 1."
 slug = "shuttle"
 template = "players/player.html"
 [taxonomies]
@@ -25,6 +25,6 @@ slug = "stx-soul"
 from = "2006-08-21"
 to = "2012-09-21"
 +++
-Shuttle (Kim Yoon Joong) is a South Korean Protoss player, born in 1990, who played for STX SouL from 2006 until retiring from StarCraft II in September 2012 to fulfill his military service. His best KeSPA-era individual result was a semifinal run in the TG-Intel Classic Season 1, where he lost to eventual winner Jaedong.
+Shuttle (Kim Yoon Joong) is a South Korean Protoss player, born in 1990. He played for [STX SouL](@/wiki/teams/stx-soul.md) from 2006, mostly in the shadow of teammate [Kal](@/players/kal.md), with only occasional Proleague appearances. His best KeSPA-era run came in the TG-Intel Classic Season 1, where he beat XellOs and fOrGG before losing his semifinal to the eventual winner, Jaedong. He reached the round of 16 of the [2010 Hana Daetoo Securities MSL](@/tournaments/2010-hana-daetoo-securities-msl.md), and retired from StarCraft II in September 2012 to do his military service.
 
-He later became a popular Afreeca streamer and won the first AfreecaTV StarCraft League in 2016.
+Afterwards he became one of the most popular Afreeca streamers on the Fish server, and in 2016 he won the inaugural [ASL Season 1](@/tournaments/asl-s1.md), sweeping [Sharp](@/players/sharp.md) 3–0 in the final. He went on to reach the quarterfinals of [ASL Season 5](@/tournaments/asl-s5.md) and the semifinals of [ASL Season 6](@/tournaments/asl-s6.md), and has qualified for many later seasons.

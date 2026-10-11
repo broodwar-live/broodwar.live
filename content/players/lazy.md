@@ -1,6 +1,6 @@
 +++
 title = "Lazy"
-description = "Lazy (Kim Ki Hoon) — Protoss player from South Korea."
+description = "Lazy (Kim Ki Hoon) — former eSTRO practice partner and MBCGame HERO Protoss (2010–2011), later an ASL qualifier."
 slug = "lazy"
 template = "players/player.html"
 [taxonomies]
@@ -29,4 +29,6 @@ name = "MBCGame HERO"
 from = "2010-10"
 to = "2011-11"
 +++
-Lazy (Kim Ki Hoon) is a South Korean Protoss and former progamer. He started as a practice partner for eSTRO in 2010 and joined MBCGame HERO through the draft held after eSTRO disbanded, staying until 2011. He has since played in amateur leagues.
+Lazy (Kim Ki Hoon) is a South Korean Protoss player born on 11 May 1993. He joined [eSTRO](@/wiki/teams/estro.md) as a practice partner in August 2010. When eSTRO was dissolved later that year, he was picked up by [MBCGame HERO](@/wiki/teams/mbcgame-hero.md) in the draft of its players and stayed there until November 2011, during the last years of the KeSPA league.
+
+After his professional career he continued in amateur leagues under tags such as NsP_Lazy. In the AfreecaTV era he qualified for two starleagues, playing in [ASL Season 3](@/tournaments/asl-s3.md) and [ASL Season 4](@/tournaments/asl-s4.md) in 2017.

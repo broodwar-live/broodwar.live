@@ -1,6 +1,6 @@
 +++
 title = "Sziky"
-description = "Sziky (Szikszai Miklós) — Zerg player from Hungary."
+description = "Sziky (Szikszai Miklós) — Hungarian Zerg, leading foreign player since 2010, three-time BSL semifinalist."
 slug = "sziky"
 template = "players/player.html"
 [taxonomies]
@@ -36,4 +36,8 @@ name = "StarCastTV Stars"
 from = "2021-11-06"
 to = "present"
 +++
-Sziky (Szikszai Miklós) is a Hungarian Zerg player and one of the leading non-Korean players since 2010. He played for mousesports from 2009, then for the Hungarian team sas from late 2010 and SouLGaming from 2013 to 2022. He has played for StarCastTV Stars since 2021.
+Sziky (Szikszai Miklós) is a Hungarian Zerg and one of the strongest non-Korean players since 2010. He first drew attention by upsetting Mondragon at ESL Major Series Season 3, joined mousesports in 2009, moved to the Hungarian team sas in late 2010 and played for SouLGaming from 2013 to 2022, and has played for StarCastTV Stars since late 2021.
+
+After much of the foreign elite left for StarCraft II in 2010, he, Heme and Scan dominated the 2011 Defiler.ru tournament series, and he became the first player to win more than ten gold medals there. He was also the only foreigner to take a game off the Korean clan GsP in the BBulsori Super Clan League Season 2.
+
+In the Bombastic StarLeague he reached the semifinals three seasons running, in [BSL Season 12](@/tournaments/bsl-s12.md), [BSL Season 13](@/tournaments/bsl-s13.md) and [BSL Season 14](@/tournaments/bsl-s14.md). In [BSL Season 20](@/tournaments/bsl-s20.md) he won his way through to round five of the lower bracket.

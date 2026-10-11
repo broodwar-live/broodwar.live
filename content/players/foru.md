@@ -1,6 +1,6 @@
 +++
 title = "fOru"
-description = "fOru (Lee Jae Hoon) — Protoss player from South Korea."
+description = "fOru (Lee Jae Hoon) — Greatest One/CJ Entus Protoss and early-2000s PvT specialist, part of three GO team-league title runs."
 slug = "foru"
 template = "players/player.html"
 [taxonomies]
@@ -39,6 +39,6 @@ slug = "cj-entus"
 from = ""
 to = ""
 +++
-fOru (Lee Jae Hoon) is a South Korean Protoss player, born in 1981, who played for Greatest One, CJ Entus and Air Force ACE. He was known in the early 2000s as a Protoss versus Terran specialist.
+fOru (Lee Jae Hoon) is a retired South Korean Protoss player, born in 1981, who was active from 2002 to 2009. He played for Greatest One (GO), the team that became [CJ Entus](@/wiki/teams/cj-entus.md), and served his military service with [Air Force ACE](@/wiki/teams/air-force-ace.md). In the early 2000s he was regarded as a Protoss-versus-Terran specialist.
 
-He appears in 5 seasons covered on broodwar.live, between 2002 and 2005.
+His best individual finish was a quarterfinal in the [2002 Reebok KPGA 2nd Tour](@/tournaments/2002-reebok-kpga-2nd-tour.md); he also qualified for the [2002 NATE OSL](@/tournaments/2002-nate-osl.md) and the [2003 Olympus OSL](@/tournaments/2003-olympus-osl.md). He was a fixture of GO's team-league line-ups: he won sets for the champions of the [2003 LifeZone KPGA Team League](@/tournaments/2003-lifezone-kpga-team-league.md), and played in the finals as GO won the [2003 KeMongSa KPGA Tour Team League](@/tournaments/2003-kemongsa-kpga-tour-team-league.md) and the [2004–05 MBCMovies MBCGame Team League](@/tournaments/2004-2005-mbcmovies-mbcgame-team-league.md). GO were runners-up in the [2004 Tucson MBCGame Team League](@/tournaments/2004-tucson-mbcgame-team-league.md).

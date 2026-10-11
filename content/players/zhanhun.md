@@ -1,6 +1,6 @@
 +++
 title = "Zhanhun"
-description = "Zhanhun (Pang Weizhu) — Protoss player from China."
+description = "Zhanhun (Pang Weizhu) — China's top Protoss since 2013, of team SvS; runner-up in BSL Seasons 18 and 19."
 slug = "zhanhun"
 template = "players/player.html"
 [taxonomies]
@@ -23,4 +23,6 @@ name = "SvS"
 from = "2019-05-01"
 to = "present"
 +++
-Zhanhun (Pang Weizhu) is a Chinese Protoss player, regarded as the best Protoss in China since 2013. In February 2024 he reached the final round of an ASL 17 qualifier group, the best ASL qualifying result by a non-Korean player at the time. He has played for team SvS since 2019.
+Zhanhun (Pang Weizhu) is a Chinese Protoss player born on 26 September 1992 who lives in Beihai, Guangxi, and has played for team SvS since May 2019. Regarded as China's best Protoss since 2013, he is known for his micro and multitasking and is, besides Mihu, the only Chinese player with win rates above 60% in every matchup. On 5 November 2023 he reached 2755 MMR and fourth place on the Korean Remastered ladder. On 3 February 2024 he reached the final round of a group in the ASL 17 qualifiers after beating IrOn and Sea, at the time the best ASL qualifying result by a non-Korean player.
+
+His best results on this site come from the Bombastic StarLeague. He reached the semifinals of [BSL Season 14](@/tournaments/bsl-s14.md) and the last round of the lower bracket in [BSL Season 15](@/tournaments/bsl-s15.md). He was runner-up in [BSL Season 18](@/tournaments/bsl-s18.md), losing the final 1–5 to [Dewalt](@/players/dewalt.md), and again in [BSL Season 19](@/tournaments/bsl-s19.md), losing 2–5 to [Mihu](@/players/mihu.md).

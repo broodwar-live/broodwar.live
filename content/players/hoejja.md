@@ -1,6 +1,6 @@
 +++
 title = "HoeJJa"
-description = "HoeJJa (Koh Kang Min) — Zerg player from South Korea."
+description = "HoeJJa (Koh Kang Min) — left-handed KT Rolster Zerg who played in three title-winning KT team-league finals (2009–2011)."
 slug = "hoejja"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,8 @@ slug = "kt-rolster"
 from = "2009-08"
 to = "2014-09-18"
 +++
-HoeJJa (Koh Kang Min) is a South Korean Zerg player born in 1989. He emerged in late 2007 and played for KTF MagicNs and then KT Rolster until 2014, also competing in StarCraft II for KT.
+HoeJJa (Koh Kang Min) is a South Korean Zerg player born on 5 September 1989. He emerged in minor leagues in late 2007, played for KTF MagicNs and stayed when the team became [KT Rolster](@/wiki/teams/kt-rolster.md) in 2009, remaining until 2014 and also playing StarCraft II for KT. ZvP was considered his best matchup, with strong drop play and Mutalisk control.
 
-After completing his military service, he began streaming on Afreeca in May 2016. He is noted for being left-handed.
+He was part of KT's team-league peak. He played in the finals of the [2009–10 Shinhan Bank Proleague](@/tournaments/2009-2010-shinhan-bank-proleague.md), the [2010 Shinhan Bank Winners League](@/tournaments/2010-shinhan-bank-winners-league.md) and the [2010–11 Shinhan Bank Proleague](@/tournaments/2010-2011-shinhan-bank-proleague.md), all won by KT; in the 2010–11 playoffs he went 6–2 in sets. In the [2011–12 SK Planet Proleague Season 1](@/tournaments/2011-2012-sk-planet-proleague-season-1.md) he won all six of his playoff sets, but KT lost the final. Individually he qualified for the [2008-2009 Batoo OSL](@/tournaments/2008-2009-batoo-osl.md).
+
+After military service he began streaming on AfreecaTV in May 2016. He is left-handed.

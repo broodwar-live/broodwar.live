@@ -1,6 +1,6 @@
 +++
 title = "XiaoShuai"
-description = "XiaoShuai (Huang Xueming) — Zerg player from China."
+description = "XiaoShuai (Huang Xueming) — Chinese Zerg of NEWL known for unpredictable strategies; CSL 14 champion (2024) and BSL playoff regular."
 slug = "xiaoshuai"
 template = "players/player.html"
 [taxonomies]
@@ -21,6 +21,8 @@ name = "NEWL"
 from = "2022-01-01"
 to = "present"
 +++
-XiaoShuai (Huang Xueming) is a Chinese Zerg player, born in 1989, who has played for NEWL. Considered the strongest Zerg in China, he is known for an unpredictable style that changes strategy from game to game.
+XiaoShuai (Huang Xueming) is a Chinese Zerg player born on 22 March 1989 who lives in Yongzhou, Hunan, and plays for NEWL. Widely considered China's best Zerg, he has passed 2700 MMR on the Korean ladder in several seasons. He is known for changing strategy from game to game in big events, for unconventional openings, and for a relatively low APM for a Zerg.
 
-He appears in 4 seasons covered on broodwar.live, between 2022 and 2024.
+On 17 November 2024 he won CSL 14 (2024 Autumn), part of a run of five wins in nine major Chinese individual events over a year that ended Mihu's long dominance of the Chinese scene. With [Zhanhun](@/players/zhanhun.md) he forms China's strongest 2v2 pair.
+
+In the Bombastic StarLeague he reached Lower Round 4 of the playoffs in [BSL Season 15](@/tournaments/bsl-s15.md), Ladder Round 2 of [BSL Season 16](@/tournaments/bsl-s16.md), and Lower Round 2 in both [BSL Season 17](@/tournaments/bsl-s17.md) and [BSL Season 18](@/tournaments/bsl-s18.md).

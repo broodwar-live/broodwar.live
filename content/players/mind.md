@@ -1,6 +1,6 @@
 +++
 title = "Mind"
-description = "Mind (Park Sung Gyoon) — Terran player from South Korea."
+description = "Mind (Park Sung Gyoon) — WeMade FOX and KT Rolster Terran; 2007 GOMTV MSL Season 3 champion and ASL Season 15 runner-up."
 slug = "mind"
 template = "players/player.html"
 [taxonomies]
@@ -39,6 +39,8 @@ slug = "kt-rolster"
 from = "2011-11-04"
 to = "2013-09-01"
 +++
-Mind (Park Sung Gyoon) is a South Korean Terran player born in 1991. He played for Pantech EX and WeMade FOX before moving to KT Rolster in 2011.
+Mind (Park Sung Gyoon) is a South Korean Terran player born on 3 October 1991. He started with Pantech in 2006, moved to [WeMade FOX](@/wiki/teams/wemade-fox.md) in August 2007 and joined [KT Rolster](@/wiki/teams/kt-rolster.md) in November 2011, briefly playing StarCraft II for KT before returning to Brood War through amateur leagues.
 
-He won the GomTV MSL Season 3 in 2007, defeating Bisu in the final. After briefly playing StarCraft II, he returned to Brood War in Korean amateur leagues and was runner-up in ASL Season 15 in 2023.
+Weeks after joining WeMade he won the [2007 GOMTV MSL Season 3](@/tournaments/2007-gomtv-msl-season-3.md), beating [Bisu](@/players/bisu.md) 3–1 in the final. He followed it with a semifinal in the [2008 GOMTV MSL Season 4](@/tournaments/2008-gomtv-msl-season-4.md), and later reached the quarterfinals of the [2008 Incruit OSL](@/tournaments/2008-incruit-osl.md), the [2010-2011 Bacchus OSL](@/tournaments/2010-2011-bacchus-osl.md) and the [2011 ABC Mart MSL](@/tournaments/2011-abc-mart-msl.md).
+
+In the AfreecaTV era he reached the quarterfinals of [ASL Season 4](@/tournaments/asl-s4.md), [ASL Season 5](@/tournaments/asl-s5.md), [ASL Season 7](@/tournaments/asl-s7.md), [KSL Season 2](@/tournaments/ksl-s2.md) and [KSL Season 4](@/tournaments/ksl-s4.md). In 2023 he was runner-up in [ASL Season 15](@/tournaments/asl-s15.md), losing the final 1–4 to [JyJ](@/players/jyj.md).

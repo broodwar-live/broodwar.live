@@ -1,6 +1,6 @@
 +++
 title = "spx"
-description = "spx (Anton Rodichev) — Terran player from Russia."
+description = "spx (Anton Rodichev) — Russian Terran of iRk, BSL Season 7 quarterfinalist and long-time BSL regular."
 slug = "spx"
 template = "players/player.html"
 [taxonomies]
@@ -27,6 +27,6 @@ name = "inte Riktigt kloka"
 from = "2020-01-01"
 to = "present"
 +++
-spx (Anton Rodichev) is a Russian Terran player, born in 1989, who has played for iFU and inte Riktigt kloka. He competes regularly in the Bombastic StarLeague.
+spx (Anton Rodichev) is a Russian Terran player born in 1989, active in competition since 2018. He played for iFU in 2018 and 2019 and has been a member of inte Riktigt kloka (iRk) since 2020. His ID comes from the word "sphynx": he wanted to see the sphinxes in Egypt.
 
-He appears in 11 seasons covered on broodwar.live, between 2018 and 2026.
+He is one of the most regular entrants in the Bombastic StarLeague, appearing in a dozen seasons on this site's records from [BSL Season 5](@/tournaments/bsl-s5.md) in 2018 to [BSL Season 22](@/tournaments/bsl-s22.md). His best result was a quarterfinal in [BSL Season 7](@/tournaments/bsl-s7.md) in 2019; he also made the double-elimination playoffs of [BSL Season 20](@/tournaments/bsl-s20.md), going out in the second round of the lower bracket.

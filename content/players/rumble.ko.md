@@ -1,6 +1,6 @@
 +++
 title = "Rumble"
-description = "Rumble(윤종민) — 한국의 저그 선수."
+description = "Rumble(윤종민) — SK텔레콤 T1의 베테랑 저그이자 팀플 전문 선수, 2005년 SKT 프로리그 우승 멤버."
 slug = "rumble"
 template = "players/player.html"
 [taxonomies]
@@ -24,6 +24,6 @@ slug = "sk-telecom-t1"
 from = ""
 to = "2009"
 +++
-Rumble(윤종민)는 1986년생 한국의 저그 선수로, SK텔레콤 T1에서 활동했다. SK텔레콤 T1의 베테랑 저그로 주로 2:2에 출전했으며, 2008년 바카스·EVER 스타리그에서 모두 16강에 올랐다.
+Rumble(윤종민)은 1986년생 대한민국의 은퇴한 저그 선수로, 2009년까지 [SK텔레콤 T1](@/wiki/teams/sk-telecom-t1.ko.md)에서만 활동했다. 프로리그에 팀플이 있던 시절 주로 2:2 경기에 기용되었다. [2005 SKY Proleague Round 1](@/tournaments/2005-sky-proleague-round-1.ko.md)과 [2005 SKY Proleague Grand Final](@/tournaments/2005-sky-proleague-grand-final.ko.md) 결승에 출전했고, 두 대회 모두 T1이 우승했다. [2006 SKY Proleague Grand Final](@/tournaments/2006-sky-proleague-grand-final.ko.md) 결승에도 나섰으나 SKT는 준우승에 그쳤다.
 
-broodwar.live에 수록된 시즌 중 2006년부터 2008년까지 4개 시즌에 출전했다.
+팀플이 폐지된 뒤로는 출전 기회가 줄었고, 공군 ACE 입대를 지원했지만 [Much](@/players/much.ko.md)가 선발되었다. 개인리그에서는 [2008 Bacchus OSL](@/tournaments/2008-bacchus-osl.ko.md)과 [2008 EVER OSL](@/tournaments/2008-ever-osl.ko.md)에서 나란히 16강에 오른 것이 최고 성적이다.

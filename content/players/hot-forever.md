@@ -1,6 +1,6 @@
 +++
 title = "H.O.T-Forever"
-description = "H.O.T-Forever (Kang Doh Gyung) — Zerg player from South Korea."
+description = "H.O.T-Forever (Kang Doh Gyung) — Hanbit Stars captain and Zerg, two-time OSL runner-up, 2v2 specialist."
 slug = "hot-forever"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,8 @@ slug = "air-force-ace"
 from = "2006"
 to = "2008"
 +++
-H.O.T-Forever (Kang Doh Gyung) is a South Korean Zerg player, born in 1981, who played for Hanbit Stars and Air Force ACE. One of the first progamers, he captained Hanbit Stars from 2001 to 2005 and was best known for his 2v2 play alongside [Reach](/players/reach/). After serving with Air Force ACE he coached KTF MagicNs and KT Rolster until 2016.
+H.O.T-Forever (Kang Doh Gyung) is a retired South Korean Zerg, born in 1981, and one of the first generation of progamers. He captained [Hanbit Stars](@/wiki/teams/hanbit-stars.md) from 2001 to 2005 and was best known for his 2v2 partnership with [Reach](@/players/reach.md).
 
-Among the seasons covered on broodwar.live, he finished runner-up in the [2000 Hanaro OSL](/tournaments/2000-hanaro-osl/) and [2002 NATE OSL](/tournaments/2002-nate-osl/).
+In individual play he was runner-up in the [2000 Hanaro OSL](@/tournaments/2000-hanaro-osl.md), losing 3–2 to [Grrrr...](@/players/grrrr.md), and in the [2002 NATE OSL](@/tournaments/2002-nate-osl.md), where [Sync](@/players/sync.md) beat him 3–1. In team play he appeared in the finals of the [2004 SKY Proleague Round 1](@/tournaments/2004-sky-proleague-round-1.md) and the [2004 SKY Proleague Grand Final](@/tournaments/2004-sky-proleague-grand-final.md), both won by Hanbit; Hanbit was runner-up in the [2003 KTF EVER Cup Proleague](@/tournaments/2003-ktf-ever-cup.md).
+
+He enlisted in 2006 as one of the first [Air Force ACE](@/wiki/teams/air-force-ace.md) players, serving as a 2v2 specialist and assistant coach, and after his discharge in 2008 coached KT Rolster.

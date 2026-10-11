@@ -1,6 +1,6 @@
 +++
 title = "FireFist"
-description = "FireFist (Kim Jae Choon) — Zerg player from South Korea."
+description = "FireFist (Kim Jae Choon) — Pantech/WeMade FOX and KT Rolster Zerg, KT captain, 2009 NATE MSL round of 16."
 slug = "firefist"
 template = "players/player.html"
 [taxonomies]
@@ -39,6 +39,8 @@ slug = "kt-rolster"
 from = ""
 to = "2010-10-13"
 +++
-FireFist (Kim Jae Choon) is a South Korean Zerg player, born in 1987, who played for Pantech & Curitel Curriors, Pantech EX, WeMade FOX and KT Rolster. He moved from WeMade FOX to KTF at the start of the 2008–09 Proleague, later captained KT Rolster, and reached the round of 16 of the 2009 NATE MSL.
+FireFist (Kim Jae Choon) is a retired South Korean Zerg, born in 1987. He debuted in 2006 with the Pantech & Curitel Curriors, stayed through the team's Pantech EX and [WeMade FOX](@/wiki/teams/wemade-fox.md) years, and was traded to KTF ahead of the 2008–09 Proleague season. He later succeeded ZergBong as captain of [KT Rolster](@/wiki/teams/kt-rolster.md).
 
-He appears in 4 seasons covered on broodwar.live, between 2008 and 2010.
+His best individual run came in the [2009–2010 NATE MSL](@/tournaments/2009-2010-nate-msl.md): he beat [effOrt](@/players/effort.md) and [Ruby](@/players/ruby.md) in the group stage to reach the round of 16, where [Jaedong](@/players/jaedong.md) eliminated him 2–0. He also qualified for the [2008-2009 Batoo OSL](@/tournaments/2008-2009-batoo-osl.md), the [2010 Hana Daetoo Securities MSL](@/tournaments/2010-hana-daetoo-securities-msl.md) and the [2010 Korean Air OSL Season 1](@/tournaments/2010-korean-air-osl-season-1.md). His most memorable team-league moment was an all-kill against CJ Entus in the 2009 STX Masters.
+
+In September 2010 he applied to join Air Force ACE but chose to retire instead.

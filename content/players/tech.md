@@ -1,6 +1,6 @@
 +++
 title = "Tech"
-description = "Tech (Adrián Barrios Pizarro) — Protoss player from Chile."
+description = "Tech (Adrián Barrios Pizarro) — Chilean Protoss of disturbed Mind, regarded as Chile's best Protoss of the Remastered era; BSL regular."
 slug = "tech"
 template = "players/player.html"
 [taxonomies]
@@ -21,6 +21,6 @@ name = "disturbed Mind"
 from = "2021-01-01"
 to = "present"
 +++
-Tech (Adrián Barrios Pizarro) is a Chilean Protoss player, born in 1993, who has played for disturbed Mind. He returned to competitive play when StarCraft: Remastered was announced in 2017 and has since competed in team leagues and individual events; he is often named the strongest Chilean Protoss of the Remastered era.
+Tech (Adrián Barrios Pizarro) is a Chilean Protoss player born on 20 September 1993, who also plays as Amigable. He returned to competitive play in 2017 when StarCraft: Remastered was announced and has been a member of disturbed Mind since January 2021. He has posted good individual results in team leagues such as BWCL, STPL and PATL, and is regarded as Chile's best Protoss of the Remastered era.
 
-He appears in 9 seasons covered on broodwar.live, between 2019 and 2025.
+He is a regular in the Bombastic StarLeague, having played in [BSL Season 7](@/tournaments/bsl-s7.md), [BSL Season 10](@/tournaments/bsl-s10.md), [BSL Season 11](@/tournaments/bsl-s11.md), [BSL Season 13](@/tournaments/bsl-s13.md), [BSL Season 15](@/tournaments/bsl-s15.md), [BSL Season 17](@/tournaments/bsl-s17.md) and [BSL Season 19](@/tournaments/bsl-s19.md). He reached Lower Round 1 of the playoffs in both [BSL Season 20](@/tournaments/bsl-s20.md) and [BSL Season 21](@/tournaments/bsl-s21.md).

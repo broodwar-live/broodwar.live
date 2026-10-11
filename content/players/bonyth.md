@@ -1,6 +1,6 @@
 +++
 title = "Bonyth"
-description = "Bonyth (Tomasz Kamiński) — Protoss player from Poland."
+description = "Bonyth (Tomasz Kamiński) — Polish Protoss, seven-time Bombastic StarLeague champion."
 slug = "bonyth"
 template = "players/player.html"
 [taxonomies]
@@ -31,6 +31,6 @@ name = "irk"
 from = "2024-12-30"
 to = "present"
 +++
-Bonyth (Tomasz Kamiński) is a Polish Protoss player, often regarded as one of the strongest non-Korean Brood War players. He won BSL Seasons 8 through 11 and finished in the top three in several other BSL seasons. Other results include first place at the RCG 2019 Corrupted Cup in Moscow and wins in the AMD Red League and Deathfate Pro League 2.
+Bonyth (Tomasz Kamiński) is a Polish Protoss player and the most successful competitor in the Bombastic StarLeague, the leading league for non-Korean players, with seven titles. He won [BSL Season 8](@/tournaments/bsl-s8.md), [Season 9](@/tournaments/bsl-s9.md), [Season 10](@/tournaments/bsl-s10.md) and [Season 11](@/tournaments/bsl-s11.md) in succession, and later took [BSL Season 15](@/tournaments/bsl-s15.md), [BSL Season 20](@/tournaments/bsl-s20.md) and [BSL Season 22](@/tournaments/bsl-s22.md); four of his seven finals wins came against [Dewalt](@/players/dewalt.md). He was runner-up in [BSL Season 5](@/tournaments/bsl-s5.md), [Season 6](@/tournaments/bsl-s6.md), [Season 12](@/tournaments/bsl-s12.md) and [Season 16](@/tournaments/bsl-s16.md).
 
-He played for SouLGaming and StarCastTV Stars before joining iRk at the end of 2024.
+Outside BSL he won the RCG 2019 Corrupted Cup offline event in Moscow and beat Dewalt in both of their "Battle for Aiur" showmatches. He is known for precise micro and strong PvT and PvP. He played for SouLGaming and StarCastTV Stars before joining iRk at the end of 2024.

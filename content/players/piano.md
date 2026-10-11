@@ -1,6 +1,6 @@
 +++
 title = "PianO"
-description = "PianO (Lim Jin Mook) — Terran player from South Korea."
+description = "PianO (Lim Jin Mook) — Terran of eSTRO, Hanbit/Woongjin Stars and Air Force ACE; 2009 Avalon MSL round of 16."
 slug = "piano"
 template = "players/player.html"
 [taxonomies]
@@ -45,4 +45,6 @@ slug = "air-force-ace"
 from = "2011"
 to = "2013"
 +++
-PianO (Lim Jin Mook), also known as Organ, is a South Korean Terran player, born in 1988. He played for eNature Top Team, eSTRO, Hanbit Stars (later Woongjin Stars) and Air Force ACE between 2006 and 2013. He announced the start of his Afreeca stream in November 2013 and has since played in amateur leagues and on the Fish server.
+PianO (Lim Jin Mook), also known as Organ, is a South Korean Terran player born on 29 January 1988. He debuted in 2006 with eNature Top Team and moved to [eSTRO](@/wiki/teams/estro.md) later that year. In 2007 he joined [Hanbit Stars](@/wiki/teams/hanbit-stars.md), staying when the team became [Woongjin Stars](@/wiki/teams/woongjin-stars.md) in 2008, and he served with [Air Force ACE](@/wiki/teams/air-force-ace.md) from 2011 to 2013.
+
+His best individual result was the round of 16 of the [2009 Avalon MSL](@/tournaments/2009-avalon-msl.md), and he also qualified for the [2010 Korean Air OSL Season 1](@/tournaments/2010-korean-air-osl-season-1.md). On 7 November 2013 he announced his departure from Woongjin and the start of his AfreecaTV stream. Since then he has played on the Fish server and in amateur leagues, and he has qualified for [ASL Season 1](@/tournaments/asl-s1.md), [ASL Season 8](@/tournaments/asl-s8.md), [ASL Season 11](@/tournaments/asl-s11.md), [ASL Season 14](@/tournaments/asl-s14.md) and [ASL Season 21](@/tournaments/asl-s21.md).

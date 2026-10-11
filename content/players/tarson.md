@@ -1,6 +1,6 @@
 +++
 title = "Tarson"
-description = "Tarson (Tomasz Boroń) — Terran player from Poland."
+description = "Tarson (Tomasz Boroń) — Polish Terran of RAGE.eSports, 2009 TSL round-of-16 qualifier and BSL entrant from Season 18 on."
 slug = "tarson"
 template = "players/player.html"
 [taxonomies]
@@ -18,6 +18,6 @@ liquipedia = "https://liquipedia.net/starcraft/Tarson"
 sources = ["https://liquipedia.net/starcraft/Tarson"]
 verified = "2026-10-11"
 +++
-Tarson (Tomasz Boroń) is a Polish Terran player, born in 1986. A member of RAGE.eSports, he reached the round of 16 of the 2009 TSL and finished fourth at an Intel Extreme Masters StarCraft II invitational in 2010.
+Tarson (Tomasz Boroń) is a Polish Terran player, born in 1986, and a member of RAGE.eSports; he has also played for infernal Gamers, ieS Virtual Gaming and Betsson Voodoo Gaming. In 2009 he qualified for the round of 16 of the Pokerstrategy.com TSL by beating [Sziky](@/players/sziky.md) 3–2 in a close series. He also tried StarCraft II, finishing fourth at an Intel Extreme Masters Global Challenge invitational in Cologne in August 2010.
 
-He appears in 4 seasons covered on broodwar.live, between 2024 and 2025.
+In the Remastered era he has been a regular in the Bombastic StarLeague, playing in [BSL Season 18](@/tournaments/bsl-s18.md), [BSL Season 19](@/tournaments/bsl-s19.md), [BSL Season 20](@/tournaments/bsl-s20.md) and [BSL Season 21](@/tournaments/bsl-s21.md).

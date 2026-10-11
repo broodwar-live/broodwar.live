@@ -1,6 +1,6 @@
 +++
 title = "huro"
-description = "huro (Yoon Soo Chul) — Protoss player from South Korea."
+description = "huro (Yoon Soo Chul) — former Samsung KHAN Protoss who returned with SouLGaming and reached the ASL Season 21 quarterfinals."
 slug = "huro"
 template = "players/player.html"
 [taxonomies]
@@ -25,6 +25,6 @@ slug = "samsung-khan"
 from = "2011-03-28"
 to = ""
 +++
-huro (Yoon Soo Chul) is a South Korean Protoss player, born in 1993, who has played for Samsung KHAN. He joined the team in 2011 and, after a period of retirement, returned to competition by joining SouLGaming in November 2018. He has used the IDs YSC and tulbo, among others.
+huro (Yoon Soo Chul) is a South Korean Protoss player born in 1993. He joined [Samsung KHAN](@/wiki/teams/samsung-khan.md) in March 2011, near the end of the KeSPA Brood War era, and later stepped away from competition.
 
-He appears in 5 seasons covered on broodwar.live, between 2020 and 2026.
+He ended his retirement in November 2018 by signing with SouLGaming, and has since played under IDs such as YSC, teolbo and huro. In the Afreeca Starleague he has played in [ASL Season 9](@/tournaments/asl-s9.md), [ASL Season 11](@/tournaments/asl-s11.md), [ASL Season 18](@/tournaments/asl-s18.md) and [ASL Season 19](@/tournaments/asl-s19.md). His deepest run so far came in [ASL Season 21](@/tournaments/asl-s21.md), where he reached the quarterfinals.

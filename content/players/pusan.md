@@ -1,6 +1,6 @@
 +++
 title = "Pusan"
-description = "Pusan (Park Ji Ho) — Protoss player from South Korea."
+description = "Pusan (Park Ji Ho) — MBCGame HERO Protoss, one of the \"Neo-Kings\", semifinalist in two straight OSLs in 2005, later a top Afreeca streamer."
 slug = "pusan"
 template = "players/player.html"
 [taxonomies]
@@ -30,4 +30,8 @@ name = "MBCGame HERO"
 from = "2006-04"
 to = ""
 +++
-Pusan (Park Ji Ho) is a South Korean Protoss and former progamer who played for KTEC Plus, Pirates of Space and MBCGame HERO. He finished fourth in the 2005 So1 OSL after semifinal and third-place losses to Boxer and iloveoov, and placed third in the following Shinhan Bank OSL. Along with Anytime and Stork he was called one of the "Neo-Kings" of Protoss. He later became a popular Brood War streamer on Afreeca.
+Pusan (Park Ji Ho) is a South Korean Protoss player born in 1985, nicknamed "Spirit Toss". He turned pro with Plus (KTEC Plus) in 2003 after crushing the team in his trial, debuting on television against [ElkY](@/players/elky.md). In early 2005 he moved to Pirates of Space, which became [MBCGame HERO](@/wiki/teams/mbcgame-hero.md).
+
+His peak came in late 2005. In the [2005 So1 OSL](@/tournaments/2005-so1-osl.md) he reached the semifinals, losing 2–3 to [BoxeR](@/players/boxer.md) before also dropping the third-place match to [iloveoov](@/players/iloveoov.md). He returned to the semifinals in the [2005-2006 Shinhan Bank OSL](@/tournaments/2005-2006-shinhan-bank-osl.md) and finished third. With [Anytime](@/players/anytime.md) and [Stork](@/players/stork.md) he was hailed as one of Protoss's "Neo-Kings". He won all his sets in the [2006 SKY Proleague Round 2](@/tournaments/2006-sky-proleague-round-2.md) playoffs and took a set in the final of the [2006 SKY Proleague Grand Final](@/tournaments/2006-sky-proleague-grand-final.md), both won by MBCGame HERO.
+
+Later one of Afreeca's most popular Brood War streamers, he played in [ASL Season 3](@/tournaments/asl-s3.md) and [ASL Season 5](@/tournaments/asl-s5.md).

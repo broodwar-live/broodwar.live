@@ -1,6 +1,6 @@
 +++
 title = "Memory"
-description = "Memory(주현준) — 한국의 테란 선수."
+description = "Memory(주현준) — CJ 엔투스의 테란, 2007 곰TV MSL 시즌 3 8강."
 slug = "memory"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,8 @@ slug = "cj-entus"
 from = "2006-04"
 to = ""
 +++
-Memory(주현준)는 1989년생 한국의 테란 선수로, GO, CJ Entus에서 활동했다. 2007~2008년 여러 차례 MSL 본선에 진출했다.
+Memory(주현준)는 1989년생 대한민국의 전 테란 프로게이머이다. 2006년 3월 GO(Greatest One)에서 데뷔했고, 팀이 다음 달 [CJ 엔투스](@/wiki/teams/cj-entus.ko.md)로 바뀐 뒤 2008년까지 CJ에서 활동했다.
 
-broodwar.live에 수록된 시즌 중 2007년부터 2008년까지 4개 시즌에 출전했다.
+프로리그에서는 [2006 SKY 프로리그 2라운드](@/tournaments/2006-sky-proleague-round-2.ko.md)와 [2007 신한은행 프로리그 2라운드](@/tournaments/2007-shinhan-bank-proleague-round-2.ko.md) 결승에 출전했으나 CJ는 두 번 모두 준우승했다. 2007년 2라운드 포스트시즌에서는 세 세트 가운데 두 세트를 이겼다.
+
+개인리그 최고 성적은 [2007 곰TV MSL 시즌 3](@/tournaments/2007-gomtv-msl-season-3.ko.md) 8강이다. [2008 클럽데이 온라인 MSL](@/tournaments/2008-club-day-online-msl.ko.md)에서는 16강에 올랐고, [2008 아레나 MSL](@/tournaments/2008-arena-msl.ko.md)과 [2008 곰TV MSL 시즌 4](@/tournaments/2008-gomtv-msl-season-4.ko.md) 본선에도 진출했다.

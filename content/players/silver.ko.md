@@ -1,6 +1,6 @@
 +++
 title = "Silver"
-description = "Silver(심소명) — 한국의 저그 선수."
+description = "Silver(심소명) — 투나 SG·팬택 계열 팀의 저그(2003–2008), 2006 프링글스 MSL 시즌 2 준우승."
 slug = "silver"
 template = "players/player.html"
 [taxonomies]
@@ -39,6 +39,6 @@ slug = "wemade-fox"
 from = "2007-08"
 to = "2008-02-15"
 +++
-Silver(심소명)는 1984년생 한국의 저그 선수로, 투나SG, 팬택앤큐리텔 큐리어스, 팬택 EX, 위메이드 폭스에서 활동했다. 후에 위메이드 폭스가 된 투나SG·팬택 계열 팀에서 활약했으며, 2006 프링글스 MSL 시즌 2에서 준우승했다.
+Silver(심소명)는 1984년생 대한민국의 은퇴한 저그 프로게이머이다. 2003년부터 2008년 2월까지 투나 SG에서 팬택앤큐리텔 큐리어스, 팬택 EX를 거쳐 [위메이드 폭스](@/wiki/teams/wemade-fox.ko.md)로 이름이 바뀐 한 팀에서만 활동했다. 히드라리스크를 중심으로 한 운영으로 알려졌다.
 
-broodwar.live에 수록된 시즌 가운데 [2006 Pringles MSL Season 2](/ko/tournaments/2006-pringles-msl-season-2/)에서 준우승했다.
+개인리그 최고 성적은 [2006 프링글스 MSL 시즌 2](@/tournaments/2006-pringles-msl-season-2.ko.md) 준우승으로, 결승에서 [sAviOr](@/players/savior.ko.md)에게 1:3으로 졌다. 팀 단위로는 [2004 SKY 프로리그 2라운드](@/tournaments/2004-sky-proleague-round-2.ko.md) 결승에 출전해 팬택앤큐리텔의 우승을 함께했다. [2006 SKY 프로리그 1라운드](@/tournaments/2006-sky-proleague-round-1.ko.md)에서는 MVP로 선정되었다. [2004 SKY 프로리그 그랜드 파이널](@/tournaments/2004-sky-proleague-grand-final.ko.md)에도 출전했으나 팀은 준우승에 그쳤다.

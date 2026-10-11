@@ -1,6 +1,6 @@
 +++
 title = "go.go"
-description = "go.go (Kim Chang Hee) — Terran player from South Korea."
+description = "go.go (Kim Chang Hee) — SPARKYZ Terran known for TvT and offensive Command Centers; 2009 Bacchus OSL quarterfinalist."
 slug = "go-go"
 template = "players/player.html"
 [taxonomies]
@@ -23,6 +23,6 @@ name = "Hite SPARKYZ"
 from = "2006-03-21"
 to = "2010-06-09"
 +++
-go.go (Kim Chang Hee) is a South Korean Terran player, born in 1989, who played for Hite SPARKYZ. Strongest in Terran versus Terran, he played for Hite SPARKYZ and had his best individual run in the 2009 Bacchus OSL, where he reached the quarterfinals and lost 1–2 to teammate [YellOw[ArnC]](/players/yellow-arnc/).
+go.go (Kim Chang Hee) is a retired South Korean Terran player born on 14 May 1989. He played for the SPARKYZ team from 2006 to 2010, listed in 2008 as OnGameNet SPARKYZ and later as Hite SPARKYZ. He was strongest in Terran versus Terran, where he could match top Terrans such as [Flash](@/players/flash.md), and he became known for building Command Centers aggressively, sometimes inside his opponent's base, which earned him the nickname "Bug Terran".
 
-He appears in 8 seasons covered on broodwar.live, between 2008 and 2010.
+His best individual result came in the [2009 Bacchus OSL](@/tournaments/2009-bacchus-osl.md): after wins over [Luxury](@/players/luxury.md), [Bisu](@/players/bisu.md) and [Hwasin](@/players/hwasin.md) he reached the quarterfinals, where teammate [YellOw[ArnC]](@/players/yellow-arnc.md) beat him 2–1. He played in the final of the [2008 Shinhan Bank Proleague](@/tournaments/2008-shinhan-bank-proleague.md), which his team lost to Samsung KHAN. In KeSPA's first free agency in 2009 he declared himself a free agent but stayed with Hite.

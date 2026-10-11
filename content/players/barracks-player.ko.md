@@ -1,6 +1,6 @@
 +++
 title = "BarrackS"
-description = "BarrackS(황병영) — 한국의 테란 선수."
+description = "BarrackS(황병영) — KTF·KT 롤스터 출신 테란, ASL 시즌 20 4강."
 slug = "barracks-player"
 template = "players/player.html"
 [taxonomies]
@@ -31,4 +31,6 @@ slug = "kt-rolster"
 from = "2009-08-25"
 to = "2013-12-23"
 +++
-BarrackS(황병영)는 1991년생 대한민국의 테란 프로게이머로, 2007년부터 2013년까지 KTF 매직엔스와 그 후신인 KT 롤스터에서 활동했다. 개인리그에서는 곰TV 클래식 시리즈와 2009 EVER OSL에 출전했으며, OSL에서는 36강에서 JangBi에게 패해 탈락했다. 이후 KT 롤스터 소속으로 스타크래프트 II에서도 활동했다.
+BarrackS(황병영)는 1991년생 대한민국의 테란 선수이다. 2007년 8월 KTF 매직엔스에 입단했고 팀이 [KT 롤스터](@/wiki/teams/kt-rolster.ko.md)로 바뀐 뒤에도 남아 스타크래프트 II까지 소화하다 2013년 말 팀을 떠났다. 프로 시절 개인리그 성적은 두드러지지 않았다. 곰TV 클래식 시리즈에서는 첫 판에 탈락했고, [2009-2010 EVER OSL](@/tournaments/2009-2010-ever-osl.ko.md)에 진출했으나 36강에서 [JangBi](@/players/jangbi.ko.md)에게 졌다. [2010–11 Shinhan Bank Proleague](@/tournaments/2010-2011-shinhan-bank-proleague.ko.md)에서는 포스트시즌 세트에 출전했고, 이 시즌 KT가 우승했다.
+
+2020년 복귀한 뒤에는 [ASL 시즌 9](@/tournaments/asl-s9.ko.md)을 시작으로 대부분의 ASL 시즌에 출전했다. [ASL 시즌 18](@/tournaments/asl-s18.ko.md)에서 8강, [ASL 시즌 20](@/tournaments/asl-s20.ko.md)에서 4강에 올랐다.

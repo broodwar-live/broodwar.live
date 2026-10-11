@@ -1,6 +1,6 @@
 +++
 title = "Killer"
-description = "Killer (Park Joon Oh) — Zerg player from South Korea."
+description = "Killer (Park Joon Oh) — Hwaseung OZ and Team 8 Zerg known as \"Little Jaedong\", 2011 Jin Air OSL and ASL 4 quarterfinalist."
 slug = "killer"
 template = "players/player.html"
 [taxonomies]
@@ -30,6 +30,8 @@ name = "Team 8"
 from = "2011-11"
 to = "2012-05-17"
 +++
-Killer (Park Joon Oh) is a South Korean Zerg player born in 1992. He played for Hwaseung OZ from 2007 and then KeSPA's Team 8, where his association with teammate Jaedong earned him the nickname "Little Jaedong." He retired from professional play in May 2012.
+Killer (Park Joon Oh) is a South Korean Zerg born in 1992. He joined [Hwaseung OZ](@/wiki/teams/hwaseung-oz.md) in 2007 and moved with [Jaedong](@/players/jaedong.md) to KeSPA's Team 8 in late 2011; seen as Jaedong's protégé, he was nicknamed "Little Jaedong". He was known for strong ZvZ and ZvP and helped OZ through the 2010 STX Masters.
 
-Returning in amateur competition, he won the 7th and 8th SonicTV Starleagues, dropping only one game in each, and later won LoveTV Starleague Season 1. He enlisted for military service in October 2015.
+He won his set in the final of the [2008–09 Shinhan Bank Proleague](@/tournaments/2008-2009-shinhan-bank-proleague.md), in which OZ finished runners-up. His best KeSPA-era individual result was a quarterfinal in the [2011 Jin Air OSL](@/tournaments/2011-jin-air-osl.md). He retired in May 2012.
+
+On the amateur scene he dominated the 7th and 8th SonicTV Starleagues, dropping a single game in each, and later won LoveTV Starleague Season 1. After military service (from October 2015) he returned to competition and reached the quarterfinals of [ASL Season 4](@/tournaments/asl-s4.md) in 2017; he has since played in several more ASL seasons and [KSL Season 2](@/tournaments/ksl-s2.md).

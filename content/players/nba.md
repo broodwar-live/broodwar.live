@@ -1,6 +1,6 @@
 +++
 title = "NbA"
-description = "NbA (Jonathan Hidalgo Zúñiga) — Protoss player from Chile."
+description = "NbA (Jonathan Hidalgo Zúñiga) — Chilean Protoss of MicrogamerZ, Disturbed Mind and NaS, returned in 2020 and played four BSL seasons."
 slug = "nba"
 template = "players/player.html"
 [taxonomies]
@@ -29,6 +29,6 @@ name = "NaS"
 from = "2022-05-05"
 to = "present"
 +++
-NbA (Jonathan Hidalgo Zúñiga) is a Chilean Protoss player, born in 1987, who has played for MicrogamerZ, Disturbed Mind and NaS. He made his name with the European clan MicroGamerZ, stepped away after WCG Chile 2010, and returned to competition in 2020.
+NbA (Jonathan Hidalgo Zúñiga) is a Chilean Protoss player, born in 1987, who began playing around 2001. He trained with Team Chile, winning small LAN events across the country, and then joined the European team MicrogamerZ, which made him known in both the Latin American and European scenes. He stepped away after finishing third at WCG Chile 2010.
 
-He appears in 4 seasons covered on broodwar.live, between 2021 and 2023.
+The 2020 pandemic brought him back: he joined Disturbed Mind that year and moved to NaS in May 2022. In the Bombastic StarLeague he played in [BSL Season 13](@/tournaments/bsl-s13.md), [BSL Season 14](@/tournaments/bsl-s14.md), [BSL Season 15](@/tournaments/bsl-s15.md) and [BSL Season 16](@/tournaments/bsl-s16.md), reaching the playoff bracket in Season 15.

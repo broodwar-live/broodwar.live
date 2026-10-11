@@ -1,6 +1,6 @@
 +++
 title = "Justin"
-description = "Justin (Won Jong Seo) — Terran player from South Korea."
+description = "Justin (Won Jong Seo) — SPARKYZ Terran and team captain, permanently banned by KeSPA in the 2010 match-fixing scandal."
 slug = "justin"
 template = "players/player.html"
 [taxonomies]
@@ -31,6 +31,8 @@ name = "Hite SPARKYZ"
 from = "2009-04"
 to = "2010-06-09"
 +++
-Justin (Won Jong Seo) is a South Korean Terran player, born in 1987, who played for KOR, OnGameNet SPARKYZ and Hite SPARKYZ. Originally a 2v2 specialist, he became captain of the SPARKYZ team, but in 2010 he was found to have been involved in the match-fixing scandal and was permanently banned by KeSPA.
+Justin (Won Jong Seo) is a former South Korean Terran player, born in 1987. He joined KOR in 2005 and stayed with the team as it became OnGameNet SPARKYZ in 2006 and Hite SPARKYZ in 2009.
 
-He appears in 4 seasons covered on broodwar.live, between 2006 and 2008.
+He started out as a 2v2 specialist and went 15–4 in team games during the second round of the 2007 Proleague, partnered with Flower. When the 2008 Proleague 2v2 maps favoured Protoss–Zerg pairs he played less, appearing mostly in minor leagues, but he took over as SPARKYZ captain after Cloud left for the Air Force. Individually he qualified for the [2006 Pringles MSL Season 2](@/tournaments/2006-pringles-msl-season-2.md), the [2006-2007 GOMTV MSL Season 1](@/tournaments/2006-2007-gomtv-msl-season-1.md), the [2007 Daum OSL](@/tournaments/2007-daum-osl.md) and the [2008 Incruit OSL](@/tournaments/2008-incruit-osl.md).
+
+In 2010 he was found to have played a central part in the match-fixing scandal, drawing several teammates into it, and KeSPA banned him from progaming for life.

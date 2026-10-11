@@ -1,6 +1,6 @@
 +++
 title = "JinNam"
-description = "JinNam(장진남) — 한국의 저그 선수."
+description = "JinNam(장진남) — AMD 드림팀의 저그, 2001 한빛소프트 스타리그 준우승."
 slug = "jinnam"
 template = "players/player.html"
 [taxonomies]
@@ -27,6 +27,6 @@ name = "Hexatron Dream Team"
 from = "2004-02"
 to = ""
 +++
-JinNam(장진남)는 1981년생 한국의 저그 선수로, AMD 드림팀, 헥사트론 드림팀에서 활동했다. 2001 한빛소프트 스타리그 결승에서 [임요환(BoxeR)](/ko/players/boxer/)에게 패해 준우승했고, 이후 AMD 드림팀에서 활동했다.
+JinNam(장진남)은 1981년생 대한민국의 은퇴한 저그 선수로, 'Devil Zerg', 'Zergling Commander' 등의 별명으로 불렸다. 2002년부터 AMD 드림팀에서 활동했고 2004년 팀이 헥사트론 드림팀으로 바뀐 뒤에도 남았다.
 
-broodwar.live에 수록된 시즌 가운데 [2001 Hanbitsoft OSL](/ko/tournaments/2001-hanbitsoft-osl/)에서 준우승했다. [2002-2003 Stout & Baskin Robbins KPGA 4th Tour](/ko/tournaments/2002-2003-stout-baskin-robbins-kpga-4th-tour/)에서 4강에 올랐다.
+[2001 Hanbitsoft OSL](@/tournaments/2001-hanbitsoft-osl.ko.md)에서 결승에 올랐으나 [BoxeR](@/players/boxer.ko.md)에게 0:3으로 져 준우승했다. 그 밖의 최고 성적은 [2002-2003 Stout & Baskin Robbins KPGA 4th Tour](@/tournaments/2002-2003-stout-baskin-robbins-kpga-4th-tour.ko.md) 4강이다. [2001 Coca-Cola OSL](@/tournaments/2001-coca-cola-osl.ko.md), [2002 SKY OSL](@/tournaments/2002-sky-osl.ko.md), [2002-2003 Panasonic OSL](@/tournaments/2002-2003-panasonic-osl.ko.md), [2003 MyCube OSL](@/tournaments/2003-mycube-osl.ko.md)에도 진출했다.

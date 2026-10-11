@@ -1,6 +1,6 @@
 +++
 title = "PianO"
-description = "PianO(임진묵) — 한국의 테란 선수."
+description = "PianO(임진묵) — eSTRO, 한빛·웅진 스타즈, 공군 ACE에서 활동한 테란, 2009 아발론 MSL 16강."
 slug = "piano"
 template = "players/player.html"
 [taxonomies]
@@ -45,4 +45,6 @@ slug = "air-force-ace"
 from = "2011"
 to = "2013"
 +++
-PianO(임진묵)는 'Organ'으로도 알려진 1988년생 대한민국의 테란 플레이어다. 2006년부터 2013년까지 이네이처 탑팀, 이스트로, 한빛 스타즈(이후 웅진 스타즈), 공군 ACE에서 활동했다. 2013년 11월 아프리카TV 방송 시작을 알렸으며, 이후 아마추어 리그와 피시 서버에서 활동하고 있다.
+PianO(임진묵)는 'Organ'이라는 아이디로도 알려진 1988년 1월 29일생 대한민국의 테란 선수이다. 2006년 이네이처 탑팀에서 데뷔해 같은 해 [eSTRO](@/wiki/teams/estro.ko.md)로 옮겼다. 2007년 [한빛 스타즈](@/wiki/teams/hanbit-stars.ko.md)에 입단해 2008년 팀이 [웅진 스타즈](@/wiki/teams/woongjin-stars.ko.md)로 바뀐 뒤에도 남았고, 2011년부터 2013년까지 [공군 ACE](@/wiki/teams/air-force-ace.ko.md)에서 복무했다.
+
+개인리그 최고 성적은 [2009 아발론 MSL](@/tournaments/2009-avalon-msl.ko.md) 16강이며, [2010 대한항공 스타리그 시즌 1](@/tournaments/2010-korean-air-osl-season-1.ko.md) 본선에도 올랐다. 2013년 11월 7일 웅진을 떠나며 아프리카TV 방송 시작을 알렸다. 이후 피시 서버와 아마추어 리그에서 활동했고, [ASL 시즌 1](@/tournaments/asl-s1.ko.md), [ASL 시즌 8](@/tournaments/asl-s8.ko.md), [ASL 시즌 11](@/tournaments/asl-s11.ko.md), [ASL 시즌 14](@/tournaments/asl-s14.ko.md), [ASL 시즌 21](@/tournaments/asl-s21.ko.md) 본선에 진출했다.

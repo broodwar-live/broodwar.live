@@ -1,6 +1,6 @@
 +++
 title = "Kwanro"
-description = "Kwanro (Han Sang Bong) — Zerg player from South Korea."
+description = "Kwanro (Han Sang Bong) — aggressive CJ Entus Zerg, runner-up in the 2009 Avalon MSL and semifinalist in the 2009–10 NATE MSL."
 slug = "kwanro"
 template = "players/player.html"
 [taxonomies]
@@ -39,4 +39,8 @@ slug = "sk-telecom-t1"
 from = "2010-09"
 to = "2011-03-10"
 +++
-Kwanro (Han Sang Bong) is a retired South Korean Zerg progamer known for an aggressive style. He joined SUMA GO (later CJ Entus) in 2005, then played for Woongjin Stars and SK Telecom T1. His best result was the 2009 Avalon MSL, where he beat Flash, ZerO and Iris before losing the final 1–3 to Calm. He retired on 10 March 2011.
+Kwanro (Han Sang Bong) is a retired South Korean Zerg player born on 21 February 1990, known for an aggressive style. He started in 2005 with Greatest One, the team that became [CJ Entus](@/wiki/teams/cj-entus.md), moved to [Woongjin Stars](@/wiki/teams/woongjin-stars.md) in October 2009 and finished his career at [SK Telecom T1](@/wiki/teams/sk-telecom-t1.md).
+
+He first reached the quarterfinals of the [2007 GOMTV MSL Season 3](@/tournaments/2007-gomtv-msl-season-3.md). His best result was runner-up in the [2009 Avalon MSL](@/tournaments/2009-avalon-msl.md): after beating [Flash](@/players/flash.md), [ZerO](@/players/zero.md) and [Iris](@/players/iris.md) on the way, he lost the final 1–3 to [Calm](@/players/calm.md). He followed it with a semifinal in the [2009-2010 NATE MSL](@/tournaments/2009-2010-nate-msl.md). In Proleague he played in the final of the [2007 Shinhan Bank Proleague Round 2](@/tournaments/2007-shinhan-bank-proleague-round-2.md), which CJ lost.
+
+He retired from progaming on 10 March 2011.

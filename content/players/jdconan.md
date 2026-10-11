@@ -1,6 +1,6 @@
 +++
 title = "JDConan"
-description = "JDConan (Adalid Bismar Apala Ayaviri) — Zerg player from Bolivia."
+description = "JDConan (Adalid Bismar Apala Ayaviri) — Bolivian Zerg for disturbed Mind, BSL regular since 2023."
 slug = "jdconan"
 template = "players/player.html"
 [taxonomies]
@@ -22,6 +22,6 @@ name = "disturbed Mind"
 from = "2022-01-01"
 to = "present"
 +++
-JDConan (Adalid Bismar Apala Ayaviri) is a Bolivian Zerg player, born in 1999, who has played for disturbed Mind. A newer-generation Latin American player, he competes for disturbed Mind and has played in every Bombastic StarLeague season since 2023.
+JDConan (Adalid Bismar Apala Ayaviri) is a Bolivian Zerg player born in 1999, also known as Conan. He has played StarCraft: Remastered for the Latin American team disturbed Mind since 2022, and belongs to the newer generation of players from the region.
 
-He appears in 7 seasons covered on broodwar.live, between 2023 and 2026.
+He has entered every Bombastic StarLeague season since [BSL Season 16](@/tournaments/bsl-s16.md) in 2023, seven in a row on this site's records. He made the double-elimination playoffs of [BSL Season 20](@/tournaments/bsl-s20.md), advancing to round three of the lower bracket, and returned to the playoffs in [BSL Season 22](@/tournaments/bsl-s22.md). His other appearances were in [BSL Season 17](@/tournaments/bsl-s17.md), [BSL Season 18](@/tournaments/bsl-s18.md), [BSL Season 19](@/tournaments/bsl-s19.md) and [BSL Season 21](@/tournaments/bsl-s21.md).
