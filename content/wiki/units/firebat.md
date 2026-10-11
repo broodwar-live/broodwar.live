@@ -30,10 +30,10 @@ hotkey = "F"
 requires = ["academy"]
 abilities = []
 upgrades = ["stim-pack", "infantry-weapons", "infantry-armor"]
-sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp"]
+sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp", "https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/WeaponType.cpp", "https://liquipedia.net/starcraft/Firebat"]
 verified = "2026-10-11"
 +++
-The Firebat is a short-ranged flamethrower infantry unit built at the Barracks once an Academy is finished. Its flames deal 8 concussive damage per hit, with several hits per attack and splash, which is very effective against small units such as Zerglings and Zealots but weak against medium and large targets.
+The Firebat is a short-ranged flamethrower infantry unit built at the Barracks once an Academy is finished. Each flame burst produces up to three small splash hits of 8 concussive damage each, laid out in a line in front of the Firebat; a typical target is caught by two of them, which is why the game lists the attack as 16 damage. This is very effective against small units such as Zerglings and Zealots but weak against medium and large targets.
 
 ## Versus Zerg
 
@@ -49,7 +49,7 @@ Against Protoss, Firebats can help defend against early Zealot attacks, but beca
 
 ## Key Mechanics
 
-- 8 concussive damage per hit (more than one hit per attack) with splash, 22-frame cooldown, very short range
+- 8 concussive damage per hit, up to 3 splash hits per attack (2 on a typical target, shown in-game as 16 damage), 22-frame cooldown, very short range
 - Concussive damage: 100% vs small, 50% vs medium, 25% vs large units
 - Can use Stim Pack (costs 10 HP) like the Marine
 - 50 HP and 1 base armor, more durable than a Marine
