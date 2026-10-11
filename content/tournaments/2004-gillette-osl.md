@@ -21,7 +21,7 @@ semifinalists = [{ name = "iloveoov", slug = "iloveoov" }, { name = "Control" }]
 start_date = "2004-04-30"
 end_date = "2004-08-01"
 maps = [{ name = "Mercury" }, { name = "Namja Iyagi" }, { name = "Nostalgia", slug = "nostalgia" }, { name = "Requiem", slug = "neo-requiem" }]
-participants = [{ name = "Kingdom", slug = "kingdom" }, { name = "Casy", slug = "casy" }, { name = "GoRush", slug = "gorush" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "Control" }, { name = "JJu", slug = "jju" }, { name = "RainBOw" }, { name = "DoGGi" }, { name = "July", slug = "july" }, { name = "Reach", slug = "reach" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "Zeus", slug = "zeus" }, { name = "iloveoov", slug = "iloveoov" }, { name = "NaDa", slug = "nada" }, { name = "TheMarine", slug = "themarine" }, { name = "XellOs", slug = "xellos" }]
+participants = [{ name = "Kingdom", slug = "kingdom" }, { name = "Casy", slug = "casy" }, { name = "GoRush", slug = "gorush" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "Control" }, { name = "JJu", slug = "jju" }, { name = "RainBOw", slug = "rainbow" }, { name = "DoGGi", slug = "doggi" }, { name = "July", slug = "july" }, { name = "Reach", slug = "reach" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "Zeus", slug = "zeus" }, { name = "iloveoov", slug = "iloveoov" }, { name = "NaDa", slug = "nada" }, { name = "TheMarine", slug = "themarine" }, { name = "XellOs", slug = "xellos" }]
 sources = ["https://liquipedia.net/starcraft/2004_Gillette_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

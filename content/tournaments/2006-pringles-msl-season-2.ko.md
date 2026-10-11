@@ -21,7 +21,7 @@ semifinalists = [{ name = "JJu", slug = "jju" }, { name = "Nal_rA", slug = "nal-
 start_date = "2006-08-24"
 end_date = "2006-11-11"
 maps = [{ name = "Arcadia II", slug = "arcadia" }, { name = "Blitz" }, { name = "Longinus", slug = "longinus" }, { name = "Shin Peaks of Baekdu" }]
-participants = [{ name = "TerAtO" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa", slug = "chojja" }, { name = "Pusan", slug = "pusan" }, { name = "NaDa", slug = "nada" }, { name = "JJu", slug = "jju" }, { name = "DaezanG" }, { name = "XellOs", slug = "xellos" }, { name = "Silver", slug = "silver" }, { name = "Justin" }, { name = "YellOw[ArnC]", slug = "yellow-arnc" }, { name = "Shark" }, { name = "Midas", slug = "midas" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "sAviOr", slug = "savior" }, { name = "Kingdom", slug = "kingdom" }]
+participants = [{ name = "TerAtO" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa", slug = "chojja" }, { name = "Pusan", slug = "pusan" }, { name = "NaDa", slug = "nada" }, { name = "JJu", slug = "jju" }, { name = "DaezanG" }, { name = "XellOs", slug = "xellos" }, { name = "Silver", slug = "silver" }, { name = "Justin", slug = "justin" }, { name = "YellOw[ArnC]", slug = "yellow-arnc" }, { name = "Shark", slug = "shark" }, { name = "Midas", slug = "midas" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "sAviOr", slug = "savior" }, { name = "Kingdom", slug = "kingdom" }]
 sources = ["https://liquipedia.net/starcraft/2006_Pringles_MSL_Season_2"]
 verified = "2026-10-11"
 [[extra.bracket]]

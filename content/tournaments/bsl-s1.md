@@ -29,7 +29,7 @@ matches = [
   { a = "Bonyth", a_slug = "bonyth", score_a = 3, b = "AMLAcZ", score_b = 1, date = "2013-04-20" },
   { a = "ZZZero", a_slug = "zzzero", score_a = 3, b = "Fosken", score_b = 0, date = "2013-04-20" },
   { a = "trutaCz", a_slug = "trutacz", score_a = 3, b = "SouthPark", score_b = 1, date = "2013-04-20" },
-  { a = "WolFix", score_a = 0, b = "Julian", b_slug = "julian", score_b = 3, date = "2013-04-20" },
+  { a = "WolFix", a_slug = "wolfix", score_a = 0, b = "Julian", b_slug = "julian", score_b = 3, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Upper Semifinals"
@@ -49,14 +49,14 @@ round = "Lower Round 1"
 best_of = 3
 matches = [
   { a = "AMLAcZ", score_a = 2, b = "Fosken", score_b = 1, date = "2013-04-20" },
-  { a = "SouthPark", score_a = 0, b = "WolFix", score_b = 2, date = "2013-04-20" },
+  { a = "SouthPark", score_a = 0, b = "WolFix", b_slug = "wolfix", score_b = 2, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Lower Round 2"
 best_of = 3
 matches = [
   { a = "Julian", a_slug = "julian", score_a = 2, b = "AMLAcZ", score_b = 0, date = "2013-04-20" },
-  { a = "Bonyth", a_slug = "bonyth", score_a = 2, b = "WolFix", score_b = 0, date = "2013-04-20" },
+  { a = "Bonyth", a_slug = "bonyth", score_a = 2, b = "WolFix", b_slug = "wolfix", score_b = 0, date = "2013-04-20" },
 ]
 [[extra.bracket]]
 round = "Lower Round 3"

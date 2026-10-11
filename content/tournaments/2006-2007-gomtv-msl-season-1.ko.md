@@ -21,7 +21,7 @@ semifinalists = [{ name = "Nal_rA", slug = "nal-ra" }, { name = "Hwasin", slug =
 start_date = "2006-12-07"
 end_date = "2007-03-03"
 maps = [{ name = "Blitz X" }, { name = "Desert Fox" }, { name = "Longinus 2", slug = "longinus" }, { name = "Reverse Temple" }]
-participants = [{ name = "Pusan", slug = "pusan" }, { name = "Canata", slug = "canata" }, { name = "Jaedong", slug = "jaedong" }, { name = "Much", slug = "much" }, { name = "Hwasin", slug = "hwasin" }, { name = "aQua" }, { name = "Bisu", slug = "bisu" }, { name = "IriS", slug = "iris" }, { name = "Free", slug = "free" }, { name = "Justin" }, { name = "Light", slug = "light" }, { name = "XellOs", slug = "xellos" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "sAviOr", slug = "savior" }, { name = "Silver", slug = "silver" }, { name = "JJu", slug = "jju" }]
+participants = [{ name = "Pusan", slug = "pusan" }, { name = "Canata", slug = "canata" }, { name = "Jaedong", slug = "jaedong" }, { name = "Much", slug = "much" }, { name = "Hwasin", slug = "hwasin" }, { name = "aQua" }, { name = "Bisu", slug = "bisu" }, { name = "IriS", slug = "iris" }, { name = "Free", slug = "free" }, { name = "Justin", slug = "justin" }, { name = "Light", slug = "light" }, { name = "XellOs", slug = "xellos" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "sAviOr", slug = "savior" }, { name = "Silver", slug = "silver" }, { name = "JJu", slug = "jju" }]
 sources = ["https://liquipedia.net/starcraft/2006-2007_GOMTV_MSL_Season_1"]
 verified = "2026-10-11"
 [[extra.bracket]]

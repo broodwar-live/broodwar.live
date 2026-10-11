@@ -21,7 +21,7 @@ semifinalists = [{ name = "Stork", slug = "stork" }, { name = "Flash", slug = "f
 start_date = "2007-05-11"
 end_date = "2007-07-21"
 maps = [{ name = "Fantasy" }, { name = "Hitchhiker", slug = "hitchhiker" }, { name = "Monty Hall" }, { name = "Python", slug = "python" }]
-participants = [{ name = "Bisu", slug = "bisu" }, { name = "Casy", slug = "casy" }, { name = "GGPlay", slug = "ggplay" }, { name = "Reach", slug = "reach" }, { name = "DarkElf" }, { name = "sAviOr", slug = "savior" }, { name = "Stork", slug = "stork" }, { name = "Flash", slug = "flash" }, { name = "Shark" }, { name = "Hwasin", slug = "hwasin" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Iris", slug = "iris" }, { name = "Justin" }, { name = "Light", slug = "light" }, { name = "NaDa", slug = "nada" }, { name = "UpMaGiC", slug = "upmagic" }]
+participants = [{ name = "Bisu", slug = "bisu" }, { name = "Casy", slug = "casy" }, { name = "GGPlay", slug = "ggplay" }, { name = "Reach", slug = "reach" }, { name = "DarkElf" }, { name = "sAviOr", slug = "savior" }, { name = "Stork", slug = "stork" }, { name = "Flash", slug = "flash" }, { name = "Shark", slug = "shark" }, { name = "Hwasin", slug = "hwasin" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Iris", slug = "iris" }, { name = "Justin", slug = "justin" }, { name = "Light", slug = "light" }, { name = "NaDa", slug = "nada" }, { name = "UpMaGiC", slug = "upmagic" }]
 sources = ["https://liquipedia.net/starcraft/2007_Daum_OSL", "https://liquipedia.net/starcraft/2007_Daum_OSL/Elimination_Bracket", "https://liquipedia.net/starcraft/2007_Daum_OSL/Results_and_Standings_(Group_Stage_(Ro16))"]
 verified = "2026-10-11"
 [[extra.bracket]]

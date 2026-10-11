@@ -17,18 +17,18 @@ runner_up = "H.O.T-Forever"
 runner_up_slug = "hot-forever"
 final_score = "3–1"
 final_date = "2002-06-15"
-semifinalists = [{ name = "Oddysay" }, { name = "ChRh", slug = "chrh" }]
+semifinalists = [{ name = "Oddysay", slug = "oddysay" }, { name = "ChRh", slug = "chrh" }]
 start_date = "2002-03-29"
 end_date = "2002-06-15"
 maps = [{ name = "Bifrost" }, { name = "Forbidden Zone" }, { name = "Neo Vertigo" }, { name = "Neo Silent Vortex" }]
-participants = [{ name = "fOru" }, { name = "BoxeR", slug = "boxer" }, { name = "CryStal" }, { name = "GARIMTO", slug = "garimto" }, { name = "ChRh", slug = "chrh" }, { name = "Eugene" }, { name = "SONJJANG" }, { name = "Oddysay" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Sync", slug = "sync" }, { name = "JunioR" }, { name = "TheMarine", slug = "themarine" }, { name = "MuMyung", slug = "mumyung" }, { name = "V-Gundam" }, { name = "Sinji_NT" }, { name = "YellOw", slug = "yellow" }]
+participants = [{ name = "fOru", slug = "foru" }, { name = "BoxeR", slug = "boxer" }, { name = "CryStal" }, { name = "GARIMTO", slug = "garimto" }, { name = "ChRh", slug = "chrh" }, { name = "Eugene" }, { name = "SONJJANG" }, { name = "Oddysay", slug = "oddysay" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Sync", slug = "sync" }, { name = "JunioR" }, { name = "TheMarine", slug = "themarine" }, { name = "MuMyung", slug = "mumyung" }, { name = "V-Gundam", slug = "v-gundam" }, { name = "Sinji_NT" }, { name = "YellOw", slug = "yellow" }]
 sources = ["https://liquipedia.net/starcraft/2002_NATE_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
 round = "Semifinals"
 best_of = 3
 matches = [
-  { a = "H.O.T-Forever", a_slug = "hot-forever", score_a = 2, b = "Oddysay", score_b = 1 },
+  { a = "H.O.T-Forever", a_slug = "hot-forever", score_a = 2, b = "Oddysay", b_slug = "oddysay", score_b = 1 },
   { a = "Sync", a_slug = "sync", score_a = 2, b = "ChRh", b_slug = "chrh", score_b = 1 },
 ]
 [[extra.bracket]]

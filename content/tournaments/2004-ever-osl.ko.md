@@ -21,7 +21,7 @@ semifinalists = [{ name = "Reach", slug = "reach" }, { name = "YellOw", slug = "
 start_date = "2004-08-27"
 end_date = "2004-11-20"
 maps = [{ name = "Bifrost 3" }, { name = "Mercury" }, { name = "Pelennor" }, { name = "Requiem", slug = "neo-requiem" }]
-participants = [{ name = "Reach", slug = "reach" }, { name = "iloveoov", slug = "iloveoov" }, { name = "July", slug = "july" }, { name = "Kingdom", slug = "kingdom" }, { name = "NaDa", slug = "nada" }, { name = "JJu", slug = "jju" }, { name = "Rock", slug = "rock" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "YellOw", slug = "yellow" }, { name = "Sync", slug = "sync" }, { name = "GoRush", slug = "gorush" }, { name = "XellOs", slug = "xellos" }, { name = "OversKy" }, { name = "Midas", slug = "midas" }, { name = "Max" }, { name = "BoxeR", slug = "boxer" }]
+participants = [{ name = "Reach", slug = "reach" }, { name = "iloveoov", slug = "iloveoov" }, { name = "July", slug = "july" }, { name = "Kingdom", slug = "kingdom" }, { name = "NaDa", slug = "nada" }, { name = "JJu", slug = "jju" }, { name = "Rock", slug = "rock" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "YellOw", slug = "yellow" }, { name = "Sync", slug = "sync" }, { name = "GoRush", slug = "gorush" }, { name = "XellOs", slug = "xellos" }, { name = "OversKy", slug = "oversky" }, { name = "Midas", slug = "midas" }, { name = "Max" }, { name = "BoxeR", slug = "boxer" }]
 sources = ["https://liquipedia.net/starcraft/2004_EVER_OSL"]
 verified = "2026-10-11"
 [[extra.bracket]]

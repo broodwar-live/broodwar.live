@@ -21,7 +21,7 @@ semifinalists = [{ name = "YellOw", slug = "yellow" }, { name = "JJu", slug = "j
 start_date = "2006-04-19"
 end_date = "2006-06-23"
 maps = [{ name = "815 III" }, { name = "Peaks of Baekdu" }, { name = "Rush Hour 3" }, { name = "Sin Pioneer Period" }]
-participants = [{ name = "Nal_rA", slug = "nal-ra" }, { name = "BoxeR", slug = "boxer" }, { name = "Child" }, { name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "casy" }, { name = "ChoJJa", slug = "chojja" }, { name = "RainBOw" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "GoRush", slug = "gorush" }, { name = "Rock", slug = "rock" }, { name = "iloveoov", slug = "iloveoov" }, { name = "JJu", slug = "jju" }, { name = "Stork", slug = "stork" }, { name = "Iris", slug = "iris" }, { name = "July", slug = "july" }, { name = "Midas", slug = "midas" }, { name = "ShinHwA" }, { name = "Sea", slug = "sea" }, { name = "Stay" }, { name = "Sync", slug = "sync" }, { name = "YellOw", slug = "yellow" }, { name = "(Oops)ClouD" }, { name = "YellOw[ArnC]", slug = "yellow-arnc" }, { name = "ZergMaN" }]
+participants = [{ name = "Nal_rA", slug = "nal-ra" }, { name = "BoxeR", slug = "boxer" }, { name = "Child" }, { name = "Pusan", slug = "pusan" }, { name = "Casy", slug = "casy" }, { name = "ChoJJa", slug = "chojja" }, { name = "RainBOw", slug = "rainbow" }, { name = "Goodfriend", slug = "goodfriend" }, { name = "GoRush", slug = "gorush" }, { name = "Rock", slug = "rock" }, { name = "iloveoov", slug = "iloveoov" }, { name = "JJu", slug = "jju" }, { name = "Stork", slug = "stork" }, { name = "Iris", slug = "iris" }, { name = "July", slug = "july" }, { name = "Midas", slug = "midas" }, { name = "ShinHwA" }, { name = "Sea", slug = "sea" }, { name = "Stay" }, { name = "Sync", slug = "sync" }, { name = "YellOw", slug = "yellow" }, { name = "(Oops)ClouD" }, { name = "YellOw[ArnC]", slug = "yellow-arnc" }, { name = "ZergMaN", slug = "zergman" }]
 sources = ["https://liquipedia.net/starcraft/2006_Shinhan_Bank_OSL_Season_1"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -29,7 +29,7 @@ round = "16강"
 best_of = 3
 matches = [
   { a = "Cloud", score_a = 0, b = "Casy", b_slug = "casy", score_b = 2 },
-  { a = "ZergMaN", score_a = 2, b = "GoRush", b_slug = "gorush", score_b = 0 },
+  { a = "ZergMaN", a_slug = "zergman", score_a = 2, b = "GoRush", b_slug = "gorush", score_b = 0 },
   { a = "YellOw", a_slug = "yellow", score_a = 2, b = "Goodfriend", b_slug = "goodfriend", score_b = 0 },
   { a = "BoxeR", a_slug = "boxer", score_a = 1, b = "ShinHwA", score_b = 2 },
   { a = "Rock", a_slug = "rock", score_a = 0, b = "Iris", b_slug = "iris", score_b = 2 },
@@ -41,7 +41,7 @@ matches = [
 round = "8강"
 best_of = 3
 matches = [
-  { a = "Casy", a_slug = "casy", score_a = 2, b = "ZergMaN", score_b = 0 },
+  { a = "Casy", a_slug = "casy", score_a = 2, b = "ZergMaN", b_slug = "zergman", score_b = 0 },
   { a = "YellOw", a_slug = "yellow", score_a = 2, b = "ShinHwA", score_b = 1 },
   { a = "Iris", a_slug = "iris", score_a = 1, b = "ChoJJa", b_slug = "chojja", score_b = 2 },
   { a = "JJu", a_slug = "jju", score_a = 2, b = "YellOw[ArnC]", b_slug = "yellow-arnc", score_b = 1 },

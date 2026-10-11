@@ -17,11 +17,11 @@ runner_up = "ChoJJa"
 runner_up_slug = "chojja"
 final_score = "3–2"
 final_date = "2003-01-18"
-semifinalists = [{ name = "JinNam", slug = "jinnam" }, { name = "kOs" }]
+semifinalists = [{ name = "JinNam", slug = "jinnam" }, { name = "kOs", slug = "kos" }]
 start_date = "2002-10-15"
 end_date = "2003-01-18"
 maps = [{ name = "Plains to Hill" }, { name = "River of Flames" }, { name = "Blade Storm" }, { name = "Acheron" }, { name = "Face Off" }]
-participants = [{ name = "Junitoss" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa", slug = "chojja" }, { name = "Reach", slug = "reach" }, { name = "kOs" }, { name = "CryStal" }, { name = "Zeus", slug = "zeus" }, { name = "NaDa", slug = "nada" }, { name = "GGMAN" }, { name = "Oddysay" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Sync", slug = "sync" }, { name = "JinNam", slug = "jinnam" }, { name = "XellOs", slug = "xellos" }, { name = "Junwi" }, { name = "MuMyung", slug = "mumyung" }]
+participants = [{ name = "Junitoss" }, { name = "BoxeR", slug = "boxer" }, { name = "ChoJJa", slug = "chojja" }, { name = "Reach", slug = "reach" }, { name = "kOs", slug = "kos" }, { name = "CryStal" }, { name = "Zeus", slug = "zeus" }, { name = "NaDa", slug = "nada" }, { name = "GGMAN" }, { name = "Oddysay", slug = "oddysay" }, { name = "H.O.T-Forever", slug = "hot-forever" }, { name = "Sync", slug = "sync" }, { name = "JinNam", slug = "jinnam" }, { name = "XellOs", slug = "xellos" }, { name = "Junwi", slug = "junwi" }, { name = "MuMyung", slug = "mumyung" }]
 sources = ["https://liquipedia.net/starcraft/2002-2003_Stout_%26_Baskin_Robbins_KPGA_4th_Tour"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -36,7 +36,7 @@ round = "Semifinals"
 best_of = 5
 matches = [
   { a = "NaDa", a_slug = "nada", score_a = 3, b = "JinNam", b_slug = "jinnam", score_b = 2 },
-  { a = "kOs", score_a = 1, b = "ChoJJa", b_slug = "chojja", score_b = 3 },
+  { a = "kOs", a_slug = "kos", score_a = 1, b = "ChoJJa", b_slug = "chojja", score_b = 3 },
 ]
 [[extra.bracket]]
 round = "Finals"

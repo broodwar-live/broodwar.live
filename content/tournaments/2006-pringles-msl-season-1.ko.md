@@ -21,7 +21,7 @@ semifinalists = [{ name = "Midas", slug = "midas" }, { name = "Kingdom", slug = 
 start_date = "2006-04-13"
 end_date = "2006-07-16"
 maps = [{ name = "815 III" }, { name = "Arcadia", slug = "arcadia" }, { name = "Rush Hour III" }, { name = "The Eye" }]
-participants = [{ name = "Nal_rA", slug = "nal-ra" }, { name = "Midas", slug = "midas" }, { name = "Rumble" }, { name = "Kingdom", slug = "kingdom" }, { name = "BoxeR", slug = "boxer" }, { name = "MuMyung", slug = "mumyung" }, { name = "TerAtO" }, { name = "iloveoov", slug = "iloveoov" }, { name = "GoRush", slug = "gorush" }, { name = "Pusan", slug = "pusan" }, { name = "Yooi" }, { name = "ChoJJa", slug = "chojja" }, { name = "RainBOw" }, { name = "sAviOr", slug = "savior" }, { name = "Reach", slug = "reach" }, { name = "Stork", slug = "stork" }]
+participants = [{ name = "Nal_rA", slug = "nal-ra" }, { name = "Midas", slug = "midas" }, { name = "Rumble", slug = "rumble" }, { name = "Kingdom", slug = "kingdom" }, { name = "BoxeR", slug = "boxer" }, { name = "MuMyung", slug = "mumyung" }, { name = "TerAtO" }, { name = "iloveoov", slug = "iloveoov" }, { name = "GoRush", slug = "gorush" }, { name = "Pusan", slug = "pusan" }, { name = "Yooi" }, { name = "ChoJJa", slug = "chojja" }, { name = "RainBOw", slug = "rainbow" }, { name = "sAviOr", slug = "savior" }, { name = "Reach", slug = "reach" }, { name = "Stork", slug = "stork" }]
 sources = ["https://liquipedia.net/starcraft/2006_Pringles_MSL_Season_1"]
 verified = "2026-10-11"
 [[extra.bracket]]

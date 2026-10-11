@@ -20,7 +20,7 @@ final_date = "2023-12-03"
 start_date = "2023-10-07"
 end_date = "2023-12-03"
 maps = [{ name = "Invader" }, { name = "Apocalypse" }, { name = "Polypoid", slug = "polypoid" }, { name = "Neo Dark Origin" }, { name = "Retro" }, { name = "Circuit Breakers SE" }, { name = "Shooting Brake" }]
-participants = [{ name = "Mihu", slug = "mihu" }, { name = "Bonyth", slug = "bonyth" }, { name = "Dewalt", slug = "dewalt" }, { name = "Sziky", slug = "sziky" }, { name = "WolFix" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "MiStrZZZ" }, { name = "Julian", slug = "julian" }, { name = "Tech" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Gosudark", slug = "gosudark" }, { name = "Maars" }, { name = "DragOn", slug = "dragon" }, { name = "cRoSs", slug = "cross" }, { name = "gypsy" }, { name = "Hawk", slug = "hawk" }, { name = "XiaoShuai" }, { name = "XuanXuan" }, { name = "Messiah" }, { name = "QiaoGege" }, { name = "BoA", slug = "boa" }, { name = "StRyKeR" }, { name = "UltrA", slug = "ultra" }, { name = "spx", slug = "spx" }, { name = "SuGo" }, { name = "OyA", slug = "oya" }, { name = "JDConan" }, { name = "LancerX" }]
+participants = [{ name = "Mihu", slug = "mihu" }, { name = "Bonyth", slug = "bonyth" }, { name = "Dewalt", slug = "dewalt" }, { name = "Sziky", slug = "sziky" }, { name = "WolFix", slug = "wolfix" }, { name = "eOnzErG", slug = "eonzerg" }, { name = "MiStrZZZ" }, { name = "Julian", slug = "julian" }, { name = "Tech", slug = "tech" }, { name = "TerrOr", slug = "terror-peru" }, { name = "Gosudark", slug = "gosudark" }, { name = "Maars" }, { name = "DragOn", slug = "dragon" }, { name = "cRoSs", slug = "cross" }, { name = "gypsy", slug = "gypsy" }, { name = "Hawk", slug = "hawk" }, { name = "XiaoShuai", slug = "xiaoshuai" }, { name = "XuanXuan", slug = "xuanxuan" }, { name = "Messiah" }, { name = "QiaoGege" }, { name = "BoA", slug = "boa" }, { name = "StRyKeR", slug = "stryker" }, { name = "UltrA", slug = "ultra" }, { name = "spx", slug = "spx" }, { name = "SuGo" }, { name = "OyA", slug = "oya" }, { name = "JDConan", slug = "jdconan" }, { name = "LancerX", slug = "lancerx" }]
 sources = ["https://liquipedia.net/starcraft/Bombastic_StarLeague/17", "https://liquipedia.net/starcraft/Bombastic_StarLeague"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -29,7 +29,7 @@ best_of = 5
 matches = [
   { a = "Sziky", a_slug = "sziky", score_a = 1, b = "Bonyth", b_slug = "bonyth", score_b = 3, date = "2023-11-11" },
   { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "QiaoGege", score_b = 0, date = "2023-11-11" },
-  { a = "XiaoShuai", score_a = 1, b = "cRoSs", b_slug = "cross", score_b = 3, date = "2023-11-11" },
+  { a = "XiaoShuai", a_slug = "xiaoshuai", score_a = 1, b = "cRoSs", b_slug = "cross", score_b = 3, date = "2023-11-11" },
   { a = "Mihu", a_slug = "mihu", score_a = 3, b = "eOnzErG", b_slug = "eonzerg", score_b = 1, date = "2023-11-12" },
 ]
 [[extra.bracket]]
@@ -50,14 +50,14 @@ round = "Lower Round 1"
 best_of = 3
 matches = [
   { a = "Sziky", a_slug = "sziky", score_a = 2, b = "QiaoGege", score_b = 1, date = "2023-11-19" },
-  { a = "XiaoShuai", score_a = 2, b = "eOnzErG", b_slug = "eonzerg", score_b = 0, date = "2023-11-12" },
+  { a = "XiaoShuai", a_slug = "xiaoshuai", score_a = 2, b = "eOnzErG", b_slug = "eonzerg", score_b = 0, date = "2023-11-12" },
 ]
 [[extra.bracket]]
 round = "Lower Round 2"
 best_of = 5
 matches = [
   { a = "cRoSs", a_slug = "cross", score_a = 1, b = "Sziky", b_slug = "sziky", score_b = 3, date = "2023-11-19" },
-  { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "XiaoShuai", score_b = 1, date = "2023-11-18" },
+  { a = "Dewalt", a_slug = "dewalt", score_a = 3, b = "XiaoShuai", b_slug = "xiaoshuai", score_b = 1, date = "2023-11-18" },
 ]
 [[extra.bracket]]
 round = "Lower Round 3"

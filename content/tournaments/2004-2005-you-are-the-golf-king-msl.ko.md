@@ -21,7 +21,7 @@ semifinalists = [{ name = "XellOs", slug = "xellos" }, { name = "ChoJJa", slug =
 start_date = "2004-09-30"
 end_date = "2005-02-06"
 maps = [{ name = "Arizona" }, { name = "Into the Darkness 2" }, { name = "Luna" }, { name = "Raid Assault" }]
-participants = [{ name = "Rage" }, { name = "ArtOfTerran" }, { name = "ChoJJa", slug = "chojja" }, { name = "TheMarine", slug = "themarine" }, { name = "GoRush", slug = "gorush" }, { name = "XellOs", slug = "xellos" }, { name = "JJu", slug = "jju" }, { name = "Midas", slug = "midas" }, { name = "July", slug = "july" }, { name = "NaDa", slug = "nada" }, { name = ")(Min)(Gu)(" }, { name = "Sync", slug = "sync" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "Goodfriend", slug = "goodfriend" }]
+participants = [{ name = "Rage", slug = "rage" }, { name = "ArtOfTerran" }, { name = "ChoJJa", slug = "chojja" }, { name = "TheMarine", slug = "themarine" }, { name = "GoRush", slug = "gorush" }, { name = "XellOs", slug = "xellos" }, { name = "JJu", slug = "jju" }, { name = "Midas", slug = "midas" }, { name = "July", slug = "july" }, { name = "NaDa", slug = "nada" }, { name = ")(Min)(Gu)(" }, { name = "Sync", slug = "sync" }, { name = "Kingdom", slug = "kingdom" }, { name = "iloveoov", slug = "iloveoov" }, { name = "Nal_rA", slug = "nal-ra" }, { name = "Goodfriend", slug = "goodfriend" }]
 sources = ["https://liquipedia.net/starcraft/2004-2005_You_Are_the_Golf_King_MSL"]
 verified = "2026-10-11"
 [[extra.bracket]]
@@ -34,7 +34,7 @@ matches = [
   { a = "Sync", a_slug = "sync", score_a = 1, b = "XellOs", b_slug = "xellos", score_b = 2, date = "2004-10-28" },
   { a = "Goodfriend", a_slug = "goodfriend", score_a = 0, b = ")(Min)(Gu)(", score_b = 2, date = "2004-10-21" },
   { a = "TheMarine", a_slug = "themarine", score_a = 2, b = "ChoJJa", b_slug = "chojja", score_b = 1, date = "2004-11-04" },
-  { a = "Kingdom", a_slug = "kingdom", score_a = 2, b = "Rage", score_b = 1, date = "2004-11-04" },
+  { a = "Kingdom", a_slug = "kingdom", score_a = 2, b = "Rage", b_slug = "rage", score_b = 1, date = "2004-11-04" },
   { a = "NaDa", a_slug = "nada", score_a = 2, b = "JJu", b_slug = "jju", score_b = 1, date = "2004-11-04" },
 ]
 [[extra.bracket]]
@@ -66,7 +66,7 @@ matches = [
   { a = "Nal_rA", a_slug = "nal-ra", score_a = 1, b = "July", b_slug = "july", score_b = 2, date = "2004-11-11" },
   { a = "ArtOfTerran", score_a = 2, b = "Sync", b_slug = "sync", score_b = 1, date = "2004-11-11" },
   { a = "Goodfriend", a_slug = "goodfriend", score_a = 0, b = "ChoJJa", b_slug = "chojja", score_b = 2, date = "2004-11-18" },
-  { a = "Rage", score_a = 1, b = "JJu", b_slug = "jju", score_b = 2 },
+  { a = "Rage", a_slug = "rage", score_a = 1, b = "JJu", b_slug = "jju", score_b = 2 },
 ]
 [[extra.bracket]]
 round = "패자조 2라운드"
