@@ -20,7 +20,8 @@ winner_slug = "light"
 runner_up = "Rain"
 runner_up_slug = "rain"
 score = "4–2"
-prize_pool = ""
+final_date = "2019-11-29"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 3
 year = 2019
@@ -30,7 +31,8 @@ winner_slug = "rain"
 runner_up = "Mini"
 runner_up_slug = "mini"
 score = "4–1"
-prize_pool = ""
+final_date = "2019-06-08"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 2
 year = 2018
@@ -40,7 +42,8 @@ winner_slug = "soulkey"
 runner_up = "Sharp"
 runner_up_slug = "sharp"
 score = "4–1"
-prize_pool = ""
+final_date = "2018-12-15"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 1
 year = 2018
@@ -50,7 +53,8 @@ winner_slug = "last"
 runner_up = "Jaedong"
 runner_up_slug = "jaedong"
 score = "4–0"
-prize_pool = ""
+final_date = "2018-09-08"
+prize_pool = "₩80,000,000"
 +++
 코리아 스타크래프트 리그(KSL)는 블리자드가 직접 운영한 스타크래프트: 리마스터 개인 리그로, ASL과 병행해 2018년과 2019년에 걸쳐 4개 시즌이 열렸습니다. 2020년 3월 아프리카TV와 블리자드가 독점 중계 계약을 맺으면서 리그는 더 이상 이어지지 않았습니다.
 

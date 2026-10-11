@@ -85,7 +85,7 @@ runner_up = "Mini"
 runner_up_slug = "mini"
 score = "4–1"
 final_date = "2023-10-15"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 15
 year = 2023
@@ -96,7 +96,7 @@ runner_up = "Mind"
 runner_up_slug = "mind"
 score = "4–1"
 final_date = "2023-04-28"
-prize_pool = ""
+prize_pool = "₩78,000,000"
 [[extra.seasons]]
 season = 14
 year = 2022
@@ -107,7 +107,7 @@ runner_up = "Rush"
 runner_up_slug = "rush"
 score = "4–2"
 final_date = "2022-10-08"
-prize_pool = ""
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 13
 year = 2022
@@ -118,7 +118,7 @@ runner_up = "Rain"
 runner_up_slug = "rain"
 score = "4–0"
 final_date = "2022-04-09"
-prize_pool = ""
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 12
 year = 2021
@@ -129,7 +129,7 @@ runner_up = "Rush"
 runner_up_slug = "rush"
 score = "4–3"
 final_date = "2021-11-07"
-prize_pool = ""
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 11
 year = 2021
@@ -139,8 +139,8 @@ winner_slug = "larva"
 runner_up = "Mini"
 runner_up_slug = "mini"
 score = "4–3"
-final_date = ""
-prize_pool = ""
+final_date = "2021-06-06"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 10
 year = 2020
@@ -150,8 +150,8 @@ winner_slug = "zero"
 runner_up = "Soma"
 runner_up_slug = "soma"
 score = "4–3"
-final_date = ""
-prize_pool = ""
+final_date = "2020-11-15"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 9
 year = 2020
@@ -162,7 +162,7 @@ runner_up = "Light"
 runner_up_slug = "light"
 score = "4–1"
 final_date = "2020-04-26"
-prize_pool = ""
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 8
 year = 2019
@@ -172,8 +172,8 @@ winner_slug = "flash"
 runner_up = "Snow"
 runner_up_slug = "snow"
 score = "4–0"
-final_date = ""
-prize_pool = ""
+final_date = "2019-09-01"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 7
 year = 2019
@@ -183,8 +183,8 @@ winner_slug = "last"
 runner_up = "Mini"
 runner_up_slug = "mini"
 score = "3–1"
-final_date = ""
-prize_pool = ""
+final_date = "2019-03-17"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 6
 year = 2018
@@ -194,8 +194,8 @@ winner_slug = "effort"
 runner_up = "Flash"
 runner_up_slug = "flash"
 score = "3–2"
-final_date = ""
-prize_pool = ""
+final_date = "2018-10-28"
+prize_pool = "₩80,000,000"
 [[extra.seasons]]
 season = 5
 year = 2018
@@ -205,8 +205,8 @@ winner_slug = "rain"
 runner_up = "Snow"
 runner_up_slug = "snow"
 score = "3–1"
-final_date = ""
-prize_pool = ""
+final_date = "2018-05-27"
+prize_pool = "₩58,600,000"
 [[extra.seasons]]
 season = 4
 year = 2017
@@ -216,8 +216,8 @@ winner_slug = "flash"
 runner_up = "Hero"
 runner_up_slug = "hero"
 score = "3–1"
-final_date = ""
-prize_pool = ""
+final_date = "2017-11-12"
+prize_pool = "₩100,000,000"
 [[extra.seasons]]
 season = 3
 year = 2017
@@ -227,8 +227,8 @@ winner_slug = "flash"
 runner_up = "Shine"
 runner_up_slug = "shine"
 score = "3–0"
-final_date = ""
-prize_pool = ""
+final_date = "2017-06-04"
+prize_pool = "₩36,200,000"
 [[extra.seasons]]
 season = 2
 year = 2016
@@ -238,8 +238,8 @@ winner_slug = "flash"
 runner_up = "Sea"
 runner_up_slug = "sea"
 score = "3–1"
-final_date = ""
-prize_pool = ""
+final_date = "2017-01-22"
+prize_pool = "₩40,200,000"
 [[extra.seasons]]
 season = 1
 year = 2016
@@ -249,8 +249,8 @@ winner_slug = "shuttle"
 runner_up = "Sharp"
 runner_up_slug = "sharp"
 score = "3–0"
-final_date = ""
-prize_pool = ""
+final_date = "2016-09-10"
+prize_pool = "₩24,000,000"
 +++
 아프리카TV 스타크래프트 리그(ASL)는 아프리카TV(2024년 SOOP으로 사명 변경)가 중계하는 브루드 워 개인 리그입니다. 온게임넷 스타리그와 MBC게임 스타리그가 막을 내린 지 4년 뒤인 2016년에 출범했으며, 이후 한국 프로게이머들의 가장 중요한 무대가 되었습니다. 2024년 가을 시즌은 'SOOP 스타크래프트 리그(SSL)'라는 이름으로 열렸으며, 여기서는 시즌 18로 집계합니다.
 
