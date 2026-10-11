@@ -27,13 +27,7 @@
   </div>
 
   {% if page.relative_path %}
-  <div class="mt-12 pt-6 border-t border-primary/5">
-    <a href="{{ config.extra.github_content_base }}/{{ page.relative_path }}"
-       target="_blank" rel="noopener"
-       class="text-xs text-base-content/25 hover:text-base-content/50 transition-colors">
-      {{ t.edit_on_github }}
-    </a>
-  </div>
+  {% include "partials/provenance.html" %}
   {% endif %}
 </div>
 {% endblock %}
