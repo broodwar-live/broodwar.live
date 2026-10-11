@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @source "../templates";
 @source "../content";
+@source "../static/js/replay-analyzer.js";
 
 @plugin "@tailwindcss/typography";
 
@@ -571,8 +572,7 @@ html {
 [data-theme=light] .navbox .navbox-current { color: oklch(18% 0.02 255 / 0.75); }
 
 
-/* =====================================================================
-   Contrast & legibility rules (WCAG 2.2 AA)
+/* ==============================================================   Contrast & legibility rules (WCAG 2.2 AA)
    ---------------------------------------------------------------------
    base-content is ~94% L (dark) / ~18% L (light), so opacity modifiers map
    to contrast roughly as: /70+ ≈ 7:1, /60 ≈ 4.5–5:1, /50 ≈ 3.5:1,
@@ -749,3 +749,15 @@ html {
 .race-dot-terran { background: var(--color-race-terran); }
 .race-dot-protoss { background: var(--color-race-protoss); }
 .race-dot-zerg { background: var(--color-race-zerg); }
+=======
+/* === Replay analyzer chart series ===
+   Categorical slots in fixed order (one per charted player); dark steps by
+   default, lighter-surface steps for the light theme. */
+#replay-analyzer {
+  --rs-1: #3987e5; --rs-2: #d95926; --rs-3: #199e70; --rs-4: #c98500;
+  --rs-5: #d55181; --rs-6: #008300; --rs-7: #9085e9; --rs-8: #e66767;
+}
+[data-theme=light] #replay-analyzer {
+  --rs-1: #2a78d6; --rs-2: #eb6834; --rs-3: #1baf7a; --rs-4: #eda100;
+  --rs-5: #e87ba4; --rs-6: #008300; --rs-7: #6250d6; --rs-8: #e34948;
+}

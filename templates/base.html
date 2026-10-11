@@ -128,7 +128,7 @@
           <div class="nav-desktop hidden lg:flex items-center gap-0.5">
             {% for key in nav_keys %}
             {% set href = "/" ~ key %}{% set active = href in cur_path %}
-            <a href="{{ lp }}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-colors duration-150 whitespace-nowrap {% if active %}text-base-content bg-primary/10{% else %}text-base-content/75 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}{% if not config.extra.api_enabled and key in ["matches", "replays"] %}<span class="badge-soon ml-1 align-super">{{ t.soon }}</span>{% endif %}</a>
+            <a href="{{ lp }}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="px-3 py-1.5 text-[13px] font-medium rounded-lg transition-colors duration-150 whitespace-nowrap {% if active %}text-base-content bg-primary/10{% else %}text-base-content/75 hover:text-base-content hover:bg-primary/5{% endif %}">{{ t[key] }}{% if not config.extra.api_enabled and key == "matches" %}<span class="badge-soon ml-1 align-super">{{ t.soon }}</span>{% endif %}</a>
             {% endfor %}
           </div>
 
@@ -197,7 +197,7 @@
               <li><a href="{{ lp }}/" {% if cur_path == lp ~ "/" %}aria-current="page"{% endif %} class="mobile-menu-link">{% if lang == "ko" %}홈{% else %}Home{% endif %}</a></li>
               {% for key in nav_keys %}
               {% set href = "/" ~ key %}{% set active = href in cur_path %}
-              <li><a href="{{ lp }}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="mobile-menu-link">{{ t[key] }}{% if not config.extra.api_enabled and key in ["matches", "replays"] %}<span class="badge-soon ml-2">{{ t.soon }}</span>{% endif %}</a></li>
+              <li><a href="{{ lp }}{{ href }}/" {% if active %}aria-current="page"{% endif %} class="mobile-menu-link">{{ t[key] }}{% if not config.extra.api_enabled and key == "matches" %}<span class="badge-soon ml-2">{{ t.soon }}</span>{% endif %}</a></li>
               {% endfor %}
               <li><a href="{{ lp }}/streams/" {% if "/streams" in cur_path %}aria-current="page"{% endif %} class="mobile-menu-link">{{ t.live_streams }}{% if not config.extra.api_enabled %}<span class="badge-soon ml-2">{{ t.soon }}</span>{% endif %}</a></li>
             </ul>
@@ -266,7 +266,7 @@
               <li><a href="{{ lp }}/news/">{{ t.news }}</a></li>
               <li><a href="{{ lp }}/players/">{{ t.players }}</a></li>
               <li><a href="{{ lp }}/matches/">{{ t.matches }}{% if not config.extra.api_enabled %} <span class="badge-soon">{{ t.soon }}</span>{% endif %}</a></li>
-              <li><a href="{{ lp }}/replays/">{{ t.replays }}{% if not config.extra.api_enabled %} <span class="badge-soon">{{ t.soon }}</span>{% endif %}</a></li>
+              <li><a href="{{ lp }}/replays/">{{ t.replays }}</a></li>
               <li><a href="{{ lp }}/builds/">{{ t.builds }}</a></li>
               <li><a href="{{ lp }}/streams/">{{ t.live_streams }}{% if not config.extra.api_enabled %} <span class="badge-soon">{{ t.soon }}</span>{% endif %}</a></li>
             </ul>

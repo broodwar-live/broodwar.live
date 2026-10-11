@@ -41,12 +41,12 @@ Tournament series including:
 - Status (active/retired, live/completed)
 
 ### Replays (/replays)
-Replay file (.rep) analysis providing:
-- Build order extraction
-- APM (Actions Per Minute) and EAPM (Effective APM)
-- Army composition timelines
-- Supply curves
-- Player information and map details
+Replay file (.rep) analysis that runs entirely in the browser (the bw-engine
+parser compiled to WebAssembly; files are never uploaded), providing:
+- Build orders with timestamps and estimated supply
+- APM (Actions Per Minute) and EAPM (Effective APM), overall and over time
+- Opening classification and tech path per player
+- Player information, likely winner, map and game details
 
 ### Builds (/builds)
 Build order database with:
