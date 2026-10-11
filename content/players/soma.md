@@ -1,5 +1,5 @@
 +++
-title = "soma"
+title = "Soma"
 description = "soma (Park Sang Hyun) — Zerg player from South Korea."
 slug = "soma"
 template = "players/player.html"

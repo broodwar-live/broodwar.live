@@ -1,5 +1,5 @@
 +++
-title = "soma"
+title = "Soma"
 description = "soma(박상현) — 한국의 저그 선수."
 slug = "soma"
 template = "players/player.html"
