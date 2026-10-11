@@ -18,7 +18,7 @@ hotkey = "V→F"
 size = "large"
 produces = ["vulture", "siege-tank", "goliath"]
 unlocks = ["machine-shop", "starport", "armory"]
-required_by = ["barracks"]
+requires = ["barracks"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

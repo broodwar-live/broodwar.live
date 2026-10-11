@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["melee-attacks", "missile-attacks", "carapace"]
 unlocks = ["spore-colony"]
-required_by = ["hatchery"]
+requires = ["hatchery"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

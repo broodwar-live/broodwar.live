@@ -16,7 +16,7 @@ build_time = 60
 hotkey = "V→A"
 size = "large"
 produces = []
-required_by = ["templar-archives", "stargate"]
+requires = ["templar-archives", "stargate"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

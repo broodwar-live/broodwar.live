@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["infantry-weapons", "infantry-armor"]
 unlocks = ["missile-turret"]
-required_by = ["command-center"]
+requires = ["command-center"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

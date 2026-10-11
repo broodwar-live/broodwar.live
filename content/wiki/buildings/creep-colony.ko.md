@@ -18,7 +18,7 @@ hotkey = "B→C"
 size = "large"
 produces = []
 unlocks = ["sunken-colony", "spore-colony"]
-required_by = []
+requires = []
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

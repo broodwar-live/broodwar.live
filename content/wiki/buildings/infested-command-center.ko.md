@@ -14,7 +14,8 @@ shields = 0
 armor = 1
 size = "large"
 produces = ["infested-terran"]
-required_by = []
+infested_from = "command-center"
+requires = []
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

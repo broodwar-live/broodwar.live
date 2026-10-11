@@ -17,7 +17,7 @@ hotkey = "V→F"
 size = "large"
 produces = []
 researches = ["disruption-web"]
-required_by = ["stargate"]
+requires = ["stargate"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

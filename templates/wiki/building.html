@@ -23,11 +23,19 @@
 {% set t = config.extra.i18n[lang] %}
 {% set e = page.extra %}
 {% set race = page.taxonomies.race[0] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
+{#- Parent building: add-ons attach to it, morphs evolve from it, infested buildings are captured from it. -#}
+{% set parent_slug = "" %}{% set parent_kind = "" %}
+{% if e.addon_of is defined and e.addon_of %}{% set parent_slug = e.addon_of %}{% set parent_kind = "addon" %}
+{% elif e.morphs_from is defined and e.morphs_from %}{% set parent_slug = e.morphs_from %}{% set parent_kind = "morph" %}
+{% elif e.infested_from is defined and e.infested_from %}{% set parent_slug = e.infested_from %}{% set parent_kind = "infested" %}{% endif %}
+{% set parent_title = parent_slug | replace(from="-", to=" ") | title %}
+{% if parent_slug %}{% set parent_page = get_page(path="wiki/buildings/" ~ parent_slug ~ ".md", lang=lang) | default(value=false) %}{% if parent_page %}{% set parent_title = parent_page.title %}{% endif %}{% endif %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
-    <a href="/wiki" class="hover:text-base-content/60">{{ t.wiki }}</a>
+    <a href="{{ lp }}/wiki" class="hover:text-base-content/60">{{ t.wiki }}</a>
     <span class="mx-1.5">/</span>
-    <a href="/wiki/buildings" class="hover:text-base-content/60">{% if lang == "ko" %}건물{% else %}Buildings{% endif %}</a>
+    <a href="{{ lp }}/wiki/buildings" class="hover:text-base-content/60">{% if lang == "ko" %}건물{% else %}Buildings{% endif %}</a>
     <span class="mx-1.5">/</span>
     <span class="text-base-content/50">{{ page.title }}</span>
   </nav>
@@ -77,7 +85,7 @@
           {% if e.name_ko is defined %}<div class="text-xs text-base-content/30 mt-0.5">{{ e.name_ko }}</div>{% endif %}
         </div>
 
-        {% if e.image %}
+        {% if e.image is defined and e.image %}
         <img src="{{ e.image }}" alt="{{ page.title }}" class="w-full aspect-video object-contain rounded-lg bg-base-300/50" loading="lazy" />
         {% endif %}
 
@@ -91,8 +99,13 @@
               {% if e.build_time is defined %}
               <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}건설시간{% else %}Build Time{% endif %}</dt><dd>{{ e.build_time }}s</dd></div>
               {% endif %}
-              {% if e.hotkey is defined %}
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}단축키{% else %}Hotkey{% endif %}</dt><dd class="font-mono text-primary/60">{{ e.hotkey }}</dd></div>
+              {% if parent_slug %}
+              <div class="flex justify-between gap-3"><dt class="text-base-content/40">{% if parent_kind == "addon" %}{% if lang == "ko" %}부착 건물{% else %}Add-on of{% endif %}{% elif parent_kind == "morph" %}{% if lang == "ko" %}변태 전 건물{% else %}Morphs from{% endif %}{% else %}{% if lang == "ko" %}감염 전 건물{% else %}Infested from{% endif %}{% endif %}</dt><dd class="text-right"><a href="{{ lp }}/wiki/buildings/{{ parent_slug }}" class="text-primary/70 hover:text-primary transition-colors">{{ parent_title }}</a></dd></div>
+              {% endif %}
+              {% if e.hotkey is defined and e.hotkey %}
+              <div class="flex justify-between gap-3"><dt class="text-base-content/40">{% if lang == "ko" %}단축키{% else %}Hotkey{% endif %}</dt><dd class="text-right"><span class="font-mono text-primary/60">{{ e.hotkey }}</span>{% if parent_slug and parent_kind != "infested" %}<span class="block text-[10px] text-base-content/30">{% if lang == "ko" %}{{ parent_title }} 선택 후{% else %}with {{ parent_title }} selected{% endif %}</span>{% endif %}</dd></div>
+              {% elif parent_kind == "infested" %}
+              <div class="flex justify-between gap-3"><dt class="text-base-content/40">{% if lang == "ko" %}획득{% else %}Obtained{% endif %}</dt><dd class="text-right text-xs text-base-content/60">{% if lang == "ko" %}퀸의 감염{% else %}Queen infestation{% endif %}</dd></div>
               {% endif %}
             </dl>
           </div>
@@ -129,7 +142,7 @@
                 {% set unit_path = "wiki/units/" ~ unit_slug ~ ".md" %}
                 {% set u = get_page(path=unit_path, lang=lang) | default(value=false) %}
                 <tr class="border-t border-primary/5">
-                  <td class="py-1"><a href="/wiki/units/{{ unit_slug }}" class="text-primary/70 hover:text-primary transition-colors">{{ unit_slug | replace(from="-", to=" ") | title }}</a></td>
+                  <td class="py-1"><a href="{{ lp }}/wiki/units/{{ unit_slug }}" class="text-primary/70 hover:text-primary transition-colors">{{ unit_slug | replace(from="-", to=" ") | title }}</a></td>
                   {% if u %}<td class="text-right font-stats">{{ u.extra.minerals }}</td><td class="text-right font-stats">{{ u.extra.gas }}</td><td class="text-right font-stats">{{ u.extra.supply }}</td>{% else %}<td></td><td></td><td></td>{% endif %}
                 </tr>
                 {% endfor %}
@@ -144,7 +157,7 @@
             <span class="infobox-label">{% if lang == "ko" %}연구{% else %}Researches{% endif %}</span>
             <ul class="space-y-1">
               {% for upgrade in e.researches %}
-              <li><a href="/wiki/upgrades/{{ upgrade }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ upgrade | replace(from="-", to=" ") | title }}</a></li>
+              <li><a href="{{ lp }}/wiki/upgrades/{{ upgrade }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ upgrade | replace(from="-", to=" ") | title }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -156,19 +169,19 @@
             <span class="infobox-label">{% if lang == "ko" %}해금{% else %}Unlocks{% endif %}</span>
             <ul class="space-y-1">
               {% for bldg in e.unlocks %}
-              <li><a href="/wiki/buildings/{{ bldg }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ bldg | replace(from="-", to=" ") | title }}</a></li>
+              <li><a href="{{ lp }}/wiki/buildings/{{ bldg }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ bldg | replace(from="-", to=" ") | title }}</a></li>
               {% endfor %}
             </ul>
           </div>
           {% endif %}
 
-          {# ─ Required By ─ #}
-          {% if e.required_by is defined and e.required_by | length > 0 %}
+          {# ─ Requires (prerequisite buildings) ─ #}
+          {% if e.requires is defined and e.requires | length > 0 %}
           <div class="infobox-section">
-            <span class="infobox-label">{% if lang == "ko" %}필요 건물{% else %}Required By{% endif %}</span>
+            <span class="infobox-label">{% if lang == "ko" %}요구 건물{% else %}Requires{% endif %}</span>
             <ul class="space-y-1">
-              {% for bldg in e.required_by %}
-              <li><a href="/wiki/buildings/{{ bldg }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ bldg | replace(from="-", to=" ") | title }}</a></li>
+              {% for bldg in e.requires %}
+              <li><a href="{{ lp }}/wiki/buildings/{{ bldg }}" class="text-sm text-primary/70 hover:text-primary transition-colors">{{ bldg | replace(from="-", to=" ") | title }}</a></li>
               {% endfor %}
             </ul>
           </div>

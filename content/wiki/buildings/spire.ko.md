@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["flyer-attacks", "flyer-carapace"]
 unlocks = ["greater-spire"]
-required_by = ["lair"]
+requires = ["lair"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

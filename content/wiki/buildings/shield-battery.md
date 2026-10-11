@@ -16,7 +16,7 @@ build_time = 30
 hotkey = "B→B"
 size = "large"
 produces = []
-required_by = ["gateway"]
+requires = ["gateway"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

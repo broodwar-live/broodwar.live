@@ -17,7 +17,8 @@ hotkey = "C"
 size = "large"
 produces = []
 researches = ["cloaking-field"]
-required_by = ["starport"]
+addon_of = "starport"
+requires = ["starport"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

@@ -17,7 +17,8 @@ hotkey = "P"
 size = "large"
 produces = []
 researches = ["yamato-gun"]
-required_by = ["science-facility"]
+addon_of = "science-facility"
+requires = ["science-facility"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

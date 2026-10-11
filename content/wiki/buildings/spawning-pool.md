@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["metabolic-boost", "adrenal-glands"]
 unlocks = ["hydralisk-den", "lair", "sunken-colony"]
-required_by = ["hatchery"]
+requires = ["hatchery"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

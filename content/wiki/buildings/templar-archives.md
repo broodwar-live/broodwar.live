@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["psionic-storm", "hallucination", "maelstrom", "mind-control"]
 unlocks = ["arbiter-tribunal"]
-required_by = ["citadel-of-adun"]
+requires = ["citadel-of-adun"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

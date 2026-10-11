@@ -18,7 +18,7 @@ hotkey = "V→D"
 size = "large"
 produces = []
 researches = ["consume", "plague"]
-required_by = ["hive"]
+requires = ["hive"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

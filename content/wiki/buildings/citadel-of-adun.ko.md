@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["leg-enhancements"]
 unlocks = ["templar-archives"]
-required_by = ["cybernetics-core"]
+requires = ["cybernetics-core"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

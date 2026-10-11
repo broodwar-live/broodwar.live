@@ -17,7 +17,7 @@ build_time = 50
 hotkey = "B→C"
 size = "large"
 produces = []
-required_by = ["forge"]
+requires = ["forge"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

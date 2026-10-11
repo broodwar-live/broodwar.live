@@ -18,7 +18,7 @@ hotkey = "V→S"
 size = "large"
 produces = ["wraith", "dropship", "valkyrie", "science-vessel", "battlecruiser"]
 unlocks = ["control-tower", "science-facility"]
-required_by = ["factory"]
+requires = ["factory"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

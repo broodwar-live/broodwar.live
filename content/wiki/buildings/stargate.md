@@ -18,7 +18,7 @@ hotkey = "V→S"
 size = "large"
 produces = ["corsair", "scout", "carrier", "arbiter"]
 unlocks = ["fleet-beacon", "arbiter-tribunal"]
-required_by = ["cybernetics-core"]
+requires = ["cybernetics-core"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

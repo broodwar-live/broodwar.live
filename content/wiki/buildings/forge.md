@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["ground-weapons", "ground-armor", "plasma-shields"]
 unlocks = ["photon-cannon"]
-required_by = ["nexus"]
+requires = ["nexus"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

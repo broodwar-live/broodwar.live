@@ -16,7 +16,8 @@ build_time = 80
 hotkey = "N"
 size = "large"
 produces = []
-required_by = ["covert-ops"]
+addon_of = "command-center"
+requires = ["covert-ops"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

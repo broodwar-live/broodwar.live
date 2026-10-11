@@ -16,7 +16,8 @@ build_time = 20
 hotkey = "U"
 size = "large"
 produces = []
-required_by = ["spawning-pool"]
+morphs_from = "creep-colony"
+requires = ["spawning-pool"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

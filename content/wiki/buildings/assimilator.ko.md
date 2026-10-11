@@ -16,7 +16,7 @@ build_time = 40
 hotkey = "B→A"
 size = "large"
 produces = []
-required_by = []
+requires = []
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

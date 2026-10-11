@@ -18,7 +18,7 @@ hotkey = "V→A"
 size = "large"
 produces = []
 researches = ["vehicle-weapons", "vehicle-plating", "ship-weapons", "ship-plating"]
-required_by = ["factory"]
+requires = ["factory"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

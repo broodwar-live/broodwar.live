@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["irradiate"]
 unlocks = ["physics-lab", "covert-ops"]
-required_by = ["starport"]
+requires = ["starport"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

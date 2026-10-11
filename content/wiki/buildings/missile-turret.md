@@ -17,7 +17,7 @@ build_time = 30
 hotkey = "B→T"
 size = "large"
 produces = []
-required_by = ["engineering-bay"]
+requires = ["engineering-bay"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["air-weapons", "air-armor"]
 unlocks = ["robotics-facility", "stargate", "citadel-of-adun"]
-required_by = ["gateway"]
+requires = ["gateway"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

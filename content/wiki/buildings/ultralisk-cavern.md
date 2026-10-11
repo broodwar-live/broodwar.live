@@ -18,7 +18,7 @@ hotkey = "V→U"
 size = "large"
 produces = []
 researches = ["chitinous-plating", "anabolic-synthesis"]
-required_by = ["hive"]
+requires = ["hive"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

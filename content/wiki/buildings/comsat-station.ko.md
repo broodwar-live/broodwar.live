@@ -16,7 +16,8 @@ build_time = 40
 hotkey = "C"
 size = "large"
 produces = []
-required_by = ["academy"]
+addon_of = "command-center"
+requires = ["academy"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

@@ -16,6 +16,7 @@
 {% set t = config.extra.i18n[lang] %}
 {% set e = page.extra %}
 {% set race = page.taxonomies.race[0] %}
+{% set lp = "" %}{% if lang != config.default_language %}{% set lp = "/" ~ lang %}{% endif %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <nav class="text-xs text-base-content/30 mb-6" aria-label="Breadcrumb">
     <a href="/wiki" class="hover:text-base-content/60">{{ t.wiki }}</a>
@@ -115,7 +116,7 @@
           <div class="infobox-section">
             <span class="infobox-label">{% if lang == "ko" %}연구{% else %}Research{% endif %}</span>
             <dl class="infobox-dl">
-              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}연구 건물{% else %}Researched At{% endif %}</dt><dd><a href="/wiki/buildings/{{ e.researched_at }}" class="text-primary/70 hover:text-primary transition-colors">{{ e.researched_at | replace(from="-", to=" ") | title }}</a></dd></div>
+              <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}연구 건물{% else %}Researched At{% endif %}</dt><dd>{% set ra_page = get_page(path="wiki/buildings/" ~ e.researched_at ~ ".md", lang=lang) | default(value=false) %}<a href="{{ lp }}/wiki/buildings/{{ e.researched_at }}" class="text-primary/70 hover:text-primary transition-colors">{% if ra_page %}{{ ra_page.title }}{% else %}{{ e.researched_at | replace(from="-", to=" ") | title }}{% endif %}</a></dd></div>
               {% if e.research_minerals is defined %}
               <div class="flex justify-between"><dt class="text-base-content/40">{% if lang == "ko" %}미네랄{% else %}Minerals{% endif %}</dt><dd>{{ e.research_minerals }}</dd></div>
               {% endif %}

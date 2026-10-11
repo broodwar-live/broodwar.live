@@ -17,7 +17,8 @@ hotkey = "G"
 size = "large"
 produces = []
 researches = ["flyer-attacks", "flyer-carapace"]
-required_by = ["hive"]
+morphs_from = "spire"
+requires = ["hive"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

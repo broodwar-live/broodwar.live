@@ -18,7 +18,7 @@ hotkey = "B→D"
 size = "large"
 produces = []
 researches = ["muscular-augments", "grooved-spines", "lurker-aspect"]
-required_by = ["spawning-pool"]
+requires = ["spawning-pool"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

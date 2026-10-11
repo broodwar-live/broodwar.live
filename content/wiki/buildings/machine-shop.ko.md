@@ -17,7 +17,8 @@ hotkey = "C"
 size = "large"
 produces = []
 researches = ["siege-tech", "spider-mines", "ion-thrusters"]
-required_by = ["factory"]
+addon_of = "factory"
+requires = ["factory"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

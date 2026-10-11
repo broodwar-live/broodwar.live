@@ -19,7 +19,7 @@ size = "large"
 produces = []
 researches = ["stim-pack", "u-238-shells"]
 unlocks = ["comsat-station"]
-required_by = ["barracks"]
+requires = ["barracks"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

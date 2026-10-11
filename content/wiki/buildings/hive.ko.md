@@ -17,7 +17,8 @@ hotkey = "H"
 size = "large"
 produces = ["drone", "zergling", "hydralisk", "mutalisk", "scourge", "queen", "overlord"]
 unlocks = ["defiler-mound", "ultralisk-cavern", "greater-spire", "nydus-canal"]
-required_by = ["queens-nest"]
+morphs_from = "lair"
+requires = ["queens-nest"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++

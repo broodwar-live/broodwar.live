@@ -16,7 +16,8 @@ build_time = 40
 hotkey = "C"
 size = "large"
 produces = []
-required_by = ["science-facility"]
+addon_of = "science-facility"
+requires = ["science-facility"]
 sources = ["https://github.com/bwapi/bwapi/blob/develop/Library/BWAPILIB/Source/Types/UnitType.cpp"]
 verified = "2026-10-11"
 +++
