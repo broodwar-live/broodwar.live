@@ -19,8 +19,14 @@
 /favicon.svg
   Cache-Control: public, max-age=2592000
 
-/*.wasm
-  Cache-Control: public, max-age=86400
+# Replay parser: always referenced with a content-hash query (?h=...), so it
+# can be cached for good. Cloudflare joins repeated headers with a comma, so
+# keep each header in exactly one matching rule (an "application/wasm,
+# application/wasm" Content-Type breaks WebAssembly.instantiateStreaming).
+/wasm/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/wasm/replay_wasm_bg.wasm
   Content-Type: application/wasm
 
 /search_index.en.js
