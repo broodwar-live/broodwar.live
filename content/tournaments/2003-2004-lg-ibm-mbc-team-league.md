@@ -23,7 +23,7 @@ format = "Double elimination, Bo7 all-kill matches"
 teams = [{ name = "4 Union", slug = "sk-telecom-t1" }, { name = "SUMA GO", slug = "cj-entus" }, { name = "Hanbit Stars", slug = "hanbit-stars" }, { name = "KOR", slug = "hite-entus" }, { name = "Samsung KHAN", slug = "samsung-khan" }, { name = "KTF MagicNs", slug = "kt-rolster" }, { name = "Pirates of Space", slug = "mbcgame-hero" }, { name = "SouL", slug = "stx-soul" }, { name = "KTEC Plus", slug = "hwaseung-oz" }]
 maps = [{ name = "Detonation" }, { name = "Enter the Dragon" }, { name = "Jim Raynor's Memory" }, { name = "Parallel Lines" }]
 awards = []
-sources = ["https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League", "https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League/Main_Tournament"]
+sources = ["https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League", "https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League/Main_Tournament", "https://liquipedia.net/starcraft/SK_Telecom_T1"]
 verified = "2026-10-11"
 [[extra.team_bracket]]
 round = "Upper bracket round 1"
@@ -288,4 +288,4 @@ Eight teams played the LG IBM MBC Team League as a double-elimination bracket of
 
 Upper bracket round 1: SUMA GO beat Samsung KHAN 4–2. Upper bracket round 1: KTF MagicNs beat SouL 4–1. Upper bracket round 1: Orion beat Hanbit Stars 4–3. Upper bracket round 1: KOR beat KTEC Plus 4–2. Lower bracket round 1: SouL beat Samsung KHAN 4–0. Lower bracket round 1: Hanbit Stars beat KTEC Plus 4–2. Upper bracket semifinals: KTF MagicNs beat SUMA GO 4–3. Upper bracket semifinals: 4 Union beat KOR 4–3. Lower bracket round 2: SUMA GO beat SouL 4–2. Lower bracket round 2: Hanbit Stars beat KOR 4–3. Lower bracket semifinal: SUMA GO beat Hanbit Stars 4–3. Upper bracket final: KTF MagicNs beat 4 Union 4–2. Lower bracket final: 4 Union beat SUMA GO 4–2. In the final on 28 February 2004, 4 Union beat KTF MagicNs 4–2 to win the title.
 
-The site's SK Telecom T1 page dates the team's rename from Orion to 4 Union to December 2003, so the team appears as 4 Union in the 2004 matches; Liquipedia lists the champion as Orion. Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.
+Liquipedia's SK Telecom T1 page dates the team's rename from Orion to 4 Union to December 2003, and the roster on its page for this league lists the team as 4 Union; matches from December 2003 onward, including the final, therefore show 4 Union. The league page's own summary still calls the champion Orion, the team's earlier name. Set lists follow Liquipedia's match records. Players without a profile on this site are shown as recorded and are not linked; races are given per set as recorded.

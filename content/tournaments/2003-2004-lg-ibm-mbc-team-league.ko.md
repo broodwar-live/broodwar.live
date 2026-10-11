@@ -23,7 +23,7 @@ format = "더블 엘리미네이션, 7전 4선승제 올킬 매치"
 teams = [{ name = "4 Union", slug = "sk-telecom-t1" }, { name = "SUMA GO", slug = "cj-entus" }, { name = "Hanbit Stars", slug = "hanbit-stars" }, { name = "KOR", slug = "hite-entus" }, { name = "Samsung KHAN", slug = "samsung-khan" }, { name = "KTF MagicNs", slug = "kt-rolster" }, { name = "Pirates of Space", slug = "mbcgame-hero" }, { name = "SouL", slug = "stx-soul" }, { name = "KTEC Plus", slug = "hwaseung-oz" }]
 maps = [{ name = "Detonation" }, { name = "Enter the Dragon" }, { name = "Jim Raynor's Memory" }, { name = "Parallel Lines" }]
 awards = []
-sources = ["https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League", "https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League/Main_Tournament"]
+sources = ["https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League", "https://liquipedia.net/starcraft/2003-2004_LG_IBM_MBC_Team_League/Main_Tournament", "https://liquipedia.net/starcraft/SK_Telecom_T1"]
 verified = "2026-10-11"
 [[extra.team_bracket]]
 round = "승자조 1라운드"
@@ -288,4 +288,4 @@ LG IBM MBC 팀리그는 8개 팀이 7전 4선승제 더블 엘리미네이션으
 
 승자조 1라운드: SUMA GO이(가) Samsung KHAN을(를) 4:2로 꺾었습니다. 승자조 1라운드: KTF MagicNs이(가) SouL을(를) 4:1로 꺾었습니다. 승자조 1라운드: Orion이(가) Hanbit Stars을(를) 4:3로 꺾었습니다. 승자조 1라운드: KOR이(가) KTEC Plus을(를) 4:2로 꺾었습니다. 패자조 1라운드: SouL이(가) Samsung KHAN을(를) 4:0로 꺾었습니다. 패자조 1라운드: Hanbit Stars이(가) KTEC Plus을(를) 4:2로 꺾었습니다. 승자조 준결승: KTF MagicNs이(가) SUMA GO을(를) 4:3로 꺾었습니다. 승자조 준결승: 4 Union이(가) KOR을(를) 4:3로 꺾었습니다. 패자조 2라운드: SUMA GO이(가) SouL을(를) 4:2로 꺾었습니다. 패자조 2라운드: Hanbit Stars이(가) KOR을(를) 4:3로 꺾었습니다. 패자조 준결승: SUMA GO이(가) Hanbit Stars을(를) 4:3로 꺾었습니다. 승자조 결승: KTF MagicNs이(가) 4 Union을(를) 4:2로 꺾었습니다. 패자조 결승: 4 Union이(가) SUMA GO을(를) 4:2로 꺾었습니다. 2004년 2월 28일 결승에서 4 Union이(가) KTF MagicNs을(를) 4:2로 꺾고 우승했습니다.
 
-이 사이트의 SK텔레콤 T1 페이지에 따르면 팀명이 2003년 12월 오리온에서 4U(4 Union)로 바뀌었으므로 2004년 경기는 4 Union으로 표시했습니다. Liquipedia는 우승팀을 오리온으로 적고 있습니다. 세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
+리퀴피디아의 SK텔레콤 T1 문서에 따르면 팀명은 2003년 12월 오리온에서 4U(4 Union)로 바뀌었고, 이 대회 문서의 선수 명단도 팀을 4 Union으로 적고 있습니다. 그래서 2003년 12월 이후 경기와 결승은 4 Union으로 표시했습니다. 같은 문서의 요약에는 우승팀이 예전 이름인 오리온으로 적혀 있습니다. 세트 기록은 Liquipedia의 경기 기록을 따랐습니다. 이 사이트에 프로필이 없는 선수는 기록된 이름 그대로 표시하고 링크하지 않았으며, 종족은 세트별 기록을 따랐습니다.
