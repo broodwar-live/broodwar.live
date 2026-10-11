@@ -10,8 +10,6 @@ tags = ["standard", "gateway", "safe"]
 [extra]
 race = "protoss"
 matchup = "PvP"
-games = 289
-winrate = 50
 +++
 The safest and most standard PvP opening. Two gateways producing zealots and dragoons give you early map control and the ability to react to anything your opponent does. This build does not commit to a specific tech path early, instead relying on superior unit count and scouting to dictate the flow of the game.
 

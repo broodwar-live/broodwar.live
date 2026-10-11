@@ -10,8 +10,6 @@ tags = ["standard", "hybrid", "versatile"]
 [extra]
 race = "terran"
 matchup = "TvZ"
-games = 298
-winrate = 52
 +++
 Named after the SK Telecom T1 team's signature style, this is a 1/1/1 opening — one barracks, one factory, one starport — giving simultaneous access to all tech paths. It is the most versatile TvZ opening in competitive play. A wraith provides early harassment and scouting, a siege tank anchors defense, and marines handle anti-air duties.
 

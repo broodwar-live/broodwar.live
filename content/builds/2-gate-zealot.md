@@ -10,8 +10,6 @@ tags = ["aggressive", "pressure", "timing"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
-games = 213
-winrate = 51
 +++
 An aggressive PvZ opening with two gateways producing zealots continuously to pressure Zerg before they can establish a third base. The goal is not necessarily to kill the opponent but to force zerglings to stay home defending, delaying Zerg's drone production and expansion timing.
 

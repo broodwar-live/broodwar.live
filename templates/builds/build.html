@@ -45,11 +45,6 @@
       {{ page.content | safe }}
     </div>
 
-    <div class="mt-6 flex items-center gap-6 text-sm">
-      <span class="text-base-content/40"><span class="font-stats font-semibold text-base-content/60">{{ e.games }}</span> {% if lang == "ko" %}게임{% else %}games{% endif %}</span>
-      <span class="font-stats font-semibold {% if e.winrate >= 55 %}text-success{% elif e.winrate >= 50 %}text-base-content/60{% else %}text-error{% endif %}">{{ e.winrate }}%</span> <span class="text-base-content/40">{% if lang == "ko" %}승률{% else %}winrate{% endif %}</span>
-    </div>
-
     {% if page.taxonomies.tags is defined and page.taxonomies.tags | length > 0 %}
     <div class="mt-4 flex flex-wrap gap-1.5">
       {% for tag in page.taxonomies.tags %}

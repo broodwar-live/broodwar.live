@@ -10,8 +10,6 @@ tags = ["standard", "flexible", "dragoon"]
 [extra]
 race = "protoss"
 matchup = "PvT"
-games = 378
-winrate = 51
 +++
 게이트웨이 2개와 초기 드라군 사거리 업그레이드 후 앞마당을 확장하는 유연한 PvT 오프닝입니다. 1 Gate FE보다 공격적이며, 사거리 드라군으로 맵 컨트롤을 다투면서도 2기지 경제를 확보합니다. 사거리 업그레이드가 핵심입니다 — 드라군이 마린을 카이팅하고 시야 밖에서 시즈탱크를 공격할 수 있게 합니다.
 

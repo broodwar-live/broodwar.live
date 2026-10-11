@@ -10,8 +10,6 @@ tags = ["standard", "mutalisk", "economic"]
 [extra]
 race = "zerg"
 matchup = "ZvP"
-games = 445
-winrate = 50
 +++
 The standard mid-game ZvP strategy. Open with three hatcheries for economy, then tech to lair and spire for mutalisk production. Mutalisks are the backbone of ZvP — their speed lets them harass probe lines, snipe high templar, and force Protoss to invest in static defense at every base.
 

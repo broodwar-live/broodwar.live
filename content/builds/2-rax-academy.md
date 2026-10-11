@@ -10,8 +10,6 @@ tags = ["bio", "pressure", "timing"]
 [extra]
 race = "terran"
 matchup = "TvP"
-games = 198
-winrate = 52
 +++
 A bio timing attack that opens with two barracks and an early academy for medic production. The goal is to hit Protoss with a Marine/Medic push with stim pack research around the 7-minute mark, before storm tech is available. This is one of the most aggressive standard TvP openings.
 

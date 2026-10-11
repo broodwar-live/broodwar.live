@@ -10,8 +10,6 @@ tags = ["standard", "economic", "defensive"]
 [extra]
 race = "protoss"
 matchup = "PvZ"
-games = 523
-winrate = 50
 +++
 Forge Fast Expand is the standard defensive PvZ opening. Build a forge before your first gateway, then place photon cannons at your natural expansion to defend against early zergling and hydralisk pressure. The nexus goes down at the natural behind cannon protection, giving you a safe two-base economy.
 

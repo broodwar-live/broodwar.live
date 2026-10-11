@@ -10,8 +10,6 @@ tags = ["standard", "economic", "safe"]
 [extra]
 race = "protoss"
 matchup = "PvT"
-games = 412
-winrate = 50
 +++
 The standard safe PvT opening. Build a single gateway, produce one zealot and then dragoons, and take your natural expansion while the initial units provide defense. This prioritizes economy over early aggression, aiming to outscale Terran in the mid-game.
 

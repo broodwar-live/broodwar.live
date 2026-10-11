@@ -10,8 +10,6 @@ tags = ["standard", "flexible", "dragoon"]
 [extra]
 race = "protoss"
 matchup = "PvT"
-games = 378
-winrate = 51
 +++
 A flexible PvT opening with two gateways and an early dragoon range upgrade, followed by a natural expansion. More aggressive than 1 Gate FE, this build uses ranged dragoons to contest map control while still securing a two-base economy. The range upgrade is essential — it allows dragoons to kite marines and fight siege tanks from outside their vision.
 

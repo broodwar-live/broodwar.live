@@ -10,8 +10,6 @@ tags = ["standard", "mech", "safe"]
 [extra]
 race = "terran"
 matchup = "TvP"
-games = 356
-winrate = 51
 +++
 The standard safe TvP mech opening. Build a factory before expanding, produce a siege tank, then take your natural expansion behind the tank's defensive cover. The siege tank at your natural choke eliminates the risk of zealot run-bys that punish faster expand builds.
 

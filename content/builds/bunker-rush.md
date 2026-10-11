@@ -10,8 +10,6 @@ tags = ["aggressive", "rush", "cheese"]
 [extra]
 race = "terran"
 matchup = "TvZ"
-games = 187
-winrate = 47
 +++
 A cheese strategy where an SCV is sent across the map early to build a bunker at or near the Zerg's natural expansion. Once marines load in, the bunker can deny the hatchery entirely or force Zerg to invest heavily in zerglings and sunken colonies, delaying their economy significantly.
 
